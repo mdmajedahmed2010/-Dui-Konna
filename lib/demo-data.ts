@@ -324,3 +324,58 @@ export function getProductsByCategory(slug: string): ProductCardProps[] {
       return ALL_PRODUCTS;
   }
 }
+
+// ═══════════════════════════════════════════
+// Seeding Helpers & Backwards-Compatible Exports
+// ═══════════════════════════════════════════
+export const DEMO_CATEGORIES = CATEGORIES;
+
+export const DEMO_PRODUCTS = ALL_PRODUCTS.map((p) => {
+  const catObj = CATEGORIES.find((c) => c.name === p.category) || CATEGORIES[0];
+  const catName = catObj?.name || "Pakistani Lawn Collection";
+  const catSlug = catObj?.slug || "pakistani-lawn";
+  const imgs = p.images && p.images.length > 0 ? p.images : [p.image];
+  return {
+    name: p.name,
+    slug: p.slug,
+    description: `${p.name} — Authentically curated by Enaya's | Sylhet. Authentic Pakistani luxury designer suit with intricate embroidery and premium fabric. Open Parcel Policy available.`,
+    price: p.price,
+    isFeatured: p.isBestseller ?? true,
+    images: imgs,
+    category: {
+      name: catName,
+      slug: catSlug,
+    },
+    variants: [
+      {
+        size: "S",
+        color: "As Shown",
+        price: p.price,
+        stock: Math.max(2, Math.floor((p.stock ?? 10) / 4)),
+        images: imgs,
+      },
+      {
+        size: "M",
+        color: "As Shown",
+        price: p.price,
+        stock: Math.max(3, Math.floor((p.stock ?? 10) / 3)),
+        images: imgs,
+      },
+      {
+        size: "L",
+        color: "As Shown",
+        price: p.price,
+        stock: Math.max(3, Math.floor((p.stock ?? 10) / 3)),
+        images: imgs,
+      },
+      {
+        size: "XL",
+        color: "As Shown",
+        price: p.price,
+        stock: Math.max(2, Math.floor((p.stock ?? 10) / 4)),
+        images: imgs,
+      },
+    ],
+  };
+});
+

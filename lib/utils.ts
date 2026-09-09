@@ -9,7 +9,7 @@ export function cn(...inputs: ClassValue[]) {
  * Blossom — Custom Utility Functions
  */
 
-import { CURRENCY, BUSINESS } from "./constants";
+import { CURRENCY, BUSINESS, DELIVERY_CHARGE } from "./constants";
 
 /**
  * Format price with BDT currency symbol
@@ -83,7 +83,7 @@ export function calculateDeliveryCharge(city: string): number {
   const isInsideLocal = localAreas.some((area) =>
     (city || "").toLowerCase().includes(area)
   );
-  return isInsideLocal ? (BUSINESS.SHIPPING?.INSIDE_SYLHET ?? 80) : (BUSINESS.SHIPPING?.OUTSIDE_SYLHET ?? 150);
+  return isInsideLocal ? DELIVERY_CHARGE.SYLHET_INSIDE : DELIVERY_CHARGE.OUTSIDE_SYLHET;
 }
 
 /**
