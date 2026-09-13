@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Enaya's | Sylhet — Trust Badges & Open Parcel Assurance
+ * 3 sis xclusive — Trust Badges & Open Parcel Assurance
  * Authentic Pakistani Luxury Suits | Nayasarak Point Flagship Boutique
  */
 
@@ -79,12 +79,12 @@ export function TrustBadges() {
                 transitionDelay: isVisible ? `${i * 80}ms` : "0ms",
               }}
             >
-              <div className="flex items-center justify-center size-12 md:size-13 rounded-full bg-[#fdf5fa] text-[#3D0B3D] transition-all duration-500 group-hover:bg-[#3D0B3D] group-hover:text-white shadow-xs">
+              <div className="flex items-center justify-center size-12 md:size-13 rounded-full bg-[#fdf5fa] text-[#8B263E] transition-all duration-500 group-hover:bg-[#8B263E] group-hover:text-white shadow-xs">
                 <badge.icon className="h-5.5 w-5.5 stroke-[1.5]" />
               </div>
 
               <div className="space-y-1">
-                <p className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.14em] text-[#3D0B3D] font-sans">
+                <p className="text-[10px] md:text-[11px] font-bold uppercase tracking-[0.14em] text-[#8B263E] font-sans">
                   {badge.title}
                 </p>
                 <p className="text-[10px] md:text-[11px] text-neutral-500 leading-relaxed font-sans font-medium">

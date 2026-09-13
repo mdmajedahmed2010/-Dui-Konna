@@ -2,10 +2,10 @@
 "use client";
 
 /**
- * Enaya's | Sylhet — Haute Couture Storefront Orchestrator
+ * 3 sis xclusive — Haute Couture Storefront Orchestrator
  * Authentic Pakistani Luxury Suits & Designer Collections
- * Nayasarak Point, Sylhet, Bangladesh — https://www.facebook.com/Enayas.Sylhet/
- * All images served locally from /public/enayas-assets/
+ * Nayasarak Point, Sylhet, Bangladesh — https://www.facebook.com/3 sis xclusive.Sylhet/
+ * All images served locally from /public/3sis-assets/
  */
 
 import { BlossomPetalsOverlay } from "@/components/effects/blossom-petals";
@@ -21,7 +21,7 @@ import { ASSETS } from "@/lib/demo-data";
 const DEFAULT_PRODUCTS: CuratedProduct[] = [
   {
     id: "eny-001",
-    name: "Enaya's Mint Green Embroidered Pakistani Lawn 3-Piece",
+    name: "3 sis xclusive Mint Green Embroidered Pakistani Lawn 3-Piece",
     category: "Pakistani Lawn Collection",
     price: 3850,
     compareAtPrice: 4400,
@@ -109,7 +109,7 @@ const DEFAULT_PRODUCTS: CuratedProduct[] = [
     category: "Party Wear & Festive Organza",
     price: 7450,
     compareAtPrice: 8500,
-    image: ASSETS.img9,
+    image: ASSETS.img1,
     secondaryImage: ASSETS.img3,
     slug: "sage-green-embroidered-organza-luxury-festive-3piece",
     tag: "OPEN PARCEL",

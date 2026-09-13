@@ -99,18 +99,18 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
   // Sync with localStorage on mount
   useEffect(() => {
     // Load saved coupon
-    const saved = localStorage.getItem("enayas_applied_coupon");
+    const saved = localStorage.getItem("3sis_applied_coupon");
     if (saved) {
       try {
         const parsed = JSON.parse(saved);
         setAppliedCoupon(parsed);
       } catch {
-        localStorage.removeItem("enayas_applied_coupon");
+        localStorage.removeItem("3sis_applied_coupon");
       }
     }
     
     // Load pending custom notes
-    const customNote = localStorage.getItem("enayas_pending_custom_note");
+    const customNote = localStorage.getItem("3sis_pending_custom_note");
     if (customNote) {
       setTimeout(() => {
         setNote(customNote);
@@ -177,7 +177,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
     };
 
     setAppliedCoupon(couponData);
-    localStorage.setItem("enayas_applied_coupon", JSON.stringify(couponData));
+    localStorage.setItem("3sis_applied_coupon", JSON.stringify(couponData));
     setCouponSuccess(`"${code}" applied successfully!`);
     setCouponInput("");
     setIsApplyingCoupon(false);
@@ -186,7 +186,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
   // Remove Coupon Handler
   const handleRemoveCoupon = () => {
     setAppliedCoupon(null);
-    localStorage.removeItem("enayas_applied_coupon");
+    localStorage.removeItem("3sis_applied_coupon");
     setCouponError("");
     setCouponSuccess("");
     setCouponInput("");
@@ -264,15 +264,15 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
       setConfirmedTotal(total); // Capture the exact finalized total BEFORE cart is cleared!
       setOrderPlaced(true);
       clearCart();
-      localStorage.removeItem("enayas_applied_coupon");
-      localStorage.removeItem("enayas_pending_custom_note");
+      localStorage.removeItem("3sis_applied_coupon");
+      localStorage.removeItem("3sis_pending_custom_note");
 
       // Fire confetti!
       confetti({
         particleCount: 150,
         spread: 70,
         origin: { y: 0.6 },
-        colors: ["#3D0B3D", "#D4AF37", "#F48FB1", "#FAF7F5"],
+        colors: ["#8B263E", "#D4AF37", "#F48FB1", "#FAF7F5"],
         disableForReducedMotion: true,
       });
     } else {
@@ -297,7 +297,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
         </div>
         <Link
           href="/collections/new-arrivals"
-          className="inline-flex items-center justify-center h-12 px-8 bg-[#3D0B3D] hover:bg-[#2E062E] text-[#d4af37] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm active:scale-95 shadow-md"
+          className="inline-flex items-center justify-center h-12 px-8 bg-[#8B263E] hover:bg-[#2E062E] text-[#d4af37] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm active:scale-95 shadow-md"
         >
           Start Shopping
         </Link>
@@ -316,8 +316,8 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-[#1e1622]">
             Order Confirmed!
           </h2>
-          <p className="text-xs text-[#3D0B3D] uppercase tracking-widest max-w-md mx-auto leading-relaxed font-bold">
-            Thank you for choosing Enaya&apos;s | Sylhet. We will call you from 01766-568408 to confirm your order and delivery.
+          <p className="text-xs text-[#8B263E] uppercase tracking-widest max-w-md mx-auto leading-relaxed font-bold">
+            Thank you for choosing 3 sis xclusive. We will call you from 01674-054386 to confirm your order and delivery.
           </p>
         </div>
 
@@ -342,20 +342,20 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
             <span className="text-[#8b1a2a] uppercase tracking-wider font-bold">
               Total Amount:
             </span>
-            <span className="font-bold text-[#3D0B3D] text-sm">{formatPrice(confirmedTotal)}</span>
+            <span className="font-bold text-[#8B263E] text-sm">{formatPrice(confirmedTotal)}</span>
           </div>
         </div>
 
         <div className="pt-4 max-w-md mx-auto space-y-3">
           <Link
             href="/track-order"
-            className="flex items-center justify-center w-full h-12 bg-[#3D0B3D] text-[#d4af37] text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#2E062E] transition-all duration-300 rounded-sm active:scale-95 shadow-md"
+            className="flex items-center justify-center w-full h-12 bg-[#8B263E] text-[#d4af37] text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#2E062E] transition-all duration-300 rounded-sm active:scale-95 shadow-md"
           >
             Track Order Status
           </Link>
           <Link
             href="/"
-            className="flex items-center justify-center w-full h-11 border border-[#3D0B3D]/30 bg-white text-[#3D0B3D] hover:bg-[#3D0B3D]/5 text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 rounded-sm"
+            className="flex items-center justify-center w-full h-11 border border-[#8B263E]/30 bg-white text-[#8B263E] hover:bg-[#8B263E]/5 text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 rounded-sm"
           >
             Continue Shopping
           </Link>
@@ -378,13 +378,13 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
             onClick={() => setCurrentStep(1)}
             className={`flex-1 py-3 px-3 md:px-4 rounded-md text-[11px] md:text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all cursor-pointer ${
               currentStep === 1
-                ? "bg-[#3D0B3D] text-[#d4af37] shadow-sm"
+                ? "bg-[#8B263E] text-[#d4af37] shadow-sm"
                 : "bg-white/60 text-muted-foreground hover:text-foreground border border-border/20"
             }`}
           >
             <span
               className={`size-5 rounded-full text-[10px] flex items-center justify-center font-mono font-bold ${
-                currentStep === 1 ? "bg-[#d4af37] text-[#3D0B3D]" : "bg-neutral-200 text-neutral-700"
+                currentStep === 1 ? "bg-[#d4af37] text-[#8B263E]" : "bg-neutral-200 text-neutral-700"
               }`}
             >
               1
@@ -403,13 +403,13 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
             }}
             className={`flex-1 py-3 px-3 md:px-4 rounded-md text-[11px] md:text-xs font-bold uppercase tracking-wider flex items-center justify-center gap-2 transition-all cursor-pointer ${
               currentStep === 2
-                ? "bg-[#3D0B3D] text-[#d4af37] shadow-sm"
+                ? "bg-[#8B263E] text-[#d4af37] shadow-sm"
                 : "bg-white/60 text-muted-foreground hover:text-foreground border border-border/20"
             }`}
           >
             <span
               className={`size-5 rounded-full text-[10px] flex items-center justify-center font-mono font-bold ${
-                currentStep === 2 ? "bg-[#d4af37] text-[#3D0B3D]" : "bg-neutral-200 text-neutral-700"
+                currentStep === 2 ? "bg-[#d4af37] text-[#8B263E]" : "bg-neutral-200 text-neutral-700"
               }`}
             >
               2
@@ -607,7 +607,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
               <button
                 type="button"
                 onClick={handleNextStep}
-                className="flex items-center justify-center w-full h-13 bg-[#3D0B3D] hover:bg-[#2E062E] text-[#d4af37] font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 shadow-md rounded-sm cursor-pointer active:scale-98"
+                className="flex items-center justify-center w-full h-13 bg-[#8B263E] hover:bg-[#2E062E] text-[#d4af37] font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 shadow-md rounded-sm cursor-pointer active:scale-98"
               >
                 Proceed to Step 2: Payment & Review →
               </button>
@@ -622,7 +622,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
             <div className="bg-[#fcf9f2] border border-[#d4af37]/40 rounded-lg p-5 flex items-center justify-between shadow-2xs">
               <div className="space-y-1">
                 <div className="flex items-center gap-2">
-                  <span className="text-xs font-bold text-[#3D0B3D] uppercase tracking-wider">
+                  <span className="text-xs font-bold text-[#8B263E] uppercase tracking-wider">
                     {address.name || "Receiver Name"}
                   </span>
                   <span className="text-xs font-mono font-medium text-foreground">
@@ -636,7 +636,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
               <button
                 type="button"
                 onClick={() => setCurrentStep(1)}
-                className="text-[10px] font-bold uppercase tracking-wider text-[#3D0B3D] hover:underline cursor-pointer bg-white px-3 py-1.5 border border-[#3D0B3D]/20 rounded-xs shadow-3xs"
+                className="text-[10px] font-bold uppercase tracking-wider text-[#8B263E] hover:underline cursor-pointer bg-white px-3 py-1.5 border border-[#8B263E]/20 rounded-xs shadow-3xs"
               >
                 Edit Address
               </button>
@@ -843,14 +843,14 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
               <button
                 type="button"
                 onClick={() => setCurrentStep(1)}
-                className="flex-1 h-12 border border-[#3D0B3D]/30 bg-white text-[#3D0B3D] hover:bg-[#3D0B3D]/5 font-bold text-xs uppercase tracking-[0.15em] transition-all duration-300 rounded-sm cursor-pointer"
+                className="flex-1 h-12 border border-[#8B263E]/30 bg-white text-[#8B263E] hover:bg-[#8B263E]/5 font-bold text-xs uppercase tracking-[0.15em] transition-all duration-300 rounded-sm cursor-pointer"
               >
                 ← Back to Step 1
               </button>
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="flex-2 h-12 bg-[#3D0B3D] hover:bg-[#2E062E] text-[#d4af37] font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 disabled:opacity-40 cursor-pointer shadow-md rounded-sm active:scale-98 animate-pulse-glow"
+                className="flex-2 h-12 bg-[#8B263E] hover:bg-[#2E062E] text-[#d4af37] font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 disabled:opacity-40 cursor-pointer shadow-md rounded-sm active:scale-98 animate-pulse-glow"
               >
                 {isSubmitting ? "Processing Order..." : "Confirm & Place Order"}
               </button>
@@ -970,7 +970,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
                     type="button"
                     onClick={() => handleApplyCoupon()}
                     disabled={isApplyingCoupon}
-                    className="h-10 px-4 bg-[#3D0B3D] hover:bg-[#2E062E] text-[#d4af37] text-[10px] font-bold uppercase tracking-[0.15em] transition-all disabled:opacity-50 cursor-pointer whitespace-nowrap rounded-sm shadow-sm"
+                    className="h-10 px-4 bg-[#8B263E] hover:bg-[#2E062E] text-[#d4af37] text-[10px] font-bold uppercase tracking-[0.15em] transition-all disabled:opacity-50 cursor-pointer whitespace-nowrap rounded-sm shadow-sm"
                   >
                     {isApplyingCoupon ? "..." : "Apply"}
                   </button>
@@ -984,17 +984,17 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
                   <div className="flex flex-wrap gap-2">
                     <button
                       type="button"
-                      onClick={() => handleApplyCoupon("ENAYA10")}
-                      className="text-[9px] font-mono font-bold px-2.5 py-1 bg-white border border-dashed border-[#d4af37] text-[#3D0B3D] hover:bg-[#3D0B3D]/5 rounded-xs transition-all shadow-3xs cursor-pointer active:scale-95"
+                      onClick={() => handleApplyCoupon("3SIS10")}
+                      className="text-[9px] font-mono font-bold px-2.5 py-1 bg-white border border-dashed border-[#d4af37] text-[#8B263E] hover:bg-[#8B263E]/5 rounded-xs transition-all shadow-3xs cursor-pointer active:scale-95"
                     >
-                      ENAYA10 (10% OFF)
+                      3SIS10 (10% OFF)
                     </button>
                     <button
                       type="button"
-                      onClick={() => handleApplyCoupon("ENAYASVIP")}
-                      className="text-[9px] font-mono font-bold px-2.5 py-1 bg-white border border-dashed border-[#d4af37] text-[#3D0B3D] hover:bg-[#3D0B3D]/5 rounded-xs transition-all shadow-3xs cursor-pointer active:scale-95"
+                      onClick={() => handleApplyCoupon("3SISVIP")}
+                      className="text-[9px] font-mono font-bold px-2.5 py-1 bg-white border border-dashed border-[#d4af37] text-[#8B263E] hover:bg-[#8B263E]/5 rounded-xs transition-all shadow-3xs cursor-pointer active:scale-95"
                     >
-                      ENAYASVIP (15% VIP)
+                      3SISVIP (15% VIP)
                     </button>
                   </div>
                 </div>
@@ -1064,7 +1064,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
             <button
               type="button"
               onClick={handleNextStep}
-              className="flex items-center justify-center w-full h-13 bg-[#3D0B3D] hover:bg-[#2E062E] text-[#d4af37] font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 shadow-md rounded-sm cursor-pointer active:scale-98"
+              className="flex items-center justify-center w-full h-13 bg-[#8B263E] hover:bg-[#2E062E] text-[#d4af37] font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 shadow-md rounded-sm cursor-pointer active:scale-98"
             >
               Continue to Step 2: Payment →
             </button>
@@ -1072,7 +1072,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
             <button
               type="submit"
               disabled={isSubmitting}
-              className="flex items-center justify-center w-full h-13 bg-[#3D0B3D] hover:bg-[#2E062E] text-[#d4af37] font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 disabled:opacity-40 cursor-pointer shadow-md rounded-sm active:scale-98 animate-pulse-glow"
+              className="flex items-center justify-center w-full h-13 bg-[#8B263E] hover:bg-[#2E062E] text-[#d4af37] font-bold text-xs uppercase tracking-[0.2em] transition-all duration-300 disabled:opacity-40 cursor-pointer shadow-md rounded-sm active:scale-98 animate-pulse-glow"
             >
               {isSubmitting ? "Processing Luxury Order..." : "Confirm & Place Order"}
             </button>

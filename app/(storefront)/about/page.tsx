@@ -6,16 +6,16 @@ import { BUSINESS } from "@/lib/constants";
 import { ASSETS } from "@/lib/demo-data";
 
 export const metadata: Metadata = {
-  title: "About Us | Enaya's | Sylhet",
+  title: "About Us | 3 sis xclusive",
   description:
-    "Discover Enaya's | Sylhet — Authentic Pakistani Luxury Lawn, Designer Pret, and Festive Couture with our physical outlet at Parents View 1st Floor, 20 Nayasarak Point, Sylhet.",
+    "Discover 3 sis xclusive — Authentic Pakistani Luxury Lawn, Designer Pret, and Festive Couture with our physical outlet at Parents View 1st Floor, 20 Nayasarak Point, Sylhet.",
 };
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#faf7f5]">
       {/* Hero Banner */}
-      <section className="relative py-20 md:py-28 bg-[#3D0B3D] text-white overflow-hidden">
+      <section className="relative py-20 md:py-28 bg-[#8B263E] text-white overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.18),transparent_70%)] pointer-events-none" />
         <div className="container mx-auto px-6 md:px-12 text-center relative z-10 max-w-3xl">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 mb-4">
@@ -25,7 +25,7 @@ export default function AboutPage() {
             </span>
           </div>
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight font-heading mb-4 text-white">
-            Enaya&apos;s | Sylhet
+            3 sis xclusive
           </h1>
           <p className="text-sm md:text-base text-neutral-200 leading-relaxed font-sans max-w-2xl mx-auto">
             Sylhet&apos;s premier destination for 100% original Pakistani luxury lawn, designer festive pret, regal velvet, and boutique jewelry — operating our flagship outlet at Nayasarak Point with an honest Open Parcel Policy.
@@ -40,12 +40,12 @@ export default function AboutPage() {
           <div className="lg:col-span-6 relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-[#ebdcd0] bg-neutral-900">
             <Image
               src={ASSETS.img2}
-              alt="Enaya's Sylhet Boutique Outlet"
+              alt="3 sis xclusive Sylhet Boutique Outlet"
               fill
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
-            <div className="absolute bottom-4 left-4 right-4 bg-[#3D0B3D]/95 backdrop-blur-md border border-[#D4AF37]/40 px-5 py-3 rounded-xl text-white shadow-lg">
+            <div className="absolute bottom-4 left-4 right-4 bg-[#8B263E]/95 backdrop-blur-md border border-[#D4AF37]/40 px-5 py-3 rounded-xl text-white shadow-lg">
               <p className="text-[9px] uppercase tracking-[0.22em] font-bold text-[#D4AF37] flex items-center gap-1.5">
                 <MapPin className="h-3.5 w-3.5 text-[#D4AF37]" />
                 FLAGSHIP OUTLET
@@ -57,7 +57,7 @@ export default function AboutPage() {
           {/* Narrative */}
           <div className="lg:col-span-6 space-y-6">
             <div className="space-y-2">
-              <span className="text-[10px] uppercase tracking-[0.25em] text-[#3D0B3D] font-bold">
+              <span className="text-[10px] uppercase tracking-[0.25em] text-[#8B263E] font-bold">
                 আমাদের দর্শন • OUR MISSION
               </span>
               <h2 className="text-2xl md:text-4xl font-bold text-[#1e1622] font-heading leading-tight">
@@ -65,34 +65,34 @@ export default function AboutPage() {
               </h2>
             </div>
 
-            <div className="border-l-2 border-[#D4AF37] pl-4 py-1 text-[#3D0B3D] italic text-sm font-serif">
+            <div className="border-l-2 border-[#D4AF37] pl-4 py-1 text-[#8B263E] italic text-sm font-serif">
               &ldquo;We don&apos;t just sell dresses; we curate heirloom Pakistani garments and welcome every customer with complete transparency.&rdquo;
             </div>
 
             <p className="text-sm text-neutral-600 leading-relaxed">
-              সিলেটের প্রাণকেন্দ্র নয়াসড়ক পয়েন্টে আমাদের নিজস্ব ফ্ল্যাগশিপ আউটলেট (Parents View 1st Floor) এবং অনলাইনে ৩৪,০০০+ সদস্যের সক্রিয় ফেসবুক পরিবারের মাধ্যমে Enaya&apos;s আজ এক বিশ্বস্ত নাম। আমরা সরাসরি পাকিস্তান থেকে আসল Aghanoor, Sadabahar, Gul Ahmed, Maria.B ও Sana Safinaz-এর এক্সক্লুসিভ কালেকশন সংগ্রহ করি।
+              সিলেটের প্রাণকেন্দ্র নয়াসড়ক পয়েন্টে আমাদের নিজস্ব ফ্ল্যাগশিপ আউটলেট (Parents View 1st Floor) এবং অনলাইনে ৫৩,০০০+ সদস্যের সক্রিয় ফেসবুক পরিবারের মাধ্যমে 3 sis xclusive আজ এক বিশ্বস্ত নাম। আমরা সরাসরি পাকিস্তান থেকে আসল Aghanoor, Sadabahar, Gul Ahmed, Maria.B ও Sana Safinaz-এর এক্সক্লুসিভ কালেকশন সংগ্রহ করি।
             </p>
 
             <p className="text-sm text-neutral-600 leading-relaxed">
-              অনলাইনে কেনাকাটায় বিশ্বাস বাড়াতে আমাদের প্রতিটি ডেলিভারিতে রয়েছে <strong className="text-[#3D0B3D]">Open Parcel Policy</strong> — পার্সেল হাতে পেয়ে ডেলিভারিম্যানের সামনে কাপড়, এম্ব্রয়ডারি ও সাইজ মিলিয়ে দেখে তারপর টাকা পরিশোধের শতভাগ নিশ্চয়তা।
+              অনলাইনে কেনাকাটায় বিশ্বাস বাড়াতে আমাদের প্রতিটি ডেলিভারিতে রয়েছে <strong className="text-[#8B263E]">Open Parcel Policy</strong> — পার্সেল হাতে পেয়ে ডেলিভারিম্যানের সামনে কাপড়, এম্ব্রয়ডারি ও সাইজ মিলিয়ে দেখে তারপর টাকা পরিশোধের শতভাগ নিশ্চয়তা।
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 py-4 border-t border-b border-[#ebdcd0]">
               <div className="text-center">
-                <p className="text-2xl font-bold text-[#3D0B3D]">34K+</p>
+                <p className="text-2xl font-bold text-[#8B263E]">53K+</p>
                 <p className="text-[10px] uppercase tracking-wide text-neutral-500 font-bold mt-1">
                   FB Community
                 </p>
               </div>
               <div className="text-center border-x border-[#ebdcd0]">
-                <p className="text-2xl font-bold text-[#3D0B3D]">100%</p>
+                <p className="text-2xl font-bold text-[#8B263E]">100%</p>
                 <p className="text-[10px] uppercase tracking-wide text-neutral-500 font-bold mt-1">
                   Original Pret
                 </p>
               </div>
               <div className="text-center">
-                <p className="text-2xl font-bold text-[#3D0B3D]">Open Parcel</p>
+                <p className="text-2xl font-bold text-[#8B263E]">Open Parcel</p>
                 <p className="text-[10px] uppercase tracking-wide text-neutral-500 font-bold mt-1">
                   COD Check
                 </p>
@@ -106,7 +106,7 @@ export default function AboutPage() {
       <section className="py-16 bg-[#f5efe9] px-6 border-t border-[#ebdcd0]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[10px] uppercase tracking-[0.25em] text-[#3D0B3D] font-bold mb-2">
+            <p className="text-[10px] uppercase tracking-[0.25em] text-[#8B263E] font-bold mb-2">
               আমাদের সিগনেচার কালেকশন
             </p>
             <h2 className="text-3xl font-bold text-[#1e1622] font-heading">Boutique Curations</h2>
@@ -147,14 +147,14 @@ export default function AboutPage() {
               {
                 name: "Boutique Jewelry",
                 desc: "Handcrafted kundan jhumkas, meenakari chokers, and festive statement pieces.",
-                img: ASSETS.img10,
+                img: ASSETS.img2,
                 href: "/collections/jewelry",
               },
             ].map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="group relative rounded-2xl overflow-hidden bg-white shadow-xs hover:shadow-lg transition-all duration-300 border border-[#ebdcd0] hover:border-[#3D0B3D]"
+                className="group relative rounded-2xl overflow-hidden bg-white shadow-xs hover:shadow-lg transition-all duration-300 border border-[#ebdcd0] hover:border-[#8B263E]"
               >
                 <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100">
                   <Image
@@ -180,31 +180,31 @@ export default function AboutPage() {
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold text-[#1e1622] mb-4 font-heading">সরাসরি আউটলেটে আসুন অথবা যোগাযোগ করুন</h2>
           <p className="text-neutral-600 mb-10 max-w-xl mx-auto text-sm">
-            নয়াসড়ক পয়েন্টের শোরুমে এসে ট্রায়াল দিয়ে পছন্দ করতে পারেন অথবা সরাসরি WhatsApp বা Facebook-এ অর্ডার করতে পারেন।
+            আমাদের ১৭ বছরের বিশ্বস্ত সেবা এবং এক্সক্লুসিভ পাকিস্তানি কালেকশন উপভোগ করুন। সরাসরি WhatsApp বা Facebook-এ অর্ডার করুন অথবা ওয়েবসাইট থেকে সহজে চেকআউট করুন।
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl p-6 border border-[#ebdcd0] shadow-xs">
-              <div className="w-10 h-10 rounded-full bg-[#fdf5fa] text-[#3D0B3D] flex items-center justify-center mx-auto mb-3">
+              <div className="w-10 h-10 rounded-full bg-[#fdf5fa] text-[#8B263E] flex items-center justify-center mx-auto mb-3">
                 <MapPin className="h-5 w-5" />
               </div>
               <h3 className="font-bold text-[#1e1622] text-sm mb-2">আউটলেট ঠিকানা</h3>
               <p className="text-xs text-neutral-600 leading-relaxed">
                 {BUSINESS.ADDRESS}
               </p>
-              <p className="text-[11px] text-[#3D0B3D] font-semibold mt-2">
+              <p className="text-[11px] text-[#8B263E] font-semibold mt-2">
                 Sat–Thu: 10:30 AM – 9:30 PM | Fri: 3:00 PM – 10:00 PM
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-[#ebdcd0] shadow-xs">
-              <div className="w-10 h-10 rounded-full bg-[#fdf5fa] text-[#3D0B3D] flex items-center justify-center mx-auto mb-3">
+              <div className="w-10 h-10 rounded-full bg-[#fdf5fa] text-[#8B263E] flex items-center justify-center mx-auto mb-3">
                 <Phone className="h-5 w-5" />
               </div>
               <h3 className="font-bold text-[#1e1622] text-sm mb-2">ফোন ও WhatsApp</h3>
               <a
                 href={`tel:${BUSINESS.PHONE}`}
-                className="text-xs text-[#3D0B3D] font-bold hover:underline block"
+                className="text-xs text-[#8B263E] font-bold hover:underline block"
               >
                 {BUSINESS.PHONE}
               </a>
@@ -219,7 +219,7 @@ export default function AboutPage() {
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-[#ebdcd0] shadow-xs">
-              <div className="w-10 h-10 rounded-full bg-[#fdf5fa] text-[#3D0B3D] flex items-center justify-center mx-auto mb-3">
+              <div className="w-10 h-10 rounded-full bg-[#fdf5fa] text-[#8B263E] flex items-center justify-center mx-auto mb-3">
                 <svg className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                 </svg>
@@ -229,9 +229,9 @@ export default function AboutPage() {
                 href={BUSINESS.FACEBOOK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-[#3D0B3D] font-bold hover:underline"
+                className="text-xs text-[#8B263E] font-bold hover:underline"
               >
-                facebook.com/Enayas.Sylhet
+                facebook.com/3.sis.xclusive
               </a>
             </div>
           </div>
@@ -239,7 +239,7 @@ export default function AboutPage() {
           <div className="mt-10">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center h-12 px-10 bg-[#3D0B3D] text-white text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#280728] transition-all duration-300 rounded-full shadow-md border border-[#D4AF37]/40 active:scale-[0.98]"
+              className="inline-flex items-center justify-center h-12 px-10 bg-[#8B263E] text-white text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#5E182A] transition-all duration-300 rounded-full shadow-md border border-[#D4AF37]/40 active:scale-[0.98]"
             >
               Contact Us Page →
             </Link>

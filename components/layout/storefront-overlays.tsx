@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Blossom — Storefront Client Overlays
+ * 3 sis xclusive — Storefront Client Overlays
  * Wraps dynamic overlays in a Client Component boundary for Next.js App Router
  */
 
@@ -42,7 +42,7 @@ export function StorefrontOverlays() {
       <ScrollReveal />
       <ScrollProgress />
       <BackToTop />
-      <FloatingChat phoneNumber="8801766568408" messengerUrl="https://m.me/Enayas.Sylhet" />
+      <FloatingChat phoneNumber="8801674054386" messengerUrl="https://m.me/3.sis.xclusive" />
       <PageTracker />
     </>
   );

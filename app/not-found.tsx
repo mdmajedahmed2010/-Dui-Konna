@@ -1,5 +1,5 @@
 /**
- * Enaya's | Sylhet — 404 Not Found Page
+ * 3 sis xclusive — 404 Not Found Page
  * Authentic Pakistani Luxury Suits & Designer Collections
  * Outlet: Parents View 1st Floor, 20 Nayasarak Point, Sylhet
  */
@@ -32,7 +32,7 @@ export default function NotFound() {
             পেজটি পাওয়া যাচ্ছে না
           </h1>
           <p className="text-sm text-neutral-600 leading-relaxed max-w-sm mx-auto font-medium">
-            দুঃখিত, আপনি যে পেজটি খুঁজছেন সেটি সরানো হয়েছে বা আর নেই। Enaya&apos;s | Sylhet-এর এক্সক্লুসিভ কালেকশন দেখতে হোমপেজে ফিরে যান।
+            দুঃখিত, আপনি যে পেজটি খুঁজছেন সেটি সরানো হয়েছে বা আর নেই। 3 sis xclusive-এর এক্সক্লুসিভ কালেকশন দেখতে হোমপেজে ফিরে যান।
           </p>
         </div>
 
@@ -40,7 +40,7 @@ export default function NotFound() {
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white border border-[#D4AF37]/40 shadow-xs">
           <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
           <p className="text-[11px] text-[#3D0B3D] font-bold tracking-wide uppercase">
-            Enaya&apos;s | Sylhet — 100% Original Pakistani Pret
+            3 sis xclusive — 100% Original Pakistani Pret
           </p>
           <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
         </div>

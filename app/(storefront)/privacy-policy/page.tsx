@@ -1,7 +1,7 @@
 /**
- * Enaya's | Sylhet — Privacy Policy
+ * 3 sis xclusive — Privacy Policy
  * Authentic Pakistani Luxury Suits & Designer Collections
- * Outlet: Parents View 1st Floor, 20 Nayasarak Point, Sylhet
+ * Outlet: Sylhet, Bangladesh
  */
 
 import type { Metadata } from "next";
@@ -10,16 +10,16 @@ import { Sparkles, ShieldCheck } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Enaya's | Sylhet",
+  title: "Privacy Policy — 3 sis xclusive",
   description:
-    "Enaya's | Sylhet Privacy Policy: আমরা আপনার ব্যক্তিগত তথ্যের নিরাপত্তাকে সর্বোচ্চ গুরুত্ব দিই।",
+    "3 sis xclusive Privacy Policy: আমরা আপনার ব্যক্তিগত তথ্যের নিরাপত্তাকে সর্বোচ্চ গুরুত্ব দিই।",
 };
 
 const privacySections = [
   {
     id: "01",
     title: "আমরা কোন তথ্য সংগ্রহ করি?",
-    content: `আপনি যখন আমাদের ওয়েবসাইট, WhatsApp (01766-568408) বা Facebook Page-এ অর্ডার বা ইনকোয়ারি করেন, তখন আমরা নিচের তথ্য সংগ্রহ করি:
+    content: `আপনি যখন আমাদের ওয়েবসাইট, WhatsApp (01674-054386) বা Facebook Page-এ অর্ডার বা ইনকোয়ারি করেন, তখন আমরা নিচের তথ্য সংগ্রহ করি:
 • আপনার নাম
 • মোবাইল / ফোন নম্বর
 • ডেলিভারি ঠিকানা (সিলেট অথবা দেশের অন্যান্য জেলা)
@@ -68,7 +68,7 @@ export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-[#faf7f5]">
       {/* Page Header */}
-      <section className="bg-[#3D0B3D] py-16 md:py-24 px-6 text-center relative overflow-hidden">
+      <section className="bg-[#8B263E] py-16 md:py-24 px-6 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-[#D4AF37] -translate-x-1/2 translate-y-1/2 blur-2xl" />
         </div>
@@ -88,7 +88,7 @@ export default function PrivacyPolicyPage() {
       </section>
 
       {/* Commitment Strip */}
-      <section className="bg-[#3D0B3D] py-4 px-6 text-center border-t border-[#D4AF37]/30">
+      <section className="bg-[#8B263E] py-4 px-6 text-center border-t border-[#D4AF37]/30">
         <p className="text-[#faf7f5] text-sm font-semibold tracking-wide">
           ✦ আপনার তথ্য কখনোই তৃতীয় পক্ষের কাছে বিক্রি বা অপব্যবহার করা হয় না ✦
         </p>
@@ -100,7 +100,7 @@ export default function PrivacyPolicyPage() {
           {/* Intro */}
           <div className="bg-white border border-[#ebdcd0] rounded-2xl p-6 md:p-8 mb-8 border-l-4 border-l-[#D4AF37] shadow-xs">
             <p className="text-sm text-neutral-600 leading-relaxed font-medium">
-              Enaya&apos;s | Sylhet আপনার আস্থাকে সর্বোচ্চ মূল্যায়ন করে। এই গোপনীয়তা নীতি
+              3 sis xclusive আপনার আস্থাকে সর্বোচ্চ মূল্যায়ন করে। এই গোপনীয়তা নীতি
               আপনাকে স্পষ্টভাবে অবহিত করে আমরা কোন তথ্য সংগ্রহ করি, কীভাবে ব্যবহার করি এবং কীভাবে সুরক্ষিত রাখি।
               আমাদের ওয়েবসাইট বা ফেসবুক পেজের মাধ্যমে কেনাকাটা করার মাধ্যমে আপনি এই নীতিমালায় সম্মতি প্রদান করছেন।
             </p>
@@ -111,10 +111,10 @@ export default function PrivacyPolicyPage() {
             {privacySections.map((section) => (
               <div
                 key={section.id}
-                className="bg-white border border-[#ebdcd0] rounded-2xl p-6 border-l-4 border-l-[#3D0B3D] shadow-xs"
+                className="bg-white border border-[#ebdcd0] rounded-2xl p-6 border-l-4 border-l-[#8B263E] shadow-xs"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-[11px] font-mono text-[#3D0B3D] font-bold bg-[#fdf5fa] px-2.5 py-0.5 rounded-full border border-[#f0d0e6]">
+                  <span className="text-[11px] font-mono text-[#8B263E] font-bold bg-[#fdf5fa] px-2.5 py-0.5 rounded-full border border-[#f0d0e6]">
                     {section.id}
                   </span>
                   <h2 className="text-base font-bold text-[#1e1622]">{section.title}</h2>
@@ -145,7 +145,7 @@ export default function PrivacyPolicyPage() {
               </a>
               <a
                 href={`mailto:${BUSINESS.EMAIL}`}
-                className="inline-flex items-center justify-center h-12 px-7 border-2 border-[#3D0B3D] text-[#3D0B3D] text-xs font-bold uppercase tracking-[0.14em] rounded-full hover:bg-[#3D0B3D] hover:text-white transition-all"
+                className="inline-flex items-center justify-center h-12 px-7 border-2 border-[#8B263E] text-[#8B263E] text-xs font-bold uppercase tracking-[0.14em] rounded-full hover:bg-[#8B263E] hover:text-white transition-all"
               >
                 {BUSINESS.EMAIL}
               </a>
@@ -154,18 +154,18 @@ export default function PrivacyPolicyPage() {
 
           {/* Policy Links */}
           <div className="flex items-center justify-center gap-6 text-xs text-neutral-500 pt-8 font-semibold uppercase tracking-wider">
-            <Link href="/terms" className="hover:text-[#3D0B3D] transition-colors">
+            <Link href="/terms" className="hover:text-[#8B263E] transition-colors">
               Terms & Conditions
             </Link>
             <span className="text-[#D4AF37]">·</span>
             <Link
               href="/refund-policy"
-              className="hover:text-[#3D0B3D] transition-colors"
+              className="hover:text-[#8B263E] transition-colors"
             >
               Refund Policy
             </Link>
             <span className="text-[#D4AF37]">·</span>
-            <Link href="/contact" className="hover:text-[#3D0B3D] transition-colors">
+            <Link href="/contact" className="hover:text-[#8B263E] transition-colors">
               Contact Us
             </Link>
           </div>

@@ -1,77 +1,68 @@
 /**
- * Enaya's | Sylhet — Product Data & Catalog
- * Elevate Your Style | Luxury Women's Boutique & Authentic Pakistani Designer Fashion
- * Nayasarak Point, Sylhet, Bangladesh — https://www.facebook.com/Enayas.Sylhet/
- * All images served locally from /public/enayas-assets/
+ * 3 sis xclusive | Sylhet — Product Data & Catalog
+ * JUST FOR WOMEN | 17 Years of Trust in Fashion
+ * Authentic Pakistani Designer Fashion & Luxury Ethnic Wear
+ * Website: https://3sisxclusivebd.com — https://www.facebook.com/3.sis.xclusive/
+ * Images served locally from /3sis-assets/ and /logo.jpg, /banner.jpg
  */
 
 import type { ProductCardProps } from "@/components/product/product-card";
 
 // ═══════════════════════════════════════════
-// Asset image paths (local, /public/enayas-assets/)
+// Asset image paths (local, /3sis-assets/)
 // ═══════════════════════════════════════════
 export const ASSETS = {
   logo: "/logo.jpg",
   banner: "/banner.jpg",
   heroImage: "/banner.jpg",
-  img1: "/enayas-assets/719352002_1286458136803756_4691248053674653785_n.jpg", // Ivory Kurti with Navy Embroidery & Palazzo
-  img2: "/enayas-assets/715711023_1284853183630918_5862540271831156994_n.jpg", // Boutique Racks with Enaya's Tags
-  img3: "/enayas-assets/719135606_1286458063470430_8962135561909446686_n.jpg", // Midnight Black Zardozi Festive Suit
-  img4: "/enayas-assets/675125574_1249000667216170_7745782444532547030_n.jpg", // Powder Blue Embroidered 3pc Suit
-  img5: "/enayas-assets/707826824_1279140170868886_3190213517486885594_n.jpg", // Crimson Magenta Suit with Lime Dupatta
-  img6: "/enayas-assets/709737585_1279951017454468_6214352059036910036_n.jpg", // Russian Silk Champagne Handmade Adda Kurti
-  img7: "/enayas-assets/709865523_1278333164282920_1859523836051406463_n.jpg", // Mint Green Pakistani Lawn Suit
-  img8: "/enayas-assets/668325784_1238512208265016_877673681815563832_n.jpg", // Pure Cotton White Farsi Kurti
-  img9: "/enayas-assets/707774863_1279140164202220_9001242221184187792_n.jpg", // Sage Green Organza Client Review
-  img10: "/enayas-assets/710651719_1279138907535679_2355904992786898129_n.jpg", // Pink Striped Kurti with Floral Trouser
-  img11: "/enayas-assets/710651720_1279138910869012_4457400297116198386_n.jpg", // Full Client Feedback Ensemble
-  img12: "/enayas-assets/719352002_1286458136803756_4691248053674653785_n.jpg",
+  // 8 Unique Authenticated Pakistani Suits from 3 sis xclusive Facebook Gallery
+  img1: "/3sis-assets/800826258_1506801031481814_6303140000895666714_n.jpg", // Midnight Black & Fuchsia Floral Pakistani Lawn 3-Piece
+  img2: "/3sis-assets/800924822_1506800981481819_6411551772502174700_n.jpg", // Mustard Yellow Floral Embroidered Festive Lawn 3-Piece
+  img3: "/3sis-assets/800965457_1506800931481824_8025347612245862636_n.jpg", // Royal Indigo Charcoal & Crimson Ajrakh/Floral Pure Lawn 3-Piece
+  img4: "/3sis-assets/801044933_1506800921481825_5686609464407597657_n.jpg", // Deep Navy Embroidered Floral Lawn Set with Scalloped Dupatta
+  img5: "/3sis-assets/801326646_1506801018148482_7421951335824253599_n.jpg", // Ruby Crimson & Cream Floral Luxury Embroidered Lawn 3-Piece
+  img6: "/3sis-assets/801786074_1506801001481817_7782460407854916585_n.jpg", // Powder Sky Blue Pastel Vintage Floral Lawn 3-Piece
+  img7: "/3sis-assets/801822238_1506800934815157_8101375858139007627_n.jpg", // Golden Ochre Traditional Paisley Embroidered 3-Piece
+  img8: "/3sis-assets/801882656_1506801004815150_4924522512836901216_n.jpg", // Lavender Orchid & Lemon Floral Printed 3-Piece
 };
 
 // ═══════════════════════════════════════════
-// Product Categories — Enaya's | Sylhet
+// Product Categories — 3 sis xclusive
 // ═══════════════════════════════════════════
 export const CATEGORIES = [
   {
     name: "Pakistani Lawn Collection",
     slug: "pakistani-lawn",
-    description: "Authentic premium Pakistani pure lawn 3-piece sets with intricate neckline needlework and lightweight dupattas.",
-    image: ASSETS.img7,
+    description: "100% directly imported authentic Pakistani pure lawn 3-piece sets with intricate threadwork neckline, digital prints, and breathable dupattas.",
+    image: ASSETS.img1,
     productCount: 8,
   },
   {
     name: "Designer Luxury & Pre-Orders",
     slug: "designer-luxury",
-    description: "100% original Sadabahar, Jaz & Russian Silk couture sets with handmade adda work and silk dupattas.",
-    image: ASSETS.img2,
+    description: "Original Pakistani designer couture sets featuring intricate zardozi, hand-cutwork embroidery, and pure silk dupattas.",
+    image: ASSETS.img5,
     productCount: 6,
   },
   {
     name: "Party Wear & Festive Organza",
     slug: "party-wear",
-    description: "Exquisite hand-embellished party ensembles, zardozi work, organza dupattas, and celebratory formal wear.",
-    image: ASSETS.img3,
+    description: "Exquisite hand-embellished festive ensembles, zardozi needlework, scalloped organza borders, and celebratory formal wear.",
+    image: ASSETS.img4,
     productCount: 7,
   },
   {
-    name: "Casual & Farsi Sets",
-    slug: "farsi-sets",
-    description: "Breathable pure cotton farsi sets, farsi salwars, and effortless daily luxury 2-piece and 3-piece suits.",
-    image: ASSETS.img1,
+    name: "Casual & Daily Chic Sets",
+    slug: "casual-sets",
+    description: "Ultra-breathable daily luxury Pakistani 3-piece sets designed for effortless elegance and summer comfort.",
+    image: ASSETS.img8,
     productCount: 5,
   },
   {
-    name: "Velvet & Winter Luxury",
-    slug: "velvet-luxury",
-    description: "Regal micro-velvet embroidered kaftans, winter shawls, and rich festive suits for the cooler seasons.",
+    name: "Vintage Florals & Pastels",
+    slug: "vintage-florals",
+    description: "Delicate pastel florals, powder blue hues, and antique botanical motifs crafted on premium cotton lawn.",
     image: ASSETS.img6,
-    productCount: 4,
-  },
-  {
-    name: "Boutique Jewelry & Beauty",
-    slug: "boutique-jewelry",
-    description: "Curated traditional earrings, festive jhumkas, and complementary styling accents for every ensemble.",
-    image: ASSETS.img5,
     productCount: 5,
   },
 ];
@@ -82,189 +73,134 @@ export const CATEGORIES = [
 export const FEATURED_COLLECTIONS = [
   {
     id: "col-pakistani-lawn-festive",
-    title: "Eid & Festive Lawn Edit",
+    title: "Eid & Summer Lawn Edit 2026",
     slug: "pakistani-lawn",
-    subtitle: "Authentic Pure Lawn 3-Piece Sets with Embroidered Dupattas",
-    image: ASSETS.img7,
+    subtitle: "Authentic Pakistani Pure Lawn 3-Piece Ensembles with Embroidered Dupattas",
+    image: ASSETS.img1,
     itemCount: 8,
   },
   {
-    id: "col-designer-preorders",
-    title: "Original Pakistani Designer Pre-Orders",
+    id: "col-designer-luxury",
+    title: "Direct Pakistani Luxury Imports",
     slug: "designer-luxury",
-    subtitle: "Sadabahar, Russian Silk & Luxury Handcrafted Pret",
-    image: ASSETS.img2,
+    subtitle: "17 Years of Trust — Original Pakistani Designer Pret & Silk Dupattas",
+    image: ASSETS.img5,
     itemCount: 6,
   },
   {
-    id: "col-signature-farsi",
-    title: "Enaya's Signature Farsi & Co-ords",
-    slug: "farsi-sets",
-    subtitle: "Pure Cotton Comfort with Artisanal Embroidery & Flared Salwars",
-    image: ASSETS.img1,
+    id: "col-vintage-pastels",
+    title: "Vintage Floral & Pastel Harmony",
+    slug: "vintage-florals",
+    subtitle: "Powder Blues, Lilac & Soft Orchids in Premium Lightweight Cotton Lawn",
+    image: ASSETS.img6,
     itemCount: 5,
   },
 ];
 
 // ═══════════════════════════════════════════
-// All Products — Enaya's Sylhet Catalog
+// All Products — 3 sis xclusive Catalog
 // ═══════════════════════════════════════════
 export const ALL_PRODUCTS: ProductCardProps[] = [
-  // --- PAKISTANI LAWN COLLECTION ---
   {
-    id: "eny-001",
-    name: "Enaya's Mint Green Embroidered Pakistani Lawn 3-Piece",
-    slug: "mint-green-embroidered-pakistani-lawn-3piece",
-    price: 3850,
-    compareAtPrice: 4400,
-    image: ASSETS.img7,
-    images: [ASSETS.img7, ASSETS.img4],
+    id: "3sis-001",
+    name: "3 Sis Midnight Black & Fuchsia Embroidered Pakistani Lawn 3-Piece",
+    slug: "midnight-black-fuchsia-embroidered-pakistani-lawn-3piece",
+    price: 3950,
+    compareAtPrice: 4500,
+    image: ASSETS.img1,
+    images: [ASSETS.img1, ASSETS.img3],
     category: "Pakistani Lawn Collection",
     isNew: true,
     isBestseller: true,
     stock: 14,
   },
   {
-    id: "eny-002",
-    name: "Powder Blue Pastel Embroidered Floral Lawn Set",
-    slug: "powder-blue-pastel-embroidered-floral-lawn-set",
-    price: 3950,
-    compareAtPrice: 4600,
-    image: ASSETS.img4,
-    images: [ASSETS.img4, ASSETS.img7],
+    id: "3sis-002",
+    name: "Mustard Gold Floral Neckline Embroidered Festive Lawn 3-Piece",
+    slug: "mustard-gold-floral-neckline-embroidered-festive-lawn-3piece",
+    price: 4150,
+    compareAtPrice: 4750,
+    image: ASSETS.img2,
+    images: [ASSETS.img2, ASSETS.img7],
     category: "Pakistani Lawn Collection",
     isNew: true,
     stock: 12,
   },
-
-  // --- DESIGNER LUXURY & PRE-ORDERS ---
   {
-    id: "eny-003",
-    name: "Sadabahar Original Luxury Embroidered Couture 3-Piece",
-    slug: "sadabahar-original-luxury-embroidered-couture-3piece",
-    price: 13500,
-    compareAtPrice: 15500,
-    image: ASSETS.img2,
-    images: [ASSETS.img2, ASSETS.img6],
-    category: "Designer Luxury & Pre-Orders",
+    id: "3sis-003",
+    name: "Royal Indigo & Crimson Ajrakh Kashmiri Floral Pure Lawn 3-Piece",
+    slug: "royal-indigo-crimson-ajrakh-kashmiri-floral-pure-lawn-3piece",
+    price: 4250,
+    compareAtPrice: 4850,
+    image: ASSETS.img3,
+    images: [ASSETS.img3, ASSETS.img1],
+    category: "Pakistani Lawn Collection",
     isNew: true,
     isBestseller: true,
-    stock: 6,
+    stock: 15,
   },
   {
-    id: "eny-004",
-    name: "Russian Silk Champagne Handcrafted Adda Work Ensemble",
-    slug: "russian-silk-champagne-handcrafted-adda-work-ensemble",
-    price: 12800,
-    compareAtPrice: 14500,
-    image: ASSETS.img6,
-    images: [ASSETS.img6, ASSETS.img2],
-    category: "Designer Luxury & Pre-Orders",
-    isNew: true,
-    stock: 5,
-  },
-
-  // --- PARTY WEAR & FESTIVE ORGANZA ---
-  {
-    id: "eny-005",
-    name: "Midnight Black Royal Zardozi Hand-Embellished Formal Suit",
-    slug: "midnight-black-royal-zardozi-hand-embellished-formal-suit",
-    price: 6850,
-    compareAtPrice: 7800,
-    image: ASSETS.img3,
-    images: [ASSETS.img3, ASSETS.img5],
+    id: "3sis-004",
+    name: "Deep Navy Floral Embroidered Lawn Set with Scalloped Cutwork Dupatta",
+    slug: "deep-navy-floral-embroidered-lawn-set-scalloped-dupatta",
+    price: 4450,
+    compareAtPrice: 5100,
+    image: ASSETS.img4,
+    images: [ASSETS.img4, ASSETS.img1],
     category: "Party Wear & Festive Organza",
     isNew: true,
     isBestseller: true,
     stock: 10,
   },
   {
-    id: "eny-006",
-    name: "Crimson Magenta Embroidered Suit with Lime Silk Dupatta",
-    slug: "crimson-magenta-embroidered-suit-with-lime-silk-dupatta",
-    price: 6250,
-    compareAtPrice: 7200,
+    id: "3sis-005",
+    name: "Ruby Crimson & Cream Floral Luxury Embroidered Lawn 3-Piece",
+    slug: "ruby-crimson-cream-floral-luxury-embroidered-lawn-3piece",
+    price: 4350,
+    compareAtPrice: 4950,
     image: ASSETS.img5,
-    images: [ASSETS.img5, ASSETS.img3],
-    category: "Party Wear & Festive Organza",
+    images: [ASSETS.img5, ASSETS.img8],
+    category: "Designer Luxury & Pre-Orders",
+    isNew: true,
+    isBestseller: true,
+    stock: 11,
+  },
+  {
+    id: "3sis-006",
+    name: "Powder Sky Blue Pastel Vintage Botanical Lawn 3-Piece Suit",
+    slug: "powder-sky-blue-pastel-vintage-botanical-lawn-3piece",
+    price: 3950,
+    compareAtPrice: 4600,
+    image: ASSETS.img6,
+    images: [ASSETS.img6, ASSETS.img8],
+    category: "Vintage Florals & Pastels",
     isNew: true,
     stock: 9,
   },
   {
-    id: "eny-007",
-    name: "Sage Green Embroidered Organza Luxury Festive 3-Piece",
-    slug: "sage-green-embroidered-organza-luxury-festive-3piece",
-    price: 7450,
-    compareAtPrice: 8500,
-    image: ASSETS.img9,
-    images: [ASSETS.img9, ASSETS.img3],
-    category: "Party Wear & Festive Organza",
+    id: "3sis-007",
+    name: "Golden Ochre Traditional Paisley Embroidered Festive 3-Piece",
+    slug: "golden-ochre-traditional-paisley-embroidered-festive-3piece",
+    price: 4250,
+    compareAtPrice: 4800,
+    image: ASSETS.img7,
+    images: [ASSETS.img7, ASSETS.img2],
+    category: "Designer Luxury & Pre-Orders",
     isBestseller: true,
     stock: 8,
   },
-
-  // --- CASUAL & FARSI SETS ---
   {
-    id: "eny-008",
-    name: "Ivory Cream Embroidered Kurti with Navy Dupatta & Palazzo",
-    slug: "ivory-cream-embroidered-kurti-with-navy-dupatta-palazzo",
-    price: 2650,
-    compareAtPrice: 3100,
-    image: ASSETS.img1,
-    images: [ASSETS.img1, ASSETS.img8],
-    category: "Casual & Farsi Sets",
+    id: "3sis-008",
+    name: "Lavender Orchid & Lemon Yellow Floral Printed Boutique 3-Piece",
+    slug: "lavender-orchid-lemon-yellow-floral-printed-boutique-3piece",
+    price: 3650,
+    compareAtPrice: 4200,
+    image: ASSETS.img8,
+    images: [ASSETS.img8, ASSETS.img6],
+    category: "Casual & Daily Chic Sets",
     isNew: true,
     isBestseller: true,
-    stock: 18,
-  },
-  {
-    id: "eny-009",
-    name: "Pure Cotton Flared Farsi Salwar Daily Boutique 2-Piece",
-    slug: "pure-cotton-flared-farsi-salwar-daily-boutique-2piece",
-    price: 2250,
-    compareAtPrice: 2650,
-    image: ASSETS.img8,
-    images: [ASSETS.img8, ASSETS.img1],
-    category: "Casual & Farsi Sets",
-    stock: 15,
-  },
-  {
-    id: "eny-010",
-    name: "Rose Pink Striped Embroidered Kurti with Floral Trouser",
-    slug: "rose-pink-striped-embroidered-kurti-with-floral-trouser",
-    price: 2450,
-    compareAtPrice: 2900,
-    image: ASSETS.img10,
-    images: [ASSETS.img10, ASSETS.img11],
-    category: "Casual & Farsi Sets",
-    stock: 12,
-  },
-
-  // --- VELVET & WINTER LUXURY ---
-  {
-    id: "eny-011",
-    name: "Royal Micro-Velvet Embroidered Kaftan & Shawl Set",
-    slug: "royal-micro-velvet-embroidered-kaftan-shawl-set",
-    price: 6500,
-    compareAtPrice: 7500,
-    image: ASSETS.img6,
-    images: [ASSETS.img6, ASSETS.img3],
-    category: "Velvet & Winter Luxury",
-    isNew: true,
-    stock: 7,
-  },
-
-  // --- BOUTIQUE JEWELRY & BEAUTY ---
-  {
-    id: "eny-012",
-    name: "Handcrafted Traditional Jhumka & Festive Earring Set",
-    slug: "handcrafted-traditional-jhumka-festive-earring-set",
-    price: 1450,
-    compareAtPrice: 1800,
-    image: ASSETS.img5,
-    images: [ASSETS.img5, ASSETS.img9],
-    category: "Boutique Jewelry & Beauty",
-    stock: 20,
+    stock: 16,
   },
 ];
 
@@ -276,14 +212,16 @@ export const FEATURED_PRODUCTS = ALL_PRODUCTS.slice(0, 8);
 export const LAWN_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Pakistani Lawn Collection");
 export const DESIGNER_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Designer Luxury & Pre-Orders");
 export const PARTY_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Party Wear & Festive Organza");
-export const FARSI_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Casual & Farsi Sets");
-export const VELVET_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Velvet & Winter Luxury");
-export const JEWELRY_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Boutique Jewelry & Beauty");
+export const CASUAL_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Casual & Daily Chic Sets");
+export const VINTAGE_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Vintage Florals & Pastels");
 
-// Backward compatibility aliases for previous routes
-export const COORD_PRODUCTS = FARSI_PRODUCTS;
+// Backward compatibility aliases
+export const FARSI_PRODUCTS = CASUAL_PRODUCTS;
+export const VELVET_PRODUCTS = DESIGNER_PRODUCTS;
+export const JEWELRY_PRODUCTS = PARTY_PRODUCTS;
+export const COORD_PRODUCTS = CASUAL_PRODUCTS;
 export const ABAYA_PRODUCTS = DESIGNER_PRODUCTS;
-export const KAFTAN_PRODUCTS = VELVET_PRODUCTS;
+export const KAFTAN_PRODUCTS = DESIGNER_PRODUCTS;
 export const DRESS_PRODUCTS = PARTY_PRODUCTS;
 export const KURTI_PRODUCTS = LAWN_PRODUCTS;
 export const ORGANZA_PRODUCTS = PARTY_PRODUCTS;
@@ -299,23 +237,11 @@ export function getProductsByCategory(slug: string): ProductCardProps[] {
       return DESIGNER_PRODUCTS;
     case "party-wear":
       return PARTY_PRODUCTS;
+    case "casual-sets":
     case "farsi-sets":
-      return FARSI_PRODUCTS;
-    case "velvet-luxury":
-      return VELVET_PRODUCTS;
-    case "boutique-jewelry":
-      return JEWELRY_PRODUCTS;
-    // Backward compatibility aliases
-    case "coord-sets":
-      return FARSI_PRODUCTS;
-    case "abayas":
-      return DESIGNER_PRODUCTS;
-    case "kaftans":
-      return VELVET_PRODUCTS;
-    case "dresses":
-      return PARTY_PRODUCTS;
-    case "kurti-three-piece":
-      return LAWN_PRODUCTS;
+      return CASUAL_PRODUCTS;
+    case "vintage-florals":
+      return VINTAGE_PRODUCTS;
     case "new-arrivals":
       return NEW_ARRIVALS;
     case "featured":
@@ -338,7 +264,7 @@ export const DEMO_PRODUCTS = ALL_PRODUCTS.map((p) => {
   return {
     name: p.name,
     slug: p.slug,
-    description: `${p.name} — Authentically curated by Enaya's | Sylhet. Authentic Pakistani luxury designer suit with intricate embroidery and premium fabric. Open Parcel Policy available.`,
+    description: `${p.name} — Authentically imported by 3 sis xclusive. 17 years of trust in women's fashion. 100% original Pakistani luxury lawn with exquisite embroidery, digital printing, and pure dupatta. Open Parcel Policy available on delivery.`,
     price: p.price,
     isFeatured: p.isBestseller ?? true,
     images: imgs,
@@ -348,34 +274,26 @@ export const DEMO_PRODUCTS = ALL_PRODUCTS.map((p) => {
     },
     variants: [
       {
-        size: "S",
+        size: "Unstitched (3-Piece)",
         color: "As Shown",
         price: p.price,
-        stock: Math.max(2, Math.floor((p.stock ?? 10) / 4)),
+        stock: Math.max(3, Math.floor((p.stock ?? 10) / 2)),
         images: imgs,
       },
       {
-        size: "M",
+        size: "Stitched M (38-40)",
         color: "As Shown",
-        price: p.price,
-        stock: Math.max(3, Math.floor((p.stock ?? 10) / 3)),
+        price: p.price + 500,
+        stock: Math.max(2, Math.floor((p.stock ?? 10) / 3)),
         images: imgs,
       },
       {
-        size: "L",
+        size: "Stitched L (42-44)",
         color: "As Shown",
-        price: p.price,
-        stock: Math.max(3, Math.floor((p.stock ?? 10) / 3)),
-        images: imgs,
-      },
-      {
-        size: "XL",
-        color: "As Shown",
-        price: p.price,
-        stock: Math.max(2, Math.floor((p.stock ?? 10) / 4)),
+        price: p.price + 500,
+        stock: Math.max(2, Math.floor((p.stock ?? 10) / 3)),
         images: imgs,
       },
     ],
   };
 });
-

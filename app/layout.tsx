@@ -26,32 +26,32 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-// Global metadata — Enaya's | Sylhet
+// Global metadata — 3 sis xclusive
 export const metadata: Metadata = {
   title: {
-    default: "Enaya's | Sylhet — Elevate Your Style | Luxury Pakistani Designer Boutique",
-    template: "%s — Enaya's Sylhet",
+    default: "3 sis xclusive — Elevate Your Style | Luxury Pakistani Designer Boutique",
+    template: "%s — 3 sis xclusive Sylhet",
   },
   description:
-    "Elevate Your Style with Enaya's | Sylhet. Authentic Pakistani designer suits, pure lawn 3-piece sets, organza & georgette party wear, and luxury pret. Visit our outlet at Nayasarak Point, Sylhet or order online with Open Parcel Policy.",
+    "Elevate Your Style with 3 sis xclusive. Authentic Pakistani designer suits, pure lawn 3-piece sets, organza & georgette party wear, and luxury pret. Visit our outlet at Sylhet, Bangladesh or order online with Open Parcel Policy.",
   keywords: [
-    "Enayas Sylhet",
-    "Enaya's",
+    "3 sis xclusive",
+    "3 sis xclusive",
     "Pakistani Lawn Sylhet",
     "Pakistani Designer Suit Bangladesh",
     "Sadabahar Sylhet",
     "Party Wear Sylhet",
-    "Nayasarak Boutique Sylhet",
+    "Pakistani Dress Sylhet",
     "Luxury Pret BD",
-    "Enayas",
+    "3 sis xclusive",
   ],
-  authors: [{ name: "Enaya's | Sylhet" }],
-  creator: "Enaya's | Sylhet",
+  authors: [{ name: "3 sis xclusive" }],
+  creator: "3 sis xclusive",
   openGraph: {
     type: "website",
     locale: "en_BD",
-    siteName: "Enaya's | Sylhet",
-    title: "Enaya's | Sylhet — Elevate Your Style",
+    siteName: "3 sis xclusive",
+    title: "3 sis xclusive — Elevate Your Style",
     description:
       "Authentic Pakistani designer suits, pure lawn collections, and luxury festive couture in Sylhet. Nationwide cash on delivery with Open Parcel inspection policy.",
     images: ["/banner.jpg"],
@@ -65,12 +65,12 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Enaya's Sylhet",
+    title: "3 sis xclusive Sylhet",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#3D0B3D",
+  themeColor: "#8B263E",
 };
 
 export default async function RootLayout({
@@ -117,7 +117,7 @@ export default async function RootLayout({
           Skip to main content
         </a>
         <NextTopLoader
-          color="#8b1e3f"
+          color="#8B263E"
           height={3}
           showSpinner={false}
           shadow="0 0 12px #8b1e3f, 0 0 6px #f7c8d0"

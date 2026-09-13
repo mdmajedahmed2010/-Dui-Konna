@@ -1,9 +1,9 @@
 "use client";
 
 /**
- * Enaya's | Sylhet — Interactive "Shop The Look" Couture Lookbook
+ * 3 sis xclusive — Interactive "Shop The Look" Couture Lookbook
  * Allows customers to interact directly with editorial imagery and purchase styled pieces
- * Nayasarak Point, Sylhet — https://www.facebook.com/Enayas.Sylhet/
+ * Nayasarak Point, Sylhet — https://www.facebook.com/3.sis.xclusive/
  */
 
 import { useState } from "react";
@@ -200,7 +200,7 @@ export function LookbookCouture() {
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
           <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#D4AF37]/40 shadow-xs mb-3">
             <Sparkles className="h-3 w-3 text-[#D4AF37]" />
-            <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#3D0B3D]">
+            <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#8B263E]">
               INTERACTIVE LOOKBOOK
             </span>
           </div>
@@ -219,8 +219,8 @@ export function LookbookCouture() {
                 onClick={() => handleTabChange(idx)}
                 className={`px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase transition-all duration-300 cursor-pointer ${
                   idx === activeLookIdx
-                    ? "bg-[#3D0B3D] text-[#F3C649] shadow-md scale-105"
-                    : "bg-white text-[#3D0B3D] hover:bg-neutral-100 border border-[#EDE1D8]"
+                    ? "bg-[#8B263E] text-[#F3C649] shadow-md scale-105"
+                    : "bg-white text-[#8B263E] hover:bg-neutral-100 border border-[#EDE1D8]"
                 }`}
               >
                 {look.tabLabel}
@@ -259,8 +259,8 @@ export function LookbookCouture() {
                         onClick={() => handleSelectSpot(spot)}
                         className={`relative flex items-center justify-center size-9 rounded-full transition-all duration-300 cursor-pointer ${
                           isSelected
-                            ? "bg-[#3D0B3D] text-[#F3C649] scale-125 shadow-[0_0_16px_rgba(212,175,55,0.8)] ring-4 ring-[#D4AF37]"
-                            : "bg-white/95 text-[#3D0B3D] hover:scale-110 shadow-lg border border-[#D4AF37]"
+                            ? "bg-[#8B263E] text-[#F3C649] scale-125 shadow-[0_0_16px_rgba(212,175,55,0.8)] ring-4 ring-[#D4AF37]"
+                            : "bg-white/95 text-[#8B263E] hover:scale-110 shadow-lg border border-[#D4AF37]"
                         }`}
                         aria-label={`Select ${spot.name}`}
                       >
@@ -277,7 +277,7 @@ export function LookbookCouture() {
                     <p className="text-xs font-bold font-heading">{currentLook.title}</p>
                     <p className="text-[10px] text-white/80">{currentLook.subtitle}</p>
                   </div>
-                  <span className="text-[10px] uppercase font-bold tracking-widest bg-[#D4AF37] text-[#3D0B3D] px-2 py-1 rounded">
+                  <span className="text-[10px] uppercase font-bold tracking-widest bg-[#D4AF37] text-[#8B263E] px-2 py-1 rounded">
                     {currentLook.spots.length} Styled Pieces
                   </span>
                 </div>
@@ -299,14 +299,14 @@ export function LookbookCouture() {
                 >
                   {/* Category & Name */}
                   <div>
-                    <span className="inline-block text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#3D0B3D] bg-[#FAF7F5] border border-[#D4AF37]/30 px-3 py-1 rounded-full mb-3">
+                    <span className="inline-block text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#8B263E] bg-[#FAF7F5] border border-[#D4AF37]/30 px-3 py-1 rounded-full mb-3">
                       ✦ {activeSpot.category}
                     </span>
                     <h3 className="text-2xl font-bold text-[#1E1622] font-heading leading-tight">
                       {activeSpot.name}
                     </h3>
                     <div className="flex items-baseline gap-3 mt-2">
-                      <span className="text-2xl font-bold text-[#3D0B3D] font-sans">
+                      <span className="text-2xl font-bold text-[#8B263E] font-sans">
                         ৳{activeSpot.price.toLocaleString()}
                       </span>
                       <span className="text-sm text-neutral-400 line-through">
@@ -343,8 +343,8 @@ export function LookbookCouture() {
                           onClick={() => setSelectedSize(size)}
                           className={`px-4 py-2 rounded-xl text-xs font-bold transition-all cursor-pointer ${
                             selectedSize === size
-                              ? "bg-[#3D0B3D] text-[#F3C649] shadow-sm ring-2 ring-[#D4AF37]"
-                              : "bg-[#FAF7F5] text-[#3D0B3D] hover:bg-neutral-100 border border-[#EDE1D8]"
+                              ? "bg-[#8B263E] text-[#F3C649] shadow-sm ring-2 ring-[#D4AF37]"
+                              : "bg-[#FAF7F5] text-[#8B263E] hover:bg-neutral-100 border border-[#EDE1D8]"
                           }`}
                         >
                           {size}
@@ -358,7 +358,7 @@ export function LookbookCouture() {
                     <button
                       onClick={handleQuickAdd}
                       disabled={isAdding}
-                      className="w-full py-4 rounded-full bg-[#3D0B3D] hover:bg-[#4A0E4E] text-[#F3C649] text-xs font-bold uppercase tracking-[0.2em] shadow-[0_10px_25px_-5px_rgba(61,11,61,0.4)] flex items-center justify-center gap-2.5 transition-all duration-300 active:scale-[0.98] cursor-pointer"
+                      className="w-full py-4 rounded-full bg-[#8B263E] hover:bg-[#4A0E4E] text-[#F3C649] text-xs font-bold uppercase tracking-[0.2em] shadow-[0_10px_25px_-5px_rgba(61,11,61,0.4)] flex items-center justify-center gap-2.5 transition-all duration-300 active:scale-[0.98] cursor-pointer"
                     >
                       {isAdding ? (
                         <>
@@ -375,7 +375,7 @@ export function LookbookCouture() {
 
                     <Link
                       href={`/products/${activeSpot.slug}`}
-                      className="w-full py-3 rounded-full bg-white hover:bg-[#FAF7F5] text-[#3D0B3D] text-xs font-bold uppercase tracking-[0.16em] border border-[#D4AF37]/50 flex items-center justify-center gap-2 transition-all hover:border-[#3D0B3D]"
+                      className="w-full py-3 rounded-full bg-white hover:bg-[#FAF7F5] text-[#8B263E] text-xs font-bold uppercase tracking-[0.16em] border border-[#D4AF37]/50 flex items-center justify-center gap-2 transition-all hover:border-[#8B263E]"
                     >
                       <span>Full Product Details</span>
                       <ArrowUpRight className="h-3.5 w-3.5 text-[#D4AF37]" />

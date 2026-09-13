@@ -16,17 +16,17 @@ const slides = [
     title: "EXQUISITE PAKISTANI LUXURY SUITS",
     subtitle: "Authentic Pure Lawn, Organza & Handcrafted Designer Suits from Pakistan — Open Parcel Verification.",
     link: "/collections/pakistani-lawn",
-    overline: "✦ Enaya's | Nayasarak Point, Sylhet ✦",
+    overline: "✦ 3 sis xclusive | Nayasarak Point, Sylhet ✦",
   },
   {
-    image: "/enayas-assets/719352002_1286458136803756_4691248053674653785_n.jpg",
+    image: "/3sis-assets/719352002_1286458136803756_4691248053674653785_n.jpg",
     title: "ORIGINAL DESIGNER PRET & COUTURE",
     subtitle: "Sadabahar, Russian Silk & fine Zardozi needlework paired with pure silk and organza dupattas.",
     link: "/collections/designer-luxury",
     overline: "✦ 100% Original Pakistani Suits ✦",
   },
   {
-    image: "/enayas-assets/719135606_1286458063470430_8962135561909446686_n.jpg",
+    image: "/3sis-assets/719135606_1286458063470430_8962135561909446686_n.jpg",
     title: "ROYAL ZARDOZI & FESTIVE ENSEMBLES",
     subtitle: "Opulent festive 3-piece collections and flared farsi sets for weddings, celebrations and Eid.",
     link: "/collections/party-wear",
@@ -104,7 +104,7 @@ export function HeroSection() {
 
                   <Link
                     href={slide.link}
-                    className="inline-flex items-center justify-center h-11 md:h-12 px-6 md:px-8 bg-white hover:bg-[#3D0B3D] text-[#3D0B3D] hover:text-white text-xs font-semibold uppercase tracking-[0.1em] transition-all rounded-sm shadow-md active:scale-[0.98]"
+                    className="inline-flex items-center justify-center h-11 md:h-12 px-6 md:px-8 bg-white hover:bg-[#8B263E] text-[#8B263E] hover:text-white text-xs font-semibold uppercase tracking-[0.1em] transition-all rounded-sm shadow-md active:scale-[0.98]"
                   >
                     Shop Collection
                   </Link>

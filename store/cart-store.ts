@@ -95,7 +95,7 @@ export const useCartStore = create<CartStore>()(
       },
     }),
     {
-      name: "enayas-cart-storage",
+      name: "3sis-cart-storage",
       partialize: (state) => ({ items: state.items }),
     }
   )

@@ -1,9 +1,9 @@
 "use client";
 
 /**
- * Enaya's | Sylhet — Cinematic Haute Couture Hero
+ * 3 sis xclusive — Cinematic Haute Couture Hero
  * Asymmetric Editorial Split with Interactive Garment Hotspots & Fluid Physics
- * Nayasarak Point, Sylhet — https://www.facebook.com/Enayas.Sylhet/
+ * 17 Years of Trust in Fashion — https://www.facebook.com/3.sis.xclusive/
  */
 
 import { useState, useEffect, useCallback } from "react";
@@ -37,11 +37,11 @@ const HERO_SLIDES: CoutureHeroSlide[] = [
   {
     id: "slide-1",
     image: ASSETS.banner,
-    category: "ENAYA'S COUTURE 2026",
+    category: "3 SIS XCLUSIVE • JUST FOR WOMEN",
     title: "ELEVATE YOUR",
     italicWord: "Style",
     subtitle:
-      "100% Authentic Pakistani designer lawn, Sadabahar couture, and handcrafted festive party wear in Sylhet.",
+      "Welcome To 3 sis Xclusive — JUST FOR WOMEN. 17 years of trust in fashion bringing you authentic Pakistani designer lawn, luxury suits, and festive curation.",
     link: "/collections/pakistani-lawn",
     hotspot: {
       name: "Sadabahar Original Luxury Embroidered Couture 3-Piece",
@@ -125,7 +125,7 @@ export function HeroCouture() {
     <section className="relative overflow-hidden bg-gradient-to-b from-[#FAF7F5] via-white to-[#FAF7F5] pt-6 pb-16 md:pt-10 md:pb-24 border-b border-[#EDE1D8]">
       {/* Decorative ambient radial gradients */}
       <div className="absolute top-10 left-1/4 -z-10 h-96 w-96 rounded-full bg-[#D4AF37]/15 blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/3 right-10 -z-10 h-80 w-80 rounded-full bg-[#3D0B3D]/10 blur-[100px] pointer-events-none" />
+      <div className="absolute top-1/3 right-10 -z-10 h-80 w-80 rounded-full bg-[#8B263E]/10 blur-[100px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -134,9 +134,9 @@ export function HeroCouture() {
           <div className="lg:col-span-6 space-y-6 md:space-y-8 z-10">
             {/* Eyebrow badge */}
             <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#D4AF37]/30 shadow-xs">
-              <span className="flex h-2 w-2 rounded-full bg-[#3D0B3D] animate-ping" />
+              <span className="flex h-2 w-2 rounded-full bg-[#8B263E] animate-ping" />
               <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
-              <span className="text-[10px] md:text-[11px] font-extrabold uppercase tracking-[0.24em] text-[#3D0B3D]">
+              <span className="text-[10px] md:text-[11px] font-extrabold uppercase tracking-[0.24em] text-[#8B263E]">
                 {activeSlide.category}
               </span>
             </div>
@@ -153,7 +153,7 @@ export function HeroCouture() {
                 >
                   <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-[68px] font-bold text-[#1E1622] font-heading leading-[1.06] tracking-tight">
                     {activeSlide.title}{" "}
-                    <span className="font-serif italic font-normal text-[#3D0B3D] block sm:inline">
+                    <span className="font-serif italic font-normal text-[#8B263E] block sm:inline">
                       {activeSlide.italicWord}
                     </span>
                   </h1>
@@ -168,18 +168,18 @@ export function HeroCouture() {
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <Link
                 href={activeSlide.link}
-                className="group relative inline-flex items-center gap-4 pl-7 pr-3.5 py-3.5 rounded-full bg-[#3D0B3D] text-[#F3C649] text-xs font-bold uppercase tracking-[0.18em] shadow-[0_10px_25px_-5px_rgba(61,11,61,0.35)] hover:bg-[#4A0E4E] hover:shadow-[0_15px_30px_-5px_rgba(61,11,61,0.45)] transition-all duration-300 active:scale-[0.98] cursor-pointer"
+                className="group relative inline-flex items-center gap-4 pl-7 pr-3.5 py-3.5 rounded-full bg-[#8B263E] text-[#F3C649] text-xs font-bold uppercase tracking-[0.18em] shadow-[0_10px_25px_-5px_rgba(61,11,61,0.35)] hover:bg-[#4A0E4E] hover:shadow-[0_15px_30px_-5px_rgba(61,11,61,0.45)] transition-all duration-300 active:scale-[0.98] cursor-pointer"
               >
                 <span>Explore Collection</span>
                 {/* Button-in-Button Circular Trailing Icon */}
-                <div className="flex items-center justify-center size-8 rounded-full bg-[#D4AF37]/20 group-hover:bg-[#D4AF37] text-[#F3C649] group-hover:text-[#3D0B3D] transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5">
+                <div className="flex items-center justify-center size-8 rounded-full bg-[#D4AF37]/20 group-hover:bg-[#D4AF37] text-[#F3C649] group-hover:text-[#8B263E] transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5">
                   <ArrowUpRight className="h-4 w-4" />
                 </div>
               </Link>
 
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-[#FAF7F5] text-[#3D0B3D] text-xs font-bold uppercase tracking-[0.16em] border border-[#D4AF37]/40 transition-all duration-300 hover:border-[#3D0B3D] active:scale-[0.98] shadow-xs"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-[#FAF7F5] text-[#8B263E] text-xs font-bold uppercase tracking-[0.16em] border border-[#D4AF37]/40 transition-all duration-300 hover:border-[#8B263E] active:scale-[0.98] shadow-xs"
               >
                 <MapPin className="h-3.5 w-3.5 text-[#D4AF37]" />
                 <span>Visit Nayasarak Outlet</span>
@@ -189,21 +189,21 @@ export function HeroCouture() {
             {/* Micro-Social Proof Trust Pills */}
             <div className="grid grid-cols-3 gap-3 pt-6 border-t border-[#EDE1D8]">
               <div className="flex flex-col">
-                <div className="flex items-center gap-1 text-[#3D0B3D]">
+                <div className="flex items-center gap-1 text-[#8B263E]">
                   <Star className="h-3.5 w-3.5 fill-[#D4AF37] text-[#D4AF37]" />
                   <span className="text-xs font-bold font-sans">5.0 ★ Rating</span>
                 </div>
                 <span className="text-[10px] text-neutral-500 font-medium">34K+ Community</span>
               </div>
               <div className="flex flex-col">
-                <div className="flex items-center gap-1 text-[#3D0B3D]">
+                <div className="flex items-center gap-1 text-[#8B263E]">
                   <ShieldCheck className="h-3.5 w-3.5 text-[#D4AF37]" />
                   <span className="text-xs font-bold font-sans">100% Original</span>
                 </div>
                 <span className="text-[10px] text-neutral-500 font-medium">Pakistani Suits</span>
               </div>
               <div className="flex flex-col">
-                <div className="flex items-center gap-1 text-[#3D0B3D]">
+                <div className="flex items-center gap-1 text-[#8B263E]">
                   <ShoppingBag className="h-3.5 w-3.5 text-[#D4AF37]" />
                   <span className="text-xs font-bold font-sans">Open Parcel</span>
                 </div>
@@ -252,7 +252,7 @@ export function HeroCouture() {
                   {/* Glowing Hotspot Button */}
                   <button
                     onClick={() => setShowHotspotTooltip(!showHotspotTooltip)}
-                    className="relative flex items-center justify-center size-9 rounded-full bg-white/95 text-[#3D0B3D] shadow-lg border border-[#D4AF37] transition-transform hover:scale-110 active:scale-95 cursor-pointer"
+                    className="relative flex items-center justify-center size-9 rounded-full bg-white/95 text-[#8B263E] shadow-lg border border-[#D4AF37] transition-transform hover:scale-110 active:scale-95 cursor-pointer"
                     aria-label="View featured piece details"
                   >
                     <span className="absolute inset-0 rounded-full animate-hotspot bg-[#D4AF37]/30" />
@@ -279,14 +279,14 @@ export function HeroCouture() {
                             />
                           </div>
                           <div className="flex-1 min-w-0">
-                            <span className="inline-block text-[9px] font-bold uppercase tracking-wider text-[#3D0B3D] bg-[#FAF7F5] border border-[#D4AF37]/30 px-1.5 py-0.5 rounded">
+                            <span className="inline-block text-[9px] font-bold uppercase tracking-wider text-[#8B263E] bg-[#FAF7F5] border border-[#D4AF37]/30 px-1.5 py-0.5 rounded">
                               Featured Look
                             </span>
                             <p className="text-[11px] font-bold text-[#1E1622] truncate mt-0.5">
                               {activeSlide.hotspot.name}
                             </p>
                             <div className="flex items-center gap-1.5 mt-0.5">
-                              <span className="text-xs font-bold text-[#3D0B3D]">
+                              <span className="text-xs font-bold text-[#8B263E]">
                                 ৳{activeSlide.hotspot.price.toLocaleString()}
                               </span>
                               <span className="text-[10px] text-neutral-400 line-through">
@@ -298,7 +298,7 @@ export function HeroCouture() {
 
                         <button
                           onClick={handleHotspotClick}
-                          className="mt-2.5 w-full py-1.5 rounded-lg bg-[#3D0B3D] hover:bg-[#4A0E4E] text-[#F3C649] text-[10px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+                          className="mt-2.5 w-full py-1.5 rounded-lg bg-[#8B263E] hover:bg-[#4A0E4E] text-[#F3C649] text-[10px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
                         >
                           <Eye className="h-3 w-3" />
                           <span>Quick View & Buy</span>
@@ -317,7 +317,7 @@ export function HeroCouture() {
                         onClick={() => handleSlideChange(idx)}
                         className={`px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer ${
                           idx === currentIdx
-                            ? "bg-[#D4AF37] text-[#3D0B3D] shadow-sm font-extrabold"
+                            ? "bg-[#D4AF37] text-[#8B263E] shadow-sm font-extrabold"
                             : "text-white/70 hover:text-white hover:bg-white/10"
                         }`}
                       >
@@ -327,7 +327,7 @@ export function HeroCouture() {
                   </div>
 
                   <span className="text-[10px] tracking-widest uppercase font-mono text-white/80">
-                    ENAYA'S SYLHET EDITORIAL
+                    3 SIS SYLHET EDITORIAL
                   </span>
                 </div>
 

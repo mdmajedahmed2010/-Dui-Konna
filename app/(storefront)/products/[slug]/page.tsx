@@ -31,8 +31,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
         success: true,
         product: {
           name: demoProduct.name,
-          seoTitle: `${demoProduct.name} — Enaya's | Sylhet`,
-          seoDesc: `${demoProduct.name} — Authentic Pakistani luxury designer collection by Enaya's | Sylhet.`,
+          seoTitle: `${demoProduct.name} — 3 sis xclusive`,
+          seoDesc: `${demoProduct.name} — Authentic Pakistani luxury designer collection by 3 sis xclusive.`,
           description: `${demoProduct.name} — Exclusive authentic Pakistani luxury suit with delicate needlework and premium fabric.`,
         } as any,
       };
@@ -40,12 +40,12 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
   }
 
   if (!result.success || !result.product) {
-    return { title: "Product Not Found — Enaya's | Sylhet" };
+    return { title: "Product Not Found — 3 sis xclusive" };
   }
 
   const product = result.product;
   return {
-    title: product.seoTitle || `${product.name} — Enaya's | Sylhet`,
+    title: product.seoTitle || `${product.name} — 3 sis xclusive`,
     description: (product.seoDesc || product.description).slice(0, 160),
     openGraph: {
       title: product.name,

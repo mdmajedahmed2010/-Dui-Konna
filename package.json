@@ -1,5 +1,5 @@
 {
-  "name": "enayas-sylhet",
+  "name": "3-sis-xclusive-storefront",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -82,5 +82,6 @@
     "nodemailer": "^9.0.3",
     "postcss": "^8.5.16",
     "@hono/node-server": "^1.19.14"
-  }
+  },
+  "description": "3 sis xclusive — JUST FOR WOMEN | 17 Years of Trust in Fashion"
 }

@@ -13,13 +13,13 @@ export async function GET(request: Request) {
 
     const userRole = (session?.user as { role?: string })?.role;
     const isAdmin = userRole === "ADMIN" || userRole === "SUPER_ADMIN";
-    const expectedSecret = process.env.SEED_SECRET || "enayas2026";
+    const expectedSecret = process.env.SEED_SECRET || "3sis2026";
 
-    if (!isAdmin && secret !== expectedSecret && secret !== "enayas2026" && secret !== "blossom2026") {
+    if (!isAdmin && secret !== expectedSecret && secret !== "3sis2026" && secret !== "blossom2026") {
       return NextResponse.json({ error: "Unauthorized seed request" }, { status: 401 });
     }
 
-    console.log("🌱 Starting Enaya's | Sylhet Production Seed via API...");
+    console.log("🌱 Starting 3 sis xclusive Production Seed via API...");
 
     // 1. Delete old demo data (all categories, products, variants)
     await prisma.productVariant.deleteMany();
@@ -67,7 +67,7 @@ export async function GET(request: Request) {
           ogImage: mainImage,
           variants: {
             create: p.variants.map((v, idx) => ({
-              sku: `ENY-2026-${String(i + 1).padStart(3, "0")}${idx > 0 ? `-${idx + 1}` : ""}`,
+              sku: `3SIS-2026-${String(i + 1).padStart(3, "0")}${idx > 0 ? `-${idx + 1}` : ""}`,
               size: v.size,
               color: v.color,
               price: v.price,
@@ -80,7 +80,7 @@ export async function GET(request: Request) {
       createdProductsCount++;
     }
 
-    console.log(`✅ Seeded ${DEMO_CATEGORIES.length} Categories and ${createdProductsCount} Products for Enaya's Sylhet.`);
+    console.log(`✅ Seeded ${DEMO_CATEGORIES.length} Categories and ${createdProductsCount} Products for 3 sis xclusive Sylhet.`);
 
     return NextResponse.json({
       success: true,

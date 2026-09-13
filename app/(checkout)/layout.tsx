@@ -1,5 +1,5 @@
 /**
- * Enaya's | Sylhet — Checkout Layout
+ * 3 sis xclusive — Checkout Layout
  * Isolated layout for focused luxury checkout flow
  */
 
@@ -25,7 +25,7 @@ export default function CheckoutLayout({ children }: { children: React.ReactNode
             <div className="relative size-8 rounded-full overflow-hidden border border-[#D4AF37]/50">
               <Image src="/logo.jpg" alt={BUSINESS.NAME} fill className="object-cover" />
             </div>
-            <span>Enaya&apos;s</span>
+            <span>3 sis xclusive</span>
             <span className="text-[10px] font-sans font-extrabold uppercase tracking-widest text-[#D4AF37] px-2 py-0.5 bg-[#3D0B3D] text-white rounded-full">
               Sylhet
             </span>

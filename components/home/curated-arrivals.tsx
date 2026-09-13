@@ -1,9 +1,9 @@
 "use client";
 
 /**
- * Enaya's | Sylhet — Curated Haute Arrivals Showcase
+ * 3 sis xclusive — Curated Haute Arrivals Showcase
  * Features double-bezel cards, interactive category filtering, and 1-tap quick-size add
- * Nayasarak Point, Sylhet — https://www.facebook.com/Enayas.Sylhet/
+ * Nayasarak Point, Sylhet — https://www.facebook.com/3.sis.xclusive/
  */
 
 import { useState } from "react";
@@ -93,7 +93,7 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#D4AF37]/40 mb-3 shadow-xs">
             <Sparkles className="h-3 w-3 text-[#D4AF37]" />
-            <span className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-[#3D0B3D]">
+            <span className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-[#8B263E]">
               EID & FESTIVE 2026
             </span>
           </div>
@@ -101,7 +101,7 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
             Curated Boutique Arrivals
           </h2>
           <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
-            Authentic Pakistani luxury lawn, handcrafted Sadabahar couture, and pure cotton farsi sets curated by Enaya's Sylhet.
+            Authentic Pakistani luxury lawn, handcrafted Sadabahar couture, and pure cotton farsi sets curated by 3 sis xclusive.
           </p>
 
           {/* Filter Pills */}
@@ -112,8 +112,8 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                 onClick={() => setActiveTab(tab)}
                 className={`px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase transition-all duration-300 cursor-pointer ${
                   activeTab === tab
-                    ? "bg-[#3D0B3D] text-[#F3C649] shadow-md shadow-[#3D0B3D]/25 scale-105"
-                    : "bg-white text-[#3D0B3D] hover:bg-neutral-100 border border-[#EDE1D8]"
+                    ? "bg-[#8B263E] text-[#F3C649] shadow-md shadow-[#8B263E]/25 scale-105"
+                    : "bg-white text-[#8B263E] hover:bg-neutral-100 border border-[#EDE1D8]"
                 }`}
               >
                 {tab}
@@ -167,12 +167,12 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                         {/* Top Badges: Tag & Wishlist */}
                         <div className="absolute top-3 inset-x-3 flex items-center justify-between z-10">
                           {product.tag ? (
-                            <span className="px-2.5 py-1 rounded-full bg-[#3D0B3D] text-[#F3C649] text-[9.5px] font-extrabold uppercase tracking-[0.16em] shadow-sm border border-[#D4AF37]/40">
+                            <span className="px-2.5 py-1 rounded-full bg-[#8B263E] text-[#F3C649] text-[9.5px] font-extrabold uppercase tracking-[0.16em] shadow-sm border border-[#D4AF37]/40">
                               {product.tag}
                             </span>
                           ) : (
-                            <span className="px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#3D0B3D] text-[9.5px] font-bold uppercase tracking-wider border border-[#EDE1D8]">
-                              Enaya's Pret
+                            <span className="px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#8B263E] text-[9.5px] font-bold uppercase tracking-wider border border-[#EDE1D8]">
+                              3 Sis Pret
                             </span>
                           )}
 
@@ -190,8 +190,8 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                             }}
                             className={`size-8 rounded-full flex items-center justify-center backdrop-blur-md transition-all duration-300 cursor-pointer ${
                               isWishlisted
-                                ? "bg-[#3D0B3D] text-[#F3C649] shadow-md scale-110"
-                                : "bg-white/90 text-[#3D0B3D] hover:bg-white hover:scale-110"
+                                ? "bg-[#8B263E] text-[#F3C649] shadow-md scale-110"
+                                : "bg-white/90 text-[#8B263E] hover:bg-white hover:scale-110"
                             }`}
                             aria-label="Wishlist"
                           >
@@ -216,7 +216,7 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                               category: product.category,
                             });
                           }}
-                          className="absolute bottom-16 right-3 size-9 rounded-full bg-white/95 text-[#3D0B3D] shadow-lg flex items-center justify-center opacity-0 group-hover/card:opacity-100 transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer z-20 border border-[#D4AF37]/40"
+                          className="absolute bottom-16 right-3 size-9 rounded-full bg-white/95 text-[#8B263E] shadow-lg flex items-center justify-center opacity-0 group-hover/card:opacity-100 transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer z-20 border border-[#D4AF37]/40"
                           aria-label="Quick View"
                         >
                           <Eye className="h-4 w-4" />
@@ -241,7 +241,7 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                                   className={`px-2.5 py-1 rounded-lg text-[10px] font-bold transition-all cursor-pointer ${
                                     isJustAdded
                                       ? "bg-emerald-600 text-white"
-                                      : "bg-[#FAF7F5] hover:bg-[#3D0B3D] text-[#3D0B3D] hover:text-[#F3C649]"
+                                      : "bg-[#FAF7F5] hover:bg-[#8B263E] text-[#8B263E] hover:text-[#F3C649]"
                                   }`}
                                 >
                                   {isJustAdded ? <Check className="h-3 w-3 inline" /> : size}
@@ -259,12 +259,12 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                           {product.category}
                         </span>
                         <Link href={`/products/${product.slug}`}>
-                          <h3 className="text-sm font-bold text-[#1E1622] truncate hover:text-[#3D0B3D] transition-colors mt-0.5">
+                          <h3 className="text-sm font-bold text-[#1E1622] truncate hover:text-[#8B263E] transition-colors mt-0.5">
                             {product.name}
                           </h3>
                         </Link>
                         <div className="flex items-baseline gap-2 mt-1.5">
-                          <span className="text-base font-bold text-[#3D0B3D] font-sans">
+                          <span className="text-base font-bold text-[#8B263E] font-sans">
                             ৳{product.price.toLocaleString()}
                           </span>
                           {product.compareAtPrice && product.compareAtPrice > product.price && (
@@ -287,7 +287,7 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
         <div className="mt-12 text-center">
           <Link
             href="/collections/pakistani-lawn"
-            className="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-white hover:bg-[#3D0B3D] text-[#3D0B3D] hover:text-[#F3C649] border border-[#D4AF37]/50 text-xs font-bold uppercase tracking-[0.2em] shadow-sm hover:shadow-lg transition-all duration-300 group/all active:scale-[0.98]"
+            className="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-white hover:bg-[#8B263E] text-[#8B263E] hover:text-[#F3C649] border border-[#D4AF37]/50 text-xs font-bold uppercase tracking-[0.2em] shadow-sm hover:shadow-lg transition-all duration-300 group/all active:scale-[0.98]"
           >
             <span>Explore Entire Collection</span>
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover/all:translate-x-0.5 group-hover/all:-translate-y-0.5 text-[#D4AF37]" />

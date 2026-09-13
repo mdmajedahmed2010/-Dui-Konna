@@ -47,7 +47,7 @@ export function CartDrawer() {
   // Sync coupon state with localStorage on open/close
   useEffect(() => {
     if (isOpen) {
-      const saved = localStorage.getItem("enayas_applied_coupon");
+      const saved = localStorage.getItem("3sis_applied_coupon");
       setTimeout(() => {
         if (saved) {
           try {
@@ -103,7 +103,7 @@ export function CartDrawer() {
     };
 
     setAppliedCoupon(couponData);
-    localStorage.setItem("enayas_applied_coupon", JSON.stringify(couponData));
+    localStorage.setItem("3sis_applied_coupon", JSON.stringify(couponData));
     setCouponSuccess(`"${code}" applied!`);
     setCouponInput("");
     setIsApplyingCoupon(false);
@@ -112,7 +112,7 @@ export function CartDrawer() {
   // Remove Coupon Handler
   const handleRemoveCoupon = () => {
     setAppliedCoupon(null);
-    localStorage.removeItem("enayas_applied_coupon");
+    localStorage.removeItem("3sis_applied_coupon");
     setCouponError("");
     setCouponSuccess("");
     setCouponInput("");
@@ -379,7 +379,7 @@ export function CartDrawer() {
 
                   {/* Hint */}
                   <p className="text-[9px] text-muted-foreground/50 uppercase tracking-widest">
-                    Try: <span className="font-mono font-bold text-foreground/40">ENAYA10</span>,{" "}
+                    Try: <span className="font-mono font-bold text-foreground/40">3SIS10</span>,{" "}
                     <span className="font-mono font-bold text-foreground/40">EID2026</span>
                   </p>
                 </div>

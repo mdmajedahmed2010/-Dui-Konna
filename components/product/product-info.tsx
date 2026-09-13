@@ -181,10 +181,10 @@ export function ProductInfo({
 
     if (selectedSize === "CUSTOM" && customNote.trim()) {
       // Append to pending custom notes for checkout
-      const existing = localStorage.getItem("enayas_pending_custom_note") || "";
+      const existing = localStorage.getItem("3sis_pending_custom_note") || "";
       const prefix = existing ? existing + "\n\n" : "";
       localStorage.setItem(
-        "enayas_pending_custom_note",
+        "3sis_pending_custom_note",
         `${prefix}Customization for ${product.name} (${colorToUse}): ${customNote}`
       );
     }
@@ -229,10 +229,10 @@ export function ProductInfo({
 
     if (selectedSize === "CUSTOM" && customNote.trim()) {
       // Append to pending custom notes for checkout
-      const existing = localStorage.getItem("enayas_pending_custom_note") || "";
+      const existing = localStorage.getItem("3sis_pending_custom_note") || "";
       const prefix = existing ? existing + "\n\n" : "";
       localStorage.setItem(
-        "enayas_pending_custom_note",
+        "3sis_pending_custom_note",
         `${prefix}Customization for ${product.name} (${colorToUse}): ${customNote}`
       );
     }
@@ -276,7 +276,7 @@ export function ProductInfo({
     <div className="space-y-6">
       {/* Product Name */}
       <div>
-        <h1 className="text-2xl md:text-3xl lg:text-[32px] font-bold leading-tight tracking-[-0.025em] font-serif text-[#3D0B3D]">
+        <h1 className="text-2xl md:text-3xl lg:text-[32px] font-bold leading-tight tracking-[-0.025em] font-serif text-[#8B263E]">
           {product.name}
         </h1>
       </div>
@@ -399,7 +399,7 @@ export function ProductInfo({
             <button
               type="button"
               onClick={() => setSelectedSize(selectedSize === "CUSTOM" ? null : "CUSTOM")}
-              className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-[#3D0B3D] font-medium transition-colors cursor-pointer"
+              className="inline-flex items-center gap-1.5 text-xs text-muted-foreground hover:text-[#8B263E] font-medium transition-colors cursor-pointer"
             >
               <Scissors className="h-3.5 w-3.5 text-[#d4af37]" />
               <span className="underline underline-offset-4">
@@ -409,7 +409,7 @@ export function ProductInfo({
 
             {selectedSize === "CUSTOM" && (
               <div className="mt-3 p-4 border border-[#d4af37]/30 bg-[#fdfaf5] rounded-md animate-in fade-in slide-in-from-top-1 duration-200 shadow-sm">
-                <label htmlFor="customNote" className="block text-xs font-bold uppercase tracking-wider text-[#3D0B3D] mb-2">
+                <label htmlFor="customNote" className="block text-xs font-bold uppercase tracking-wider text-[#8B263E] mb-2">
                   Custom Measurements & Specific Instructions
                 </label>
                 <textarea
@@ -418,7 +418,7 @@ export function ProductInfo({
                   value={customNote}
                   onChange={(e) => setCustomNote(e.target.value)}
                   placeholder="Specify body length, chest, shoulder, or sleeve measurements..."
-                  className="w-full p-3 border border-border/80 bg-white text-xs text-foreground transition-all focus:outline-none focus:border-[#3D0B3D] rounded-sm resize-none"
+                  className="w-full p-3 border border-border/80 bg-white text-xs text-foreground transition-all focus:outline-none focus:border-[#8B263E] rounded-sm resize-none"
                 />
                 <p className="mt-2 text-[10px] text-muted-foreground leading-relaxed">
                   Our team will verify your measurements via WhatsApp ({BUSINESS.PHONE}) before crafting.
@@ -478,7 +478,7 @@ export function ProductInfo({
             className={`flex-1 flex items-center justify-center gap-2 md:gap-2.5 min-h-[50px] md:min-h-[54px] px-3 md:px-4 text-[11px] md:text-xs font-extrabold uppercase tracking-[0.16em] md:tracking-[0.2em] transition-all duration-300 rounded-md cursor-pointer active:scale-[0.98] ${
               !isInStock
                 ? "bg-neutral-200 border border-neutral-300 text-neutral-500 font-bold opacity-100 cursor-not-allowed"
-                : "bg-[#3D0B3D] hover:bg-[#2E062E] text-[#d4af37] border border-[#d4af37]/50 shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                : "bg-[#8B263E] hover:bg-[#2E062E] text-[#d4af37] border border-[#d4af37]/50 shadow-md hover:shadow-lg hover:-translate-y-0.5"
             }`}
           >
             <ShoppingBag className="h-4 w-4 text-[#d4af37] shrink-0" />
@@ -491,7 +491,7 @@ export function ProductInfo({
             className={`flex-1 flex items-center justify-center gap-2 md:gap-2.5 min-h-[50px] md:min-h-[54px] px-3 md:px-4 text-[11px] md:text-xs font-extrabold uppercase tracking-[0.16em] md:tracking-[0.2em] transition-all duration-300 rounded-md cursor-pointer active:scale-[0.98] ${
               !isInStock
                 ? "bg-neutral-200 border border-neutral-300 text-neutral-500 font-bold opacity-100 cursor-not-allowed"
-                : "bg-[#3D0B3D] hover:bg-[#2E062E] text-[#d4af37] shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                : "bg-[#8B263E] hover:bg-[#2E062E] text-[#d4af37] shadow-md hover:shadow-lg hover:-translate-y-0.5"
             }`}
           >
             <span>{!isInStock ? "OUT OF STOCK" : "✦ BUY NOW"}</span>
@@ -585,7 +585,7 @@ export function ProductInfo({
             <p>• <strong>Open Parcel Policy:</strong> ডেলিভারি ম্যানের সামনে পার্সেল খুলে ফেব্রিক, কালার, সাইজ ও এম্ব্রয়ডারি চেক করে তারপর মূল্য পরিশোধ করুন।</p>
             <p>• <strong>Physical Outlet:</strong> Parents View (1st Floor), 20 Nayasarak Point, Sylhet — শোরুমে এসে ট্রায়াল দিয়ে কেনার সুবিধা।</p>
             <p>• <strong>Pre-Order Guarantee:</strong> ২৫–৩৫ দিনের মধ্যে ডেলিভারি। ডেলিভারিতে বিলম্ব হলে অগ্রিম টাকা তাৎক্ষণিকভাবে ফেরত দেওয়া হবে।</p>
-            <p>• <strong>Hotline & WhatsApp:</strong> 01766-568408</p>
+            <p>• <strong>Hotline & WhatsApp:</strong> 01674-054386</p>
           </div>
         </AccordionItem>
       </div>

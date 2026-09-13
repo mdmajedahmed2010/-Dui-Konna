@@ -5,41 +5,46 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Enaya's | Sylhet — Luxury Global Styles
- * Authentic Pakistani Designer Fashion & Boutique Pret
- * Elevate Your Style — Nayasarak Point, Sylhet
+ * 3 sis xclusive | Sylhet — Luxury Global Styles
+ * Authentic Pakistani Designer Fashion & Luxury Ethnic Wear
+ * JUST FOR WOMEN — 17 Years of Trust in Fashion
  */
 
 /* ═══════════════════════════════════════════
-   THEME — Enaya's Sylhet Color System
+   THEME — 3 sis xclusive Color System
    ═══════════════════════════════════════════ */
 @theme inline {
-  --color-primary: #3D0B3D;
+  --color-primary: #8B263E;
   --color-primary-foreground: #ffffff;
-  --color-secondary: #fbf8f5;
-  --color-secondary-foreground: #2d082d;
-  --color-accent: #d4af37;
-  --color-accent-foreground: #1e1622;
-  --color-accent-light: #fef9e7;
-  --color-enayas-purple: #3D0B3D;
-  --color-enayas-dark: #220424;
-  --color-enayas-gold: #d4af37;
-  --color-enayas-rose: #f48fb1;
-  --color-enayas-wine: #4a0e4e;
-  --color-blossom-pink: #f48fb1;
-  --color-blossom-rose: #e8a5b8;
-  --color-blossom-wine: #3D0B3D;
-  --color-background: #faf7f5;
-  --color-foreground: #1e1622;
+  --color-secondary: #FAF4F0;
+  --color-secondary-foreground: #2A151C;
+  --color-accent: #D4AF37;
+  --color-accent-foreground: #1E1622;
+  --color-accent-light: #FDF4F6;
+  --color-threesis-plum: #8B263E;
+  --color-threesis-rose: #D4708A;
+  --color-threesis-dark: #2A151C;
+  --color-threesis-gold: #D4AF37;
+  --color-threesis-cream: #FDFBF7;
+  --color-enayas-purple: #8B263E;
+  --color-enayas-dark: #2A151C;
+  --color-enayas-gold: #D4AF37;
+  --color-enayas-rose: #D4708A;
+  --color-enayas-wine: #6D1B2E;
+  --color-blossom-pink: #D4708A;
+  --color-blossom-rose: #E8A5B8;
+  --color-blossom-wine: #8B263E;
+  --color-background: #FAF7F5;
+  --color-foreground: #22181C;
   --color-surface: #ffffff;
-  --color-surface-warm: #fcf8f5;
-  --color-muted: #f4ede8;
-  --color-muted-foreground: #6b7280;
-  --color-border: #ede1d8;
-  --color-destructive: #dc2626;
-  --color-success: #16a34a;
-  --color-warning: #f59e0b;
-  --color-sale: #3D0B3D;
+  --color-surface-warm: #FCF8F6;
+  --color-muted: #F4EAE6;
+  --color-muted-foreground: #6B7280;
+  --color-border: #EBDCD5;
+  --color-destructive: #DC2626;
+  --color-success: #16A34A;
+  --color-warning: #F59E0B;
+  --color-sale: #8B263E;
   --font-heading: var(--font-heading);
   --font-sans: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);

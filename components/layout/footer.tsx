@@ -1,9 +1,9 @@
 "use client";
 
 /**
- * Enaya's | Sylhet — Royal Purple & Gold Haute Couture Footer
+ * 3 sis xclusive — Royal Purple & Gold Haute Couture Footer
  * Elevate Your Style | Luxury Women's Boutique & Authentic Pakistani Designer Fashion
- * Nayasarak Point, Sylhet, Bangladesh — https://www.facebook.com/Enayas.Sylhet/
+ * Nayasarak Point, Sylhet, Bangladesh — https://www.facebook.com/3.sis.xclusive/
  */
 
 import { useState } from "react";
@@ -39,7 +39,7 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
     e.preventDefault();
     if (!email) return;
     setSubscribed(true);
-    toast.success("Welcome to Enaya's VIP Club! Use promo code ENAYA10 for 10% off your order.");
+    toast.success("Welcome to Enaya's VIP Club! Use promo code 3SIS10 for 10% off your order.");
   };
 
   return (
@@ -47,7 +47,7 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
       <footer className="bg-[#19041A] text-[#FAF7F5] relative overflow-hidden border-t border-[#D4AF37]/30">
         {/* Giant Enaya's Watermark Typography */}
         <div className="absolute -bottom-10 right-0 pointer-events-none select-none text-[120px] md:text-[220px] font-bold text-white/[0.02] font-heading leading-none">
-          ENAYA'S
+          3 SIS
         </div>
 
         {/* 1. VIP Club Newsletter Banner */}
@@ -57,7 +57,7 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/30">
                 <Sparkles className="h-3.5 w-3.5 text-[#F3C649]" />
                 <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#F3C649]">
-                  ENAYA'S | SYLHET VIP CONCIERGE
+                  3 SIS | SYLHET VIP CONCIERGE
                 </span>
               </div>
               <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
@@ -70,7 +70,7 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
               {subscribed ? (
                 <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 text-xs font-bold tracking-wider">
                   <Check className="h-4 w-4" />
-                  <span>Welcome! Use Promo Code: ENAYA10</span>
+                  <span>Welcome! Use Promo Code: 3SIS10</span>
                 </div>
               ) : (
                 <form
@@ -110,14 +110,14 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                       ? settings.store_logo
                       : "/logo.jpg"
                   }
-                  alt="Enaya's | Sylhet"
+                  alt="3 sis xclusive"
                   width={54}
                   height={54}
                   className="h-13 w-13 object-cover rounded-full ring-2 ring-[#D4AF37]/50 group-hover:scale-105 transition-transform"
                 />
                 <div>
                   <p className="text-lg font-bold text-white tracking-wider font-heading leading-tight">
-                    Enaya's | Sylhet
+                    3 sis xclusive
                   </p>
                   <p className="text-[10px] text-[#F3C649] font-semibold tracking-[0.24em] uppercase">
                     Elevate Your Style
@@ -216,7 +216,7 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                       <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
                     </svg>
-                    Instagram (@enaya_s_)
+                    Instagram (@3.sis.xclusive)
                   </span>
                   <ArrowUpRight className="h-3.5 w-3.5 text-[#F3C649]" />
                 </a>
@@ -229,7 +229,7 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                 >
                   <span className="flex items-center gap-2">
                     <MessageCircle className="h-4 w-4 text-[#25D366]" />
-                    WhatsApp Hotline: 01766-568408
+                    WhatsApp Hotline: 01674-054386
                   </span>
                   <ArrowUpRight className="h-3.5 w-3.5" />
                 </a>
@@ -243,7 +243,7 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
         <div className="border-t border-white/10 py-6 text-xs text-neutral-400">
           <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-center md:text-left">
-              &copy; {new Date().getFullYear()} Enaya's | Sylhet (এনায়াস সিলেট). All Rights Reserved. Elevate Your Style.
+              &copy; {new Date().getFullYear()} 3 sis xclusive (এনায়াস সিলেট). All Rights Reserved. Elevate Your Style.
             </p>
             <div className="flex items-center gap-4 text-[11px] text-[#F3C649]">
               <span>✓ Open Parcel Policy</span>

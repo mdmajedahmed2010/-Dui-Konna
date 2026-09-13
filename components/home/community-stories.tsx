@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Enaya's | Sylhet — Community Stories & Verified Sisterhood
+ * 3 sis xclusive — Community Stories & Verified Sisterhood
  * Instagram-style story circles with authentic customer quotes, Nayasarak boutique visits, and Open Parcel feedback
  */
 
@@ -27,7 +27,7 @@ const STORIES: StoryHighlight[] = [
     location: "Shahjalal Uposhohor, Sylhet",
     image: ASSETS.img1,
     quote:
-      "Enaya's থেকে Sadabahar 3-Piece Luxury Lawn সেটটি নিয়েছিলাম। ডেলিভারির সময় ডেলিভারি ম্যানের সামনে পার্সেল খুলে চেক করে নেয়ার সুবিধা (Open Parcel) পেয়েছি। কাপড়ের কোয়ালিটি এবং নিখুঁত এম্ব্রয়ডারি সত্যিই ১০০% অরিজিনাল!",
+      "3 sis xclusive থেকে Sadabahar 3-Piece Luxury Lawn সেটটি নিয়েছিলাম। ডেলিভারির সময় ডেলিভারি ম্যানের সামনে পার্সেল খুলে চেক করে নেয়ার সুবিধা (Open Parcel) পেয়েছি। কাপড়ের কোয়ালিটি এবং নিখুঁত এম্ব্রয়ডারি সত্যিই ১০০% অরিজিনাল!",
     product: "Sadabahar Luxury Lawn 3-Piece",
     rating: 5,
   },
@@ -37,7 +37,7 @@ const STORIES: StoryHighlight[] = [
     location: "Nayasarak, Sylhet",
     image: ASSETS.img3,
     quote:
-      "প্যারেন্টস ভিউ ১ম তলার আউটলেটে গিয়ে ড্রেসগুলো সরাসরি দেখে ট্রায়াল দিয়েছি। ফেব্রিক অনেক সফট আর এম্ব্রয়ডারি নিখুঁত। শোরুমের আপুদের ব্যবহারও অসম্ভব ভালো!",
+      "3 sis xclusive-এর সাথে আমার দীর্ঘদিনের সম্পর্ক। ১৭ বছরের বিশ্বাসে তাদের যেকোনো পাকিস্তানি ড্রেস চোখ বন্ধ করে অর্ডার করা যায়। ফেব্রিক নিখুঁত আর প্রতিটি ড্রেস ১০০% অরিজিনাল!",
     product: "Kashmiri Pure Katan Suit",
     rating: 5,
   },
@@ -74,16 +74,16 @@ export function CommunityStories() {
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#f0d0e6] mb-3 shadow-xs">
-            <Heart className="h-3 w-3 text-[#3D0B3D] fill-[#3D0B3D]" />
-            <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#3D0B3D]">
-              ENAYA&apos;S SISTERHOOD
+            <Heart className="h-3 w-3 text-[#8B263E] fill-[#8B263E]" />
+            <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#8B263E]">
+              3 SIS SISTERHOOD
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1e1622] font-heading tracking-tight">
             Cherished By Our Sisters
           </h2>
           <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
-            Real styling moments, Nayasarak boutique visits, and unboxing reviews from verified Enaya&apos;s clients across Sylhet & Bangladesh.
+            Real styling moments, unboxing reviews, and 17 years of trusted love from verified 3 sis xclusive clients across Bangladesh.
           </p>
 
           {/* Interactive Story Circles */}
@@ -97,7 +97,7 @@ export function CommunityStories() {
                 <div
                   className={`size-16 sm:size-20 rounded-full p-1 transition-all duration-300 ${
                     idx === activeIdx
-                      ? "ring-4 ring-[#3D0B3D] scale-110 shadow-lg"
+                      ? "ring-4 ring-[#8B263E] scale-110 shadow-lg"
                       : "ring-2 ring-[#ebdcd0] opacity-75 group-hover/avatar:opacity-100"
                   }`}
                 >
@@ -131,14 +131,14 @@ export function CommunityStories() {
           </p>
 
           <div className="mt-6 pt-4 border-t border-[#ebdcd0]/80 flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-4 text-xs">
-            <span className="font-bold text-[#3D0B3D] flex items-center gap-1.5">
+            <span className="font-bold text-[#8B263E] flex items-center gap-1.5">
               <CheckCircle2 className="size-4 text-[#D4AF37]" />
               {activeStory.name}
             </span>
             <span className="hidden sm:inline text-neutral-300">•</span>
             <span className="text-neutral-500 font-medium">{activeStory.location}</span>
             <span className="hidden sm:inline text-neutral-300">•</span>
-            <span className="font-semibold text-[#3D0B3D] bg-[#fdf5fa] px-3 py-1 rounded-full border border-[#f0d0e6]">
+            <span className="font-semibold text-[#8B263E] bg-[#fdf5fa] px-3 py-1 rounded-full border border-[#f0d0e6]">
               {activeStory.product}
             </span>
           </div>

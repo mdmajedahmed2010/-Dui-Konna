@@ -1,7 +1,7 @@
 /**
- * Enaya's | Sylhet — Terms & Conditions
+ * 3 sis xclusive — Terms & Conditions
  * Authentic Pakistani Luxury Suits & Designer Collections
- * Outlet: Parents View 1st Floor, 20 Nayasarak Point, Sylhet
+ * Outlet: Sylhet, Bangladesh
  */
 
 import type { Metadata } from "next";
@@ -10,16 +10,16 @@ import { Sparkles, MapPin, Phone, ShieldCheck } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions — Enaya's | Sylhet",
+  title: "Terms & Conditions — 3 sis xclusive",
   description:
-    "Enaya's | Sylhet Terms & Conditions: Open Parcel Policy, Ready Stock Cash on Delivery, and Pakistani Pre-Order guidelines.",
+    "3 sis xclusive Terms & Conditions: Open Parcel Policy, Ready Stock Cash on Delivery, and Pakistani Pre-Order guidelines.",
 };
 
 const sections = [
   {
     id: "01",
     title: "আমাদের পরিচয় ও বুটিক মডেল",
-    content: `Enaya's | Sylhet সিলেটে প্রিমিয়াম পাকিস্তানি লাক্সারি লন, ব্রাইডাল প্রিট, ভেলভেট ও এক্সক্লুসিভ ডিজাইনার পোশাকের একটি বিশ্বস্ত বুটিক ব্র্যান্ড। 
+    content: `3 sis xclusive সিলেটে প্রিমিয়াম পাকিস্তানি লাক্সারি লন, ব্রাইডাল প্রিট, ভেলভেট ও এক্সক্লুসিভ ডিজাইনার পোশাকের একটি বিশ্বস্ত বুটিক ব্র্যান্ড। 
 
 আমাদের ফ্ল্যাগশিপ আউটলেট: Parents View (1st Floor), R/A AL-Helal, 20 Nayasarak Point (Beside Noyashorok Kabab / Nari Shop Building), Sylhet।
 আমরা সরাসরি পাকিস্তান থেকে ১০০% অরিজিনাল ব্র্যান্ডেড কালেকশন সংগ্রহ করি।`,
@@ -27,7 +27,7 @@ const sections = [
   {
     id: "02",
     title: "Order Process ও Pre-Order নীতিমালা",
-    content: `অর্ডার করতে ওয়েবসাইটে সরাসরি চেকআউট করুন অথবা আমাদের WhatsApp (01766-568408) বা Facebook Page-এ ইনবক্স করুন। 
+    content: `অর্ডার করতে ওয়েবসাইটে সরাসরি চেকআউট করুন অথবা আমাদের WhatsApp (01674-054386) বা Facebook Page-এ ইনবক্স করুন। 
 
 ✅ Ready Stock (রেডি স্টক):
 • সিলেট ভেতরে ও সারা বাংলাদেশে সম্পূর্ণ Cash on Delivery (COD) প্রযোজ্য।
@@ -53,14 +53,14 @@ const sections = [
   {
     id: "04",
     title: "Open Parcel Policy ও এক্সচেঞ্জ নীতিমালা",
-    content: `You have to check products in front of the delivery man. ডেলিভারি ম্যানের সামনে পার্সেল খুলে ফেব্রিক ও সাইজ দেখে নিন। কোনো সমস্যা পরিলক্ষিত হলে সাথে সাথে আমাদের কল করুন (01766-568408)।
+    content: `You have to check products in front of the delivery man. ডেলিভারি ম্যানের সামনে পার্সেল খুলে ফেব্রিক ও সাইজ দেখে নিন। কোনো সমস্যা পরিলক্ষিত হলে সাথে সাথে আমাদের কল করুন (01674-054386)।
 
 যৌক্তিক কারণ ছাড়া পণ্য ফেরত গ্রহণযোগ্য নয়। সাইজ সংক্রান্ত কোনো এক্সচেঞ্জ প্রয়োজন হলে সর্বোচ্চ ৩ দিনের মধ্যে যোগাযোগ করতে হবে।`,
   },
   {
     id: "05",
     title: "পণ্যের গুণমান ও ১০০% অরিজিনালিটি নিশ্চয়তা",
-    content: `Enaya's-এর প্রতিটি পোশাক:
+    content: `3 sis xclusive-এর প্রতিটি পোশাক:
 • ১০০% আসল পাকিস্তানি ব্র্যান্ডেড ফেব্রিক ও ড্রেস (Aghanoor, Sadabahar, Gul Ahmed, Maria.B)
 • নিখুঁত কারুকাজ ও উন্নত ফেব্রিক কোয়ালিটি
 • শোরুমে সরাসরি এসে যাচাই করে ট্রায়াল দেওয়ার সুবিধা`,
@@ -86,7 +86,7 @@ export default function TermsPage() {
   return (
     <main className="min-h-screen bg-[#faf7f5]">
       {/* Page Header */}
-      <section className="bg-[#3D0B3D] py-16 md:py-24 px-6 text-center relative overflow-hidden">
+      <section className="bg-[#8B263E] py-16 md:py-24 px-6 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-10 pointer-events-none">
           <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-[#D4AF37] translate-x-1/2 -translate-y-1/2 blur-2xl" />
         </div>
@@ -99,7 +99,7 @@ export default function TermsPage() {
             Terms & Conditions
           </h1>
           <p className="text-[#ebdcd0] text-sm leading-relaxed">
-            Enaya&apos;s | Sylhet-এ কেনাকাটা করার আগে আমাদের শর্তাবলী ও সেবা নীতিমালা পড়ে নিন।
+            3 sis xclusive-এ কেনাকাটা করার আগে আমাদের শর্তাবলী ও সেবা নীতিমালা পড়ে নিন।
           </p>
           <p className="text-[#D4AF37]/80 text-xs font-mono font-bold">সর্বশেষ আপডেট: সেপ্টেম্বর ২০২৬</p>
         </div>
@@ -112,10 +112,10 @@ export default function TermsPage() {
             <div
               key={section.id}
               id={`section-${section.id}`}
-              className="rounded-2xl p-6 md:p-8 bg-white border border-[#ebdcd0] border-l-4 border-l-[#3D0B3D] shadow-xs"
+              className="rounded-2xl p-6 md:p-8 bg-white border border-[#ebdcd0] border-l-4 border-l-[#8B263E] shadow-xs"
             >
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-[11px] font-mono text-[#3D0B3D] font-bold bg-[#fdf5fa] px-2.5 py-0.5 rounded-full border border-[#f0d0e6]">
+                <span className="text-[11px] font-mono text-[#8B263E] font-bold bg-[#fdf5fa] px-2.5 py-0.5 rounded-full border border-[#f0d0e6]">
                   {section.id}
                 </span>
                 <h2 className="text-base md:text-lg font-bold text-[#1e1622]">
@@ -132,8 +132,8 @@ export default function TermsPage() {
           <div className="text-center pt-8 space-y-4">
             <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-[#D4AF37]/40 shadow-xs">
               <span className="text-[#D4AF37] text-sm">✦</span>
-              <p className="text-xs text-[#3D0B3D] font-bold">
-                Enaya&apos;s | Sylhet-এ অর্ডার করে আপনি এই Terms & Conditions-এ সম্মত হচ্ছেন
+              <p className="text-xs text-[#8B263E] font-bold">
+                3 sis xclusive-এ অর্ডার করে আপনি এই Terms & Conditions-এ সম্মত হচ্ছেন
               </p>
               <span className="text-[#D4AF37] text-sm">✦</span>
             </div>
@@ -141,21 +141,21 @@ export default function TermsPage() {
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
               <Link
                 href="/refund-policy"
-                className="text-xs text-[#3D0B3D] hover:underline font-bold uppercase tracking-wider"
+                className="text-xs text-[#8B263E] hover:underline font-bold uppercase tracking-wider"
               >
                 Refund Policy →
               </Link>
               <span className="text-[#D4AF37] hidden sm:inline">|</span>
               <Link
                 href="/contact"
-                className="text-xs text-[#3D0B3D] hover:underline font-bold uppercase tracking-wider"
+                className="text-xs text-[#8B263E] hover:underline font-bold uppercase tracking-wider"
               >
                 Contact & Outlet →
               </Link>
               <span className="text-[#D4AF37] hidden sm:inline">|</span>
               <Link
                 href="/privacy-policy"
-                className="text-xs text-[#3D0B3D] hover:underline font-bold uppercase tracking-wider"
+                className="text-xs text-[#8B263E] hover:underline font-bold uppercase tracking-wider"
               >
                 Privacy Policy →
               </Link>
@@ -164,7 +164,7 @@ export default function TermsPage() {
             <div className="pt-4">
               <Link
                 href="/"
-                className="inline-flex items-center justify-center h-12 px-10 bg-[#3D0B3D] text-white text-xs font-bold uppercase tracking-[0.16em] rounded-full hover:bg-[#280728] transition-all shadow-md border border-[#D4AF37]/40"
+                className="inline-flex items-center justify-center h-12 px-10 bg-[#8B263E] text-white text-xs font-bold uppercase tracking-[0.16em] rounded-full hover:bg-[#280728] transition-all shadow-md border border-[#D4AF37]/40"
               >
                 Explore Collections
               </Link>

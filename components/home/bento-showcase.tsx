@@ -1,9 +1,9 @@
 "use client";
 
 /**
- * Enaya's | Sylhet — Asymmetric Haute Bento Showcase
+ * 3 sis xclusive — Asymmetric Haute Bento Showcase
  * Breaks visual monotony with dynamic, magazine-style bento card architecture
- * Nayasarak Point, Sylhet — https://www.facebook.com/Enayas.Sylhet/
+ * Nayasarak Point, Sylhet — https://www.facebook.com/3.sis.xclusive/
  */
 
 import Link from "next/link";
@@ -32,7 +32,7 @@ const BENTO_ITEMS: BentoItem[] = [
     image: ASSETS.img7,
     href: "/collections/pakistani-lawn",
     gridClass: "lg:col-span-7 lg:row-span-2 min-h-[380px] lg:min-h-[520px]",
-    accentColor: "#3D0B3D",
+    accentColor: "#8B263E",
   },
   {
     title: "Designer Luxury & Pre-Orders",
@@ -82,12 +82,12 @@ export function BentoShowcase() {
           <div className="max-w-xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#D4AF37]/40 mb-3 shadow-xs">
               <Sparkles className="h-3 w-3 text-[#D4AF37]" />
-              <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#3D0B3D]">
+              <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#8B263E]">
                 CURATED COLLECTIONS
               </span>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold text-[#1E1622] font-heading tracking-tight">
-              The Enaya's Wardrobe
+              The 3 Sis Wardrobe
             </h2>
             <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
               Explore authentic Pakistani luxury lawn, handcrafted Sadabahar pret, festive zardozi party wear, and pure cotton farsi sets in Sylhet.
@@ -96,7 +96,7 @@ export function BentoShowcase() {
 
           <Link
             href="/categories"
-            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#3D0B3D] hover:text-[#4A0E4E] transition-colors group/link self-start md:self-end"
+            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#8B263E] hover:text-[#4A0E4E] transition-colors group/link self-start md:self-end"
           >
             <span>View All Categories</span>
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 text-[#D4AF37]" />
@@ -133,7 +133,7 @@ export function BentoShowcase() {
                   <span className="px-3 py-1 rounded-full bg-white/20 backdrop-blur-md border border-white/25 text-white text-[10px] font-extrabold uppercase tracking-[0.2em] shadow-xs">
                     {item.tag}
                   </span>
-                  <span className="px-2.5 py-1 rounded-full bg-[#3D0B3D]/85 border border-[#D4AF37]/50 backdrop-blur-md text-[#F3C649] text-[10px] font-bold tracking-wider">
+                  <span className="px-2.5 py-1 rounded-full bg-[#8B263E]/85 border border-[#D4AF37]/50 backdrop-blur-md text-[#F3C649] text-[10px] font-bold tracking-wider">
                     {item.priceNote}
                   </span>
                 </div>
@@ -150,7 +150,7 @@ export function BentoShowcase() {
                       </p>
                     </div>
 
-                    <div className="flex items-center justify-center size-10 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-white group-hover/card:bg-[#D4AF37] group-hover/card:text-[#3D0B3D] transition-all duration-300 group-hover/card:scale-110 shrink-0">
+                    <div className="flex items-center justify-center size-10 rounded-full bg-white/15 backdrop-blur-md border border-white/25 text-white group-hover/card:bg-[#D4AF37] group-hover/card:text-[#8B263E] transition-all duration-300 group-hover/card:scale-110 shrink-0">
                       <ArrowUpRight className="h-4 w-4" />
                     </div>
                   </div>

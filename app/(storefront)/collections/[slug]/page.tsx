@@ -29,7 +29,7 @@ const specialCategories: Record<string, { name: string; description: string }> =
   },
   featured: {
     name: "Featured Pret",
-    description: "Handpicked signature luxury Pakistani designer pret curated by Enaya's | Sylhet.",
+    description: "Handpicked signature luxury Pakistani designer pret curated by 3 sis xclusive.",
   },
   sale: {
     name: "Special Offers",
@@ -47,7 +47,7 @@ export async function generateMetadata({
   // Check special categories first
   if (specialCategories[slug]) {
     return {
-      title: `${specialCategories[slug].name} — Enaya's | Sylhet`,
+      title: `${specialCategories[slug].name} — 3 sis xclusive`,
       description: specialCategories[slug].description,
     };
   }
@@ -63,10 +63,10 @@ export async function generateMetadata({
     }
   }
 
-  if (!category) return { title: "Collection Not Found — Enaya's | Sylhet" };
+  if (!category) return { title: "Collection Not Found — 3 sis xclusive" };
 
   return {
-    title: `${category.name} — Enaya's | Sylhet`,
+    title: `${category.name} — 3 sis xclusive`,
     description: `Browse our ${category.name} collection — 100% authentic Pakistani luxury suits & pret in Sylhet with Open Parcel Policy.`,
   };
 }

@@ -1,7 +1,8 @@
 /**
- * Enaya's | Sylhet — Application Constants
- * Elevate Your Style | Luxury Women's Boutique & Authentic Pakistani Designer Fashion
- * Nayasarak Point, Sylhet, Bangladesh — https://www.facebook.com/Enayas.Sylhet/
+ * 3 sis xclusive | Sylhet — Application Constants
+ * JUST FOR WOMEN | 17 Years of Trust in Fashion
+ * Authentic Pakistani Designer Fashion & Luxury Ethnic Wear
+ * Website: https://3sisxclusivebd.com — https://www.facebook.com/3.sis.xclusive/
  */
 
 // Delivery Charges (BDT)
@@ -14,7 +15,7 @@ export const DELIVERY_CHARGE = {
 } as const;
 
 // Order Number Prefix
-export const ORDER_PREFIX = "ENY";
+export const ORDER_PREFIX = "3SIS";
 
 // Product Status
 export const PRODUCT_STATUS = {
@@ -78,32 +79,33 @@ export const AUTH = {
   PASSWORD_RESET_EXPIRY: 60 * 60,
 } as const;
 
-// Business Info — Enaya's | Sylhet
+// Business Info — 3 sis xclusive
 export const BUSINESS = {
-  NAME: "Enaya's | Sylhet",
-  NAME_SHORT: "Enaya's",
-  NAME_BN: "এনায়াস সিলেট",
-  TAGLINE: "Elevate Your Style",
-  TAGLINE_BN: "স্টাইল • ঐতিহ্য • আভিজাত্য",
-  PHONE: "01766-568408",
-  PHONE_INTL: "+880 1766-568408",
-  WHATSAPP: "+8801766568408",
-  WHATSAPP_LINK: "https://wa.me/8801766568408",
-  EMAIL: "enayas.sylhet@gmail.com",
-  ADDRESS: "Parents View (1st Floor), R/A AL-Helal, 20 Nayasarak Point, Sylhet, Bangladesh",
-  ADDRESS_BN: "প্যারেন্টস ভিউ (২য় তলা / ১ম ফ্লোর), আর/এ আল-হেলাল, ২০ নয়াসড়ক পয়েন্ট, সিলেট",
-  LOCATION_LANDMARK: "Beside Noyashorok Kabab / Nari Shop Building",
-  FACEBOOK: "https://www.facebook.com/Enayas.Sylhet/",
-  INSTAGRAM: "https://www.instagram.com/enaya_s_/",
+  NAME: "3 sis xclusive",
+  NAME_SHORT: "3 sis",
+  NAME_BN: "থ্রি সিস এক্সক্লুসিভ",
+  TAGLINE: "JUST FOR WOMEN",
+  TAGLINE_SUB: "17 Years of Trust in Fashion",
+  TAGLINE_BN: "জাস্ট ফর উইমেন • ফ্যাশনে ১৭ বছরের বিশ্বস্ততা",
+  PHONE: "01674-054386",
+  PHONE_INTL: "+880 1674-054386",
+  WHATSAPP: "+8801674054386",
+  WHATSAPP_LINK: "https://wa.me/8801674054386",
+  EMAIL: "info@3sisxclusivebd.com",
+  ADDRESS: "Sylhet, Bangladesh",
+  ADDRESS_BN: "সিলেট, বাংলাদেশ",
+  LOCATION_LANDMARK: "Sylhet Fashion Boutique Zone",
+  FACEBOOK: "https://www.facebook.com/3.sis.xclusive/",
+  INSTAGRAM: "https://www.facebook.com/3.sis.xclusive/",
   YOUTUBE: "",
-  WEBSITE: "https://enayas-sylhet.com",
-  ESTABLISHED: "Nayasarak Point, Sylhet",
-  FOLLOWERS: "34K+",
+  WEBSITE: "https://3sisxclusivebd.com",
+  ESTABLISHED: "17 Years of Trust in Fashion",
+  FOLLOWERS: "53K+",
   RATING: "5.0 ★",
   RECOMMEND_RATE: "100%",
   OPEN_PARCEL_POLICY: true,
-  STORE_HOURS: "Sat–Thu: 10:30 AM – 9:30 PM | Fri: 3:00 PM – 10:00 PM",
-  STORE_HOURS_BN: "শনিবার–বৃহস্পতিবার: সকাল ১০:৩০ – রাত ৯:৩০ | শুক্রবার: বিকাল ৩:০০ – রাত ১০:০০",
+  STORE_HOURS: "Sat–Thu: 10:00 AM – 10:00 PM | Fri: 3:00 PM – 10:00 PM",
+  STORE_HOURS_BN: "শনিবার–বৃহস্পতিবার: সকাল ১০:০০ – রাত ১০:০০ | শুক্রবার: বিকাল ৩:০০ – রাত ১০:০০",
 } as const;
 
 // Currency
@@ -118,12 +120,13 @@ export const COUPON_CODES: Record<
   string,
   { type: "percent" | "flat"; value: number; label: string }
 > = {
-  ENAYA10: { type: "percent", value: 10, label: "10% off your order" },
-  ENAYASVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
-  EID2026: { type: "percent", value: 15, label: "15% Eid Luxury Special" },
+  THREESIS10: { type: "percent", value: 10, label: "10% off your order" },
+  THREESISVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
+  FESTIVE2026: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
   WELCOME5: { type: "percent", value: 5, label: "5% Welcome Discount" },
   FLAT500: { type: "flat", value: 500, label: "৳500 flat discount" },
   // Backward compatibility aliases
+  ENAYA10: { type: "percent", value: 10, label: "10% off your order" },
   STYLE10: { type: "percent", value: 10, label: "10% off your order" },
   STYLE15: { type: "percent", value: 15, label: "15% off your order" },
 } as const;

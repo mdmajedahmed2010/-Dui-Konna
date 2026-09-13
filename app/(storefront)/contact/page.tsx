@@ -1,9 +1,9 @@
 "use client";
 
 /**
- * Enaya's | Sylhet — Contact & Boutique Visit
- * Parents View (1st Floor), 20 Nayasarak Point, Sylhet
- * Phone / WhatsApp: 01766-568408
+ * 3 sis xclusive — Contact & Boutique Visit
+ * Sylhet, Bangladesh
+ * Phone / WhatsApp: 01674-054386
  */
 
 import Image from "next/image";
@@ -21,7 +21,7 @@ const contactDetails = [
   {
     icon: MessageCircle,
     label: "Facebook Inbox",
-    value: "Enaya's | Sylhet",
+    value: "3 sis xclusive",
     href: BUSINESS.FACEBOOK,
     note: "Order বা ড্রেন ইনকোয়ারির জন্য সরাসরি মেসেজ দিন",
   },
@@ -52,15 +52,15 @@ export default function ContactPage() {
   return (
     <main className="min-h-screen bg-[#faf7f5]">
       {/* Hero Section */}
-      <section className="relative h-[45vh] md:h-[50vh] overflow-hidden bg-[#3D0B3D]">
+      <section className="relative h-[45vh] md:h-[50vh] overflow-hidden bg-[#8B263E]">
         <Image
           src="/banner.jpg"
-          alt="Enaya's Sylhet — আমাদের সাথে যোগাযোগ করুন"
+          alt="3 sis xclusive Sylhet — আমাদের সাথে যোগাযোগ করুন"
           fill
           className="object-cover opacity-30"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#3D0B3D]/70 via-[#3D0B3D]/50 to-[#3D0B3D]/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#8B263E]/70 via-[#8B263E]/50 to-[#8B263E]/95" />
         <div className="absolute inset-0 flex items-center justify-center flex-col text-center px-6">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 mb-4">
             <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
@@ -78,10 +78,10 @@ export default function ContactPage() {
       </section>
 
       {/* Tagline Strip */}
-      <section className="bg-[#3D0B3D] py-3.5 px-6 text-center border-t border-[#D4AF37]/30">
+      <section className="bg-[#8B263E] py-3.5 px-6 text-center border-t border-[#D4AF37]/30">
         <p className="text-[#ebdcd0] text-sm font-semibold tracking-wide flex items-center justify-center gap-2">
           <span className="text-[#D4AF37]">✦</span>
-          <span>দ্রুততম প্রি-অর্ডার ও সাপোর্টের জন্য আমাদের WhatsApp (01766-568408) অথবা Facebook Inbox-এ যোগাযোগ করুন</span>
+          <span>দ্রুততম প্রি-অর্ডার ও সাপোর্টের জন্য আমাদের WhatsApp (01674-054386) অথবা Facebook Inbox-এ যোগাযোগ করুন</span>
           <span className="text-[#D4AF37]">✦</span>
         </p>
       </section>
@@ -93,16 +93,16 @@ export default function ContactPage() {
             {/* Left: Contact Details */}
             <div className="space-y-8">
               <div>
-                <p className="text-[10px] uppercase tracking-[0.25em] text-[#3D0B3D] font-bold mb-3">
+                <p className="text-[10px] uppercase tracking-[0.25em] text-[#8B263E] font-bold mb-3">
                   যোগাযোগ ও লোকেশন
                 </p>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#1e1622] leading-tight mb-4 font-heading">
                   আমাদের আউটলেটে আসুন অথবা
                   <br />
-                  <span className="italic font-normal text-[#3D0B3D]">সরাসরি কথা বলুন</span>
+                  <span className="italic font-normal text-[#8B263E]">সরাসরি কথা বলুন</span>
                 </h2>
                 <p className="text-sm text-neutral-600 leading-relaxed">
-                  Enaya&apos;s | Sylhet — ১০০% আসল পাকিস্তানি লাক্সারি লন, ব্রাইডাল প্রিট ও ভেলভেট পোশাকের বিশ্বস্ত ঠিকানা। যেকোনো প্রোডাক্ট স্টক, সাইজ বা কাস্টম প্রি-অর্ডারের জন্য আমাদের সাথে যোগাযোগ করুন।
+                  3 sis xclusive — ১০০% আসল পাকিস্তানি লাক্সারি লন, ব্রাইডাল প্রিট ও ভেলভেট পোশাকের বিশ্বস্ত ঠিকানা। যেকোনো প্রোডাক্ট স্টক, সাইজ বা কাস্টম প্রি-অর্ডারের জন্য আমাদের সাথে যোগাযোগ করুন।
                 </p>
               </div>
 
@@ -111,13 +111,13 @@ export default function ContactPage() {
                 {contactDetails.map((detail) => (
                   <div
                     key={detail.label}
-                    className="flex items-start gap-4 p-5 rounded-2xl bg-white border border-[#ebdcd0] hover:border-[#3D0B3D] hover:shadow-md transition-all group"
+                    className="flex items-start gap-4 p-5 rounded-2xl bg-white border border-[#ebdcd0] hover:border-[#8B263E] hover:shadow-md transition-all group"
                   >
-                    <div className="flex-shrink-0 w-11 h-11 rounded-full bg-[#fdf5fa] text-[#3D0B3D] flex items-center justify-center group-hover:bg-[#3D0B3D] group-hover:text-white transition-colors">
+                    <div className="flex-shrink-0 w-11 h-11 rounded-full bg-[#fdf5fa] text-[#8B263E] flex items-center justify-center group-hover:bg-[#8B263E] group-hover:text-white transition-colors">
                       <detail.icon className="h-5 w-5" />
                     </div>
                     <div className="space-y-0.5">
-                      <p className="text-[10px] uppercase tracking-[0.18em] text-[#3D0B3D] font-bold">
+                      <p className="text-[10px] uppercase tracking-[0.18em] text-[#8B263E] font-bold">
                         {detail.label}
                       </p>
                       {detail.href ? (
@@ -125,7 +125,7 @@ export default function ContactPage() {
                           href={detail.href}
                           target={detail.href.startsWith("http") ? "_blank" : undefined}
                           rel={detail.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                          className="text-sm font-bold text-[#1e1622] hover:text-[#3D0B3D] transition-colors block"
+                          className="text-sm font-bold text-[#1e1622] hover:text-[#8B263E] transition-colors block"
                         >
                           {detail.value}
                         </a>
@@ -176,53 +176,53 @@ export default function ContactPage() {
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
-                  alert("ধন্যবাদ! আমরা শীঘ্রই আপনার সাথে যোগাযোগ করব।\nদ্রুততম রেসপন্সের জন্য অনুগ্রহ করে আমাদের হোয়াটসঅ্যাপ (01766-568408)-এ নক করুন!");
+                  alert("ধন্যবাদ! আমরা শীঘ্রই আপনার সাথে যোগাযোগ করব।\nদ্রুততম রেসপন্সের জন্য অনুগ্রহ করে আমাদের হোয়াটসঅ্যাপ (01674-054386)-এ নক করুন!");
                 }}
                 className="space-y-5"
               >
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                   <div>
-                    <label className="block text-[11px] font-bold uppercase tracking-[0.15em] text-[#3D0B3D] mb-2">
+                    <label className="block text-[11px] font-bold uppercase tracking-[0.15em] text-[#8B263E] mb-2">
                       আপনার নাম *
                     </label>
                     <input
                       type="text"
                       required
                       placeholder="Full Name"
-                      className="w-full h-11 px-4 border border-[#ebdcd0] rounded-xl text-sm text-[#1e1622] placeholder:text-neutral-400 focus:outline-none focus:border-[#3D0B3D] focus:ring-1 focus:ring-[#3D0B3D]/20 transition-colors bg-[#faf7f5]"
+                      className="w-full h-11 px-4 border border-[#ebdcd0] rounded-xl text-sm text-[#1e1622] placeholder:text-neutral-400 focus:outline-none focus:border-[#8B263E] focus:ring-1 focus:ring-[#8B263E]/20 transition-colors bg-[#faf7f5]"
                     />
                   </div>
                   <div>
-                    <label className="block text-[11px] font-bold uppercase tracking-[0.15em] text-[#3D0B3D] mb-2">
+                    <label className="block text-[11px] font-bold uppercase tracking-[0.15em] text-[#8B263E] mb-2">
                       ফোন নম্বর *
                     </label>
                     <input
                       type="tel"
                       required
-                      placeholder="01766-568408"
-                      className="w-full h-11 px-4 border border-[#ebdcd0] rounded-xl text-sm text-[#1e1622] placeholder:text-neutral-400 focus:outline-none focus:border-[#3D0B3D] focus:ring-1 focus:ring-[#3D0B3D]/20 transition-colors bg-[#faf7f5]"
+                      placeholder="01674-054386"
+                      className="w-full h-11 px-4 border border-[#ebdcd0] rounded-xl text-sm text-[#1e1622] placeholder:text-neutral-400 focus:outline-none focus:border-[#8B263E] focus:ring-1 focus:ring-[#8B263E]/20 transition-colors bg-[#faf7f5]"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-bold uppercase tracking-[0.15em] text-[#3D0B3D] mb-2">
+                  <label className="block text-[11px] font-bold uppercase tracking-[0.15em] text-[#8B263E] mb-2">
                     ইমেইল (ঐচ্ছিক)
                   </label>
                   <input
                     type="email"
                     placeholder="your@email.com"
-                    className="w-full h-11 px-4 border border-[#ebdcd0] rounded-xl text-sm text-[#1e1622] placeholder:text-neutral-400 focus:outline-none focus:border-[#3D0B3D] focus:ring-1 focus:ring-[#3D0B3D]/20 transition-colors bg-[#faf7f5]"
+                    className="w-full h-11 px-4 border border-[#ebdcd0] rounded-xl text-sm text-[#1e1622] placeholder:text-neutral-400 focus:outline-none focus:border-[#8B263E] focus:ring-1 focus:ring-[#8B263E]/20 transition-colors bg-[#faf7f5]"
                   />
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-bold uppercase tracking-[0.15em] text-[#3D0B3D] mb-2">
+                  <label className="block text-[11px] font-bold uppercase tracking-[0.15em] text-[#8B263E] mb-2">
                     বিষয় *
                   </label>
                   <select
                     required
-                    className="w-full h-11 px-4 border border-[#ebdcd0] rounded-xl text-sm text-[#1e1622] focus:outline-none focus:border-[#3D0B3D] focus:ring-1 focus:ring-[#3D0B3D]/20 transition-colors bg-[#faf7f5]"
+                    className="w-full h-11 px-4 border border-[#ebdcd0] rounded-xl text-sm text-[#1e1622] focus:outline-none focus:border-[#8B263E] focus:ring-1 focus:ring-[#8B263E]/20 transition-colors bg-[#faf7f5]"
                   >
                     <option value="">বিষয় নির্বাচন করুন</option>
                     <option value="lawn">Pakistani Luxury Lawn 3-Piece</option>
@@ -237,20 +237,20 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label className="block text-[11px] font-bold uppercase tracking-[0.15em] text-[#3D0B3D] mb-2">
+                  <label className="block text-[11px] font-bold uppercase tracking-[0.15em] text-[#8B263E] mb-2">
                     আপনার বার্তা *
                   </label>
                   <textarea
                     required
                     rows={4}
                     placeholder="পছন্দের ড্রেসের নাম, সাইজ বা কোনো প্রশ্ন লিখুন..."
-                    className="w-full px-4 py-3 border border-[#ebdcd0] rounded-xl text-sm text-[#1e1622] placeholder:text-neutral-400 focus:outline-none focus:border-[#3D0B3D] focus:ring-1 focus:ring-[#3D0B3D]/20 transition-colors resize-none bg-[#faf7f5]"
+                    className="w-full px-4 py-3 border border-[#ebdcd0] rounded-xl text-sm text-[#1e1622] placeholder:text-neutral-400 focus:outline-none focus:border-[#8B263E] focus:ring-1 focus:ring-[#8B263E]/20 transition-colors resize-none bg-[#faf7f5]"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full h-13 bg-[#3D0B3D] hover:bg-[#280728] text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full transition-all duration-300 shadow-md border border-[#D4AF37]/40 active:scale-[0.99] py-4 cursor-pointer"
+                  className="w-full h-13 bg-[#8B263E] hover:bg-[#5E182A] text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full transition-all duration-300 shadow-md border border-[#D4AF37]/40 active:scale-[0.99] py-4 cursor-pointer"
                 >
                   মেসেজ পাঠান →
                 </button>
@@ -261,9 +261,9 @@ export default function ContactPage() {
                     href={BUSINESS.WHATSAPP}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#3D0B3D] font-bold hover:underline"
+                    className="text-[#8B263E] font-bold hover:underline"
                   >
-                    WhatsApp (01766-568408)
+                    WhatsApp (01674-054386)
                   </a>{" "}
                   করুন।
                 </p>
@@ -276,20 +276,20 @@ export default function ContactPage() {
       {/* Outlet Location & Directions Card */}
       <section className="bg-white py-14 px-6 border-t border-[#ebdcd0]">
         <div className="max-w-4xl mx-auto text-center space-y-4">
-          <div className="inline-flex items-center justify-center size-12 rounded-full bg-[#fdf5fa] text-[#3D0B3D] mx-auto mb-2">
+          <div className="inline-flex items-center justify-center size-12 rounded-full bg-[#fdf5fa] text-[#8B263E] mx-auto mb-2">
             <Navigation className="h-6 w-6 text-[#D4AF37]" />
           </div>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-[#3D0B3D] font-bold">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-[#8B263E] font-bold">
             ফিজিক্যাল আউটলেট ডিরেকশন
           </p>
           <h2 className="text-2xl md:text-3xl font-bold text-[#1e1622] font-heading">
-            Enaya&apos;s Flagship Boutique, Sylhet
+            3 sis xclusive — JUST FOR WOMEN
           </h2>
           <p className="text-sm text-neutral-600 max-w-2xl mx-auto leading-relaxed">
             {BUSINESS.ADDRESS}
           </p>
           <p className="text-xs text-neutral-500">
-            নয়াসড়ক পয়েন্টে আসলে নয়াসড়ক কাবাবের পাশে অথবা নারী শপ বিল্ডিংয়ের ১ম তলায় প্যারেন্টস ভিউ-এ আমাদের আউটলেট পেয়ে যাবেন।
+            সরাসরি যোগাযোগ বা হোম ডেলিভারির জন্য আমাদের হটলাইন বা ফেসবুক ইনবক্সে মেসেজ দিন।
           </p>
         </div>
       </section>

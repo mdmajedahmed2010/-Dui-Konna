@@ -40,12 +40,12 @@ export function BlossomPetalsOverlay() {
 
     window.addEventListener("resize", handleResize);
 
-    // Enaya's luxury couture palette: imperial gold dust and soft rose accents
+    // 3 sis xclusive luxury floral palette: soft rose petals and warm gold dust
     const petalColors = [
       "rgba(212, 175, 55, 0.45)",  // Imperial gold shimmer
-      "rgba(244, 143, 177, 0.40)", // Soft rose petal
-      "rgba(255, 230, 180, 0.50)", // Luminous champagne light
-      "rgba(186, 104, 200, 0.35)", // Subtle royal violet accent
+      "rgba(212, 112, 138, 0.40)", // 3 sis soft rose petal
+      "rgba(255, 235, 205, 0.50)", // Luminous floral cream
+      "rgba(139, 38, 62, 0.30)",   // Subtle plum rose accent
     ];
 
     const PETAL_COUNT = Math.min(22, Math.floor(width / 60));
