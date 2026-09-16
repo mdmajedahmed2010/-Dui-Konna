@@ -1,69 +1,65 @@
 /**
- * 3 sis xclusive — Terms & Conditions
- * Authentic Pakistani Luxury Suits & Designer Collections
- * Outlet: Sylhet, Bangladesh
+ * Closet by Tanzz — Terms & Conditions
+ * International Luxury Collection & Highest Quality Women's Fashion
+ * Showroom: Natore Tower, Rajlokkhi, Uttara, Dhaka
  */
 
 import type { Metadata } from "next";
 import Link from "next/link";
-import { Sparkles, MapPin, Phone, ShieldCheck } from "lucide-react";
+import { Sparkles } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Terms & Conditions — 3 sis xclusive",
+  title: "Terms & Conditions — Closet by Tanzz",
   description:
-    "3 sis xclusive Terms & Conditions: Open Parcel Policy, Ready Stock Cash on Delivery, and Pakistani Pre-Order guidelines.",
+    "Closet by Tanzz Terms & Conditions: Open Parcel Policy, Ready Stock Cash on Delivery, and delivery guidelines.",
 };
 
 const sections = [
   {
     id: "01",
     title: "আমাদের পরিচয় ও বুটিক মডেল",
-    content: `3 sis xclusive সিলেটে প্রিমিয়াম পাকিস্তানি লাক্সারি লন, ব্রাইডাল প্রিট, ভেলভেট ও এক্সক্লুসিভ ডিজাইনার পোশাকের একটি বিশ্বস্ত বুটিক ব্র্যান্ড। 
+    content: `Closet by Tanzz ঢাকার উত্তরার প্রাণকেন্দ্রে অবস্থিত একটি আন্তর্জাতিক মানের প্রিমিয়াম উইমেনস ফ্যাশন বুটিক ব্র্যান্ড। 
 
-আমাদের ফ্ল্যাগশিপ আউটলেট: Parents View (1st Floor), R/A AL-Helal, 20 Nayasarak Point (Beside Noyashorok Kabab / Nari Shop Building), Sylhet।
-আমরা সরাসরি পাকিস্তান থেকে ১০০% অরিজিনাল ব্র্যান্ডেড কালেকশন সংগ্রহ করি।`,
+আমাদের ফ্ল্যাগশিপ শোরুম: ${BUSINESS.ADDRESS}
+আমরা Zam Zam Lawn, Designer Boutique Three-Piece, Party & Festive Couture ও Artisan Block Print কালেকশন সরাসরি বিশ্বস্ত সোর্স থেকে নিয়ে আসি।`,
   },
   {
     id: "02",
-    title: "Order Process ও Pre-Order নীতিমালা",
-    content: `অর্ডার করতে ওয়েবসাইটে সরাসরি চেকআউট করুন অথবা আমাদের WhatsApp (01674-054386) বা Facebook Page-এ ইনবক্স করুন। 
+    title: "Order Process ও ডেলিভারি নীতিমালা",
+    content: `অর্ডার করতে ওয়েবসাইটে সরাসরি চেকআউট করুন অথবা আমাদের WhatsApp (${BUSINESS.PHONE}) বা Facebook Page-এ ইনবক্স করুন। 
 
 ✅ Ready Stock (রেডি স্টক):
-• সিলেট ভেতরে ও সারা বাংলাদেশে সম্পূর্ণ Cash on Delivery (COD) প্রযোজ্য।
+• ঢাকা সিটি ও সারা বাংলাদেশে সম্পূর্ণ Cash on Delivery (COD) প্রযোজ্য।
 • ডেলিভারির সময় ডেলিভারি ম্যানের সামনে প্যাকেট খুলে চেক করার Open Parcel সুবিধা।
-
-✅ Pakistani Pre-Order (প্রি-অর্ডার):
-• Be 100% sure before placing an order. পাকিস্তানি ডিজাইনারদের সাথে প্রসেস শুরুর পর Order cancel is Not Allowed।
-• প্রি-অর্ডারে ২০%–৩০% অগ্রিম পেমেন্ট বাধ্যতামূলক (বিশেষ ডিজাইনের ক্ষেত্রে ৫০%)।
-• ডেলিভারি সময়: ২৫–৩৫ কার্যদিবস।
-• নির্দিষ্ট মেয়াদের মধ্যে ডেলিভারি দিতে না পারলে আপনার অগ্রিম টাকা তাৎক্ষণিকভাবে (Instantly) ফেরত দেওয়া হবে।`,
+• ঢাকা সিটিতে ২৪–৪৮ ঘন্টা (১-২ কার্যদিবস)।
+• ঢাকার বাইরে ২–৪ কার্যদিবস।`,
   },
   {
     id: "03",
     title: "Delivery Policy ও চার্জ",
     content: `ডেলিভারি চার্জ:
-• সিলেট সিটির ভিতরে: ৳80
-• সিলেটের বাইরে সারা বাংলাদেশে: ৳150 (Steadfast Courier / SA Paribahan)
+• ঢাকা সিটির ভিতরে: ৳80
+• ঢাকার বাইরে সারা বাংলাদেশে: ৳150 (Steadfast Courier / রেডএক্স)
 
 ডেলিভারি সময়:
-• সিলেট সিটিতে: ২৪–৪৮ ঘন্টা (১-২ কার্যদিবস)
-• সিলেটের বাইরে: ২–৪ কার্যদিবস`,
+• ঢাকা সিটিতে: ২৪–৪৮ ঘন্টা (১-২ কার্যদিবস)
+• ঢাকার বাইরে: ২–৪ কার্যদিবস`,
   },
   {
     id: "04",
     title: "Open Parcel Policy ও এক্সচেঞ্জ নীতিমালা",
-    content: `You have to check products in front of the delivery man. ডেলিভারি ম্যানের সামনে পার্সেল খুলে ফেব্রিক ও সাইজ দেখে নিন। কোনো সমস্যা পরিলক্ষিত হলে সাথে সাথে আমাদের কল করুন (01674-054386)।
+    content: `You have to check products in front of the delivery man. ডেলিভারি ম্যানের সামনে পার্সেল খুলে ফেব্রিক, রঙ ও সাইজ দেখে নিন। কোনো সমস্যা পরিলক্ষিত হলে সাথে সাথে আমাদের কল করুন (${BUSINESS.PHONE})।
 
-যৌক্তিক কারণ ছাড়া পণ্য ফেরত গ্রহণযোগ্য নয়। সাইজ সংক্রান্ত কোনো এক্সচেঞ্জ প্রয়োজন হলে সর্বোচ্চ ৩ দিনের মধ্যে যোগাযোগ করতে হবে।`,
+যৌক্তিক কারণ ছাড়া পণ্য ফেরত গ্রহণযোগ্য নয়। সাইজ বা উৎপাদনগত ত্রুটি থাকলে ডেলিভারি গ্রহণের সময় বা সর্বোচ্চ ৩ দিনের মধ্যে আমাদের কাস্টমার সার্ভিসে যোগাযোগ করতে হবে।`,
   },
   {
     id: "05",
-    title: "পণ্যের গুণমান ও ১০০% অরিজিনালিটি নিশ্চয়তা",
-    content: `3 sis xclusive-এর প্রতিটি পোশাক:
-• ১০০% আসল পাকিস্তানি ব্র্যান্ডেড ফেব্রিক ও ড্রেস (Aghanoor, Sadabahar, Gul Ahmed, Maria.B)
-• নিখুঁত কারুকাজ ও উন্নত ফেব্রিক কোয়ালিটি
-• শোরুমে সরাসরি এসে যাচাই করে ট্রায়াল দেওয়ার সুবিধা`,
+    title: "পণ্যের গুণমান ও ১০০% কোয়ালিটি নিশ্চয়তা",
+    content: `Closet by Tanzz-এর প্রতিটি পোশাক:
+• ১০০% প্রিমিয়াম কোয়ালিটির ফেব্রিক ও উন্নত ডাই/প্রিন্ট
+• নিখুঁত কারুকাজ ও আধুনিক ট্রিমস
+• উত্তরা শোরুমে সরাসরি এসে যাচাই করে ট্রায়াল দেওয়ার সুবিধা`,
   },
   {
     id: "06",
@@ -72,11 +68,11 @@ const sections = [
   },
   {
     id: "07",
-    title: "যোগাযোগ ও আউটলেট ভিজিট",
+    title: "যোগাযোগ ও শোরুম ভিজিট",
     content: `যেকোনো প্রশ্ন, অর্ডার ট্র্যাকিং বা পরামর্শের জন্য:
 
 শোরুম: ${BUSINESS.ADDRESS}
-সময়: শনি–বৃহস্পতি ১০:৩০ AM – ৯:৩০ PM | শুক্র ৩:০০ PM – ১০:০০ PM
+সময়: ${BUSINESS.STORE_HOURS}
 ফোন / WhatsApp: ${BUSINESS.PHONE}
 Facebook: ${BUSINESS.FACEBOOK}`,
   },
@@ -84,24 +80,24 @@ Facebook: ${BUSINESS.FACEBOOK}`,
 
 export default function TermsPage() {
   return (
-    <main className="min-h-screen bg-[#faf7f5]">
+    <main className="min-h-screen bg-[#FAF8F5]">
       {/* Page Header */}
-      <section className="bg-[#8B263E] py-16 md:py-24 px-6 text-center relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10 pointer-events-none">
-          <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-[#D4AF37] translate-x-1/2 -translate-y-1/2 blur-2xl" />
+      <section className="bg-[#121212] py-16 md:py-24 px-6 text-center relative overflow-hidden">
+        <div className="absolute inset-0 opacity-15 pointer-events-none">
+          <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-[#C5A059] translate-x-1/2 -translate-y-1/2 blur-2xl" />
         </div>
         <div className="relative z-10 max-w-2xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 text-[#D4AF37] text-[10px] uppercase tracking-[0.28em] font-bold">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#C5A059]/40 text-[#C5A059] text-[10px] uppercase tracking-[0.28em] font-bold">
             <Sparkles className="h-3.5 w-3.5" />
             <span>TERMS OF SERVICE</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-bold text-white tracking-tight font-heading">
             Terms & Conditions
           </h1>
-          <p className="text-[#ebdcd0] text-sm leading-relaxed">
-            3 sis xclusive-এ কেনাকাটা করার আগে আমাদের শর্তাবলী ও সেবা নীতিমালা পড়ে নিন।
+          <p className="text-[#E8DFD5] text-sm leading-relaxed">
+            Closet by Tanzz-এ কেনাকাটা করার আগে আমাদের শর্তাবলী ও সেবা নীতিমালা পড়ে নিন।
           </p>
-          <p className="text-[#D4AF37]/80 text-xs font-mono font-bold">সর্বশেষ আপডেট: সেপ্টেম্বর ২০২৬</p>
+          <p className="text-[#C5A059]/80 text-xs font-mono font-bold">সর্বশেষ আপডেট: সেপ্টেম্বর ২০২৬</p>
         </div>
       </section>
 
@@ -112,13 +108,13 @@ export default function TermsPage() {
             <div
               key={section.id}
               id={`section-${section.id}`}
-              className="rounded-2xl p-6 md:p-8 bg-white border border-[#ebdcd0] border-l-4 border-l-[#8B263E] shadow-xs"
+              className="rounded-2xl p-6 md:p-8 bg-white border border-[#E8DFD5] border-l-4 border-l-[#121212] shadow-xs"
             >
               <div className="flex items-center gap-3 mb-4">
-                <span className="text-[11px] font-mono text-[#8B263E] font-bold bg-[#fdf5fa] px-2.5 py-0.5 rounded-full border border-[#f0d0e6]">
+                <span className="text-[11px] font-mono text-[#121212] font-bold bg-[#FAF8F5] px-2.5 py-0.5 rounded-full border border-[#C5A059]/30">
                   {section.id}
                 </span>
-                <h2 className="text-base md:text-lg font-bold text-[#1e1622]">
+                <h2 className="text-base md:text-lg font-bold text-[#121212]">
                   {section.title}
                 </h2>
               </div>
@@ -130,43 +126,34 @@ export default function TermsPage() {
 
           {/* Acceptance Notice */}
           <div className="text-center pt-8 space-y-4">
-            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-[#D4AF37]/40 shadow-xs">
-              <span className="text-[#D4AF37] text-sm">✦</span>
-              <p className="text-xs text-[#8B263E] font-bold">
-                3 sis xclusive-এ অর্ডার করে আপনি এই Terms & Conditions-এ সম্মত হচ্ছেন
+            <div className="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-white border border-[#C5A059]/40 shadow-xs">
+              <span className="text-[#C5A059] text-sm">✦</span>
+              <p className="text-xs text-[#121212] font-bold">
+                Closet by Tanzz-এ অর্ডার করে আপনি এই Terms & Conditions-এ সম্মত হচ্ছেন
               </p>
-              <span className="text-[#D4AF37] text-sm">✦</span>
+              <span className="text-[#C5A059] text-sm">✦</span>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
               <Link
                 href="/refund-policy"
-                className="text-xs text-[#8B263E] hover:underline font-bold uppercase tracking-wider"
+                className="text-xs text-[#121212] hover:underline font-bold uppercase tracking-wider"
               >
                 Refund Policy →
               </Link>
-              <span className="text-[#D4AF37] hidden sm:inline">|</span>
+              <span className="text-[#C5A059] hidden sm:inline">|</span>
               <Link
                 href="/contact"
-                className="text-xs text-[#8B263E] hover:underline font-bold uppercase tracking-wider"
+                className="text-xs text-[#121212] hover:underline font-bold uppercase tracking-wider"
               >
-                Contact & Outlet →
+                Contact & Showroom →
               </Link>
-              <span className="text-[#D4AF37] hidden sm:inline">|</span>
+              <span className="text-[#C5A059] hidden sm:inline">|</span>
               <Link
                 href="/privacy-policy"
-                className="text-xs text-[#8B263E] hover:underline font-bold uppercase tracking-wider"
+                className="text-xs text-[#121212] hover:underline font-bold uppercase tracking-wider"
               >
                 Privacy Policy →
-              </Link>
-            </div>
-
-            <div className="pt-4">
-              <Link
-                href="/"
-                className="inline-flex items-center justify-center h-12 px-10 bg-[#8B263E] text-white text-xs font-bold uppercase tracking-[0.16em] rounded-full hover:bg-[#280728] transition-all shadow-md border border-[#D4AF37]/40"
-              >
-                Explore Collections
               </Link>
             </div>
           </div>

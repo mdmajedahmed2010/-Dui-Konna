@@ -297,7 +297,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
         </div>
         <Link
           href="/collections/new-arrivals"
-          className="inline-flex items-center justify-center h-12 px-8 bg-[#8B263E] hover:bg-[#2E062E] text-[#d4af37] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm active:scale-95 shadow-md"
+          className="inline-flex items-center justify-center h-12 px-8 bg-[#121212] hover:bg-[#222222] text-[#C5A059] text-xs font-bold uppercase tracking-widest transition-all duration-300 rounded-sm active:scale-95 shadow-md border border-[#C5A059]/40"
         >
           Start Shopping
         </Link>
@@ -308,16 +308,16 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
   // Order Success Screen (Premium invoice-like card layout)
   if (orderPlaced) {
     return (
-      <div className="max-w-2xl mx-auto text-center py-12 px-6 space-y-7 border border-[#d4af37]/30 bg-[#fdfaf5] shadow-[0_12px_40px_rgba(0,0,0,0.03)] rounded-lg animate-scale-in">
+      <div className="max-w-2xl mx-auto text-center py-12 px-6 space-y-7 border border-[#C5A059]/30 bg-[#FAF8F5] shadow-[0_12px_40px_rgba(0,0,0,0.03)] rounded-lg animate-scale-in">
         <div className="h-16 w-16 mx-auto rounded-full bg-emerald-50 border border-emerald-200 text-emerald-600 flex items-center justify-center shadow-inner">
           <CheckCircle2 className="h-8 w-8" strokeWidth={1.5} />
         </div>
         <div className="space-y-3">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-[#1e1622]">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-[#121212]">
             Order Confirmed!
           </h2>
-          <p className="text-xs text-[#8B263E] uppercase tracking-widest max-w-md mx-auto leading-relaxed font-bold">
-            Thank you for choosing 3 sis xclusive. We will call you from 01674-054386 to confirm your order and delivery.
+          <p className="text-xs text-[#121212] uppercase tracking-widest max-w-md mx-auto leading-relaxed font-bold">
+            Thank you for choosing Closet by Tanzz. We will call you from 01610-663812 to confirm your order and delivery.
           </p>
         </div>
 

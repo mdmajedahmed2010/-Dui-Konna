@@ -13,6 +13,7 @@ import { MobileFilterDrawer } from "@/components/product/mobile-filter-drawer";
 import { getProducts } from "@/actions/product.actions";
 import { prisma } from "@/lib/db";
 import { CATEGORIES, getProductsByCategory } from "@/lib/demo-data";
+import { BUSINESS } from "@/lib/constants";
 
 export const revalidate = 60;
 
@@ -25,11 +26,11 @@ interface CollectionPageProps {
 const specialCategories: Record<string, { name: string; description: string }> = {
   "new-arrivals": {
     name: "New Arrivals",
-    description: "Discover our latest authentic Pakistani lawn, luxury pret, and festive couture drops.",
+    description: "Discover our latest Zam Zam lawn, designer boutique three-piece sets, and festive couture drops.",
   },
   featured: {
     name: "Featured Pret",
-    description: "Handpicked signature luxury Pakistani designer pret curated by 3 sis xclusive.",
+    description: `Handpicked signature luxury 3-piece designer sets curated by ${BUSINESS.NAME}.`,
   },
   sale: {
     name: "Special Offers",
@@ -47,7 +48,7 @@ export async function generateMetadata({
   // Check special categories first
   if (specialCategories[slug]) {
     return {
-      title: `${specialCategories[slug].name} — 3 sis xclusive`,
+      title: `${specialCategories[slug].name} — ${BUSINESS.NAME}`,
       description: specialCategories[slug].description,
     };
   }
@@ -63,11 +64,11 @@ export async function generateMetadata({
     }
   }
 
-  if (!category) return { title: "Collection Not Found — 3 sis xclusive" };
+  if (!category) return { title: `Collection Not Found — ${BUSINESS.NAME}` };
 
   return {
-    title: `${category.name} — 3 sis xclusive`,
-    description: `Browse our ${category.name} collection — 100% authentic Pakistani luxury suits & pret in Sylhet with Open Parcel Policy.`,
+    title: `${category.name} — ${BUSINESS.NAME}`,
+    description: `Browse our ${category.name} collection — 100% authentic luxury women's fashion in Uttara, Dhaka with Open Parcel Policy.`,
   };
 }
 

@@ -5,46 +5,51 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * 3 sis xclusive | Sylhet — Luxury Global Styles
- * Authentic Pakistani Designer Fashion & Luxury Ethnic Wear
- * JUST FOR WOMEN — 17 Years of Trust in Fashion
+ * Closet by Tanzz — Luxury Global Styles
+ * Wear Tanzz, Wear confidence
+ * INTERNATIONAL LUXURY COLLECTION • HIGHEST QUALITY WOMEN'S FASHION
  */
 
 /* ═══════════════════════════════════════════
-   THEME — 3 sis xclusive Color System
+   THEME — Closet by Tanzz Color System
    ═══════════════════════════════════════════ */
 @theme inline {
-  --color-primary: #8B263E;
+  --color-primary: #121212;
   --color-primary-foreground: #ffffff;
-  --color-secondary: #FAF4F0;
-  --color-secondary-foreground: #2A151C;
-  --color-accent: #D4AF37;
-  --color-accent-foreground: #1E1622;
-  --color-accent-light: #FDF4F6;
-  --color-threesis-plum: #8B263E;
-  --color-threesis-rose: #D4708A;
-  --color-threesis-dark: #2A151C;
-  --color-threesis-gold: #D4AF37;
-  --color-threesis-cream: #FDFBF7;
-  --color-enayas-purple: #8B263E;
-  --color-enayas-dark: #2A151C;
-  --color-enayas-gold: #D4AF37;
-  --color-enayas-rose: #D4708A;
-  --color-enayas-wine: #6D1B2E;
-  --color-blossom-pink: #D4708A;
-  --color-blossom-rose: #E8A5B8;
-  --color-blossom-wine: #8B263E;
-  --color-background: #FAF7F5;
-  --color-foreground: #22181C;
+  --color-secondary: #FAF8F5;
+  --color-secondary-foreground: #1A1A1A;
+  --color-accent: #C5A059;
+  --color-accent-foreground: #0B0B0B;
+  --color-accent-light: #FDF9F2;
+  --color-tanzz-onyx: #121212;
+  --color-tanzz-gold: #C5A059;
+  --color-tanzz-gold-bright: #E6C280;
+  --color-tanzz-cream: #FAF8F5;
+  --color-tanzz-dark: #0B0B0B;
+  --color-threesis-plum: #121212;
+  --color-threesis-rose: #C5A059;
+  --color-threesis-dark: #121212;
+  --color-threesis-gold: #C5A059;
+  --color-threesis-cream: #FAF8F5;
+  --color-enayas-purple: #121212;
+  --color-enayas-dark: #121212;
+  --color-enayas-gold: #C5A059;
+  --color-enayas-rose: #C5A059;
+  --color-enayas-wine: #222222;
+  --color-blossom-pink: #E6C280;
+  --color-blossom-rose: #F3E5AB;
+  --color-blossom-wine: #C5A059;
+  --color-background: #FAF8F5;
+  --color-foreground: #1A1A1A;
   --color-surface: #ffffff;
-  --color-surface-warm: #FCF8F6;
-  --color-muted: #F4EAE6;
+  --color-surface-warm: #F7F3EE;
+  --color-muted: #F0EAE1;
   --color-muted-foreground: #6B7280;
-  --color-border: #EBDCD5;
+  --color-border: #E8DFD3;
   --color-destructive: #DC2626;
   --color-success: #16A34A;
   --color-warning: #F59E0B;
-  --color-sale: #8B263E;
+  --color-sale: #C5A059;
   --font-heading: var(--font-heading);
   --font-sans: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);
@@ -668,27 +673,27 @@ body {
   }
   .shadow-gold-glow,
   .shadow-blossom-glow {
-    box-shadow: 0 8px 25px -6px rgba(139, 30, 63, 0.25), 0 4px 12px -2px rgba(247, 200, 208, 0.4);
+    box-shadow: 0 8px 25px -6px rgba(197, 160, 89, 0.35), 0 4px 12px -2px rgba(230, 194, 128, 0.3);
   }
   .shadow-gold-glow-lg,
   .shadow-blossom-glow-lg {
-    box-shadow: 0 12px 35px -8px rgba(139, 30, 63, 0.35), 0 6px 18px -4px rgba(247, 200, 208, 0.5);
+    box-shadow: 0 12px 35px -8px rgba(197, 160, 89, 0.45), 0 6px 18px -4px rgba(230, 194, 128, 0.4);
   }
 
-  /* Blossom & Rose Wine Gradients */
+  /* Closet by Tanzz Imperial Gold & Onyx Gradients */
   .bg-gradient-gold,
   .bg-gradient-blossom {
-    background: linear-gradient(135deg, #f7c8d0 0%, #e8a5b8 40%, #8b1e3f 100%);
+    background: linear-gradient(135deg, #1A1A1A 0%, #2A2418 50%, #C5A059 100%);
   }
   .text-gradient-gold,
   .text-gradient-blossom {
-    background: linear-gradient(135deg, #8b1e3f 0%, #b8325a 50%, #7a1b38 100%);
+    background: linear-gradient(135deg, #C5A059 0%, #E6C280 50%, #9E7D3B 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
   .border-gold-subtle,
   .border-blossom-subtle {
-    border-color: rgba(247, 200, 208, 0.45);
+    border-color: rgba(197, 160, 89, 0.35);
   }
 
   /* Shimmer Shine effect for Luxury CTAs */
@@ -702,7 +707,7 @@ body {
   }
   .animate-gold-shimmer,
   .animate-blossom-shimmer {
-    background: linear-gradient(90deg, #1a1a1a 0%, #3d1422 50%, #1a1a1a 100%);
+    background: linear-gradient(90deg, #121212 0%, #2A2418 50%, #121212 100%);
     background-size: 200% 100%;
     animation: goldShimmer 6s infinite linear;
   }
@@ -734,8 +739,8 @@ body {
 
 /* Editorial Selection Styling */
 ::selection {
-  background-color: #f7c8d0;
-  color: #8b1e3f;
+  background-color: #E6C280;
+  color: #121212;
 }
 
 /* ═══════════════════════════════════════════

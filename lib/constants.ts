@@ -1,21 +1,22 @@
 /**
- * 3 sis xclusive | Sylhet — Application Constants
- * JUST FOR WOMEN | 17 Years of Trust in Fashion
- * Authentic Pakistani Designer Fashion & Luxury Ethnic Wear
- * Website: https://3sisxclusivebd.com — https://www.facebook.com/3.sis.xclusive/
+ * Closet by Tanzz — Application Constants
+ * Wear Tanzz, Wear confidence
+ * INTERNATIONAL LUXURY COLLECTION • HIGHEST QUALITY WOMEN'S FASHION
+ * Flagship Outlet: Natore Tower, 2nd Floor (Lift-2), Shop 12, Rajlokkhi, Sector 3, Uttara, Dhaka
+ * Official Facebook: https://www.facebook.com/Closetbytanzz/
  */
 
 // Delivery Charges (BDT)
 export const DELIVERY_CHARGE = {
-  SYLHET_INSIDE: 80,
-  OUTSIDE_SYLHET: 150,
-  // Backward compatibility aliases
   DHAKA_INSIDE: 80,
   OUTSIDE_DHAKA: 150,
+  // Backward compatibility aliases
+  SYLHET_INSIDE: 80,
+  OUTSIDE_SYLHET: 150,
 } as const;
 
 // Order Number Prefix
-export const ORDER_PREFIX = "3SIS";
+export const ORDER_PREFIX = "TANZ";
 
 // Product Status
 export const PRODUCT_STATUS = {
@@ -79,33 +80,34 @@ export const AUTH = {
   PASSWORD_RESET_EXPIRY: 60 * 60,
 } as const;
 
-// Business Info — 3 sis xclusive
+// Business Info — Closet by Tanzz
 export const BUSINESS = {
-  NAME: "3 sis xclusive",
-  NAME_SHORT: "3 sis",
-  NAME_BN: "থ্রি সিস এক্সক্লুসিভ",
-  TAGLINE: "JUST FOR WOMEN",
-  TAGLINE_SUB: "17 Years of Trust in Fashion",
-  TAGLINE_BN: "জাস্ট ফর উইমেন • ফ্যাশনে ১৭ বছরের বিশ্বস্ততা",
-  PHONE: "01674-054386",
-  PHONE_INTL: "+880 1674-054386",
-  WHATSAPP: "+8801674054386",
-  WHATSAPP_LINK: "https://wa.me/8801674054386",
-  EMAIL: "info@3sisxclusivebd.com",
-  ADDRESS: "Sylhet, Bangladesh",
-  ADDRESS_BN: "সিলেট, বাংলাদেশ",
-  LOCATION_LANDMARK: "Sylhet Fashion Boutique Zone",
-  FACEBOOK: "https://www.facebook.com/3.sis.xclusive/",
-  INSTAGRAM: "https://www.facebook.com/3.sis.xclusive/",
+  NAME: "Closet by Tanzz",
+  NAME_SHORT: "Closet by Tanzz",
+  NAME_BN: "ক্লোজেট বাই তানয",
+  TAGLINE: "Wear Tanzz, Wear confidence",
+  TAGLINE_SUB: "INTERNATIONAL LUXURY COLLECTION • HIGHEST QUALITY WOMEN'S FASHION",
+  TAGLINE_BN: "পরিধান করুন তানয, থাকুন আত্মবিশ্বাসী",
+  PHONE: "01610-663812",
+  PHONE_INTL: "+880 1610-663812",
+  WHATSAPP: "+8801610663812",
+  WHATSAPP_LINK: "https://wa.me/8801610663812",
+  EMAIL: "closetbytanzz01@gmail.com",
+  ADDRESS: "Natore Tower, 2nd Floor (Lift-2), Shop No. 12, Rajlokkhi, Sector 3, Road 2, Uttara, Dhaka - 1230, Bangladesh",
+  ADDRESS_BN: "নাটোরে টাওয়ার, লিফট-২ (৩য় তলা), শপ নং ১২, রাজলক্ষ্মী, সেক্টর ৩, রোড ২, উত্তরা, ঢাকা - ১২৩০",
+  LOCATION_LANDMARK: "Natore Tower, Rajlokkhi, Uttara Sector 3",
+  FACEBOOK: "https://www.facebook.com/Closetbytanzz/",
+  INSTAGRAM: "https://www.instagram.com/closetbytanzz",
+  TIKTOK: "https://www.tiktok.com/@closet.by.tanzz",
   YOUTUBE: "",
-  WEBSITE: "https://3sisxclusivebd.com",
-  ESTABLISHED: "17 Years of Trust in Fashion",
-  FOLLOWERS: "53K+",
+  WEBSITE: "https://closetbytanzz.com",
+  ESTABLISHED: "Authentic Luxury Women's Boutique",
+  FOLLOWERS: "51K+",
   RATING: "5.0 ★",
   RECOMMEND_RATE: "100%",
   OPEN_PARCEL_POLICY: true,
-  STORE_HOURS: "Sat–Thu: 10:00 AM – 10:00 PM | Fri: 3:00 PM – 10:00 PM",
-  STORE_HOURS_BN: "শনিবার–বৃহস্পতিবার: সকাল ১০:০০ – রাত ১০:০০ | শুক্রবার: বিকাল ৩:০০ – রাত ১০:০০",
+  STORE_HOURS: "Sat–Thu: 10:30 AM – 9:30 PM | Fri: 3:00 PM – 10:00 PM",
+  STORE_HOURS_BN: "শনিবার–বৃহস্পতিবার: সকাল ১০:৩০ – রাত ৯:৩০ | শুক্রবার: বিকাল ৩:০০ – রাত ১০:০০",
 } as const;
 
 // Currency
@@ -120,14 +122,14 @@ export const COUPON_CODES: Record<
   string,
   { type: "percent" | "flat"; value: number; label: string }
 > = {
-  THREESIS10: { type: "percent", value: 10, label: "10% off your order" },
-  THREESISVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
-  FESTIVE2026: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
+  TANZZ10: { type: "percent", value: 10, label: "10% off your order" },
+  TANZZVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
+  EID2026: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
   WELCOME5: { type: "percent", value: 5, label: "5% Welcome Discount" },
   FLAT500: { type: "flat", value: 500, label: "৳500 flat discount" },
   // Backward compatibility aliases
+  THREESIS10: { type: "percent", value: 10, label: "10% off your order" },
+  THREESISVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
   ENAYA10: { type: "percent", value: 10, label: "10% off your order" },
   STYLE10: { type: "percent", value: 10, label: "10% off your order" },
-  STYLE15: { type: "percent", value: 15, label: "15% off your order" },
 } as const;
-

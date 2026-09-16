@@ -1,36 +1,37 @@
 "use client";
 
 /**
- * Blossom Clothing — Hero Section
- * Blossom Clothing | Authentic Pakistani Luxury Suits & Designer Collections
+ * Closet by Tanzz — Hero Section
+ * Wear Tanzz, Wear confidence | Natore Tower, Uttara Showroom
  */
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import { ASSETS } from "@/lib/demo-data";
 
 const slides = [
   {
-    image: "/banner.jpg",
-    title: "EXQUISITE PAKISTANI LUXURY SUITS",
-    subtitle: "Authentic Pure Lawn, Organza & Handcrafted Designer Suits from Pakistan — Open Parcel Verification.",
-    link: "/collections/pakistani-lawn",
-    overline: "✦ 3 sis xclusive | Nayasarak Point, Sylhet ✦",
+    image: "/banner.png",
+    title: "INTERNATIONAL LUXURY COLLECTION",
+    subtitle: "Highest Quality Women's Fashion — 100% Original Zam Zam Lawn & Festive 3-Piece Sets with Open Parcel Verification.",
+    link: "/collections/zam-zam-lawn",
+    overline: "✦ Closet by Tanzz | Natore Tower, Uttara ✦",
   },
   {
-    image: "/3sis-assets/719352002_1286458136803756_4691248053674653785_n.jpg",
-    title: "ORIGINAL DESIGNER PRET & COUTURE",
-    subtitle: "Sadabahar, Russian Silk & fine Zardozi needlework paired with pure silk and organza dupattas.",
-    link: "/collections/designer-luxury",
-    overline: "✦ 100% Original Pakistani Suits ✦",
+    image: ASSETS.img1,
+    title: "VINTAGE ROSE BOTANICAL LAWN",
+    subtitle: "Artisan block prints, fine cotton craftsmanship, and elegant drapes designed for modern confidence.",
+    link: "/collections/artisan-block",
+    overline: "✦ Wear Tanzz, Wear confidence ✦",
   },
   {
-    image: "/3sis-assets/719135606_1286458063470430_8962135561909446686_n.jpg",
-    title: "ROYAL ZARDOZI & FESTIVE ENSEMBLES",
-    subtitle: "Opulent festive 3-piece collections and flared farsi sets for weddings, celebrations and Eid.",
-    link: "/collections/party-wear",
-    overline: "✦ Nayasarak Point Flagship Showroom ✦",
+    image: ASSETS.img3,
+    title: "REGAL NAVY & GOLD EMBROIDERED",
+    subtitle: "Ornate festive silhouettes, intricate needlework, and opulent evening ensembles for every celebration.",
+    link: "/collections/festive-party",
+    overline: "✦ Natore Tower (2nd Fl), Uttara Showroom ✦",
   },
 ];
 
@@ -54,13 +55,13 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-neutral-900 group">
+    <section className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-[#121212] group">
       {/* Active and Inactive Slides Container */}
       {slides.map((slide, index) => {
         const isActive = index === current;
         return (
           <div
-            key={slide.image}
+            key={slide.title}
             className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
               isActive ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
             }`}
@@ -74,12 +75,13 @@ export function HeroSection() {
                 src={slide.image}
                 alt={slide.title}
                 fill
+                unoptimized
                 priority={index === 0}
                 className="object-cover"
                 sizes="100vw"
               />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent md:from-black/60" />
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_left_center,rgba(0,0,0,0.5),transparent_60%)]" />
+              <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent md:from-black/70" />
+              <div className="absolute inset-0 bg-[radial-gradient(circle_at_left_center,rgba(0,0,0,0.6),transparent_60%)]" />
             </div>
 
             {/* Overlaid Editorial Content */}
@@ -90,7 +92,7 @@ export function HeroSection() {
                     isActive ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
                   }`}
                 >
-                  <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#d4af37] font-bold mb-3">
+                  <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#C5A059] font-bold mb-3">
                     {slide.overline}
                   </p>
 
@@ -104,7 +106,7 @@ export function HeroSection() {
 
                   <Link
                     href={slide.link}
-                    className="inline-flex items-center justify-center h-11 md:h-12 px-6 md:px-8 bg-white hover:bg-[#8B263E] text-[#8B263E] hover:text-white text-xs font-semibold uppercase tracking-[0.1em] transition-all rounded-sm shadow-md active:scale-[0.98]"
+                    className="inline-flex items-center justify-center h-11 md:h-12 px-6 md:px-8 bg-[#C5A059] hover:bg-[#E6C280] text-[#121212] hover:text-[#121212] text-xs font-bold uppercase tracking-[0.1em] transition-all rounded-full shadow-lg active:scale-[0.98]"
                   >
                     Shop Collection
                   </Link>
@@ -118,14 +120,14 @@ export function HeroSection() {
       {/* Manual Sliding Controls */}
       <button
         onClick={handlePrev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 flex items-center justify-center size-10 md:size-12 rounded-full border border-white/10 bg-black/10 text-white hover:bg-white hover:text-black transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100 cursor-pointer"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 flex items-center justify-center size-10 md:size-12 rounded-full border border-white/10 bg-black/30 text-white hover:bg-[#C5A059] hover:text-[#121212] transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100 cursor-pointer"
         aria-label="Previous slide"
       >
         <ChevronLeft className="h-5 w-5" strokeWidth={1.5} />
       </button>
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 flex items-center justify-center size-10 md:size-12 rounded-full border border-white/10 bg-black/10 text-white hover:bg-white hover:text-black transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100 cursor-pointer"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 flex items-center justify-center size-10 md:size-12 rounded-full border border-white/10 bg-black/30 text-white hover:bg-[#C5A059] hover:text-[#121212] transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100 cursor-pointer"
         aria-label="Next slide"
       >
         <ChevronRight className="h-5 w-5" strokeWidth={1.5} />
@@ -138,7 +140,7 @@ export function HeroSection() {
             key={index}
             onClick={() => setCurrent(index)}
             className={`h-1.5 rounded-full transition-all duration-300 ${
-              index === current ? "w-6 bg-[#d4af37]" : "w-1.5 bg-white/40 hover:bg-white/70"
+              index === current ? "w-6 bg-[#C5A059]" : "w-1.5 bg-white/40 hover:bg-white/70"
             }`}
             aria-label={`Go to slide ${index + 1}`}
             aria-current={index === current ? "true" : "false"}

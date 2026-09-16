@@ -23,8 +23,8 @@ export function OrganizationJsonLd() {
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.ADDRESS,
-      addressLocality: "Sylhet",
-      postalCode: "3100",
+      addressLocality: "Uttara, Dhaka",
+      postalCode: "1230",
       addressCountry: "BD",
     },
   };
@@ -40,14 +40,14 @@ export function OrganizationJsonLd() {
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.ADDRESS,
-      addressLocality: "Sylhet",
-      postalCode: "3100",
+      addressLocality: "Uttara, Dhaka",
+      postalCode: "1230",
       addressCountry: "BD",
     },
     geo: {
       "@type": "GeoCoordinates",
-      latitude: 24.8949,
-      longitude: 91.8687,
+      latitude: 23.8759,
+      longitude: 90.3795,
     },
     openingHoursSpecification: [
       {

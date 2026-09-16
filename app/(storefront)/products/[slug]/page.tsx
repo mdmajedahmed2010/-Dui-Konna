@@ -12,6 +12,7 @@ import { RelatedProducts } from "@/components/product/related-products";
 import { getProductBySlug } from "@/actions/product.actions";
 import { getStorefrontSettings } from "@/actions/settings.actions";
 import { ALL_PRODUCTS } from "@/lib/demo-data";
+import { BUSINESS } from "@/lib/constants";
 
 export const revalidate = 60;
 
@@ -31,21 +32,21 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
         success: true,
         product: {
           name: demoProduct.name,
-          seoTitle: `${demoProduct.name} — 3 sis xclusive`,
-          seoDesc: `${demoProduct.name} — Authentic Pakistani luxury designer collection by 3 sis xclusive.`,
-          description: `${demoProduct.name} — Exclusive authentic Pakistani luxury suit with delicate needlework and premium fabric.`,
+          seoTitle: `${demoProduct.name} — ${BUSINESS.NAME}`,
+          seoDesc: `${demoProduct.name} — International luxury collection by ${BUSINESS.NAME}.`,
+          description: `${demoProduct.name} — Exclusive authentic 3-piece luxury collection by ${BUSINESS.NAME}.`,
         } as any,
       };
     }
   }
 
   if (!result.success || !result.product) {
-    return { title: "Product Not Found — 3 sis xclusive" };
+    return { title: `Product Not Found — ${BUSINESS.NAME}` };
   }
 
   const product = result.product;
   return {
-    title: product.seoTitle || `${product.name} — 3 sis xclusive`,
+    title: product.seoTitle || `${product.name} — ${BUSINESS.NAME}`,
     description: (product.seoDesc || product.description).slice(0, 160),
     openGraph: {
       title: product.name,

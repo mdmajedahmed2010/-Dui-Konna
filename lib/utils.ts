@@ -76,14 +76,14 @@ export function truncate(text: string, maxLength: number): string {
 }
 
 /**
- * Calculate delivery charge based on city (Sylhet local vs Outside)
+ * Calculate delivery charge based on city (Dhaka local vs Outside)
  */
 export function calculateDeliveryCharge(city: string): number {
-  const localAreas = ["sylhet", "সিলেট"];
+  const localAreas = ["dhaka", "ঢাকা", "uttara", "উত্তরা"];
   const isInsideLocal = localAreas.some((area) =>
     (city || "").toLowerCase().includes(area)
   );
-  return isInsideLocal ? DELIVERY_CHARGE.SYLHET_INSIDE : DELIVERY_CHARGE.OUTSIDE_SYLHET;
+  return isInsideLocal ? DELIVERY_CHARGE.DHAKA_INSIDE : DELIVERY_CHARGE.OUTSIDE_DHAKA;
 }
 
 /**

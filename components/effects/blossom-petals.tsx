@@ -40,12 +40,12 @@ export function BlossomPetalsOverlay() {
 
     window.addEventListener("resize", handleResize);
 
-    // 3 sis xclusive luxury floral palette: soft rose petals and warm gold dust
+    // Closet by Tanzz luxury gold shimmer palette: warm gold dust and luminous champagne
     const petalColors = [
-      "rgba(212, 175, 55, 0.45)",  // Imperial gold shimmer
-      "rgba(212, 112, 138, 0.40)", // 3 sis soft rose petal
-      "rgba(255, 235, 205, 0.50)", // Luminous floral cream
-      "rgba(139, 38, 62, 0.30)",   // Subtle plum rose accent
+      "rgba(197, 160, 89, 0.45)",  // Tanzz Imperial gold shimmer
+      "rgba(230, 194, 128, 0.40)", // Bright champagne gold
+      "rgba(255, 245, 220, 0.50)", // Luminous warm ivory
+      "rgba(158, 125, 59, 0.35)",  // Deep bronze metallic
     ];
 
     const PETAL_COUNT = Math.min(22, Math.floor(width / 60));

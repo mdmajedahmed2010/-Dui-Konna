@@ -1,9 +1,10 @@
 "use client";
 
 /**
- * 3 sis xclusive — Royal Purple & Gold Haute Couture Footer
- * Elevate Your Style | Luxury Women's Boutique & Authentic Pakistani Designer Fashion
- * Nayasarak Point, Sylhet, Bangladesh — https://www.facebook.com/3.sis.xclusive/
+ * Closet by Tanzz — Luxury Noir & Imperial Gold Footer
+ * Wear Tanzz, Wear confidence | INTERNATIONAL LUXURY COLLECTION
+ * Natore Tower, 2nd Floor, Shop 12, Rajlokkhi, Sector 3, Uttara, Dhaka
+ * Official Facebook: https://www.facebook.com/Closetbytanzz/
  */
 
 import { useState } from "react";
@@ -14,21 +15,20 @@ import { BUSINESS } from "@/lib/constants";
 import { toast } from "sonner";
 
 const shopLinks = [
-  { href: "/collections/pakistani-lawn", label: "Pakistani Lawn Collection" },
-  { href: "/collections/designer-luxury", label: "Designer Pre-Orders" },
-  { href: "/collections/party-wear", label: "Party Wear & Festive Organza" },
-  { href: "/collections/farsi-sets", label: "Casual & Farsi Sets" },
-  { href: "/collections/velvet-luxury", label: "Velvet & Winter Luxury" },
-  { href: "/collections/boutique-jewelry", label: "Boutique Jewelry & Beauty" },
+  { href: "/collections/zam-zam-lawn", label: "Zam Zam Lawn Collection" },
+  { href: "/collections/designer-boutique", label: "Designer Boutique Collection" },
+  { href: "/collections/festive-party-wear", label: "Festive & Party Wear" },
+  { href: "/collections/casual-chic", label: "Casual Chic Sets" },
+  { href: "/collections/artisan-block", label: "Artisan Block & Florals" },
 ];
 
 const helpLinks = [
   { href: "/track-order", label: "Track Order" },
-  { href: "/contact", label: "Visit Nayasarak Outlet" },
+  { href: "/contact", label: "Visit Uttara Flagship Outlet" },
   { href: "/refund-policy", label: "Open Parcel & Refund Policy" },
   { href: "/terms", label: "Terms & Conditions" },
   { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/about", label: "Our Story & Sylhet Heritage" },
+  { href: "/about", label: "Our Story & Brand Vision" },
 ];
 
 export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
@@ -39,38 +39,38 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
     e.preventDefault();
     if (!email) return;
     setSubscribed(true);
-    toast.success("Welcome to Enaya's VIP Club! Use promo code 3SIS10 for 10% off your order.");
+    toast.success("Welcome to Closet by Tanzz VIP Club! Use promo code TANZZ10 for 10% off your order.");
   };
 
   return (
     <>
-      <footer className="bg-[#19041A] text-[#FAF7F5] relative overflow-hidden border-t border-[#D4AF37]/30">
-        {/* Giant Enaya's Watermark Typography */}
+      <footer className="bg-[#0B0B0B] text-[#FAF8F5] relative overflow-hidden border-t border-[#C5A059]/30">
+        {/* Giant Tanzz Watermark Typography */}
         <div className="absolute -bottom-10 right-0 pointer-events-none select-none text-[120px] md:text-[220px] font-bold text-white/[0.02] font-heading leading-none">
-          3 SIS
+          TANZZ
         </div>
 
         {/* 1. VIP Club Newsletter Banner */}
-        <div className="border-b border-white/10 py-16 md:py-20 relative bg-gradient-to-b from-transparent to-[#220424]/40">
+        <div className="border-b border-white/10 py-16 md:py-20 relative bg-gradient-to-b from-transparent to-[#141414]/50">
           <div className="container mx-auto px-6 md:px-12">
             <div className="max-w-4xl mx-auto text-center space-y-4">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/30">
-                <Sparkles className="h-3.5 w-3.5 text-[#F3C649]" />
-                <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#F3C649]">
-                  3 SIS | SYLHET VIP CONCIERGE
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-[#C5A059]/30">
+                <Sparkles className="h-3.5 w-3.5 text-[#C5A059]" />
+                <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#C5A059]">
+                  CLOSET BY TANZZ VIP CLUB
                 </span>
               </div>
               <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
                 Be The First To Wear New Drops
               </h3>
               <p className="text-xs md:text-sm text-neutral-300 max-w-lg mx-auto leading-relaxed">
-                Join 34,000+ fashion connoisseurs in Sylhet. Get early access to authentic Pakistani lawn launches, exclusive designer pre-orders, and festive Eid previews.
+                Join 51,000+ fashion connoisseurs across Bangladesh. Get early access to authentic Zam Zam lawn drops, designer boutique launches, and festive Eid collections.
               </p>
 
               {subscribed ? (
                 <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 text-xs font-bold tracking-wider">
                   <Check className="h-4 w-4" />
-                  <span>Welcome! Use Promo Code: 3SIS10</span>
+                  <span>Welcome! Use Promo Code: TANZZ10</span>
                 </div>
               ) : (
                 <form
@@ -83,11 +83,11 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                     placeholder="Enter your email address"
-                    className="h-13 px-6 rounded-full bg-white/10 border border-[#D4AF37]/30 text-white placeholder:text-neutral-400 text-xs focus:outline-none focus:border-[#F3C649] flex-1 backdrop-blur-md"
+                    className="h-13 px-6 rounded-full bg-white/10 border border-[#C5A059]/30 text-white placeholder:text-neutral-400 text-xs focus:outline-none focus:border-[#C5A059] flex-1 backdrop-blur-md"
                   />
                   <button
                     type="submit"
-                    className="h-13 px-8 rounded-full bg-[#3D0B3D] hover:bg-[#4A0E4E] text-[#F3C649] border border-[#D4AF37]/60 text-xs font-bold uppercase tracking-[0.16em] transition-all shadow-lg active:scale-98 cursor-pointer"
+                    className="h-13 px-8 rounded-full bg-[#1A1A1A] hover:bg-[#C5A059] text-[#C5A059] hover:text-[#0B0B0B] border border-[#C5A059]/60 text-xs font-bold uppercase tracking-[0.16em] transition-all shadow-lg active:scale-98 cursor-pointer"
                   >
                     Subscribe
                   </button>
@@ -110,39 +110,39 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                       ? settings.store_logo
                       : "/logo.jpg"
                   }
-                  alt="3 sis xclusive"
+                  alt="Closet by Tanzz"
                   width={54}
                   height={54}
-                  className="h-13 w-13 object-cover rounded-full ring-2 ring-[#D4AF37]/50 group-hover:scale-105 transition-transform"
+                  className="h-13 w-13 object-cover rounded-full ring-2 ring-[#C5A059]/60 group-hover:scale-105 transition-transform"
                 />
                 <div>
                   <p className="text-lg font-bold text-white tracking-wider font-heading leading-tight">
-                    3 sis xclusive
+                    Closet by Tanzz
                   </p>
-                  <p className="text-[10px] text-[#F3C649] font-semibold tracking-[0.24em] uppercase">
-                    Elevate Your Style
+                  <p className="text-[10px] text-[#C5A059] font-semibold tracking-[0.22em] uppercase">
+                    Wear Tanzz, Wear confidence
                   </p>
                 </div>
               </Link>
               <p className="text-xs md:text-sm text-neutral-300 leading-relaxed max-w-sm">
-                Sylhet’s premier boutique destination for 100% authentic Pakistani designer couture, festive lawn ensembles, handcrafted organza party wear, and pure cotton farsi suits.
+                Dhaka&apos;s premier boutique destination for authentic Zam Zam pure lawn, festive Kashmiri ensembles, artisan boutique prints, and luxury women&apos;s pret.
               </p>
 
               {/* Direct Contact Info */}
               <div className="space-y-2.5 text-xs text-neutral-300 pt-1">
                 <p className="flex items-start gap-2.5">
-                  <MapPin className="h-4 w-4 text-[#F3C649] shrink-0 mt-0.5" />
+                  <MapPin className="h-4 w-4 text-[#C5A059] shrink-0 mt-0.5" />
                   <span>{BUSINESS.ADDRESS}</span>
                 </p>
                 <p className="flex items-center gap-2.5">
-                  <Phone className="h-4 w-4 text-[#F3C649] shrink-0" />
-                  <a href={`tel:${BUSINESS.PHONE.replace(/[^0-9+]/g, "")}`} className="hover:text-white transition-colors">
+                  <Phone className="h-4 w-4 text-[#C5A059] shrink-0" />
+                  <a href={`tel:${BUSINESS.PHONE.replace(/[^0-9+]/g, "")}`} className="hover:text-[#C5A059] transition-colors">
                     {BUSINESS.PHONE} (Hotline & WhatsApp)
                   </a>
                 </p>
                 <p className="flex items-center gap-2.5">
-                  <Mail className="h-4 w-4 text-[#F3C649] shrink-0" />
-                  <a href={`mailto:${BUSINESS.EMAIL}`} className="hover:text-white transition-colors">
+                  <Mail className="h-4 w-4 text-[#C5A059] shrink-0" />
+                  <a href={`mailto:${BUSINESS.EMAIL}`} className="hover:text-[#C5A059] transition-colors">
                     {BUSINESS.EMAIL}
                   </a>
                 </p>
@@ -151,13 +151,13 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
 
             {/* Collections Links (Col 2) */}
             <div className="lg:col-span-2 space-y-4">
-              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#F3C649]">
+              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#C5A059]">
                 Collections
               </h4>
               <ul className="space-y-2.5 text-xs text-neutral-300 font-medium">
                 {shopLinks.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="hover:text-[#F3C649] transition-colors">
+                    <Link href={link.href} className="hover:text-[#C5A059] transition-colors">
                       {link.label}
                     </Link>
                   </li>
@@ -167,13 +167,13 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
 
             {/* Client Concierge (Col 2) */}
             <div className="lg:col-span-2 space-y-4">
-              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#F3C649]">
+              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#C5A059]">
                 Customer Care
               </h4>
               <ul className="space-y-2.5 text-xs text-neutral-300 font-medium">
                 {helpLinks.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="hover:text-[#F3C649] transition-colors">
+                    <Link href={link.href} className="hover:text-[#C5A059] transition-colors">
                       {link.label}
                     </Link>
                   </li>
@@ -183,11 +183,11 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
 
             {/* Social Proof & Official Community (Col 3) */}
             <div className="lg:col-span-3 space-y-4">
-              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#F3C649]">
+              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#C5A059]">
                 Official Channels
               </h4>
               <p className="text-xs text-neutral-300 leading-relaxed">
-                Connect with our active 34,000+ community for daily unboxing videos, new arrivals reels, and instant inbox orders.
+                Connect with our active 51,000+ community for daily Facebook live sessions, unboxing videos, new arrivals reels, and instant inbox orders.
               </p>
 
               <div className="space-y-2 pt-1">
@@ -195,20 +195,20 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                   href={BUSINESS.FACEBOOK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-between w-full p-3 rounded-xl bg-white/10 hover:bg-[#3D0B3D] text-white text-xs font-bold transition-all border border-white/15 hover:border-[#D4AF37]/50"
+                  className="inline-flex items-center justify-between w-full p-3 rounded-xl bg-white/10 hover:bg-[#1A1A1A] text-white text-xs font-bold transition-all border border-white/15 hover:border-[#C5A059]/50"
                 >
                   <span className="flex items-center gap-2">
                     <span className="size-2 rounded-full bg-[#1877F2] animate-pulse" />
-                    Facebook Page (34K+ Followers)
+                    Facebook Page (51K+ Followers)
                   </span>
-                  <ArrowUpRight className="h-3.5 w-3.5 text-[#F3C649]" />
+                  <ArrowUpRight className="h-3.5 w-3.5 text-[#C5A059]" />
                 </a>
 
                 <a
                   href={BUSINESS.INSTAGRAM}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-between w-full p-3 rounded-xl bg-white/10 hover:bg-[#3D0B3D] text-white text-xs font-bold transition-all border border-white/15 hover:border-[#D4AF37]/50"
+                  className="inline-flex items-center justify-between w-full p-3 rounded-xl bg-white/10 hover:bg-[#1A1A1A] text-white text-xs font-bold transition-all border border-white/15 hover:border-[#C5A059]/50"
                 >
                   <span className="flex items-center gap-2">
                     <svg className="h-4 w-4 text-[#E1306C]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -216,9 +216,9 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                       <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
                     </svg>
-                    Instagram (@3.sis.xclusive)
+                    Instagram (@closetbytanzz)
                   </span>
-                  <ArrowUpRight className="h-3.5 w-3.5 text-[#F3C649]" />
+                  <ArrowUpRight className="h-3.5 w-3.5 text-[#C5A059]" />
                 </a>
 
                 <a
@@ -229,7 +229,7 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                 >
                   <span className="flex items-center gap-2">
                     <MessageCircle className="h-4 w-4 text-[#25D366]" />
-                    WhatsApp Hotline: 01674-054386
+                    WhatsApp: 01610-663812
                   </span>
                   <ArrowUpRight className="h-3.5 w-3.5" />
                 </a>
@@ -243,16 +243,16 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
         <div className="border-t border-white/10 py-6 text-xs text-neutral-400">
           <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-center md:text-left">
-              &copy; {new Date().getFullYear()} 3 sis xclusive (এনায়াস সিলেট). All Rights Reserved. Elevate Your Style.
+              &copy; {new Date().getFullYear()} Closet by Tanzz (ক্লোজেট বাই তানয). All Rights Reserved. Wear Tanzz, Wear confidence.
             </p>
-            <div className="flex items-center gap-4 text-[11px] text-[#F3C649]">
+            <div className="flex items-center gap-4 text-[11px] text-[#C5A059]">
               <span>✓ Open Parcel Policy</span>
               <span>•</span>
               <span>Cash On Delivery</span>
               <span>•</span>
               <span>bKash / Nagad</span>
               <span>•</span>
-              <span>Nayasarak Point Outlet</span>
+              <span>Natore Tower Uttara Showroom</span>
             </div>
           </div>
         </div>

@@ -1,9 +1,9 @@
 "use client";
 
 /**
- * 3 sis xclusive — Cinematic Haute Couture Hero
+ * Closet by Tanzz — Cinematic Haute Couture Hero
  * Asymmetric Editorial Split with Interactive Garment Hotspots & Fluid Physics
- * 17 Years of Trust in Fashion — https://www.facebook.com/3.sis.xclusive/
+ * Wear Tanzz, Wear confidence — https://www.facebook.com/Closetbytanzz/
  */
 
 import { useState, useEffect, useCallback } from "react";
@@ -37,53 +37,53 @@ const HERO_SLIDES: CoutureHeroSlide[] = [
   {
     id: "slide-1",
     image: ASSETS.banner,
-    category: "3 SIS XCLUSIVE • JUST FOR WOMEN",
-    title: "ELEVATE YOUR",
-    italicWord: "Style",
+    category: "CLOSET BY TANZZ • INTERNATIONAL LUXURY",
+    title: "WEAR TANZZ,",
+    italicWord: "Wear confidence",
     subtitle:
-      "Welcome To 3 sis Xclusive — JUST FOR WOMEN. 17 years of trust in fashion bringing you authentic Pakistani designer lawn, luxury suits, and festive curation.",
-    link: "/collections/pakistani-lawn",
+      "Welcome to Closet by Tanzz. Discover our newest collection of 100% pure cotton Zam Zam lawn, artisan designer boutique suits, and festive ensembles crafted for confident women.",
+    link: "/collections/zam-zam-lawn",
     hotspot: {
-      name: "Sadabahar Original Luxury Embroidered Couture 3-Piece",
-      price: 13500,
-      comparePrice: 15500,
-      slug: "sadabahar-original-luxury-embroidered-couture-3piece",
-      x: 60,
+      name: "Lime Yellow & Emerald Floral Zam Zam Lawn 3-Piece",
+      price: 1350,
+      comparePrice: 1650,
+      slug: "lime-yellow-emerald-floral-zam-zam-lawn-3piece",
+      x: 65,
       y: 45,
     },
   },
   {
     id: "slide-2",
     image: ASSETS.img1,
-    category: "SIGNATURE FARSI",
+    category: "ARTISAN BLOCK & FLORALS",
     title: "TIMELESS",
-    italicWord: "Grace",
+    italicWord: "Elegance",
     subtitle:
-      "Pure breathable cotton farsi sets and elegant palazzo ensembles tailored for effortless daily luxury.",
-    link: "/collections/farsi-sets",
+      "Midnight black traditional block print motifs and floral artwork on ultra-soft pure cotton with coordinating drape dupatta.",
+    link: "/collections/artisan-block",
     hotspot: {
-      name: "Ivory Cream Embroidered Kurti with Navy Dupatta & Palazzo",
-      price: 2650,
-      comparePrice: 3100,
-      slug: "ivory-cream-embroidered-kurti-with-navy-dupatta-palazzo",
-      x: 52,
-      y: 38,
+      name: "Midnight Black Block & Floral Cotton 3-Piece",
+      price: 1450,
+      comparePrice: 1750,
+      slug: "midnight-black-block-floral-embroidered-cotton-3piece",
+      x: 50,
+      y: 40,
     },
   },
   {
     id: "slide-3",
     image: ASSETS.img3,
     category: "ROYAL FESTIVE PRET",
-    title: "ARTISANAL",
-    italicWord: "Zardozi",
+    title: "KASHMIRI",
+    italicWord: "Jaal",
     subtitle:
-      "Handcrafted adda needlework, crystal necklines, and pure organza dupattas for Eid and wedding soirees.",
-    link: "/collections/party-wear",
+      "Rich crimson maroon festive lawn with traditional jaal prints and generous printed dupatta, curated for celebrations and weddings.",
+    link: "/collections/festive-party-wear",
     hotspot: {
-      name: "Midnight Black Royal Zardozi Hand-Embellished Formal Suit",
-      price: 6850,
-      comparePrice: 7800,
-      slug: "midnight-black-royal-zardozi-hand-embellished-formal-suit",
+      name: "Crimson Maroon Kashmiri Jaal Festive 3-Piece",
+      price: 1550,
+      comparePrice: 1850,
+      slug: "crimson-maroon-kashmiri-jaal-festive-lawn-3piece",
       x: 50,
       y: 42,
     },
@@ -122,10 +122,10 @@ export function HeroCouture() {
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#FAF7F5] via-white to-[#FAF7F5] pt-6 pb-16 md:pt-10 md:pb-24 border-b border-[#EDE1D8]">
+    <section className="relative overflow-hidden bg-gradient-to-b from-[#FAF8F5] via-white to-[#FAF8F5] pt-6 pb-16 md:pt-10 md:pb-24 border-b border-[#E8DFD3]">
       {/* Decorative ambient radial gradients */}
-      <div className="absolute top-10 left-1/4 -z-10 h-96 w-96 rounded-full bg-[#D4AF37]/15 blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/3 right-10 -z-10 h-80 w-80 rounded-full bg-[#8B263E]/10 blur-[100px] pointer-events-none" />
+      <div className="absolute top-10 left-1/4 -z-10 h-96 w-96 rounded-full bg-[#C5A059]/15 blur-[120px] pointer-events-none" />
+      <div className="absolute top-1/3 right-10 -z-10 h-80 w-80 rounded-full bg-[#121212]/10 blur-[100px] pointer-events-none" />
 
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-7xl">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -133,10 +133,10 @@ export function HeroCouture() {
           {/* ──────────────── Left Column: Editorial Typography & CTAs ──────────────── */}
           <div className="lg:col-span-6 space-y-6 md:space-y-8 z-10">
             {/* Eyebrow badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#D4AF37]/30 shadow-xs">
-              <span className="flex h-2 w-2 rounded-full bg-[#8B263E] animate-ping" />
-              <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
-              <span className="text-[10px] md:text-[11px] font-extrabold uppercase tracking-[0.24em] text-[#8B263E]">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#C5A059]/40 shadow-xs">
+              <span className="flex h-2 w-2 rounded-full bg-[#C5A059] animate-ping" />
+              <Sparkles className="h-3.5 w-3.5 text-[#C5A059]" />
+              <span className="text-[10px] md:text-[11px] font-extrabold uppercase tracking-[0.24em] text-[#121212]">
                 {activeSlide.category}
               </span>
             </div>
@@ -151,9 +151,9 @@ export function HeroCouture() {
                   exit={{ opacity: 0, y: -25 }}
                   transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
                 >
-                  <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-[68px] font-bold text-[#1E1622] font-heading leading-[1.06] tracking-tight">
+                  <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-[68px] font-bold text-[#121212] font-heading leading-[1.06] tracking-tight">
                     {activeSlide.title}{" "}
-                    <span className="font-serif italic font-normal text-[#8B263E] block sm:inline">
+                    <span className="font-serif italic font-normal text-[#C5A059] block sm:inline">
                       {activeSlide.italicWord}
                     </span>
                   </h1>
@@ -168,43 +168,43 @@ export function HeroCouture() {
             <div className="flex flex-wrap items-center gap-4 pt-2">
               <Link
                 href={activeSlide.link}
-                className="group relative inline-flex items-center gap-4 pl-7 pr-3.5 py-3.5 rounded-full bg-[#8B263E] text-[#F3C649] text-xs font-bold uppercase tracking-[0.18em] shadow-[0_10px_25px_-5px_rgba(61,11,61,0.35)] hover:bg-[#4A0E4E] hover:shadow-[0_15px_30px_-5px_rgba(61,11,61,0.45)] transition-all duration-300 active:scale-[0.98] cursor-pointer"
+                className="group relative inline-flex items-center gap-4 pl-7 pr-3.5 py-3.5 rounded-full bg-[#121212] text-[#C5A059] text-xs font-bold uppercase tracking-[0.18em] shadow-[0_10px_25px_-5px_rgba(0,0,0,0.35)] hover:bg-[#2A2418] hover:shadow-[0_15px_30px_-5px_rgba(197,160,89,0.35)] transition-all duration-300 active:scale-[0.98] cursor-pointer"
               >
                 <span>Explore Collection</span>
                 {/* Button-in-Button Circular Trailing Icon */}
-                <div className="flex items-center justify-center size-8 rounded-full bg-[#D4AF37]/20 group-hover:bg-[#D4AF37] text-[#F3C649] group-hover:text-[#8B263E] transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5">
+                <div className="flex items-center justify-center size-8 rounded-full bg-[#C5A059]/20 group-hover:bg-[#C5A059] text-[#C5A059] group-hover:text-[#121212] transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5">
                   <ArrowUpRight className="h-4 w-4" />
                 </div>
               </Link>
 
               <Link
                 href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-[#FAF7F5] text-[#8B263E] text-xs font-bold uppercase tracking-[0.16em] border border-[#D4AF37]/40 transition-all duration-300 hover:border-[#8B263E] active:scale-[0.98] shadow-xs"
+                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-[#FAF8F5] text-[#121212] text-xs font-bold uppercase tracking-[0.16em] border border-[#C5A059]/40 transition-all duration-300 hover:border-[#121212] active:scale-[0.98] shadow-xs"
               >
-                <MapPin className="h-3.5 w-3.5 text-[#D4AF37]" />
-                <span>Visit Nayasarak Outlet</span>
+                <MapPin className="h-3.5 w-3.5 text-[#C5A059]" />
+                <span>Visit Uttara Showroom</span>
               </Link>
             </div>
 
             {/* Micro-Social Proof Trust Pills */}
-            <div className="grid grid-cols-3 gap-3 pt-6 border-t border-[#EDE1D8]">
+            <div className="grid grid-cols-3 gap-3 pt-6 border-t border-[#E8DFD3]">
               <div className="flex flex-col">
-                <div className="flex items-center gap-1 text-[#8B263E]">
-                  <Star className="h-3.5 w-3.5 fill-[#D4AF37] text-[#D4AF37]" />
+                <div className="flex items-center gap-1 text-[#121212]">
+                  <Star className="h-3.5 w-3.5 fill-[#C5A059] text-[#C5A059]" />
                   <span className="text-xs font-bold font-sans">5.0 ★ Rating</span>
                 </div>
-                <span className="text-[10px] text-neutral-500 font-medium">34K+ Community</span>
+                <span className="text-[10px] text-neutral-500 font-medium">51K+ Community</span>
               </div>
               <div className="flex flex-col">
-                <div className="flex items-center gap-1 text-[#8B263E]">
-                  <ShieldCheck className="h-3.5 w-3.5 text-[#D4AF37]" />
-                  <span className="text-xs font-bold font-sans">100% Original</span>
+                <div className="flex items-center gap-1 text-[#121212]">
+                  <ShieldCheck className="h-3.5 w-3.5 text-[#C5A059]" />
+                  <span className="text-xs font-bold font-sans">100% Quality</span>
                 </div>
-                <span className="text-[10px] text-neutral-500 font-medium">Pakistani Suits</span>
+                <span className="text-[10px] text-neutral-500 font-medium">Pure Cotton Lawn</span>
               </div>
               <div className="flex flex-col">
-                <div className="flex items-center gap-1 text-[#8B263E]">
-                  <ShoppingBag className="h-3.5 w-3.5 text-[#D4AF37]" />
+                <div className="flex items-center gap-1 text-[#121212]">
+                  <ShoppingBag className="h-3.5 w-3.5 text-[#C5A059]" />
                   <span className="text-xs font-bold font-sans">Open Parcel</span>
                 </div>
                 <span className="text-[10px] text-neutral-500 font-medium">Check Before Pay</span>
@@ -215,7 +215,7 @@ export function HeroCouture() {
           {/* ──────────────── Right Column: Double-Bezel Model Visual & Interactive Hotspot ──────────────── */}
           <div className="lg:col-span-6 relative">
             {/* Outer Machine Bezel Shell */}
-            <div className="double-bezel-card aspect-[4/5] sm:aspect-[3/4] md:aspect-[4/5] max-w-lg mx-auto lg:max-w-none shadow-2xl border border-[#D4AF37]/30 rounded-3xl p-2 bg-gradient-to-b from-[#FAF7F5] to-[#EDE1D8]">
+            <div className="double-bezel-card aspect-[4/5] sm:aspect-[3/4] md:aspect-[4/5] max-w-lg mx-auto lg:max-w-none shadow-2xl border border-[#C5A059]/30 rounded-3xl p-2 bg-gradient-to-b from-[#FAF8F5] to-[#E8DFD3]">
               <div className="double-bezel-inner h-full w-full relative group/hero overflow-hidden rounded-2xl bg-neutral-900">
                 
                 <AnimatePresence mode="wait">
@@ -252,11 +252,11 @@ export function HeroCouture() {
                   {/* Glowing Hotspot Button */}
                   <button
                     onClick={() => setShowHotspotTooltip(!showHotspotTooltip)}
-                    className="relative flex items-center justify-center size-9 rounded-full bg-white/95 text-[#8B263E] shadow-lg border border-[#D4AF37] transition-transform hover:scale-110 active:scale-95 cursor-pointer"
+                    className="relative flex items-center justify-center size-9 rounded-full bg-white/95 text-[#121212] shadow-lg border border-[#C5A059] transition-transform hover:scale-110 active:scale-95 cursor-pointer"
                     aria-label="View featured piece details"
                   >
-                    <span className="absolute inset-0 rounded-full animate-hotspot bg-[#D4AF37]/30" />
-                    <Sparkles className="h-4 w-4 relative z-10 text-[#D4AF37]" />
+                    <span className="absolute inset-0 rounded-full animate-hotspot bg-[#C5A059]/30" />
+                    <Sparkles className="h-4 w-4 relative z-10 text-[#C5A059]" />
                   </button>
 
                   {/* Floating Glassmorphic Product Card Tooltip */}
@@ -267,10 +267,10 @@ export function HeroCouture() {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 8, scale: 0.95 }}
                         transition={{ duration: 0.3, ease: "easeOut" }}
-                        className="absolute left-1/2 -translate-x-1/2 top-11 w-64 p-3 rounded-2xl bg-white/95 backdrop-blur-xl border border-[#D4AF37]/40 shadow-xl z-40 text-left"
+                        className="absolute left-1/2 -translate-x-1/2 top-11 w-64 p-3 rounded-2xl bg-white/95 backdrop-blur-xl border border-[#C5A059]/40 shadow-xl z-40 text-left"
                       >
                         <div className="flex items-start gap-2.5">
-                          <div className="relative size-12 rounded-lg overflow-hidden shrink-0 bg-neutral-100 border border-[#D4AF37]/40">
+                          <div className="relative size-12 rounded-lg overflow-hidden shrink-0 bg-neutral-100 border border-[#C5A059]/40">
                             <Image
                               src={activeSlide.image}
                               alt={activeSlide.hotspot.name}
@@ -279,14 +279,14 @@ export function HeroCouture() {
                             />
                           </div>
                           <div className="flex-1 min-w-0">
-                            <span className="inline-block text-[9px] font-bold uppercase tracking-wider text-[#8B263E] bg-[#FAF7F5] border border-[#D4AF37]/30 px-1.5 py-0.5 rounded">
+                            <span className="inline-block text-[9px] font-bold uppercase tracking-wider text-[#121212] bg-[#FAF8F5] border border-[#C5A059]/30 px-1.5 py-0.5 rounded">
                               Featured Look
                             </span>
-                            <p className="text-[11px] font-bold text-[#1E1622] truncate mt-0.5">
+                            <p className="text-[11px] font-bold text-[#121212] truncate mt-0.5">
                               {activeSlide.hotspot.name}
                             </p>
                             <div className="flex items-center gap-1.5 mt-0.5">
-                              <span className="text-xs font-bold text-[#8B263E]">
+                              <span className="text-xs font-bold text-[#121212]">
                                 ৳{activeSlide.hotspot.price.toLocaleString()}
                               </span>
                               <span className="text-[10px] text-neutral-400 line-through">
@@ -298,7 +298,7 @@ export function HeroCouture() {
 
                         <button
                           onClick={handleHotspotClick}
-                          className="mt-2.5 w-full py-1.5 rounded-lg bg-[#8B263E] hover:bg-[#4A0E4E] text-[#F3C649] text-[10px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+                          className="mt-2.5 w-full py-1.5 rounded-lg bg-[#121212] hover:bg-[#2A2418] text-[#C5A059] text-[10px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
                         >
                           <Eye className="h-3 w-3" />
                           <span>Quick View & Buy</span>
@@ -317,7 +317,7 @@ export function HeroCouture() {
                         onClick={() => handleSlideChange(idx)}
                         className={`px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer ${
                           idx === currentIdx
-                            ? "bg-[#D4AF37] text-[#8B263E] shadow-sm font-extrabold"
+                            ? "bg-[#C5A059] text-[#121212] shadow-sm font-extrabold"
                             : "text-white/70 hover:text-white hover:bg-white/10"
                         }`}
                       >
@@ -327,7 +327,7 @@ export function HeroCouture() {
                   </div>
 
                   <span className="text-[10px] tracking-widest uppercase font-mono text-white/80">
-                    3 SIS SYLHET EDITORIAL
+                    CLOSET BY TANZZ EDITORIAL
                   </span>
                 </div>
 

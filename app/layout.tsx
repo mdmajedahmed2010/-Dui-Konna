@@ -26,35 +26,35 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-// Global metadata — 3 sis xclusive
+// Global metadata — Closet by Tanzz
 export const metadata: Metadata = {
+  metadataBase: new URL("https://closetbytanzz.com"),
   title: {
-    default: "3 sis xclusive — Elevate Your Style | Luxury Pakistani Designer Boutique",
-    template: "%s — 3 sis xclusive Sylhet",
+    default: "Closet by Tanzz — Wear Tanzz, Wear Confidence | Luxury Women's Fashion",
+    template: "%s — Closet by Tanzz",
   },
   description:
-    "Elevate Your Style with 3 sis xclusive. Authentic Pakistani designer suits, pure lawn 3-piece sets, organza & georgette party wear, and luxury pret. Visit our outlet at Sylhet, Bangladesh or order online with Open Parcel Policy.",
+    "Wear Tanzz, Wear confidence. Shop exclusive pure cotton Zam Zam lawn 3-piece sets, designer boutique suits, and festive luxury collections. Visit our flagship showroom at Natore Tower, Uttara, Dhaka or order online with Open Parcel Policy.",
   keywords: [
-    "3 sis xclusive",
-    "3 sis xclusive",
-    "Pakistani Lawn Sylhet",
-    "Pakistani Designer Suit Bangladesh",
-    "Sadabahar Sylhet",
-    "Party Wear Sylhet",
-    "Pakistani Dress Sylhet",
+    "Closet by Tanzz",
+    "Closet by Tanzz Uttara",
+    "Zam Zam Lawn Bangladesh",
+    "Pakistani Lawn Dhaka",
+    "Designer Boutique Dhaka",
+    "Three Piece Collection BD",
+    "Women Fashion Uttara",
     "Luxury Pret BD",
-    "3 sis xclusive",
   ],
-  authors: [{ name: "3 sis xclusive" }],
-  creator: "3 sis xclusive",
+  authors: [{ name: "Closet by Tanzz" }],
+  creator: "Closet by Tanzz",
   openGraph: {
     type: "website",
     locale: "en_BD",
-    siteName: "3 sis xclusive",
-    title: "3 sis xclusive — Elevate Your Style",
+    siteName: "Closet by Tanzz",
+    title: "Closet by Tanzz — Wear Tanzz, Wear Confidence",
     description:
-      "Authentic Pakistani designer suits, pure lawn collections, and luxury festive couture in Sylhet. Nationwide cash on delivery with Open Parcel inspection policy.",
-    images: ["/banner.jpg"],
+      "Exclusive women's luxury fashion, Zam Zam lawn, designer three-piece suits, and festive collections. Flagship outlet at Natore Tower, Uttara. Nationwide Cash on Delivery with Open Parcel Policy.",
+    images: ["/banner.png"],
   },
   robots: {
     index: true,
@@ -65,12 +65,12 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "3 sis xclusive Sylhet",
+    title: "Closet by Tanzz",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#8B263E",
+  themeColor: "#C5A059",
 };
 
 export default async function RootLayout({
@@ -117,10 +117,10 @@ export default async function RootLayout({
           Skip to main content
         </a>
         <NextTopLoader
-          color="#8B263E"
+          color="#C5A059"
           height={3}
           showSpinner={false}
-          shadow="0 0 12px #8b1e3f, 0 0 6px #f7c8d0"
+          shadow="0 0 12px #C5A059, 0 0 6px #E6C280"
         />
         {/* Structured Data — SEO (SOP §৭) */}
         <OrganizationJsonLd />

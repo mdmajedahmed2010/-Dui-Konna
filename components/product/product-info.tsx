@@ -581,11 +581,11 @@ export function ProductInfo({
           onToggle={() => toggleSection("shipping")}
         >
           <div className="space-y-2 text-xs md:text-sm text-muted-foreground leading-relaxed">
-            <p>• <strong>Delivery Charges:</strong> Inside Sylhet: ৳{String(settings.shipping_sylhet ?? 80)} | Outside Sylhet: ৳{String(settings.shipping_outside ?? 150)}</p>
+            <p>• <strong>Delivery Charges:</strong> Inside Dhaka: ৳{String(settings.shipping_dhaka ?? 80)} | Outside Dhaka: ৳{String(settings.shipping_outside ?? 150)}</p>
             <p>• <strong>Open Parcel Policy:</strong> ডেলিভারি ম্যানের সামনে পার্সেল খুলে ফেব্রিক, কালার, সাইজ ও এম্ব্রয়ডারি চেক করে তারপর মূল্য পরিশোধ করুন।</p>
-            <p>• <strong>Physical Outlet:</strong> Parents View (1st Floor), 20 Nayasarak Point, Sylhet — শোরুমে এসে ট্রায়াল দিয়ে কেনার সুবিধা।</p>
-            <p>• <strong>Pre-Order Guarantee:</strong> ২৫–৩৫ দিনের মধ্যে ডেলিভারি। ডেলিভারিতে বিলম্ব হলে অগ্রিম টাকা তাৎক্ষণিকভাবে ফেরত দেওয়া হবে।</p>
-            <p>• <strong>Hotline & WhatsApp:</strong> 01674-054386</p>
+            <p>• <strong>Showroom Outlet:</strong> Natore Tower, 2nd Floor (Lift-2), Shop 12, Rajlokkhi, Sector 3, Uttara, Dhaka — সরাসরি শোরুমে এসে দেখার সুবিধা।</p>
+            <p>• <strong>Guarantee:</strong> ১০০% প্রিমিয়াম ফেব্রিক ও অরিজিনাল কালার গ্যারান্টি।</p>
+            <p>• <strong>Hotline & WhatsApp:</strong> 01610-663812</p>
           </div>
         </AccordionItem>
       </div>

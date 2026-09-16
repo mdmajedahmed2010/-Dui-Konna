@@ -1,5 +1,5 @@
 {
-  "name": "3-sis-xclusive-storefront",
+  "name": "closet-by-tanzz-storefront",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -83,5 +83,5 @@
     "postcss": "^8.5.16",
     "@hono/node-server": "^1.19.14"
   },
-  "description": "3 sis xclusive — JUST FOR WOMEN | 17 Years of Trust in Fashion"
+  "description": "Closet by Tanzz — Wear Tanzz, Wear confidence | International Luxury Collection"
 }

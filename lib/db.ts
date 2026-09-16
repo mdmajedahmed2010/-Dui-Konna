@@ -68,6 +68,7 @@ function createDummyPrisma() {
                 { key: "store_phone", value: BUSINESS.PHONE },
                 { key: "store_email", value: BUSINESS.EMAIL },
                 { key: "store_address", value: BUSINESS.ADDRESS },
+                { key: "shipping_dhaka", value: "80" },
                 { key: "shipping_sylhet", value: "80" },
                 { key: "shipping_outside", value: "150" },
                 { key: "social_facebook", value: BUSINESS.FACEBOOK },
