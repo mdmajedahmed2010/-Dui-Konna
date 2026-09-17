@@ -1,5 +1,5 @@
 /**
- * Blossom Clothing — Product Detail Page
+ * Ash and Aspen — Product Detail Page
  * Route: /products/[slug]
  */
 
@@ -110,7 +110,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const images: string[] =
     Array.isArray(variantImages) && variantImages.length > 0
       ? (variantImages as string[])
-      : ["/blossom-assets/767161577_1062801416685993_5281384838796713463_n.jpg"];
+      : ["/ash-and-aspen/gulaal-mint-lawn.jpg"];
 
   // Compute compareAtPrice as a dynamic fallback
   const prices = product.variants.map((v) => Number(v.price));

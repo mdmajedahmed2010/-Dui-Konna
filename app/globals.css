@@ -5,59 +5,66 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * 365 Fashion House — Luxury Global Styles
- * Pioneer in Authentic Pakistani & Indian Attires in Bangladesh
- * Official Facebook: https://www.facebook.com/365FashionHouse/
+ * Ash and Aspen (ash and aspen) — Luxury Global Styles
+ * Luxury Pakistani Designer Attires & Ready-to-Wear Pret
+ * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230, Bangladesh
+ * Official Facebook: https://www.facebook.com/ashandaspenclothing/
  */
 
 /* ═══════════════════════════════════════════
-   THEME — 365 Fashion House Color System
+   THEME — Ash and Aspen Color System
    ═══════════════════════════════════════════ */
 @theme inline {
-  --color-primary: #191426;
+  --color-primary: #1A1A1A;
   --color-primary-foreground: #ffffff;
-  --color-secondary: #FAF8F5;
+  --color-secondary: #FAF7F2;
   --color-secondary-foreground: #1A1A1A;
-  --color-accent: #6C3483;
+  --color-accent: #E29578;
   --color-accent-foreground: #ffffff;
-  --color-accent-gold: #D4AC0D;
-  --color-accent-amber: #F39C12;
-  --color-accent-light: #F5EEF8;
-  --color-fashion-purple: #6C3483;
-  --color-fashion-violet: #8E44AD;
-  --color-fashion-gold: #D4AC0D;
-  --color-fashion-amber: #F39C12;
-  --color-fashion-cream: #FAF8F5;
-  --color-fashion-dark: #120E1C;
-  --color-tanzz-onyx: #191426;
-  --color-tanzz-gold: #D4AC0D;
-  --color-tanzz-gold-bright: #F5B041;
-  --color-tanzz-cream: #FAF8F5;
-  --color-tanzz-dark: #120E1C;
-  --color-threesis-plum: #121212;
-  --color-threesis-rose: #C5A059;
-  --color-threesis-dark: #121212;
-  --color-threesis-gold: #C5A059;
-  --color-threesis-cream: #FAF8F5;
-  --color-enayas-purple: #121212;
-  --color-enayas-dark: #121212;
-  --color-enayas-gold: #C5A059;
-  --color-enayas-rose: #C5A059;
-  --color-enayas-wine: #222222;
-  --color-blossom-pink: #E6C280;
-  --color-blossom-rose: #F3E5AB;
-  --color-blossom-wine: #C5A059;
-  --color-background: #FAF8F5;
+  --color-accent-hover: #D38062;
+  --color-accent-slate: #484860;
+  --color-accent-navy: #2B4C7E;
+  --color-accent-gold: #D4AF37;
+  --color-accent-amber: #E5A84B;
+  --color-accent-light: #FDF5F1;
+  --color-fashion-terracotta: #E29578;
+  --color-fashion-slate: #484860;
+  --color-fashion-navy: #2B4C7E;
+  --color-fashion-gold: #D4AF37;
+  --color-fashion-amber: #E5A84B;
+  --color-fashion-cream: #FAF7F2;
+  --color-fashion-dark: #121214;
+  --color-fashion-purple: #484860;
+  --color-fashion-violet: #E29578;
+  --color-tanzz-onyx: #1A1A1A;
+  --color-tanzz-gold: #D4AF37;
+  --color-tanzz-gold-bright: #E5A84B;
+  --color-tanzz-cream: #FAF7F2;
+  --color-tanzz-dark: #121214;
+  --color-threesis-plum: #1A1A1A;
+  --color-threesis-rose: #E29578;
+  --color-threesis-dark: #121214;
+  --color-threesis-gold: #D4AF37;
+  --color-threesis-cream: #FAF7F2;
+  --color-enayas-purple: #484860;
+  --color-enayas-dark: #121214;
+  --color-enayas-gold: #D4AF37;
+  --color-enayas-rose: #E29578;
+  --color-enayas-wine: #2B4C7E;
+  --color-blossom-pink: #E29578;
+  --color-blossom-rose: #FDF5F1;
+  --color-blossom-wine: #484860;
+  --color-background: #FAF7F2;
   --color-foreground: #1A1A1A;
   --color-surface: #ffffff;
-  --color-surface-warm: #F7F3EE;
-  --color-muted: #F0EAE1;
-  --color-muted-foreground: #6B7280;
+  --color-surface-warm: #F7F2ED;
+  --color-muted: #F3ECE4;
+  --color-muted-foreground: #6B6560;
   --color-border: #E8DFD3;
   --color-destructive: #DC2626;
   --color-success: #16A34A;
   --color-warning: #F59E0B;
-  --color-sale: #C5A059;
+  --color-sale: #D4AF37;
   --font-heading: var(--font-heading);
   --font-sans: var(--font-sans);
   --color-sidebar-ring: var(--sidebar-ring);

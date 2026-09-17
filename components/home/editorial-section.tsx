@@ -1,20 +1,22 @@
 "use client";
 
 /**
- * Blossom Clothing — Short Brand Story Section (Homepage)
- * Explore Your Style | Luxury Women's Fashion & Modest Wear
- * Dhaka, Bangladesh — https://www.facebook.com/blossomclothing195/
+ * Ash and Aspen — Short Brand Story Section (Homepage)
+ * 100% Genuine Pakistani Luxury Suits & Designer Collections
+ * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230 — https://www.facebook.com/ashandaspenclothing/
  */
 
 import Link from "next/link";
 import Image from "next/image";
 import { Sparkles, ArrowRight } from "lucide-react";
 import { motion } from "framer-motion";
+import { ASSETS } from "@/lib/demo-data";
+import { BUSINESS } from "@/lib/constants";
 
 export function EditorialSection() {
   return (
-    <section className="py-16 md:py-24 bg-[#fcf9fa] relative border-y border-[#8b1e3f]/20 overflow-hidden">
-      <div className="absolute top-0 bottom-0 left-1/3 w-[1px] bg-[#f7c8d0]/40 hidden lg:block" />
+    <section className="py-16 md:py-24 bg-[#FAF7F2] relative border-y border-[#E29578]/20 overflow-hidden">
+      <div className="absolute top-0 bottom-0 left-1/3 w-[1px] bg-[#E29578]/20 hidden lg:block" />
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -34,11 +36,11 @@ export function EditorialSection() {
             }}
             className="lg:col-span-5 relative group"
           >
-            <div className="absolute -inset-2 bg-[#8b1e3f]/5 border border-[#f7c8d0]/60 rounded-sm -z-10 translate-x-3 translate-y-3 transition-transform duration-500 group-hover:translate-x-1.5 group-hover:translate-y-1.5" />
+            <div className="absolute -inset-2 bg-[#E29578]/10 border border-[#E29578]/40 rounded-sm -z-10 translate-x-3 translate-y-3 transition-transform duration-500 group-hover:translate-x-1.5 group-hover:translate-y-1.5" />
             <div className="relative aspect-[4/5] overflow-hidden rounded-sm bg-neutral-100 shadow-md">
               <Image
-                src="/blossom-assets/768949723_1062801453352656_7035338309332001524_n.jpg"
-                alt="Blossom Clothing — Explore Your Style"
+                src={ASSETS.img8}
+                alt="Ash and Aspen — Authentic Pakistani Luxury Couture"
                 fill
                 className="object-cover transition-transform duration-[1200ms] group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -60,39 +62,39 @@ export function EditorialSection() {
           >
             <div className="space-y-3">
               <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-[#8b1e3f] animate-pulse" />
-                <p className="text-[10px] uppercase tracking-[0.25em] text-[#8b1e3f] font-bold">
-                  ABOUT BLOSSOM CLOTHING
+                <Sparkles className="h-4 w-4 text-[#E29578] animate-pulse" />
+                <p className="text-[10px] uppercase tracking-[0.25em] text-[#E29578] font-bold">
+                  ABOUT {BUSINESS.NAME.toUpperCase()}
                 </p>
               </div>
-              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-[1.15] text-[#1a0008] font-heading">
-                Dedicated to <span className="italic font-normal text-[#8b1e3f]">Feminine Grace & Modest Style</span>
+              <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-[1.15] text-[#1A1A1A] font-heading">
+                Dedicated to <span className="italic font-normal text-[#E29578]">Authentic Pakistani Couture</span>
               </h2>
             </div>
 
             <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
-              Blossom Clothing is a premier fashion atelier in Bangladesh dedicated to contemporary co-ord sets, authentic Dubai Cherry abayas, flowy kaftans, and graceful festive attire.
+              Ash and Aspen is Bangladesh&apos;s trusted destination for 100% genuine Pakistani luxury lawn, Chikankari formals, and hand-embellished couture. Featuring renowned designer labels including Gulaal, Nur, Sadabahar, and Crimson.
             </p>
 
-            <div className="p-4 md:p-5 bg-white border-l-4 border-[#8b1e3f] rounded-sm shadow-sm">
-              <p className="text-xs md:text-sm text-[#1a0008] leading-relaxed font-medium italic">
-                &ldquo;We celebrate every woman&apos;s unique individuality with premium tailored fabrics, gentle pastel palettes, and seamless nationwide delivery across Bangladesh.&rdquo;
+            <div className="p-4 md:p-5 bg-white border-l-4 border-[#E29578] rounded-sm shadow-sm">
+              <p className="text-xs md:text-sm text-[#1A1A1A] leading-relaxed font-medium italic">
+                &ldquo;Open Parcel Policy: Check fabric texture, embroidery finesse, and authenticity before completing payment. Genuine luxury, total peace of mind.&rdquo;
               </p>
             </div>
 
             <div className="pt-2 flex flex-wrap items-center gap-4">
               <Link
                 href="/collections"
-                className="inline-flex items-center justify-center h-12 px-8 bg-[#8b1e3f] hover:bg-[#6e142f] text-white text-xs font-bold uppercase tracking-[0.2em] transition-all duration-300 rounded-sm shadow-luxury border border-[#f7c8d0]/40 active:scale-[0.98]"
+                className="inline-flex items-center justify-center h-12 px-8 bg-[#1A1A1A] hover:bg-[#E29578] text-white text-xs font-bold uppercase tracking-[0.2em] transition-all duration-300 rounded-sm shadow-luxury border border-[#E29578]/40 active:scale-[0.98]"
               >
                 Explore Collections
               </Link>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#8b1e3f] border-b-2 border-[#8b1e3f] hover:border-[#6e142f] pb-1 transition-all"
+                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#1A1A1A] border-b-2 border-[#E29578] hover:text-[#E29578] pb-1 transition-all"
               >
-                Read Full Story
-                <ArrowRight className="h-3.5 w-3.5 text-[#8b1e3f]" />
+                Read Our Story
+                <ArrowRight className="h-3.5 w-3.5 text-[#E29578]" />
               </Link>
             </div>
           </motion.div>

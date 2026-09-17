@@ -40,12 +40,12 @@ export function BlossomPetalsOverlay() {
 
     window.addEventListener("resize", handleResize);
 
-    // 365 Fashion House luxury purple & amber bokeh shimmer palette
+    // Ash and Aspen terracotta, peach, warm gold & slate indigo shimmer palette
     const petalColors = [
-      "rgba(108, 52, 131, 0.35)",  // 365 Royal violet butterfly
-      "rgba(243, 156, 18, 0.45)",  // Luminous radiant amber
-      "rgba(212, 172, 13, 0.40)",  // Warm imperial gold
-      "rgba(232, 218, 239, 0.45)", // Soft lilac mist
+      "rgba(226, 149, 120, 0.40)", // Ash & Aspen warm terracotta peach
+      "rgba(212, 175, 55, 0.40)",  // Warm imperial gold
+      "rgba(72, 72, 96, 0.30)",    // Subtle slate indigo mist
+      "rgba(253, 245, 241, 0.50)", // Soft rose-cream silk shimmer
     ];
 
     const PETAL_COUNT = Math.min(22, Math.floor(width / 60));

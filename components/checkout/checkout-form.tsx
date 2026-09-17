@@ -2,7 +2,7 @@
 
 /* eslint-disable */
 /**
- * Blossom — Checkout Form Component (Premium v3.0)
+ * Ash and Aspen — Checkout Form Component
  * Ultra-Premium, Interactive Single-Page 2-Column Checkout Dashboard.
  * Specialized for the Bangladeshi Market:
  * - Inside/Outside Dhaka selection dropdown
@@ -38,6 +38,7 @@ import {
 import { createOrder } from "@/actions/order.actions";
 import { validateCartItems } from "@/actions/validate-cart.actions";
 import { validateCoupon } from "@/actions/coupon.actions";
+import { BUSINESS } from "@/lib/constants";
 
 interface AddressData {
   name: string;
@@ -316,8 +317,8 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
           <h2 className="text-2xl md:text-3xl font-heading font-bold text-[#191426]">
             Order Confirmed!
           </h2>
-          <p className="text-xs text-[#191426] uppercase tracking-widest max-w-md mx-auto leading-relaxed font-bold">
-            Thank you for choosing 365 Fashion House. We will call you from 01714-404008 to confirm your order and delivery.
+          <p className="text-xs text-[#1A1A1A] uppercase tracking-widest max-w-md mx-auto leading-relaxed font-bold">
+            Thank you for choosing {BUSINESS.NAME}. We will call you from {BUSINESS.PHONE} to confirm your order and delivery.
           </p>
         </div>
 
@@ -727,7 +728,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
                       <div className="flex items-center gap-1.5 p-2.5 bg-pink-50 text-pink-700 rounded-sm border border-pink-100">
                         <PhoneCall className="h-4 w-4 shrink-0" />
                         <p className="text-[10px] uppercase tracking-wider font-bold">
-                          Send Money to: +880 1311-155943 (Personal)
+                          Send Money to: {BUSINESS.PHONE_INTL} (Personal)
                         </p>
                       </div>
                       
@@ -798,7 +799,7 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
                       <div className="flex items-center gap-1.5 p-2.5 bg-orange-50 text-orange-700 rounded-sm border border-orange-100">
                         <PhoneCall className="h-4 w-4 shrink-0" />
                         <p className="text-[10px] uppercase tracking-wider font-bold">
-                          Send Money to: +880 1311-155943 (Personal)
+                          Send Money to: {BUSINESS.PHONE_INTL} (Personal)
                         </p>
                       </div>
                       

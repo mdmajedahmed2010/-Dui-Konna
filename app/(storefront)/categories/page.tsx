@@ -1,5 +1,5 @@
 /**
- * Blossom Clothing — All Categories Page
+ * Ash and Aspen — All Categories Page
  * Route: /categories
  */
 
@@ -8,14 +8,15 @@ import Image from "next/image";
 import Link from "next/link";
 import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { prisma } from "@/lib/db";
-import { CATEGORIES } from "@/lib/demo-data";
+import { CATEGORIES, ASSETS } from "@/lib/demo-data";
+import { BUSINESS } from "@/lib/constants";
 
 export const revalidate = 60;
 
 export const metadata: Metadata = {
-  title: "All Categories — Blossom Clothing",
+  title: `All Collections & Categories — ${BUSINESS.NAME}`,
   description:
-    "Browse all Blossom Clothing Pakistani clothing categories — Luxury Organza Suits, Chiffon Embroidered, Lawn 3-Piece, Festive & Bridal Collections.",
+    `Browse all ${BUSINESS.NAME} authentic Pakistani clothing categories — Luxury Lawn, Organza Couture, Stitched Pret, Chikankari Formals, and Festive Velvet.`,
 };
 
 type CategoryItem = {
@@ -87,8 +88,7 @@ export default async function CategoriesPage() {
               >
                 <Image
                   src={
-                    cat.image ||
-                    "/blossom-assets/767161577_1062801416685993_5281384838796713463_n.jpg"
+                    cat.image || ASSETS.logo
                   }
                   alt={cat.name}
                   fill

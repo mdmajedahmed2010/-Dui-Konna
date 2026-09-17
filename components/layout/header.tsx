@@ -1,15 +1,15 @@
 "use client";
 
 /**
- * 365 Fashion House — Haute Couture Header
- * Pioneer in Authentic Pakistani Attires in Bangladesh
- * 100% ORIGINAL PAKISTANI & INDIAN DESIGNER WEAR • LUXURY LAWN, ORGANZA & PRET
- * Dhaka - 1206, Bangladesh — https://www.facebook.com/365FashionHouse/
+ * Ash and Aspen (ash and aspen) — Haute Couture Header
+ * Luxury Pakistani Designer Attires & Ready-to-Wear Pret
+ * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230, Bangladesh
+ * Official Facebook: https://www.facebook.com/ashandaspenclothing/
  */
 
 import Link from "next/link";
 import Image from "next/image";
-import { User, MessageCircle, MapPin, Sparkles } from "lucide-react";
+import { User, MessageCircle, Sparkles } from "lucide-react";
 import { useState, useEffect } from "react";
 import { MobileNav } from "./mobile-nav";
 import { CartButton } from "./cart-button";
@@ -23,7 +23,7 @@ const navLinks = [
   { href: "/collections/organza-chiffon", label: "Organza & Chiffon" },
   { href: "/collections/designer-pret", label: "Designer Pret" },
   { href: "/collections/festive-party", label: "Festive & Party" },
-  { href: "/collections/silk-velvet", label: "Silk & Velvet" },
+  { href: "/collections/casual-lite", label: "Casual Lite" },
   { href: "/about", label: "About Us" },
   { href: "/faq", label: "FAQ" },
 ];
@@ -39,9 +39,9 @@ const megaMenuData: Record<
   "Pakistani Lawn": {
     categories: [
       { label: "Shop All Pakistani Lawn", href: "/collections/pakistani-lawn" },
-      { label: "Mahee's Luxury Lawn Lilac", href: "/products/mahees-luxury-lawn-3piece-unstitched-suit-lilac-blossom" },
-      { label: "Khaadi Signature Mint Oasis", href: "/products/khaadi-signature-luxury-lawn-3piece-mint-ivory-oasis" },
-      { label: "Maria.B Embroidered Lawn", href: "/collections/pakistani-lawn" },
+      { label: "Gulaal Seafoam Mint Lawn", href: "/products/gulaal-luxury-lawn-3piece-embroidered-suit-seafoam-mint-whisper" },
+      { label: "Nur Festive Chikankari Kameez", href: "/products/nur-festive-chikankari-schiffli-long-kameez-3piece-royal-ivory" },
+      { label: "Gulaal Coral Peach Lawn", href: "/products/gulaal-festive-lawn-3piece-tassels-coral-peach-emerald-teal" },
     ],
     styles: [
       { label: "100% Original Pakistani Lawn", href: "/collections/pakistani-lawn" },
@@ -49,8 +49,8 @@ const megaMenuData: Record<
       { label: "Open Parcel Inspection Guaranteed", href: "/collections/pakistani-lawn" },
     ],
     featured: {
-      title: "Mahee's Luxury Lawn 3-Piece",
-      subtitle: "Intricate neckline embroidery & organza dupatta — ৳3,850",
+      title: "Gulaal Luxury Lawn 3-Piece",
+      subtitle: "Intricate neckline embroidery & cutwork hem — ৳4,250",
       image: ASSETS.img1,
       href: "/collections/pakistani-lawn",
     },
@@ -58,18 +58,18 @@ const megaMenuData: Record<
   "Organza & Chiffon": {
     categories: [
       { label: "Shop All Organza & Chiffon", href: "/collections/organza-chiffon" },
-      { label: "Beechtree Rose Quartz 3-Piece", href: "/products/beechtree-pastel-organza-luxury-3piece-rose-quartz" },
-      { label: "Pastel Threadwork Ensembles", href: "/collections/organza-chiffon" },
+      { label: "Nur Lavender Butterfly Pret", href: "/products/nur-luxury-organza-butterfly-ensemble-lilac-petal-whisper" },
+      { label: "Silk Chiffon Dupatta Kurti", href: "/products/nur-pure-silk-chiffon-dupatta-kurti-ensemble-lavender-dream" },
       { label: "Semi-Formal Luxury Pret", href: "/collections/organza-chiffon" },
     ],
     styles: [
       { label: "Exclusive Festive Organza", href: "/collections/organza-chiffon" },
       { label: "Handcrafted Resham & Tilla Work", href: "/collections/organza-chiffon" },
-      { label: "Pioneer in Authentic Pakistani Attires", href: "/collections/organza-chiffon" },
+      { label: "Boutique Quality from Uttara Showroom", href: "/collections/organza-chiffon" },
     ],
     featured: {
-      title: "Beechtree Luxury Organza",
-      subtitle: "Soft rose quartz with ivory threadwork — ৳4,650",
+      title: "Nur Organza Butterfly Ensemble",
+      subtitle: "Pure lilac dupatta with hand-painted botanicals — ৳3,950",
       image: ASSETS.img5,
       href: "/collections/organza-chiffon",
     },
@@ -77,18 +77,18 @@ const megaMenuData: Record<
   "Designer Pret": {
     categories: [
       { label: "Shop All Designer Pret", href: "/collections/designer-pret" },
-      { label: "Agha Noor Pistachio Kurti", href: "/products/agha-noor-festive-organza-kurti-pistachio-floral-glow" },
-      { label: "Asim Jofa Festive Pret Kurti", href: "/collections/designer-pret" },
-      { label: "Ready-to-Wear Bell Sleeve Kurtis", href: "/collections/designer-pret" },
+      { label: "Sadabahar Sandy Taupe 3-Piece", href: "/products/sadabahar-stitched-3piece-pret-suit-sandy-taupe-royal-indigo" },
+      { label: "Nur Royal Schiffli Stitched Suit", href: "/products/nur-royal-schiffli-embroidered-stitched-suit-pearl-cream-glow" },
+      { label: "Ready-to-Wear Stitched Sets", href: "/collections/designer-pret" },
     ],
     styles: [
-      { label: "Original Agha Noor Pret", href: "/collections/designer-pret" },
-      { label: "Pearl & Mirror Embellishments", href: "/collections/designer-pret" },
-      { label: "Ready to Wear with No Stitching Delay", href: "/collections/designer-pret" },
+      { label: "Sadabahar Authentic Stitched Pret", href: "/collections/designer-pret" },
+      { label: "Scalloped Lace & Bell Sleeves", href: "/collections/designer-pret" },
+      { label: "Ready to Wear with No Tailoring Hassle", href: "/collections/designer-pret" },
     ],
     featured: {
-      title: "Agha Noor Festive Kurti",
-      subtitle: "Multicolor resham floral embroidery & pearls — ৳3,650",
+      title: "Sadabahar Stitched 3-Piece",
+      subtitle: "Sandy taupe & royal indigo floral pret — ৳3,650",
       image: ASSETS.img3,
       href: "/collections/designer-pret",
     },
@@ -96,18 +96,18 @@ const megaMenuData: Record<
   "Festive & Party": {
     categories: [
       { label: "Shop All Festive & Party Wear", href: "/collections/festive-party" },
-      { label: "Chevron Crimson Velvet Suit", href: "/products/chevron-royal-festive-chiffon-velvet-3piece-crimson-empress" },
-      { label: "Emerald Flared Anarkali Suit", href: "/products/festive-designer-flared-anarkali-suit-emerald-majesty" },
+      { label: "Ruby Crimson Empress Velvet Suit", href: "/products/ash-aspen-festive-velvet-chiffon-3piece-ruby-crimson-empress" },
+      { label: "Gulaal Tassel Festive Suit", href: "/products/gulaal-festive-lawn-3piece-tassels-coral-peach-emerald-teal" },
       { label: "Wedding & Dawat Couture", href: "/collections/festive-party" },
     ],
     styles: [
-      { label: "Heavy Zari, Zardozi & Sequins", href: "/collections/festive-party" },
+      { label: "Heavy Zari, Zardozi & Resham", href: "/collections/festive-party" },
       { label: "Eid & Festive Celebratory Edit", href: "/collections/festive-party" },
-      { label: "Deep Jewel Tones & Gold Brocade", href: "/collections/festive-party" },
+      { label: "Deep Jewel Tones & Silk Dupattas", href: "/collections/festive-party" },
     ],
     featured: {
-      title: "Chevron Royal Festive Suit",
-      subtitle: "Crimson chiffon & velvet with heavy tilla — ৳5,450",
+      title: "Ruby Crimson Empress 3-Piece",
+      subtitle: "Deep maroon lawn & bottle green chiffon — ৳4,650",
       image: ASSETS.img4,
       href: "/collections/festive-party",
     },
@@ -126,18 +126,19 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
   }, []);
 
   const marqueeItems = [
-    "✨ 365 FASHION HOUSE • PIONEER IN AUTHENTIC PAKISTANI ATTIRES",
-    "✦ 100% ORIGINAL DESIGNER LAWN, ORGANZA & LUXURY PRET",
+    "✨ ASH AND ASPEN • LUXURY PAKISTANI DESIGNER ATTIRES",
+    "✦ 100% ORIGINAL LAWN, ORGANZA & READY-TO-WEAR PRET",
     "✨ OPEN PARCEL POLICY — রাইডারের সামনে দেখে বুঝে নিন আপনার পোশাক",
-    "✦ DHAKA DELIVERY ৳80 • NATIONWIDE ৳150 • CASH ON DELIVERY",
-    "✨ WHATSAPP & HOTLINE: 01714-404008 • DHAKA - 1206",
-    "✦ 58,000+ FACEBOOK SISTERS & 100% RECOMMENDATION RATE",
+    "✦ UTTARA SHOWROOM: HOUSE 76, GAUSUL AZAM AVENUE, SECTOR 13",
+    "✨ DHAKA DELIVERY ৳80 • NATIONWIDE ৳150 • CASH ON DELIVERY",
+    "✦ WHATSAPP & HOTLINE: 01721-396111 • DHAKA - 1230",
+    "✨ 81,000+ FACEBOOK SISTERS & 96% POSITIVE RECOMMENDATION",
   ];
 
   return (
     <header className="sticky top-0 z-50 w-full transition-all duration-300">
       {/* 1. Endless Haute Marquee Ticker */}
-      <div className="bg-[#191426] text-[#F39C12] overflow-hidden py-2 border-b border-[#D4AC0D]/30 select-none">
+      <div className="bg-[#1A1A1A] text-[#E29578] overflow-hidden py-2 border-b border-[#E29578]/30 select-none">
         <div className="animate-marquee flex items-center gap-10 whitespace-nowrap text-[10px] md:text-[11px] font-semibold tracking-[0.2em] uppercase">
           {marqueeItems.concat(marqueeItems).map((item, idx) => (
             <span key={idx} className="flex items-center gap-3">
@@ -151,8 +152,8 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
       <div
         className={`w-full transition-all duration-500 ${
           isScrolled
-            ? "bg-white/95 backdrop-blur-2xl shadow-[0_10px_30px_-10px_rgba(108,52,131,0.15)] border-b border-[#6C3483]/20 py-1.5"
-            : "bg-[#FAF8F5]/95 backdrop-blur-xl border-b border-[#E8DFD3] py-2.5"
+            ? "bg-white/95 backdrop-blur-2xl shadow-[0_10px_30px_-10px_rgba(226,149,120,0.2)] border-b border-[#E29578]/25 py-1.5"
+            : "bg-[#FAF7F2]/95 backdrop-blur-xl border-b border-[#E8DFD3] py-2.5"
         }`}
       >
         <div className="container mx-auto px-4 md:px-8 lg:px-12">
@@ -162,30 +163,27 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
               <MobileNav links={navLinks} />
               <Link href="/" className="flex items-center gap-3 group/brand">
                 <div className="relative">
-                  <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#6C3483] via-[#D4AC0D] to-[#F39C12] opacity-75 blur-[2px] group-hover/brand:opacity-100 transition-opacity" />
+                  <div className="absolute -inset-1 rounded-full bg-gradient-to-r from-[#E29578] via-[#D4AF37] to-[#484860] opacity-75 blur-[2px] group-hover/brand:opacity-100 transition-opacity" />
                   <Image
                     src={
                       typeof settings?.store_logo === "string" && settings.store_logo
                         ? settings.store_logo
-                        : "/365-assets/logo.jpg"
+                        : "/ash-and-aspen/logo.jpg"
                     }
-                    alt="365 Fashion House"
+                    alt="Ash and Aspen"
                     width={48}
                     height={48}
-                    className="relative h-11 w-11 md:h-12 md:w-12 object-cover rounded-full ring-2 ring-[#6C3483]/60 shadow-sm transition-transform duration-500 group-hover/brand:scale-105"
+                    className="relative h-11 w-11 md:h-12 md:w-12 object-cover rounded-full ring-2 ring-[#E29578]/70 shadow-sm transition-transform duration-500 group-hover/brand:scale-105"
                   />
                 </div>
                 <div>
                   <div className="flex items-center gap-1.5">
-                    <p className="text-[17px] md:text-[20px] font-bold tracking-[0.06em] text-[#191426] font-heading leading-none">
-                      365
+                    <p className="text-[17px] md:text-[20px] font-bold tracking-[0.04em] text-[#1A1A1A] font-heading leading-none">
+                      ash and aspen
                     </p>
-                    <span className="text-[12px] font-extrabold tracking-[0.18em] text-[#6C3483] uppercase font-sans">
-                      FASHION HOUSE
-                    </span>
                   </div>
-                  <p className="text-[8.5px] font-semibold tracking-[0.16em] text-[#D4AC0D] uppercase mt-0.5 hidden sm:block">
-                    AUTHENTIC PAKISTANI ATTIRES
+                  <p className="text-[8.5px] font-semibold tracking-[0.16em] text-[#E29578] uppercase mt-0.5 hidden sm:block">
+                    UTTARA SHOWROOM & ONLINE
                   </p>
                 </div>
               </Link>
@@ -208,10 +206,10 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
                     key={link.href}
                     href={link.href}
                     prefetch={true}
-                    className="text-[11.5px] font-bold uppercase tracking-[0.14em] text-[#191426]/85 hover:text-[#6C3483] py-4 block transition-all relative group/nav"
+                    className="text-[11.5px] font-bold uppercase tracking-[0.14em] text-[#1A1A1A]/85 hover:text-[#E29578] py-4 block transition-all relative group/nav"
                   >
                     {link.label}
-                    <span className="absolute bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-[#6C3483] to-[#D4AC0D] group-hover/nav:w-full transition-all duration-300 rounded-full" />
+                    <span className="absolute bottom-1 left-0 w-0 h-[2px] bg-gradient-to-r from-[#E29578] to-[#D4AF37] group-hover/nav:w-full transition-all duration-300 rounded-full" />
                   </Link>
                 );
               })}
@@ -221,9 +219,9 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
             <div className="flex items-center gap-2 sm:gap-3">
               {/* Trust Badge */}
               <div
-                className="hidden 2xl:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FAF8F5] border border-[#6C3483]/30 text-[#191426] text-[10.5px] font-semibold"
+                className="hidden 2xl:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FAF7F2] border border-[#E29578]/30 text-[#1A1A1A] text-[10.5px] font-semibold"
               >
-                <Sparkles className="h-3 w-3 text-[#D4AC0D]" />
+                <Sparkles className="h-3 w-3 text-[#D4AF37]" />
                 <span>100% Authentic</span>
               </div>
 
@@ -232,9 +230,9 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
                 href={BUSINESS.WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hidden xl:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FAF8F5] hover:bg-[#191426] text-[#191426] hover:text-[#F39C12] border border-[#6C3483]/40 transition-all duration-300 text-[11px] font-bold tracking-wide shadow-xs group/wa active:scale-[0.97]"
+                className="hidden xl:inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#FAF7F2] hover:bg-[#1A1A1A] text-[#1A1A1A] hover:text-[#E29578] border border-[#E29578]/40 transition-all duration-300 text-[11px] font-bold tracking-wide shadow-xs group/wa active:scale-[0.97]"
               >
-                <MessageCircle className="h-3.5 w-3.5 text-[#25D366] group-hover/wa:text-[#F39C12] transition-colors" />
+                <MessageCircle className="h-3.5 w-3.5 text-[#25D366] group-hover/wa:text-[#E29578] transition-colors" />
                 <span>WhatsApp: {BUSINESS.PHONE}</span>
               </a>
 
@@ -243,7 +241,7 @@ export function Header({ settings = {} }: { settings?: Record<string, unknown> }
 
               <Link
                 href="/account"
-                className="flex items-center justify-center size-10 rounded-full text-[#191426] hover:text-white hover:bg-[#6C3483] transition-all duration-300 bg-white border border-[#E8DFD3] shadow-xs active:scale-[0.95]"
+                className="flex items-center justify-center size-10 rounded-full text-[#1A1A1A] hover:text-white hover:bg-[#E29578] transition-all duration-300 bg-white border border-[#E8DFD3] shadow-xs active:scale-[0.95]"
                 aria-label="My account"
               >
                 <User className="h-4.5 w-4.5 stroke-[1.7]" />

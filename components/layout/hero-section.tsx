@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * Closet by Tanzz — Hero Section
- * Wear Tanzz, Wear confidence | Natore Tower, Uttara Showroom
+ * Ash and Aspen — Hero Section
+ * 100% Genuine Pakistani Attires | Sector #13, Uttara Showroom
  */
 
 import { useState, useEffect } from "react";
@@ -13,25 +13,25 @@ import { ASSETS } from "@/lib/demo-data";
 
 const slides = [
   {
-    image: "/365-assets/banner.png",
+    image: "/ash-and-aspen/banner.jpg",
     title: "AUTHENTIC PAKISTANI ATTIRES",
-    subtitle: "Pioneer in Authentic Pakistani Attires in Bangladesh — 100% Original Swiss Lawn, Party Suits & Organza Pret with Open Parcel Verification.",
-    link: "/collections/pakistani-lawn",
-    overline: "✦ 365 Fashion House | Dhaka - 1206 ✦",
+    subtitle: "Ash and Aspen — 100% Original Swiss Lawn, Luxury Pret & Organza Suits with Open Parcel Verification.",
+    link: "/collections/gulaal-luxury-lawn",
+    overline: "✦ Ash and Aspen | Sector #13, Uttara ✦",
   },
   {
-    image: "/365-assets/lilac-lawn-suit.jpg",
-    title: "MAHEE'S LUXURY SWISS LAWN",
-    subtitle: "Delicate cutwork dupattas, intricate lilac embroidery, and feather-light pure cotton comfort.",
-    link: "/collections/pakistani-lawn",
+    image: ASSETS.img1,
+    title: "GULAAL LUXURY SWISS LAWN",
+    subtitle: "Delicate cutwork dupattas, intricate resham embroidery, and pure lawn luxury.",
+    link: "/collections/gulaal-luxury-lawn",
     overline: "✦ 100% Genuine Pakistani Import ✦",
   },
   {
-    image: "/365-assets/royal-maroon-velvet.jpg",
-    title: "ROYAL VELVET & FESTIVE COUTURE",
-    subtitle: "Opulent micro-velvet, pure chiffon zari needlework, and imperial crimson evening silhouettes.",
-    link: "/collections/festive-party",
-    overline: "✦ 58K+ Facebook Family Trust ✦",
+    image: ASSETS.img3,
+    title: "NUR ORGANZA BUTTERFLY PRET",
+    subtitle: "Artisanal butterfly motifs, pastel palette, and ethereal luxury silhouettes.",
+    link: "/collections/nur-festive-organza",
+    overline: "✦ 81K+ Facebook Family Trust ✦",
   },
 ];
 

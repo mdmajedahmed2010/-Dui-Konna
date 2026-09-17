@@ -1,5 +1,5 @@
 {
-  "name": "365-fashion-house-storefront",
+  "name": "ash-and-aspen-storefront",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -83,5 +83,5 @@
     "postcss": "^8.5.16",
     "@hono/node-server": "^1.19.14"
   },
-  "description": "365 Fashion House — Pioneer in Authentic Pakistani & Indian Attires in Bangladesh"
+  "description": "Ash and Aspen — Luxury Pakistani Designer Attires & Ready-to-Wear Pret in Bangladesh"
 }

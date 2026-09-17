@@ -1,75 +1,77 @@
 /**
- * 365 Fashion House — Product Data & Catalog
- * Pioneer in Authentic Pakistani Attires in Bangladesh
+ * Ash and Aspen (ash and aspen) — Product Data & Catalog
+ * Luxury Pakistani Designer Attires & Ready-to-Wear Pret
  * 100% ORIGINAL PAKISTANI & INDIAN DESIGNER WEAR • LUXURY LAWN, ORGANZA & PRET
- * Dhaka - 1206, Bangladesh
- * Official Facebook: https://www.facebook.com/365FashionHouse/
- * All authentic product assets served locally from /365-assets/
+ * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230, Bangladesh
+ * Official Facebook: https://www.facebook.com/ashandaspenclothing/
+ * All authentic product assets served locally from /ash-and-aspen/
  */
 
 import type { ProductCardProps } from "@/components/product/product-card";
 
 // ═══════════════════════════════════════════
-// Asset image paths (local, /365-assets/)
+// Asset image paths (local, /ash-and-aspen/)
 // ═══════════════════════════════════════════
 export const ASSETS = {
-  logo: "/365-assets/logo.jpg",
-  banner: "/365-assets/banner.jpg",
-  heroImage: "/365-assets/banner.jpg",
-  // 10 Authenticated Suits & Kurtis from 365 Fashion House Official Collection
-  img1: "/365-assets/lilac-lawn-suit.jpg", // Mahee's Luxury Lawn 3-Piece — Lilac Blossom
-  img1_detail: "/365-assets/lilac-lawn-suit-detail.jpg",
-  img2: "/365-assets/mint-lawn-front.jpg", // Khaadi Signature Luxury Lawn 3-Piece — Mint Ivory Oasis
-  img2_back: "/365-assets/mint-lawn-back.jpg",
-  img3: "/365-assets/pistachio-kurti.jpg", // Agha Noor Festive Organza Kurti — Pistachio Floral Glow
-  img3_detail: "/365-assets/pistachio-kurti-detail.jpg",
-  img4: "/365-assets/royal-maroon-velvet.jpg", // Chevron Festive Chiffon & Velvet 3-Piece — Crimson Empress
-  img5: "/365-assets/rose-quartz-organza.jpg", // Beechtree Pastel Organza Luxury 3-Piece — Rose Quartz
-  img6: "/365-assets/emerald-anarkali-suit.jpg", // Festive Designer Flared Anarkali — Emerald Majesty
-  img7: "/365-assets/mint-lawn-front.jpg", // Mint Lawn Front
-  img8: "/365-assets/pistachio-kurti.jpg", // Pistachio Kurti
-  img9: "/365-assets/lilac-lawn-suit.jpg", // Lilac Lawn
-  img10: "/365-assets/royal-maroon-velvet.jpg", // Crimson Velvet
+  logo: "/ash-and-aspen/logo.jpg",
+  banner: "/ash-and-aspen/banner.jpg",
+  heroImage: "/ash-and-aspen/banner.jpg",
+  // Authenticated Suits & Pret from Ash and Aspen Official Collection
+  img1: "/ash-and-aspen/gulaal-mint-lawn.jpg", // Gulaal Luxury Lawn 3-Piece — Seafoam Mint Whisper
+  img1_detail: "/ash-and-aspen/gulaal-mint-lawn.jpg",
+  img2: "/ash-and-aspen/ivory-chikankari-front.jpg", // Nur Festive Chikankari Schiffli Long Kameez — Royal Ivory
+  img2_back: "/ash-and-aspen/ivory-chikankari-angle.jpg",
+  img3: "/ash-and-aspen/sadabahar-taupe-blue.jpg", // Sadabahar Stitched 3-Piece Pret — Sandy Taupe & Royal Indigo
+  img3_detail: "/ash-and-aspen/sadabahar-taupe-blue.jpg",
+  img4: "/ash-and-aspen/crimson-ruby-festive.jpg", // Ash & Aspen Festive Velvet & Chiffon 3-Piece — Ruby Crimson Empress
+  img5: "/ash-and-aspen/nur-lavender-butterfly-detail.jpg", // Nur Luxury Organza Butterfly Ensemble — Lilac Petal Whisper
+  img5_detail: "/ash-and-aspen/nur-lavender-butterfly-back.jpg",
+  img6: "/ash-and-aspen/gulaal-peach-standing.jpg", // Gulaal Festive Lawn 3-Piece — Coral Peach & Emerald Teal
+  img6_sitting: "/ash-and-aspen/gulaal-peach-sitting.jpg",
+  img7: "/ash-and-aspen/ivory-chikankari-angle.jpg", // Ivory Chikankari Schiffli Suit Angle View
+  img8: "/ash-and-aspen/gulaal-peach-sitting.jpg", // Gulaal Coral Peach Lawn
+  img9: "/ash-and-aspen/nur-lavender-butterfly-back.jpg", // Lavender Butterfly Full Back
+  img10: "/ash-and-aspen/gulaal-mint-lawn.jpg", // Seafoam Mint Lawn
 };
 
 // ═══════════════════════════════════════════
-// Product Categories — 365 Fashion House
+// Product Categories — Ash and Aspen
 // ═══════════════════════════════════════════
 export const CATEGORIES = [
   {
     name: "Luxury Pakistani Lawn",
     slug: "pakistani-lawn",
-    description: "100% authentic pure lawn 3-piece designer unstitched suits with intricate neckline embroidery, printed borders, and premium organza/chiffon dupattas.",
+    description: "100% authentic pure lawn 3-piece designer unstitched & stitched suits with delicate schiffli & resham embroidery, laser cutwork borders, and printed organza/chiffon dupattas.",
     image: ASSETS.img1,
-    productCount: 12,
+    productCount: 14,
   },
   {
     name: "Organza & Chiffon Luxury",
     slug: "organza-chiffon",
-    description: "Handcrafted semi-formal and festive luxury organza and chiffon ensembles featuring tilla, resham threadwork, and delicate cutwork borders.",
+    description: "Handcrafted semi-formal and festive luxury organza and pure chiffon ensembles featuring botanical florals, tilla threadwork, and delicate scalloped borders.",
     image: ASSETS.img5,
-    productCount: 10,
+    productCount: 12,
   },
   {
     name: "Ready-to-Wear Designer Pret",
     slug: "designer-pret",
-    description: "Exclusive stitched designer kurtis, matching 2-piece sets, and ready-to-wear tunics with pearl necklines and bell sleeve embellishments.",
+    description: "Exclusive stitched designer 3-piece and 2-piece sets, printed cambric trousers, bell sleeve embellishments, and ready-to-wear kurtis.",
     image: ASSETS.img3,
-    productCount: 8,
+    productCount: 10,
   },
   {
     name: "Festive & Party Couture",
     slug: "festive-party",
-    description: "Celebratory luxury ensembles, royal zardozi kalidars, heavy velvet shirts, and flared anarkalis tailored for weddings, dawats, and Eid festivities.",
+    description: "Celebratory luxury ensembles, royal crimson kalidars, heavy embroidered velvet shirts, and flared anarkalis tailored for Eid, weddings, and formal dawats.",
     image: ASSETS.img4,
-    productCount: 9,
+    productCount: 11,
   },
   {
-    name: "Silk & Velvet Luxury",
-    slug: "silk-velvet",
-    description: "Rich jewel-toned velvet shirts, raw silk trousers, and heavily embroidered shawl ensembles for winter galas and evening celebrations.",
+    name: "Casual Lite & Kurti",
+    slug: "casual-lite",
+    description: "Breezy daily-wear lawn tunics, light printed 2-piece sets, and comfortable designer pret for modern elegance with zero maintenance hassle.",
     image: ASSETS.img6,
-    productCount: 7,
+    productCount: 8,
   },
 ];
 
@@ -79,40 +81,48 @@ export const CATEGORIES = [
 export const FEATURED_COLLECTIONS = [
   {
     id: "col-pakistani-lawn",
-    title: "Pakistani Luxury Lawn Edit 2026",
+    title: "Gulaal Luxury Lawn Edit 2026",
     slug: "pakistani-lawn",
     subtitle: "100% Original Pakistani Designer Lawn 3-Piece with Open Parcel Inspection",
     image: ASSETS.img1,
-    itemCount: 12,
+    itemCount: 14,
   },
   {
     id: "col-festive-party",
     title: "Royal Festive & Eid Pret",
     slug: "festive-party",
-    subtitle: "Heavy Zari, Tilla & Cutwork Embroidery on Premium Chiffon & Silk",
+    subtitle: "Heavy Resham, Tilla & Cutwork Embroidery on Premium Chiffon & Lawn",
     image: ASSETS.img4,
-    itemCount: 9,
+    itemCount: 11,
   },
   {
     id: "col-organza-pret",
-    title: "Agha Noor & Designer Pret",
+    title: "Nur Organza & Butterfly Pret",
+    slug: "organza-chiffon",
+    subtitle: "Hand-painted Butterfly Botanicals & Floral Threadwork — Ready to Wear",
+    image: ASSETS.img5,
+    itemCount: 12,
+  },
+  {
+    id: "col-sadabahar-pret",
+    title: "Sadabahar Stitched Collection",
     slug: "designer-pret",
-    subtitle: "Signature Floral Embroidery & Pearl Embellishments — Ready to Wear",
+    subtitle: "Sophisticated Ready-to-Wear Stitched 3-Piece & 2-Piece Ensembles",
     image: ASSETS.img3,
-    itemCount: 8,
+    itemCount: 10,
   },
 ];
 
 // ═══════════════════════════════════════════
-// All Products — 365 Fashion House Catalog
+// All Products — Ash and Aspen Catalog
 // ═══════════════════════════════════════════
 export const ALL_PRODUCTS: ProductCardProps[] = [
   {
-    id: "365-001",
-    name: "Mahee's Luxury Lawn 3-Piece Unstitched Suit — Lilac Blossom",
-    slug: "mahees-luxury-lawn-3piece-unstitched-suit-lilac-blossom",
-    price: 3850,
-    compareAtPrice: 4500,
+    id: "AA-001",
+    name: "Gulaal Luxury Lawn 3-Piece Embroidered Suit — Seafoam Mint Whisper",
+    slug: "gulaal-luxury-lawn-3piece-embroidered-suit-seafoam-mint-whisper",
+    price: 4250,
+    compareAtPrice: 4950,
     image: ASSETS.img1,
     images: [ASSETS.img1, ASSETS.img1_detail],
     category: "Luxury Pakistani Lawn",
@@ -121,22 +131,22 @@ export const ALL_PRODUCTS: ProductCardProps[] = [
     stock: 18,
   },
   {
-    id: "365-002",
-    name: "Khaadi Signature Luxury Lawn 3-Piece — Mint Ivory Oasis",
-    slug: "khaadi-signature-luxury-lawn-3piece-mint-ivory-oasis",
-    price: 4250,
-    compareAtPrice: 4950,
+    id: "AA-002",
+    name: "Nur Festive Chikankari & Schiffli Long Kameez 3-Piece — Royal Ivory",
+    slug: "nur-festive-chikankari-schiffli-long-kameez-3piece-royal-ivory",
+    price: 4450,
+    compareAtPrice: 5200,
     image: ASSETS.img2,
     images: [ASSETS.img2, ASSETS.img2_back],
     category: "Luxury Pakistani Lawn",
     isNew: true,
     isBestseller: true,
-    stock: 14,
+    stock: 15,
   },
   {
-    id: "365-003",
-    name: "Agha Noor Festive Organza Kurti — Pistachio Floral Glow",
-    slug: "agha-noor-festive-organza-kurti-pistachio-floral-glow",
+    id: "AA-003",
+    name: "Sadabahar Stitched 3-Piece Pret Suit — Sandy Taupe & Royal Indigo",
+    slug: "sadabahar-stitched-3piece-pret-suit-sandy-taupe-royal-indigo",
     price: 3650,
     compareAtPrice: 4200,
     image: ASSETS.img3,
@@ -147,91 +157,92 @@ export const ALL_PRODUCTS: ProductCardProps[] = [
     stock: 16,
   },
   {
-    id: "365-004",
-    name: "Chevron Royal Festive Chiffon & Velvet 3-Piece — Crimson Empress",
-    slug: "chevron-royal-festive-chiffon-velvet-3piece-crimson-empress",
-    price: 5450,
-    compareAtPrice: 6200,
+    id: "AA-004",
+    name: "Ash & Aspen Festive Velvet & Chiffon 3-Piece — Ruby Crimson Empress",
+    slug: "ash-aspen-festive-velvet-chiffon-3piece-ruby-crimson-empress",
+    price: 4650,
+    compareAtPrice: 5400,
     image: ASSETS.img4,
-    images: [ASSETS.img4, ASSETS.img1],
+    images: [ASSETS.img4, ASSETS.img6],
     category: "Festive & Party Couture",
     isNew: true,
     isBestseller: true,
     stock: 12,
   },
   {
-    id: "365-005",
-    name: "Beechtree Pastel Organza Luxury 3-Piece — Rose Quartz",
-    slug: "beechtree-pastel-organza-luxury-3piece-rose-quartz",
-    price: 4650,
-    compareAtPrice: 5400,
+    id: "AA-005",
+    name: "Nur Luxury Organza Butterfly Ensemble — Lilac Petal Whisper",
+    slug: "nur-luxury-organza-butterfly-ensemble-lilac-petal-whisper",
+    price: 3950,
+    compareAtPrice: 4600,
     image: ASSETS.img5,
-    images: [ASSETS.img5, ASSETS.img1],
+    images: [ASSETS.img5, ASSETS.img5_detail],
     category: "Organza & Chiffon Luxury",
-    isNew: true,
-    stock: 15,
-  },
-  {
-    id: "365-006",
-    name: "Festive Designer Flared Anarkali Suit — Emerald Majesty",
-    slug: "festive-designer-flared-anarkali-suit-emerald-majesty",
-    price: 4950,
-    compareAtPrice: 5800,
-    image: ASSETS.img6,
-    images: [ASSETS.img6, ASSETS.img4],
-    category: "Festive & Party Couture",
     isNew: true,
     isBestseller: true,
     stock: 14,
   },
   {
-    id: "365-007",
-    name: "Sana Safinaz Muzlin Luxury Lawn 3-Piece — Pastel Whisper",
-    slug: "sana-safinaz-muzlin-luxury-lawn-3piece-pastel-whisper",
-    price: 3950,
-    compareAtPrice: 4600,
-    image: ASSETS.img2,
-    images: [ASSETS.img2, ASSETS.img2_back],
-    category: "Luxury Pakistani Lawn",
-    isBestseller: true,
-    stock: 20,
-  },
-  {
-    id: "365-008",
-    name: "Maria.B Luxury M.Prints Embroidered Lawn — Celestial Lilac",
-    slug: "mariab-luxury-mprints-embroidered-lawn-celestial-lilac",
-    price: 4450,
-    compareAtPrice: 5200,
-    image: ASSETS.img1,
-    images: [ASSETS.img1, ASSETS.img1_detail],
+    id: "AA-006",
+    name: "Gulaal Festive Lawn 3-Piece with Tassels — Coral Peach & Emerald Teal",
+    slug: "gulaal-festive-lawn-3piece-tassels-coral-peach-emerald-teal",
+    price: 4350,
+    compareAtPrice: 5100,
+    image: ASSETS.img6,
+    images: [ASSETS.img6, ASSETS.img6_sitting],
     category: "Luxury Pakistani Lawn",
     isNew: true,
+    isBestseller: true,
     stock: 17,
   },
   {
-    id: "365-009",
-    name: "Gul Ahmed Festive Silk & Chiffon 3-Piece — Royal Marigold",
-    slug: "gul-ahmed-festive-silk-chiffon-3piece-royal-marigold",
-    price: 5250,
-    compareAtPrice: 6000,
-    image: ASSETS.img6,
-    images: [ASSETS.img6, ASSETS.img3],
-    category: "Silk & Velvet Luxury",
-    isNew: true,
-    stock: 11,
-  },
-  {
-    id: "365-010",
-    name: "Asim Jofa Festive Pret Embroidered Kurti — Mint Frost",
-    slug: "asim-jofa-festive-pret-embroidered-kurti-mint-frost",
-    price: 3750,
-    compareAtPrice: 4350,
-    image: ASSETS.img3,
-    images: [ASSETS.img3, ASSETS.img3_detail],
+    id: "AA-007",
+    name: "Nur Royal Schiffli Embroidered Stitched Suit — Pearl Cream Glow",
+    slug: "nur-royal-schiffli-embroidered-stitched-suit-pearl-cream-glow",
+    price: 4150,
+    compareAtPrice: 4800,
+    image: ASSETS.img7,
+    images: [ASSETS.img7, ASSETS.img2],
     category: "Ready-to-Wear Designer Pret",
-    isNew: true,
     isBestseller: true,
     stock: 19,
+  },
+  {
+    id: "AA-008",
+    name: "Gulaal Signature Summer Lawn 3-Piece — Sunset Coral Blossom",
+    slug: "gulaal-signature-summer-lawn-3piece-sunset-coral-blossom",
+    price: 3950,
+    compareAtPrice: 4650,
+    image: ASSETS.img8,
+    images: [ASSETS.img8, ASSETS.img6],
+    category: "Luxury Pakistani Lawn",
+    isNew: true,
+    stock: 14,
+  },
+  {
+    id: "AA-009",
+    name: "Nur Pure Silk Chiffon Dupatta Kurti Ensemble — Lavender Dream",
+    slug: "nur-pure-silk-chiffon-dupatta-kurti-ensemble-lavender-dream",
+    price: 3850,
+    compareAtPrice: 4500,
+    image: ASSETS.img9,
+    images: [ASSETS.img9, ASSETS.img5],
+    category: "Organza & Chiffon Luxury",
+    isNew: true,
+    stock: 13,
+  },
+  {
+    id: "AA-010",
+    name: "Ash & Aspen Boutique Signature Pret Kurti — Mint Frost Schiffli",
+    slug: "ash-aspen-boutique-signature-pret-kurti-mint-frost-schiffli",
+    price: 3550,
+    compareAtPrice: 4100,
+    image: ASSETS.img10,
+    images: [ASSETS.img10, ASSETS.img1_detail],
+    category: "Casual Lite & Kurti",
+    isNew: true,
+    isBestseller: true,
+    stock: 20,
   },
 ];
 
@@ -244,14 +255,14 @@ export const LAWN_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Luxury P
 export const ORGANZA_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Organza & Chiffon Luxury");
 export const PRET_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Ready-to-Wear Designer Pret");
 export const PARTY_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Festive & Party Couture");
-export const SILK_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Silk & Velvet Luxury");
+export const SILK_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Casual Lite & Kurti");
 
 // Backward compatibility aliases
 export const DESIGNER_PRODUCTS = PRET_PRODUCTS;
 export const CASUAL_PRODUCTS = LAWN_PRODUCTS;
 export const VINTAGE_PRODUCTS = LAWN_PRODUCTS;
 export const FARSI_PRODUCTS = PRET_PRODUCTS;
-export const VELVET_PRODUCTS = SILK_PRODUCTS;
+export const VELVET_PRODUCTS = PARTY_PRODUCTS;
 export const JEWELRY_PRODUCTS = PARTY_PRODUCTS;
 export const COORD_PRODUCTS = PRET_PRODUCTS;
 export const ABAYA_PRODUCTS = PARTY_PRODUCTS;
@@ -276,6 +287,7 @@ export function getProductsByCategory(slug: string): ProductCardProps[] {
     case "festive-party-wear":
     case "party-wear":
       return PARTY_PRODUCTS;
+    case "casual-lite":
     case "silk-velvet":
     case "casual-chic":
     case "artisan-block":
@@ -302,7 +314,7 @@ export const DEMO_PRODUCTS = ALL_PRODUCTS.map((p) => {
   return {
     name: p.name,
     slug: p.slug,
-    description: `${p.name} — Curated by 365 Fashion House. "Pioneer in Authentic Pakistani Attires in Bangladesh". 100% original designer fabric with intricate resham & tilla embroidery, premium drape dupatta, and dyed trouser. Open Parcel Policy guaranteed across all 64 districts of Bangladesh.`,
+    description: `${p.name} — Curated by Ash and Aspen (House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka). 100% original Pakistani designer fabric with intricate resham & schiffli embroidery, premium drape organza/chiffon dupatta, and dyed trousers. Open Parcel Policy guaranteed across all 64 districts of Bangladesh.`,
     price: p.price,
     isFeatured: p.isBestseller ?? true,
     images: imgs,
@@ -319,10 +331,17 @@ export const DEMO_PRODUCTS = ALL_PRODUCTS.map((p) => {
         images: imgs,
       },
       {
-        size: "Semi-Stitched Free Size",
+        size: "Stitched Ready-to-Wear (M)",
         color: "As Shown",
         price: p.price + 450,
         stock: Math.max(3, Math.floor((p.stock ?? 15) / 3)),
+        images: imgs,
+      },
+      {
+        size: "Stitched Ready-to-Wear (L)",
+        color: "As Shown",
+        price: p.price + 450,
+        stock: Math.max(3, Math.floor((p.stock ?? 15) / 4)),
         images: imgs,
       },
     ],

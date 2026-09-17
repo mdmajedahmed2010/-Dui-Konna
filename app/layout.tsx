@@ -11,6 +11,7 @@ import { CartSyncManager } from "@/components/cart/cart-sync-manager";
 import { unstable_cache } from "next/cache";
 import { ServiceWorkerRegistry } from "@/components/pwa/service-worker-registry";
 import { PostHogProvider } from "@/components/analytics/posthog-provider";
+import { BUSINESS } from "@/lib/constants";
 
 // Body font — modern, geometric, luxury editorial clarity
 const jakarta = Plus_Jakarta_Sans({
@@ -26,36 +27,38 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-// Global metadata — 365 Fashion House
+// Global metadata — Ash and Aspen
 export const metadata: Metadata = {
-  metadataBase: new URL("https://365fashionhouse.com"),
+  metadataBase: new URL(BUSINESS.WEBSITE),
   title: {
-    default: "365 Fashion House — Pioneer in Authentic Pakistani Attires in Bangladesh",
-    template: "%s — 365 Fashion House",
+    default: "Ash and Aspen — Authentic Pakistani Attires & Designer Wear",
+    template: "%s — Ash and Aspen",
   },
   description:
-    "365 Fashion House is the pioneer fashion house in Bangladesh for 100% authentic Pakistani & Indian designer attires. Explore luxury lawn 3-piece sets, organza & chiffon suits, ready-to-wear kurtis, and festive Eid collections with Open Parcel Policy.",
+    "Ash and Aspen is an online marketplace portal committed to customer satisfaction by delivering 100% genuine Pakistani designer attire. Explore Gulaal luxury lawn, Nur festive organza, Sadabahar stitched pret, and formal collections with Open Parcel inspection across Bangladesh.",
   keywords: [
-    "365 Fashion House",
-    "365 Fashion House Bangladesh",
-    "Pakistani Lawn Dhaka",
+    "Ash and Aspen",
+    "Ash and Aspen Bangladesh",
+    "Ash and Aspen Clothing",
+    "Pakistani Lawn Uttara",
     "Authentic Pakistani Suits Bangladesh",
-    "Agha Noor Kurti BD",
-    "Khaadi Luxury Lawn",
-    "Pakistani Three Piece BD",
+    "Gulaal Luxury Lawn BD",
+    "Nur Organza Kurti BD",
+    "Sadabahar Pret BD",
     "Women Designer Wear Dhaka",
+    "Pakistani Three Piece BD",
     "Luxury Pret BD",
   ],
-  authors: [{ name: "365 Fashion House" }],
-  creator: "365 Fashion House",
+  authors: [{ name: "Ash and Aspen" }],
+  creator: "Ash and Aspen",
   openGraph: {
     type: "website",
     locale: "en_BD",
-    siteName: "365 Fashion House",
-    title: "365 Fashion House — Pioneer in Authentic Pakistani Attires",
+    siteName: "Ash and Aspen",
+    title: "Ash and Aspen — Authentic Pakistani Attires & Luxury Designer Wear",
     description:
-      "Shop 100% original Pakistani & Indian designer lawn, organza, chiffon, and festive couture. Nationwide Cash on Delivery with Open Parcel Inspection.",
-    images: ["/banner.png"],
+      "Shop 100% original Pakistani designer lawn, organza, chiffon, and festive couture. Nationwide Cash on Delivery with Open Parcel Inspection.",
+    images: ["/banner.jpg"],
   },
   robots: {
     index: true,
@@ -66,12 +69,12 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "365 Fashion House",
+    title: "Ash and Aspen",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#6C3483",
+  themeColor: "#E29578",
 };
 
 export default async function RootLayout({
@@ -118,10 +121,10 @@ export default async function RootLayout({
           Skip to main content
         </a>
         <NextTopLoader
-          color="#6C3483"
+          color="#E29578"
           height={3}
           showSpinner={false}
-          shadow="0 0 12px #6C3483, 0 0 6px #F39C12"
+          shadow="0 0 12px #E29578, 0 0 6px #484860"
         />
         {/* Structured Data — SEO (SOP §৭) */}
         <OrganizationJsonLd />
@@ -134,3 +137,4 @@ export default async function RootLayout({
     </html>
   );
 }
+

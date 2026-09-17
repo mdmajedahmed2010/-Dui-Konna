@@ -1,5 +1,5 @@
 /**
- * Blossom Clothing — Collection/Category Page
+ * Ash and Aspen — Collection/Category Page
  * Route: /collections/[slug]
  */
 
@@ -12,7 +12,7 @@ import { SortDropdown } from "@/components/product/sort-dropdown";
 import { MobileFilterDrawer } from "@/components/product/mobile-filter-drawer";
 import { getProducts } from "@/actions/product.actions";
 import { prisma } from "@/lib/db";
-import { CATEGORIES, getProductsByCategory } from "@/lib/demo-data";
+import { CATEGORIES, getProductsByCategory, ASSETS } from "@/lib/demo-data";
 import { BUSINESS } from "@/lib/constants";
 
 export const revalidate = 60;
@@ -178,7 +178,7 @@ export default async function CollectionPage({ params, searchParams }: Collectio
     const image =
       Array.isArray(variantImages) && variantImages.length > 0
         ? variantImages[0]
-        : "/blossom-assets/767161577_1062801416685993_5281384838796713463_n.jpg";
+        : ASSETS.img1;
 
     const variantPrice = p.variants?.[0]?.price ? Number(p.variants[0].price) : Number(p.basePrice);
 

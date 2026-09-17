@@ -2,14 +2,15 @@
 "use client";
 
 /**
- * 365 Fashion House — Haute Couture Storefront Orchestrator
- * Pioneer in Authentic Pakistani Attires in Bangladesh
- * Dhaka - 1206, Bangladesh — https://www.facebook.com/365FashionHouse/
- * All images served locally from /public/365-assets/
+ * Ash and Aspen — Haute Couture Storefront Orchestrator
+ * Customer-Centric Marketplace Portal for 100% Genuine Pakistani Attires
+ * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230 — https://www.facebook.com/ashandaspenclothing/
+ * All images served locally from /public/ash-and-aspen/
  */
 
 import { BlossomPetalsOverlay } from "@/components/effects/blossom-petals";
 import { HeroCouture } from "@/components/home/hero-couture";
+import { TrustBadges } from "@/components/home/trust-badges";
 import { BentoShowcase } from "@/components/home/bento-showcase";
 import { CuratedArrivals, type CuratedProduct } from "@/components/home/curated-arrivals";
 import { LookbookCouture } from "@/components/home/lookbook-couture";
@@ -17,18 +18,18 @@ import { HeritageCouture } from "@/components/home/heritage-couture";
 import { CommunityStories } from "@/components/home/community-stories";
 import { ASSETS, ALL_PRODUCTS } from "@/lib/demo-data";
 
-/* ──────────────── Default Curated Catalog — 365 Fashion House ──────────────── */
+/* ──────────────── Default Curated Catalog — Ash and Aspen ──────────────── */
 const DEFAULT_PRODUCTS: CuratedProduct[] = ALL_PRODUCTS.map((p) => ({
   id: p.id,
   name: p.name,
-  category: p.category || "Pakistani Lawn",
+  category: p.category || "Pakistani Designer Lawn",
   price: p.price,
   compareAtPrice: p.compareAtPrice ?? Math.round(p.price * 1.18),
   image: p.image,
   secondaryImage: p.images && p.images.length > 1 ? p.images[1]! : p.image,
   slug: p.slug,
   tag: p.isBestseller ? "BESTSELLER" : p.isNew ? "NEW ARRIVAL" : "AUTHENTIC",
-  sizes: ["Unstitched", "Semi-Stitched"],
+  sizes: ["Unstitched", "Semi-Stitched", "Stitched Pret"],
 }));
 
 export function HomeUI({
@@ -47,7 +48,7 @@ export function HomeUI({
           return {
             id: p.id,
             name: p.name,
-            category: p.category?.name || "365 Fashion Collection",
+            category: p.category?.name || "Ash and Aspen Collection",
             price: pPrice,
             compareAtPrice: Math.round(pPrice * 1.18),
             image: img,
@@ -60,27 +61,31 @@ export function HomeUI({
       : DEFAULT_PRODUCTS;
 
   return (
-    <div className="relative flex flex-col bg-[#FAF8F5] overflow-hidden">
-      {/* 1. Ambient Floating Butterfly Shimmer (Canvas-based, GPU accelerated) */}
+    <div className="relative flex flex-col bg-[#FAF7F2] overflow-hidden">
+      {/* 1. Ambient Floating Terracotta & Slate Shimmer (Canvas-based, GPU accelerated) */}
       <BlossomPetalsOverlay />
 
       {/* 2. Cinematic Haute Couture Hero with Interactive Garment Hotspots */}
       <HeroCouture />
 
-      {/* 3. Asymmetric Magazine Bento Collection Showcase */}
+      {/* 3. Open Parcel Guarantee & Uttara Showroom Trust Badges */}
+      <TrustBadges />
+
+      {/* 4. Asymmetric Magazine Bento Collection Showcase */}
       <BentoShowcase />
 
-      {/* 4. Curated Arrivals with Double-Bezel Hardware Cards & 1-Tap Quick-Size Picker */}
+      {/* 5. Curated Arrivals with Double-Bezel Hardware Cards & 1-Tap Quick-Size Picker */}
       <CuratedArrivals products={mappedProducts} />
 
-      {/* 5. Interactive "Shop The Look" Lookbook with Garment Pins */}
+      {/* 6. Interactive "Shop The Look" Lookbook with Garment Pins */}
       <LookbookCouture />
 
-      {/* 6. Brand Heritage & 58,000+ Community Social Proof */}
+      {/* 7. Brand Heritage & 81,000+ Community Social Proof */}
       <HeritageCouture />
 
-      {/* 7. Community Stories & Verified Customer Love */}
+      {/* 8. Community Stories & Verified Customer Love */}
       <CommunityStories />
     </div>
   );
 }
+

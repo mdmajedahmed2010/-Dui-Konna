@@ -5,8 +5,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Phone, X } from "lucide-react";
 
 export function FloatingChat({ 
-  phoneNumber = "8801714404008",
-  messengerUrl = "https://m.me/365FashionHouse"
+  phoneNumber = "8801721396111",
+  messengerUrl = "https://m.me/ashandaspenclothing"
 }: { 
   phoneNumber?: string;
   messengerUrl?: string;
@@ -58,7 +58,7 @@ export function FloatingChat({
                   href={messengerUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative flex h-11 w-11 items-center justify-center rounded-full bg-[#121212] text-[#C5A059] shadow-lg hover:scale-110 hover:shadow-[#C5A059]/30 transition-all duration-300 border border-[#C5A059]/30"
+                  className="group relative flex h-11 w-11 items-center justify-center rounded-full bg-[#1A1A1A] text-[#E29578] shadow-lg hover:scale-110 hover:shadow-[#E29578]/30 transition-all duration-300 border border-[#E29578]/40"
                   aria-label="Contact on Messenger"
                 >
                   <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
@@ -73,12 +73,12 @@ export function FloatingChat({
                 <motion.a
                   variants={itemVariants}
                   href={phoneHref}
-                  className="group relative flex h-11 w-11 items-center justify-center rounded-full bg-[#191426] text-white shadow-lg hover:scale-110 hover:shadow-[#6C3483]/40 transition-all duration-300 border border-[#D4AC0D]/40"
+                  className="group relative flex h-11 w-11 items-center justify-center rounded-full bg-[#1A1A1A] text-white shadow-lg hover:scale-110 hover:shadow-[#E29578]/40 transition-all duration-300 border border-[#E29578]/40"
                   aria-label="Call Us"
                 >
-                  <Phone className="h-5 w-5 fill-current text-[#F39C12]" />
+                  <Phone className="h-5 w-5 fill-current text-[#E29578]" />
                   <span className="absolute right-14 whitespace-nowrap bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-md shadow-sm border border-border/40 text-[10px] font-semibold text-foreground pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                    Call 01714-404008
+                    Call 01721-396111
                   </span>
                 </motion.a>
 
@@ -88,14 +88,14 @@ export function FloatingChat({
                   href={waHref}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="group relative flex h-11 w-11 items-center justify-center rounded-full bg-[#191426] text-[#25D366] shadow-lg hover:scale-110 hover:shadow-emerald-500/30 transition-all duration-300 border border-[#D4AC0D]/40"
+                  className="group relative flex h-11 w-11 items-center justify-center rounded-full bg-[#1A1A1A] text-[#25D366] shadow-lg hover:scale-110 hover:shadow-emerald-500/30 transition-all duration-300 border border-[#25D366]/40"
                   aria-label="Contact on WhatsApp"
                 >
                   <svg viewBox="0 0 24 24" width="22" height="22" stroke="currentColor" strokeWidth="2.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
                   <span className="absolute right-14 whitespace-nowrap bg-white/95 backdrop-blur-sm px-2.5 py-1 rounded-md shadow-sm border border-border/40 text-[10px] font-semibold text-foreground pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-200">
-                    WhatsApp (01714-404008)
+                    WhatsApp (01721-396111)
                   </span>
                 </motion.a>
               </motion.div>
@@ -105,15 +105,15 @@ export function FloatingChat({
           {/* Main Toggle Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className={`relative flex h-[56px] w-[56px] items-center justify-center rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.25)] border-[1.5px] border-[#D4AC0D]/50 z-[100] transition-all duration-400 ease-out ${
+            className={`relative flex h-[56px] w-[56px] items-center justify-center rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.25)] border-[1.5px] border-[#E29578]/50 z-[100] transition-all duration-400 ease-out ${
               isOpen 
-                ? "bg-[#191426] text-[#F39C12] rotate-180" 
-                : "bg-[#6C3483] text-white hover:scale-105 hover:bg-[#5B2C6F] hover:border-[#F39C12] hover:shadow-[0_8px_30px_rgba(108,52,131,0.5)]"
+                ? "bg-[#1A1A1A] text-[#E29578] rotate-180" 
+                : "bg-[#E29578] text-white hover:scale-105 hover:bg-[#D38062] hover:border-[#E29578] hover:shadow-[0_8px_30px_rgba(226,149,120,0.5)]"
             }`}
             aria-label="Toggle contact menu"
           >
             {!isOpen && (
-              <div className="absolute inset-0 rounded-full bg-[#D4AC0D] opacity-25 animate-ping pointer-events-none" style={{ animationDuration: '3s' }} />
+              <div className="absolute inset-0 rounded-full bg-[#E29578] opacity-25 animate-ping pointer-events-none" style={{ animationDuration: '3s' }} />
             )}
             
             <AnimatePresence mode="wait">

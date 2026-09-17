@@ -276,7 +276,7 @@ export function ProductInfo({
     <div className="space-y-6">
       {/* Product Name */}
       <div>
-        <h1 className="text-2xl md:text-3xl lg:text-[32px] font-bold leading-tight tracking-[-0.025em] font-serif text-[#8B263E]">
+        <h1 className="text-2xl md:text-3xl lg:text-[32px] font-bold leading-tight tracking-[-0.025em] font-serif text-[#1A1A1A]">
           {product.name}
         </h1>
       </div>
@@ -478,10 +478,10 @@ export function ProductInfo({
             className={`flex-1 flex items-center justify-center gap-2 md:gap-2.5 min-h-[50px] md:min-h-[54px] px-3 md:px-4 text-[11px] md:text-xs font-extrabold uppercase tracking-[0.16em] md:tracking-[0.2em] transition-all duration-300 rounded-md cursor-pointer active:scale-[0.98] ${
               !isInStock
                 ? "bg-neutral-200 border border-neutral-300 text-neutral-500 font-bold opacity-100 cursor-not-allowed"
-                : "bg-[#8B263E] hover:bg-[#2E062E] text-[#d4af37] border border-[#d4af37]/50 shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                : "bg-[#1A1A1A] hover:bg-[#484860] text-[#E29578] border border-[#E29578]/50 shadow-md hover:shadow-lg hover:-translate-y-0.5"
             }`}
           >
-            <ShoppingBag className="h-4 w-4 text-[#d4af37] shrink-0" />
+            <ShoppingBag className="h-4 w-4 text-[#E29578] shrink-0" />
             <span>{!isInStock ? "OUT OF STOCK" : "ADD TO BAG"}</span>
           </button>
 
@@ -491,7 +491,7 @@ export function ProductInfo({
             className={`flex-1 flex items-center justify-center gap-2 md:gap-2.5 min-h-[50px] md:min-h-[54px] px-3 md:px-4 text-[11px] md:text-xs font-extrabold uppercase tracking-[0.16em] md:tracking-[0.2em] transition-all duration-300 rounded-md cursor-pointer active:scale-[0.98] ${
               !isInStock
                 ? "bg-neutral-200 border border-neutral-300 text-neutral-500 font-bold opacity-100 cursor-not-allowed"
-                : "bg-[#8B263E] hover:bg-[#2E062E] text-[#d4af37] shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                : "bg-[#1A1A1A] hover:bg-[#484860] text-white shadow-md hover:shadow-lg hover:-translate-y-0.5"
             }`}
           >
             <span>{!isInStock ? "OUT OF STOCK" : "✦ BUY NOW"}</span>
@@ -583,9 +583,9 @@ export function ProductInfo({
           <div className="space-y-2 text-xs md:text-sm text-muted-foreground leading-relaxed">
             <p>• <strong>Delivery Charges:</strong> Inside Dhaka: ৳{String(settings.shipping_dhaka ?? 80)} | Outside Dhaka: ৳{String(settings.shipping_outside ?? 150)}</p>
             <p>• <strong>Open Parcel Policy:</strong> ডেলিভারি ম্যানের সামনে পার্সেল খুলে অরিজিনাল পাকিস্তানি ফেব্রিক, কালার, সাইজ ও এম্ব্রয়ডারি চেক করে তারপর মূল্য পরিশোধ করুন।</p>
-            <p>• <strong>Authenticity Guarantee:</strong> ১০০% অথেনটিক পাকিস্তানি ইমপোর্ট ও প্রিমিয়াম ফিনিশিং গ্যারান্টি।</p>
-            <p>• <strong>Operations & Distribution Hub:</strong> Dhaka - 1206, Bangladesh (Nationwide Steadfast / Pathao Courier Delivery)।</p>
-            <p>• <strong>Hotline & WhatsApp:</strong> 01714-404008</p>
+            <p>• <strong>Authenticity Guarantee:</strong> ১০০% অথেনটিক পাকিস্তানি ড্রেস ও প্রিমিয়াম ফিনিশিং গ্যারান্টি।</p>
+            <p>• <strong>Flagship Studio & Hub:</strong> {BUSINESS.ADDRESS} (Nationwide Steadfast / Pathao / Paperfly Courier Delivery)।</p>
+            <p>• <strong>Hotline & WhatsApp:</strong> {BUSINESS.PHONE}</p>
           </div>
         </AccordionItem>
       </div>

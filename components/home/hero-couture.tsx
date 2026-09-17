@@ -1,9 +1,10 @@
 "use client";
 
 /**
- * 365 Fashion House — Cinematic Haute Couture Hero
+ * Ash and Aspen (ash and aspen) — Cinematic Haute Couture Hero
  * Asymmetric Editorial Split with Interactive Garment Hotspots & Fluid Physics
- * Pioneer in Authentic Pakistani Attires in Bangladesh — https://www.facebook.com/365FashionHouse/
+ * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230, Bangladesh
+ * Official Facebook: https://www.facebook.com/ashandaspenclothing/
  */
 
 import { useState, useEffect, useCallback } from "react";
@@ -37,17 +38,17 @@ const HERO_SLIDES: CoutureHeroSlide[] = [
   {
     id: "slide-1",
     image: ASSETS.banner,
-    category: "365 FASHION HOUSE • PIONEER IN BANGLADESH",
+    category: "ASH AND ASPEN • UTTARA SHOWROOM & ONLINE",
     title: "AUTHENTIC",
     italicWord: "Pakistani Attires",
     subtitle:
-      "Welcome to 365 Fashion House. Explore 100% original Pakistani designer lawn, organza pret, and festive couture. Delivered across Bangladesh with Open Parcel inspection.",
+      "Welcome to Ash and Aspen. Explore 100% original Pakistani designer lawn, organza pret, and festive couture. Visit our showroom at House 76, Gausul Azam Avenue, Sector 13, Uttara, Dhaka or order online with Open Parcel inspection across Bangladesh.",
     link: "/collections/pakistani-lawn",
     hotspot: {
-      name: "Mahee's Luxury Lawn 3-Piece Unstitched Suit — Lilac Blossom",
-      price: 3850,
-      comparePrice: 4500,
-      slug: "mahees-luxury-lawn-3piece-unstitched-suit-lilac-blossom",
+      name: "Gulaal Luxury Lawn 3-Piece Embroidered Suit — Seafoam Mint Whisper",
+      price: 4250,
+      comparePrice: 4950,
+      slug: "gulaal-luxury-lawn-3piece-embroidered-suit-seafoam-mint-whisper",
       x: 65,
       y: 45,
     },
@@ -56,34 +57,34 @@ const HERO_SLIDES: CoutureHeroSlide[] = [
     id: "slide-2",
     image: ASSETS.img2,
     category: "PAKISTANI LUXURY LAWN",
-    title: "KHAADI SIGNATURE",
-    italicWord: "Luxury Lawn",
+    title: "NUR FESTIVE",
+    italicWord: "Schiffli Kameez",
     subtitle:
-      "Intricate embroidered neckline, digital print border lace, and pure silk lawn dupatta in elegant mint ivory.",
+      "Intricate center panel embroidery, laser cutwork daman, matching trousers, and pure embroidered chiffon dupatta in elegant royal ivory.",
     link: "/collections/pakistani-lawn",
     hotspot: {
-      name: "Khaadi Signature Luxury Lawn 3-Piece — Mint Ivory Oasis",
-      price: 4250,
-      comparePrice: 4950,
-      slug: "khaadi-signature-luxury-lawn-3piece-mint-ivory-oasis",
+      name: "Nur Festive Chikankari & Schiffli Long Kameez 3-Piece — Royal Ivory",
+      price: 4450,
+      comparePrice: 5200,
+      slug: "nur-festive-chikankari-schiffli-long-kameez-3piece-royal-ivory",
       x: 50,
       y: 40,
     },
   },
   {
     id: "slide-3",
-    image: ASSETS.img3,
+    image: ASSETS.img5,
     category: "READY-TO-WEAR PRET",
-    title: "AGHA NOOR",
-    italicWord: "Designer Pret",
+    title: "NUR ORGANZA",
+    italicWord: "Butterfly Pret",
     subtitle:
-      "Pure organza embroidered kurti with multicolor resham floral motifs, pearl neckline, and bell sleeves.",
-    link: "/collections/designer-pret",
+      "Pure organza embroidered kurti with hand-painted butterfly motifs, floral threadwork, and pure lilac dupatta with botanical art.",
+    link: "/collections/organza-chiffon",
     hotspot: {
-      name: "Agha Noor Festive Organza Kurti — Pistachio Floral Glow",
-      price: 3650,
-      comparePrice: 4200,
-      slug: "agha-noor-festive-organza-kurti-pistachio-floral-glow",
+      name: "Nur Luxury Organza Butterfly Ensemble — Lilac Petal Whisper",
+      price: 3950,
+      comparePrice: 4600,
+      slug: "nur-luxury-organza-butterfly-ensemble-lilac-petal-whisper",
       x: 50,
       y: 42,
     },
@@ -113,195 +114,177 @@ export function HeroCouture() {
     openQuickView({
       id: activeSlide.hotspot.slug,
       name: activeSlide.hotspot.name,
-      slug: activeSlide.hotspot.slug,
       price: activeSlide.hotspot.price,
       compareAtPrice: activeSlide.hotspot.comparePrice,
       image: activeSlide.image,
+      images: [activeSlide.image],
       category: activeSlide.category,
+      slug: activeSlide.hotspot.slug,
+      stock: 12,
+      isNew: true,
     });
   };
 
   return (
-    <section className="relative overflow-hidden bg-gradient-to-b from-[#FAF8F5] via-white to-[#FAF8F5] pt-6 pb-16 md:pt-10 md:pb-24 border-b border-[#E8DFD3]">
-      {/* Decorative ambient radial gradients */}
-      <div className="absolute top-10 left-1/4 -z-10 h-96 w-96 rounded-full bg-[#6C3483]/15 blur-[120px] pointer-events-none" />
-      <div className="absolute top-1/3 right-10 -z-10 h-80 w-80 rounded-full bg-[#F39C12]/15 blur-[100px] pointer-events-none" />
+    <section className="relative w-full bg-[#FAF7F2] overflow-hidden border-b border-[#E8DFD3]">
+      {/* Background Decorative Typography */}
+      <div className="absolute top-1/2 -left-12 -translate-y-1/2 pointer-events-none select-none text-[120px] md:text-[220px] font-bold text-black/[0.02] font-heading leading-none whitespace-nowrap z-0">
+        ASH &amp; ASPEN
+      </div>
 
-      <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-7xl">
+      <div className="container mx-auto px-4 md:px-8 lg:px-12 py-10 md:py-16 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           
-          {/* ──────────────── Left Column: Editorial Typography & CTAs ──────────────── */}
-          <div className="lg:col-span-6 space-y-6 md:space-y-8 z-10">
-            {/* Eyebrow badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white/90 backdrop-blur-md border border-[#6C3483]/30 shadow-xs">
-              <span className="flex h-2 w-2 rounded-full bg-[#F39C12] animate-ping" />
-              <Sparkles className="h-3.5 w-3.5 text-[#6C3483]" />
-              <span className="text-[10px] md:text-[11px] font-extrabold uppercase tracking-[0.24em] text-[#191426]">
+          {/* LEFT: Editorial Storytelling & Direct Conversion CTA (5 Cols) */}
+          <div className="lg:col-span-5 space-y-6 md:space-y-8 order-2 lg:order-1">
+            {/* Tagline Badge */}
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#E29578]/40 shadow-xs">
+              <Sparkles className="h-3.5 w-3.5 text-[#E29578]" />
+              <span className="text-[10px] md:text-[11px] font-bold tracking-[0.2em] uppercase text-[#1A1A1A]">
                 {activeSlide.category}
               </span>
             </div>
 
-            {/* Massive Editorial Headline with AnimatePresence */}
-            <div className="overflow-hidden min-h-[140px] md:min-h-[190px]">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={activeSlide.id}
-                  initial={{ opacity: 0, y: 30 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -25 }}
-                  transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
-                >
-                  <h1 className="text-4xl sm:text-5xl md:text-6xl xl:text-[68px] font-bold text-[#191426] font-heading leading-[1.06] tracking-tight">
-                    {activeSlide.title}{" "}
-                    <span className="font-serif italic font-normal text-[#6C3483] block sm:inline">
-                      {activeSlide.italicWord}
-                    </span>
-                  </h1>
-                  <p className="mt-4 md:mt-5 text-sm md:text-base text-neutral-600 max-w-lg leading-relaxed font-sans font-medium">
-                    {activeSlide.subtitle}
-                  </p>
-                </motion.div>
-              </AnimatePresence>
+            {/* Haute Main Heading */}
+            <div className="space-y-2">
+              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#1A1A1A] font-heading leading-[1.08]">
+                {activeSlide.title} <br />
+                <span className="italic font-normal font-serif text-[#E29578] tracking-normal">
+                  {activeSlide.italicWord}
+                </span>
+              </h1>
+              <p className="text-xs sm:text-sm md:text-base text-neutral-600 font-sans leading-relaxed pt-2 max-w-lg">
+                {activeSlide.subtitle}
+              </p>
             </div>
 
-            {/* Nested "Button-in-Button" Luxury CTA */}
-            <div className="flex flex-wrap items-center gap-4 pt-2">
+            {/* Primary Action Row */}
+            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
               <Link
                 href={activeSlide.link}
-                className="group relative inline-flex items-center gap-4 pl-7 pr-3.5 py-3.5 rounded-full bg-[#191426] text-[#F39C12] text-xs font-bold uppercase tracking-[0.18em] shadow-[0_10px_25px_-5px_rgba(25,20,38,0.35)] hover:bg-[#6C3483] hover:text-white transition-all duration-300 active:scale-[0.98] cursor-pointer"
+                className="h-12 md:h-13 px-8 rounded-full bg-[#1A1A1A] hover:bg-[#E29578] text-white hover:text-white text-xs md:text-sm font-bold tracking-[0.14em] uppercase transition-all duration-300 shadow-md flex items-center justify-center gap-2 group/btn active:scale-98"
               >
-                <span>Explore Pakistani Drops</span>
-                {/* Button-in-Button Circular Trailing Icon */}
-                <div className="flex items-center justify-center size-8 rounded-full bg-[#F39C12]/20 group-hover:bg-white text-[#F39C12] group-hover:text-[#6C3483] transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-0.5">
-                  <ArrowUpRight className="h-4 w-4" />
-                </div>
+                <span>Explore Collection</span>
+                <ArrowUpRight className="h-4 w-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
               </Link>
 
               <Link
-                href="/contact"
-                className="inline-flex items-center gap-2 px-6 py-3.5 rounded-full bg-white hover:bg-[#FAF8F5] text-[#191426] text-xs font-bold uppercase tracking-[0.16em] border border-[#6C3483]/30 transition-all duration-300 hover:border-[#191426] active:scale-[0.98] shadow-xs"
+                href="/about"
+                className="h-12 md:h-13 px-6 rounded-full bg-white hover:bg-[#FAF7F2] text-[#1A1A1A] border border-[#E8DFD3] text-xs md:text-sm font-semibold tracking-wider transition-colors flex items-center justify-center gap-2 shadow-xs"
               >
-                <MapPin className="h-3.5 w-3.5 text-[#6C3483]" />
-                <span>Contact & Dhaka Hub</span>
+                <MapPin className="h-4 w-4 text-[#E29578]" />
+                <span>Visit Uttara Showroom</span>
               </Link>
             </div>
 
-            {/* Micro-Social Proof Trust Pills */}
-            <div className="grid grid-cols-3 gap-3 pt-6 border-t border-[#E8DFD3]">
-              <div className="flex flex-col">
-                <div className="flex items-center gap-1 text-[#191426]">
-                  <Star className="h-3.5 w-3.5 fill-[#F39C12] text-[#F39C12]" />
-                  <span className="text-xs font-bold font-sans">5.0 ★ Rating</span>
+            {/* Value Indicators Row */}
+            <div className="grid grid-cols-3 gap-3 pt-4 border-t border-[#E8DFD3]">
+              <div className="space-y-0.5">
+                <div className="flex items-center gap-1 text-[#E29578]">
+                  <Star className="h-3.5 w-3.5 fill-current" />
+                  <span className="text-xs font-bold text-[#1A1A1A] font-heading">81K+ Community</span>
                 </div>
-                <span className="text-[10px] text-neutral-500 font-medium">58K+ Community</span>
+                <p className="text-[10px] text-neutral-500">Facebook Followers</p>
               </div>
-              <div className="flex flex-col">
-                <div className="flex items-center gap-1 text-[#191426]">
-                  <ShieldCheck className="h-3.5 w-3.5 text-[#6C3483]" />
-                  <span className="text-xs font-bold font-sans">100% Original</span>
+
+              <div className="space-y-0.5 border-x border-[#E8DFD3] px-3">
+                <div className="flex items-center gap-1 text-[#D4AF37]">
+                  <ShieldCheck className="h-3.5 w-3.5 fill-current" />
+                  <span className="text-xs font-bold text-[#1A1A1A] font-heading">100% Genuine</span>
                 </div>
-                <span className="text-[10px] text-neutral-500 font-medium">Pakistani Attires</span>
+                <p className="text-[10px] text-neutral-500">Original Pakistani Suits</p>
               </div>
-              <div className="flex flex-col">
-                <div className="flex items-center gap-1 text-[#191426]">
-                  <ShoppingBag className="h-3.5 w-3.5 text-[#D4AC0D]" />
-                  <span className="text-xs font-bold font-sans">Open Parcel</span>
+
+              <div className="space-y-0.5">
+                <div className="flex items-center gap-1 text-emerald-600">
+                  <ShoppingBag className="h-3.5 w-3.5" />
+                  <span className="text-xs font-bold text-[#1A1A1A] font-heading">Open Parcel</span>
                 </div>
-                <span className="text-[10px] text-neutral-500 font-medium">Check Before Pay</span>
+                <p className="text-[10px] text-neutral-500">Inspect Before Paying</p>
               </div>
             </div>
+
           </div>
 
-          {/* ──────────────── Right Column: Double-Bezel Model Visual & Interactive Hotspot ──────────────── */}
-          <div className="lg:col-span-6 relative">
-            {/* Outer Machine Bezel Shell */}
-            <div className="double-bezel-card aspect-[4/5] sm:aspect-[3/4] md:aspect-[4/5] max-w-lg mx-auto lg:max-w-none shadow-2xl border border-[#6C3483]/25 rounded-3xl p-2 bg-gradient-to-b from-[#FAF8F5] to-[#E8DFD3]">
-              <div className="double-bezel-inner h-full w-full relative group/hero overflow-hidden rounded-2xl bg-neutral-900">
-                
+          {/* RIGHT: Asymmetric High-Fashion Editorial Canvas (7 Cols) */}
+          <div className="lg:col-span-7 order-1 lg:order-2">
+            <div className="relative mx-auto max-w-xl lg:max-w-none">
+              
+              {/* Luxury Frame Glow */}
+              <div className="absolute -inset-2 rounded-[2rem] bg-gradient-to-tr from-[#E29578]/30 via-[#D4AF37]/20 to-[#484860]/20 blur-xl opacity-70" />
+
+              {/* Main Image Viewport with Aspect Ratio */}
+              <div className="relative aspect-[4/5] sm:aspect-[16/11] md:aspect-[4/5] lg:aspect-[16/12] w-full rounded-[1.75rem] overflow-hidden bg-neutral-900 border-2 border-white shadow-2xl">
                 <AnimatePresence mode="wait">
                   <motion.div
                     key={activeSlide.id}
-                    initial={{ scale: 1.08, opacity: 0.8 }}
-                    animate={{ scale: 1.0, opacity: 1 }}
-                    exit={{ scale: 1.04, opacity: 0.5 }}
-                    transition={{ duration: 0.9, ease: [0.16, 1, 0.3, 1] }}
+                    initial={{ opacity: 0, scale: 1.04 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    exit={{ opacity: 0, scale: 0.98 }}
+                    transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
                     className="absolute inset-0"
                   >
                     <Image
                       src={activeSlide.image}
-                      alt={activeSlide.title}
+                      alt={activeSlide.hotspot.name}
                       fill
                       priority
-                      quality={95}
                       unoptimized
-                      className="object-cover object-center transition-transform duration-[4000ms] group-hover/hero:scale-105"
+                      className="object-cover object-center"
+                      sizes="(max-width: 768px) 100vw, 60vw"
                     />
-                    {/* Subtle aesthetic gradient vignette */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/15 pointer-events-none" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-black/20" />
                   </motion.div>
                 </AnimatePresence>
 
-                {/* ── Interactive Garment Hotspot Pin ── */}
+                {/* Garment Interactive Hotspot */}
                 <div
+                  className="absolute z-20"
                   style={{
                     left: `${activeSlide.hotspot.x}%`,
                     top: `${activeSlide.hotspot.y}%`,
                   }}
-                  className="absolute z-30 -translate-x-1/2 -translate-y-1/2"
                 >
-                  {/* Glowing Hotspot Button */}
                   <button
                     onClick={() => setShowHotspotTooltip(!showHotspotTooltip)}
-                    className="relative flex items-center justify-center size-9 rounded-full bg-white/95 text-[#191426] shadow-lg border border-[#6C3483] transition-transform hover:scale-110 active:scale-95 cursor-pointer"
-                    aria-label="View featured piece details"
+                    className="relative flex items-center justify-center size-8 rounded-full bg-white text-[#1A1A1A] shadow-xl hover:scale-110 active:scale-95 transition-transform duration-300 ring-4 ring-[#E29578]/60 cursor-pointer"
+                    aria-label="View garment hotspot"
                   >
-                    <span className="absolute inset-0 rounded-full animate-hotspot bg-[#6C3483]/30" />
-                    <Sparkles className="h-4 w-4 relative z-10 text-[#6C3483]" />
+                    <span className="size-2.5 rounded-full bg-[#E29578] animate-ping absolute" />
+                    <span className="size-2.5 rounded-full bg-[#E29578] relative z-10" />
                   </button>
 
-                  {/* Floating Glassmorphic Product Card Tooltip */}
+                  {/* Hotspot Floating Card Tooltip */}
                   <AnimatePresence>
                     {showHotspotTooltip && (
                       <motion.div
-                        initial={{ opacity: 0, y: 12, scale: 0.92 }}
+                        initial={{ opacity: 0, y: 10, scale: 0.95 }}
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 8, scale: 0.95 }}
-                        transition={{ duration: 0.3, ease: "easeOut" }}
-                        className="absolute left-1/2 -translate-x-1/2 top-11 w-64 p-3 rounded-2xl bg-white/95 backdrop-blur-xl border border-[#6C3483]/40 shadow-xl z-40 text-left"
+                        transition={{ duration: 0.2 }}
+                        className="absolute left-1/2 -translate-x-1/2 top-10 w-64 p-3.5 rounded-2xl bg-white/95 backdrop-blur-xl border border-[#E8DFD3] shadow-2xl z-30"
                       >
-                        <div className="flex items-start gap-2.5">
-                          <div className="relative size-12 rounded-lg overflow-hidden shrink-0 bg-neutral-100 border border-[#6C3483]/30">
-                            <Image
-                              src={activeSlide.image}
-                              alt={activeSlide.hotspot.name}
-                              fill
-                              className="object-cover"
-                            />
-                          </div>
-                          <div className="flex-1 min-w-0">
-                            <span className="inline-block text-[9px] font-bold uppercase tracking-wider text-[#6C3483] bg-[#FAF8F5] border border-[#6C3483]/30 px-1.5 py-0.5 rounded">
-                              Original Piece
-                            </span>
-                            <p className="text-[11px] font-bold text-[#191426] truncate mt-0.5">
-                              {activeSlide.hotspot.name}
-                            </p>
-                            <div className="flex items-center gap-1.5 mt-0.5">
-                              <span className="text-xs font-bold text-[#191426]">
-                                ৳{activeSlide.hotspot.price.toLocaleString()}
-                              </span>
-                              <span className="text-[10px] text-neutral-400 line-through">
-                                ৳{activeSlide.hotspot.comparePrice.toLocaleString()}
-                              </span>
-                            </div>
-                          </div>
+                        <div className="flex items-start justify-between gap-2">
+                          <p className="text-[11px] font-bold text-[#1A1A1A] line-clamp-2 leading-snug">
+                            {activeSlide.hotspot.name}
+                          </p>
+                        </div>
+
+                        <div className="flex items-center gap-2 mt-2">
+                          <span className="text-sm font-bold text-[#E29578] font-heading">
+                            ৳{activeSlide.hotspot.price.toLocaleString()}
+                          </span>
+                          <span className="text-[10px] text-neutral-400 line-through">
+                            ৳{activeSlide.hotspot.comparePrice.toLocaleString()}
+                          </span>
                         </div>
 
                         <button
                           onClick={handleHotspotClick}
-                          className="mt-2.5 w-full py-1.5 rounded-lg bg-[#191426] hover:bg-[#6C3483] text-[#F39C12] hover:text-white text-[10px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+                          className="mt-2.5 w-full py-1.5 rounded-lg bg-[#1A1A1A] hover:bg-[#E29578] text-[#E29578] hover:text-white text-[10px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
                         >
                           <Eye className="h-3 w-3" />
-                          <span>Quick View & Order</span>
+                          <span>Quick View &amp; Order</span>
                         </button>
                       </motion.div>
                     )}
@@ -317,7 +300,7 @@ export function HeroCouture() {
                         onClick={() => handleSlideChange(idx)}
                         className={`px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer ${
                           idx === currentIdx
-                            ? "bg-[#6C3483] text-white shadow-sm font-extrabold"
+                            ? "bg-[#E29578] text-white shadow-sm font-extrabold"
                             : "text-white/70 hover:text-white hover:bg-white/10"
                         }`}
                       >
@@ -327,7 +310,7 @@ export function HeroCouture() {
                   </div>
 
                   <span className="text-[9.5px] tracking-widest uppercase font-mono text-white/80">
-                    365 FASHION HOUSE EDITORIAL
+                    ASH AND ASPEN EDITORIAL
                   </span>
                 </div>
 

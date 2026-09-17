@@ -1,7 +1,7 @@
 /**
- * 365 Fashion House — Privacy Policy
+ * Ash and Aspen — Privacy Policy
  * Authentic Pakistani Attires & Designer Couture in Bangladesh
- * Hub: Dhaka - 1206, Bangladesh
+ * Flagship Studio: House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230
  */
 
 import type { Metadata } from "next";
@@ -12,7 +12,7 @@ import { BUSINESS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Privacy Policy | ${BUSINESS.NAME}`,
   description:
-    "365 Fashion House Privacy Policy: আমরা আপনার ব্যক্তিগত তথ্যের গোপনীয়তা ও সুরক্ষাকে সর্বোচ্চ গুরুত্ব দিই।",
+    "Ash and Aspen Privacy Policy: আমরা আপনার ব্যক্তিগত তথ্যের গোপনীয়তা ও সুরক্ষাকে সর্বোচ্চ গুরুত্ব দিই।",
 };
 
 const privacySections = [
@@ -32,9 +32,9 @@ const privacySections = [
     title: "আমরা এই তথ্য কীভাবে ব্যবহার করি?",
     content: `আপনার প্রদত্ত তথ্য শুধুমাত্র নিম্নলিখিত উদ্দেশ্যে ব্যবহৃত হয়:
 • অর্ডার নিশ্চিতকরণ ও প্রসেসিং
-• কুরিয়ার ডেলিভারি কোঅর্ডিনেশন (Steadfast Courier / Pathao)
+• কুরিয়ার ডেলিভারি কোঅর্ডিনেশন (Steadfast Courier / Pathao / Paperfly)
 • কাস্টমার সাপোর্ট ও লাইভ ট্র্যাকিং আপডেট প্রদান
-• বিশেষ ঈদ, রমাদান বা এক্সক্লুসিভ পাকিস্তানি লন কালেকশন সংক্রান্ত আপডেট (সম্মতিক্রমে)`,
+• বিশেষ ঈদ বা এক্সক্লুসিভ পাকিস্তানি কালেকশন সংক্রান্ত আপডেট (সম্মতিক্রমে)`,
   },
   {
     id: "03",
@@ -58,7 +58,7 @@ const privacySections = [
     title: "আপনার অধিকার ও আমাদের সাথে যোগাযোগ",
     content: `আপনার সংরক্ষিত তথ্য সংশোধন বা ডিলিট করার পূর্ণ অধিকার রয়েছে। এ সংক্রান্ত যেকোনো তথ্যের জন্য আমাদের হটলাইন বা ইমেইলে যোগাযোগ করতে পারেন:
 
-অফিস ও হাব: ${BUSINESS.ADDRESS}
+শোরুম ও হাব: ${BUSINESS.ADDRESS}
 হটলাইন ও WhatsApp: ${BUSINESS.PHONE}
 ইমেইল: ${BUSINESS.EMAIL}`,
   },
@@ -68,13 +68,13 @@ export default function PrivacyPolicyPage() {
   return (
     <main className="min-h-screen bg-[#FAF7F2]">
       {/* Page Header */}
-      <section className="bg-[#191426] py-16 md:py-24 px-6 text-center relative overflow-hidden">
+      <section className="bg-[#1A1A1A] py-16 md:py-24 px-6 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
-          <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-[#6C3483] -translate-x-1/2 translate-y-1/2 blur-2xl" />
-          <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-[#D4AC0D] translate-x-1/2 -translate-y-1/2 blur-2xl" />
+          <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-[#E29578] -translate-x-1/2 translate-y-1/2 blur-2xl" />
+          <div className="absolute top-0 right-0 w-72 h-72 rounded-full bg-[#D4A373] translate-x-1/2 -translate-y-1/2 blur-2xl" />
         </div>
         <div className="relative z-10 max-w-2xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AC0D]/40 text-[#F39C12] text-[10px] uppercase tracking-[0.28em] font-bold">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#E29578]/40 text-[#E29578] text-[10px] uppercase tracking-[0.28em] font-bold">
             <Sparkles className="h-3.5 w-3.5" />
             <span>DATA PROTECTION</span>
           </div>
@@ -84,12 +84,12 @@ export default function PrivacyPolicyPage() {
           <p className="text-[#E8DFD5] text-sm leading-relaxed">
             {BUSINESS.NAME} আপনার ব্যক্তিগত তথ্যের গোপনীয়তা ও নিরাপত্তাকে সর্বোচ্চ সম্মান জানায়।
           </p>
-          <p className="text-[#D4AC0D]/90 text-xs font-mono font-bold">সর্বশেষ আপডেট: সেপ্টেম্বর ২০২৬</p>
+          <p className="text-[#E29578] text-xs font-mono font-bold">সর্বশেষ আপডেট: সেপ্টেম্বর ২০২৬</p>
         </div>
       </section>
 
       {/* Commitment Strip */}
-      <section className="bg-[#191426] py-4 px-6 text-center border-t border-[#D4AC0D]/30">
+      <section className="bg-[#1A1A1A] py-4 px-6 text-center border-t border-[#E29578]/30">
         <p className="text-[#FAF7F2] text-sm font-semibold tracking-wide">
           ✦ আপনার তথ্য কখনোই তৃতীয় পক্ষের কাছে বিক্রি বা অননুমোদিত শেয়ার করা হয় না ✦
         </p>
@@ -99,9 +99,9 @@ export default function PrivacyPolicyPage() {
       <section className="py-16 md:py-20 px-6">
         <div className="max-w-3xl mx-auto">
           {/* Intro */}
-          <div className="bg-white border border-[#E8DFD5] rounded-2xl p-6 md:p-8 mb-8 border-l-4 border-l-[#6C3483] shadow-xs">
+          <div className="bg-white border border-[#E8DFD5] rounded-2xl p-6 md:p-8 mb-8 border-l-4 border-l-[#E29578] shadow-xs">
             <p className="text-sm text-neutral-600 leading-relaxed font-medium">
-              {BUSINESS.NAME} ({BUSINESS.NAME_BN}) আপনার আস্থাকে সর্বোচ্চ মূল্যায়ন করে। এই গোপনীয়তা নীতি
+              {BUSINESS.NAME} (${BUSINESS.NAME_BN}) আপনার আস্থাকে সর্বোচ্চ মূল্যায়ন করে। এই গোপনীয়তা নীতি
               আপনাকে স্পষ্টভাবে অবহিত করে আমরা কীভাবে আপনার তথ্য নিরাপদ রাখি।
               আমাদের ওয়েবসাইট বা ফেসবুক পেজের মাধ্যমে কেনাকাটা করার মাধ্যমে আপনি এই নীতিমালায় সম্মতি প্রদান করছেন।
             </p>
@@ -112,13 +112,13 @@ export default function PrivacyPolicyPage() {
             {privacySections.map((section) => (
               <div
                 key={section.id}
-                className="bg-white border border-[#E8DFD5] rounded-2xl p-6 border-l-4 border-l-[#6C3483] shadow-xs"
+                className="bg-white border border-[#E8DFD5] rounded-2xl p-6 border-l-4 border-l-[#E29578] shadow-xs"
               >
                 <div className="flex items-center gap-3 mb-3">
-                  <span className="text-[11px] font-mono text-[#6C3483] font-bold bg-purple-50 px-2.5 py-0.5 rounded-full border border-[#6C3483]/30">
+                  <span className="text-[11px] font-mono text-[#E29578] font-bold bg-orange-50 px-2.5 py-0.5 rounded-full border border-[#E29578]/30">
                     {section.id}
                   </span>
-                  <h2 className="text-base font-bold text-[#191426]">{section.title}</h2>
+                  <h2 className="text-base font-bold text-[#1A1A1A]">{section.title}</h2>
                 </div>
                 <p className="text-sm text-neutral-600 leading-relaxed whitespace-pre-line font-medium">
                   {section.content}
@@ -128,8 +128,8 @@ export default function PrivacyPolicyPage() {
           </div>
 
           {/* Contact */}
-          <div className="bg-[#F4EFEA] rounded-3xl p-8 text-center border border-[#D4AC0D]/30 shadow-xs">
-            <h3 className="text-lg font-bold text-[#191426] mb-2 font-heading">
+          <div className="bg-[#F4EFEA] rounded-3xl p-8 text-center border border-[#E29578]/30 shadow-xs">
+            <h3 className="text-lg font-bold text-[#1A1A1A] mb-2 font-heading">
               গোপনীয়তা বা তথ্য সুরক্ষা সম্পর্কে প্রশ্ন আছে?
             </h3>
             <p className="text-sm text-neutral-600 mb-6 max-w-md mx-auto">
@@ -146,7 +146,7 @@ export default function PrivacyPolicyPage() {
               </a>
               <a
                 href={`mailto:${BUSINESS.EMAIL}`}
-                className="inline-flex items-center justify-center h-12 px-7 border-2 border-[#6C3483] text-[#6C3483] text-xs font-bold uppercase tracking-[0.14em] rounded-full hover:bg-[#6C3483] hover:text-white transition-all"
+                className="inline-flex items-center justify-center h-12 px-7 border-2 border-[#1A1A1A] text-[#1A1A1A] text-xs font-bold uppercase tracking-[0.14em] rounded-full hover:bg-[#1A1A1A] hover:text-white transition-all"
               >
                 {BUSINESS.EMAIL}
               </a>
@@ -155,15 +155,15 @@ export default function PrivacyPolicyPage() {
 
           {/* Policy Links */}
           <div className="flex items-center justify-center gap-6 text-xs text-neutral-500 pt-8 font-semibold uppercase tracking-wider">
-            <Link href="/terms" className="hover:text-[#6C3483] transition-colors">
+            <Link href="/terms" className="hover:text-[#E29578] transition-colors">
               Terms & Conditions
             </Link>
-            <span className="text-[#D4AC0D]">·</span>
-            <Link href="/refund-policy" className="hover:text-[#6C3483] transition-colors">
+            <span className="text-[#E29578]">·</span>
+            <Link href="/refund-policy" className="hover:text-[#E29578] transition-colors">
               Open Parcel & Refund
             </Link>
-            <span className="text-[#D4AC0D]">·</span>
-            <Link href="/contact" className="hover:text-[#6C3483] transition-colors">
+            <span className="text-[#E29578]">·</span>
+            <Link href="/contact" className="hover:text-[#E29578] transition-colors">
               Contact Us
             </Link>
           </div>
@@ -172,3 +172,4 @@ export default function PrivacyPolicyPage() {
     </main>
   );
 }
+

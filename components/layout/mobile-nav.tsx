@@ -1,9 +1,10 @@
 "use client";
 
 /**
- * 365 Fashion House — Mobile Navigation Overlay
- * Pioneer in Authentic Pakistani Attires in Bangladesh
- * Dhaka - 1206, Bangladesh — https://www.facebook.com/365FashionHouse/
+ * Ash and Aspen (ash and aspen) — Mobile Navigation Overlay
+ * Luxury Pakistani Designer Attires & Ready-to-Wear Pret
+ * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230, Bangladesh
+ * Official Facebook: https://www.facebook.com/ashandaspenclothing/
  */
 
 import { useState, useEffect } from "react";
@@ -43,11 +44,11 @@ export function MobileNav({ links }: MobileNavProps) {
 
     // Subcategories structured like desktop mega-menu
     const categoriesWithSubs: Record<string, string[]> = {
-        "Pakistani Lawn": ["Shop All Pakistani Lawn", "Mahee's Luxury Lawn Lilac", "Khaadi Signature Mint Oasis", "Maria.B Embroidered Lawn"],
-        "Organza & Chiffon": ["Shop All Organza & Chiffon", "Beechtree Rose Quartz 3-Piece", "Pastel Threadwork Ensembles", "Semi-Formal Luxury Pret"],
-        "Designer Pret": ["Shop All Designer Pret", "Agha Noor Pistachio Kurti", "Asim Jofa Festive Pret", "Ready-to-Wear Bell Sleeve Kurtis"],
-        "Festive & Party": ["Shop All Festive & Party Wear", "Chevron Crimson Velvet Suit", "Emerald Flared Anarkali Suit", "Wedding & Dawat Couture"],
-        "Silk & Velvet": ["Shop All Silk & Velvet", "Gul Ahmed Royal Marigold", "Heavy Zari Shawl Suits", "Winter Formal Couture"]
+        "Pakistani Lawn": ["Shop All Pakistani Lawn", "Gulaal Seafoam Mint Lawn", "Nur Festive Chikankari Kameez", "Gulaal Coral Peach Lawn"],
+        "Organza & Chiffon": ["Shop All Organza & Chiffon", "Nur Lavender Butterfly Pret", "Silk Chiffon Dupatta Kurti", "Semi-Formal Luxury Pret"],
+        "Designer Pret": ["Shop All Designer Pret", "Sadabahar Sandy Taupe 3-Piece", "Nur Royal Schiffli Stitched Suit", "Ready-to-Wear Bell Sleeve Sets"],
+        "Festive & Party": ["Shop All Festive & Party Wear", "Ruby Crimson Empress Velvet Suit", "Gulaal Tassel Festive Suit", "Wedding & Dawat Couture"],
+        "Casual Lite": ["Shop All Casual Lite", "Boutique Signature Pret Kurti", "Summer Floral Lawn Tunics", "Daily Wear Stitched Sets"]
     };
 
     return (
@@ -58,28 +59,28 @@ export function MobileNav({ links }: MobileNavProps) {
                 className="lg:hidden flex items-center justify-center size-10 text-foreground/80 hover:bg-neutral-100 rounded-full transition-all duration-200"
                 aria-label="Open navigation menu"
             >
-                <Menu className="h-6 w-6 text-[#191426]" strokeWidth={1.75} />
+                <Menu className="h-6 w-6 text-[#1A1A1A]" strokeWidth={1.75} />
             </button>
 
             {/* Premium Full-Screen Navigation Panel Overlay */}
             {open && typeof document !== "undefined" && createPortal(
-                <div className="fixed top-0 left-0 w-screen h-[100dvh] bg-[#FAF8F5] z-[9999] flex flex-col overflow-y-auto animate-slide-up">
+                <div className="fixed top-0 left-0 w-screen h-[100dvh] bg-[#FAF7F2] z-[9999] flex flex-col overflow-y-auto animate-slide-up">
                     {/* Header bar within overlay */}
                     <div className="flex h-16 items-center justify-between px-6 border-b border-[#E8DFD3] bg-white">
                         <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-2.5">
                             <Image
-                                src="/365-assets/logo.jpg"
-                                alt="365 Fashion House"
+                                src="/ash-and-aspen/logo.jpg"
+                                alt="Ash and Aspen"
                                 width={36}
                                 height={36}
-                                className="h-9 w-9 object-cover rounded-full ring-2 ring-[#6C3483]/60"
+                                className="h-9 w-9 object-cover rounded-full ring-2 ring-[#E29578]/70"
                             />
                             <div className="flex flex-col">
-                                <span className="font-heading text-sm font-extrabold tracking-tight text-[#191426] uppercase leading-none">
-                                    365 Fashion House
+                                <span className="font-heading text-sm font-extrabold tracking-tight text-[#1A1A1A] uppercase leading-none">
+                                    Ash and Aspen
                                 </span>
-                                <span className="text-[8.5px] font-semibold tracking-widest text-[#D4AC0D] uppercase mt-0.5">
-                                    Authentic Pakistani Attires
+                                <span className="text-[8.5px] font-semibold tracking-widest text-[#E29578] uppercase mt-0.5">
+                                    Uttara Showroom &amp; Online
                                 </span>
                             </div>
                         </Link>
@@ -89,7 +90,7 @@ export function MobileNav({ links }: MobileNavProps) {
                             className="flex items-center justify-center size-10 text-foreground hover:bg-neutral-100 rounded-full transition-all duration-200"
                             aria-label="Close navigation menu"
                         >
-                            <X className="h-6 w-6 text-[#191426]" strokeWidth={1.5} />
+                            <X className="h-6 w-6 text-[#1A1A1A]" strokeWidth={1.5} />
                         </button>
                     </div>
 
@@ -106,12 +107,12 @@ export function MobileNav({ links }: MobileNavProps) {
                                             <div>
                                                 <button
                                                     onClick={() => toggleAccordion(link.label)}
-                                                    className="w-full min-h-[56px] py-4 flex justify-between items-center text-[15px] font-semibold tracking-wide text-[#191426] hover:text-[#6C3483] transition-colors"
+                                                    className="w-full min-h-[56px] py-4 flex justify-between items-center text-[15px] font-semibold tracking-wide text-[#1A1A1A] hover:text-[#E29578] transition-colors"
                                                     aria-expanded={isAccordionActive}
                                                 >
                                                     {link.label}
                                                     {isAccordionActive ? (
-                                                        <ChevronUp className="h-4 w-4 text-[#6C3483]" strokeWidth={2} />
+                                                        <ChevronUp className="h-4 w-4 text-[#E29578]" strokeWidth={2} />
                                                     ) : (
                                                         <ChevronDown className="h-4 w-4 text-muted-foreground" strokeWidth={1.5} />
                                                     )}
@@ -128,7 +129,7 @@ export function MobileNav({ links }: MobileNavProps) {
                                                                     key={subLabel}
                                                                     href={`${link.href}${urlParam}`}
                                                                     onClick={() => setOpen(false)}
-                                                                    className="text-[13.5px] text-neutral-600 hover:text-[#6C3483] transition-colors py-1 flex items-center justify-between"
+                                                                    className="text-[13.5px] text-neutral-600 hover:text-[#E29578] transition-colors py-1 flex items-center justify-between"
                                                                 >
                                                                     <span>{subLabel}</span>
                                                                 </Link>
@@ -141,7 +142,7 @@ export function MobileNav({ links }: MobileNavProps) {
                                             <Link
                                                 href={link.href}
                                                 onClick={() => setOpen(false)}
-                                                className="block min-h-[56px] py-4 text-[15px] font-semibold tracking-wide text-[#191426] hover:text-[#6C3483] transition-colors"
+                                                className="block min-h-[56px] py-4 text-[15px] font-semibold tracking-wide text-[#1A1A1A] hover:text-[#E29578] transition-colors"
                                             >
                                                 {link.label}
                                             </Link>
@@ -156,30 +157,37 @@ export function MobileNav({ links }: MobileNavProps) {
                             <Link
                                 href="/track-order"
                                 onClick={() => setOpen(false)}
-                                className="text-sm font-medium text-muted-foreground hover:text-[#6C3483] transition-colors"
+                                className="text-sm font-medium text-muted-foreground hover:text-[#E29578] transition-colors"
                             >
                                 Track My Order
                             </Link>
                             <Link
                                 href="/delivery-info"
                                 onClick={() => setOpen(false)}
-                                className="text-sm font-medium text-muted-foreground hover:text-[#6C3483] transition-colors"
+                                className="text-sm font-medium text-muted-foreground hover:text-[#E29578] transition-colors"
                             >
-                                Delivery & Shipping Information
+                                Delivery &amp; Shipping Information
                             </Link>
                             <Link
                                 href="/faq"
                                 onClick={() => setOpen(false)}
-                                className="text-sm font-medium text-muted-foreground hover:text-[#6C3483] transition-colors"
+                                className="text-sm font-medium text-muted-foreground hover:text-[#E29578] transition-colors"
                             >
                                 Frequently Asked Questions (FAQ)
                             </Link>
                             <Link
                                 href="/refund-policy"
                                 onClick={() => setOpen(false)}
-                                className="text-sm font-medium text-muted-foreground hover:text-[#6C3483] transition-colors"
+                                className="text-sm font-medium text-muted-foreground hover:text-[#E29578] transition-colors"
                             >
-                                Open Parcel & Refund Policy
+                                Open Parcel &amp; Refund Policy
+                            </Link>
+                            <Link
+                                href="/contact"
+                                onClick={() => setOpen(false)}
+                                className="text-sm font-medium text-muted-foreground hover:text-[#E29578] transition-colors"
+                            >
+                                Visit Uttara Showroom
                             </Link>
                         </div>
                     </nav>
@@ -199,15 +207,15 @@ export function MobileNav({ links }: MobileNavProps) {
                             <Link
                                 href="/account"
                                 onClick={() => setOpen(false)}
-                                className="flex items-center justify-center gap-2 h-12 bg-[#FAF8F5] border border-[#E8DFD3] text-xs font-bold text-[#191426] hover:bg-neutral-100 rounded-xl transition-colors shadow-xs"
+                                className="flex items-center justify-center gap-2 h-12 bg-[#FAF7F2] border border-[#E8DFD3] text-xs font-bold text-[#1A1A1A] hover:bg-neutral-100 rounded-xl transition-colors shadow-xs"
                             >
-                                <User className="h-4 w-4 text-[#6C3483]" strokeWidth={1.5} />
+                                <User className="h-4 w-4 text-[#E29578]" strokeWidth={1.5} />
                                 My Account
                             </Link>
                             <Link
                                 href="/cart"
                                 onClick={() => setOpen(false)}
-                                className="flex items-center justify-center gap-2 h-12 bg-[#191426] text-[#F39C12] text-xs font-bold hover:bg-[#2A2038] rounded-xl transition-colors shadow-xs"
+                                className="flex items-center justify-center gap-2 h-12 bg-[#1A1A1A] text-[#E29578] text-xs font-bold hover:bg-[#2A2A2A] rounded-xl transition-colors shadow-xs"
                             >
                                 <ShoppingBag className="h-4 w-4" strokeWidth={1.5} />
                                 Bag ({cartCount})

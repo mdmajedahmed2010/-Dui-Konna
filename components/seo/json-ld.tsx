@@ -123,14 +123,14 @@ export function BreadcrumbJsonLd({ items }: BreadcrumbJsonLdProps) {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://moccasin-bat-178323.hostingersite.com",
+        item: BUSINESS.WEBSITE,
       },
       ...items.map((item, index) => ({
         "@type": "ListItem",
         position: index + 2,
         name: item.name,
         ...(item.url && {
-          item: `https://moccasin-bat-178323.hostingersite.com${item.url}`,
+          item: `${BUSINESS.WEBSITE}${item.url}`,
         }),
       })),
     ],
@@ -143,3 +143,4 @@ export function BreadcrumbJsonLd({ items }: BreadcrumbJsonLdProps) {
     />
   );
 }
+

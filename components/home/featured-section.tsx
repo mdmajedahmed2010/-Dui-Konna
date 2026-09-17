@@ -1,5 +1,5 @@
 /**
- * Blossom — Featured Section (Premium v2.0)
+ * Ash and Aspen — Featured Section (Haute Couture)
  * Asymmetric editorial layout with premium spacing
  * Design Guide: 1 large hero + 3 standard cards
  */

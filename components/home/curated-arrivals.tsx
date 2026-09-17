@@ -1,9 +1,9 @@
 "use client";
 
 /**
- * Closet by Tanzz — Curated Haute Arrivals Showcase
+ * Ash and Aspen — Curated Haute Arrivals Showcase
  * Features double-bezel cards, interactive category filtering, and 1-tap quick-size add
- * Natore Tower, Uttara, Dhaka — https://www.facebook.com/Closetbytanzz/
+ * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230 — https://www.facebook.com/ashandaspenclothing/
  */
 
 import { useState } from "react";
@@ -92,17 +92,17 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
         
         {/* Section Heading & Category Tabs */}
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#C5A059]/40 mb-3 shadow-xs">
-            <Sparkles className="h-3 w-3 text-[#C5A059]" />
-            <span className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-[#121212]">
-              EID & LUXURY 2026
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#E29578]/40 mb-3 shadow-xs">
+            <Sparkles className="h-3 w-3 text-[#E29578]" />
+            <span className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-[#1A1A1A]">
+              EID &amp; LUXURY 2026
             </span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-[#191426] font-heading tracking-tight">
+          <h2 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] font-heading tracking-tight">
             Curated Pakistani Arrivals
           </h2>
           <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
-            100% authentic Pakistani luxury lawn, designer festive 3-piece sets, and luxury organza pret curated by 365 Fashion House.
+            100% authentic Pakistani luxury lawn, designer festive 3-piece sets, and luxury organza pret curated by Ash and Aspen.
           </p>
 
           {/* Filter Pills */}
@@ -172,8 +172,8 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                               {product.tag}
                             </span>
                           ) : (
-                            <span className="px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#6C3483] text-[9.5px] font-bold uppercase tracking-wider border border-[#E8DFD5]">
-                              365 Authentic
+                            <span className="px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#E29578] text-[9.5px] font-bold uppercase tracking-wider border border-[#E8DFD5]">
+                              Ash &amp; Aspen
                             </span>
                           )}
 

@@ -1,8 +1,9 @@
 "use client";
 
 /**
- * Blossom Clothing — Collections Showcase
- * Blossom Clothing | Authentic Pakistani Luxury Suits & Designer Collections
+ * Ash and Aspen — Collections Showcase
+ * Authentic Pakistani Luxury Suits & Designer Collections
+ * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230 — https://www.facebook.com/ashandaspenclothing/
  */
 
 import Link from "next/link";

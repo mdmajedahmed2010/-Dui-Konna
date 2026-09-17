@@ -1,9 +1,9 @@
 "use client";
 
 /**
- * 365 Fashion House — Trust Badges & Open Parcel Assurance
- * Pioneer in Authentic Pakistani Attires in Bangladesh
- * Dhaka - 1206, Bangladesh — https://www.facebook.com/365FashionHouse/
+ * Ash and Aspen — Trust Badges & Open Parcel Assurance
+ * Customer-Centric Marketplace Portal for 100% Genuine Pakistani Attires
+ * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230 — https://www.facebook.com/ashandaspenclothing/
  */
 
 import { useEffect, useRef, useState } from "react";
@@ -13,7 +13,7 @@ const badges = [
   {
     icon: Award,
     title: "১০০% অথেনটিক পাকিস্তানি ড্রেস",
-    description: "Original Designer Lawn & Pret",
+    description: "Original Gulaal, Nur & Sadabahar",
   },
   {
     icon: Eye,
@@ -27,18 +27,18 @@ const badges = [
   },
   {
     icon: MapPin,
-    title: "ঢাকা হাব",
-    description: "Dhaka - 1206, Bangladesh",
+    title: "উত্তরা শোরুম",
+    description: "Sector #13, Uttara, Dhaka",
   },
   {
     icon: Users,
-    title: "৫৮,০০০+ সিস্টার্স",
+    title: "৮১,০০০+ ফ্যানস",
     description: "Facebook Fashion Community",
   },
   {
     icon: PhoneCall,
     title: "সরাসরি সাপোর্ট",
-    description: "01714-404008 (WhatsApp)",
+    description: "01721-396111 (WhatsApp / Call)",
   },
 ];
 
@@ -64,7 +64,7 @@ export function TrustBadges() {
   return (
     <section
       ref={sectionRef}
-      className="py-12 md:py-16 bg-[#FAF8F5] border-y border-[#E8DFD3]"
+      className="py-12 md:py-16 bg-[#FAF7F2] border-y border-[#E8DFD3]"
       aria-label="Trust Badges"
     >
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
@@ -72,7 +72,7 @@ export function TrustBadges() {
           {badges.map((badge, idx) => (
             <div
               key={badge.title}
-              className={`flex flex-col items-center text-center p-4 rounded-2xl bg-white border border-[#E8DFD3] shadow-xs hover:border-[#6C3483]/50 hover:shadow-md transition-all duration-300 ${
+              className={`flex flex-col items-center text-center p-4 rounded-2xl bg-white border border-[#E8DFD3] shadow-xs hover:border-[#E29578]/60 hover:shadow-md transition-all duration-300 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
               style={{
@@ -80,10 +80,10 @@ export function TrustBadges() {
                 transitionDuration: "500ms",
               }}
             >
-              <div className="size-11 rounded-full bg-[#FAF8F5] text-[#6C3483] flex items-center justify-center mb-3 border border-[#6C3483]/20">
+              <div className="size-11 rounded-full bg-[#FAF7F2] text-[#E29578] flex items-center justify-center mb-3 border border-[#E29578]/30">
                 <badge.icon className="h-5 w-5" />
               </div>
-              <h3 className="text-xs md:text-sm font-bold text-[#191426] leading-tight">
+              <h3 className="text-xs md:text-sm font-bold text-[#1A1A1A] leading-tight">
                 {badge.title}
               </h3>
               <p className="text-[10px] md:text-[11px] text-neutral-500 font-medium mt-1">
@@ -96,3 +96,4 @@ export function TrustBadges() {
     </section>
   );
 }
+

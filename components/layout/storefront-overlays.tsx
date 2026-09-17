@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Closet by Tanzz — Storefront Client Overlays
+ * Ash and Aspen — Storefront Client Overlays
  * Wraps dynamic overlays in a Client Component boundary for Next.js App Router
  */
 
@@ -42,8 +42,9 @@ export function StorefrontOverlays() {
       <ScrollReveal />
       <ScrollProgress />
       <BackToTop />
-      <FloatingChat phoneNumber="8801714404008" messengerUrl="https://m.me/365FashionHouse" />
+      <FloatingChat phoneNumber="8801721396111" messengerUrl="https://m.me/ashandaspenclothing" />
       <PageTracker />
     </>
   );
 }
+
