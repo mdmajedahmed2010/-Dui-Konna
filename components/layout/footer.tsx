@@ -1,10 +1,10 @@
 "use client";
 
 /**
- * Closet by Tanzz — Luxury Noir & Imperial Gold Footer
- * Wear Tanzz, Wear confidence | INTERNATIONAL LUXURY COLLECTION
- * Natore Tower, 2nd Floor, Shop 12, Rajlokkhi, Sector 3, Uttara, Dhaka
- * Official Facebook: https://www.facebook.com/Closetbytanzz/
+ * 365 Fashion House — Luxury Royal Violet & Imperial Gold Footer
+ * Pioneer in Authentic Pakistani Attires in Bangladesh
+ * Dhaka - 1206, Bangladesh
+ * Official Facebook: https://www.facebook.com/365FashionHouse/
  */
 
 import { useState } from "react";
@@ -15,20 +15,22 @@ import { BUSINESS } from "@/lib/constants";
 import { toast } from "sonner";
 
 const shopLinks = [
-  { href: "/collections/zam-zam-lawn", label: "Zam Zam Lawn Collection" },
-  { href: "/collections/designer-boutique", label: "Designer Boutique Collection" },
-  { href: "/collections/festive-party-wear", label: "Festive & Party Wear" },
-  { href: "/collections/casual-chic", label: "Casual Chic Sets" },
-  { href: "/collections/artisan-block", label: "Artisan Block & Florals" },
+  { href: "/collections/pakistani-lawn", label: "Luxury Pakistani Lawn" },
+  { href: "/collections/organza-chiffon", label: "Organza & Chiffon Luxury" },
+  { href: "/collections/designer-pret", label: "Ready-to-Wear Designer Pret" },
+  { href: "/collections/festive-party", label: "Festive & Party Couture" },
+  { href: "/collections/silk-velvet", label: "Silk & Velvet Luxury" },
 ];
 
 const helpLinks = [
-  { href: "/track-order", label: "Track Order" },
-  { href: "/contact", label: "Visit Uttara Flagship Outlet" },
+  { href: "/track-order", label: "Track My Order" },
+  { href: "/delivery-info", label: "Delivery & Shipping Info" },
   { href: "/refund-policy", label: "Open Parcel & Refund Policy" },
+  { href: "/faq", label: "Frequently Asked Questions (FAQ)" },
+  { href: "/contact", label: "Contact & Dhaka Hub" },
   { href: "/terms", label: "Terms & Conditions" },
   { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/about", label: "Our Story & Brand Vision" },
+  { href: "/about", label: "Our Story & Authenticity" },
 ];
 
 export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
@@ -39,38 +41,38 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
     e.preventDefault();
     if (!email) return;
     setSubscribed(true);
-    toast.success("Welcome to Closet by Tanzz VIP Club! Use promo code TANZZ10 for 10% off your order.");
+    toast.success("Welcome to 365 Fashion House VIP Club! Use promo code 365VIP for 15% off your order.");
   };
 
   return (
     <>
-      <footer className="bg-[#0B0B0B] text-[#FAF8F5] relative overflow-hidden border-t border-[#C5A059]/30">
-        {/* Giant Tanzz Watermark Typography */}
-        <div className="absolute -bottom-10 right-0 pointer-events-none select-none text-[120px] md:text-[220px] font-bold text-white/[0.02] font-heading leading-none">
-          TANZZ
+      <footer className="bg-[#120E1C] text-[#FAF8F5] relative overflow-hidden border-t border-[#6C3483]/30">
+        {/* Giant 365 Fashion Watermark Typography */}
+        <div className="absolute -bottom-10 right-0 pointer-events-none select-none text-[110px] md:text-[200px] font-bold text-white/[0.02] font-heading leading-none">
+          365 FASHION
         </div>
 
         {/* 1. VIP Club Newsletter Banner */}
-        <div className="border-b border-white/10 py-16 md:py-20 relative bg-gradient-to-b from-transparent to-[#141414]/50">
+        <div className="border-b border-white/10 py-16 md:py-20 relative bg-gradient-to-b from-transparent to-[#191426]/60">
           <div className="container mx-auto px-6 md:px-12">
             <div className="max-w-4xl mx-auto text-center space-y-4">
-              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-[#C5A059]/30">
-                <Sparkles className="h-3.5 w-3.5 text-[#C5A059]" />
-                <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#C5A059]">
-                  CLOSET BY TANZZ VIP CLUB
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AC0D]/40">
+                <Sparkles className="h-3.5 w-3.5 text-[#F39C12]" />
+                <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#F39C12]">
+                  365 FASHION HOUSE VIP CLUB
                 </span>
               </div>
               <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
-                Be The First To Wear New Drops
+                Be The First To Access Original Pakistani Drops
               </h3>
               <p className="text-xs md:text-sm text-neutral-300 max-w-lg mx-auto leading-relaxed">
-                Join 51,000+ fashion connoisseurs across Bangladesh. Get early access to authentic Zam Zam lawn drops, designer boutique launches, and festive Eid collections.
+                Join 58,000+ fashion lovers across Bangladesh. Get instant notifications on original Pakistani luxury lawn drops, Agha Noor pret launches, and festive Eid collections.
               </p>
 
               {subscribed ? (
                 <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 text-xs font-bold tracking-wider">
                   <Check className="h-4 w-4" />
-                  <span>Welcome! Use Promo Code: TANZZ10</span>
+                  <span>Welcome! Use Promo Code: 365VIP</span>
                 </div>
               ) : (
                 <form
@@ -83,11 +85,11 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                     placeholder="Enter your email address"
-                    className="h-13 px-6 rounded-full bg-white/10 border border-[#C5A059]/30 text-white placeholder:text-neutral-400 text-xs focus:outline-none focus:border-[#C5A059] flex-1 backdrop-blur-md"
+                    className="h-13 px-6 rounded-full bg-white/10 border border-[#6C3483]/50 text-white placeholder:text-neutral-400 text-xs focus:outline-none focus:border-[#D4AC0D] flex-1 backdrop-blur-md"
                   />
                   <button
                     type="submit"
-                    className="h-13 px-8 rounded-full bg-[#1A1A1A] hover:bg-[#C5A059] text-[#C5A059] hover:text-[#0B0B0B] border border-[#C5A059]/60 text-xs font-bold uppercase tracking-[0.16em] transition-all shadow-lg active:scale-98 cursor-pointer"
+                    className="h-13 px-8 rounded-full bg-[#6C3483] hover:bg-[#D4AC0D] text-white hover:text-[#191426] border border-[#D4AC0D]/60 text-xs font-bold uppercase tracking-[0.16em] transition-all shadow-lg active:scale-98 cursor-pointer"
                   >
                     Subscribe
                   </button>
@@ -108,41 +110,41 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                   src={
                     typeof settings.store_logo === "string" && settings.store_logo
                       ? settings.store_logo
-                      : "/logo.jpg"
+                      : "/365-assets/logo.jpg"
                   }
-                  alt="Closet by Tanzz"
+                  alt="365 Fashion House"
                   width={54}
                   height={54}
-                  className="h-13 w-13 object-cover rounded-full ring-2 ring-[#C5A059]/60 group-hover:scale-105 transition-transform"
+                  className="h-13 w-13 object-cover rounded-full ring-2 ring-[#6C3483]/60 group-hover:scale-105 transition-transform"
                 />
                 <div>
                   <p className="text-lg font-bold text-white tracking-wider font-heading leading-tight">
-                    Closet by Tanzz
+                    365 Fashion House
                   </p>
-                  <p className="text-[10px] text-[#C5A059] font-semibold tracking-[0.22em] uppercase">
-                    Wear Tanzz, Wear confidence
+                  <p className="text-[10px] text-[#D4AC0D] font-semibold tracking-[0.2em] uppercase">
+                    Pioneer in Authentic Pakistani Attires
                   </p>
                 </div>
               </Link>
               <p className="text-xs md:text-sm text-neutral-300 leading-relaxed max-w-sm">
-                Dhaka&apos;s premier boutique destination for authentic Zam Zam pure lawn, festive Kashmiri ensembles, artisan boutique prints, and luxury women&apos;s pret.
+                Bangladesh&apos;s pioneer fashion house for 100% genuine Pakistani & Indian designer attires. Dedicated to authenticity, luxury lawn, handcrafted organza, and seamless customer service with Open Parcel inspection.
               </p>
 
               {/* Direct Contact Info */}
               <div className="space-y-2.5 text-xs text-neutral-300 pt-1">
                 <p className="flex items-start gap-2.5">
-                  <MapPin className="h-4 w-4 text-[#C5A059] shrink-0 mt-0.5" />
+                  <MapPin className="h-4 w-4 text-[#D4AC0D] shrink-0 mt-0.5" />
                   <span>{BUSINESS.ADDRESS}</span>
                 </p>
                 <p className="flex items-center gap-2.5">
-                  <Phone className="h-4 w-4 text-[#C5A059] shrink-0" />
-                  <a href={`tel:${BUSINESS.PHONE.replace(/[^0-9+]/g, "")}`} className="hover:text-[#C5A059] transition-colors">
+                  <Phone className="h-4 w-4 text-[#D4AC0D] shrink-0" />
+                  <a href={`tel:${BUSINESS.PHONE.replace(/[^0-9+]/g, "")}`} className="hover:text-[#F39C12] transition-colors">
                     {BUSINESS.PHONE} (Hotline & WhatsApp)
                   </a>
                 </p>
                 <p className="flex items-center gap-2.5">
-                  <Mail className="h-4 w-4 text-[#C5A059] shrink-0" />
-                  <a href={`mailto:${BUSINESS.EMAIL}`} className="hover:text-[#C5A059] transition-colors">
+                  <Mail className="h-4 w-4 text-[#D4AC0D] shrink-0" />
+                  <a href={`mailto:${BUSINESS.EMAIL}`} className="hover:text-[#F39C12] transition-colors">
                     {BUSINESS.EMAIL}
                   </a>
                 </p>
@@ -151,13 +153,13 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
 
             {/* Collections Links (Col 2) */}
             <div className="lg:col-span-2 space-y-4">
-              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#C5A059]">
+              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#D4AC0D]">
                 Collections
               </h4>
               <ul className="space-y-2.5 text-xs text-neutral-300 font-medium">
                 {shopLinks.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="hover:text-[#C5A059] transition-colors">
+                    <Link href={link.href} className="hover:text-[#F39C12] transition-colors">
                       {link.label}
                     </Link>
                   </li>
@@ -167,13 +169,13 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
 
             {/* Client Concierge (Col 2) */}
             <div className="lg:col-span-2 space-y-4">
-              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#C5A059]">
+              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#D4AC0D]">
                 Customer Care
               </h4>
               <ul className="space-y-2.5 text-xs text-neutral-300 font-medium">
                 {helpLinks.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="hover:text-[#C5A059] transition-colors">
+                    <Link href={link.href} className="hover:text-[#F39C12] transition-colors">
                       {link.label}
                     </Link>
                   </li>
@@ -183,11 +185,11 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
 
             {/* Social Proof & Official Community (Col 3) */}
             <div className="lg:col-span-3 space-y-4">
-              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#C5A059]">
+              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#D4AC0D]">
                 Official Channels
               </h4>
               <p className="text-xs text-neutral-300 leading-relaxed">
-                Connect with our active 51,000+ community for daily Facebook live sessions, unboxing videos, new arrivals reels, and instant inbox orders.
+                Connect with our active 58,000+ community for daily Facebook updates, product unboxings, new arrival catalogs, and instant inbox orders.
               </p>
 
               <div className="space-y-2 pt-1">
@@ -195,20 +197,20 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                   href={BUSINESS.FACEBOOK}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-between w-full p-3 rounded-xl bg-white/10 hover:bg-[#1A1A1A] text-white text-xs font-bold transition-all border border-white/15 hover:border-[#C5A059]/50"
+                  className="inline-flex items-center justify-between w-full p-3 rounded-xl bg-white/10 hover:bg-[#191426] text-white text-xs font-bold transition-all border border-white/15 hover:border-[#6C3483]/60"
                 >
                   <span className="flex items-center gap-2">
                     <span className="size-2 rounded-full bg-[#1877F2] animate-pulse" />
-                    Facebook Page (51K+ Followers)
+                    Facebook Page (58K+ Followers)
                   </span>
-                  <ArrowUpRight className="h-3.5 w-3.5 text-[#C5A059]" />
+                  <ArrowUpRight className="h-3.5 w-3.5 text-[#F39C12]" />
                 </a>
 
                 <a
                   href={BUSINESS.INSTAGRAM}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center justify-between w-full p-3 rounded-xl bg-white/10 hover:bg-[#1A1A1A] text-white text-xs font-bold transition-all border border-white/15 hover:border-[#C5A059]/50"
+                  className="inline-flex items-center justify-between w-full p-3 rounded-xl bg-white/10 hover:bg-[#191426] text-white text-xs font-bold transition-all border border-white/15 hover:border-[#6C3483]/60"
                 >
                   <span className="flex items-center gap-2">
                     <svg className="h-4 w-4 text-[#E1306C]" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -216,9 +218,9 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                       <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
                       <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/>
                     </svg>
-                    Instagram (@closetbytanzz)
+                    Instagram (@365fashionhouse)
                   </span>
-                  <ArrowUpRight className="h-3.5 w-3.5 text-[#C5A059]" />
+                  <ArrowUpRight className="h-3.5 w-3.5 text-[#F39C12]" />
                 </a>
 
                 <a
@@ -229,7 +231,7 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                 >
                   <span className="flex items-center gap-2">
                     <MessageCircle className="h-4 w-4 text-[#25D366]" />
-                    WhatsApp: 01610-663812
+                    WhatsApp: 01714-404008
                   </span>
                   <ArrowUpRight className="h-3.5 w-3.5" />
                 </a>
@@ -243,16 +245,16 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
         <div className="border-t border-white/10 py-6 text-xs text-neutral-400">
           <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-center md:text-left">
-              &copy; {new Date().getFullYear()} Closet by Tanzz (ক্লোজেট বাই তানয). All Rights Reserved. Wear Tanzz, Wear confidence.
+              &copy; {new Date().getFullYear()} 365 Fashion House (৩৬৫ ফ্যাশন হাউস). All Rights Reserved. Pioneer in Authentic Pakistani Attires in Bangladesh.
             </p>
-            <div className="flex items-center gap-4 text-[11px] text-[#C5A059]">
-              <span>✓ Open Parcel Policy</span>
+            <div className="flex items-center gap-4 text-[11px] text-[#F39C12]">
+              <span>✓ 100% Authentic Product</span>
+              <span>•</span>
+              <span>Open Parcel Inspection</span>
               <span>•</span>
               <span>Cash On Delivery</span>
               <span>•</span>
               <span>bKash / Nagad</span>
-              <span>•</span>
-              <span>Natore Tower Uttara Showroom</span>
             </div>
           </div>
         </div>
@@ -267,7 +269,7 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
         aria-label="Chat on WhatsApp"
       >
         <MessageCircle className="h-5 w-5 fill-white text-[#25D366]" />
-        <span className="hidden sm:inline font-sans tracking-wide">WhatsApp Concierge</span>
+        <span className="hidden sm:inline font-sans tracking-wide">WhatsApp Support</span>
       </a>
     </>
   );

@@ -1,9 +1,9 @@
 /**
- * Closet by Tanzz — Application Constants
- * Wear Tanzz, Wear confidence
- * INTERNATIONAL LUXURY COLLECTION • HIGHEST QUALITY WOMEN'S FASHION
- * Flagship Outlet: Natore Tower, 2nd Floor (Lift-2), Shop 12, Rajlokkhi, Sector 3, Uttara, Dhaka
- * Official Facebook: https://www.facebook.com/Closetbytanzz/
+ * 365 Fashion House — Application Constants
+ * Pioneer in Authentic Pakistani Attires in Bangladesh
+ * 100% ORIGINAL PAKISTANI & INDIAN DESIGNER WEAR • LUXURY LAWN, ORGANZA & PRET
+ * Dhaka - 1206, Bangladesh
+ * Official Facebook: https://www.facebook.com/365FashionHouse/
  */
 
 // Delivery Charges (BDT)
@@ -16,7 +16,7 @@ export const DELIVERY_CHARGE = {
 } as const;
 
 // Order Number Prefix
-export const ORDER_PREFIX = "TANZ";
+export const ORDER_PREFIX = "365F";
 
 // Product Status
 export const PRODUCT_STATUS = {
@@ -80,34 +80,36 @@ export const AUTH = {
   PASSWORD_RESET_EXPIRY: 60 * 60,
 } as const;
 
-// Business Info — Closet by Tanzz
+// Business Info — 365 Fashion House
 export const BUSINESS = {
-  NAME: "Closet by Tanzz",
-  NAME_SHORT: "Closet by Tanzz",
-  NAME_BN: "ক্লোজেট বাই তানয",
-  TAGLINE: "Wear Tanzz, Wear confidence",
-  TAGLINE_SUB: "INTERNATIONAL LUXURY COLLECTION • HIGHEST QUALITY WOMEN'S FASHION",
-  TAGLINE_BN: "পরিধান করুন তানয, থাকুন আত্মবিশ্বাসী",
-  PHONE: "01610-663812",
-  PHONE_INTL: "+880 1610-663812",
-  WHATSAPP: "+8801610663812",
-  WHATSAPP_LINK: "https://wa.me/8801610663812",
-  EMAIL: "closetbytanzz01@gmail.com",
-  ADDRESS: "Natore Tower, 2nd Floor (Lift-2), Shop No. 12, Rajlokkhi, Sector 3, Road 2, Uttara, Dhaka - 1230, Bangladesh",
-  ADDRESS_BN: "নাটোরে টাওয়ার, লিফট-২ (৩য় তলা), শপ নং ১২, রাজলক্ষ্মী, সেক্টর ৩, রোড ২, উত্তরা, ঢাকা - ১২৩০",
-  LOCATION_LANDMARK: "Natore Tower, Rajlokkhi, Uttara Sector 3",
-  FACEBOOK: "https://www.facebook.com/Closetbytanzz/",
-  INSTAGRAM: "https://www.instagram.com/closetbytanzz",
-  TIKTOK: "https://www.tiktok.com/@closet.by.tanzz",
+  NAME: "365 Fashion House",
+  NAME_SHORT: "365 Fashion House",
+  NAME_BN: "৩৬৫ ফ্যাশন হাউস",
+  TAGLINE: "Pioneer in Authentic Pakistani Attires in Bangladesh",
+  TAGLINE_SUB: "100% ORIGINAL PAKISTANI & INDIAN DESIGNER WEAR • LUXURY LAWN, ORGANZA & PRET",
+  TAGLINE_BN: "বাংলাদেশে ১০০% অথেনটিক পাকিস্তানি ড্রেসের বিশ্বস্ত ফ্যাশন হাউস",
+  PHONE: "01714-404008",
+  PHONE_INTL: "+880 1714-404008",
+  WHATSAPP: "+8801714404008",
+  WHATSAPP_LINK: "https://wa.me/8801714404008",
+  EMAIL: "khsajib2015@gmail.com",
+  ADDRESS: "Dhaka - 1206, Bangladesh",
+  ADDRESS_BN: "ঢাকা - ১২০৬, বাংলাদেশ",
+  LOCATION_LANDMARK: "Dhaka 1206, Bangladesh",
+  FACEBOOK: "https://www.facebook.com/365FashionHouse/",
+  INSTAGRAM: "https://www.instagram.com/365fashionhouse",
+  TIKTOK: "https://www.tiktok.com/@365fashionhouse",
   YOUTUBE: "",
-  WEBSITE: "https://closetbytanzz.com",
-  ESTABLISHED: "Authentic Luxury Women's Boutique",
-  FOLLOWERS: "51K+",
+  WEBSITE: "https://365fashionhouse.com",
+  ESTABLISHED: "Pioneer in Authentic Pakistani Fashion",
+  FOLLOWERS: "58K+",
   RATING: "5.0 ★",
   RECOMMEND_RATE: "100%",
   OPEN_PARCEL_POLICY: true,
-  STORE_HOURS: "Sat–Thu: 10:30 AM – 9:30 PM | Fri: 3:00 PM – 10:00 PM",
-  STORE_HOURS_BN: "শনিবার–বৃহস্পতিবার: সকাল ১০:৩০ – রাত ৯:৩০ | শুক্রবার: বিকাল ৩:০০ – রাত ১০:০০",
+  STORE_HOURS: "Everyday: 10:00 AM – 10:00 PM | Online Support 24/7",
+  STORE_HOURS_BN: "প্রতিদিন: সকাল ১০:০০ – রাত ১০:০০ | অনলাইন সাপোর্ট ২৪/৭ সক্রিয়",
+  DELIVERY_CHARGE_INSIDE: 80,
+  DELIVERY_CHARGE_OUTSIDE: 150,
 } as const;
 
 // Currency
@@ -122,12 +124,15 @@ export const COUPON_CODES: Record<
   string,
   { type: "percent" | "flat"; value: number; label: string }
 > = {
-  TANZZ10: { type: "percent", value: 10, label: "10% off your order" },
-  TANZZVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
-  EID2026: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
+  PAKISTANI10: { type: "percent", value: 10, label: "10% off your order" },
+  "365VIP": { type: "percent", value: 15, label: "15% VIP exclusive discount" },
+  EID365: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
   WELCOME5: { type: "percent", value: 5, label: "5% Welcome Discount" },
   FLAT500: { type: "flat", value: 500, label: "৳500 flat discount" },
   // Backward compatibility aliases
+  TANZZ10: { type: "percent", value: 10, label: "10% off your order" },
+  TANZZVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
+  EID2026: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
   THREESIS10: { type: "percent", value: 10, label: "10% off your order" },
   THREESISVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
   ENAYA10: { type: "percent", value: 10, label: "10% off your order" },

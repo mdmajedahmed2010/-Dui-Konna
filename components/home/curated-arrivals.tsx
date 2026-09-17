@@ -31,11 +31,11 @@ export interface CuratedProduct {
 
 const CATEGORY_TABS = [
   "All Collections",
-  "Zam Zam Lawn",
-  "Designer Boutique",
+  "Pakistani Lawn",
+  "Organza & Chiffon",
+  "Designer Pret",
   "Festive & Party",
-  "Artisan Block",
-  "Casual Chic",
+  "Silk & Velvet",
 ];
 
 export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
@@ -98,11 +98,11 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
               EID & LUXURY 2026
             </span>
           </div>
-          <h2 className="text-3xl md:text-5xl font-bold text-[#121212] font-heading tracking-tight">
-            Curated Boutique Arrivals
+          <h2 className="text-3xl md:text-5xl font-bold text-[#191426] font-heading tracking-tight">
+            Curated Pakistani Arrivals
           </h2>
           <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
-            Authentic Zam Zam lawn, designer festive 3-piece sets, and artisan block prints curated by Closet by Tanzz.
+            100% authentic Pakistani luxury lawn, designer festive 3-piece sets, and luxury organza pret curated by 365 Fashion House.
           </p>
 
           {/* Filter Pills */}
@@ -113,8 +113,8 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                 onClick={() => setActiveTab(tab)}
                 className={`px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase transition-all duration-300 cursor-pointer ${
                   activeTab === tab
-                    ? "bg-[#121212] text-[#C5A059] shadow-md border border-[#C5A059] scale-105"
-                    : "bg-white text-neutral-700 hover:bg-neutral-100 border border-[#E8DFD5]"
+                    ? "bg-[#6C3483] text-white shadow-md border border-[#D4AC0D] scale-105"
+                    : "bg-white text-neutral-700 hover:bg-purple-50 border border-[#E8DFD5]"
                 }`}
               >
                 {tab}
@@ -168,12 +168,12 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                         {/* Top Badges: Tag & Wishlist */}
                         <div className="absolute top-3 inset-x-3 flex items-center justify-between z-10">
                           {product.tag ? (
-                            <span className="px-2.5 py-1 rounded-full bg-[#121212] text-[#C5A059] text-[9.5px] font-extrabold uppercase tracking-[0.16em] shadow-sm border border-[#C5A059]/40">
+                            <span className="px-2.5 py-1 rounded-full bg-[#191426] text-[#F39C12] text-[9.5px] font-extrabold uppercase tracking-[0.16em] shadow-sm border border-[#D4AC0D]/40">
                               {product.tag}
                             </span>
                           ) : (
-                            <span className="px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#121212] text-[9.5px] font-bold uppercase tracking-wider border border-[#E8DFD5]">
-                              Tanzz Pret
+                            <span className="px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#6C3483] text-[9.5px] font-bold uppercase tracking-wider border border-[#E8DFD5]">
+                              365 Authentic
                             </span>
                           )}
 

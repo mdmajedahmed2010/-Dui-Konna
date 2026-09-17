@@ -26,34 +26,35 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-// Global metadata — Closet by Tanzz
+// Global metadata — 365 Fashion House
 export const metadata: Metadata = {
-  metadataBase: new URL("https://closetbytanzz.com"),
+  metadataBase: new URL("https://365fashionhouse.com"),
   title: {
-    default: "Closet by Tanzz — Wear Tanzz, Wear Confidence | Luxury Women's Fashion",
-    template: "%s — Closet by Tanzz",
+    default: "365 Fashion House — Pioneer in Authentic Pakistani Attires in Bangladesh",
+    template: "%s — 365 Fashion House",
   },
   description:
-    "Wear Tanzz, Wear confidence. Shop exclusive pure cotton Zam Zam lawn 3-piece sets, designer boutique suits, and festive luxury collections. Visit our flagship showroom at Natore Tower, Uttara, Dhaka or order online with Open Parcel Policy.",
+    "365 Fashion House is the pioneer fashion house in Bangladesh for 100% authentic Pakistani & Indian designer attires. Explore luxury lawn 3-piece sets, organza & chiffon suits, ready-to-wear kurtis, and festive Eid collections with Open Parcel Policy.",
   keywords: [
-    "Closet by Tanzz",
-    "Closet by Tanzz Uttara",
-    "Zam Zam Lawn Bangladesh",
+    "365 Fashion House",
+    "365 Fashion House Bangladesh",
     "Pakistani Lawn Dhaka",
-    "Designer Boutique Dhaka",
-    "Three Piece Collection BD",
-    "Women Fashion Uttara",
+    "Authentic Pakistani Suits Bangladesh",
+    "Agha Noor Kurti BD",
+    "Khaadi Luxury Lawn",
+    "Pakistani Three Piece BD",
+    "Women Designer Wear Dhaka",
     "Luxury Pret BD",
   ],
-  authors: [{ name: "Closet by Tanzz" }],
-  creator: "Closet by Tanzz",
+  authors: [{ name: "365 Fashion House" }],
+  creator: "365 Fashion House",
   openGraph: {
     type: "website",
     locale: "en_BD",
-    siteName: "Closet by Tanzz",
-    title: "Closet by Tanzz — Wear Tanzz, Wear Confidence",
+    siteName: "365 Fashion House",
+    title: "365 Fashion House — Pioneer in Authentic Pakistani Attires",
     description:
-      "Exclusive women's luxury fashion, Zam Zam lawn, designer three-piece suits, and festive collections. Flagship outlet at Natore Tower, Uttara. Nationwide Cash on Delivery with Open Parcel Policy.",
+      "Shop 100% original Pakistani & Indian designer lawn, organza, chiffon, and festive couture. Nationwide Cash on Delivery with Open Parcel Inspection.",
     images: ["/banner.png"],
   },
   robots: {
@@ -65,12 +66,12 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Closet by Tanzz",
+    title: "365 Fashion House",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#C5A059",
+  themeColor: "#6C3483",
 };
 
 export default async function RootLayout({
@@ -117,10 +118,10 @@ export default async function RootLayout({
           Skip to main content
         </a>
         <NextTopLoader
-          color="#C5A059"
+          color="#6C3483"
           height={3}
           showSpinner={false}
-          shadow="0 0 12px #C5A059, 0 0 6px #E6C280"
+          shadow="0 0 12px #6C3483, 0 0 6px #F39C12"
         />
         {/* Structured Data — SEO (SOP §৭) */}
         <OrganizationJsonLd />

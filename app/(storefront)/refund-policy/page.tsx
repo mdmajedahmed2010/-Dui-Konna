@@ -3,76 +3,76 @@ import { ShieldCheck, Truck, Eye, Phone, AlertTriangle, CheckCircle2, Clock, Spa
 import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Refund & Return Policy — Closet by Tanzz",
+  title: `Open Parcel & Refund Policy | ${BUSINESS.NAME}`,
   description:
-    "Closet by Tanzz Open Parcel Policy, Return & Exchange guidelines, and Cash on Delivery terms across Bangladesh.",
+    "365 Fashion House Open Parcel Inspection Policy, Return & Exchange guidelines, and Cash on Delivery terms across Bangladesh.",
 };
 
 const policyPoints = [
   {
     icon: Eye,
     title: "Open Parcel Policy — ডেলিভারিতে পণ্য চেক বাধ্যতামূলক",
-    body: "You have to check products in front of the delivery man. ডেলিভারি ম্যানের সামনে প্যাকেট খুলে ফেব্রিক, কালার, সাইজ ও এম্ব্রয়ডারি চেক করে নিন। কোনো অসঙ্গতি দেখলে সাথে সাথে 01610-663812 নম্বরে কল করুন অথবা ডেলিভারি ম্যানকে সরাসরি কথা বলতে বলুন।",
+    body: `You have to check products in front of the delivery man. ডেলিভারি ম্যানের সামনে পার্সেলের সিল খুলে অরিজিনাল পাকিস্তানি ফেব্রিক, এম্ব্রয়ডারি, ওড়না ও কালার ভালো করে দেখে নিশ্চিত হয়ে নিন। কোনো অসঙ্গতি বা অমিল দেখলে সাথে সাথে আমাদের হটলাইন ${BUSINESS.PHONE}-এ কল করুন অথবা ডেলিভারি ম্যানের সাথে সরাসরি কথা বলিয়ে দিন।`,
     type: "warning",
   },
   {
     icon: CheckCircle2,
-    title: "১০০% প্রিমিয়াম ফেব্রিক ও কোয়ালিটি নিশ্চয়তা",
-    body: "Closet by Tanzz-এর প্রতিটি পোশাক সর্বোচ্চ কোয়ালিটি নিয়ন্ত্রণের মধ্য দিয়ে প্রস্তুত ও প্যাকেজিং করা হয়। আসল জাম জাম লন, লাক্সারি বাউটিক থ্রি-পিস ও পার্টি ওয়্যারের নিখুঁত ফিনিশিং নিশ্চিত করা আমাদের প্রধান অঙ্গীকার।",
+    title: "১০০% অথেনটিক পাকিস্তানি ফেব্রিক নিশ্চয়তা",
+    body: `${BUSINESS.NAME}-এর প্রতিটি পোশাক সরাসরি পাকিস্তান থেকে আমদানিকৃত ১০০% আসল ব্র্যান্ডেড (Mahee's, Khaadi, Maria.B, Agha Noor, Sana Safinaz)। কাপড়, রঙের স্থায়িত্ব ও সুতার নিখুঁত কাজের ব্যাপারে কোনো আপোষ নেই।`,
     type: "success",
   },
   {
     icon: AlertTriangle,
-    title: "অর্ডার কনফার্মেশন ও পলিসি",
-    body: "অর্ডার প্লেস করার পর আমাদের কাস্টমার সাপোর্ট টিম থেকে ফোন বা হোয়াটসঅ্যাপের মাধ্যমে ঠিকানা ও ফোন নম্বর ভেরিফাই করা হবে। সঠিক ঠিকানা ও ফোন নম্বর প্রদান নিশ্চিত করুন যাতে নির্বিঘ্নে ডেলিভারি সম্পন্ন হতে পারে।",
+    title: "অর্ডার কনফার্মেশন ও ভেরিফিকেশন",
+    body: "অনলাইনে ওয়েবসাইট বা মেসেঞ্জারে অর্ডার প্লেস করার পর আমাদের কাস্টমার সাপোর্ট টিম থেকে ফোন বা WhatsApp-এর মাধ্যমে ঠিকানা ও মোবাইল নম্বর নিশ্চিত করা হবে। সঠিক ঠিকানা ও ফোন নম্বর প্রদান নিশ্চিত করুন যাতে নির্বিঘ্নে ডেলিভারি সম্পন্ন হতে পারে।",
     type: "warning",
   },
   {
     icon: Truck,
-    title: "Delivery সিস্টেম ও চার্জ",
-    body: "ঢাকা সিটির ভেতরে: ৳80 (ক্যাশ অন ডেলিভারি, ১-২ কার্যদিবস)। ঢাকার বাইরে সারা বাংলাদেশে: ৳150 (Steadfast Courier / রেডএক্স, ২-৪ কার্যদিবস)। রেডি স্টক পণ্যে সম্পূর্ণ ক্যাশ অন ডেলিভারি প্রযোজ্য।",
+    title: "সারাদেশে ডেলিভারি চার্জ ও সময়সীমা",
+    body: `ঢাকা সিটির ভেতরে ডেলিভারি চার্জ মাত্র ৳${BUSINESS.DELIVERY_CHARGE_INSIDE} (হোম ডেলিভারি, ১-২ কার্যদিবস)। ঢাকা সিটির বাইরে সারা বাংলাদেশে ৳${BUSINESS.DELIVERY_CHARGE_OUTSIDE} (Steadfast / Pathao Courier, ২-৪ কার্যদিবস)। রেডি স্টক পণ্যে সম্পূর্ণ ক্যাশ অন ডেলিভারি (COD) সুবিধা রয়েছে।`,
     type: "info",
   },
   {
     icon: ShieldCheck,
     title: "রিটার্ন ও এক্সচেঞ্জ নীতিমালা",
-    body: "যৌক্তিক কারণ (ভুল সাইজ বা মেনুফ্যাকচারিং ডিফেক্ট) থাকলে ডেলিভারি গ্রহণের সময় ডেলিভারিম্যানের কাছে সরাসরি পণ্য ফেরত দিতে পারবেন (কেবল ডেলিভারি চার্জ প্রযোজ্য হবে)। ডেলিভারি গ্রহণের পর কোনো সমস্যা পরিলক্ষিত হলে সর্বোচ্চ ৩ দিনের মধ্যে আমাদের কাস্টমার সার্ভিসে জানান।",
+    body: "ডেলিভারি ম্যানের সামনে চেক করার পর যদি কোনো ম্যানুফ্যাকচারিং ডিফেক্ট বা রঙের বড় অমিল থাকে, তবে সাথে সাথে পার্সেল রিটার্ন করতে পারবেন (কেবল প্রযোজ্য ডেলিভারি চার্জ পরিশোধ করতে হবে)। ডেলিভারি গ্রহণের পর কোনো অপ্রত্যাশিত ত্রুটি চোখে পড়লে সর্বোচ্চ ৪৮ ঘণ্টার মধ্যে আনবক্সিং প্রমাণ সহ আমাদের ফেসবুক ইনবক্স বা WhatsApp-এ যোগাযোগ করুন।",
     type: "info",
   },
 ];
 
 export default function RefundPolicyPage() {
   return (
-    <main className="min-h-screen bg-[#FAF8F5]">
+    <main className="min-h-screen bg-[#FAF7F2]">
       {/* Page Header */}
-      <section className="bg-[#121212] py-16 md:py-24 px-6 text-center relative overflow-hidden">
-        <div className="absolute inset-0 opacity-15 pointer-events-none">
-          <div className="absolute top-0 left-0 w-80 h-80 rounded-full bg-[#C5A059] -translate-x-1/2 -translate-y-1/2 blur-2xl" />
-          <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-[#C5A059] translate-x-1/2 translate-y-1/2 blur-2xl" />
+      <section className="bg-[#191426] py-16 md:py-24 px-6 text-center relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20 pointer-events-none">
+          <div className="absolute top-0 left-0 w-80 h-80 rounded-full bg-[#6C3483] -translate-x-1/2 -translate-y-1/2 blur-2xl" />
+          <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-[#D4AC0D] translate-x-1/2 translate-y-1/2 blur-2xl" />
         </div>
         <div className="relative z-10 max-w-2xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#C5A059]/40 text-[#C5A059] text-[10px] uppercase tracking-[0.28em] font-bold">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AC0D]/40 text-[#F39C12] text-[10px] uppercase tracking-[0.28em] font-bold">
             <Sparkles className="h-3.5 w-3.5" />
             <span>TRANSPARENCY & TRUST</span>
           </div>
           <h1 className="text-3xl md:text-5xl font-bold text-white tracking-tight font-heading">
-            Refund & Open Parcel Policy
+            Open Parcel & Refund Policy
           </h1>
           <p className="text-[#E8DFD5] text-sm md:text-base leading-relaxed">
-            Closet by Tanzz-এ অর্ডার করার পূর্বে আমাদের ওপেন পার্সেল ও ডেলিভারি নীতিমালা জেনে নিন।
+            {BUSINESS.NAME}-এ অর্ডার করার পূর্বে আমাদের ওপেন পার্সেল ও ডেলিভারি নীতিমালা সম্পর্কে জেনে নিন।
           </p>
         </div>
       </section>
 
       {/* Main Alert */}
-      <section className="bg-[#121212] py-4 px-6 border-t border-[#C5A059]/30">
+      <section className="bg-[#191426] py-4 px-6 border-t border-[#D4AC0D]/30">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center gap-3 justify-center flex-wrap text-center">
-            <CheckCircle2 className="h-5 w-5 text-[#C5A059] shrink-0" />
-            <p className="text-[#FAF8F5] text-sm font-bold tracking-wide">
-              ১০০% সততা ও ওপেন পার্সেল চেকিং — পার্সেল দেখে বুঝে নিন আপনার পছন্দের পোশাক
+            <CheckCircle2 className="h-5 w-5 text-[#F39C12] shrink-0" />
+            <p className="text-[#FAF7F2] text-sm font-bold tracking-wide">
+              ১০০% সততা ও ওপেন পার্সেল চেকিং — পার্সেল দেখে বুঝে নিন আপনার আসল পাকিস্তানি পোশাক
             </p>
-            <CheckCircle2 className="h-5 w-5 text-[#C5A059] shrink-0" />
+            <CheckCircle2 className="h-5 w-5 text-[#F39C12] shrink-0" />
           </div>
         </div>
       </section>
@@ -87,10 +87,10 @@ export default function RefundPolicyPage() {
                 key={point.title}
                 className={`flex items-start gap-5 p-6 rounded-2xl border shadow-xs ${
                   point.type === "warning"
-                    ? "bg-amber-50/70 border-amber-200 border-l-4 border-l-amber-500"
+                    ? "bg-amber-50/80 border-amber-200 border-l-4 border-l-amber-500"
                     : point.type === "success"
-                    ? "bg-emerald-50/70 border-emerald-200 border-l-4 border-l-emerald-500"
-                    : "bg-white border-[#E8DFD5] border-l-4 border-l-[#121212]"
+                    ? "bg-purple-50/80 border-purple-200 border-l-4 border-l-[#6C3483]"
+                    : "bg-white border-[#E8DFD5] border-l-4 border-l-[#191426]"
                 }`}
               >
                 <div
@@ -98,8 +98,8 @@ export default function RefundPolicyPage() {
                     point.type === "warning"
                       ? "bg-amber-100 text-amber-800"
                       : point.type === "success"
-                      ? "bg-emerald-100 text-emerald-800"
-                      : "bg-[#FAF8F5] text-[#121212] border border-[#C5A059]/30"
+                      ? "bg-purple-100 text-[#6C3483]"
+                      : "bg-[#FAF7F2] text-[#191426] border border-[#D4AC0D]/40"
                   }`}
                 >
                   <point.icon className="h-5 w-5" />
@@ -114,8 +114,8 @@ export default function RefundPolicyPage() {
                         point.type === "warning"
                           ? "text-amber-900"
                           : point.type === "success"
-                          ? "text-emerald-900"
-                          : "text-[#121212]"
+                          ? "text-[#6C3483]"
+                          : "text-[#191426]"
                       }`}
                     >
                       {point.title}
@@ -129,11 +129,11 @@ export default function RefundPolicyPage() {
 
           {/* Contact for Help */}
           <div className="text-center space-y-4 bg-white rounded-3xl p-8 border border-[#E8DFD5] shadow-sm">
-            <h3 className="text-lg font-bold text-[#121212] font-heading">
+            <h3 className="text-lg font-bold text-[#191426] font-heading">
               কোনো প্রশ্ন বা ডেলিভারি সহায়তা প্রয়োজন?
             </h3>
             <p className="text-sm text-neutral-600 max-w-md mx-auto">
-              আমাদের কাস্টমার কেয়ার টিম সরাসরি ফোন বা হোয়াটসঅ্যাপে আপনাকে সাহায্য করতে প্রস্তুত।
+              আমাদের ডেডিকেটেড কাস্টমার কেয়ার টিম সরাসরি ফোন বা হোয়াটসঅ্যাপে আপনাকে তাৎক্ষণিক সাহায্য করতে প্রস্তুত।
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3 pt-2">
               <a
@@ -146,7 +146,7 @@ export default function RefundPolicyPage() {
               </a>
               <a
                 href={`tel:${BUSINESS.PHONE}`}
-                className="inline-flex items-center justify-center gap-2 h-12 px-7 border-2 border-[#121212] text-[#121212] text-xs font-bold uppercase tracking-[0.14em] rounded-full hover:bg-[#121212] hover:text-[#C5A059] transition-all"
+                className="inline-flex items-center justify-center gap-2 h-12 px-7 border-2 border-[#6C3483] text-[#6C3483] text-xs font-bold uppercase tracking-[0.14em] rounded-full hover:bg-[#6C3483] hover:text-white transition-all"
               >
                 <Phone className="h-4 w-4" />
                 <span>Call Hotline</span>

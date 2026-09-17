@@ -582,10 +582,10 @@ export function ProductInfo({
         >
           <div className="space-y-2 text-xs md:text-sm text-muted-foreground leading-relaxed">
             <p>• <strong>Delivery Charges:</strong> Inside Dhaka: ৳{String(settings.shipping_dhaka ?? 80)} | Outside Dhaka: ৳{String(settings.shipping_outside ?? 150)}</p>
-            <p>• <strong>Open Parcel Policy:</strong> ডেলিভারি ম্যানের সামনে পার্সেল খুলে ফেব্রিক, কালার, সাইজ ও এম্ব্রয়ডারি চেক করে তারপর মূল্য পরিশোধ করুন।</p>
-            <p>• <strong>Showroom Outlet:</strong> Natore Tower, 2nd Floor (Lift-2), Shop 12, Rajlokkhi, Sector 3, Uttara, Dhaka — সরাসরি শোরুমে এসে দেখার সুবিধা।</p>
-            <p>• <strong>Guarantee:</strong> ১০০% প্রিমিয়াম ফেব্রিক ও অরিজিনাল কালার গ্যারান্টি।</p>
-            <p>• <strong>Hotline & WhatsApp:</strong> 01610-663812</p>
+            <p>• <strong>Open Parcel Policy:</strong> ডেলিভারি ম্যানের সামনে পার্সেল খুলে অরিজিনাল পাকিস্তানি ফেব্রিক, কালার, সাইজ ও এম্ব্রয়ডারি চেক করে তারপর মূল্য পরিশোধ করুন।</p>
+            <p>• <strong>Authenticity Guarantee:</strong> ১০০% অথেনটিক পাকিস্তানি ইমপোর্ট ও প্রিমিয়াম ফিনিশিং গ্যারান্টি।</p>
+            <p>• <strong>Operations & Distribution Hub:</strong> Dhaka - 1206, Bangladesh (Nationwide Steadfast / Pathao Courier Delivery)।</p>
+            <p>• <strong>Hotline & WhatsApp:</strong> 01714-404008</p>
           </div>
         </AccordionItem>
       </div>

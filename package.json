@@ -1,5 +1,5 @@
 {
-  "name": "closet-by-tanzz-storefront",
+  "name": "365-fashion-house-storefront",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -83,5 +83,5 @@
     "postcss": "^8.5.16",
     "@hono/node-server": "^1.19.14"
   },
-  "description": "Closet by Tanzz — Wear Tanzz, Wear confidence | International Luxury Collection"
+  "description": "365 Fashion House — Pioneer in Authentic Pakistani & Indian Attires in Bangladesh"
 }

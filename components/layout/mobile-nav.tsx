@@ -1,10 +1,9 @@
 "use client";
 
 /**
- * Closet by Tanzz — Mobile Navigation Overlay
- * Wear Tanzz, Wear confidence
- * INTERNATIONAL LUXURY COLLECTION • HIGHEST QUALITY WOMEN'S FASHION
- * Natore Tower, Sector 3, Uttara, Dhaka — https://www.facebook.com/Closetbytanzz/
+ * 365 Fashion House — Mobile Navigation Overlay
+ * Pioneer in Authentic Pakistani Attires in Bangladesh
+ * Dhaka - 1206, Bangladesh — https://www.facebook.com/365FashionHouse/
  */
 
 import { useState, useEffect } from "react";
@@ -44,11 +43,11 @@ export function MobileNav({ links }: MobileNavProps) {
 
     // Subcategories structured like desktop mega-menu
     const categoriesWithSubs: Record<string, string[]> = {
-        "Zam Zam Lawn": ["Shop All Zam Zam Lawn", "Lime Yellow & Emerald Floral", "Olive Pistachio & Teal Floral", "Ruby Crimson Vintage Rose"],
-        "Designer Boutique": ["Shop All Designer Boutique", "Royal Iris Purple Botanical Suit", "Ochre Rust & Charcoal Paisley", "Parrot Green & Royal Blue Geometric"],
-        "Festive & Party": ["Shop All Festive & Party Wear", "Crimson Maroon Kashmiri Jaal 3pc", "Ruby Crimson Vintage Rose Set", "Midnight Black Festive Block Suit"],
-        "Casual Chic": ["Shop All Casual Chic", "Cerulean Blue & Sunflower 3pc", "Neon Lime & Cyan Chevron Geometric", "Pure Cotton Flared Everyday Suits"],
-        "Artisan Block": ["Shop All Artisan Block", "Midnight Black Block Print", "Monochrome Contrast Cotton Suits", "Vintage Floral Editions"]
+        "Pakistani Lawn": ["Shop All Pakistani Lawn", "Mahee's Luxury Lawn Lilac", "Khaadi Signature Mint Oasis", "Maria.B Embroidered Lawn"],
+        "Organza & Chiffon": ["Shop All Organza & Chiffon", "Beechtree Rose Quartz 3-Piece", "Pastel Threadwork Ensembles", "Semi-Formal Luxury Pret"],
+        "Designer Pret": ["Shop All Designer Pret", "Agha Noor Pistachio Kurti", "Asim Jofa Festive Pret", "Ready-to-Wear Bell Sleeve Kurtis"],
+        "Festive & Party": ["Shop All Festive & Party Wear", "Chevron Crimson Velvet Suit", "Emerald Flared Anarkali Suit", "Wedding & Dawat Couture"],
+        "Silk & Velvet": ["Shop All Silk & Velvet", "Gul Ahmed Royal Marigold", "Heavy Zari Shawl Suits", "Winter Formal Couture"]
     };
 
     return (
@@ -59,7 +58,7 @@ export function MobileNav({ links }: MobileNavProps) {
                 className="lg:hidden flex items-center justify-center size-10 text-foreground/80 hover:bg-neutral-100 rounded-full transition-all duration-200"
                 aria-label="Open navigation menu"
             >
-                <Menu className="h-6 w-6 text-[#121212]" strokeWidth={1.75} />
+                <Menu className="h-6 w-6 text-[#191426]" strokeWidth={1.75} />
             </button>
 
             {/* Premium Full-Screen Navigation Panel Overlay */}
@@ -69,18 +68,18 @@ export function MobileNav({ links }: MobileNavProps) {
                     <div className="flex h-16 items-center justify-between px-6 border-b border-[#E8DFD3] bg-white">
                         <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-2.5">
                             <Image
-                                src="/logo.jpg"
-                                alt="Closet by Tanzz"
+                                src="/365-assets/logo.jpg"
+                                alt="365 Fashion House"
                                 width={36}
                                 height={36}
-                                className="h-9 w-9 object-cover rounded-full ring-2 ring-[#C5A059]/60"
+                                className="h-9 w-9 object-cover rounded-full ring-2 ring-[#6C3483]/60"
                             />
                             <div className="flex flex-col">
-                                <span className="font-heading text-sm font-extrabold tracking-tight text-[#121212] uppercase leading-none">
-                                    Closet by Tanzz
+                                <span className="font-heading text-sm font-extrabold tracking-tight text-[#191426] uppercase leading-none">
+                                    365 Fashion House
                                 </span>
-                                <span className="text-[9px] font-semibold tracking-widest text-[#C5A059] uppercase">
-                                    Wear Tanzz, Wear confidence
+                                <span className="text-[8.5px] font-semibold tracking-widest text-[#D4AC0D] uppercase mt-0.5">
+                                    Authentic Pakistani Attires
                                 </span>
                             </div>
                         </Link>
@@ -90,7 +89,7 @@ export function MobileNav({ links }: MobileNavProps) {
                             className="flex items-center justify-center size-10 text-foreground hover:bg-neutral-100 rounded-full transition-all duration-200"
                             aria-label="Close navigation menu"
                         >
-                            <X className="h-6 w-6 text-[#121212]" strokeWidth={1.5} />
+                            <X className="h-6 w-6 text-[#191426]" strokeWidth={1.5} />
                         </button>
                     </div>
 
@@ -107,12 +106,12 @@ export function MobileNav({ links }: MobileNavProps) {
                                             <div>
                                                 <button
                                                     onClick={() => toggleAccordion(link.label)}
-                                                    className="w-full min-h-[56px] py-4 flex justify-between items-center text-[15px] font-semibold tracking-wide text-[#1A1A1A] hover:text-[#C5A059] transition-colors"
+                                                    className="w-full min-h-[56px] py-4 flex justify-between items-center text-[15px] font-semibold tracking-wide text-[#191426] hover:text-[#6C3483] transition-colors"
                                                     aria-expanded={isAccordionActive}
                                                 >
                                                     {link.label}
                                                     {isAccordionActive ? (
-                                                        <ChevronUp className="h-4 w-4 text-[#C5A059]" strokeWidth={2} />
+                                                        <ChevronUp className="h-4 w-4 text-[#6C3483]" strokeWidth={2} />
                                                     ) : (
                                                         <ChevronDown className="h-4 w-4 text-muted-foreground" strokeWidth={1.5} />
                                                     )}
@@ -129,9 +128,9 @@ export function MobileNav({ links }: MobileNavProps) {
                                                                     key={subLabel}
                                                                     href={`${link.href}${urlParam}`}
                                                                     onClick={() => setOpen(false)}
-                                                                    className="text-[14px] text-muted-foreground hover:text-[#C5A059] transition-colors font-medium py-1"
+                                                                    className="text-[13.5px] text-neutral-600 hover:text-[#6C3483] transition-colors py-1 flex items-center justify-between"
                                                                 >
-                                                                    {subLabel}
+                                                                    <span>{subLabel}</span>
                                                                 </Link>
                                                             );
                                                         })}
@@ -142,7 +141,7 @@ export function MobileNav({ links }: MobileNavProps) {
                                             <Link
                                                 href={link.href}
                                                 onClick={() => setOpen(false)}
-                                                className="w-full min-h-[56px] py-4 flex items-center text-[15px] font-semibold tracking-wide text-[#1A1A1A] hover:text-[#C5A059] transition-colors"
+                                                className="block min-h-[56px] py-4 text-[15px] font-semibold tracking-wide text-[#191426] hover:text-[#6C3483] transition-colors"
                                             >
                                                 {link.label}
                                             </Link>
@@ -152,26 +151,33 @@ export function MobileNav({ links }: MobileNavProps) {
                             })}
                         </div>
 
-                        {/* Extra brand & utility links */}
-                        <div className="flex flex-col gap-4 mt-8 pr-2">
+                        {/* Secondary utility links */}
+                        <div className="mt-8 pt-6 border-t border-[#E8DFD3] flex flex-col gap-4">
                             <Link
                                 href="/track-order"
                                 onClick={() => setOpen(false)}
-                                className="text-sm font-medium text-muted-foreground hover:text-[#C5A059] transition-colors"
+                                className="text-sm font-medium text-muted-foreground hover:text-[#6C3483] transition-colors"
                             >
                                 Track My Order
                             </Link>
                             <Link
-                                href="/contact"
+                                href="/delivery-info"
                                 onClick={() => setOpen(false)}
-                                className="text-sm font-medium text-muted-foreground hover:text-[#C5A059] transition-colors"
+                                className="text-sm font-medium text-muted-foreground hover:text-[#6C3483] transition-colors"
                             >
-                                Visit Uttara Flagship Outlet
+                                Delivery & Shipping Information
+                            </Link>
+                            <Link
+                                href="/faq"
+                                onClick={() => setOpen(false)}
+                                className="text-sm font-medium text-muted-foreground hover:text-[#6C3483] transition-colors"
+                            >
+                                Frequently Asked Questions (FAQ)
                             </Link>
                             <Link
                                 href="/refund-policy"
                                 onClick={() => setOpen(false)}
-                                className="text-sm font-medium text-muted-foreground hover:text-[#C5A059] transition-colors"
+                                className="text-sm font-medium text-muted-foreground hover:text-[#6C3483] transition-colors"
                             >
                                 Open Parcel & Refund Policy
                             </Link>
@@ -193,15 +199,15 @@ export function MobileNav({ links }: MobileNavProps) {
                             <Link
                                 href="/account"
                                 onClick={() => setOpen(false)}
-                                className="flex items-center justify-center gap-2 h-12 bg-[#FAF8F5] border border-[#E8DFD3] text-xs font-bold text-[#121212] hover:bg-neutral-100 rounded-xl transition-colors shadow-xs"
+                                className="flex items-center justify-center gap-2 h-12 bg-[#FAF8F5] border border-[#E8DFD3] text-xs font-bold text-[#191426] hover:bg-neutral-100 rounded-xl transition-colors shadow-xs"
                             >
-                                <User className="h-4 w-4 text-[#C5A059]" strokeWidth={1.5} />
+                                <User className="h-4 w-4 text-[#6C3483]" strokeWidth={1.5} />
                                 My Account
                             </Link>
                             <Link
                                 href="/cart"
                                 onClick={() => setOpen(false)}
-                                className="flex items-center justify-center gap-2 h-12 bg-[#121212] text-[#C5A059] text-xs font-bold hover:bg-[#2A2418] rounded-xl transition-colors shadow-xs"
+                                className="flex items-center justify-center gap-2 h-12 bg-[#191426] text-[#F39C12] text-xs font-bold hover:bg-[#2A2038] rounded-xl transition-colors shadow-xs"
                             >
                                 <ShoppingBag className="h-4 w-4" strokeWidth={1.5} />
                                 Bag ({cartCount})

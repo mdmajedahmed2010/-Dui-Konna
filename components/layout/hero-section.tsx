@@ -13,25 +13,25 @@ import { ASSETS } from "@/lib/demo-data";
 
 const slides = [
   {
-    image: "/banner.png",
-    title: "INTERNATIONAL LUXURY COLLECTION",
-    subtitle: "Highest Quality Women's Fashion — 100% Original Zam Zam Lawn & Festive 3-Piece Sets with Open Parcel Verification.",
-    link: "/collections/zam-zam-lawn",
-    overline: "✦ Closet by Tanzz | Natore Tower, Uttara ✦",
+    image: "/365-assets/banner.png",
+    title: "AUTHENTIC PAKISTANI ATTIRES",
+    subtitle: "Pioneer in Authentic Pakistani Attires in Bangladesh — 100% Original Swiss Lawn, Party Suits & Organza Pret with Open Parcel Verification.",
+    link: "/collections/pakistani-lawn",
+    overline: "✦ 365 Fashion House | Dhaka - 1206 ✦",
   },
   {
-    image: ASSETS.img1,
-    title: "VINTAGE ROSE BOTANICAL LAWN",
-    subtitle: "Artisan block prints, fine cotton craftsmanship, and elegant drapes designed for modern confidence.",
-    link: "/collections/artisan-block",
-    overline: "✦ Wear Tanzz, Wear confidence ✦",
+    image: "/365-assets/lilac-lawn-suit.jpg",
+    title: "MAHEE'S LUXURY SWISS LAWN",
+    subtitle: "Delicate cutwork dupattas, intricate lilac embroidery, and feather-light pure cotton comfort.",
+    link: "/collections/pakistani-lawn",
+    overline: "✦ 100% Genuine Pakistani Import ✦",
   },
   {
-    image: ASSETS.img3,
-    title: "REGAL NAVY & GOLD EMBROIDERED",
-    subtitle: "Ornate festive silhouettes, intricate needlework, and opulent evening ensembles for every celebration.",
+    image: "/365-assets/royal-maroon-velvet.jpg",
+    title: "ROYAL VELVET & FESTIVE COUTURE",
+    subtitle: "Opulent micro-velvet, pure chiffon zari needlework, and imperial crimson evening silhouettes.",
     link: "/collections/festive-party",
-    overline: "✦ Natore Tower (2nd Fl), Uttara Showroom ✦",
+    overline: "✦ 58K+ Facebook Family Trust ✦",
   },
 ];
 

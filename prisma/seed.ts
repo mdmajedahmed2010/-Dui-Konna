@@ -3,7 +3,7 @@ import { prisma } from '../lib/db';
 import { DEMO_CATEGORIES, DEMO_PRODUCTS } from '../lib/demo-data';
 
 async function main() {
-  console.log("Start seeding for Closet by Tanzz...");
+  console.log("Start seeding for 365 Fashion House...");
 
   // Clean up existing data
   await prisma.productVariant.deleteMany({});
@@ -40,17 +40,17 @@ async function main() {
       data: {
         name: pData.name,
         slug: pData.slug,
-        description: `${pData.description} Curated by Closet by Tanzz — Wear Tanzz, Wear confidence. Flagship outlet at Natore Tower, Uttara, Dhaka. Nationwide cash on delivery with open parcel inspection.`,
+        description: `${pData.description} Curated by 365 Fashion House — Pioneer in Authentic Pakistani Attires in Bangladesh. Head office at Dhaka - 1206. Nationwide cash on delivery with open parcel inspection.`,
         basePrice: pData.price,
         categoryId: categoryId,
         status: ProductStatus.ACTIVE,
         isFeatured: pData.isFeatured ?? true,
-        seoTitle: `${pData.name} | Closet by Tanzz`,
-        seoDesc: `Buy ${pData.name} online from Closet by Tanzz. Wear Tanzz, Wear confidence. 100% genuine luxury cotton lawn with nationwide COD & open parcel inspection.`,
-        ogImage: pData.images[0] || '/banner.png',
+        seoTitle: `${pData.name} | 365 Fashion House`,
+        seoDesc: `Buy ${pData.name} online from 365 Fashion House. 100% authentic Pakistani designer attires with nationwide COD & open parcel inspection.`,
+        ogImage: pData.images[0] || '/365-assets/banner.png',
         variants: {
           create: (pData.variants || []).map((v: any, idx: number) => ({
-            sku: `TANZ-${String(i + 1).padStart(3, '0')}-${idx + 1}`,
+            sku: `365F-${String(i + 1).padStart(3, '0')}-${idx + 1}`,
             size: v.size || 'Unstitched (3-Piece)',
             color: v.color || 'As Pictured',
             price: v.price || pData.price,
@@ -63,7 +63,7 @@ async function main() {
     console.log(`Created product: ${product.name}`);
   }
 
-  console.log("✅ Closet by Tanzz Database Seeding Completed Successfully!");
+  console.log("✅ 365 Fashion House Database Seeding Completed Successfully!");
 }
 
 main()

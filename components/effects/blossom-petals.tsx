@@ -40,12 +40,12 @@ export function BlossomPetalsOverlay() {
 
     window.addEventListener("resize", handleResize);
 
-    // Closet by Tanzz luxury gold shimmer palette: warm gold dust and luminous champagne
+    // 365 Fashion House luxury purple & amber bokeh shimmer palette
     const petalColors = [
-      "rgba(197, 160, 89, 0.45)",  // Tanzz Imperial gold shimmer
-      "rgba(230, 194, 128, 0.40)", // Bright champagne gold
-      "rgba(255, 245, 220, 0.50)", // Luminous warm ivory
-      "rgba(158, 125, 59, 0.35)",  // Deep bronze metallic
+      "rgba(108, 52, 131, 0.35)",  // 365 Royal violet butterfly
+      "rgba(243, 156, 18, 0.45)",  // Luminous radiant amber
+      "rgba(212, 172, 13, 0.40)",  // Warm imperial gold
+      "rgba(232, 218, 239, 0.45)", // Soft lilac mist
     ];
 
     const PETAL_COUNT = Math.min(22, Math.floor(width / 60));

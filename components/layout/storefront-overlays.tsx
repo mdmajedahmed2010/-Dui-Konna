@@ -42,7 +42,7 @@ export function StorefrontOverlays() {
       <ScrollReveal />
       <ScrollProgress />
       <BackToTop />
-      <FloatingChat phoneNumber="8801610663812" messengerUrl="https://m.me/Closetbytanzz" />
+      <FloatingChat phoneNumber="8801714404008" messengerUrl="https://m.me/365FashionHouse" />
       <PageTracker />
     </>
   );

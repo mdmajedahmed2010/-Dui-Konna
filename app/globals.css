@@ -5,27 +5,35 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Closet by Tanzz — Luxury Global Styles
- * Wear Tanzz, Wear confidence
- * INTERNATIONAL LUXURY COLLECTION • HIGHEST QUALITY WOMEN'S FASHION
+ * 365 Fashion House — Luxury Global Styles
+ * Pioneer in Authentic Pakistani & Indian Attires in Bangladesh
+ * Official Facebook: https://www.facebook.com/365FashionHouse/
  */
 
 /* ═══════════════════════════════════════════
-   THEME — Closet by Tanzz Color System
+   THEME — 365 Fashion House Color System
    ═══════════════════════════════════════════ */
 @theme inline {
-  --color-primary: #121212;
+  --color-primary: #191426;
   --color-primary-foreground: #ffffff;
   --color-secondary: #FAF8F5;
   --color-secondary-foreground: #1A1A1A;
-  --color-accent: #C5A059;
-  --color-accent-foreground: #0B0B0B;
-  --color-accent-light: #FDF9F2;
-  --color-tanzz-onyx: #121212;
-  --color-tanzz-gold: #C5A059;
-  --color-tanzz-gold-bright: #E6C280;
+  --color-accent: #6C3483;
+  --color-accent-foreground: #ffffff;
+  --color-accent-gold: #D4AC0D;
+  --color-accent-amber: #F39C12;
+  --color-accent-light: #F5EEF8;
+  --color-fashion-purple: #6C3483;
+  --color-fashion-violet: #8E44AD;
+  --color-fashion-gold: #D4AC0D;
+  --color-fashion-amber: #F39C12;
+  --color-fashion-cream: #FAF8F5;
+  --color-fashion-dark: #120E1C;
+  --color-tanzz-onyx: #191426;
+  --color-tanzz-gold: #D4AC0D;
+  --color-tanzz-gold-bright: #F5B041;
   --color-tanzz-cream: #FAF8F5;
-  --color-tanzz-dark: #0B0B0B;
+  --color-tanzz-dark: #120E1C;
   --color-threesis-plum: #121212;
   --color-threesis-rose: #C5A059;
   --color-threesis-dark: #121212;

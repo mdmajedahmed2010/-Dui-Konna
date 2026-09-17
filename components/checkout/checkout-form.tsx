@@ -313,49 +313,49 @@ export function CheckoutForm({ settings = {} }: { settings?: Record<string, any>
           <CheckCircle2 className="h-8 w-8" strokeWidth={1.5} />
         </div>
         <div className="space-y-3">
-          <h2 className="text-2xl md:text-3xl font-heading font-bold text-[#121212]">
+          <h2 className="text-2xl md:text-3xl font-heading font-bold text-[#191426]">
             Order Confirmed!
           </h2>
-          <p className="text-xs text-[#121212] uppercase tracking-widest max-w-md mx-auto leading-relaxed font-bold">
-            Thank you for choosing Closet by Tanzz. We will call you from 01610-663812 to confirm your order and delivery.
+          <p className="text-xs text-[#191426] uppercase tracking-widest max-w-md mx-auto leading-relaxed font-bold">
+            Thank you for choosing 365 Fashion House. We will call you from 01714-404008 to confirm your order and delivery.
           </p>
         </div>
 
-        <div className="p-5 bg-white border border-[#e8e0d0] rounded-lg max-w-md mx-auto space-y-4 shadow-sm">
+        <div className="p-5 bg-white border border-[#E8DFD5] rounded-lg max-w-md mx-auto space-y-4 shadow-sm">
           <div className="flex justify-between items-center text-xs">
-            <span className="text-[#8b1a2a] uppercase tracking-wider font-bold">
+            <span className="text-[#6C3483] uppercase tracking-wider font-bold">
               Order Identifier:
             </span>
-            <span className="font-mono font-bold text-[#1a0008] bg-[#f7eded] border border-[#e8e0d0] px-3 py-1 shadow-sm rounded-sm">
+            <span className="font-mono font-bold text-[#191426] bg-purple-50 border border-[#6C3483]/30 px-3 py-1 shadow-sm rounded-sm">
               {placedOrderNumber}
             </span>
           </div>
           <div className="flex justify-between items-center text-xs">
-            <span className="text-[#8b1a2a] uppercase tracking-wider font-bold">
+            <span className="text-[#6C3483] uppercase tracking-wider font-bold">
               Payment Option:
             </span>
-            <span className="font-bold text-[#1a0008] uppercase tracking-wider">
-              {paymentMethod === "COD" ? "Cash on Delivery" : paymentMethod}
+            <span className="font-bold text-[#191426] uppercase tracking-wider">
+              {paymentMethod === "COD" ? "Cash on Delivery (Open Parcel)" : paymentMethod}
             </span>
           </div>
           <div className="flex justify-between items-center text-xs">
-            <span className="text-[#8b1a2a] uppercase tracking-wider font-bold">
+            <span className="text-[#6C3483] uppercase tracking-wider font-bold">
               Total Amount:
             </span>
-            <span className="font-bold text-[#8B263E] text-sm">{formatPrice(confirmedTotal)}</span>
+            <span className="font-bold text-[#6C3483] text-sm">{formatPrice(confirmedTotal)}</span>
           </div>
         </div>
 
         <div className="pt-4 max-w-md mx-auto space-y-3">
           <Link
             href="/track-order"
-            className="flex items-center justify-center w-full h-12 bg-[#8B263E] text-[#d4af37] text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#2E062E] transition-all duration-300 rounded-sm active:scale-95 shadow-md"
+            className="flex items-center justify-center w-full h-12 bg-[#6C3483] text-[#F39C12] text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#5B2C6F] transition-all duration-300 rounded-sm active:scale-95 shadow-md"
           >
             Track Order Status
           </Link>
           <Link
             href="/"
-            className="flex items-center justify-center w-full h-11 border border-[#8B263E]/30 bg-white text-[#8B263E] hover:bg-[#8B263E]/5 text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 rounded-sm"
+            className="flex items-center justify-center w-full h-11 border border-[#6C3483]/30 bg-white text-[#6C3483] hover:bg-purple-50 text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 rounded-sm"
           >
             Continue Shopping
           </Link>
