@@ -1,9 +1,8 @@
 /**
- * Ash and Aspen (ash and aspen) — Application Constants
- * Luxury Pakistani Designer Attires & Ready-to-Wear Pret
- * 100% ORIGINAL PAKISTANI & INDIAN DESIGNER WEAR • LUXURY LAWN, ORGANZA & PRET
- * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230, Bangladesh
- * Official Facebook: https://www.facebook.com/ashandaspenclothing/
+ * Tazeen's (tazeensbd) — Application Constants
+ * Smart & Elegant Heritage Sarees & Designer Boutique Wear
+ * Pink City Shopping Complex, Gulshan-2 & Sector 11, Uttara, Dhaka, Bangladesh
+ * Official Facebook: https://www.facebook.com/tazeensbd/
  */
 
 // Delivery Charges (BDT)
@@ -16,7 +15,7 @@ export const DELIVERY_CHARGE = {
 } as const;
 
 // Order Number Prefix
-export const ORDER_PREFIX = "AA";
+export const ORDER_PREFIX = "TZ";
 
 // Product Status
 export const PRODUCT_STATUS = {
@@ -80,34 +79,39 @@ export const AUTH = {
   PASSWORD_RESET_EXPIRY: 60 * 60,
 } as const;
 
-// Business Info — Ash and Aspen
+// Business Info — Tazeen's
 export const BUSINESS = {
-  NAME: "Ash and Aspen",
-  NAME_SHORT: "Ash and Aspen",
-  NAME_BN: "অ্যাশ অ্যান্ড অ্যাসপেন",
-  TAGLINE: "Luxury Pakistani Designer Attires & Ready-to-Wear Pret",
-  TAGLINE_SUB: "100% ORIGINAL PAKISTANI & INDIAN DESIGNER WEAR • UTTARA SHOWROOM & ONLINE",
-  TAGLINE_BN: "উত্তরা শোরুম ও অনলাইনে ১০০% অরিজিনাল পাকিস্তানি ডিজাইনার পোশাকের নির্ভরযোগ্য ফ্যাশন হাউস",
-  PHONE: "01721-396111",
-  PHONE_INTL: "+880 1721-396111",
-  WHATSAPP: "+8801721396111",
-  WHATSAPP_LINK: "https://wa.me/8801721396111",
-  EMAIL: "mohonashamima79@gmail.com",
-  ADDRESS: "House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230, Bangladesh",
-  ADDRESS_BN: "বাড়ি #৭৬, গাউসুল আজম এভিনিউ, সেক্টর #১৩, উত্তরা, ঢাকা - ১২৩০, বাংলাদেশ",
-  LOCATION_LANDMARK: "House 76, Gausul Azam Avenue, Sector 13, Uttara, Dhaka",
-  FACEBOOK: "https://www.facebook.com/ashandaspenclothing/",
-  INSTAGRAM: "https://www.instagram.com/ashandaspenclothing",
-  TIKTOK: "https://www.tiktok.com/@ashandaspen",
-  YOUTUBE: "",
-  WEBSITE: "https://ashandaspen.com",
-  ESTABLISHED: "Committed to Customer Satisfaction & Authentic Pakistani Fashion",
-  FOLLOWERS: "81K+",
+  NAME: "Tazeen's",
+  NAME_SHORT: "Tazeen's",
+  NAME_BN: "তাজিন্স",
+  TAGLINE: "Smart & Elegant Heritage Sarees & Boutique Collections",
+  TAGLINE_SUB: "EXCLUSIVE SEQUIN SAREES, BRIDAL KATAN & BOUTIQUE 3-PIECE • GULSHAN & UTTARA SHOWROOMS",
+  TAGLINE_BN: "স্মার্ট ও এলিগ্যান্ট শাড়ি, ঐতিহ্যবাহী ব্রাইডাল কাতান ও প্রিমিয়াম বুটিক ৩-পিস কালেকশন",
+  PHONE: "01790-030434",
+  PHONE_INTL: "+880 1790-030434",
+  PHONE_ALT: "01773-770042",
+  WHATSAPP: "+8801790030434",
+  WHATSAPP_LINK: "https://wa.me/8801790030434",
+  EMAIL: "tazeens2001@gmail.com",
+  ADDRESS: "Shop #55 (1st Floor), Pink City Shopping Complex, Gulshan-2, Dhaka",
+  ADDRESS_BN: "দোকান #৫৫ (১ম তলা), পিংক সিটি শপিং কমপ্লেক্স, গুলশান-২, ঢাকা",
+  SHOWROOM_GULSHAN: "Shop #55 (1st Floor), Pink City Shopping Complex, Plot 15, Road 103, Gulshan-2, Dhaka",
+  SHOWROOM_GULSHAN_BN: "দোকান #৫৫ (১ম তলা), পিংক সিটি শপিং কমপ্লেক্স, প্লট ১৫, রোড ১০৩, গুলশান-২, ঢাকা",
+  SHOWROOM_UTTARA: "Fairytale (Tahfeem Fashion), Meena Bazar Building (3rd Floor), Sector 11, Uttara, Dhaka",
+  SHOWROOM_UTTARA_BN: "ফেয়ারিটেল (তাহফিম ফ্যাশন), মীনা বাজার বিল্ডিং (৩য় তলা), সেক্টর ১১, উত্তরা, ঢাকা",
+  LOCATION_LANDMARK: "Pink City Gulshan-2 & Meena Bazar Building Sector 11 Uttara",
+  FACEBOOK: "https://www.facebook.com/tazeensbd/",
+  INSTAGRAM: "https://www.instagram.com/tazeensbd",
+  TIKTOK: "https://www.tiktok.com/@tazeensbd",
+  YOUTUBE: "https://www.youtube.com/@tazeensbd",
+  WEBSITE: "https://tazeensbd.com",
+  ESTABLISHED: "Smart & Elegant Fashion Heritage at Budget-Friendly Prices",
+  FOLLOWERS: "50K+",
   RATING: "4.9 ★",
-  RECOMMEND_RATE: "96%",
+  RECOMMEND_RATE: "98%",
   OPEN_PARCEL_POLICY: true,
   STORE_HOURS: "Everyday: 10:30 AM – 10:00 PM | Showroom & Online Support",
-  STORE_HOURS_BN: "প্রতিদিন: সকাল ১০:৩০ – রাত ১০:০০ | উত্তরা শোরুম ও অনলাইন ডেলিভারি সক্রিয়",
+  STORE_HOURS_BN: "প্রতিদিন: সকাল ১০:৩০ – রাত ১০:০০ | গুলশান ও উত্তরা শোরুম এবং অনলাইন ডেলিভারি সক্রিয়",
   DELIVERY_CHARGE_INSIDE: 80,
   DELIVERY_CHARGE_OUTSIDE: 150,
 } as const;
@@ -124,12 +128,16 @@ export const COUPON_CODES: Record<
   string,
   { type: "percent" | "flat"; value: number; label: string }
 > = {
-  ASH10: { type: "percent", value: 10, label: "10% off your order" },
-  ASPENVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
-  EIDASH: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
+  TAZEEN10: { type: "percent", value: 10, label: "10% off your order" },
+  TAZEENVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
+  EIDTAZEEN: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
+  SARILOVE: { type: "percent", value: 10, label: "10% Saree Lovers Special" },
   WELCOME5: { type: "percent", value: 5, label: "5% Welcome Discount" },
   FLAT500: { type: "flat", value: 500, label: "৳500 flat discount" },
   // Backward compatibility aliases
+  ASH10: { type: "percent", value: 10, label: "10% off your order" },
+  ASPENVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
+  EIDASH: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
   PAKISTANI10: { type: "percent", value: 10, label: "10% off your order" },
   "365VIP": { type: "percent", value: 15, label: "15% VIP exclusive discount" },
   EID365: { type: "percent", value: 15, label: "15% Festive Luxury Special" },

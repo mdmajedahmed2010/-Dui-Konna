@@ -1,5 +1,5 @@
 /**
- * Ash and Aspen — Product Detail Page
+ * Tazeen's — Product Detail Page
  * Route: /products/[slug]
  */
 
@@ -11,7 +11,7 @@ import { ProductInfo } from "@/components/product/product-info";
 import { RelatedProducts } from "@/components/product/related-products";
 import { getProductBySlug } from "@/actions/product.actions";
 import { getStorefrontSettings } from "@/actions/settings.actions";
-import { ALL_PRODUCTS } from "@/lib/demo-data";
+import { ALL_PRODUCTS, ASSETS } from "@/lib/demo-data";
 import { BUSINESS } from "@/lib/constants";
 
 export const revalidate = 60;
@@ -33,8 +33,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
         product: {
           name: demoProduct.name,
           seoTitle: `${demoProduct.name} — ${BUSINESS.NAME}`,
-          seoDesc: `${demoProduct.name} — International luxury collection by ${BUSINESS.NAME}.`,
-          description: `${demoProduct.name} — Exclusive authentic 3-piece luxury collection by ${BUSINESS.NAME}.`,
+          seoDesc: `${demoProduct.name} — Exclusive heritage collection by ${BUSINESS.NAME}.`,
+          description: `${demoProduct.name} — Smart & elegant saree and boutique collection by ${BUSINESS.NAME}.`,
         } as any,
       };
     }
@@ -72,19 +72,19 @@ export default async function ProductPage({ params }: ProductPageProps) {
           id: demoProduct.id,
           name: demoProduct.name,
           slug: demoProduct.slug,
-          description: `${demoProduct.name} — Exclusive authentic Pakistani 3-piece suit collection with heavy embroidery, organza cutwork dupatta, and premium fabric. Cash on delivery available nationwide.`,
+          description: `${demoProduct.name} — ${(demoProduct as any).description || "Exclusive heritage saree and boutique wear by Tazeen's. Handcrafted details, regal metallic borders, and open parcel inspection nationwide."}`,
           basePrice: demoProduct.price,
           category: {
-            name: demoProduct.category || "Pakistani Suits",
-            slug: (demoProduct.category || "Pakistani Suits").toLowerCase().replace(/ /g, "-"),
+            name: demoProduct.category || "Sequin & Tissue Sarees",
+            slug: (demoProduct.category || "Sequin & Tissue Sarees").toLowerCase().replace(/[^a-z0-9]+/g, "-"),
           },
           variants: [
             {
               id: demoProduct.id + "-v1",
               sku: demoProduct.id,
               price: demoProduct.price,
-              stock: 10,
-              images: [demoProduct.image],
+              stock: 15,
+              images: demoProduct.images || [demoProduct.image],
             },
           ],
         } as any,
@@ -110,7 +110,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   const images: string[] =
     Array.isArray(variantImages) && variantImages.length > 0
       ? (variantImages as string[])
-      : ["/ash-and-aspen/gulaal-mint-lawn.jpg"];
+      : [ASSETS.sareeChampagne];
 
   // Compute compareAtPrice as a dynamic fallback
   const prices = product.variants.map((v) => Number(v.price));
@@ -120,8 +120,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
   // Map DB variants to ProductInfo expected format
   const mappedVariants = product.variants.map((v) => ({
     id: v.id,
-    size: v.size || "Unstitched 3-Piece",
-    color: v.color || "As Shown",
+    size: v.size || "Free Size Saree (6.5 Yards)",
+    color: v.color || "As Pictured",
     price: Number(v.price),
     stock: v.stock,
     sku: v.sku,
@@ -135,8 +135,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
     basePrice: minPrice,
     compareAtPrice,
     category: {
-      name: product.category?.name || "Pakistani Suits",
-      slug: product.category?.slug || "organza-luxury-suits",
+      name: product.category?.name || "Sequin & Tissue Sarees",
+      slug: product.category?.slug || "sequin-tissue-sarees",
     },
     images,
     ogImage: product.ogImage,

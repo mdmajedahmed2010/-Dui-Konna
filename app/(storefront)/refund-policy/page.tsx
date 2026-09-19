@@ -5,38 +5,38 @@ import { BUSINESS } from "@/lib/constants";
 export const metadata: Metadata = {
   title: `Open Parcel & Refund Policy | ${BUSINESS.NAME}`,
   description:
-    "Ash and Aspen Open Parcel Inspection Policy, Return & Exchange guidelines, and Cash on Delivery terms across Bangladesh.",
+    "Tazeen's Open Parcel Inspection Policy, Return & Exchange guidelines, and Cash on Delivery terms across Bangladesh.",
 };
 
 const policyPoints = [
   {
     icon: Eye,
     title: "Open Parcel Policy — ডেলিভারিতে পণ্য চেক বাধ্যতামূলক",
-    body: `You have to check products in front of the delivery man. ডেলিভারি ম্যানের সামনে পার্সেলের প্যাকেট খুলে অরিজিনাল পাকিস্তানি ফেব্রিক, এম্ব্রয়ডারি, ওড়না ও কালার ভালো করে দেখে নিশ্চিত হয়ে নিন। কোনো অসঙ্গতি বা অমিল দেখলে সাথে সাথে আমাদের হটলাইন ${BUSINESS.PHONE}-এ কল করুন অথবা ডেলিভারি ম্যানের সাথে সরাসরি কথা বলিয়ে দিন।`,
+    body: `You have to check products in front of the delivery man. ডেলিভারি ম্যানের সামনে পার্সেলের প্যাকেট খুলে শাড়ির ফেব্রিক, সিকুইন বা জরির কাজ, আঁচলের ফিনিশিং ও রঙ ভালো করে দেখে নিশ্চিত হয়ে নিন। কোনো অসঙ্গতি বা অমিল দেখলে সাথে সাথে আমাদের হটলাইন ${BUSINESS.PHONE}-এ কল করুন অথবা ডেলিভারি ম্যানের সাথে সরাসরি কথা বলিয়ে দিন।`,
     type: "warning",
   },
   {
     icon: CheckCircle2,
-    title: "১০০% অথেনটিক পাকিস্তানি ফেব্রিক নিশ্চয়তা",
-    body: `${BUSINESS.NAME}-এর প্রতিটি পোশাক ১০০% আসল পাকিস্তানি ব্র্যান্ডেড (Gulaal, Nur, Sadabahar, Hz Collection সহ অন্যান্য শীর্ষ ব্র্যান্ড)। কাপড়, রঙের স্থায়িত্ব ও সুতার নিখুঁত কাজের ব্যাপারে আমাদের প্রতিশ্রুতি শতভাগ অটুট।`,
+    title: "১০০% অথেনটিক হ্যান্ডলুম ও এক্সক্লুসিভ কালেকশন",
+    body: `${BUSINESS.NAME}-এর প্রতিটি শাড়ি ও বুটিক পোশাক ১০০% আসল ও নিজস্ব কোয়ালিটি চ্যাকিং প্রক্রিয়ায় অনুমোদিত। ফেব্রিকের গুণগত মান, জরির স্থায়ী দীপ্তি এবং নিখুঁত হস্তশিল্পের ব্যাপারে আমাদের প্রতিশ্রুতি শতভাগ অটুট।`,
     type: "success",
   },
   {
     icon: AlertTriangle,
-    title: "অর্ডার কনফার্মেশন ও ভেরিফিকেশন",
-    body: "অনলাইনে ওয়েবসাইট বা মেসেঞ্জারে অর্ডার প্লেস করার পর আমাদের কাস্টমার সাপোর্ট টিম থেকে ফোন বা WhatsApp-এর মাধ্যমে ঠিকানা ও মোবাইল নম্বর নিশ্চিত করা হবে। সঠিক ঠিকানা ও ফোন নম্বর প্রদান নিশ্চিত করুন যাতে নির্বিঘ্নে ডেলিভারি সম্পন্ন হতে পারে।",
+    title: "অর্ডার কনফার্মেশন ও কুরিয়ার ট্র্যাকিং",
+    body: "অনলাইনে ওয়েবসাইট বা ফেসবুকে অর্ডার প্লেস করার পর আমাদের কাস্টমার সাপোর্ট টিম থেকে ফোন বা WhatsApp-এর মাধ্যমে ঠিকানা ও মোবাইল নম্বর নিশ্চিত করা হবে। সঠিক ঠিকানা ও বিকল্প ফোন নম্বর প্রদান নিশ্চিত করুন যাতে ডেলিভারি সময়মতো সম্পন্ন হতে পারে।",
     type: "warning",
   },
   {
     icon: Truck,
     title: "সারাদেশে ডেলিভারি চার্জ ও সময়সীমা",
-    body: `ঢাকা সিটির ভেতরে ডেলিভারি চার্জ মাত্র ৳${BUSINESS.DELIVERY_CHARGE_INSIDE} (হোম ডেলিভারি, ১-২ কার্যদিবস)। ঢাকা সিটির বাইরে সারা বাংলাদেশে ৳${BUSINESS.DELIVERY_CHARGE_OUTSIDE} (Steadfast / Pathao / Paperfly Courier, ২-৪ কার্যদিবস)। রেডি স্টক পণ্যে সম্পূর্ণ ক্যাশ অন ডেলিভারি (COD) সুবিধা রয়েছে।`,
+    body: `ঢাকা সিটির ভেতরে ডেলিভারি চার্জ মাত্র ৳${BUSINESS.DELIVERY_CHARGE_INSIDE} (হোম ডেলিভারি, ১-২ কার্যদিবস)। ঢাকা সিটির বাইরে সারা বাংলাদেশে ৳${BUSINESS.DELIVERY_CHARGE_OUTSIDE} (Steadfast / Pathao / RedX Courier, ২-৪ কার্যদিবস)। রেডি স্টক শাড়িতে সম্পূর্ণ ক্যাশ অন ডেলিভারি (COD) সুবিধা রয়েছে।`,
     type: "info",
   },
   {
     icon: ShieldCheck,
-    title: "রিটার্ন ও এক্সচেঞ্জ নীতিমালা",
-    body: "ডেলিভারি ম্যানের সামনে চেক করার পর যদি কোনো ম্যানুফ্যাকচারিং ডিফেক্ট বা রঙের বড় অমিল থাকে, তবে সাথে সাথে পার্সেল রিটার্ন করতে পারবেন (কেবল প্রযোজ্য ডেলিভারি চার্জ পরিশোধ করতে হবে)। ডেলিভারি গ্রহণের পর কোনো অপ্রত্যাশিত ত্রুটি চোখে পড়লে সর্বোচ্চ ৪৮ ঘণ্টার মধ্যে আনবক্সিং প্রমাণ সহ আমাদের ফেসবুক ইনবক্স বা WhatsApp-এ যোগাযোগ করুন। ৩ দিনের মধ্যে সাইজ বা প্রোডাক্ট এক্সচেঞ্জ সুবিধা প্রযোজ্য।",
+    title: "রিটার্ন, এক্সচেঞ্জ ও শোরুম সার্ভিস নীতিমালা",
+    body: "ডেলিভারি ম্যানের সামনে চেক করার পর যদি কোনো ডিফেক্ট বা রঙের বড় অমিল থাকে, তবে সাথে সাথে পার্সেল রিটার্ন করতে পারবেন (কেবল প্রযোজ্য ডেলিভারি চার্জ পরিশোধ করতে হবে)। ডেলিভারি গ্রহণের পর কোনো অপ্রত্যাশিত ত্রুটি চোখে পড়লে সর্বোচ্চ ৪৮ ঘণ্টার মধ্যে আনবক্সিং প্রমাণ সহ আমাদের ফেসবুক ইনবক্স বা WhatsApp-এ জানান। অথবা সরাসরি আমাদের পিংক সিটি (গুলশান-২) কিংবা উত্তরা শোরুমে এসে এক্সচেঞ্জ করে নিতে পারেন।",
     type: "info",
   },
 ];
@@ -45,13 +45,13 @@ export default function RefundPolicyPage() {
   return (
     <main className="min-h-screen bg-[#FAF7F2]">
       {/* Page Header */}
-      <section className="bg-[#1A1A1A] py-16 md:py-24 px-6 text-center relative overflow-hidden">
+      <section className="bg-[#50001B] py-16 md:py-24 px-6 text-center relative overflow-hidden">
         <div className="absolute inset-0 opacity-20 pointer-events-none">
-          <div className="absolute top-0 left-0 w-80 h-80 rounded-full bg-[#E29578] -translate-x-1/2 -translate-y-1/2 blur-2xl" />
-          <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-[#D4A373] translate-x-1/2 translate-y-1/2 blur-2xl" />
+          <div className="absolute top-0 left-0 w-80 h-80 rounded-full bg-[#720026] -translate-x-1/2 -translate-y-1/2 blur-2xl" />
+          <div className="absolute bottom-0 right-0 w-80 h-80 rounded-full bg-[#D4AF37] translate-x-1/2 translate-y-1/2 blur-2xl" />
         </div>
         <div className="relative z-10 max-w-2xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#E29578]/40 text-[#E29578] text-[10px] uppercase tracking-[0.28em] font-bold">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 text-[#D4AF37] text-[10px] uppercase tracking-[0.28em] font-bold">
             <Sparkles className="h-3.5 w-3.5" />
             <span>TRANSPARENCY & TRUST</span>
           </div>
@@ -65,14 +65,14 @@ export default function RefundPolicyPage() {
       </section>
 
       {/* Main Alert */}
-      <section className="bg-[#1A1A1A] py-4 px-6 border-t border-[#E29578]/30">
+      <section className="bg-[#720026] py-4 px-6 border-t border-[#D4AF37]/30">
         <div className="max-w-3xl mx-auto">
           <div className="flex items-center gap-3 justify-center flex-wrap text-center">
-            <CheckCircle2 className="h-5 w-5 text-[#E29578] shrink-0" />
+            <CheckCircle2 className="h-5 w-5 text-[#D4AF37] shrink-0" />
             <p className="text-[#FAF7F2] text-sm font-bold tracking-wide">
-              ১০০% সততা ও ওপেন পার্সেল চেকিং — পার্সেল দেখে বুঝে নিন আপনার আসল পাকিস্তানি পোশাক
+              ১০০% সততা ও ওপেন পার্সেল চেকিং — পার্সেল দেখে বুঝে নিন আপনার পছন্দের শাড়ি ও পোশাক
             </p>
-            <CheckCircle2 className="h-5 w-5 text-[#E29578] shrink-0" />
+            <CheckCircle2 className="h-5 w-5 text-[#D4AF37] shrink-0" />
           </div>
         </div>
       </section>
@@ -89,8 +89,8 @@ export default function RefundPolicyPage() {
                   point.type === "warning"
                     ? "bg-amber-50/80 border-amber-200 border-l-4 border-l-amber-500"
                     : point.type === "success"
-                    ? "bg-orange-50/80 border-orange-200 border-l-4 border-l-[#E29578]"
-                    : "bg-white border-[#E8DFD5] border-l-4 border-l-[#1A1A1A]"
+                    ? "bg-rose-50/80 border-rose-200 border-l-4 border-l-[#720026]"
+                    : "bg-white border-[#E8DFD5] border-l-4 border-l-[#50001B]"
                 }`}
               >
                 <div
@@ -98,7 +98,7 @@ export default function RefundPolicyPage() {
                     point.type === "warning"
                       ? "bg-amber-100 text-amber-800"
                       : point.type === "success"
-                      ? "bg-orange-100 text-[#E29578]"
+                      ? "bg-rose-100 text-[#720026]"
                       : "bg-[#FAF7F2] text-[#1A1A1A] border border-[#E8DFD5]"
                   }`}
                 >
@@ -114,7 +114,7 @@ export default function RefundPolicyPage() {
                         point.type === "warning"
                           ? "text-amber-900"
                           : point.type === "success"
-                          ? "text-[#E29578]"
+                          ? "text-[#720026]"
                           : "text-[#1A1A1A]"
                       }`}
                     >
@@ -146,7 +146,7 @@ export default function RefundPolicyPage() {
               </a>
               <a
                 href={`tel:${BUSINESS.PHONE}`}
-                className="inline-flex items-center justify-center gap-2 h-12 px-7 border-2 border-[#1A1A1A] text-[#1A1A1A] text-xs font-bold uppercase tracking-[0.14em] rounded-full hover:bg-[#1A1A1A] hover:text-white transition-all"
+                className="inline-flex items-center justify-center gap-2 h-12 px-7 border-2 border-[#720026] text-[#720026] text-xs font-bold uppercase tracking-[0.14em] rounded-full hover:bg-[#720026] hover:text-white transition-all"
               >
                 <Phone className="h-4 w-4" />
                 <span>Call Hotline</span>
@@ -158,4 +158,3 @@ export default function RefundPolicyPage() {
     </main>
   );
 }
-

@@ -3,7 +3,7 @@ import { prisma } from '../lib/db';
 import { DEMO_CATEGORIES, DEMO_PRODUCTS } from '../lib/demo-data';
 
 async function main() {
-  console.log("Start seeding for Ash and Aspen...");
+  console.log("Start seeding for Tazeen's...");
 
   // Clean up existing data
   await prisma.productVariant.deleteMany({});
@@ -40,18 +40,18 @@ async function main() {
       data: {
         name: pData.name,
         slug: pData.slug,
-        description: `${pData.description} Curated by Ash and Aspen — Luxury Pakistani Designer Attires in Bangladesh. Showroom at House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka. Nationwide cash on delivery with open parcel inspection.`,
+        description: `${pData.description} Curated by Tazeen's — Smart & Elegant Heritage Sarees & Boutique Couture in Bangladesh. Showrooms at Pink City (Gulshan-2) & Sector 11 (Uttara), Dhaka. Nationwide cash on delivery with open parcel inspection.`,
         basePrice: pData.price,
         categoryId: categoryId,
         status: ProductStatus.ACTIVE,
         isFeatured: pData.isFeatured ?? true,
-        seoTitle: `${pData.name} | Ash and Aspen`,
-        seoDesc: `Buy ${pData.name} online from Ash and Aspen. 100% authentic Pakistani designer attires with nationwide COD & open parcel inspection.`,
-        ogImage: pData.images[0] || '/ash-and-aspen/banner.jpg',
+        seoTitle: `${pData.name} | Tazeen's`,
+        seoDesc: `Buy ${pData.name} online from Tazeen's. Smart & elegant heritage sarees with nationwide COD & open parcel inspection.`,
+        ogImage: pData.images[0] || '/tazeens-assets/hero-banner.jpg',
         variants: {
           create: (pData.variants || []).map((v: any, idx: number) => ({
-            sku: `AA-${String(i + 1).padStart(3, '0')}-${idx + 1}`,
-            size: v.size || 'Unstitched (3-Piece)',
+            sku: `TZ-${String(i + 1).padStart(3, '0')}-${idx + 1}`,
+            size: v.size || 'Free Size Saree (6.5 Yards)',
             color: v.color || 'As Pictured',
             price: v.price || pData.price,
             stock: v.stock || 25,
@@ -63,7 +63,7 @@ async function main() {
     console.log(`Created product: ${product.name}`);
   }
 
-  console.log("✅ Ash and Aspen Database Seeding Completed Successfully!");
+  console.log("✅ Tazeen's Database Seeding Completed Successfully!");
 }
 
 main()

@@ -27,38 +27,39 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-// Global metadata — Ash and Aspen
+// Global metadata — Tazeen's
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS.WEBSITE),
   title: {
-    default: "Ash and Aspen — Authentic Pakistani Attires & Designer Wear",
-    template: "%s — Ash and Aspen",
+    default: "Tazeen's — Smart & Elegant Heritage Sarees & Boutique Pret",
+    template: "%s — Tazeen's",
   },
   description:
-    "Ash and Aspen is an online marketplace portal committed to customer satisfaction by delivering 100% genuine Pakistani designer attire. Explore Gulaal luxury lawn, Nur festive organza, Sadabahar stitched pret, and formal collections with Open Parcel inspection across Bangladesh.",
+    "Tazeen's is a premier fashion boutique in Bangladesh specializing in exclusive sequin border sarees, royal katan & banarasi silk, designer three-piece salwar kameez, and artisan cotton collections. Showrooms at Pink City (Gulshan-2) & Sector 11 (Uttara), Dhaka.",
   keywords: [
-    "Ash and Aspen",
-    "Ash and Aspen Bangladesh",
-    "Ash and Aspen Clothing",
-    "Pakistani Lawn Uttara",
-    "Authentic Pakistani Suits Bangladesh",
-    "Gulaal Luxury Lawn BD",
-    "Nur Organza Kurti BD",
-    "Sadabahar Pret BD",
-    "Women Designer Wear Dhaka",
-    "Pakistani Three Piece BD",
-    "Luxury Pret BD",
+    "Tazeen's",
+    "Tazeen's Saree",
+    "tazeensbd",
+    "Tazeen's Bangladesh",
+    "Pink City Gulshan Saree",
+    "Uttara Boutique Dhaka",
+    "Sequin Border Saree BD",
+    "Bridal Katan Saree BD",
+    "Boutique Three Piece BD",
+    "Ajrakh Block Print 3-Piece",
+    "Smart Elegant Saree Dhaka",
+    "Linen Jamdani Saree",
   ],
-  authors: [{ name: "Ash and Aspen" }],
-  creator: "Ash and Aspen",
+  authors: [{ name: "Tazeen's" }],
+  creator: "Tazeen's",
   openGraph: {
     type: "website",
     locale: "en_BD",
-    siteName: "Ash and Aspen",
-    title: "Ash and Aspen — Authentic Pakistani Attires & Luxury Designer Wear",
+    siteName: "Tazeen's",
+    title: "Tazeen's — Smart & Elegant Heritage Sarees & Boutique Pret",
     description:
-      "Shop 100% original Pakistani designer lawn, organza, chiffon, and festive couture. Nationwide Cash on Delivery with Open Parcel Inspection.",
-    images: ["/banner.jpg"],
+      "Shop exclusive sequin border sarees, bridal katan, and boutique three-piece sets. Nationwide Cash on Delivery (৳80 Inside Dhaka) with open parcel inspection.",
+    images: ["/tazeens-assets/hero-banner.jpg"],
   },
   robots: {
     index: true,
@@ -69,12 +70,12 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Ash and Aspen",
+    title: "Tazeen's",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#E29578",
+  themeColor: "#720026",
 };
 
 export default async function RootLayout({

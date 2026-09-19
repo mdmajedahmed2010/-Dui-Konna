@@ -1,5 +1,5 @@
 /**
- * Ash and Aspen — All Categories Page
+ * Tazeen's — All Categories Page
  * Route: /categories
  */
 
@@ -16,7 +16,7 @@ export const revalidate = 60;
 export const metadata: Metadata = {
   title: `All Collections & Categories — ${BUSINESS.NAME}`,
   description:
-    `Browse all ${BUSINESS.NAME} authentic Pakistani clothing categories — Luxury Lawn, Organza Couture, Stitched Pret, Chikankari Formals, and Festive Velvet.`,
+    `Browse all ${BUSINESS.NAME} authentic sarees and boutique categories — Metallic Sequin Border Sarees, Royal Katan & Silk, Designer Boutique 3-Piece, and Haldi & Festive Weaves.`,
 };
 
 type CategoryItem = {
@@ -55,21 +55,21 @@ export default async function CategoriesPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#fdfcfa]">
+    <div className="min-h-screen bg-[#FAF7F2]">
       <div className="container mx-auto px-4 py-8 md:py-12 max-w-7xl">
         <Breadcrumb items={[{ label: "All Categories" }]} />
 
         {/* Luxury Header */}
         <div className="mt-10 mb-14 text-center">
-          <span className="inline-block px-3.5 py-1 rounded-full border border-[#7a1b38]/50 bg-[#7a1b38]/5 text-[#7a1b38] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
-            ✦ Blossom Clothing EXCLUSIVE ✦
+          <span className="inline-block px-3.5 py-1 rounded-full border border-[#720026]/40 bg-[#720026]/5 text-[#720026] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
+            ✦ TAZEEN&apos;S HERITAGE & BOUTIQUE ✦
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#7a1b38] font-serif">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#720026] font-heading">
             All Categories
           </h1>
-          <div className="w-20 h-[2px] bg-[#d4af37] mx-auto mt-5" />
+          <div className="w-20 h-[2px] bg-[#D4AF37] mx-auto mt-5" />
           <p className="text-neutral-600 mt-4 text-sm md:text-base max-w-xl mx-auto font-sans">
-            Explore our complete range of categories curated for bridal trousseau, festive celebrations, and everyday Pakistani luxury.
+            Explore our complete curation of sarees, regal katan weaves, and handcrafted boutique sets designed for graceful celebrations.
           </p>
         </div>
 
@@ -84,7 +84,7 @@ export default async function CategoriesPage() {
               <Link
                 key={cat.id}
                 href={`/collections/${cat.slug}`}
-                className="group relative overflow-hidden rounded-sm shadow-luxury hover:shadow-gold-glow transition-all duration-500 aspect-[3/4] bg-neutral-900 block border border-[#e8e6e1]/40"
+                className="group relative overflow-hidden rounded-2xl shadow-sm hover:shadow-xl transition-all duration-500 aspect-[3/4] bg-neutral-900 block border border-[#E8DFD5] hover:border-[#D4AF37]"
               >
                 <Image
                   src={
@@ -96,16 +96,16 @@ export default async function CategoriesPage() {
                   className="object-cover group-hover:scale-110 transition-transform duration-[1200ms]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
-                <div className="absolute inset-3.5 border border-[#d4af37]/25 group-hover:border-[#d4af37]/70 transition-all duration-500 pointer-events-none z-10" />
+                <div className="absolute inset-3.5 border border-[#D4AF37]/25 group-hover:border-[#D4AF37]/70 rounded-xl transition-all duration-500 pointer-events-none z-10" />
 
                 <div className="absolute bottom-0 left-0 right-0 p-5 md:p-7 z-20">
-                  <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#d4af37]/20 border border-[#d4af37]/40 text-[#d4af37] text-[9.5px] uppercase tracking-[0.24em] font-bold mb-2.5">
+                  <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40 text-[#D4AF37] text-[9.5px] uppercase tracking-[0.24em] font-bold mb-2.5">
                     ✦ {cat._count?.products ?? 0} Products
                   </span>
-                  <h2 className="text-xl md:text-2xl font-bold font-serif text-white group-hover:text-[#d4af37] transition-colors">
+                  <h2 className="text-xl md:text-2xl font-bold font-heading text-white group-hover:text-[#D4AF37] transition-colors">
                     {cat.name}
                   </h2>
-                  <span className="text-[11px] text-[#d4af37] uppercase tracking-[0.16em] font-bold mt-3 inline-flex items-center gap-1.5 group-hover:translate-x-1.5 transition-transform">
+                  <span className="text-[11px] text-[#D4AF37] uppercase tracking-[0.16em] font-bold mt-3 inline-flex items-center gap-1.5 group-hover:translate-x-1.5 transition-transform">
                     Explore Category →
                   </span>
                 </div>

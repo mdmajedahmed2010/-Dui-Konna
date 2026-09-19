@@ -1,9 +1,9 @@
 "use client";
 
 /**
- * Ash and Aspen — Short Brand Story Section (Homepage)
- * 100% Genuine Pakistani Luxury Suits & Designer Collections
- * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230 — https://www.facebook.com/ashandaspenclothing/
+ * Tazeen's — Short Brand Story Section (Homepage)
+ * Smart & Elegant Heritage Sarees & Designer Collections
+ * Showrooms: Pink City Gulshan-2 & Sector 11 Uttara, Dhaka — https://www.facebook.com/tazeensbd/
  */
 
 import Link from "next/link";
@@ -15,8 +15,8 @@ import { BUSINESS } from "@/lib/constants";
 
 export function EditorialSection() {
   return (
-    <section className="py-16 md:py-24 bg-[#FAF7F2] relative border-y border-[#E29578]/20 overflow-hidden">
-      <div className="absolute top-0 bottom-0 left-1/3 w-[1px] bg-[#E29578]/20 hidden lg:block" />
+    <section className="py-16 md:py-24 bg-[#FAF7F2] relative border-y border-[#D4AF37]/20 overflow-hidden">
+      <div className="absolute top-0 bottom-0 left-1/3 w-[1px] bg-[#D4AF37]/20 hidden lg:block" />
       <motion.div
         initial="hidden"
         whileInView="visible"
@@ -36,11 +36,11 @@ export function EditorialSection() {
             }}
             className="lg:col-span-5 relative group"
           >
-            <div className="absolute -inset-2 bg-[#E29578]/10 border border-[#E29578]/40 rounded-sm -z-10 translate-x-3 translate-y-3 transition-transform duration-500 group-hover:translate-x-1.5 group-hover:translate-y-1.5" />
-            <div className="relative aspect-[4/5] overflow-hidden rounded-sm bg-neutral-100 shadow-md">
+            <div className="absolute -inset-2 bg-[#D4AF37]/10 border border-[#D4AF37]/40 rounded-2xl -z-10 translate-x-3 translate-y-3 transition-transform duration-500 group-hover:translate-x-1.5 group-hover:translate-y-1.5" />
+            <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-neutral-100 shadow-md">
               <Image
-                src={ASSETS.img8}
-                alt="Ash and Aspen — Authentic Pakistani Luxury Couture"
+                src={ASSETS.sareeAubergine}
+                alt="Tazeen's — Smart & Elegant Saree Couture"
                 fill
                 className="object-cover transition-transform duration-[1200ms] group-hover:scale-105"
                 sizes="(max-width: 1024px) 100vw, 40vw"
@@ -62,39 +62,39 @@ export function EditorialSection() {
           >
             <div className="space-y-3">
               <div className="flex items-center gap-2">
-                <Sparkles className="h-4 w-4 text-[#E29578] animate-pulse" />
-                <p className="text-[10px] uppercase tracking-[0.25em] text-[#E29578] font-bold">
+                <Sparkles className="h-4 w-4 text-[#720026] animate-pulse" />
+                <p className="text-[10px] uppercase tracking-[0.25em] text-[#720026] font-bold">
                   ABOUT {BUSINESS.NAME.toUpperCase()}
                 </p>
               </div>
               <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight leading-[1.15] text-[#1A1A1A] font-heading">
-                Dedicated to <span className="italic font-normal text-[#E29578]">Authentic Pakistani Couture</span>
+                Dedicated to <span className="italic font-normal text-[#720026]">Smart & Elegant Sarees</span>
               </h2>
             </div>
 
             <p className="text-sm md:text-base text-neutral-600 leading-relaxed">
-              Ash and Aspen is Bangladesh&apos;s trusted destination for 100% genuine Pakistani luxury lawn, Chikankari formals, and hand-embellished couture. Featuring renowned designer labels including Gulaal, Nur, Sadabahar, and Crimson.
+              Tazeen&apos;s is Bangladesh&apos;s prestigious destination for exclusive metallic sequin border sarees, heritage royal zari katan, and artisanal boutique wear. Flagship showrooms at Pink City (Gulshan-2) and Sector 11 (Uttara), Dhaka.
             </p>
 
-            <div className="p-4 md:p-5 bg-white border-l-4 border-[#E29578] rounded-sm shadow-sm">
+            <div className="p-4 md:p-5 bg-white border-l-4 border-[#720026] rounded-xl shadow-xs">
               <p className="text-xs md:text-sm text-[#1A1A1A] leading-relaxed font-medium italic">
-                &ldquo;Open Parcel Policy: Check fabric texture, embroidery finesse, and authenticity before completing payment. Genuine luxury, total peace of mind.&rdquo;
+                &ldquo;Open Parcel Policy: Check fabric drape, sequin work, and pure handloom details before completing payment. Regal luxury, total peace of mind.&rdquo;
               </p>
             </div>
 
             <div className="pt-2 flex flex-wrap items-center gap-4">
               <Link
                 href="/collections"
-                className="inline-flex items-center justify-center h-12 px-8 bg-[#1A1A1A] hover:bg-[#E29578] text-white text-xs font-bold uppercase tracking-[0.2em] transition-all duration-300 rounded-sm shadow-luxury border border-[#E29578]/40 active:scale-[0.98]"
+                className="inline-flex items-center justify-center h-12 px-8 bg-[#720026] hover:bg-[#50001B] text-white text-xs font-bold uppercase tracking-[0.2em] transition-all duration-300 rounded-full shadow-md border border-[#D4AF37]/40 active:scale-[0.98]"
               >
                 Explore Collections
               </Link>
               <Link
                 href="/about"
-                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#1A1A1A] border-b-2 border-[#E29578] hover:text-[#E29578] pb-1 transition-all"
+                className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#1A1A1A] border-b-2 border-[#720026] hover:text-[#720026] pb-1 transition-all"
               >
                 Read Our Story
-                <ArrowRight className="h-3.5 w-3.5 text-[#E29578]" />
+                <ArrowRight className="h-3.5 w-3.5 text-[#720026]" />
               </Link>
             </div>
           </motion.div>

@@ -5,55 +5,64 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Ash and Aspen (ash and aspen) — Luxury Global Styles
- * Luxury Pakistani Designer Attires & Ready-to-Wear Pret
- * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230, Bangladesh
- * Official Facebook: https://www.facebook.com/ashandaspenclothing/
+ * Tazeen's (tazeensbd) — Luxury Global Styles
+ * Smart & Elegant Heritage Sarees & Designer Boutique Wear
+ * Pink City Shopping Complex, Gulshan-2 & Sector 11, Uttara, Dhaka, Bangladesh
+ * Official Facebook: https://www.facebook.com/tazeensbd/
  */
 
 /* ═══════════════════════════════════════════
-   THEME — Ash and Aspen Color System
+   THEME — Tazeen's Color System
    ═══════════════════════════════════════════ */
 @theme inline {
-  --color-primary: #1A1A1A;
+  --color-primary: #720026;
   --color-primary-foreground: #ffffff;
   --color-secondary: #FAF7F2;
   --color-secondary-foreground: #1A1A1A;
-  --color-accent: #E29578;
-  --color-accent-foreground: #ffffff;
-  --color-accent-hover: #D38062;
-  --color-accent-slate: #484860;
-  --color-accent-navy: #2B4C7E;
+  --color-accent: #D4AF37;
+  --color-accent-foreground: #121214;
+  --color-accent-hover: #B89327;
+  --color-accent-slate: #3B3C4A;
+  --color-accent-navy: #1A365D;
   --color-accent-gold: #D4AF37;
-  --color-accent-amber: #E5A84B;
-  --color-accent-light: #FDF5F1;
-  --color-fashion-terracotta: #E29578;
-  --color-fashion-slate: #484860;
-  --color-fashion-navy: #2B4C7E;
+  --color-accent-amber: #C59B27;
+  --color-accent-light: #FDF9F0;
+  --color-tazeen-crimson: #720026;
+  --color-tazeen-crimson-dark: #50001B;
+  --color-tazeen-gold: #D4AF37;
+  --color-tazeen-gold-light: #F3E5AB;
+  --color-tazeen-purple: #6B2D5C;
+  --color-tazeen-fuchsia: #C2185B;
+  --color-tazeen-lavender: #E8DEF8;
+  --color-tazeen-emerald: #1B4D3E;
+  --color-tazeen-cream: #FAF7F2;
+  --color-fashion-terracotta: #720026;
+  --color-fashion-slate: #3B3C4A;
+  --color-fashion-navy: #1A365D;
   --color-fashion-gold: #D4AF37;
-  --color-fashion-amber: #E5A84B;
+  --color-fashion-amber: #C59B27;
   --color-fashion-cream: #FAF7F2;
   --color-fashion-dark: #121214;
-  --color-fashion-purple: #484860;
-  --color-fashion-violet: #E29578;
-  --color-tanzz-onyx: #1A1A1A;
+  --color-fashion-purple: #6B2D5C;
+  --color-fashion-violet: #C2185B;
+  --color-tanzz-onyx: #121214;
   --color-tanzz-gold: #D4AF37;
   --color-tanzz-gold-bright: #E5A84B;
   --color-tanzz-cream: #FAF7F2;
   --color-tanzz-dark: #121214;
-  --color-threesis-plum: #1A1A1A;
-  --color-threesis-rose: #E29578;
+  --color-threesis-plum: #50001B;
+  --color-threesis-rose: #C2185B;
   --color-threesis-dark: #121214;
   --color-threesis-gold: #D4AF37;
   --color-threesis-cream: #FAF7F2;
-  --color-enayas-purple: #484860;
+  --color-enayas-purple: #6B2D5C;
   --color-enayas-dark: #121214;
   --color-enayas-gold: #D4AF37;
-  --color-enayas-rose: #E29578;
-  --color-enayas-wine: #2B4C7E;
-  --color-blossom-pink: #E29578;
-  --color-blossom-rose: #FDF5F1;
-  --color-blossom-wine: #484860;
+  --color-enayas-rose: #C2185B;
+  --color-enayas-wine: #720026;
+  --color-blossom-pink: #C2185B;
+  --color-blossom-rose: #FDF9F0;
+  --color-blossom-wine: #720026;
   --color-background: #FAF7F2;
   --color-foreground: #1A1A1A;
   --color-surface: #ffffff;

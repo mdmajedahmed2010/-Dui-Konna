@@ -1,5 +1,5 @@
 /**
- * Ash and Aspen — Collection/Category Page
+ * Tazeen's — Collection/Category Page
  * Route: /collections/[slug]
  */
 
@@ -26,15 +26,15 @@ interface CollectionPageProps {
 const specialCategories: Record<string, { name: string; description: string }> = {
   "new-arrivals": {
     name: "New Arrivals",
-    description: "Discover our latest Zam Zam lawn, designer boutique three-piece sets, and festive couture drops.",
+    description: "Discover our latest metallic sequin border sarees, heritage royal katan, and designer boutique drops.",
   },
   featured: {
-    name: "Featured Pret",
-    description: `Handpicked signature luxury 3-piece designer sets curated by ${BUSINESS.NAME}.`,
+    name: "Featured Sarees",
+    description: `Handpicked signature heritage sarees and boutique couture curated by ${BUSINESS.NAME}.`,
   },
   sale: {
     name: "Special Offers",
-    description: "Exclusive festive collections and seasonal curations with Open Parcel inspection.",
+    description: "Exclusive festive saree collections and boutique curations with Open Parcel inspection.",
   },
 };
 
@@ -68,7 +68,7 @@ export async function generateMetadata({
 
   return {
     title: `${category.name} — ${BUSINESS.NAME}`,
-    description: `Browse our ${category.name} collection — 100% authentic luxury women's fashion in Uttara, Dhaka with Open Parcel Policy.`,
+    description: `Browse our ${category.name} collection — smart & elegant heritage sarees and boutique wear with Open Parcel Policy.`,
   };
 }
 
@@ -98,7 +98,7 @@ export default async function CollectionPage({ params, searchParams }: Collectio
     }
     if (!category) notFound();
     categoryName = category.name;
-    categoryDescription = `Browse our ${category.name} collection — 100% authentic luxury pret, breathable fabrics, and modest couture.`;
+    categoryDescription = `Browse our ${category.name} collection — smart & elegant heritage sarees, delicate sequin borders, and regal boutique couture.`;
   }
 
   // Determine sort
@@ -178,7 +178,7 @@ export default async function CollectionPage({ params, searchParams }: Collectio
     const image =
       Array.isArray(variantImages) && variantImages.length > 0
         ? variantImages[0]
-        : ASSETS.img1;
+        : ASSETS.sareeChampagne;
 
     const variantPrice = p.variants?.[0]?.price ? Number(p.variants[0].price) : Number(p.basePrice);
 
@@ -187,7 +187,7 @@ export default async function CollectionPage({ params, searchParams }: Collectio
       name: p.name,
       slug: p.slug,
       price: variantPrice,
-      compareAtPrice: Math.round(variantPrice * 1.2),
+      compareAtPrice: Math.round(variantPrice * 1.15),
       image,
       category: p.category?.name || categoryName,
       isNew: p.isFeatured,
@@ -200,13 +200,13 @@ export default async function CollectionPage({ params, searchParams }: Collectio
         items={[{ label: "Collections", href: "/collections" }, { label: categoryName }]}
       />
 
-      <div className="mt-6 mb-10 bg-gradient-to-r from-[#4a0e1f] via-[#6e1330] to-[#8b1e3f] text-[#fff8f9] p-8 md:p-14 rounded-3xl border border-[#f7c8d0]/25 shadow-xl text-center relative overflow-hidden">
+      <div className="mt-6 mb-10 bg-gradient-to-r from-[#50001B] via-[#720026] to-[#50001B] text-[#FAF7F2] p-8 md:p-14 rounded-3xl border border-[#D4AF37]/30 shadow-xl text-center relative overflow-hidden">
         {/* Subtle background glow */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(247,200,208,0.18),transparent_70%)] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.2),transparent_70%)] pointer-events-none" />
         
         <div className="relative z-10 max-w-2xl mx-auto">
-          <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-[10px] font-extrabold uppercase tracking-[0.24em] mb-3 text-[#fde8ed]">
-            ✦ BLOSSOM CURATIONS ✦
+          <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 text-[10px] font-extrabold uppercase tracking-[0.24em] mb-3 text-[#D4AF37]">
+            ✦ TAZEEN&apos;S EXCLUSIVE ✦
           </span>
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight font-heading mb-3 text-white">
             {categoryName}
@@ -241,7 +241,7 @@ export default async function CollectionPage({ params, searchParams }: Collectio
         <div className="text-center py-24 border border-dashed border-border/80 rounded-lg max-w-md mx-auto space-y-3 mt-12 bg-neutral-50/50">
           <p className="text-sm font-semibold text-foreground">No matching products found</p>
           <p className="text-xs text-muted-foreground max-w-xs mx-auto">
-            Try adjusting your filters to discover other Pakistani luxury fashion edits.
+            Try adjusting your filters to discover other exclusive saree & boutique edits.
           </p>
         </div>
       )}

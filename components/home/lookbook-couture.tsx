@@ -1,10 +1,10 @@
 "use client";
 
 /**
- * Ash and Aspen (ash and aspen) — Interactive "Shop The Look" Couture Lookbook
- * Allows customers to interact directly with editorial imagery and purchase styled pieces
- * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230, Bangladesh
- * Official Facebook: https://www.facebook.com/ashandaspenclothing/
+ * Tazeen's (tazeensbd) — Interactive "Shop The Look" Couture Lookbook
+ * Allows customers to interact directly with editorial saree imagery and purchase styled pieces
+ * Pink City Shopping Complex, Gulshan-2 & Sector 11, Uttara, Dhaka, Bangladesh
+ * Official Facebook: https://www.facebook.com/tazeensbd/
  */
 
 import { useState } from "react";
@@ -41,64 +41,64 @@ interface CoutureLook {
 const COUTURE_LOOKS: CoutureLook[] = [
   {
     id: "look-1",
-    tabLabel: "Gulaal Luxury Lawn",
-    title: "Gulaal Seafoam Mint Whisper",
-    subtitle: "Pure luxury lawn with intricate resham neckline embroidery, laser cutwork hem lace, and printed organza dupatta.",
-    heroImage: ASSETS.img1,
+    tabLabel: "Sequin Border Saree",
+    title: "Signature Sequin Champagne Gold",
+    subtitle: "Shimmering circular metallic sequin border with braided tassels and lightweight linen tissue drape.",
+    heroImage: ASSETS.sareeChampagne,
     spots: [
       {
         id: "spot-1",
-        name: "Gulaal Luxury Lawn 3-Piece Embroidered Suit — Seafoam Mint Whisper",
-        category: "Luxury Pakistani Lawn",
-        price: 4250,
-        comparePrice: 4950,
-        slug: "gulaal-luxury-lawn-3piece-embroidered-suit-seafoam-mint-whisper",
-        image: ASSETS.img1,
-        x: 48,
-        y: 40,
-        sizes: ["Unstitched (3-Piece)", "Stitched Ready-to-Wear (M)", "Stitched Ready-to-Wear (L)"],
+        name: "Tazeen's Signature Sequin Border Saree — Champagne Beige Gold",
+        category: "Sequin & Tissue Sarees",
+        price: 3850,
+        comparePrice: 4500,
+        slug: "tazeens-signature-sequin-border-saree-champagne-beige-gold",
+        image: ASSETS.sareeChampagne,
+        x: 50,
+        y: 45,
+        sizes: ["Standard Saree", "With Fall & Pico Ready"],
       },
     ],
   },
   {
     id: "look-2",
-    tabLabel: "Nur Festive Chikankari",
-    title: "Nur Royal Ivory Schiffli Kameez",
-    subtitle: "Heavily embroidered center panel with detailed schiffli cutwork, dyed trousers, and embroidered soft chiffon dupatta.",
-    heroImage: ASSETS.img2,
+    tabLabel: "Heritage Zari Katan",
+    title: "Royal Crimson Maroon Striped Saree",
+    subtitle: "Fine vertical gold zari stripes, korvai temple borders, and opulent gold brocade pallu presented in our signature box.",
+    heroImage: ASSETS.sareeKatanMaroon,
     spots: [
       {
         id: "spot-2",
-        name: "Nur Festive Chikankari & Schiffli Long Kameez 3-Piece — Royal Ivory",
-        category: "Luxury Pakistani Lawn",
-        price: 4450,
-        comparePrice: 5200,
-        slug: "nur-festive-chikankari-schiffli-long-kameez-3piece-royal-ivory",
-        image: ASSETS.img2,
+        name: "Tazeen's Heritage Zari Striped Silk Saree — Royal Crimson Maroon",
+        category: "Heritage Katan & Silk",
+        price: 5850,
+        comparePrice: 6800,
+        slug: "tazeens-heritage-zari-striped-silk-saree-royal-crimson-maroon",
+        image: ASSETS.sareeKatanMaroon,
         x: 50,
         y: 40,
-        sizes: ["Unstitched (3-Piece)", "Stitched Ready-to-Wear (M)", "Stitched Ready-to-Wear (L)"],
+        sizes: ["Standard Saree", "With Fall & Pico Ready"],
       },
     ],
   },
   {
     id: "look-3",
-    tabLabel: "Sadabahar Designer Pret",
-    title: "Sadabahar Sandy Taupe Floral",
-    subtitle: "Authentic stitched Pakistani pret with royal blue botanical prints, scalloped sleeve lace, and printed trousers.",
-    heroImage: ASSETS.img3,
+    tabLabel: "Boutique 3-Piece",
+    title: "Classic Indigo Ajrakh Block Set",
+    subtitle: "Timeless geometric Ajrakh patterns, hand-embroidered neckline yolk panel, and pure cotton comfort.",
+    heroImage: ASSETS.threePieceAjrakh,
     spots: [
       {
         id: "spot-3",
-        name: "Sadabahar Stitched 3-Piece Pret Suit — Sandy Taupe & Royal Indigo",
-        category: "Ready-to-Wear Designer Pret",
-        price: 3650,
-        comparePrice: 4200,
-        slug: "sadabahar-stitched-3piece-pret-suit-sandy-taupe-royal-indigo",
-        image: ASSETS.img3,
+        name: "Tazeen's Classic Indigo Ajrakh Block Print 3-Piece Set",
+        category: "Boutique Three-Piece Sets",
+        price: 2450,
+        comparePrice: 2950,
+        slug: "tazeens-classic-indigo-ajrakh-block-print-3piece-set",
+        image: ASSETS.threePieceAjrakh,
         x: 50,
         y: 42,
-        sizes: ["S (Chest 36)", "M (Chest 38)", "L (Chest 40)", "XL (Chest 42)"],
+        sizes: ["Unstitched 3-Piece", "Semi-Stitched"],
       },
     ],
   },
@@ -107,7 +107,7 @@ const COUTURE_LOOKS: CoutureLook[] = [
 export function LookbookCouture() {
   const [activeTab, setActiveTab] = useState(0);
   const [activeSpotId, setActiveSpotId] = useState<string>("spot-1");
-  const [selectedSize, setSelectedSize] = useState<string>("Unstitched (3-Piece)");
+  const [selectedSize, setSelectedSize] = useState<string>("Standard Saree");
   const [isAdding, setIsAdding] = useState(false);
 
   const addItem = useCartStore((state) => state.addItem);
@@ -122,7 +122,7 @@ export function LookbookCouture() {
     if (newLook && newLook.spots.length > 0) {
       const firstSpot = newLook.spots[0]!;
       setActiveSpotId(firstSpot.id);
-      setSelectedSize(firstSpot.sizes[0] ?? "Unstitched (3-Piece)");
+      setSelectedSize(firstSpot.sizes[0] ?? "Standard Saree");
     }
   };
 
@@ -137,7 +137,7 @@ export function LookbookCouture() {
       size: selectedSize,
       color: "As Pictured",
       image: activeSpot.image,
-      stock: 12,
+      stock: 15,
     });
     toast.success(`${activeSpot.name} added to your shopping bag!`, {
       description: "✓ Open Parcel Policy • Cash on delivery available nationwide.",
@@ -148,20 +148,19 @@ export function LookbookCouture() {
   return (
     <section className="py-16 md:py-28 bg-white border-b border-[#E8DFD5] relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-7xl">
-        
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#FAF7F2] border border-[#E29578]/30 mb-3 shadow-xs">
-            <Sparkles className="h-3 w-3 text-[#E29578]" />
-            <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#1A1A1A]">
-              INTERACTIVE STYLING • ASH &amp; ASPEN LOOKBOOK
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#FAF7F2] border border-[#D4AF37]/30 mb-3 shadow-xs">
+            <Sparkles className="h-3 w-3 text-[#D4AF37]" />
+            <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#720026]">
+              INTERACTIVE STYLING • TAZEEN&apos;S LOOKBOOK
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] font-heading tracking-tight">
-            Shop The Pakistani Look
+            Shop The Saree &amp; Boutique Look
           </h2>
           <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
-            Explore styled couture ensembles directly from Ash and Aspen. Tap any garment pin to inspect authentic details, select your size, and order with Open Parcel guarantee.
+            Explore styled heritage drapes directly from Tazeen&apos;s. Tap any pin to inspect artisan details, select your option, and order with Open Parcel guarantee.
           </p>
 
           {/* Couture Category Tabs */}
@@ -172,8 +171,8 @@ export function LookbookCouture() {
                 onClick={() => handleTabChange(idx)}
                 className={`px-5 py-2.5 rounded-full text-xs font-bold tracking-wide transition-all cursor-pointer ${
                   idx === activeTab
-                    ? "bg-[#1A1A1A] text-[#E29578] shadow-md border border-[#E29578]/50"
-                    : "bg-[#FAF7F2] text-neutral-600 hover:text-[#1A1A1A] hover:bg-neutral-100 border border-[#E8DFD5]"
+                    ? "bg-[#720026] text-[#D4AF37] shadow-md border border-[#D4AF37]/50"
+                    : "bg-[#FAF7F2] text-neutral-600 hover:text-[#720026] hover:bg-neutral-100 border border-[#E8DFD5]"
                 }`}
               >
                 {look.tabLabel}
@@ -184,7 +183,6 @@ export function LookbookCouture() {
 
         {/* Lookbook Stage: Left Image + Right Breakdown Card */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          
           {/* Left: Editorial Image with Interactive Pins */}
           <div className="lg:col-span-7">
             <div className="relative aspect-[3/4] sm:aspect-[4/5] rounded-[2rem] overflow-hidden bg-neutral-900 border border-[#E8DFD5] shadow-2xl">
@@ -221,18 +219,18 @@ export function LookbookCouture() {
                     <button
                       onClick={() => {
                         setActiveSpotId(spot.id);
-                        setSelectedSize(spot.sizes[0] ?? "Unstitched (3-Piece)");
+                        setSelectedSize(spot.sizes[0] ?? "Standard Saree");
                       }}
                       className={`relative flex items-center justify-center size-9 rounded-full shadow-2xl transition-transform duration-300 cursor-pointer ${
                         isActive
-                          ? "bg-[#E29578] text-white scale-110 ring-4 ring-[#E29578]/50"
+                          ? "bg-[#720026] text-[#D4AF37] scale-110 ring-4 ring-[#D4AF37]/50"
                           : "bg-white/90 backdrop-blur-md text-[#1A1A1A] hover:scale-105 ring-2 ring-black/10"
                       }`}
                       aria-label={`Inspect ${spot.name}`}
                     >
                       <Sparkles className="h-4 w-4" />
                       {!isActive && (
-                        <span className="size-2 rounded-full bg-[#E29578] absolute -top-0.5 -right-0.5 animate-pulse" />
+                        <span className="size-2 rounded-full bg-[#720026] absolute -top-0.5 -right-0.5 animate-pulse" />
                       )}
                     </button>
                   </div>
@@ -241,7 +239,7 @@ export function LookbookCouture() {
 
               {/* Bottom Caption Overlay */}
               <div className="absolute bottom-6 left-6 right-6 z-10 text-white">
-                <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#E29578] bg-black/40 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 inline-block mb-2">
+                <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#D4AF37] bg-black/50 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 inline-block mb-2">
                   EDITORIAL HIGHLIGHT
                 </span>
                 <h3 className="text-xl sm:text-2xl font-bold font-heading">
@@ -254,107 +252,88 @@ export function LookbookCouture() {
             </div>
           </div>
 
-          {/* Right: Active Garment Checkout Card (5 Cols) */}
+          {/* Right: Garment Detail & Direct Purchase Module */}
           <div className="lg:col-span-5">
-            <AnimatePresence mode="wait">
-              <motion.div
-                key={activeSpot.id}
-                initial={{ opacity: 0, x: 20 }}
-                animate={{ opacity: 1, x: 0 }}
-                exit={{ opacity: 0, x: -20 }}
-                transition={{ duration: 0.35 }}
-                className="p-6 md:p-8 rounded-3xl bg-[#FAF7F2] border border-[#E8DFD5] shadow-lg space-y-6"
-              >
-                <div className="flex items-center justify-between border-b border-[#E8DFD5] pb-4">
-                  <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#E29578]">
-                    {activeSpot.category}
+            <div className="p-6 md:p-8 rounded-3xl bg-[#FAF7F2] border border-[#E8DFD5] shadow-lg space-y-6">
+              <div>
+                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#720026]">
+                  {activeSpot.category}
+                </span>
+                <h3 className="text-xl md:text-2xl font-bold text-[#1A1A1A] font-heading mt-1 leading-snug">
+                  {activeSpot.name}
+                </h3>
+                <div className="flex items-baseline gap-3 mt-3">
+                  <span className="text-2xl font-bold text-[#720026] font-sans">
+                    ৳{activeSpot.price.toLocaleString()}
                   </span>
-                  <span className="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200">
-                    In Stock (Uttara Hub)
+                  <span className="text-sm text-neutral-400 line-through">
+                    ৳{activeSpot.comparePrice.toLocaleString()}
                   </span>
-                </div>
-
-                <div className="space-y-2">
-                  <h4 className="text-xl md:text-2xl font-bold font-heading text-[#1A1A1A] leading-snug">
-                    {activeSpot.name}
-                  </h4>
-                  <div className="flex items-baseline gap-3 pt-1">
-                    <span className="text-2xl md:text-3xl font-bold text-[#E29578] font-heading">
-                      ৳{activeSpot.price.toLocaleString()}
-                    </span>
-                    <span className="text-sm text-neutral-400 line-through">
-                      ৳{activeSpot.comparePrice.toLocaleString()}
-                    </span>
-                    <span className="text-xs font-bold text-emerald-600">
-                      Save ৳{(activeSpot.comparePrice - activeSpot.price).toLocaleString()}
-                    </span>
-                  </div>
-                </div>
-
-                {/* Size Selection Grid */}
-                <div className="space-y-2.5">
-                  <label className="text-xs font-bold uppercase tracking-wider text-[#1A1A1A] block">
-                    Select Edition / Size:
-                  </label>
-                  <div className="grid grid-cols-2 gap-2">
-                    {activeSpot.sizes.map((size) => (
-                      <button
-                        key={size}
-                        onClick={() => setSelectedSize(size)}
-                        className={`p-2.5 rounded-xl text-xs font-semibold text-center border transition-all cursor-pointer ${
-                          selectedSize === size
-                            ? "bg-[#1A1A1A] text-[#FAF7F2] border-[#1A1A1A] shadow-xs"
-                            : "bg-white text-neutral-700 border-[#E8DFD5] hover:border-[#E29578]"
-                        }`}
-                      >
-                        {size}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-
-                {/* Open Parcel Guarantee Banner */}
-                <div className="p-3 rounded-xl bg-white border border-[#E8DFD5] text-[11px] text-neutral-600 flex items-center gap-2.5">
-                  <span className="size-2 rounded-full bg-emerald-500 shrink-0" />
-                  <span>
-                    <strong>Open Parcel Guaranteed:</strong> Check authentic fabric &amp; embroidery with rider before paying.
+                  <span className="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">
+                    SAVE ৳{(activeSpot.comparePrice - activeSpot.price).toLocaleString()}
                   </span>
                 </div>
+              </div>
 
-                {/* Action Buttons */}
-                <div className="space-y-2.5 pt-2">
-                  <button
-                    onClick={handleAddToCart}
-                    disabled={isAdding}
-                    className="w-full h-13 rounded-full bg-[#E29578] hover:bg-[#D38062] text-white text-xs md:text-sm font-bold uppercase tracking-[0.16em] transition-all shadow-md flex items-center justify-center gap-2 active:scale-98 cursor-pointer disabled:opacity-75"
-                  >
-                    {isAdding ? (
-                      <>
-                        <Check className="h-4 w-4" />
-                        <span>Added To Bag</span>
-                      </>
-                    ) : (
-                      <>
-                        <ShoppingBag className="h-4 w-4" />
-                        <span>Add To Bag — ৳{activeSpot.price.toLocaleString()}</span>
-                      </>
-                    )}
-                  </button>
-
-                  <Link
-                    href={`/products/${activeSpot.slug}`}
-                    className="w-full h-11 rounded-full bg-white hover:bg-neutral-100 text-[#1A1A1A] border border-[#E8DFD5] text-xs font-bold uppercase tracking-wider transition-colors flex items-center justify-center gap-2 shadow-xs"
-                  >
-                    <span>View Full Garment Details</span>
-                    <ArrowUpRight className="h-3.5 w-3.5" />
-                  </Link>
+              {/* Size / Option Selector */}
+              <div className="space-y-2.5">
+                <label className="text-xs font-bold uppercase tracking-wider text-neutral-700 block">
+                  Select Specification / Option
+                </label>
+                <div className="flex flex-wrap gap-2">
+                  {activeSpot.sizes.map((sz) => (
+                    <button
+                      key={sz}
+                      onClick={() => setSelectedSize(sz)}
+                      className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
+                        selectedSize === sz
+                          ? "bg-[#720026] text-[#D4AF37] border-2 border-[#D4AF37] shadow-sm font-bold"
+                          : "bg-white text-neutral-700 border border-[#E8DFD5] hover:bg-neutral-100"
+                      }`}
+                    >
+                      {sz}
+                    </button>
+                  ))}
                 </div>
-              </motion.div>
-            </AnimatePresence>
+              </div>
+
+              {/* Action Buttons */}
+              <div className="space-y-3 pt-2">
+                <button
+                  onClick={handleAddToCart}
+                  disabled={isAdding}
+                  className="w-full h-13 rounded-full bg-[#720026] hover:bg-[#8D0030] text-[#D4AF37] hover:text-white font-bold text-xs uppercase tracking-[0.16em] transition-all flex items-center justify-center gap-2 shadow-md active:scale-98 cursor-pointer disabled:opacity-50"
+                >
+                  {isAdding ? (
+                    <>
+                      <Check className="h-4 w-4" />
+                      <span>Adding to Bag...</span>
+                    </>
+                  ) : (
+                    <>
+                      <ShoppingBag className="h-4 w-4" />
+                      <span>Add to Bag — ৳{activeSpot.price.toLocaleString()}</span>
+                    </>
+                  )}
+                </button>
+
+                <Link
+                  href={`/products/${activeSpot.slug}`}
+                  className="w-full h-11 rounded-full bg-white hover:bg-[#FAF7F2] text-[#1A1A1A] border border-[#E8DFD5] text-xs font-semibold tracking-wider transition-colors flex items-center justify-center gap-2 shadow-xs"
+                >
+                  <span>View Complete Details</span>
+                  <ArrowUpRight className="h-3.5 w-3.5 text-[#720026]" />
+                </Link>
+              </div>
+
+              {/* Trust Callout */}
+              <div className="pt-4 border-t border-[#E8DFD5] text-[11px] text-neutral-500 space-y-1">
+                <p>✓ <strong>Open Parcel Policy:</strong> Check in front of delivery person before payment</p>
+                <p>✓ <strong>Inside Dhaka ৳80</strong> (1–2 days) | <strong>Outside Dhaka ৳150</strong> (2–4 days)</p>
+              </div>
+            </div>
           </div>
-
         </div>
-
       </div>
     </section>
   );

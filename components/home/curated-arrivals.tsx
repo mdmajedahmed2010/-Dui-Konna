@@ -1,9 +1,10 @@
 "use client";
 
 /**
- * Ash and Aspen — Curated Haute Arrivals Showcase
+ * Tazeen's (tazeensbd) — Curated Haute Arrivals Showcase
  * Features double-bezel cards, interactive category filtering, and 1-tap quick-size add
- * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230 — https://www.facebook.com/ashandaspenclothing/
+ * Pink City Shopping Complex, Gulshan-2 & Sector 11, Uttara, Dhaka, Bangladesh
+ * Official Facebook: https://www.facebook.com/tazeensbd/
  */
 
 import { useState } from "react";
@@ -31,11 +32,11 @@ export interface CuratedProduct {
 
 const CATEGORY_TABS = [
   "All Collections",
-  "Pakistani Lawn",
-  "Organza & Chiffon",
-  "Designer Pret",
-  "Festive & Party",
-  "Silk & Velvet",
+  "Sequin Sarees",
+  "Heritage Katan",
+  "Boutique 3-Piece",
+  "Muslin & Tussar",
+  "Handloom Cotton",
 ];
 
 export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
@@ -53,11 +54,11 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
       ? products
       : products.filter((p) => {
           const cat = p.category.toLowerCase();
-          if (activeTab === "Zam Zam Lawn") return cat.includes("lawn") || cat.includes("zam");
-          if (activeTab === "Designer Boutique") return cat.includes("designer") || cat.includes("boutique");
-          if (activeTab === "Festive & Party") return cat.includes("festive") || cat.includes("party");
-          if (activeTab === "Artisan Block") return cat.includes("block") || cat.includes("artisan");
-          if (activeTab === "Casual Chic") return cat.includes("casual") || cat.includes("chic");
+          if (activeTab === "Sequin Sarees") return cat.includes("sequin") || cat.includes("tissue");
+          if (activeTab === "Heritage Katan") return cat.includes("katan") || cat.includes("silk");
+          if (activeTab === "Boutique 3-Piece") return cat.includes("three") || cat.includes("piece") || cat.includes("boutique");
+          if (activeTab === "Muslin & Tussar") return cat.includes("muslin") || cat.includes("tussar");
+          if (activeTab === "Handloom Cotton") return cat.includes("cotton") || cat.includes("handloom");
           return true;
         });
 
@@ -77,7 +78,7 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
     });
 
     setAddedProductId(`${product.id}-${size}`);
-    toast.success(`Added ${product.name} (${size}) to bag!`, {
+    toast.success(`Added ${product.name} to bag!`, {
       description: "✓ Open Parcel Policy • Cash on delivery available nationwide.",
     });
 
@@ -89,20 +90,19 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
   return (
     <section className="py-16 md:py-28 bg-[#FAF8F5] border-b border-[#E8DFD5] relative">
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-7xl">
-        
         {/* Section Heading & Category Tabs */}
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-12">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#E29578]/40 mb-3 shadow-xs">
-            <Sparkles className="h-3 w-3 text-[#E29578]" />
-            <span className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-[#1A1A1A]">
-              EID &amp; LUXURY 2026
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#D4AF37]/40 mb-3 shadow-xs">
+            <Sparkles className="h-3 w-3 text-[#D4AF37]" />
+            <span className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-[#720026]">
+              TAZEEN&apos;S NEW ARRIVALS 2026
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] font-heading tracking-tight">
-            Curated Pakistani Arrivals
+            Curated Saree &amp; Boutique Arrivals
           </h2>
           <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
-            100% authentic Pakistani luxury lawn, designer festive 3-piece sets, and luxury organza pret curated by Ash and Aspen.
+            100% authentic handloom sequin sarees, royal bridal katan, and handcrafted boutique 3-piece sets curated with pride by Tazeen&apos;s.
           </p>
 
           {/* Filter Pills */}
@@ -113,8 +113,8 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                 onClick={() => setActiveTab(tab)}
                 className={`px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase transition-all duration-300 cursor-pointer ${
                   activeTab === tab
-                    ? "bg-[#6C3483] text-white shadow-md border border-[#D4AC0D] scale-105"
-                    : "bg-white text-neutral-700 hover:bg-purple-50 border border-[#E8DFD5]"
+                    ? "bg-[#720026] text-[#D4AF37] shadow-md border border-[#D4AF37] scale-105"
+                    : "bg-white text-neutral-700 hover:bg-[#FAF7F2] border border-[#E8DFD5]"
                 }`}
               >
                 {tab}
@@ -123,15 +123,12 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
           </div>
         </div>
 
-        {/* ── Products Grid with Double-Bezel Architecture ── */}
-        <motion.div
-          layout
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-7"
-        >
+        {/* Products Grid with Double-Bezel Architecture */}
+        <motion.div layout className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-7">
           <AnimatePresence>
             {filteredProducts.slice(0, 8).map((product) => {
               const isWishlisted = wishlistItems.some((i) => i.id === product.id);
-              const sizes = product.sizes || ["Free Size"];
+              const sizes = product.sizes || ["Standard Saree", "With Fall-Pico"];
               const isHovered = hoveredCard === product.id;
 
               return (
@@ -149,7 +146,6 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                   {/* Double-Bezel Card Outer Shell */}
                   <div className="double-bezel-card h-full flex flex-col justify-between border border-[#E8DFD5] rounded-2xl p-2 bg-white shadow-xs hover:shadow-xl transition-all duration-300">
                     <div className="double-bezel-inner">
-                      
                       {/* Image & Quick Action Overlay */}
                       <Link
                         href={`/products/${product.slug}`}
@@ -168,12 +164,12 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                         {/* Top Badges: Tag & Wishlist */}
                         <div className="absolute top-3 inset-x-3 flex items-center justify-between z-10">
                           {product.tag ? (
-                            <span className="px-2.5 py-1 rounded-full bg-[#191426] text-[#F39C12] text-[9.5px] font-extrabold uppercase tracking-[0.16em] shadow-sm border border-[#D4AC0D]/40">
+                            <span className="px-2.5 py-1 rounded-full bg-[#720026] text-[#D4AF37] text-[9.5px] font-extrabold uppercase tracking-[0.16em] shadow-sm border border-[#D4AF37]/40">
                               {product.tag}
                             </span>
                           ) : (
-                            <span className="px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#E29578] text-[9.5px] font-bold uppercase tracking-wider border border-[#E8DFD5]">
-                              Ash &amp; Aspen
+                            <span className="px-2.5 py-1 rounded-full bg-white/90 backdrop-blur-md text-[#720026] text-[9.5px] font-bold uppercase tracking-wider border border-[#E8DFD5]">
+                              Tazeen&apos;s
                             </span>
                           )}
 
@@ -191,13 +187,13 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                             }}
                             className={`size-8 rounded-full flex items-center justify-center backdrop-blur-md transition-all duration-300 cursor-pointer ${
                               isWishlisted
-                                ? "bg-[#121212] text-[#C5A059] shadow-md scale-110 border border-[#C5A059]"
+                                ? "bg-[#720026] text-[#D4AF37] shadow-md scale-110 border border-[#D4AF37]"
                                 : "bg-white/90 text-[#121212] hover:bg-white hover:scale-110"
                             }`}
                             aria-label="Wishlist"
                           >
                             <Heart
-                              className={`h-4 w-4 ${isWishlisted ? "fill-[#C5A059] text-[#C5A059]" : "stroke-[1.8]"}`}
+                              className={`h-4 w-4 ${isWishlisted ? "fill-[#D4AF37] text-[#D4AF37]" : "stroke-[1.8]"}`}
                             />
                           </button>
                         </div>
@@ -217,20 +213,20 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                               category: product.category,
                             });
                           }}
-                          className="absolute bottom-16 right-3 size-9 rounded-full bg-white/95 text-[#121212] shadow-lg flex items-center justify-center opacity-0 group-hover/card:opacity-100 transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer z-20 border border-[#C5A059]/40"
+                          className="absolute bottom-16 right-3 size-9 rounded-full bg-white/95 text-[#720026] shadow-lg flex items-center justify-center opacity-0 group-hover/card:opacity-100 transition-all duration-300 hover:scale-110 active:scale-95 cursor-pointer z-20 border border-[#D4AF37]/40"
                           aria-label="Quick View"
                         >
                           <Eye className="h-4 w-4" />
                         </button>
 
-                        {/* ── Slide-up Quick Size Bar on Hover ── */}
+                        {/* Slide-up Quick Size Bar on Hover */}
                         <div
-                          className={`absolute inset-x-2 bottom-2 p-2 rounded-xl bg-white/95 backdrop-blur-xl border border-[#C5A059]/40 shadow-lg transition-all duration-300 z-20 ${
+                          className={`absolute inset-x-2 bottom-2 p-2 rounded-xl bg-white/95 backdrop-blur-xl border border-[#D4AF37]/40 shadow-lg transition-all duration-300 z-20 ${
                             isHovered ? "opacity-100 translate-y-0" : "opacity-0 translate-y-3 pointer-events-none"
                           }`}
                         >
                           <p className="text-[9px] font-bold text-center text-neutral-500 uppercase tracking-wider mb-1.5">
-                            Quick Add Size
+                            Quick Add
                           </p>
                           <div className="flex justify-center gap-1.5">
                             {sizes.map((size) => {
@@ -242,7 +238,7 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                                   className={`px-2.5 py-1 rounded-lg text-[10px] font-bold transition-all cursor-pointer ${
                                     isJustAdded
                                       ? "bg-emerald-600 text-white"
-                                      : "bg-[#FAF8F5] hover:bg-[#121212] text-[#121212] hover:text-[#C5A059] border border-[#E8DFD5]"
+                                      : "bg-[#FAF8F5] hover:bg-[#720026] text-[#720026] hover:text-[#D4AF37] border border-[#E8DFD5]"
                                   }`}
                                 >
                                   {isJustAdded ? <Check className="h-3 w-3 inline" /> : size}
@@ -251,21 +247,20 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                             })}
                           </div>
                         </div>
-
                       </Link>
 
                       {/* Product Meta Details */}
                       <div className="p-4 bg-white">
-                        <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#C5A059]">
+                        <span className="text-[10px] font-bold uppercase tracking-[0.16em] text-[#720026]">
                           {product.category}
                         </span>
                         <Link href={`/products/${product.slug}`}>
-                          <h3 className="text-sm font-bold text-[#121212] truncate hover:text-[#C5A059] transition-colors mt-0.5">
+                          <h3 className="text-sm font-bold text-[#121212] truncate hover:text-[#720026] transition-colors mt-0.5">
                             {product.name}
                           </h3>
                         </Link>
                         <div className="flex items-baseline gap-2 mt-1.5">
-                          <span className="text-base font-bold text-[#121212] font-sans">
+                          <span className="text-base font-bold text-[#720026] font-sans">
                             ৳{product.price.toLocaleString()}
                           </span>
                           {product.compareAtPrice && product.compareAtPrice > product.price && (
@@ -275,7 +270,6 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                           )}
                         </div>
                       </div>
-
                     </div>
                   </div>
                 </motion.div>
@@ -287,14 +281,13 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
         {/* View All Collection CTA */}
         <div className="mt-12 text-center">
           <Link
-            href="/collections/zam-zam-lawn"
-            className="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-white hover:bg-[#121212] text-[#121212] hover:text-[#C5A059] border border-[#C5A059]/50 text-xs font-bold uppercase tracking-[0.2em] shadow-sm hover:shadow-lg transition-all duration-300 group/all active:scale-[0.98]"
+            href="/collections/sequin-tissue-sarees"
+            className="inline-flex items-center gap-3 px-8 py-3.5 rounded-full bg-white hover:bg-[#720026] text-[#720026] hover:text-[#D4AF37] border border-[#D4AF37]/50 text-xs font-bold uppercase tracking-[0.2em] shadow-sm hover:shadow-lg transition-all duration-300 group/all active:scale-[0.98]"
           >
-            <span>Explore Entire Collection</span>
-            <ArrowUpRight className="h-4 w-4 transition-transform group-hover/all:translate-x-0.5 group-hover/all:-translate-y-0.5 text-[#C5A059]" />
+            <span>Explore Entire Saree Collection</span>
+            <ArrowUpRight className="h-4 w-4 transition-transform group-hover/all:translate-x-0.5 group-hover/all:-translate-y-0.5 text-[#D4AF37]" />
           </Link>
         </div>
-
       </div>
     </section>
   );

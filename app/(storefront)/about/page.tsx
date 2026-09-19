@@ -6,29 +6,29 @@ import { BUSINESS } from "@/lib/constants";
 import { ASSETS } from "@/lib/demo-data";
 
 export const metadata: Metadata = {
-  title: `About Us | ${BUSINESS.NAME} — Authentic Pakistani Attires`,
+  title: `About Us | ${BUSINESS.NAME} — Smart & Elegant Heritage Sarees & Boutique Couture`,
   description:
-    "Discover Ash and Aspen (অ্যাশ অ্যান্ড অ্যাসপেন) — Bangladesh's premier marketplace portal for 100% authentic Pakistani designer lawn, festive organza, luxury pret, and bespoke ensembles. Studio at Sector #13, Uttara, Dhaka with transparent Open Parcel delivery nationwide.",
+    "Discover Tazeen's (তাজিন'স) — Bangladesh's prestigious fashion destination for exclusive sequin border sarees, heritage katan & silk, and bespoke boutique 3-piece sets. Showrooms at Pink City Shopping Complex, Gulshan-2 and Sector 11, Uttara, Dhaka with transparent Open Parcel delivery nationwide.",
 };
 
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-[#FAF7F2]">
       {/* Hero Banner */}
-      <section className="relative py-20 md:py-28 bg-[#1A1A1A] text-white overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(226,149,120,0.22),transparent_70%)] pointer-events-none" />
+      <section className="relative py-20 md:py-28 bg-[#50001B] text-white overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.25),transparent_70%)] pointer-events-none" />
         <div className="container mx-auto px-6 md:px-12 text-center relative z-10 max-w-3xl">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#E29578]/40 mb-4">
-            <Sparkles className="h-3.5 w-3.5 text-[#E29578]" />
-            <span className="text-[10.5px] uppercase tracking-[0.25em] text-[#E29578] font-bold">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 mb-4">
+            <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
+            <span className="text-[10.5px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold">
               আমাদের পরিচিতি • ABOUT US
             </span>
           </div>
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight font-heading mb-4 text-white">
             {BUSINESS.NAME}
           </h1>
-          <p className="text-sm md:text-base text-neutral-300 leading-relaxed font-sans max-w-2xl mx-auto">
-            {BUSINESS.TAGLINE} — An online marketplace portal highly committed to ensuring customer satisfaction by delivering the best quality original Pakistani attires. Experience our signature Open Parcel inspection policy nationwide.
+          <p className="text-sm md:text-base text-neutral-200 leading-relaxed font-sans max-w-2xl mx-auto">
+            {BUSINESS.TAGLINE} — Renowned for timeless South Asian heritage sarees, exclusive metallic sequin borders, and artisanal boutique wear. Experience our signature Open Parcel inspection policy nationwide.
           </p>
         </div>
       </section>
@@ -37,63 +37,63 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Brand Photo */}
-          <div className="lg:col-span-6 relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-[#E8DFD5] bg-[#1A1A1A]">
+          <div className="lg:col-span-6 relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-[#E8DFD5] bg-[#50001B]">
             <Image
-              src="/ash-and-aspen/banner.jpg"
-              alt="Ash and Aspen Flagship Boutique Banner"
+              src={ASSETS.heroImage}
+              alt="Tazeen's Flagship Saree & Boutique Couture"
               fill
               unoptimized
               className="object-cover"
               sizes="(max-width: 1024px) 100vw, 50vw"
             />
-            <div className="absolute bottom-4 left-4 right-4 bg-[#1A1A1A]/95 backdrop-blur-md border border-[#E29578]/40 px-5 py-3 rounded-xl text-white shadow-lg">
-              <p className="text-[9px] uppercase tracking-[0.22em] font-bold text-[#E29578] flex items-center gap-1.5">
-                <MapPin className="h-3.5 w-3.5 text-[#E29578]" />
-                FLAGSHIP STUDIO & DISTRIBUTION HUB
+            <div className="absolute bottom-4 left-4 right-4 bg-[#1A1A1A]/95 backdrop-blur-md border border-[#D4AF37]/40 px-5 py-3 rounded-xl text-white shadow-lg">
+              <p className="text-[9px] uppercase tracking-[0.22em] font-bold text-[#D4AF37] flex items-center gap-1.5">
+                <MapPin className="h-3.5 w-3.5 text-[#D4AF37]" />
+                FLAGSHIP SHOWROOMS IN GULSHAN & UTTARA
               </p>
-              <p className="text-xs font-semibold mt-0.5">{BUSINESS.ADDRESS}</p>
+              <p className="text-xs font-semibold mt-0.5">Pink City (Gulshan-2) & Sector 11 (Uttara), Dhaka</p>
             </div>
           </div>
 
           {/* Narrative */}
           <div className="lg:col-span-6 space-y-6">
             <div className="space-y-2">
-              <span className="text-[10px] uppercase tracking-[0.25em] text-[#484860] font-bold">
+              <span className="text-[10px] uppercase tracking-[0.25em] text-[#720026] font-bold">
                 আমাদের দর্শন • OUR HERITAGE & MISSION
               </span>
               <h2 className="text-2xl md:text-4xl font-bold text-[#1A1A1A] font-heading leading-tight">
-                Authentic Pakistani Splendor, Delivered with Complete Trust
+                Smart & Elegant Sarees, Curated with Regality & Passion
               </h2>
             </div>
 
-            <div className="border-l-3 border-[#E29578] pl-4 py-2 text-[#484860] italic text-sm font-serif bg-orange-50/60 rounded-r-lg">
-              &ldquo;Ash and Aspen is an online marketplace portal that is highly committed to ensuring customer satisfaction by delivering the best quality products.&rdquo;
+            <div className="border-l-3 border-[#720026] pl-4 py-2 text-[#720026] italic text-sm font-serif bg-rose-50/60 rounded-r-lg">
+              &ldquo;Tazeen&apos;s is dedicated to enriching every woman&apos;s wardrobe with genuine handcrafted sarees and boutique elegance that speak of class, individuality, and timeless beauty.&rdquo;
             </div>
 
             <p className="text-sm text-neutral-600 leading-relaxed">
-              <strong>{BUSINESS.NAME}</strong> ({BUSINESS.NAME_BN}) দীর্ঘদিন ধরে বাংলাদেশের ফ্যাশন সচেতন নারীদের কাছে ১০০% অরিজিনাল পাকিস্তানি থ্রি-পিস, লাক্সারি লন এবং এক্সক্লুসিভ পার্টি পোশাক পৌঁছে দিতে কাজ করছে। আমাদের অফিসিয়াল ফেসবুক পেজে ৮১,০০০+ সক্রিয় শুভানুধ্যায়ী এবং ৯৬% পজিটিভ রেকমেন্ডেশন আমাদের সেবার নির্ভরযোগ্যতার প্রমাণ।
+              <strong>{BUSINESS.NAME}</strong> ({BUSINESS.NAME_BN}) দীর্ঘদিন ধরে বাংলাদেশের মার্জিত রুচিশীল নারীদের কাছে প্রিমিয়াম শাড়ি ও এক্সক্লুসিভ বুটিক পোশাক পৌঁছে দিচ্ছে। গুলশান-২ এর পিংক সিটি শপিং কমপ্লেক্স (দোকান #৫৫) এবং উত্তরা সেক্টর ১১ এর মীনা বাজার ভবনে আমাদের দুইটি সুবিশাল শোরুমে সরাসরি এসে পছন্দের শাড়ি ও পোশাক দেখে নেওয়ার পাশাপাশি সারা বাংলাদেশে রয়েছে আমাদের দ্রুততম হোম ডেলিভারি সুবিধা।
             </p>
 
             <p className="text-sm text-neutral-600 leading-relaxed">
-              Gulaal, Nur, Sadabahar, Hz Collection এবং শীর্ষস্থানীয় পাকিস্তানি ডিজাইনার ব্র্যান্ডের প্রিমিয়াম কালেকশন আমরা সরাসরি সংগ্রহ করি। সম্মানিত গ্রাহকদের শতভাগ নিশ্চিন্ত রাখতে আমরা বজায় রাখি কঠোর <strong className="text-[#E29578]">Open Parcel Policy</strong> — পার্সেল হাতে পেয়ে ডেলিভারিম্যানের সামনে ড্রেসের কাপড় ও কাজ দেখে নিশ্চিত হয়ে মূল্য পরিশোধ করুন।
+              আমাদের সিগনেচার সিকুইন পাড় শাড়ি, ঐতিহ্যবাহী গোল্ড জরি কাতান এবং হ্যান্ডলুম থ্রি-পিস কালেকশন প্রতিটি উৎসব ও পারিবারিক আয়োজনে যোগ করে আভিজাত্য। সম্মানিত গ্রাহকদের শতভাগ নিশ্চিন্ত রাখতে আমরা বজায় রাখি কঠোর <strong className="text-[#720026]">Open Parcel Policy</strong> — পার্সেল হাতে পেয়ে ডেলিভারিম্যানের সামনে শাড়ির কাপড়, কাজ ও রঙ দেখে নিশ্চিত হয়ে মূল্য পরিশোধ করুন।
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 py-4 border-t border-b border-[#E8DFD5]">
               <div className="text-center">
-                <p className="text-2xl font-bold text-[#484860]">81K+</p>
+                <p className="text-2xl font-bold text-[#720026]">50K+</p>
                 <p className="text-[10px] uppercase tracking-wide text-neutral-500 font-bold mt-1">
-                  FB Family
+                  FB Community
                 </p>
               </div>
               <div className="text-center border-x border-[#E8DFD5]">
-                <p className="text-2xl font-bold text-[#E29578]">96%</p>
+                <p className="text-2xl font-bold text-[#D4AF37]">2 Showrooms</p>
                 <p className="text-[10px] uppercase tracking-wide text-neutral-500 font-bold mt-1">
-                  Positive Rating
+                  Gulshan & Uttara
                 </p>
               </div>
               <div className="text-center">
-                <p className="text-2xl font-bold text-[#484860]">Open Parcel</p>
+                <p className="text-2xl font-bold text-[#720026]">Open Parcel</p>
                 <p className="text-[10px] uppercase tracking-wide text-neutral-500 font-bold mt-1">
                   COD Inspection
                 </p>
@@ -107,8 +107,8 @@ export default function AboutPage() {
       <section className="py-16 bg-[#F4EFEA] px-6 border-t border-[#E8DFD5]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[10px] uppercase tracking-[0.25em] text-[#484860] font-bold mb-2">
-              আমাদের সিগনেচার পাকিস্তানি কালেকশন
+            <p className="text-[10px] uppercase tracking-[0.25em] text-[#720026] font-bold mb-2">
+              আমাদের সিগনেচার শাড়ি ও বুটিক কালেকশন
             </p>
             <h2 className="text-3xl font-bold text-[#1A1A1A] font-heading">Curated Attires</h2>
           </div>
@@ -116,46 +116,46 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {[
               {
-                name: "Gulaal Luxury Lawn",
-                desc: "Pure Swiss lawn ensembles with delicate resham thread embroidery and cutwork organza dupattas.",
-                img: ASSETS.img1,
-                href: "/collections/gulaal-luxury-lawn",
+                name: "Metallic Sequin Border Sarees",
+                desc: "Shimmering party sarees with lustrous metallic border trims, contrast pallus, and fringed tassels.",
+                img: ASSETS.sareeChampagne,
+                href: "/collections/sequin-border-sarees",
               },
               {
-                name: "Nur Organza Butterfly Pret",
-                desc: "Signature handcrafted back-embroidered butterfly couture in serene pastel shades.",
-                img: ASSETS.img3,
-                href: "/collections/nur-festive-organza",
+                name: "Heritage Zari Katan & Silk",
+                desc: "Regal bridal katan sarees with opulent antique gold zari stripes and handcrafted polka-dot borders.",
+                img: ASSETS.sareeKatanMaroon,
+                href: "/collections/royal-katan-heritage",
               },
               {
-                name: "Sadabahar Stitched 3-Piece",
-                desc: "Taupe and slate blue tailored ready-to-wear outfits with authentic Pakistani stitching.",
-                img: ASSETS.img2,
-                href: "/collections/sadabahar-pret",
+                name: "Ajrakh & Ethnic Boutique 3-Piece",
+                desc: "Authentic modal cotton block print and mirror-work unstitched designer boutique ensembles.",
+                img: ASSETS.threePieceAjrakh,
+                href: "/collections/boutique-three-piece",
               },
               {
-                name: "Ivory Chikankari Heavy Formals",
-                desc: "Exquisite tone-on-tone chikankari craft on premium cotton-lawn with embroidered dupattas.",
-                img: ASSETS.img4,
-                href: "/collections/festive-luxury",
+                name: "Royal Purple Party Couture",
+                desc: "Dramatic deep amethyst and aubergine draped silhouettes designed for grand evening soirees.",
+                img: ASSETS.sareePurple,
+                href: "/collections/sequin-border-sarees",
               },
               {
-                name: "Crimson Ruby Velvet & Festive",
-                desc: "Rich winter party collections with intricate golden zardozi, tilla, and royal embroideries.",
-                img: ASSETS.img5,
-                href: "/collections/festive-luxury",
+                name: "Haldi & Festive Sun Yellow",
+                desc: "Vibrant yellow sarees with sparkling borders crafted specifically for haldi and daytime festivities.",
+                img: ASSETS.sareeYellow,
+                href: "/collections/haldi-festive-yellow",
               },
               {
-                name: "Casual Lite & Ready-to-Wear",
-                desc: "Sophisticated everyday luxury for women seeking breathable comfort and modest elegance.",
-                img: ASSETS.img7,
-                href: "/collections/casual-lite",
+                name: "Botanical Floral Lawn & Chiffon",
+                desc: "Breathable pastels and delicate floral prints offering supreme comfort for all-day celebrations.",
+                img: ASSETS.threePieceLavender,
+                href: "/collections/boutique-three-piece",
               },
             ].map((item) => (
               <Link
                 key={item.name}
                 href={item.href}
-                className="group relative rounded-2xl overflow-hidden bg-white shadow-xs hover:shadow-lg transition-all duration-300 border border-[#E8DFD5] hover:border-[#E29578]"
+                className="group relative rounded-2xl overflow-hidden bg-white shadow-xs hover:shadow-lg transition-all duration-300 border border-[#E8DFD5] hover:border-[#D4AF37]"
               >
                 <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100">
                   <Image
@@ -168,7 +168,7 @@ export default function AboutPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/75 via-transparent to-transparent" />
                 </div>
                 <div className="p-4">
-                  <h3 className="font-bold text-[#1A1A1A] text-sm mb-1 group-hover:text-[#E29578] transition-colors">{item.name}</h3>
+                  <h3 className="font-bold text-[#1A1A1A] text-sm mb-1 group-hover:text-[#720026] transition-colors">{item.name}</h3>
                   <p className="text-xs text-neutral-500 leading-relaxed">{item.desc}</p>
                 </div>
               </Link>
@@ -177,33 +177,49 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Contact & Ordering Information */}
+      {/* Showroom & Contact Information */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[#1A1A1A] mb-4 font-heading">যোগাযোগ ও অর্ডার করার নিয়ম</h2>
+          <h2 className="text-3xl font-bold text-[#1A1A1A] mb-4 font-heading">আমাদের শোরুম ও যোগাযোগের ঠিকানা</h2>
           <p className="text-neutral-600 mb-10 max-w-xl mx-auto text-sm">
-            ওয়েবসাইট থেকে সরাসরি কার্টে যুক্ত করে চেকআউট করুন, অথবা যেকোনো তথ্য ও ড্রেসের ছবির জন্য আমাদের অফিসিয়াল WhatsApp বা Facebook পেজে নক দিন।
+            ওয়েবসাইট থেকে সরাসরি কার্টে যুক্ত করে চেকআউট করুন, অথবা সরাসরি আমাদের গুলশান ও উত্তরা শোরুমে এসে ঘুরে যান। যেকোনো তথ্য বা শাড়ির ভিডিও দেখতে আমাদের WhatsApp বা Facebook পেজে যোগাযোগ করুন।
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white rounded-2xl p-6 border border-[#E8DFD5] shadow-xs">
-              <div className="w-10 h-10 rounded-full bg-orange-50 text-[#E29578] border border-[#E29578]/20 flex items-center justify-center mx-auto mb-3">
-                <MapPin className="h-5 w-5 text-[#E29578]" />
+            <div className="bg-white rounded-2xl p-6 border border-[#E8DFD5] shadow-xs text-left">
+              <div className="w-10 h-10 rounded-full bg-rose-50 text-[#720026] border border-[#720026]/20 flex items-center justify-center mb-3">
+                <MapPin className="h-5 w-5 text-[#720026]" />
               </div>
-              <h3 className="font-bold text-[#1A1A1A] text-sm mb-2">শোরুম ও অফিস</h3>
+              <h3 className="font-bold text-[#1A1A1A] text-sm mb-1">গুলশান শোরুম</h3>
+              <p className="text-xs text-[#720026] font-semibold mb-2">Shop #55 (1st Floor), Pink City</p>
               <p className="text-xs text-neutral-600 leading-relaxed">
-                {BUSINESS.ADDRESS}
+                Pink City Shopping Complex, Plot 15, Road 103, Gulshan-2, Dhaka-1212
               </p>
-              <p className="text-[11px] text-[#484860] font-semibold mt-2">
-                {BUSINESS.STORE_HOURS}
+              <p className="text-[11px] text-neutral-500 font-medium mt-2">
+                প্রতিদিন সকাল ১০:৩০টা — রাত ৮:৩০টা
               </p>
             </div>
 
-            <div className="bg-white rounded-2xl p-6 border border-[#E8DFD5] shadow-xs">
-              <div className="w-10 h-10 rounded-full bg-orange-50 text-[#E29578] border border-[#E29578]/20 flex items-center justify-center mx-auto mb-3">
-                <Phone className="h-5 w-5 text-[#E29578]" />
+            <div className="bg-white rounded-2xl p-6 border border-[#E8DFD5] shadow-xs text-left">
+              <div className="w-10 h-10 rounded-full bg-amber-50 text-[#D4AF37] border border-[#D4AF37]/30 flex items-center justify-center mb-3">
+                <MapPin className="h-5 w-5 text-[#D4AF37]" />
               </div>
-              <h3 className="font-bold text-[#1A1A1A] text-sm mb-2">হটলাইন ও WhatsApp</h3>
+              <h3 className="font-bold text-[#1A1A1A] text-sm mb-1">উত্তরা শোরুম</h3>
+              <p className="text-xs text-[#D4AF37] font-bold mb-2">Fairytale (Tahfeem Fashion)</p>
+              <p className="text-xs text-neutral-600 leading-relaxed">
+                Meena Bazar Building (3rd Floor), Sector 11, Uttara, Dhaka-1230
+              </p>
+              <p className="text-[11px] text-neutral-500 font-medium mt-2">
+                প্রতিদিন সকাল ১০:৩০টা — রাত ৯:০০টা
+              </p>
+            </div>
+
+            <div className="bg-white rounded-2xl p-6 border border-[#E8DFD5] shadow-xs text-left">
+              <div className="w-10 h-10 rounded-full bg-rose-50 text-[#720026] border border-[#720026]/20 flex items-center justify-center mb-3">
+                <Phone className="h-5 w-5 text-[#720026]" />
+              </div>
+              <h3 className="font-bold text-[#1A1A1A] text-sm mb-1">হটলাইন ও অনলাইন হেল্প</h3>
+              <p className="text-xs text-neutral-600 mb-2">যেকোনো প্রশ্ন বা অর্ডারের জন্য:</p>
               <a
                 href={`tel:${BUSINESS.PHONE}`}
                 className="text-xs text-[#1A1A1A] font-bold hover:underline block"
@@ -211,50 +227,40 @@ export default function AboutPage() {
                 {BUSINESS.PHONE}
               </a>
               <a
+                href={`tel:${BUSINESS.PHONE_ALT}`}
+                className="text-xs text-[#1A1A1A] font-bold hover:underline block mt-0.5"
+              >
+                {BUSINESS.PHONE_ALT}
+              </a>
+              <a
                 href={BUSINESS.WHATSAPP_LINK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-emerald-600 font-bold hover:underline block mt-1"
+                className="text-xs text-emerald-600 font-bold hover:underline block mt-1.5"
               >
                 Direct WhatsApp Chat
               </a>
               <a
-                href={`mailto:${BUSINESS.EMAIL}`}
-                className="text-xs text-[#484860] hover:underline block mt-1"
-              >
-                {BUSINESS.EMAIL}
-              </a>
-            </div>
-
-            <div className="bg-white rounded-2xl p-6 border border-[#E8DFD5] shadow-xs">
-              <div className="w-10 h-10 rounded-full bg-orange-50 text-[#E29578] border border-[#E29578]/20 flex items-center justify-center mx-auto mb-3">
-                <svg className="h-5 w-5 text-[#484860]" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                </svg>
-              </div>
-              <h3 className="font-bold text-[#1A1A1A] text-sm mb-2">Facebook Community</h3>
-              <a
                 href={BUSINESS.FACEBOOK}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-xs text-[#484860] font-bold hover:underline"
+                className="text-xs text-[#720026] font-semibold hover:underline block mt-1"
               >
-                facebook.com/ashandaspenclothing
+                facebook.com/tazeensbd
               </a>
-              <p className="text-[11px] text-neutral-500 mt-1">৮১K+ সক্রিয় অনুসারী ও ৯৬% রেটিং</p>
             </div>
           </div>
 
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center h-12 px-8 bg-[#1A1A1A] text-white text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#484860] transition-all duration-300 rounded-full shadow-md active:scale-[0.98]"
+              className="inline-flex items-center justify-center h-12 px-8 bg-[#720026] text-white text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#50001B] transition-all duration-300 rounded-full shadow-md active:scale-[0.98]"
             >
               Contact Us Page →
             </Link>
             <Link
               href="/delivery-info"
-              className="inline-flex items-center justify-center h-12 px-8 bg-white text-[#1A1A1A] border border-[#E8DFD5] text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#FAF7F2] hover:border-[#E29578] transition-all duration-300 rounded-full shadow-xs active:scale-[0.98]"
+              className="inline-flex items-center justify-center h-12 px-8 bg-white text-[#1A1A1A] border border-[#E8DFD5] text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#FAF7F2] hover:border-[#D4AF37] transition-all duration-300 rounded-full shadow-xs active:scale-[0.98]"
             >
               Delivery & Open Parcel Info
             </Link>
@@ -264,4 +270,3 @@ export default function AboutPage() {
     </main>
   );
 }
-

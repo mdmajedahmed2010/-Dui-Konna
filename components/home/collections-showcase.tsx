@@ -1,9 +1,9 @@
 "use client";
 
 /**
- * Ash and Aspen — Collections Showcase
- * Authentic Pakistani Luxury Suits & Designer Collections
- * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230 — https://www.facebook.com/ashandaspenclothing/
+ * Tazeen's — Collections Showcase
+ * Smart & Elegant Heritage Sarees & Designer Collections
+ * Showrooms: Pink City Gulshan-2 & Sector 11 Uttara, Dhaka — https://www.facebook.com/tazeensbd/
  */
 
 import Link from "next/link";
@@ -71,10 +71,10 @@ export function CollectionsShowcase({ collections }: CollectionsShowcaseProps) {
           variants={headingVariants}
           className="text-center max-w-lg mx-auto mb-10 md:mb-16"
         >
-          <p className="text-[10px] uppercase tracking-[0.25em] text-[#7a1b38] font-bold mb-3">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-[#720026] font-bold mb-3">
             EXPLORE EVERYTHING
           </p>
-          <h2 className="text-2xl md:text-[36px] font-bold tracking-tight text-[#1a0008] font-heading">
+          <h2 className="text-2xl md:text-[36px] font-bold tracking-tight text-[#1A1A1A] font-heading">
             All Collections
           </h2>
           <motion.div
@@ -82,7 +82,7 @@ export function CollectionsShowcase({ collections }: CollectionsShowcaseProps) {
             whileInView={{ width: 48 }}
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
-            className="h-[2px] bg-[#d4af37] mx-auto mt-4"
+            className="h-[2px] bg-[#D4AF37] mx-auto mt-4"
           />
         </motion.div>
 
@@ -94,7 +94,7 @@ export function CollectionsShowcase({ collections }: CollectionsShowcaseProps) {
             <motion.div key={collection.title} variants={cardVariants}>
               <Link
                 href={collection.href}
-                className="group relative overflow-hidden rounded-sm aspect-[3/4] shadow-luxury hover:shadow-gold-glow bg-neutral-900 block border border-[#d4af37]/30 transition-all duration-500"
+                className="group relative overflow-hidden rounded-2xl aspect-[3/4] shadow-sm hover:shadow-xl bg-neutral-900 block border border-[#D4AF37]/30 transition-all duration-500"
               >
                 <Image
                   src={collection.image}
@@ -103,20 +103,20 @@ export function CollectionsShowcase({ collections }: CollectionsShowcaseProps) {
                   className="object-cover transition-transform duration-[1200ms] group-hover:scale-110 group-active:scale-105"
                   sizes="(max-width: 768px) 50vw, 25vw"
                 />
-                <div className="absolute inset-3.5 border border-[#d4af37]/25 group-hover:border-[#d4af37]/70 transition-all duration-500 pointer-events-none z-10" />
+                <div className="absolute inset-3.5 border border-[#D4AF37]/25 group-hover:border-[#D4AF37]/70 rounded-xl transition-all duration-500 pointer-events-none z-10" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/30 to-transparent" />
                 <div className="absolute bottom-0 left-0 right-0 p-5 md:p-6 z-20">
-                  <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#d4af37]/20 border border-[#d4af37]/40 text-[#d4af37] text-[9px] uppercase tracking-[0.24em] font-bold mb-2">
+                  <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40 text-[#D4AF37] text-[9px] uppercase tracking-[0.24em] font-bold mb-2">
                     ✦ {collection.tag}
                   </span>
                   <h3 className="text-white text-base md:text-xl font-bold tracking-tight font-heading">
                     {collection.title}
                   </h3>
                   <div className="mt-2.5 flex items-center gap-1.5 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 group-active:opacity-100 group-active:translate-y-0 transition-all duration-300">
-                    <span className="text-[10.5px] text-[#d4af37] uppercase tracking-[0.16em] font-bold font-sans">
+                    <span className="text-[10.5px] text-[#D4AF37] uppercase tracking-[0.16em] font-bold font-sans">
                       Explore Collection
                     </span>
-                    <ArrowUpRight className="h-4 w-4 text-[#d4af37]" />
+                    <ArrowUpRight className="h-4 w-4 text-[#D4AF37]" />
                   </div>
                 </div>
               </Link>
@@ -128,7 +128,7 @@ export function CollectionsShowcase({ collections }: CollectionsShowcaseProps) {
         <div className="mt-12 md:mt-16 text-center">
           <Link
             href="/collections"
-            className="inline-flex items-center justify-center gap-3 px-10 py-4.5 bg-[#7a1b38] text-[#d4af37] text-xs uppercase tracking-[0.24em] font-bold rounded-sm hover:bg-[#5c132a] hover:text-white transition-all duration-300 shadow-luxury hover:shadow-gold-glow border border-[#d4af37]/40 active:scale-[0.98]"
+            className="inline-flex items-center justify-center gap-3 px-10 py-4.5 bg-[#720026] text-white text-xs uppercase tracking-[0.24em] font-bold rounded-full hover:bg-[#50001B] transition-all duration-300 shadow-md border border-[#D4AF37]/40 active:scale-[0.98]"
           >
             Explore All Collections →
           </Link>

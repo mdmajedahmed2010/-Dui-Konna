@@ -25,43 +25,43 @@ interface FAQItem {
 const FAQS: FAQItem[] = [
   {
     category: "authenticity",
-    question: "Ash and Aspen-এর পোশাকগুলো কি আসলেই ১০০% আসল পাকিস্তানি?",
-    answer: "হ্যাঁ, শতভাগ নিশ্চিত। Ash and Aspen (অ্যাশ অ্যান্ড অ্যাসপেন) একটি বিশ্বস্ত মার্কেটপ্লেস পোর্টাল যা গ্রাহক সন্তুষ্টি নিশ্চিত করতে শুধুমাত্র ১০০% অরিজিনাল পাকিস্তানি ব্র্যান্ডের পোশাক সরাসরি সংগ্রহ করে। আমরা কোনো রেপ্লিকা বা কপি বিক্রি করি না। Gulaal, Nur, Sadabahar সহ প্রতিটি পোশাকে অথেনটিক ফেব্রিক, খাঁটি সুতার কারুকাজ এবং নিখুঁত ফিনিশিং বজায় থাকে।",
+    question: "Tazeen's-এর শাড়ি ও বুটিক পোশাকের গুণগত মান কেমন?",
+    answer: "Tazeen's (তাজিন'স) ২০০১ সাল থেকে প্রিমিয়াম শাড়ি ও মার্জিত বুটিক পোশাকের জন্য অত্যন্ত সুনামধন্য। আমাদের প্রতিটি সিকুইন পাড় শাড়ি, ঐতিহ্যবাহী গোল্ড জরি কাতান এবং হ্যান্ডলুম থ্রি-পিস নিখুঁত কারিগর দিয়ে নিজস্ব তত্ত্বাবধানে তৈরি ও বাছাইকৃত। কাপড়ের দীর্ঘস্থায়িত্ব, জরি ও সুতার নিখুঁত কাজ এবং পরিপাটি ড্র্যাপের নিশ্চয়তা শতভাগ।",
   },
   {
     category: "delivery",
     question: "ওপেন পার্সেল (Open Parcel Policy) কী এবং এটি কীভাবে কাজ করে?",
-    answer: "ওপেন পার্সেল হলো গ্রাহকের শতভাগ নিশ্চিন্ততার পলিসি। কুরিয়ার প্রতিনিধি আপনার ঠিকানায় পার্সেল নিয়ে আসার পর, আপনি তার উপস্থিতিতে পার্সেলের প্যাকেট খুলে পোশাকটির ফেব্রিক, রঙ, এমব্রয়ডারি ও ওড়না দেখে নিতে পারবেন। সবকিছু মনমতো হলে ডেলিভারিম্যানকে ক্যাশ পেমেন্ট করে পার্সেল গ্রহণ করবেন।",
+    answer: "ওপেন পার্সেল হলো গ্রাহকের শতভাগ নিশ্চিন্ততার পলিসি। কুরিয়ার প্রতিনিধি আপনার ঠিকানায় পার্সেল নিয়ে আসার পর, আপনি তার উপস্থিতিতে পার্সেলের প্যাকেট খুলে শাড়ির ফেব্রিক, রঙ, সিকুইন বা জরির কাজ এবং বর্ডার দেখে নিতে পারবেন। সবকিছু মনমতো হলে ডেলিভারিম্যানকে ক্যাশ পেমেন্ট করে পার্সেল গ্রহণ করবেন।",
   },
   {
     category: "delivery",
     question: "ডেলিভারি চার্জ কত এবং ডেলিভারি হতে কত দিন সময় লাগে?",
-    answer: `ঢাকা সিটির ভেতরে ডেলিভারি চার্জ মাত্র ৳${BUSINESS.DELIVERY_CHARGE_INSIDE} এবং সময় লাগে ২৪ থেকে ৪৮ ঘণ্টা (১–২ কার্যদিবস)। ঢাকা সিটির বাইরে বাংলাদেশের যেকোনো জেলা বা উপজেলায় ডেলিভারি চার্জ ৳${BUSINESS.DELIVERY_CHARGE_OUTSIDE} এবং সময় লাগে ২ থেকে ৪ কার্যদিবস। আমরা Steadfast, Pathao ও Paperfly কুরিয়ারের মাধ্যমে দ্রুত ও নিরাপদ হোম ডেলিভারি নিশ্চিত করি।`,
+    answer: `ঢাকা সিটির ভেতরে ডেলিভারি চার্জ মাত্র ৳${BUSINESS.DELIVERY_CHARGE_INSIDE} এবং সময় লাগে ২৪ থেকে ৪৮ ঘণ্টা (১–২ কার্যদিবস)। ঢাকা সিটির বাইরে বাংলাদেশের যেকোনো জেলা বা উপজেলায় ডেলিভারি চার্জ ৳${BUSINESS.DELIVERY_CHARGE_OUTSIDE} এবং সময় লাগে ২ থেকে ৪ কার্যদিবস। আমরা Steadfast, Pathao ও RedX কুরিয়ারের মাধ্যমে নিরাপদ হোম ডেলিভারি নিশ্চিত করি।`,
   },
   {
     category: "payment",
     question: "পেমেন্ট করার পদ্ধতি কী? ক্যাশ অন ডেলিভারি (COD) সুবিধা আছে কি?",
-    answer: "আমাদের সমস্ত রেডি স্টক কালেকশনে সারাদেশে সম্পূর্ণ ক্যাশ অন ডেলিভারি (Cash on Delivery) সুবিধা রয়েছে। অর্থাৎ পার্সেল হাতে পেয়ে চেক করে সম্পূর্ণ মূল্য পরিশোধ করবেন। এছাড়াও আপনি চাইলে bKash, Nagad বা Rocket-এর মাধ্যমে ডিজিটাল পেমেন্ট সম্পন্ন করতে পারেন।",
+    answer: "আমাদের সমস্ত শাড়ি ও বুটিক কালেকশনে সারাদেশে সম্পূর্ণ ক্যাশ অন ডেলিভারি (Cash on Delivery) সুবিধা রয়েছে। অর্থাৎ পার্সেল হাতে পেয়ে চেক করে সম্পূর্ণ মূল্য পরিশোধ করবেন। এছাড়াও আপনি চাইলে bKash, Nagad বা রকেটের মাধ্যমে ডিজিটাল পেমেন্ট সম্পন্ন করতে পারেন।",
   },
   {
     category: "return",
-    question: "পোশাকে কোনো সমস্যা থাকলে রিটার্ন বা এক্সচেঞ্জের নিয়ম কী?",
-    answer: `ডেলিভারিম্যানের সামনে চেক করার পর যদি কোনো কাপড় ত্রুটিযুক্ত বা ভুল অর্ডার হিসেবে প্রতীয়মান হয়, তবে আপনি কোনো পণ্যমূল্য পরিশোধ না করেই পার্সেলটি সরাসরি রিটার্ন করতে পারবেন (শুধুমাত্র ডেলিভারি চার্জ প্রযোজ্য হতে পারে)। ডেলিভারি গ্রহণের পর কোনো অসঙ্গতি ধরা পড়লে সর্বোচ্চ ৪৮ ঘণ্টার মধ্যে আমাদের হটলাইন (${BUSINESS.PHONE}) বা Facebook ইনবক্সে আনবক্সিং প্রমাণ সহ জানান। ৩ দিনের এক্সচেঞ্জ সুবিধা প্রযোজ্য।`,
+    question: "শাড়িতে কোনো সমস্যা থাকলে রিটার্ন বা এক্সচেঞ্জের নিয়ম কী?",
+    answer: `ডেলিভারিম্যানের সামনে চেক করার পর যদি কোনো কাপড় ডিফেক্ট বা রঙের অমিল হিসেবে প্রতীয়মান হয়, তবে আপনি কোনো পণ্যমূল্য পরিশোধ না করেই পার্সেলটি সরাসরি রিটার্ন করতে পারবেন (শুধুমাত্র ডেলিভারি চার্জ প্রযোজ্য হতে পারে)। এছাড়াও আপনি আমাদের পিংক সিটি গুলশান অথবা উত্তরা সেক্টর ১১ শোরুমে এসে সরাসরি এক্সচেঞ্জ করে নিতে পারেন।`,
   },
   {
     category: "authenticity",
-    question: "আনস্টিচড (Unstitched) ও রেডিমেড (Pret) ড্রেসের মধ্যে তফাত কী?",
-    answer: "আনস্টিচড থ্রি-পিসে জামার কামিজ, সালোয়ার ও দুপাট্টা আলাদা ফেব্রিক পিস হিসেবে থাকে যা আপনার নিজস্ব মাপ অনুযায়ী দর্জি দিয়ে তৈরি করে নিতে হয়। আর রেডিমেড বা প্রিট (Pret) ড্রেসগুলো স্ট্যান্ডার্ড সাইজে তৈরি থাকে যা সরাসরি পরিধানযোগ্য।",
+    question: "শাড়ির ওয়াশ কেয়ার ও যত্নের নিয়মাবলী কী?",
+    answer: "সিকুইন পাড় ও জরি কাতান শাড়ির উজ্জ্বলতা এবং সুতার দীর্ঘস্থায়িত্ব রক্ষার জন্য ড্রাই ওয়াশ (Dry Wash) করানোই সবচেয়ে উত্তম। ঘরে ওয়াশ করতে চাইলে হালকা ঠাণ্ডা পানিতে শ্যাম্পু দিয়ে আলতো হাতে ধুয়ে ছায়ায় শুকাতে হবে। কখনোই কড়া রোদে সরাসরি শুকাবেন না এবং জরির অংশে উল্টো পাশ থেকে মাঝারি তাপে ইস্ত্রি করুন।",
   },
   {
     category: "payment",
-    question: "ফেসবুক মেসেঞ্জার বা হোয়াটসঅ্যাপে কীভাবে সরাসরি অর্ডার করব?",
-    answer: `যেকোনো ড্রেসের স্ক্রিনশট বা নাম লিখে আমাদের অফিসিয়াল WhatsApp (${BUSINESS.PHONE}) অথবা ফেসবুক পেজের (facebook.com/ashandaspenclothing) ইনবক্সে মেসেজ দিন। আমাদের প্রতিনিধি সাথে সাথে স্টকের অবস্থা জানিয়ে আপনার নাম, পূর্ণ ঠিকানা ও মোবাইল নম্বর নিয়ে অর্ডার কনফার্ম করে দেবেন।`,
+    question: "সরাসরি শোরুমে গিয়ে শাড়ি দেখা ও কেনার সুযোগ আছে কি?",
+    answer: "হ্যাঁ, অবশ্যই! আমাদের দুইটি ফ্ল্যাগশিপ শোরুম রয়েছে: ১) পিংক সিটি শপিং কমপ্লেক্স, শপ #৫৫ (১ম তলা), গুলশান-২, ঢাকা। ২) ফেয়ারিটেল (তাহফিম ফ্যাশন), মীনা বাজার বিল্ডিং (৩য় তলা), সেক্টর ১১, উত্তরা, ঢাকা। সরাসরি এসে হাজারো শাড়ির মধ্য থেকে পছন্দেরটি বেছে নিতে পারেন।",
   },
   {
     category: "authenticity",
-    question: "পোশাকের রঙের স্থায়িত্ব এবং ওয়াশ কেয়ার কেমন?",
-    answer: "যেহেতু এগুলো আন্তর্জাতিক মানের অরিজিনাল পাকিস্তানি লন ও পিওর শিফন/অর্গানজা ফেব্রিক, তাই রঙের দীর্ঘস্থায়িত্ব নিশ্চিত। তবে এমব্রয়ডারি ও কাজের দীর্ঘস্থায়িত্ব রক্ষার জন্য ড্রাই ওয়াশ (Dry Wash) অথবা হালকা ঠাণ্ডা পানিতে শ্যাম্পু দিয়ে আলতো হাতে ধোয়া বাঞ্ছনীয়। সরাসরি কড়া রোদে শুকানো পরিহার করুন।",
+    question: "ফেসবুক বা হোয়াটসঅ্যাপে কীভাবে সরাসরি অর্ডার করব?",
+    answer: `যেকোনো শাড়ির ছবি বা নাম লিখে আমাদের অফিসিয়াল WhatsApp (${BUSINESS.PHONE}) অথবা ফেসবুক পেজের (facebook.com/tazeensbd) ইনবক্সে মেসেজ দিন। আমাদের প্রতিনিধি সাথে সাথে স্টকের অবস্থা জানিয়ে আপনার নাম, পূর্ণ ঠিকানা ও মোবাইল নম্বর নিয়ে অর্ডার কনফার্ম করে দেবেন।`,
   },
 ];
 
@@ -76,10 +76,10 @@ export default function FAQPage() {
   return (
     <main className="min-h-screen bg-[#FAF7F2]">
       {/* Hero Section */}
-      <section className="relative py-16 md:py-24 bg-[#1A1A1A] text-white text-center px-6 overflow-hidden">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(226,149,120,0.25),transparent_70%)] pointer-events-none" />
+      <section className="relative py-16 md:py-24 bg-[#50001B] text-white text-center px-6 overflow-hidden">
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(212,175,55,0.25),transparent_70%)] pointer-events-none" />
         <div className="relative z-10 max-w-3xl mx-auto space-y-4">
-          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#E29578]/40 text-[#E29578] text-[10px] uppercase tracking-[0.28em] font-bold">
+          <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 text-[#D4AF37] text-[10px] uppercase tracking-[0.28em] font-bold">
             <Sparkles className="h-3.5 w-3.5" />
             <span>FREQUENTLY ASKED QUESTIONS</span>
           </div>
@@ -87,7 +87,7 @@ export default function FAQPage() {
             সাধারণ জিজ্ঞাসা ও উত্তর
           </h1>
           <p className="text-[#E8DFD5] text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-            {BUSINESS.NAME}-এ কেনাকাটা, অথেনটিসিটি, ওপেন পার্সেল ও ডেলিভারি সম্পর্কিত আপনার মনের সমস্ত প্রশ্নের সহজ সমাধান।
+            {BUSINESS.NAME}-এ শাড়ি নির্বাচন, ওপেন পার্সেল, শোরুম ভিজিট ও ডেলিভারি সম্পর্কিত আপনার সমস্ত প্রশ্নের সহজ সমাধান।
           </p>
         </div>
       </section>
@@ -97,9 +97,9 @@ export default function FAQPage() {
         <div className="bg-white rounded-2xl p-2 shadow-md border border-[#E8DFD5] flex items-center justify-center gap-2 flex-wrap">
           {[
             { id: "all", label: "সব প্রশ্ন (All)" },
-            { id: "authenticity", label: "আসল পাকিস্তানি ফেব্রিক" },
+            { id: "authenticity", label: "শাড়ির ফেব্রিক ও কোয়ালিটি" },
             { id: "delivery", label: "ডেলিভারি ও ওপেন পার্সেল" },
-            { id: "payment", label: "পেমেন্ট ও COD" },
+            { id: "payment", label: "পেমেন্ট ও শোরুম" },
             { id: "return", label: "রিটার্ন ও এক্সচেঞ্জ" },
           ].map((tab) => (
             <button
@@ -110,8 +110,8 @@ export default function FAQPage() {
               }}
               className={`px-4 py-2 text-xs font-bold rounded-xl transition-all cursor-pointer ${
                 activeCategory === tab.id
-                  ? "bg-[#1A1A1A] text-white shadow-xs"
-                  : "text-[#1A1A1A] hover:bg-orange-50 hover:text-[#E29578]"
+                  ? "bg-[#720026] text-white shadow-xs"
+                  : "text-[#1A1A1A] hover:bg-rose-50 hover:text-[#720026]"
               }`}
             >
               {tab.label}
@@ -130,8 +130,8 @@ export default function FAQPage() {
                 key={faq.question}
                 className={`rounded-2xl border transition-all overflow-hidden ${
                   isOpen
-                    ? "bg-white border-[#E29578] shadow-md ring-1 ring-[#E29578]/20"
-                    : "bg-white/80 border-[#E8DFD5] hover:border-[#E29578]/50"
+                    ? "bg-white border-[#D4AF37] shadow-md ring-1 ring-[#D4AF37]/30"
+                    : "bg-white/80 border-[#E8DFD5] hover:border-[#D4AF37]/50"
                 }`}
               >
                 <button
@@ -140,7 +140,7 @@ export default function FAQPage() {
                 >
                   <div className="flex items-center gap-3">
                     <div className={`size-8 rounded-full flex items-center justify-center shrink-0 ${
-                      isOpen ? "bg-[#E29578] text-white" : "bg-orange-50 text-[#E29578]"
+                      isOpen ? "bg-[#720026] text-white" : "bg-rose-50 text-[#720026]"
                     }`}>
                       <HelpCircle className="h-4 w-4" />
                     </div>
@@ -150,7 +150,7 @@ export default function FAQPage() {
                   </div>
                   <ChevronDown
                     className={`h-5 w-5 text-neutral-500 shrink-0 transition-transform duration-300 ${
-                      isOpen ? "rotate-180 text-[#E29578]" : ""
+                      isOpen ? "rotate-180 text-[#720026]" : ""
                     }`}
                   />
                 </button>
@@ -168,12 +168,12 @@ export default function FAQPage() {
         </div>
 
         {/* Still Have Questions CTA */}
-        <div className="max-w-3xl mx-auto mt-14 bg-gradient-to-r from-[#1A1A1A] to-[#2B2B38] text-white rounded-3xl p-8 md:p-10 text-center relative overflow-hidden shadow-xl border border-[#E29578]/30">
+        <div className="max-w-3xl mx-auto mt-14 bg-gradient-to-r from-[#50001B] to-[#720026] text-white rounded-3xl p-8 md:p-10 text-center relative overflow-hidden shadow-xl border border-[#D4AF37]/30">
           <div className="relative z-10 space-y-4">
             <h3 className="text-xl md:text-2xl font-bold font-heading">
               আরও কিছু জানতে চান?
             </h3>
-            <p className="text-neutral-300 text-sm max-w-lg mx-auto leading-relaxed">
+            <p className="text-neutral-200 text-sm max-w-lg mx-auto leading-relaxed">
               আমাদের সাপোর্ট টিম সার্বক্ষণিক সক্রিয়। সরাসরি ফোন, হোয়াটসঅ্যাপ বা ফেসবুক মেসেঞ্জারে যোগাযোগ করে যেকোনো তথ্য জেনে নিন।
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 pt-3">
@@ -204,4 +204,3 @@ export default function FAQPage() {
     </main>
   );
 }
-

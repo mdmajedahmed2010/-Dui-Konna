@@ -1,19 +1,21 @@
 "use client";
 
 /**
- * Ash and Aspen — Trust Badges & Open Parcel Assurance
- * Customer-Centric Marketplace Portal for 100% Genuine Pakistani Attires
- * House #76, Gausul Azam Avenue, Sector #13, Uttara, Dhaka - 1230 — https://www.facebook.com/ashandaspenclothing/
+ * Tazeen's — Trust Badges & Open Parcel Assurance
+ * Smart & Elegant Heritage Sarees & Boutique Designer Wear
+ * Pink City Shopping Complex, Gulshan-2 & Sector 11, Uttara, Dhaka, Bangladesh
+ * Official Facebook: https://www.facebook.com/tazeensbd/
  */
 
 import { useEffect, useRef, useState } from "react";
 import { CreditCard, Award, Users, MapPin, Eye, PhoneCall } from "lucide-react";
+import { BUSINESS } from "@/lib/constants";
 
 const badges = [
   {
     icon: Award,
-    title: "১০০% অথেনটিক পাকিস্তানি ড্রেস",
-    description: "Original Gulaal, Nur & Sadabahar",
+    title: "১০০% খাঁটি হ্যান্ডলুম ও বুটিক",
+    description: "Authentic Sequin, Katan & Silk",
   },
   {
     icon: Eye,
@@ -27,18 +29,18 @@ const badges = [
   },
   {
     icon: MapPin,
-    title: "উত্তরা শোরুম",
-    description: "Sector #13, Uttara, Dhaka",
+    title: "গুলশান ও উত্তরা শোরুম",
+    description: "Pink City & Sector 11 Showrooms",
   },
   {
     icon: Users,
-    title: "৮১,০০০+ ফ্যানস",
-    description: "Facebook Fashion Community",
+    title: "৫০,০০০+ ফ্যানস",
+    description: "Official Facebook Community",
   },
   {
     icon: PhoneCall,
-    title: "সরাসরি সাপোর্ট",
-    description: "01721-396111 (WhatsApp / Call)",
+    title: "সরাসরি হটলাইন",
+    description: `${BUSINESS.PHONE} (WhatsApp / Call)`,
   },
 ];
 
@@ -72,7 +74,7 @@ export function TrustBadges() {
           {badges.map((badge, idx) => (
             <div
               key={badge.title}
-              className={`flex flex-col items-center text-center p-4 rounded-2xl bg-white border border-[#E8DFD3] shadow-xs hover:border-[#E29578]/60 hover:shadow-md transition-all duration-300 ${
+              className={`flex flex-col items-center text-center p-4 rounded-2xl bg-white border border-[#E8DFD3] shadow-xs hover:border-[#D4AF37]/60 hover:shadow-md transition-all duration-300 ${
                 isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
               }`}
               style={{
@@ -80,8 +82,8 @@ export function TrustBadges() {
                 transitionDuration: "500ms",
               }}
             >
-              <div className="size-11 rounded-full bg-[#FAF7F2] text-[#E29578] flex items-center justify-center mb-3 border border-[#E29578]/30">
-                <badge.icon className="h-5 w-5" />
+              <div className="size-11 rounded-full bg-[#FAF7F2] text-[#720026] flex items-center justify-center mb-3 border border-[#D4AF37]/40">
+                <badge.icon className="h-5 w-5 text-[#720026]" />
               </div>
               <h3 className="text-xs md:text-sm font-bold text-[#1A1A1A] leading-tight">
                 {badge.title}
@@ -96,4 +98,3 @@ export function TrustBadges() {
     </section>
   );
 }
-

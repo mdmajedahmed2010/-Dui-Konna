@@ -1,13 +1,14 @@
 "use client";
 
 /**
- * Ash and Aspen — Storefront Client Overlays
+ * Tazeen's — Storefront Client Overlays
  * Wraps dynamic overlays in a Client Component boundary for Next.js App Router
  */
 
 import dynamic from "next/dynamic";
 import { ScrollReveal } from "@/components/ui/scroll-reveal";
 import { ScrollProgress } from "@/components/ui/scroll-progress";
+import { BUSINESS } from "@/lib/constants";
 
 const CartDrawer = dynamic(
   () => import("@/components/cart/cart-drawer").then((mod) => mod.CartDrawer),
@@ -42,9 +43,8 @@ export function StorefrontOverlays() {
       <ScrollReveal />
       <ScrollProgress />
       <BackToTop />
-      <FloatingChat phoneNumber="8801721396111" messengerUrl="https://m.me/ashandaspenclothing" />
+      <FloatingChat phoneNumber="8801790030434" messengerUrl="https://m.me/tazeensbd" />
       <PageTracker />
     </>
   );
 }
-
