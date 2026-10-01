@@ -1,87 +1,113 @@
 /**
- * Tazeen's (tazeensbd) — Product Data & Catalog
- * Smart & Elegant Heritage Sarees & Designer Boutique Wear
- * Pink City Shopping Complex, Gulshan-2 & Sector 11, Uttara, Dhaka, Bangladesh
- * Official Facebook: https://www.facebook.com/tazeensbd/
- * All authentic product assets served locally from /tazeens-assets/
+ * Shopping Queen by Orni — Official Product Data & Catalog
+ * Authentic Pakistani Suits, Exclusive Festive Partywear & Orni's Natural Glow Skincare
+ * Dhaka, Bangladesh • Facebook: https://www.facebook.com/Shoppingqueenbyorni
+ * 190,500+ Followers • Open Parcel Inspection Nationwide
+ * All assets served locally from /shoppingqueen-assets/
  */
 
 import type { ProductCardProps } from "@/components/product/product-card";
 
 // ═══════════════════════════════════════════
-// Asset image paths (local, /tazeens-assets/)
+// Asset image paths (local, /shoppingqueen-assets/)
 // ═══════════════════════════════════════════
 export const ASSETS = {
-  logo: "/tazeens-assets/logo.jpg",
-  banner: "/tazeens-assets/hero-banner.jpg",
-  heroImage: "/tazeens-assets/hero-banner.jpg",
-  // Real Authentic Assets from Tazeen's Official Collection
-  sareeChampagne: "/tazeens-assets/saree-sequin-champagne.jpg",
-  sareePurple: "/tazeens-assets/saree-sequin-purple.jpg",
-  sareeFuchsia: "/tazeens-assets/saree-sequin-fuchsia.jpg",
-  sareeAubergine: "/tazeens-assets/saree-sequin-aubergine.jpg",
-  sareeSlateGrey: "/tazeens-assets/saree-sequin-slategrey.jpg",
-  sareeYellow: "/tazeens-assets/saree-sequin-yellow.jpg",
-  sareeKatanMaroon: "/tazeens-assets/saree-katan-maroon-zari.jpg",
-  threePieceAjrakh: "/tazeens-assets/threepiece-ajrakh-indigo.jpg",
-  threePieceEthnic: "/tazeens-assets/threepiece-ethnic-mirrorwork.jpg",
-  threePieceLavender: "/tazeens-assets/threepiece-lavender-floral.jpg",
+  logo: "/shoppingqueen-assets/logo.avif",
+  banner: "/shoppingqueen-assets/banner.avif",
+  heroImage: "/shoppingqueen-assets/hero-banner.avif",
+  // 12 Authentic Assets from Shopping Queen by Orni
+  product1: "/shoppingqueen-assets/sq-product-01-royal-blue.jpg",
+  product2: "/shoppingqueen-assets/sq-product-02-aqua-teal.jpg",
+  product3: "/shoppingqueen-assets/sq-product-03-cornflower-blue.jpg",
+  product4: "/shoppingqueen-assets/sq-product-04-blush-pink-luxury.jpg",
+  product5: "/shoppingqueen-assets/sq-product-05-maroon-wine-luxury.jpg",
+  product6: "/shoppingqueen-assets/sq-product-06-orni-signature-pink.jpg",
+  product7: "/shoppingqueen-assets/sq-product-07-cream-beige-cotton.jpg",
+  product8: "/shoppingqueen-assets/sq-product-08-mint-sea-green.jpg",
+  product9: "/shoppingqueen-assets/sq-product-09-chunri-orange-red.jpg",
+  product10: "/shoppingqueen-assets/sq-product-10-lime-floral-lawn.jpg",
+  product11: "/shoppingqueen-assets/sq-product-11-black-gold-festive.jpg",
+  product12: "/shoppingqueen-assets/sq-product-12-kim-whitening-cream.avif",
   // Backward compatibility keys
-  img1: "/tazeens-assets/saree-sequin-champagne.jpg",
-  img2: "/tazeens-assets/saree-sequin-purple.jpg",
-  img3: "/tazeens-assets/saree-katan-maroon-zari.jpg",
-  img4: "/tazeens-assets/threepiece-ajrakh-indigo.jpg",
-  img5: "/tazeens-assets/threepiece-lavender-floral.jpg",
-  img6: "/tazeens-assets/saree-sequin-yellow.jpg",
-  img7: "/tazeens-assets/saree-sequin-fuchsia.jpg",
-  img8: "/tazeens-assets/saree-sequin-aubergine.jpg",
-  img9: "/tazeens-assets/saree-sequin-slategrey.jpg",
-  img10: "/tazeens-assets/threepiece-ethnic-mirrorwork.jpg",
+  sareeChampagne: "/shoppingqueen-assets/sq-product-04-blush-pink-luxury.jpg",
+  sareePurple: "/shoppingqueen-assets/sq-product-05-maroon-wine-luxury.jpg",
+  sareeFuchsia: "/shoppingqueen-assets/sq-product-06-orni-signature-pink.jpg",
+  sareeAubergine: "/shoppingqueen-assets/sq-product-11-black-gold-festive.jpg",
+  sareeSlateGrey: "/shoppingqueen-assets/sq-product-01-royal-blue.jpg",
+  sareeYellow: "/shoppingqueen-assets/sq-product-09-chunri-orange-red.jpg",
+  sareeKatanMaroon: "/shoppingqueen-assets/sq-product-05-maroon-wine-luxury.jpg",
+  threePieceAjrakh: "/shoppingqueen-assets/sq-product-01-royal-blue.jpg",
+  threePieceEthnic: "/shoppingqueen-assets/sq-product-03-cornflower-blue.jpg",
+  threePieceLavender: "/shoppingqueen-assets/sq-product-02-aqua-teal.jpg",
+  img1: "/shoppingqueen-assets/sq-product-01-royal-blue.jpg",
+  img2: "/shoppingqueen-assets/sq-product-02-aqua-teal.jpg",
+  img3: "/shoppingqueen-assets/sq-product-05-maroon-wine-luxury.jpg",
+  img4: "/shoppingqueen-assets/sq-product-04-blush-pink-luxury.jpg",
+  img5: "/shoppingqueen-assets/sq-product-06-orni-signature-pink.jpg",
+  img6: "/shoppingqueen-assets/sq-product-09-chunri-orange-red.jpg",
+  img7: "/shoppingqueen-assets/sq-product-07-cream-beige-cotton.jpg",
+  img8: "/shoppingqueen-assets/sq-product-08-mint-sea-green.jpg",
+  img9: "/shoppingqueen-assets/sq-product-10-lime-floral-lawn.jpg",
+  img10: "/shoppingqueen-assets/sq-product-11-black-gold-festive.jpg",
 };
 
 // ═══════════════════════════════════════════
-// Product Categories — Tazeen's
+// Product Categories — Shopping Queen by Orni
 // ═══════════════════════════════════════════
 export const CATEGORIES = [
   {
-    name: "Sequin & Tissue Sarees",
-    slug: "sequin-tissue-sarees",
+    name: "Pakistani Lawn Collection",
+    nameBn: "পাকিস্তানি লন কালেকশন",
+    slug: "pakistani-lawn",
     description:
-      "Exclusive linen, tissue & soft blend sarees adorned with delicate metallic sequin borders, geometric pallus, and handcrafted fringe tassels in breathtaking hues.",
-    image: ASSETS.sareeChampagne,
-    productCount: 18,
-  },
-  {
-    name: "Heritage Katan & Silk",
-    slug: "heritage-katan-silk",
-    description:
-      "Timeless bridal and festive katan, banarasi silk, and antique zari striped weaves embodying regal South Asian heritage and heirloom craftsmanship.",
-    image: ASSETS.sareeKatanMaroon,
-    productCount: 15,
-  },
-  {
-    name: "Boutique Three-Piece Sets",
-    slug: "boutique-three-piece",
-    description:
-      "Handcrafted unstitched & stitched designer salwar kameez sets featuring Ajrakh geometric prints, kantha mirror-work yokes, and botanical watercolor lawns.",
-    image: ASSETS.threePieceAjrakh,
+      "প্রিমিয়াম সুইস কটন লন, ডিজিটাল ফ্লোরাল প্রিন্ট, সুতা এমব্রয়ডারি কাজ ও সফট শিফন বা ভয়েল দোপাট্টা সমৃদ্ধ ৩-পিস কালেকশন।",
+    image: ASSETS.product1,
     productCount: 16,
   },
   {
-    name: "Muslin & Tussar Sarees",
-    slug: "muslin-tussar-sarees",
+    name: "Exclusive Festive Partywear",
+    nameBn: "এক্সক্লুসিভ পার্টিওয়্যার ও ফেস্টিভ",
+    slug: "festive-party",
     description:
-      "Featherweight Matka muslin, pure Tussar silk, and soft linen jamdani sarees woven for effortless elegance, comfort, and sophisticated daily luxury.",
-    image: ASSETS.sareeAubergine,
+      "বিয়ে, এনগেজমেন্ট ও উৎসবের জন্য বিলাসবহুল অর্গাঞ্জা, জর্জেট, সিকোয়েন্স ও জরি এমব্রয়ডারি ড্রেস কালেকশন।",
+    image: ASSETS.product5,
     productCount: 12,
   },
   {
-    name: "Handloom & Cotton Sarees",
-    slug: "handloom-cotton-sarees",
+    name: "Premium Handloom & Pure Cotton",
+    nameBn: "প্রিমিয়াম সুতি ও হ্যান্ডলুম থ্রি-পিস",
+    slug: "premium-cotton",
     description:
-      "Breathable authentic handloom cotton sarees, vibrant khadi textures, and pastel festive weaves ideal for summer celebrations and cultural events.",
-    image: ASSETS.sareeYellow,
+      "দৈনন্দিন ব্যবহার ও অফিসের জন্য আরামদায়ক পিওর কটন ফেব্রিক, মার্জিত রঙের কম্বিনেশন এবং নেকলাইনে সূক্ষ্ম কাজ।",
+    image: ASSETS.product7,
     productCount: 14,
+  },
+  {
+    name: "Traditional Chunri & Bandhani",
+    nameBn: "চুনরি ও ঐতিহ্যবাহী কালেকশন",
+    slug: "chunri-traditional",
+    description:
+      "ঐতিহ্যবাহী বান্ধনি ও চুনরি প্রিন্ট, প্রাণবন্ত রঙের উৎসব ও খাঁটি দেশীয় ঐতিহ্যের মিশেলে তৈরি বিশেষ থ্রি-পিস।",
+    image: ASSETS.product9,
+    productCount: 8,
+  },
+  {
+    name: "Orni Signature Edit",
+    nameBn: "অর্ণি সিগনেচার কালেকশন",
+    slug: "orni-signature",
+    description:
+      "অর্ণি ইসলাম কর্তৃক নিজে নির্বাচিত, স্টাইলকৃত ও প্রদর্শিত এক্সক্লুসিভ লিমিটেড এডিশন ফ্যাশন পোশাক।",
+    image: ASSETS.product6,
+    productCount: 10,
+  },
+  {
+    name: "Skincare & Natural Glow Care",
+    nameBn: "স্কিনকেয়ার ও গ্লো এসেনশিয়াল",
+    slug: "skincare-glow",
+    description:
+      "Kim Whitening Pearl & Snowlotus Cream — প্রাকৃতিক উপাদানে তৈরি, ক্ষতিকারক কেমিক্যালমুক্ত রাতের যত্নে ত্বকের প্রাকৃতিক উজ্জ্বলতা।",
+    image: ASSETS.product12,
+    productCount: 6,
   },
 ];
 
@@ -90,198 +116,202 @@ export const CATEGORIES = [
 // ═══════════════════════════════════════════
 export const FEATURED_COLLECTIONS = [
   {
-    id: "col-sequin-sarees",
-    title: "Signature Sequin Edit 2026",
-    slug: "sequin-tissue-sarees",
-    subtitle: "Linen Tissue Blend Sarees with Metallic Sequin Borders & Tassels — 6 Exclusive Shades",
-    image: ASSETS.sareeChampagne,
-    itemCount: 18,
-  },
-  {
-    id: "col-heritage-katan",
-    title: "Royal Bridal Katan & Zari",
-    slug: "heritage-katan-silk",
-    subtitle: "Maroon, Gold & Emerald Brocade Silk Sarees for Weddings & Grand Occasions",
-    image: ASSETS.sareeKatanMaroon,
-    itemCount: 15,
-  },
-  {
-    id: "col-boutique-threepiece",
-    title: "Artisan Boutique 3-Piece Series",
-    slug: "boutique-three-piece",
-    subtitle: "Ajrakh Prints, Kantha Mirror Yokes & Botanical Watercolor Pure Cotton Lawns",
-    image: ASSETS.threePieceAjrakh,
+    id: "col-pakistani-lawn",
+    title: "Royal Pakistani Lawn 2026",
+    titleBn: "রয়্যাল পাকিস্তানি লন সিরিজ",
+    slug: "pakistani-lawn",
+    subtitle: "সুইস কটন লন, ডিজিটাল প্রিন্ট ও শিফন দোপাট্টা — সামার স্পেশাল এডিট",
+    image: ASSETS.product1,
     itemCount: 16,
   },
   {
-    id: "col-pastel-muslin",
-    title: "Pastel Muslin & Tussar Drape",
-    slug: "muslin-tussar-sarees",
-    subtitle: "Airy Light Silhouettes, Floral Sheers & Smart Casual Everyday Elegance",
-    image: ASSETS.threePieceLavender,
+    id: "col-festive-party",
+    title: "Orni's Festive Glam Edit",
+    titleBn: "অর্ণিজ ফেস্টিভ গ্ল্যাম এডিট",
+    slug: "festive-party",
+    subtitle: "হেভি জরি, সিকোয়েন্স ও কাটওয়ার্ক এমব্রয়ডারি লাক্সারি পার্টিওয়্যার",
+    image: ASSETS.product5,
     itemCount: 12,
+  },
+  {
+    id: "col-premium-cotton",
+    title: "Daily Pure Cotton Elegance",
+    titleBn: "ডেইলি পিওর কটন এলিগ্যান্স",
+    slug: "premium-cotton",
+    subtitle: "ক্যাম্পাস ও অফিসের জন্য আরামদায়ক সুতি থ্রি-পিস কালেকশন",
+    image: ASSETS.product7,
+    itemCount: 14,
+  },
+  {
+    id: "col-kim-skincare",
+    title: "Kim Whitening & Glow Care",
+    titleBn: "কিম হোয়াইটেনিং পার্ল কেয়ার",
+    slug: "skincare-glow",
+    subtitle: "রাতের যত্নে প্রাকৃতিক উজ্জ্বলতা ও দাগহীন লাবণ্যময় ত্বক ✨",
+    image: ASSETS.product12,
+    itemCount: 6,
   },
 ];
 
 // ═══════════════════════════════════════════
-// All Products — Tazeen's Official Catalog
+// All Products — Shopping Queen by Orni Official Catalog
 // ═══════════════════════════════════════════
 export const ALL_PRODUCTS: ProductCardProps[] = [
   {
-    id: "TZ-001",
-    name: "Tazeen's Signature Sequin Border Saree — Champagne Beige Gold",
-    slug: "tazeens-signature-sequin-border-saree-champagne-beige-gold",
-    price: 3850,
-    compareAtPrice: 4500,
-    image: ASSETS.sareeChampagne,
-    images: [ASSETS.sareeChampagne, ASSETS.sareeYellow],
-    category: "Sequin & Tissue Sarees",
+    id: "SQO-001",
+    name: "Shopping Queen Royal Blue Embroidered Pakistani Lawn 3-Piece",
+    slug: "shopping-queen-royal-blue-embroidered-pakistani-lawn-3-piece",
+    price: 1650,
+    compareAtPrice: 2200,
+    image: ASSETS.product1,
+    images: [ASSETS.product1, ASSETS.product2],
+    category: "Pakistani Lawn Collection",
     isNew: true,
     isBestseller: true,
-    stock: 22,
+    stock: 28,
   },
   {
-    id: "TZ-002",
-    name: "Tazeen's Signature Sequin Border Saree — Royal Plum Purple",
-    slug: "tazeens-signature-sequin-border-saree-royal-plum-purple",
-    price: 3850,
-    compareAtPrice: 4500,
-    image: ASSETS.sareePurple,
-    images: [ASSETS.sareePurple, ASSETS.sareeAubergine],
-    category: "Sequin & Tissue Sarees",
-    isNew: true,
-    isBestseller: true,
-    stock: 18,
-  },
-  {
-    id: "TZ-003",
-    name: "Tazeen's Signature Sequin Border Saree — Rose Fuchsia Blossom",
-    slug: "tazeens-signature-sequin-border-saree-rose-fuchsia-blossom",
-    price: 3850,
-    compareAtPrice: 4500,
-    image: ASSETS.sareeFuchsia,
-    images: [ASSETS.sareeFuchsia, ASSETS.sareePurple],
-    category: "Sequin & Tissue Sarees",
-    isNew: true,
-    isBestseller: true,
-    stock: 20,
-  },
-  {
-    id: "TZ-004",
-    name: "Tazeen's Signature Sequin Border Saree — Rich Violet Aubergine",
-    slug: "tazeens-signature-sequin-border-saree-rich-violet-aubergine",
-    price: 3850,
-    compareAtPrice: 4500,
-    image: ASSETS.sareeAubergine,
-    images: [ASSETS.sareeAubergine, ASSETS.sareeFuchsia],
-    category: "Sequin & Tissue Sarees",
-    isNew: true,
-    isBestseller: true,
-    stock: 16,
-  },
-  {
-    id: "TZ-005",
-    name: "Tazeen's Signature Sequin Border Saree — Charcoal Slate Metallic",
-    slug: "tazeens-signature-sequin-border-saree-charcoal-slate-metallic",
-    price: 3850,
-    compareAtPrice: 4500,
-    image: ASSETS.sareeSlateGrey,
-    images: [ASSETS.sareeSlateGrey, ASSETS.sareeChampagne],
-    category: "Sequin & Tissue Sarees",
-    isNew: true,
-    isBestseller: false,
-    stock: 15,
-  },
-  {
-    id: "TZ-006",
-    name: "Tazeen's Signature Sequin Border Saree — Bright Canary Mustard",
-    slug: "tazeens-signature-sequin-border-saree-bright-canary-mustard",
-    price: 3850,
-    compareAtPrice: 4500,
-    image: ASSETS.sareeYellow,
-    images: [ASSETS.sareeYellow, ASSETS.sareeChampagne],
-    category: "Sequin & Tissue Sarees",
+    id: "SQO-002",
+    name: "Shopping Queen Turquoise Aqua Digital Floral Lawn 3-Piece",
+    slug: "shopping-queen-turquoise-aqua-digital-floral-lawn-3-piece",
+    price: 1650,
+    compareAtPrice: 2200,
+    image: ASSETS.product2,
+    images: [ASSETS.product2, ASSETS.product1],
+    category: "Pakistani Lawn Collection",
     isNew: true,
     isBestseller: true,
     stock: 24,
   },
   {
-    id: "TZ-007",
-    name: "Tazeen's Heritage Zari Striped Silk Saree — Royal Crimson Maroon",
-    slug: "tazeens-heritage-zari-striped-silk-saree-royal-crimson-maroon",
-    price: 5850,
-    compareAtPrice: 6800,
-    image: ASSETS.sareeKatanMaroon,
-    images: [ASSETS.sareeKatanMaroon, ASSETS.banner],
-    category: "Heritage Katan & Silk",
-    isNew: true,
-    isBestseller: true,
-    stock: 12,
-  },
-  {
-    id: "TZ-008",
-    name: "Tazeen's Classic Indigo Ajrakh Block Print 3-Piece Set",
-    slug: "tazeens-classic-indigo-ajrakh-block-print-3piece-set",
-    price: 2450,
-    compareAtPrice: 2950,
-    image: ASSETS.threePieceAjrakh,
-    images: [ASSETS.threePieceAjrakh, ASSETS.threePieceEthnic],
-    category: "Boutique Three-Piece Sets",
-    isNew: true,
-    isBestseller: true,
-    stock: 25,
-  },
-  {
-    id: "TZ-009",
-    name: "Tazeen's Earthy Ethnic Mirror-Work & Kantha Yoke 3-Piece Set",
-    slug: "tazeens-earthy-ethnic-mirrorwork-kantha-yoke-3piece-set",
-    price: 2650,
-    compareAtPrice: 3200,
-    image: ASSETS.threePieceEthnic,
-    images: [ASSETS.threePieceEthnic, ASSETS.threePieceAjrakh],
-    category: "Boutique Three-Piece Sets",
+    id: "SQO-003",
+    name: "Shopping Queen Cornflower Blue Handloom Embroidered Cotton 3-Piece",
+    slug: "shopping-queen-cornflower-blue-handloom-embroidered-cotton-3-piece",
+    price: 1450,
+    compareAtPrice: 1950,
+    image: ASSETS.product3,
+    images: [ASSETS.product3, ASSETS.product7, ASSETS.product8],
+    category: "Premium Handloom & Pure Cotton",
     isNew: true,
     isBestseller: true,
     stock: 20,
   },
   {
-    id: "TZ-010",
-    name: "Tazeen's Pastel Lavender Botanical Watercolor Lawn 3-Piece Set",
-    slug: "tazeens-pastel-lavender-botanical-watercolor-lawn-3piece-set",
-    price: 2350,
-    compareAtPrice: 2800,
-    image: ASSETS.threePieceLavender,
-    images: [ASSETS.threePieceLavender, ASSETS.threePieceAjrakh],
-    category: "Boutique Three-Piece Sets",
+    id: "SQO-004",
+    name: "Shopping Queen Luxury Blush Pink Heavily Embroidered Festive Suit",
+    slug: "shopping-queen-luxury-blush-pink-heavily-embroidered-festive-suit",
+    price: 2450,
+    compareAtPrice: 3200,
+    image: ASSETS.product4,
+    images: [ASSETS.product4, ASSETS.product5],
+    category: "Exclusive Festive Partywear",
+    isNew: true,
+    isBestseller: true,
+    stock: 18,
+  },
+  {
+    id: "SQO-005",
+    name: "Shopping Queen Royal Maroon & Zari Heavily Embroidered Partywear Suit",
+    slug: "shopping-queen-royal-maroon-zari-heavily-embroidered-partywear-suit",
+    price: 2650,
+    compareAtPrice: 3500,
+    image: ASSETS.product5,
+    images: [ASSETS.product5, ASSETS.product4],
+    category: "Exclusive Festive Partywear",
+    isNew: true,
+    isBestseller: true,
+    stock: 15,
+  },
+  {
+    id: "SQO-006",
+    name: "Orni Signature Edit — Rose Pink & Tangerine Designer Lawn Suit",
+    slug: "orni-signature-edit-rose-pink-tangerine-designer-lawn-suit",
+    price: 1850,
+    compareAtPrice: 2400,
+    image: ASSETS.product6,
+    images: [ASSETS.product6, ASSETS.product10],
+    category: "Orni Signature Edit",
+    isNew: true,
+    isBestseller: true,
+    stock: 30,
+  },
+  {
+    id: "SQO-007",
+    name: "Shopping Queen Cream Beige Floral Embroidered Pure Cotton 3-Piece",
+    slug: "shopping-queen-cream-beige-floral-embroidered-pure-cotton-3-piece",
+    price: 1450,
+    compareAtPrice: 1950,
+    image: ASSETS.product7,
+    images: [ASSETS.product7, ASSETS.product3, ASSETS.product8],
+    category: "Premium Handloom & Pure Cotton",
     isNew: true,
     isBestseller: true,
     stock: 22,
   },
   {
-    id: "TZ-011",
-    name: "Tazeen's Royal Crimson Bridal Katan Saree — Antique Gold Brocade",
-    slug: "tazeens-royal-crimson-bridal-katan-saree-antique-gold-brocade",
-    price: 8500,
-    compareAtPrice: 9800,
-    image: ASSETS.banner,
-    images: [ASSETS.banner, ASSETS.sareeKatanMaroon],
-    category: "Heritage Katan & Silk",
-    isNew: true,
-    isBestseller: true,
-    stock: 8,
-  },
-  {
-    id: "TZ-012",
-    name: "Tazeen's Emerald Green Embroidered Silk Festive Saree",
-    slug: "tazeens-emerald-green-embroidered-silk-festive-saree",
-    price: 6950,
-    compareAtPrice: 7900,
-    image: ASSETS.banner,
-    images: [ASSETS.banner, ASSETS.sareeKatanMaroon],
-    category: "Heritage Katan & Silk",
+    id: "SQO-008",
+    name: "Shopping Queen Mint Sea Green Embroidered Handloom Cotton 3-Piece",
+    slug: "shopping-queen-mint-sea-green-embroidered-handloom-cotton-3-piece",
+    price: 1450,
+    compareAtPrice: 1950,
+    image: ASSETS.product8,
+    images: [ASSETS.product8, ASSETS.product7, ASSETS.product3],
+    category: "Premium Handloom & Pure Cotton",
     isNew: true,
     isBestseller: false,
-    stock: 10,
+    stock: 25,
+  },
+  {
+    id: "SQO-009",
+    name: "Shopping Queen Traditional Chunri Bandhani Orange-Red Printed 3-Piece",
+    slug: "shopping-queen-traditional-chunri-bandhani-orange-red-printed-3-piece",
+    price: 1550,
+    compareAtPrice: 2100,
+    image: ASSETS.product9,
+    images: [ASSETS.product9, ASSETS.product10],
+    category: "Traditional Chunri & Bandhani",
+    isNew: true,
+    isBestseller: true,
+    stock: 26,
+  },
+  {
+    id: "SQO-010",
+    name: "Shopping Queen Lime Green & Cyan Ombre Floral Designer Lawn 3-Piece",
+    slug: "shopping-queen-lime-green-cyan-ombre-floral-designer-lawn-3-piece",
+    price: 1550,
+    compareAtPrice: 2100,
+    image: ASSETS.product10,
+    images: [ASSETS.product10, ASSETS.product9],
+    category: "Pakistani Lawn Collection",
+    isNew: true,
+    isBestseller: false,
+    stock: 20,
+  },
+  {
+    id: "SQO-011",
+    name: "Shopping Queen Regal Black & Antique Zari Heavy Embroidered Festive Gown",
+    slug: "shopping-queen-regal-black-antique-zari-heavy-embroidered-festive-gown",
+    price: 2850,
+    compareAtPrice: 3800,
+    image: ASSETS.product11,
+    images: [ASSETS.product11, ASSETS.product5],
+    category: "Exclusive Festive Partywear",
+    isNew: true,
+    isBestseller: true,
+    stock: 14,
+  },
+  {
+    id: "SQO-012",
+    name: "Kim Whitening Pearl & Snowlotus Night Cream (Net Wt 20g) — Natural Glow",
+    slug: "kim-whitening-pearl-and-snowlotus-night-cream-20g-natural-glow",
+    price: 850,
+    compareAtPrice: 1200,
+    image: ASSETS.product12,
+    images: [ASSETS.product12, ASSETS.banner],
+    category: "Skincare & Natural Glow Care",
+    isNew: true,
+    isBestseller: true,
+    stock: 50,
   },
 ];
 
@@ -290,51 +320,57 @@ export const ALL_PRODUCTS: ProductCardProps[] = [
 // ═══════════════════════════════════════════
 export const NEW_ARRIVALS = ALL_PRODUCTS.filter((p) => p.isNew);
 export const FEATURED_PRODUCTS = ALL_PRODUCTS.slice(0, 8);
-export const SEQUIN_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Sequin & Tissue Sarees");
-export const KATAN_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Heritage Katan & Silk");
-export const THREEPIECE_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Boutique Three-Piece Sets");
-export const MUSLIN_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Muslin & Tussar Sarees");
-export const COTTON_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Handloom & Cotton Sarees");
+export const LAWN_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Pakistani Lawn Collection");
+export const PARTY_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Exclusive Festive Partywear");
+export const COTTON_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Premium Handloom & Pure Cotton");
+export const CHUNRI_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Traditional Chunri & Bandhani");
+export const SIGNATURE_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Orni Signature Edit");
+export const SKINCARE_PRODUCTS = ALL_PRODUCTS.filter((p) => p.category === "Skincare & Natural Glow Care");
 
 // Backward compatibility aliases
-export const LAWN_PRODUCTS = THREEPIECE_PRODUCTS;
-export const ORGANZA_PRODUCTS = SEQUIN_PRODUCTS;
-export const PRET_PRODUCTS = THREEPIECE_PRODUCTS;
-export const PARTY_PRODUCTS = KATAN_PRODUCTS;
-export const SILK_PRODUCTS = KATAN_PRODUCTS;
-export const DESIGNER_PRODUCTS = THREEPIECE_PRODUCTS;
-export const CASUAL_PRODUCTS = THREEPIECE_PRODUCTS;
-export const VINTAGE_PRODUCTS = KATAN_PRODUCTS;
-export const FARSI_PRODUCTS = THREEPIECE_PRODUCTS;
-export const VELVET_PRODUCTS = KATAN_PRODUCTS;
-export const JEWELRY_PRODUCTS = SEQUIN_PRODUCTS;
-export const COORD_PRODUCTS = THREEPIECE_PRODUCTS;
-export const ABAYA_PRODUCTS = THREEPIECE_PRODUCTS;
-export const KAFTAN_PRODUCTS = THREEPIECE_PRODUCTS;
-export const DRESS_PRODUCTS = THREEPIECE_PRODUCTS;
-export const KURTI_PRODUCTS = THREEPIECE_PRODUCTS;
-export const CHIFFON_PRODUCTS = SEQUIN_PRODUCTS;
-export const BRIDAL_PRODUCTS = KATAN_PRODUCTS;
+export const SEQUIN_PRODUCTS = PARTY_PRODUCTS;
+export const KATAN_PRODUCTS = PARTY_PRODUCTS;
+export const THREEPIECE_PRODUCTS = LAWN_PRODUCTS;
+export const MUSLIN_PRODUCTS = COTTON_PRODUCTS;
+export const ORGANZA_PRODUCTS = PARTY_PRODUCTS;
+export const PRET_PRODUCTS = LAWN_PRODUCTS;
+export const SILK_PRODUCTS = PARTY_PRODUCTS;
+export const DESIGNER_PRODUCTS = SIGNATURE_PRODUCTS;
+export const CASUAL_PRODUCTS = COTTON_PRODUCTS;
+export const VINTAGE_PRODUCTS = CHUNRI_PRODUCTS;
+export const FARSI_PRODUCTS = LAWN_PRODUCTS;
+export const VELVET_PRODUCTS = PARTY_PRODUCTS;
+export const JEWELRY_PRODUCTS = SKINCARE_PRODUCTS;
+export const COORD_PRODUCTS = LAWN_PRODUCTS;
+export const ABAYA_PRODUCTS = PARTY_PRODUCTS;
+export const KAFTAN_PRODUCTS = LAWN_PRODUCTS;
+export const DRESS_PRODUCTS = LAWN_PRODUCTS;
+export const KURTI_PRODUCTS = COTTON_PRODUCTS;
+export const CHIFFON_PRODUCTS = PARTY_PRODUCTS;
+export const BRIDAL_PRODUCTS = PARTY_PRODUCTS;
 
 // Helper to filter by category slug
 export function getProductsByCategory(slug: string): ProductCardProps[] {
   switch (slug) {
-    case "sequin-tissue-sarees":
-    case "organza-chiffon":
-      return SEQUIN_PRODUCTS;
-    case "heritage-katan-silk":
-    case "festive-party":
-    case "bridal-katan":
-      return KATAN_PRODUCTS;
-    case "boutique-three-piece":
     case "pakistani-lawn":
-    case "designer-pret":
-      return THREEPIECE_PRODUCTS;
-    case "muslin-tussar-sarees":
-      return MUSLIN_PRODUCTS.length > 0 ? MUSLIN_PRODUCTS : ALL_PRODUCTS.slice(1, 5);
+    case "pakistani-lawn-collection":
+    case "boutique-three-piece":
+      return LAWN_PRODUCTS;
+    case "festive-party":
+    case "exclusive-festive-partywear":
+    case "heritage-katan-silk":
+    case "sequin-tissue-sarees":
+      return PARTY_PRODUCTS;
+    case "premium-cotton":
     case "handloom-cotton-sarees":
-    case "casual-lite":
-      return COTTON_PRODUCTS.length > 0 ? COTTON_PRODUCTS : ALL_PRODUCTS.slice(4, 8);
+    case "muslin-tussar-sarees":
+      return COTTON_PRODUCTS;
+    case "chunri-traditional":
+      return CHUNRI_PRODUCTS;
+    case "orni-signature":
+      return SIGNATURE_PRODUCTS;
+    case "skincare-glow":
+      return SKINCARE_PRODUCTS;
     case "new-arrivals":
       return NEW_ARRIVALS;
     case "featured":
@@ -351,15 +387,17 @@ export const DEMO_CATEGORIES = CATEGORIES;
 
 export const DEMO_PRODUCTS = ALL_PRODUCTS.map((p) => {
   const catObj = CATEGORIES.find((c) => c.name === p.category) || CATEGORIES[0];
-  const catName = catObj?.name || "Sequin & Tissue Sarees";
-  const catSlug = catObj?.slug || "sequin-tissue-sarees";
+  const catName = catObj?.name || "Pakistani Lawn Collection";
+  const catSlug = catObj?.slug || "pakistani-lawn";
   const imgs = p.images && p.images.length > 0 ? p.images : [p.image];
-  const isSaree = (p.category ?? "").toLowerCase().includes("saree") || (p.category ?? "").toLowerCase().includes("katan");
+  const isSkincare = p.category === "Skincare & Natural Glow Care";
 
   return {
     name: p.name,
     slug: p.slug,
-    description: `${p.name} — Curated by Tazeen's (Pink City Shopping Complex, Gulshan-2 & Sector 11, Uttara, Dhaka). 100% authentic handloom craftsmanship, smart & elegant finish, and transparent budget-friendly pricing. Open parcel inspection guaranteed upon delivery across all 64 districts in Bangladesh.`,
+    description: isSkincare
+      ? `Kim Whitening Pearl and Snowlotus Cream (Net Wt 20g) — থাইল্যান্ডের জনপ্রিয় ফর্মুলা সমৃদ্ধ স্কিনকেয়ার নাইট ক্রিম। ত্বককে গভীরভাবে ময়েশ্চারাইজ করে, ব্রণ ও কালচে দাগ কমাতে সহায়তা করে এবং রাতারাতি পুষ্টি দিয়ে ত্বক কোমল ও লাবণ্যময় করে তোলে। ১০০% ক্ষতিকারক কেমিক্যালমুক্ত ও প্রাকৃতিক উপাদান সমৃদ্ধ। দেশব্যাপী হোম ডেলিভারি ও পার্সেল চেক করে পেমেন্ট করার সুযোগ।`
+      : `${p.name} — শপিং কুইন বাই অর্নি (Shopping Queen by Orni) এক্সক্লুসিভ কালেকশন। ১০০% প্রিমিয়াম কোয়ালিটি ফেব্রিক, আকর্ষণীয় কালার কম্বিনেশন এবং সূক্ষ্ম কারুকাজ। সারাদেশের ৬৪ জেলায় ক্যাশ অন হোম ডেলিভারি এবং ডেলিভারিম্যানের সামনে পার্সেল খুলে দেখে চেক করে নেওয়ার ১০০% নিশ্চিন্ত সুবিধা।`,
     price: p.price,
     isFeatured: p.isBestseller ?? true,
     images: imgs,
@@ -367,20 +405,20 @@ export const DEMO_PRODUCTS = ALL_PRODUCTS.map((p) => {
       name: catName,
       slug: catSlug,
     },
-    variants: isSaree
+    variants: isSkincare
       ? [
           {
-            size: "Standard Saree (With Running Blouse Piece)",
-            color: "As Shown in Picture",
+            size: "Single Pack (20g Jar)",
+            color: "Original Pearl Cream",
             price: p.price,
-            stock: Math.max(5, Math.floor((p.stock ?? 15) / 2)),
+            stock: 35,
             images: imgs,
           },
           {
-            size: "Saree with Fall & Pico Ready",
-            color: "As Shown in Picture",
-            price: p.price + 250,
-            stock: Math.max(3, Math.floor((p.stock ?? 15) / 3)),
+            size: "Combo Pack (2 x 20g Jar) [Free Delivery]",
+            color: "Original Pearl Cream",
+            price: p.price * 2 - 100,
+            stock: 15,
             images: imgs,
           },
         ]
@@ -393,7 +431,7 @@ export const DEMO_PRODUCTS = ALL_PRODUCTS.map((p) => {
             images: imgs,
           },
           {
-            size: "Semi-Stitched Premium",
+            size: "Semi-Stitched Premium Fit",
             color: "As Shown in Picture",
             price: p.price + 350,
             stock: Math.max(3, Math.floor((p.stock ?? 15) / 3)),

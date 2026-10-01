@@ -1,16 +1,16 @@
 "use client";
 
 /**
- * Tazeen's (tazeensbd) — Interactive "Shop The Look" Couture Lookbook
- * Allows customers to interact directly with editorial saree imagery and purchase styled pieces
- * Pink City Shopping Complex, Gulshan-2 & Sector 11, Uttara, Dhaka, Bangladesh
- * Official Facebook: https://www.facebook.com/tazeensbd/
+ * Shopping Queen by Orni — Interactive "Shop The Look" Lookbook
+ * Direct editorial garment hotspot interaction and instant order
+ * Dhaka, Bangladesh • Facebook: https://www.facebook.com/Shoppingqueenbyorni
+ * 190,500+ Followers • Open Parcel Inspection Nationwide
  */
 
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Sparkles, ShoppingBag, ArrowUpRight, Check } from "lucide-react";
+import { Crown, ShoppingBag, ArrowUpRight, Check, Sparkles } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ASSETS } from "@/lib/demo-data";
 import { useCartStore } from "@/store/cart-store";
@@ -24,8 +24,8 @@ interface LookbookSpot {
   comparePrice: number;
   slug: string;
   image: string;
-  x: number; // percentage from left
-  y: number; // percentage from top
+  x: number;
+  y: number;
   sizes: string[];
 }
 
@@ -41,64 +41,85 @@ interface CoutureLook {
 const COUTURE_LOOKS: CoutureLook[] = [
   {
     id: "look-1",
-    tabLabel: "Sequin Border Saree",
-    title: "Signature Sequin Champagne Gold",
-    subtitle: "Shimmering circular metallic sequin border with braided tassels and lightweight linen tissue drape.",
-    heroImage: ASSETS.sareeChampagne,
+    tabLabel: "Pakistani Lawn",
+    title: "Royal Blue Embroidered Lawn 3-Piece",
+    subtitle: "সুইস কটন লন ফেব্রিক, নিখুঁত সুতার কাজ এবং সফট শিফন ওড়না সমৃদ্ধ প্রিমিয়াম ড্রেস।",
+    heroImage: ASSETS.product1,
     spots: [
       {
         id: "spot-1",
-        name: "Tazeen's Signature Sequin Border Saree — Champagne Beige Gold",
-        category: "Sequin & Tissue Sarees",
-        price: 3850,
-        comparePrice: 4500,
-        slug: "tazeens-signature-sequin-border-saree-champagne-beige-gold",
-        image: ASSETS.sareeChampagne,
+        name: "Shopping Queen Royal Blue Embroidered Pakistani Lawn 3-Piece",
+        category: "Pakistani Lawn Collection",
+        price: 1650,
+        comparePrice: 2200,
+        slug: "shopping-queen-royal-blue-embroidered-pakistani-lawn-3-piece",
+        image: ASSETS.product1,
         x: 50,
         y: 45,
-        sizes: ["Standard Saree", "With Fall & Pico Ready"],
+        sizes: ["Unstitched 3-Piece", "Semi-Stitched"],
       },
     ],
   },
   {
     id: "look-2",
-    tabLabel: "Heritage Zari Katan",
-    title: "Royal Crimson Maroon Striped Saree",
-    subtitle: "Fine vertical gold zari stripes, korvai temple borders, and opulent gold brocade pallu presented in our signature box.",
-    heroImage: ASSETS.sareeKatanMaroon,
+    tabLabel: "Festive Partywear",
+    title: "Royal Maroon & Zari Heavy Embroidered Suit",
+    subtitle: "বিয়ে ও দাওয়াতের জন্য ভারী জারি ও সিকোয়েন্স কারুকাজ খচিত রয়্যাল মেরুন থ্রি-পিস সেট।",
+    heroImage: ASSETS.product5,
     spots: [
       {
         id: "spot-2",
-        name: "Tazeen's Heritage Zari Striped Silk Saree — Royal Crimson Maroon",
-        category: "Heritage Katan & Silk",
-        price: 5850,
-        comparePrice: 6800,
-        slug: "tazeens-heritage-zari-striped-silk-saree-royal-crimson-maroon",
-        image: ASSETS.sareeKatanMaroon,
+        name: "Shopping Queen Royal Maroon & Zari Heavily Embroidered Partywear Suit",
+        category: "Exclusive Festive Partywear",
+        price: 2650,
+        comparePrice: 3500,
+        slug: "shopping-queen-royal-maroon-zari-heavily-embroidered-partywear-suit",
+        image: ASSETS.product5,
         x: 50,
         y: 40,
-        sizes: ["Standard Saree", "With Fall & Pico Ready"],
+        sizes: ["Unstitched 3-Piece", "Semi-Stitched"],
       },
     ],
   },
   {
     id: "look-3",
-    tabLabel: "Boutique 3-Piece",
-    title: "Classic Indigo Ajrakh Block Set",
-    subtitle: "Timeless geometric Ajrakh patterns, hand-embroidered neckline yolk panel, and pure cotton comfort.",
-    heroImage: ASSETS.threePieceAjrakh,
+    tabLabel: "Orni Signature",
+    title: "Rose Pink & Tangerine Designer Lawn Suit",
+    subtitle: "অর্ণি ইসলামের সিগনেচার ডিজাইনার লন কালেকশন। আরামদায়ক পিওর কটন ফেব্রিক ও ক্ল্যাসিক ডিজাইন।",
+    heroImage: ASSETS.product6,
     spots: [
       {
         id: "spot-3",
-        name: "Tazeen's Classic Indigo Ajrakh Block Print 3-Piece Set",
-        category: "Boutique Three-Piece Sets",
-        price: 2450,
-        comparePrice: 2950,
-        slug: "tazeens-classic-indigo-ajrakh-block-print-3piece-set",
-        image: ASSETS.threePieceAjrakh,
+        name: "Orni Signature Edit — Rose Pink & Tangerine Designer Lawn Suit",
+        category: "Orni Signature Edit",
+        price: 1850,
+        comparePrice: 2400,
+        slug: "orni-signature-edit-rose-pink-tangerine-designer-lawn-suit",
+        image: ASSETS.product6,
         x: 50,
         y: 42,
         sizes: ["Unstitched 3-Piece", "Semi-Stitched"],
+      },
+    ],
+  },
+  {
+    id: "look-4",
+    tabLabel: "Kim Pearl Skincare",
+    title: "Kim Whitening Pearl & Snowlotus Cream",
+    subtitle: "কিছু আত্মবিশ্বাসী প্রতিদিন, রাতের যত্নে প্রাকৃতিক উজ্জ্বলতা ✨ ত্বককে দাগমুক্ত ও কোমল করে।",
+    heroImage: ASSETS.product12,
+    spots: [
+      {
+        id: "spot-4",
+        name: "Kim Whitening Pearl & Snowlotus Night Cream (Net Wt 20g) — Natural Glow",
+        category: "Skincare & Natural Glow Care",
+        price: 850,
+        comparePrice: 1200,
+        slug: "kim-whitening-pearl-and-snowlotus-night-cream-20g-natural-glow",
+        image: ASSETS.product12,
+        x: 50,
+        y: 50,
+        sizes: ["Single Pack 20g Jar", "Combo Pack (2 x 20g)"],
       },
     ],
   },
@@ -107,7 +128,7 @@ const COUTURE_LOOKS: CoutureLook[] = [
 export function LookbookCouture() {
   const [activeTab, setActiveTab] = useState(0);
   const [activeSpotId, setActiveSpotId] = useState<string>("spot-1");
-  const [selectedSize, setSelectedSize] = useState<string>("Standard Saree");
+  const [selectedSize, setSelectedSize] = useState<string>("Unstitched 3-Piece");
   const [isAdding, setIsAdding] = useState(false);
 
   const addItem = useCartStore((state) => state.addItem);
@@ -122,7 +143,7 @@ export function LookbookCouture() {
     if (newLook && newLook.spots.length > 0) {
       const firstSpot = newLook.spots[0]!;
       setActiveSpotId(firstSpot.id);
-      setSelectedSize(firstSpot.sizes[0] ?? "Standard Saree");
+      setSelectedSize(firstSpot.sizes[0] ?? "Standard Size");
     }
   };
 
@@ -137,42 +158,46 @@ export function LookbookCouture() {
       size: selectedSize,
       color: "As Pictured",
       image: activeSpot.image,
-      stock: 15,
+      stock: 25,
     });
-    toast.success(`${activeSpot.name} added to your shopping bag!`, {
-      description: "✓ Open Parcel Policy • Cash on delivery available nationwide.",
+
+    toast.success(`Added ${activeSpot.name} to your bag!`, {
+      description: "✓ Open Parcel Policy • ক্যাশ অন ডেলিভারিতে চেক করে মূল্য পরিশোধ করুন।",
     });
-    setTimeout(() => setIsAdding(false), 1000);
+
+    setTimeout(() => {
+      setIsAdding(false);
+    }, 1200);
   };
 
   return (
-    <section className="py-16 md:py-28 bg-white border-b border-[#E8DFD5] relative overflow-hidden">
+    <section className="py-16 md:py-28 bg-[#FAF6F0] border-b border-[#E8DFD3] relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-7xl">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
-          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#FAF7F2] border border-[#D4AF37]/30 mb-3 shadow-xs">
-            <Sparkles className="h-3 w-3 text-[#D4AF37]" />
-            <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#720026]">
-              INTERACTIVE STYLING • TAZEEN&apos;S LOOKBOOK
+          <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#D4AF37]/50 mb-3 shadow-xs">
+            <Crown className="h-3 w-3 text-[#D4AF37]" />
+            <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#6B1D2F]">
+              SHOP THE LOOKBOOK
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] font-heading tracking-tight">
-            Shop The Saree &amp; Boutique Look
+            Orni&apos;s Signature Stylebook
           </h2>
           <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
-            Explore styled heritage drapes directly from Tazeen&apos;s. Tap any pin to inspect artisan details, select your option, and order with Open Parcel guarantee.
+            অর্ণি ইসলাম কর্তৃক নির্বাচিত সেরা পাকিস্তানি লন, গর্জিয়াস পার্টিওয়্যার ও স্কিনকেয়ার সামগ্রী সরাসরি অর্ডার করুন।
           </p>
 
-          {/* Couture Category Tabs */}
-          <div className="flex flex-wrap justify-center gap-2 pt-6">
+          {/* Tab Navigation */}
+          <div className="flex flex-wrap justify-center gap-2 mt-8">
             {COUTURE_LOOKS.map((look, idx) => (
               <button
                 key={look.id}
                 onClick={() => handleTabChange(idx)}
-                className={`px-5 py-2.5 rounded-full text-xs font-bold tracking-wide transition-all cursor-pointer ${
-                  idx === activeTab
-                    ? "bg-[#720026] text-[#D4AF37] shadow-md border border-[#D4AF37]/50"
-                    : "bg-[#FAF7F2] text-neutral-600 hover:text-[#720026] hover:bg-neutral-100 border border-[#E8DFD5]"
+                className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer ${
+                  activeTab === idx
+                    ? "bg-[#6B1D2F] text-[#D4AF37] shadow-lg border border-[#D4AF37] scale-105"
+                    : "bg-white text-neutral-700 hover:bg-[#FAF6F0] border border-[#E8DFD3]"
                 }`}
               >
                 {look.tabLabel}
@@ -181,157 +206,133 @@ export function LookbookCouture() {
           </div>
         </div>
 
-        {/* Lookbook Stage: Left Image + Right Breakdown Card */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-          {/* Left: Editorial Image with Interactive Pins */}
-          <div className="lg:col-span-7">
-            <div className="relative aspect-[3/4] sm:aspect-[4/5] rounded-[2rem] overflow-hidden bg-neutral-900 border border-[#E8DFD5] shadow-2xl">
-              <AnimatePresence mode="wait">
-                <motion.div
-                  key={currentLook.id}
-                  initial={{ opacity: 0, scale: 1.02 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0 }}
-                  transition={{ duration: 0.5 }}
-                  className="absolute inset-0"
-                >
-                  <Image
-                    src={currentLook.heroImage}
-                    alt={currentLook.title}
-                    fill
-                    unoptimized
-                    className="object-cover object-top"
-                    sizes="(max-width: 1024px) 100vw, 55vw"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
-                </motion.div>
-              </AnimatePresence>
+        {/* Lookbook Stage */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center bg-white rounded-3xl p-6 md:p-10 border border-[#E8DFD3] shadow-md">
+          {/* LEFT: Hero Lookbook Photo with Interactive Hotspots (7 Cols) */}
+          <div className="lg:col-span-7 relative aspect-[4/5] sm:aspect-[16/12] lg:aspect-[4/5] rounded-2xl overflow-hidden bg-neutral-900 border border-[#E8DFD3]">
+            <AnimatePresence mode="wait">
+              <motion.div
+                key={currentLook.id}
+                initial={{ opacity: 0, scale: 1.02 }}
+                animate={{ opacity: 1, scale: 1 }}
+                exit={{ opacity: 0, scale: 0.98 }}
+                transition={{ duration: 0.6 }}
+                className="absolute inset-0"
+              >
+                <Image
+                  src={currentLook.heroImage}
+                  alt={currentLook.title}
+                  fill
+                  unoptimized
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 60vw"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
+              </motion.div>
+            </AnimatePresence>
 
-              {/* Garment Pins on Image */}
-              {currentLook.spots.map((spot) => {
-                const isActive = activeSpotId === spot.id;
-                return (
-                  <div
-                    key={spot.id}
-                    className="absolute z-20"
-                    style={{ left: `${spot.x}%`, top: `${spot.y}%` }}
-                  >
-                    <button
-                      onClick={() => {
-                        setActiveSpotId(spot.id);
-                        setSelectedSize(spot.sizes[0] ?? "Standard Saree");
-                      }}
-                      className={`relative flex items-center justify-center size-9 rounded-full shadow-2xl transition-transform duration-300 cursor-pointer ${
-                        isActive
-                          ? "bg-[#720026] text-[#D4AF37] scale-110 ring-4 ring-[#D4AF37]/50"
-                          : "bg-white/90 backdrop-blur-md text-[#1A1A1A] hover:scale-105 ring-2 ring-black/10"
-                      }`}
-                      aria-label={`Inspect ${spot.name}`}
-                    >
-                      <Sparkles className="h-4 w-4" />
-                      {!isActive && (
-                        <span className="size-2 rounded-full bg-[#720026] absolute -top-0.5 -right-0.5 animate-pulse" />
-                      )}
-                    </button>
-                  </div>
-                );
-              })}
-
-              {/* Bottom Caption Overlay */}
-              <div className="absolute bottom-6 left-6 right-6 z-10 text-white">
-                <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#D4AF37] bg-black/50 backdrop-blur-md px-3 py-1 rounded-full border border-white/10 inline-block mb-2">
-                  EDITORIAL HIGHLIGHT
-                </span>
-                <h3 className="text-xl sm:text-2xl font-bold font-heading">
-                  {currentLook.title}
-                </h3>
-                <p className="text-xs text-neutral-200 line-clamp-1 mt-1 max-w-lg">
-                  {currentLook.subtitle}
-                </p>
-              </div>
-            </div>
+            {/* Hotspots */}
+            {currentLook.spots.map((spot) => (
+              <button
+                key={spot.id}
+                onClick={() => {
+                  setActiveSpotId(spot.id);
+                  setSelectedSize(spot.sizes[0] ?? "Standard Size");
+                }}
+                style={{ left: `${spot.x}%`, top: `${spot.y}%` }}
+                className="absolute z-10 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center size-9 rounded-full bg-white text-[#6B1D2F] shadow-2xl hover:scale-115 transition-transform duration-300 ring-4 ring-[#D4AF37] cursor-pointer"
+                aria-label={`View ${spot.name}`}
+              >
+                <span className="size-3 rounded-full bg-[#6B1D2F] animate-ping absolute" />
+                <span className="size-3 rounded-full bg-[#6B1D2F] relative z-10" />
+              </button>
+            ))}
           </div>
 
-          {/* Right: Garment Detail & Direct Purchase Module */}
-          <div className="lg:col-span-5">
-            <div className="p-6 md:p-8 rounded-3xl bg-[#FAF7F2] border border-[#E8DFD5] shadow-lg space-y-6">
-              <div>
-                <span className="text-[10px] font-bold uppercase tracking-[0.2em] text-[#720026]">
-                  {activeSpot.category}
+          {/* RIGHT: Curated Garment Details & 1-Tap Purchase (5 Cols) */}
+          <div className="lg:col-span-5 space-y-6">
+            <div>
+              <span className="text-[10px] font-extrabold uppercase tracking-widest text-[#D4AF37]">
+                {activeSpot.category}
+              </span>
+              <h3 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] font-heading leading-tight mt-1">
+                {activeSpot.name}
+              </h3>
+              <p className="text-xs md:text-sm text-neutral-600 mt-2 leading-relaxed">
+                {currentLook.subtitle}
+              </p>
+            </div>
+
+            {/* Price Box */}
+            <div className="flex items-baseline gap-3 p-4 rounded-2xl bg-[#FAF6F0] border border-[#E8DFD3]">
+              <span className="text-2xl md:text-3xl font-bold text-[#6B1D2F] font-heading">
+                ৳{activeSpot.price.toLocaleString()}
+              </span>
+              {activeSpot.comparePrice > activeSpot.price && (
+                <span className="text-sm text-neutral-400 line-through">
+                  ৳{activeSpot.comparePrice.toLocaleString()}
                 </span>
-                <h3 className="text-xl md:text-2xl font-bold text-[#1A1A1A] font-heading mt-1 leading-snug">
-                  {activeSpot.name}
-                </h3>
-                <div className="flex items-baseline gap-3 mt-3">
-                  <span className="text-2xl font-bold text-[#720026] font-sans">
-                    ৳{activeSpot.price.toLocaleString()}
-                  </span>
-                  <span className="text-sm text-neutral-400 line-through">
-                    ৳{activeSpot.comparePrice.toLocaleString()}
-                  </span>
-                  <span className="text-xs font-bold text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded-full">
-                    SAVE ৳{(activeSpot.comparePrice - activeSpot.price).toLocaleString()}
-                  </span>
-                </div>
-              </div>
+              )}
+              <span className="text-[11px] font-bold text-emerald-600 bg-emerald-50 px-2.5 py-0.5 rounded-full border border-emerald-200 ml-auto">
+                ইন-স্টক
+              </span>
+            </div>
 
-              {/* Size / Option Selector */}
-              <div className="space-y-2.5">
-                <label className="text-xs font-bold uppercase tracking-wider text-neutral-700 block">
-                  Select Specification / Option
-                </label>
-                <div className="flex flex-wrap gap-2">
-                  {activeSpot.sizes.map((sz) => (
-                    <button
-                      key={sz}
-                      onClick={() => setSelectedSize(sz)}
-                      className={`px-3.5 py-2 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
-                        selectedSize === sz
-                          ? "bg-[#720026] text-[#D4AF37] border-2 border-[#D4AF37] shadow-sm font-bold"
-                          : "bg-white text-neutral-700 border border-[#E8DFD5] hover:bg-neutral-100"
-                      }`}
-                    >
-                      {sz}
-                    </button>
-                  ))}
-                </div>
-              </div>
-
-              {/* Action Buttons */}
-              <div className="space-y-3 pt-2">
-                <button
-                  onClick={handleAddToCart}
-                  disabled={isAdding}
-                  className="w-full h-13 rounded-full bg-[#720026] hover:bg-[#8D0030] text-[#D4AF37] hover:text-white font-bold text-xs uppercase tracking-[0.16em] transition-all flex items-center justify-center gap-2 shadow-md active:scale-98 cursor-pointer disabled:opacity-50"
-                >
-                  {isAdding ? (
-                    <>
-                      <Check className="h-4 w-4" />
-                      <span>Adding to Bag...</span>
-                    </>
-                  ) : (
-                    <>
-                      <ShoppingBag className="h-4 w-4" />
-                      <span>Add to Bag — ৳{activeSpot.price.toLocaleString()}</span>
-                    </>
-                  )}
-                </button>
-
-                <Link
-                  href={`/products/${activeSpot.slug}`}
-                  className="w-full h-11 rounded-full bg-white hover:bg-[#FAF7F2] text-[#1A1A1A] border border-[#E8DFD5] text-xs font-semibold tracking-wider transition-colors flex items-center justify-center gap-2 shadow-xs"
-                >
-                  <span>View Complete Details</span>
-                  <ArrowUpRight className="h-3.5 w-3.5 text-[#720026]" />
-                </Link>
-              </div>
-
-              {/* Trust Callout */}
-              <div className="pt-4 border-t border-[#E8DFD5] text-[11px] text-neutral-500 space-y-1">
-                <p>✓ <strong>Open Parcel Policy:</strong> Check in front of delivery person before payment</p>
-                <p>✓ <strong>Inside Dhaka ৳80</strong> (1–2 days) | <strong>Outside Dhaka ৳150</strong> (2–4 days)</p>
+            {/* Size Selector */}
+            <div className="space-y-2">
+              <label className="text-xs font-bold text-[#1A1A1A] uppercase tracking-wider">
+                Select Option / সাইজ নির্বাচন:
+              </label>
+              <div className="grid grid-cols-2 gap-2">
+                {activeSpot.sizes.map((sz) => (
+                  <button
+                    key={sz}
+                    onClick={() => setSelectedSize(sz)}
+                    className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all border cursor-pointer ${
+                      selectedSize === sz
+                        ? "bg-[#6B1D2F] text-[#D4AF37] border-[#D4AF37] shadow-sm"
+                        : "bg-white text-neutral-700 hover:bg-[#FAF6F0] border-[#E8DFD3]"
+                    }`}
+                  >
+                    {sz}
+                  </button>
+                ))}
               </div>
             </div>
+
+            {/* Action Buttons */}
+            <div className="space-y-3 pt-2">
+              <button
+                onClick={handleAddToCart}
+                disabled={isAdding}
+                className="w-full h-13 rounded-full bg-[#6B1D2F] hover:bg-[#4A101D] text-[#D4AF37] hover:text-white font-bold text-xs uppercase tracking-[0.16em] transition-all duration-300 shadow-md flex items-center justify-center gap-2 active:scale-98 cursor-pointer"
+              >
+                {isAdding ? (
+                  <>
+                    <Check className="h-4 w-4 text-[#D4AF37]" />
+                    <span>Added To Bag!</span>
+                  </>
+                ) : (
+                  <>
+                    <ShoppingBag className="h-4 w-4" />
+                    <span>Add To Bag — ৳{activeSpot.price.toLocaleString()}</span>
+                  </>
+                )}
+              </button>
+
+              <Link
+                href={`/products/${activeSpot.slug}`}
+                className="w-full h-11 rounded-full bg-white hover:bg-[#FAF6F0] text-[#6B1D2F] border border-[#D4AF37]/50 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5"
+              >
+                <span>View Full Product Details</span>
+                <ArrowUpRight className="h-3.5 w-3.5" />
+              </Link>
+            </div>
+
+            {/* Assurance Note */}
+            <p className="text-[11px] text-neutral-500 text-center">
+              ✓ ক্যাশ অন ডেলিভারি • পার্সেল খুলে দেখে চেক করার সুযোগ • ঢাকা ৳৮০ / বাইরে ৳১৫০
+            </p>
           </div>
         </div>
       </div>

@@ -1,5 +1,5 @@
 /**
- * Tazeen's — All Categories Page
+ * Shopping Queen by Orni — All Categories Page
  * Route: /categories
  */
 
@@ -16,7 +16,7 @@ export const revalidate = 60;
 export const metadata: Metadata = {
   title: `All Collections & Categories — ${BUSINESS.NAME}`,
   description:
-    `Browse all ${BUSINESS.NAME} authentic sarees and boutique categories — Metallic Sequin Border Sarees, Royal Katan & Silk, Designer Boutique 3-Piece, and Haldi & Festive Weaves.`,
+    `Browse all ${BUSINESS.NAME} authentic fashion & skincare categories — Pakistani Lawn 3-Piece, Festive Partywear, Kim Whitening Cream, Handloom Cotton & Chunri.`,
 };
 
 type CategoryItem = {
@@ -55,28 +55,28 @@ export default async function CategoriesPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#FAF7F2]">
+    <div className="min-h-screen bg-[#FAF6F0]">
       <div className="container mx-auto px-4 py-8 md:py-12 max-w-7xl">
         <Breadcrumb items={[{ label: "All Categories" }]} />
 
         {/* Luxury Header */}
         <div className="mt-10 mb-14 text-center">
-          <span className="inline-block px-3.5 py-1 rounded-full border border-[#720026]/40 bg-[#720026]/5 text-[#720026] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
-            ✦ TAZEEN&apos;S HERITAGE & BOUTIQUE ✦
+          <span className="inline-block px-3.5 py-1 rounded-full border border-[#6B1D2F]/40 bg-[#6B1D2F]/5 text-[#6B1D2F] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
+            ✦ SHOPPING QUEEN BY ORNI ✦
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#720026] font-heading">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#6B1D2F] font-serif">
             All Categories
           </h1>
           <div className="w-20 h-[2px] bg-[#D4AF37] mx-auto mt-5" />
           <p className="text-neutral-600 mt-4 text-sm md:text-base max-w-xl mx-auto font-sans">
-            Explore our complete curation of sarees, regal katan weaves, and handcrafted boutique sets designed for graceful celebrations.
+            অরিজিনাল পাকিস্তানি লন, গর্জিয়াস পার্টিওয়্যার এবং খাঁটি থাই কিম পার্ল ও স্নোলোটাস স্কিনকেয়ারের পূর্ণাঙ্গ কালেকশন।
           </p>
         </div>
 
         {/* Categories Grid */}
         {categories.length === 0 ? (
           <div className="text-center py-20 text-[#999]">
-            <p className="text-lg font-heading">No categories found.</p>
+            <p className="text-lg font-serif">No categories found.</p>
           </div>
         ) : (
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 md:gap-8 mb-24">
@@ -102,7 +102,7 @@ export default async function CategoriesPage() {
                   <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40 text-[#D4AF37] text-[9.5px] uppercase tracking-[0.24em] font-bold mb-2.5">
                     ✦ {cat._count?.products ?? 0} Products
                   </span>
-                  <h2 className="text-xl md:text-2xl font-bold font-heading text-white group-hover:text-[#D4AF37] transition-colors">
+                  <h2 className="text-xl md:text-2xl font-bold font-serif text-white group-hover:text-[#D4AF37] transition-colors">
                     {cat.name}
                   </h2>
                   <span className="text-[11px] text-[#D4AF37] uppercase tracking-[0.16em] font-bold mt-3 inline-flex items-center gap-1.5 group-hover:translate-x-1.5 transition-transform">

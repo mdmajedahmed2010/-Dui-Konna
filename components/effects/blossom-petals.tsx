@@ -40,12 +40,12 @@ export function BlossomPetalsOverlay() {
 
     window.addEventListener("resize", handleResize);
 
-    // Ash and Aspen terracotta, peach, warm gold & slate indigo shimmer palette
+    // Shopping Queen by Orni royal maroon, warm gold & pearl shimmer palette
     const petalColors = [
-      "rgba(226, 149, 120, 0.40)", // Ash & Aspen warm terracotta peach
-      "rgba(212, 175, 55, 0.40)",  // Warm imperial gold
-      "rgba(72, 72, 96, 0.30)",    // Subtle slate indigo mist
-      "rgba(253, 245, 241, 0.50)", // Soft rose-cream silk shimmer
+      "rgba(107, 29, 47, 0.35)",  // Royal Maroon silk shimmer
+      "rgba(212, 175, 55, 0.40)",  // Imperial Gold luster
+      "rgba(250, 246, 240, 0.50)", // Warm Cream pearl mist
+      "rgba(184, 51, 80, 0.30)",   // Rose glow
     ];
 
     const PETAL_COUNT = Math.min(22, Math.floor(width / 60));

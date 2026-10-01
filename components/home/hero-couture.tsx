@@ -1,16 +1,16 @@
 "use client";
 
 /**
- * Tazeen's (tazeensbd) — Cinematic Haute Couture Hero
- * Asymmetric Editorial Split with Interactive Saree Hotspots & Fluid Physics
- * Pink City Shopping Complex, Gulshan-2 & Sector 11, Uttara, Dhaka, Bangladesh
- * Official Facebook: https://www.facebook.com/tazeensbd/
+ * Shopping Queen by Orni — Cinematic Haute Couture Hero
+ * Asymmetric Editorial Split with Interactive Hotspots & Fluid Physics
+ * Dhaka, Bangladesh • Facebook: https://www.facebook.com/Shoppingqueenbyorni
+ * 190,500+ Followers • Open Parcel Inspection Nationwide
  */
 
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { ArrowUpRight, Sparkles, ShieldCheck, Star, MapPin, Eye, ShoppingBag } from "lucide-react";
+import { ArrowUpRight, Sparkles, ShieldCheck, Star, Eye, ShoppingBag, Crown } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ASSETS } from "@/lib/demo-data";
 import { useQuickViewStore } from "@/store/quick-view-store";
@@ -37,56 +37,74 @@ export interface CoutureHeroSlide {
 const HERO_SLIDES: CoutureHeroSlide[] = [
   {
     id: "slide-1",
-    image: ASSETS.banner,
-    category: "TAZEEN'S • GULSHAN & UTTARA SHOWROOMS",
-    title: "SMART & ELEGANT",
-    italicWord: "Heritage Sarees",
+    image: ASSETS.heroImage,
+    category: "অর্ণি ইসলাম সিগনেচার • ১৯০K+ আপুদের বিশ্বাস",
+    title: "রাতের যত্নে",
+    italicWord: "প্রাকৃতিক উজ্জ্বলতা ✨",
     subtitle:
-      "Welcome to Tazeen's. Discover exclusive sequin border sarees, royal bridal katan, and handcrafted boutique 3-piece sets. Visit our showrooms at Pink City (Gulshan-2) & Sector 11 (Uttara), or order online with Open Parcel inspection across Bangladesh.",
-    link: "/collections/sequin-tissue-sarees",
+      "কিম হোয়াইটেনিং পার্ল অ্যান্ড স্নোলোটাস ক্রিম (Kim Whitening Pearl & Snowlotus Cream)। ত্বককে গভীরভাবে ময়েশ্চারাইজ করে, ব্রণ ও কালচে দাগ কমায় এবং রাতারাতি পুষ্টি দিয়ে ত্বক কোমল ও লাবণ্যময় করে। ১০০% ক্ষতিকারক কেমিক্যালমুক্ত ও প্রাকৃতিক উপাদান সমৃদ্ধ।",
+    link: "/products/kim-whitening-pearl-and-snowlotus-night-cream-20g-natural-glow",
     hotspot: {
-      name: "Tazeen's Signature Sequin Border Saree — Champagne Beige Gold",
-      price: 3850,
-      comparePrice: 4500,
-      slug: "tazeens-signature-sequin-border-saree-champagne-beige-gold",
-      x: 52,
-      y: 48,
+      name: "Kim Whitening Pearl & Snowlotus Night Cream (20g) — Natural Glow",
+      price: 850,
+      comparePrice: 1200,
+      slug: "kim-whitening-pearl-and-snowlotus-night-cream-20g-natural-glow",
+      x: 35,
+      y: 72,
     },
   },
   {
     id: "slide-2",
-    image: ASSETS.sareeKatanMaroon,
-    category: "HERITAGE KATAN & SILK",
-    title: "ROYAL CRIMSON",
-    italicWord: "Zari Striped Saree",
+    image: ASSETS.product5,
+    category: "EXCLUSIVE FESTIVE PARTYWEAR",
+    title: "ROYAL MAROON",
+    italicWord: "লাক্সারি পার্টিওয়্যার স্যুট",
     subtitle:
-      "Pure blended silk with vertical antique gold zari stripes, korvai temple borders, and a royal turmeric gold pallu. Packaged in Tazeen's signature polka-dot gift box.",
-    link: "/collections/heritage-katan-silk",
+      "বিয়ে, উৎসব ও দাওয়াতের জন্য ভারী জারি ও সিকোয়েন্স কারুকাজ খচিত রয়্যাল মেরুন থ্রি-পিস সেট। অর্ণি ইসলামের ফেভারিট কালেকশন—পার্সেল খুলে দেখে পেমেন্ট করার নিশ্চিন্ত সুযোগ।",
+    link: "/products/shopping-queen-royal-maroon-zari-heavily-embroidered-partywear-suit",
     hotspot: {
-      name: "Tazeen's Heritage Zari Striped Silk Saree — Royal Crimson Maroon",
-      price: 5850,
-      comparePrice: 6800,
-      slug: "tazeens-heritage-zari-striped-silk-saree-royal-crimson-maroon",
-      x: 48,
-      y: 45,
+      name: "Shopping Queen Royal Maroon & Zari Heavily Embroidered Partywear Suit",
+      price: 2650,
+      comparePrice: 3500,
+      slug: "shopping-queen-royal-maroon-zari-heavily-embroidered-partywear-suit",
+      x: 50,
+      y: 42,
     },
   },
   {
     id: "slide-3",
-    image: ASSETS.threePieceAjrakh,
-    category: "BOUTIQUE THREE-PIECE SETS",
-    title: "ARTISANAL",
-    italicWord: "Ajrakh & Mirror Work",
+    image: ASSETS.product6,
+    category: "ORNI SIGNATURE LAWN EDIT",
+    title: "ORNI SIGNATURE",
+    italicWord: "রোজ পিঙ্ক & অরেঞ্জ লন",
     subtitle:
-      "Authentic monochrome & indigo Ajrakh medallion block prints with hand-embroidered neckline panels, breathable cotton dupattas, and tailored comfort.",
-    link: "/collections/boutique-three-piece",
+      "অর্ণি ইসলাম কর্তৃক ব্যক্তিগতভাবে উপস্থাপিত ও স্টাইল করা ডিজিটাল লন থ্রি-পিস। প্রাণবন্ত রঙ, প্রিমিয়াম সুতি ফেব্রিক এবং আরামদায়ক ক্লাসিক প্রিন্ট দোপাট্টা।",
+    link: "/products/orni-signature-edit-rose-pink-tangerine-designer-lawn-suit",
     hotspot: {
-      name: "Tazeen's Classic Indigo Ajrakh Block Print 3-Piece Set",
-      price: 2450,
-      comparePrice: 2950,
-      slug: "tazeens-classic-indigo-ajrakh-block-print-3piece-set",
-      x: 50,
-      y: 42,
+      name: "Orni Signature Edit — Rose Pink & Tangerine Designer Lawn Suit",
+      price: 1850,
+      comparePrice: 2400,
+      slug: "orni-signature-edit-rose-pink-tangerine-designer-lawn-suit",
+      x: 48,
+      y: 46,
+    },
+  },
+  {
+    id: "slide-4",
+    image: ASSETS.product1,
+    category: "PAKISTANI LAWN COLLECTION",
+    title: "ROYAL BLUE",
+    italicWord: "ডিজিটাল লন ৩-পিস",
+    subtitle:
+      "প্রিমিয়াম সুইস কটন লন ফেব্রিক্স, মার্জিত ব্লু শেড, নেকলাইনে নিখুঁত এমব্রয়ডারি এবং হালকা শিফন দোপাট্টা। অফিস ও আউটিংয়ের জন্য মানানসই।",
+    link: "/products/shopping-queen-royal-blue-embroidered-pakistani-lawn-3-piece",
+    hotspot: {
+      name: "Shopping Queen Royal Blue Embroidered Pakistani Lawn 3-Piece",
+      price: 1650,
+      comparePrice: 2200,
+      slug: "shopping-queen-royal-blue-embroidered-pakistani-lawn-3-piece",
+      x: 52,
+      y: 45,
     },
   },
 ];
@@ -120,16 +138,16 @@ export function HeroCouture() {
       images: [activeSlide.image],
       category: activeSlide.category,
       slug: activeSlide.hotspot.slug,
-      stock: 15,
+      stock: 25,
       isNew: true,
     });
   };
 
   return (
-    <section className="relative w-full bg-[#FAF7F2] overflow-hidden border-b border-[#E8DFD3]">
+    <section className="relative w-full bg-[#FAF6F0] overflow-hidden border-b border-[#E8DFD3]">
       {/* Background Decorative Typography */}
-      <div className="absolute top-1/2 -left-12 -translate-y-1/2 pointer-events-none select-none text-[120px] md:text-[220px] font-bold text-black/[0.02] font-heading leading-none whitespace-nowrap z-0">
-        TAZEEN&apos;S
+      <div className="absolute top-1/2 -left-12 -translate-y-1/2 pointer-events-none select-none text-[100px] md:text-[200px] font-bold text-black/[0.02] font-heading leading-none whitespace-nowrap z-0">
+        SHOPPING QUEEN
       </div>
 
       <div className="container mx-auto px-4 md:px-8 lg:px-12 py-10 md:py-16 relative z-10">
@@ -137,9 +155,9 @@ export function HeroCouture() {
           {/* LEFT: Editorial Storytelling & Direct Conversion CTA (5 Cols) */}
           <div className="lg:col-span-5 space-y-6 md:space-y-8 order-2 lg:order-1">
             {/* Tagline Badge */}
-            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#D4AF37]/40 shadow-xs">
-              <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
-              <span className="text-[10px] md:text-[11px] font-bold tracking-[0.2em] uppercase text-[#720026]">
+            <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-[#D4AF37]/50 shadow-xs">
+              <Crown className="h-3.5 w-3.5 text-[#D4AF37]" />
+              <span className="text-[10px] md:text-[11px] font-bold tracking-[0.16em] uppercase text-[#6B1D2F]">
                 {activeSlide.category}
               </span>
             </div>
@@ -148,7 +166,7 @@ export function HeroCouture() {
             <div className="space-y-2">
               <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight text-[#1A1A1A] font-heading leading-[1.08]">
                 {activeSlide.title} <br />
-                <span className="italic font-normal font-serif text-[#720026] tracking-normal">
+                <span className="italic font-normal font-serif text-[#6B1D2F] tracking-normal">
                   {activeSlide.italicWord}
                 </span>
               </h1>
@@ -161,45 +179,47 @@ export function HeroCouture() {
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3 pt-2">
               <Link
                 href={activeSlide.link}
-                className="h-12 md:h-13 px-8 rounded-full bg-[#720026] hover:bg-[#8D0030] text-[#D4AF37] hover:text-white text-xs md:text-sm font-bold tracking-[0.14em] uppercase transition-all duration-300 shadow-md flex items-center justify-center gap-2 group/btn active:scale-98"
+                className="h-12 md:h-13 px-8 rounded-full bg-[#6B1D2F] hover:bg-[#4A101D] text-[#D4AF37] hover:text-white text-xs md:text-sm font-bold tracking-[0.14em] uppercase transition-all duration-300 shadow-md flex items-center justify-center gap-2 group/btn active:scale-98"
               >
-                <span>Explore Saree Collection</span>
+                <span>অর্ডার করুন / View Collection</span>
                 <ArrowUpRight className="h-4 w-4 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5 transition-transform" />
               </Link>
 
-              <Link
-                href="/contact"
-                className="h-12 md:h-13 px-6 rounded-full bg-white hover:bg-[#FAF7F2] text-[#720026] border border-[#D4AF37]/40 text-xs md:text-sm font-semibold tracking-wider transition-colors flex items-center justify-center gap-2 shadow-xs"
+              <a
+                href={BUSINESS.WHATSAPP_LINK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="h-12 md:h-13 px-6 rounded-full bg-white hover:bg-[#FAF6F0] text-[#6B1D2F] border border-[#D4AF37]/40 text-xs md:text-sm font-semibold tracking-wider transition-colors flex items-center justify-center gap-2 shadow-xs"
               >
-                <MapPin className="h-4 w-4 text-[#D4AF37]" />
-                <span>Visit Showrooms</span>
-              </Link>
+                <Sparkles className="h-4 w-4 text-[#D4AF37]" />
+                <span>হটলাইন: {BUSINESS.PHONE}</span>
+              </a>
             </div>
 
             {/* Value Indicators Row */}
             <div className="grid grid-cols-3 gap-3 pt-4 border-t border-[#E8DFD3]">
               <div className="space-y-0.5">
-                <div className="flex items-center gap-1 text-[#720026]">
+                <div className="flex items-center gap-1 text-[#6B1D2F]">
                   <Star className="h-3.5 w-3.5 fill-current" />
-                  <span className="text-xs font-bold text-[#1A1A1A] font-heading">50K+ Community</span>
+                  <span className="text-xs font-bold text-[#1A1A1A] font-heading">১৯০K+ ফলোয়ার</span>
                 </div>
-                <p className="text-[10px] text-neutral-500">Facebook Followers</p>
+                <p className="text-[10px] text-neutral-500">Facebook Family</p>
               </div>
 
               <div className="space-y-0.5 border-x border-[#E8DFD3] px-3">
                 <div className="flex items-center gap-1 text-[#D4AF37]">
                   <ShieldCheck className="h-3.5 w-3.5 fill-current" />
-                  <span className="text-xs font-bold text-[#1A1A1A] font-heading">100% Authentic</span>
+                  <span className="text-xs font-bold text-[#1A1A1A] font-heading">১০০% আসল মান</span>
                 </div>
-                <p className="text-[10px] text-neutral-500">Handloom &amp; Boutique</p>
+                <p className="text-[10px] text-neutral-500">কোয়ালিটি গ্যারান্টি</p>
               </div>
 
               <div className="space-y-0.5">
                 <div className="flex items-center gap-1 text-emerald-600">
                   <ShoppingBag className="h-3.5 w-3.5" />
-                  <span className="text-xs font-bold text-[#1A1A1A] font-heading">Open Parcel</span>
+                  <span className="text-xs font-bold text-[#1A1A1A] font-heading">ওপেন পার্সেল</span>
                 </div>
-                <p className="text-[10px] text-neutral-500">Check Before Paying</p>
+                <p className="text-[10px] text-neutral-500">দেখে চেক করে পেমেন্ট</p>
               </div>
             </div>
           </div>
@@ -208,7 +228,7 @@ export function HeroCouture() {
           <div className="lg:col-span-7 order-1 lg:order-2">
             <div className="relative mx-auto max-w-xl lg:max-w-none">
               {/* Luxury Frame Glow */}
-              <div className="absolute -inset-2 rounded-[2rem] bg-gradient-to-tr from-[#720026]/20 via-[#D4AF37]/20 to-[#C2185B]/20 blur-xl opacity-70" />
+              <div className="absolute -inset-2 rounded-[2rem] bg-gradient-to-tr from-[#6B1D2F]/20 via-[#D4AF37]/20 to-[#E85D75]/20 blur-xl opacity-70" />
 
               {/* Main Image Viewport with Aspect Ratio */}
               <div className="relative aspect-[4/5] sm:aspect-[16/11] md:aspect-[4/5] lg:aspect-[16/12] w-full rounded-[1.75rem] overflow-hidden bg-neutral-900 border-2 border-white shadow-2xl">
@@ -245,10 +265,10 @@ export function HeroCouture() {
                   <button
                     onClick={() => setShowHotspotTooltip(!showHotspotTooltip)}
                     className="relative flex items-center justify-center size-8 rounded-full bg-white text-[#1A1A1A] shadow-xl hover:scale-110 active:scale-95 transition-transform duration-300 ring-4 ring-[#D4AF37]/60 cursor-pointer"
-                    aria-label="View garment hotspot"
+                    aria-label="View hotspot"
                   >
-                    <span className="size-2.5 rounded-full bg-[#720026] animate-ping absolute" />
-                    <span className="size-2.5 rounded-full bg-[#720026] relative z-10" />
+                    <span className="size-2.5 rounded-full bg-[#6B1D2F] animate-ping absolute" />
+                    <span className="size-2.5 rounded-full bg-[#6B1D2F] relative z-10" />
                   </button>
 
                   {/* Hotspot Floating Card Tooltip */}
@@ -268,7 +288,7 @@ export function HeroCouture() {
                         </div>
 
                         <div className="flex items-center gap-2 mt-2">
-                          <span className="text-sm font-bold text-[#720026] font-heading">
+                          <span className="text-sm font-bold text-[#6B1D2F] font-heading">
                             ৳{activeSlide.hotspot.price.toLocaleString()}
                           </span>
                           <span className="text-[10px] text-neutral-400 line-through">
@@ -278,7 +298,7 @@ export function HeroCouture() {
 
                         <button
                           onClick={handleHotspotClick}
-                          className="mt-2.5 w-full py-1.5 rounded-lg bg-[#720026] hover:bg-[#8D0030] text-[#D4AF37] hover:text-white text-[10px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
+                          className="mt-2.5 w-full py-1.5 rounded-lg bg-[#6B1D2F] hover:bg-[#4A101D] text-[#D4AF37] hover:text-white text-[10px] font-bold uppercase tracking-wider flex items-center justify-center gap-1.5 transition-colors cursor-pointer"
                         >
                           <Eye className="h-3 w-3" />
                           <span>Quick View &amp; Order</span>
@@ -297,7 +317,7 @@ export function HeroCouture() {
                         onClick={() => handleSlideChange(idx)}
                         className={`px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider transition-all cursor-pointer ${
                           idx === currentIdx
-                            ? "bg-[#720026] text-[#D4AF37] shadow-sm font-extrabold"
+                            ? "bg-[#6B1D2F] text-[#D4AF37] shadow-sm font-extrabold"
                             : "text-white/70 hover:text-white hover:bg-white/10"
                         }`}
                       >
@@ -307,7 +327,7 @@ export function HeroCouture() {
                   </div>
 
                   <span className="text-[9.5px] tracking-widest uppercase font-mono text-[#D4AF37]">
-                    TAZEEN&apos;S EDITORIAL
+                    SHOPPING QUEEN BY ORNI
                   </span>
                 </div>
               </div>

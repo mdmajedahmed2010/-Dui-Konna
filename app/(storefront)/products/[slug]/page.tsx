@@ -1,5 +1,5 @@
 /**
- * Tazeen's — Product Detail Page
+ * Shopping Queen by Orni — Product Detail Page
  * Route: /products/[slug]
  */
 
@@ -72,11 +72,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
           id: demoProduct.id,
           name: demoProduct.name,
           slug: demoProduct.slug,
-          description: `${demoProduct.name} — ${(demoProduct as any).description || "Exclusive heritage saree and boutique wear by Tazeen's. Handcrafted details, regal metallic borders, and open parcel inspection nationwide."}`,
+          description: `${demoProduct.name} — ${(demoProduct as any).description || `Exclusive authentic fashion and skincare by ${BUSINESS.NAME}. Handpicked quality, intricate details, and open parcel inspection nationwide.`}`,
           basePrice: demoProduct.price,
           category: {
-            name: demoProduct.category || "Sequin & Tissue Sarees",
-            slug: (demoProduct.category || "Sequin & Tissue Sarees").toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+            name: demoProduct.category || "Pakistani Lawn 3-Piece",
+            slug: (demoProduct.category || "Pakistani Lawn 3-Piece").toLowerCase().replace(/[^a-z0-9]+/g, "-"),
           },
           variants: [
             {

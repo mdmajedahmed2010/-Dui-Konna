@@ -1,8 +1,8 @@
 /**
- * Tazeen's (tazeensbd) — Application Constants
- * Smart & Elegant Heritage Sarees & Designer Boutique Wear
- * Pink City Shopping Complex, Gulshan-2 & Sector 11, Uttara, Dhaka, Bangladesh
- * Official Facebook: https://www.facebook.com/tazeensbd/
+ * Shopping Queen by Orni (Shoppingqueenbyorni) — Application Constants
+ * Authentic Pakistani Lawn, Festive Couture & Kim Pearl Skincare
+ * Official Facebook: https://www.facebook.com/Shoppingqueenbyorni
+ * Hotlines: 01611-467735 / 01935-711304
  */
 
 // Delivery Charges (BDT)
@@ -15,7 +15,7 @@ export const DELIVERY_CHARGE = {
 } as const;
 
 // Order Number Prefix
-export const ORDER_PREFIX = "TZ";
+export const ORDER_PREFIX = "SQO";
 
 // Product Status
 export const PRODUCT_STATUS = {
@@ -59,8 +59,8 @@ export const RATE_LIMITS = {
 export const UPLOAD_LIMITS = {
   MAX_SIZE_MB: 10,
   MAX_SIZE_BYTES: 10 * 1024 * 1024,
-  ALLOWED_TYPES: ["image/jpeg", "image/png", "image/webp", "image/gif"],
-  ALLOWED_EXTENSIONS: [".jpg", ".jpeg", ".png", ".webp", ".gif"],
+  ALLOWED_TYPES: ["image/jpeg", "image/png", "image/webp", "image/gif", "image/avif"],
+  ALLOWED_EXTENSIONS: [".jpg", ".jpeg", ".png", ".webp", ".gif", ".avif"],
   MAX_DIMENSION: 4000,
 } as const;
 
@@ -79,41 +79,45 @@ export const AUTH = {
   PASSWORD_RESET_EXPIRY: 60 * 60,
 } as const;
 
-// Business Info — Tazeen's
+// Business Info — Shopping Queen by Orni
 export const BUSINESS = {
-  NAME: "Tazeen's",
-  NAME_SHORT: "Tazeen's",
-  NAME_BN: "তাজিন্স",
-  TAGLINE: "Smart & Elegant Heritage Sarees & Boutique Collections",
-  TAGLINE_SUB: "EXCLUSIVE SEQUIN SAREES, BRIDAL KATAN & BOUTIQUE 3-PIECE • GULSHAN & UTTARA SHOWROOMS",
-  TAGLINE_BN: "স্মার্ট ও এলিগ্যান্ট শাড়ি, ঐতিহ্যবাহী ব্রাইডাল কাতান ও প্রিমিয়াম বুটিক ৩-পিস কালেকশন",
-  PHONE: "01790-030434",
-  PHONE_INTL: "+880 1790-030434",
-  PHONE_ALT: "01773-770042",
-  WHATSAPP: "+8801790030434",
-  WHATSAPP_LINK: "https://wa.me/8801790030434",
-  EMAIL: "tazeens2001@gmail.com",
-  ADDRESS: "Shop #55 (1st Floor), Pink City Shopping Complex, Gulshan-2, Dhaka",
-  ADDRESS_BN: "দোকান #৫৫ (১ম তলা), পিংক সিটি শপিং কমপ্লেক্স, গুলশান-২, ঢাকা",
-  SHOWROOM_GULSHAN: "Shop #55 (1st Floor), Pink City Shopping Complex, Plot 15, Road 103, Gulshan-2, Dhaka",
-  SHOWROOM_GULSHAN_BN: "দোকান #৫৫ (১ম তলা), পিংক সিটি শপিং কমপ্লেক্স, প্লট ১৫, রোড ১০৩, গুলশান-২, ঢাকা",
-  SHOWROOM_UTTARA: "Fairytale (Tahfeem Fashion), Meena Bazar Building (3rd Floor), Sector 11, Uttara, Dhaka",
-  SHOWROOM_UTTARA_BN: "ফেয়ারিটেল (তাহফিম ফ্যাশন), মীনা বাজার বিল্ডিং (৩য় তলা), সেক্টর ১১, উত্তরা, ঢাকা",
-  LOCATION_LANDMARK: "Pink City Gulshan-2 & Meena Bazar Building Sector 11 Uttara",
-  FACEBOOK: "https://www.facebook.com/tazeensbd/",
-  INSTAGRAM: "https://www.instagram.com/tazeensbd",
-  TIKTOK: "https://www.tiktok.com/@tazeensbd",
-  YOUTUBE: "https://www.youtube.com/@tazeensbd",
-  WEBSITE: "https://tazeensbd.com",
-  ESTABLISHED: "Smart & Elegant Fashion Heritage at Budget-Friendly Prices",
-  FOLLOWERS: "50K+",
+  NAME: "Shopping Queen by Orni",
+  NAME_SHORT: "Shopping Queen",
+  NAME_BN: "শপিং কুইন বাই অর্নি",
+  FOUNDER: "Orni Islam",
+  FOUNDER_BN: "অর্ণি ইসলাম",
+  TAGLINE: "Exclusive Pakistani Suits, Designer Attires & Natural Glow Essentials",
+  TAGLINE_SUB: "দেশী-বিদেশী বিভিন্ন ব্র্যান্ডের মেয়েদের সালোয়ার কামিজ ও রূপচর্চা • ১৯০,০০০+ আপুদের ভরসা",
+  TAGLINE_BN: "দেশী-বিদেশী বিভিন্ন ব্র্যান্ডের মেয়েদের সালোয়ার কামিজ সুলভ মূল্যে খুচরা ও পাইকারি বিক্রয় করা হয়।",
+  MOTTO_BN: "কিছু আত্মবিশ্বাসী প্রতিদিন, রাতের যত্নে প্রাকৃতিক উজ্জ্বলতা ✨",
+  PHONE: "01611-467735",
+  PHONE_INTL: "+880 1611-467735",
+  PHONE_ALT: "01935-711304",
+  PHONE_ALT_INTL: "+880 1935-711304",
+  WHATSAPP: "+8801611467735",
+  WHATSAPP_LINK: "https://wa.me/8801611467735",
+  EMAIL: "shoppingqueenbyorni@gmail.com",
+  ADDRESS: "House #14, Road #07, Sector #03, Uttara, Dhaka, Bangladesh",
+  ADDRESS_BN: "হাউস #১৪, রোড #০৭, সেক্টর #০৩, উত্তরা, ঢাকা, বাংলাদেশ",
+  CITY: "Dhaka",
+  COUNTRY: "Bangladesh",
+  LOCATION_LANDMARK: "Uttara, Dhaka (Nationwide Fast Delivery)",
+  FACEBOOK: "https://www.facebook.com/Shoppingqueenbyorni",
+  INSTAGRAM: "https://www.instagram.com/Shoppingqueenbyorni",
+  TIKTOK: "https://www.tiktok.com/@Shoppingqueenbyorni",
+  YOUTUBE: "https://www.youtube.com/@Shoppingqueenbyorni",
+  WEBSITE: "https://shoppingqueenbyorni.com",
+  ESTABLISHED: "Trusted Women's Fashion & Skincare Brand in Bangladesh",
+  FOLLOWERS: "190K+",
+  FOLLOWERS_EXACT: "190,561+ Followers",
   RATING: "4.9 ★",
-  RECOMMEND_RATE: "98%",
+  RECOMMEND_RATE: "99%",
   OPEN_PARCEL_POLICY: true,
-  STORE_HOURS: "Everyday: 10:30 AM – 10:00 PM | Showroom & Online Support",
-  STORE_HOURS_BN: "প্রতিদিন: সকাল ১০:৩০ – রাত ১০:০০ | গুলশান ও উত্তরা শোরুম এবং অনলাইন ডেলিভারি সক্রিয়",
+  STORE_HOURS: "Saturday – Thursday: 10:00 AM – 11:00 PM | Online 24/7 Hotline",
+  STORE_HOURS_BN: "শনি – বৃহস্পতিবার: সকাল ১০:০০ – রাত ১১:০০ | অনলাইন ২৪/৭ হটলাইন ও ইনবক্স সেবা সক্রিয়",
   DELIVERY_CHARGE_INSIDE: 80,
   DELIVERY_CHARGE_OUTSIDE: 150,
+  FREE_DELIVERY_MIN_ITEMS: 2,
 } as const;
 
 // Currency
@@ -128,24 +132,16 @@ export const COUPON_CODES: Record<
   string,
   { type: "percent" | "flat"; value: number; label: string }
 > = {
+  ORNI10: { type: "percent", value: 10, label: "10% off with Orni Special Promo" },
+  QUEENVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
+  EIDQUEEN: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
+  LAWNLOVE: { type: "percent", value: 10, label: "10% Pakistani Lawn Special" },
+  GLOW10: { type: "percent", value: 10, label: "10% off Skincare Glow Routine" },
+  WELCOME5: { type: "percent", value: 5, label: "5% Welcome Discount" },
+  FLAT300: { type: "flat", value: 300, label: "৳300 flat discount on 2+ dresses" },
+  // Backward compatibility aliases
   TAZEEN10: { type: "percent", value: 10, label: "10% off your order" },
   TAZEENVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
-  EIDTAZEEN: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
-  SARILOVE: { type: "percent", value: 10, label: "10% Saree Lovers Special" },
-  WELCOME5: { type: "percent", value: 5, label: "5% Welcome Discount" },
-  FLAT500: { type: "flat", value: 500, label: "৳500 flat discount" },
-  // Backward compatibility aliases
   ASH10: { type: "percent", value: 10, label: "10% off your order" },
   ASPENVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
-  EIDASH: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
-  PAKISTANI10: { type: "percent", value: 10, label: "10% off your order" },
-  "365VIP": { type: "percent", value: 15, label: "15% VIP exclusive discount" },
-  EID365: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
-  TANZZ10: { type: "percent", value: 10, label: "10% off your order" },
-  TANZZVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
-  EID2026: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
-  THREESIS10: { type: "percent", value: 10, label: "10% off your order" },
-  THREESISVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
-  ENAYA10: { type: "percent", value: 10, label: "10% off your order" },
-  STYLE10: { type: "percent", value: 10, label: "10% off your order" },
 } as const;

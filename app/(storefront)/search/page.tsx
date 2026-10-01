@@ -3,10 +3,11 @@ import { Breadcrumb } from "@/components/ui/breadcrumb";
 import { ProductCard } from "@/components/product/product-card";
 import { getProducts } from "@/actions/product.actions";
 import { ALL_PRODUCTS } from "@/lib/demo-data";
+import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Search Products — Blossom",
-  description: "Search exclusive Blossom collections, dresses, bridal wear, and accessories.",
+  title: `Search Products — ${BUSINESS.NAME}`,
+  description: `Search exclusive ${BUSINESS.NAME} collections, Pakistani Lawn 3-Piece, Festive Partywear, and Kim Pearl Whitening Cream.`,
 };
 
 interface SearchPageProps {
@@ -51,7 +52,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
     const image =
       Array.isArray(variantImages) && variantImages.length > 0
         ? variantImages[0]
-        : "/images/products/placeholder.jpg";
+        : "/shoppingqueen-assets/sq-product-01-royal-blue.jpg";
 
     const variantPrice = p.variants?.[0]?.price ? Number(p.variants[0].price) : Number(p.basePrice);
 
@@ -62,7 +63,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
       price: variantPrice,
       compareAtPrice: Math.round(variantPrice * 1.2),
       image,
-      category: p.category?.name || "Collection",
+      category: p.category?.name || "Orni Collection",
       isNew: p.isFeatured,
     };
   });
@@ -72,13 +73,13 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
       <Breadcrumb items={[{ label: "Search" }]} />
 
       <div className="mt-6 mb-8 text-center max-w-2xl mx-auto">
-        <h1 className="text-3xl md:text-4xl font-bold tracking-tight font-heading">
+        <h1 className="text-3xl md:text-4xl font-bold tracking-tight font-serif text-[#1A1A1A]">
           {query ? `Search Results for "${query}"` : "Explore Catalog"}
         </h1>
-        <p className="text-xs md:text-sm text-muted-foreground mt-2">
+        <p className="text-xs md:text-sm text-neutral-500 mt-2">
           {query
             ? `Found ${mappedProducts.length} ${mappedProducts.length === 1 ? "item" : "items"} matching your query.`
-            : "Use the search bar above to discover our designer collections."}
+            : "Use the search bar above to discover Pakistani Lawn, Festive Partywear, and Kim Whitening Cream."}
         </p>
       </div>
 
@@ -89,10 +90,10 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
           ))}
         </div>
       ) : (
-        <div className="text-center py-24 border border-dashed border-border/80 rounded-lg max-w-md mx-auto space-y-3 mt-12 bg-neutral-50/50">
-          <p className="text-sm font-semibold text-foreground">No matching products found</p>
-          <p className="text-xs text-muted-foreground max-w-xs mx-auto">
-            Try searching for another keyword or browse our curated collections.
+        <div className="text-center py-24 border border-dashed border-[#E8DFD5] rounded-2xl max-w-md mx-auto space-y-3 mt-12 bg-white">
+          <p className="text-sm font-semibold text-[#1A1A1A] font-serif">No matching products found</p>
+          <p className="text-xs text-neutral-500 max-w-xs mx-auto">
+            Try searching for another keyword or browse our curated Pakistani Lawn & Skincare collections.
           </p>
         </div>
       )}

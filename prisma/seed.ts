@@ -3,7 +3,7 @@ import { prisma } from '../lib/db';
 import { DEMO_CATEGORIES, DEMO_PRODUCTS } from '../lib/demo-data';
 
 async function main() {
-  console.log("Start seeding for Tazeen's...");
+  console.log("Start seeding for Shopping Queen by Orni...");
 
   // Clean up existing data
   await prisma.productVariant.deleteMany({});
@@ -40,18 +40,18 @@ async function main() {
       data: {
         name: pData.name,
         slug: pData.slug,
-        description: `${pData.description} Curated by Tazeen's — Smart & Elegant Heritage Sarees & Boutique Couture in Bangladesh. Showrooms at Pink City (Gulshan-2) & Sector 11 (Uttara), Dhaka. Nationwide cash on delivery with open parcel inspection.`,
+        description: `${pData.description} — শপিং কুইন বাই অর্নি (Shopping Queen by Orni), ঢাকা, বাংলাদেশ। সারাদেশে ক্যাশ অন হোম ডেলিভারি ও পার্সেল খুলে চেক করে পেমেন্ট করার নিশ্চিন্ত সুবিধা।`,
         basePrice: pData.price,
         categoryId: categoryId,
         status: ProductStatus.ACTIVE,
         isFeatured: pData.isFeatured ?? true,
-        seoTitle: `${pData.name} | Tazeen's`,
-        seoDesc: `Buy ${pData.name} online from Tazeen's. Smart & elegant heritage sarees with nationwide COD & open parcel inspection.`,
-        ogImage: pData.images[0] || '/tazeens-assets/hero-banner.jpg',
+        seoTitle: `${pData.name} | Shopping Queen by Orni`,
+        seoDesc: `Buy ${pData.name} online from Shopping Queen by Orni. 100% authentic Pakistani suits, festive partywear & natural glow skincare with nationwide COD.`,
+        ogImage: pData.images[0] || '/shoppingqueen-assets/banner.avif',
         variants: {
           create: (pData.variants || []).map((v: any, idx: number) => ({
-            sku: `TZ-${String(i + 1).padStart(3, '0')}-${idx + 1}`,
-            size: v.size || 'Free Size Saree (6.5 Yards)',
+            sku: `SQO-${String(i + 1).padStart(3, '0')}-${idx + 1}`,
+            size: v.size || 'Standard Size',
             color: v.color || 'As Pictured',
             price: v.price || pData.price,
             stock: v.stock || 25,
@@ -63,7 +63,7 @@ async function main() {
     console.log(`Created product: ${product.name}`);
   }
 
-  console.log("✅ Tazeen's Database Seeding Completed Successfully!");
+  console.log("✅ Shopping Queen by Orni Database Seeding Completed Successfully!");
 }
 
 main()

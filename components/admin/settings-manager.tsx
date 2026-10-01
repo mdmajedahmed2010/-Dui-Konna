@@ -145,19 +145,19 @@ const DEFAULTS: Record<string, { value: unknown; group: string; label: string; t
 
   // SEO
   seo_title: {
-    value: "Blossom Clothing — Exclusive Authentic Pakistani Luxury Suits",
+    value: "Shopping Queen by Orni — Pakistani Lawn, Festive Couture & Kim Pearl Skincare",
     group: "seo",
     label: "Default SEO Title",
     type: "text",
   },
   seo_description: {
-    value: "Discover authentic Pakistani luxury organza suits, embroidered chiffon, lawn 3-piece sets & bridal collections at Blossom Clothing (Blossom Clothing).",
+    value: "Discover authentic Pakistani lawn suits, festive partywear, handloom cotton, and Kim Whitening Pearl & Snowlotus Cream at Shopping Queen by Orni (শপিং কুইন বাই অর্ণি). Open Parcel delivery nationwide.",
     group: "seo",
     label: "SEO Description",
     type: "textarea",
   },
   seo_keywords: {
-    value: "fashion, saree, abaya, three-piece, bangladesh",
+    value: "pakistani lawn, shopping queen by orni, orni islam, salwar kameez, kim whitening cream, snowlotus, 3 piece, open parcel, dhaka",
     group: "seo",
     label: "SEO Keywords (comma separated)",
     type: "text",

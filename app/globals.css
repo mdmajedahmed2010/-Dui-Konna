@@ -5,19 +5,18 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Tazeen's (tazeensbd) — Luxury Global Styles
- * Smart & Elegant Heritage Sarees & Designer Boutique Wear
- * Pink City Shopping Complex, Gulshan-2 & Sector 11, Uttara, Dhaka, Bangladesh
- * Official Facebook: https://www.facebook.com/tazeensbd/
+ * Shopping Queen by Orni — Brand Color System & Styles
+ * Dhaka, Bangladesh • Facebook: https://www.facebook.com/Shoppingqueenbyorni
+ * 190,500+ Followers • Open Parcel Inspection Nationwide
  */
 
 /* ═══════════════════════════════════════════
-   THEME — Tazeen's Color System
+   THEME — Shopping Queen by Orni Color System
    ═══════════════════════════════════════════ */
 @theme inline {
-  --color-primary: #720026;
+  --color-primary: #6B1D2F;
   --color-primary-foreground: #ffffff;
-  --color-secondary: #FAF7F2;
+  --color-secondary: #FAF6F0;
   --color-secondary-foreground: #1A1A1A;
   --color-accent: #D4AF37;
   --color-accent-foreground: #121214;
@@ -27,42 +26,53 @@
   --color-accent-gold: #D4AF37;
   --color-accent-amber: #C59B27;
   --color-accent-light: #FDF9F0;
-  --color-tazeen-crimson: #720026;
-  --color-tazeen-crimson-dark: #50001B;
+  --color-shoppingqueen-maroon: #6B1D2F;
+  --color-shoppingqueen-maroon-dark: #4A101D;
+  --color-shoppingqueen-gold: #D4AF37;
+  --color-shoppingqueen-gold-light: #F3E5AB;
+  --color-shoppingqueen-rose: #E85D75;
+  --color-shoppingqueen-cream: #FAF6F0;
+  --color-shoppingqueen-dark: #1A1A1A;
+  --color-orni-maroon: #6B1D2F;
+  --color-orni-gold: #D4AF37;
+  --color-orni-rose: #E85D75;
+  --color-orni-cream: #FAF6F0;
+  --color-tazeen-crimson: #6B1D2F;
+  --color-tazeen-crimson-dark: #4A101D;
   --color-tazeen-gold: #D4AF37;
   --color-tazeen-gold-light: #F3E5AB;
-  --color-tazeen-purple: #6B2D5C;
-  --color-tazeen-fuchsia: #C2185B;
-  --color-tazeen-lavender: #E8DEF8;
+  --color-tazeen-purple: #6B1D2F;
+  --color-tazeen-fuchsia: #E85D75;
+  --color-tazeen-lavender: #FAF6F0;
   --color-tazeen-emerald: #1B4D3E;
-  --color-tazeen-cream: #FAF7F2;
-  --color-fashion-terracotta: #720026;
+  --color-tazeen-cream: #FAF6F0;
+  --color-fashion-terracotta: #6B1D2F;
   --color-fashion-slate: #3B3C4A;
   --color-fashion-navy: #1A365D;
   --color-fashion-gold: #D4AF37;
   --color-fashion-amber: #C59B27;
-  --color-fashion-cream: #FAF7F2;
-  --color-fashion-dark: #121214;
-  --color-fashion-purple: #6B2D5C;
-  --color-fashion-violet: #C2185B;
-  --color-tanzz-onyx: #121214;
+  --color-fashion-cream: #FAF6F0;
+  --color-fashion-dark: #1A1A1A;
+  --color-fashion-purple: #6B1D2F;
+  --color-fashion-violet: #E85D75;
+  --color-tanzz-onyx: #1A1A1A;
   --color-tanzz-gold: #D4AF37;
   --color-tanzz-gold-bright: #E5A84B;
-  --color-tanzz-cream: #FAF7F2;
-  --color-tanzz-dark: #121214;
-  --color-threesis-plum: #50001B;
-  --color-threesis-rose: #C2185B;
-  --color-threesis-dark: #121214;
+  --color-tanzz-cream: #FAF6F0;
+  --color-tanzz-dark: #1A1A1A;
+  --color-threesis-plum: #4A101D;
+  --color-threesis-rose: #E85D75;
+  --color-threesis-dark: #1A1A1A;
   --color-threesis-gold: #D4AF37;
-  --color-threesis-cream: #FAF7F2;
-  --color-enayas-purple: #6B2D5C;
-  --color-enayas-dark: #121214;
+  --color-threesis-cream: #FAF6F0;
+  --color-enayas-purple: #6B1D2F;
+  --color-enayas-dark: #1A1A1A;
   --color-enayas-gold: #D4AF37;
-  --color-enayas-rose: #C2185B;
-  --color-enayas-wine: #720026;
-  --color-blossom-pink: #C2185B;
+  --color-enayas-rose: #E85D75;
+  --color-enayas-wine: #6B1D2F;
+  --color-blossom-pink: #E85D75;
   --color-blossom-rose: #FDF9F0;
-  --color-blossom-wine: #720026;
+  --color-blossom-wine: #6B1D2F;
   --color-background: #FAF7F2;
   --color-foreground: #1A1A1A;
   --color-surface: #ffffff;

@@ -1,9 +1,8 @@
 "use client";
 
 /**
- * Tazeen's — Collections Showcase
- * Smart & Elegant Heritage Sarees & Designer Collections
- * Showrooms: Pink City Gulshan-2 & Sector 11 Uttara, Dhaka — https://www.facebook.com/tazeensbd/
+ * Shopping Queen by Orni — Collections Showcase
+ * Authentic Pakistani Lawn, Festive Couture & Kim Pearl Skincare
  */
 
 import Link from "next/link";
@@ -71,10 +70,10 @@ export function CollectionsShowcase({ collections }: CollectionsShowcaseProps) {
           variants={headingVariants}
           className="text-center max-w-lg mx-auto mb-10 md:mb-16"
         >
-          <p className="text-[10px] uppercase tracking-[0.25em] text-[#720026] font-bold mb-3">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-[#6B1D2F] font-bold mb-3">
             EXPLORE EVERYTHING
           </p>
-          <h2 className="text-2xl md:text-[36px] font-bold tracking-tight text-[#1A1A1A] font-heading">
+          <h2 className="text-2xl md:text-[36px] font-bold tracking-tight text-[#1A1A1A] font-serif">
             All Collections
           </h2>
           <motion.div
@@ -109,7 +108,7 @@ export function CollectionsShowcase({ collections }: CollectionsShowcaseProps) {
                   <span className="inline-block px-2.5 py-0.5 rounded-full bg-[#D4AF37]/20 border border-[#D4AF37]/40 text-[#D4AF37] text-[9px] uppercase tracking-[0.24em] font-bold mb-2">
                     ✦ {collection.tag}
                   </span>
-                  <h3 className="text-white text-base md:text-xl font-bold tracking-tight font-heading">
+                  <h3 className="text-white text-base md:text-xl font-bold tracking-tight font-serif">
                     {collection.title}
                   </h3>
                   <div className="mt-2.5 flex items-center gap-1.5 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 group-active:opacity-100 group-active:translate-y-0 transition-all duration-300">
@@ -128,7 +127,7 @@ export function CollectionsShowcase({ collections }: CollectionsShowcaseProps) {
         <div className="mt-12 md:mt-16 text-center">
           <Link
             href="/collections"
-            className="inline-flex items-center justify-center gap-3 px-10 py-4.5 bg-[#720026] text-white text-xs uppercase tracking-[0.24em] font-bold rounded-full hover:bg-[#50001B] transition-all duration-300 shadow-md border border-[#D4AF37]/40 active:scale-[0.98]"
+            className="inline-flex items-center justify-center gap-3 px-10 py-4.5 bg-[#6B1D2F] text-white text-xs uppercase tracking-[0.24em] font-bold rounded-full hover:bg-[#521322] transition-all duration-300 shadow-md border border-[#D4AF37]/40 active:scale-[0.98]"
           >
             Explore All Collections →
           </Link>

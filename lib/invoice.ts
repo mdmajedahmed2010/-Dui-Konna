@@ -1,7 +1,5 @@
 /**
- * Blossom — PDF Invoice Generator
- * SOP §৬B — Order Management (Auto-generated on confirm)
- *
+ * Shopping Queen by Orni — PDF Invoice Generator
  * Generates a branded PDF invoice for orders
  */
 

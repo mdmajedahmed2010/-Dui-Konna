@@ -49,10 +49,10 @@ export function StickyAddToCart({
             className={`flex-1 flex items-center justify-center gap-1.5 h-11 text-[11px] font-bold uppercase tracking-[0.14em] transition-all rounded-sm cursor-pointer ${
               disabled
                 ? "bg-neutral-200 border border-neutral-300 text-neutral-500 font-bold opacity-100 cursor-not-allowed"
-                : "bg-[#3D0B3D] hover:bg-[#2E062E] text-[#d4af37] border border-[#d4af37]/50 shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                : "bg-[#6B1D2F] hover:bg-[#521322] text-[#D4AF37] border border-[#D4AF37]/50 shadow-md hover:shadow-lg hover:-translate-y-0.5"
             }`}
           >
-            <ShoppingBag className="h-3.5 w-3.5 text-[#d4af37]" />
+            <ShoppingBag className="h-3.5 w-3.5 text-[#D4AF37]" />
             ADD TO BAG
           </button>
 
@@ -62,7 +62,7 @@ export function StickyAddToCart({
             className={`flex-1 flex items-center justify-center gap-1.5 h-11 text-[11px] font-bold uppercase tracking-[0.14em] transition-all rounded-sm cursor-pointer ${
               disabled
                 ? "bg-neutral-200 border border-neutral-300 text-neutral-500 font-bold opacity-100 cursor-not-allowed"
-                : "bg-[#3D0B3D] hover:bg-[#2E062E] text-[#d4af37] border border-[#d4af37]/50 shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                : "bg-[#1A1A1A] hover:bg-[#6B1D2F] text-white shadow-md hover:shadow-lg hover:-translate-y-0.5"
             }`}
           >
             {disabled ? "OUT OF STOCK" : "✦ BUY NOW"}

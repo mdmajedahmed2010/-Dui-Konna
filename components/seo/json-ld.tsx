@@ -1,6 +1,6 @@
 /**
- * Blossom — JSON-LD Structured Data Components
- * SOP §৭ — SEO (Organization, BreadcrumbList, Product schemas)
+ * Shopping Queen by Orni — JSON-LD Structured Data Components
+ * SEO (Organization, BreadcrumbList, Product schemas)
  */
 
 import { BUSINESS } from "@/lib/constants";
@@ -11,20 +11,20 @@ export function OrganizationJsonLd() {
     "@type": "Organization",
     name: BUSINESS.NAME,
     url: BUSINESS.WEBSITE,
-    logo: `${BUSINESS.WEBSITE}/logo.jpg`,
+    logo: `${BUSINESS.WEBSITE}/shoppingqueen-assets/logo.avif`,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: BUSINESS.PHONE,
       contactType: "customer service",
       areaServed: "BD",
-      availableLanguage: ["English", "Bengali"],
+      availableLanguage: ["Bengali", "English"],
     },
     sameAs: [BUSINESS.FACEBOOK, BUSINESS.INSTAGRAM, BUSINESS.YOUTUBE].filter(Boolean),
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.ADDRESS,
-      addressLocality: "Uttara, Dhaka",
-      postalCode: "1230",
+      addressLocality: "Dhaka",
+      postalCode: "1200",
       addressCountry: "BD",
     },
   };
@@ -33,21 +33,16 @@ export function OrganizationJsonLd() {
     "@context": "https://schema.org",
     "@type": "ClothingStore",
     name: BUSINESS.NAME,
-    image: `${BUSINESS.WEBSITE}/logo.jpg`,
+    image: `${BUSINESS.WEBSITE}/shoppingqueen-assets/logo.avif`,
     url: BUSINESS.WEBSITE,
     telephone: BUSINESS.PHONE,
     priceRange: "৳৳",
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.ADDRESS,
-      addressLocality: "Uttara, Dhaka",
-      postalCode: "1230",
+      addressLocality: "Dhaka",
+      postalCode: "1200",
       addressCountry: "BD",
-    },
-    geo: {
-      "@type": "GeoCoordinates",
-      latitude: 23.8759,
-      longitude: 90.3795,
     },
     openingHoursSpecification: [
       {
@@ -58,15 +53,10 @@ export function OrganizationJsonLd() {
           "Monday",
           "Tuesday",
           "Wednesday",
-          "Thursday"
+          "Thursday",
+          "Friday"
         ],
-        opens: "10:30",
-        closes: "21:30"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        dayOfWeek: "Friday",
-        opens: "15:00",
+        opens: "10:00",
         closes: "22:00"
       }
     ]
@@ -143,4 +133,3 @@ export function BreadcrumbJsonLd({ items }: BreadcrumbJsonLdProps) {
     />
   );
 }
-

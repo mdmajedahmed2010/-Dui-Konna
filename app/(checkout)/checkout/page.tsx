@@ -1,18 +1,17 @@
 /**
- * Blossom — Checkout Page
+ * Shopping Queen by Orni — Checkout Page
  * Guest-first checkout flow (no login required)
- * SOP §২ — Frontend Plan PAGE 5
- *
- * Steps: Address → Payment Method → Review → Place Order
+ * Nationwide Cash on Delivery & Open Parcel Inspection
  */
 
 import type { Metadata } from "next";
 import { CheckoutForm } from "@/components/checkout/checkout-form";
 import { getStorefrontSettings } from "@/actions/settings.actions";
+import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Checkout",
-  description: "Complete your order — secure checkout.",
+  title: `Checkout | ${BUSINESS.NAME}`,
+  description: `Complete your order — Open Parcel & Cash on Delivery with ${BUSINESS.NAME}.`,
 };
 
 export default async function CheckoutPage() {

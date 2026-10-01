@@ -1,5 +1,5 @@
 /**
- * Blossom Clothing — Storefront Layout
+ * Shopping Queen by Orni — Storefront Layout
  * Wraps all public-facing pages with Header + Footer + Mobile Bottom Nav + StorefrontOverlays
  */
 
@@ -9,6 +9,7 @@ import { MobileBottomNav } from "@/components/layout/mobile-bottom-nav";
 import { StorefrontOverlays } from "@/components/layout/storefront-overlays";
 import { getStorefrontSettings } from "@/actions/settings.actions";
 import { auth } from "@/lib/auth";
+import { BUSINESS } from "@/lib/constants";
 
 export default async function StorefrontLayout({ children }: { children: React.ReactNode }) {
   const { settings } = await getStorefrontSettings();
@@ -36,9 +37,9 @@ export default async function StorefrontLayout({ children }: { children: React.R
 
 function MaintenancePage() {
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[#fdfaf5] px-4 text-center">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-[#FAF6F0] px-4 text-center">
       <div className="max-w-md w-full space-y-6">
-        <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#7a1b38]/10 text-[#7a1b38] mb-2">
+        <div className="inline-flex h-16 w-16 items-center justify-center rounded-full bg-[#6B1D2F]/10 text-[#6B1D2F] mb-2">
           <svg className="h-8 w-8 animate-spin" fill="none" viewBox="0 0 24 24">
             <circle
               className="opacity-25"
@@ -55,15 +56,15 @@ function MaintenancePage() {
             ></path>
           </svg>
         </div>
-        <h1 className="text-3xl font-bold tracking-tight text-[#1a0008] font-heading">
+        <h1 className="text-3xl font-bold tracking-tight text-[#1A1A1A] font-serif">
           Scheduled Maintenance
         </h1>
-        <p className="text-muted-foreground text-sm leading-relaxed">
-          Blossom Clothing is currently undergoing scheduled updates to provide you with a more premium shopping
+        <p className="text-neutral-600 text-sm leading-relaxed">
+          {BUSINESS.NAME} is currently undergoing scheduled updates to provide you with a faster and more refined shopping
           experience. We will be back online shortly. Thank you for your patience!
         </p>
-        <div className="pt-6 border-t border-[#d4af37]/30 text-xs text-muted-foreground">
-          <p>© {new Date().getFullYear()} Blossom Clothing. All rights reserved.</p>
+        <div className="pt-6 border-t border-[#D4AF37]/30 text-xs text-neutral-500">
+          <p>© {new Date().getFullYear()} {BUSINESS.NAME}. All rights reserved.</p>
         </div>
       </div>
     </div>

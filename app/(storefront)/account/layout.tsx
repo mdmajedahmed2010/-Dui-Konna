@@ -1,17 +1,17 @@
 /**
- * Blossom — Account Layout
+ * Shopping Queen by Orni — Account Layout
  * Sidebar navigation (desktop) + tabs (mobile)
- * SOP §২ — Frontend Plan PAGE 7
  */
 
 import type { Metadata } from "next";
 import { AccountSidebar } from "@/components/account/account-sidebar";
 import { auth } from "@/lib/auth";
 import { redirect } from "next/navigation";
+import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "My Account",
-  description: "Manage your Blossom account, orders, and addresses.",
+  title: `My Account | ${BUSINESS.NAME}`,
+  description: `Manage your ${BUSINESS.NAME} account, orders, and delivery addresses.`,
 };
 
 export default async function AccountLayout({ children }: { children: React.ReactNode }) {

@@ -79,8 +79,8 @@ export function NewArrivalsGrid({ products }: NewArrivalsGridProps) {
         >
           <div>
             <div className="flex items-center gap-3 mb-3">
-              <span className="inline-block px-3 py-1 rounded-full border border-[#d4af37]/50 bg-[#7a1b38]/5 text-[#7a1b38] text-[10px] uppercase tracking-[0.26em] font-bold">
-                ✦ Blossom Clothing EID DROP ✦
+              <span className="inline-block px-3 py-1 rounded-full border border-[#D4AF37]/50 bg-[#6B1D2F]/5 text-[#6B1D2F] text-[10px] uppercase tracking-[0.26em] font-bold">
+                ✦ SHOPPING QUEEN DROP ✦
               </span>
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-[42px] font-bold tracking-tight text-[#7a1b38] font-heading">

@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * Tazeen's — Hero Section
- * Smart & Elegant Heritage Sarees & Boutique Couture | Pink City Gulshan & Sector 11 Uttara
+ * Shopping Queen by Orni — Hero Section
+ * Authentic Pakistani Lawn, Festive Couture & Kim Pearl Skincare
  */
 
 import { useState, useEffect } from "react";
@@ -14,25 +14,25 @@ import { BUSINESS } from "@/lib/constants";
 
 const slides = [
   {
-    image: ASSETS.heroImage,
-    title: "SMART & ELEGANT HERITAGE SAREES",
-    subtitle: "Tazeen's — Exclusive metallic sequin border sarees, royal katan weaves, and designer boutique collections.",
-    link: "/collections/sequin-border-sarees",
-    overline: "✦ Tazeen's | Pink City Gulshan & Sector 11 Uttara ✦",
+    image: "/shoppingqueen-assets/banner.avif",
+    title: "SHOPPING QUEEN BY ORNI",
+    subtitle: "Exclusive Pakistani suits, designer partywear & authentic Kim pearl whitening skincare.",
+    link: "/collections/pakistani-lawn-three-piece",
+    overline: "✦ 190,000+ Facebook Community • Orni Islam ✦",
   },
   {
-    image: ASSETS.sareeChampagne,
-    title: "CHAMPAGNE METALLIC SEQUIN SAREE",
-    subtitle: "Delicate fringe tassels, lustrous woven drape, and ethereal festive opulence.",
-    link: "/collections/sequin-border-sarees",
-    overline: "✦ Handcrafted Metallic Border ✦",
+    image: "/shoppingqueen-assets/sq-product-03-rose-pink.jpg",
+    title: "ORNI SIGNATURE ROSE PINK SUIT",
+    subtitle: "Exquisite embroidered organza, heavy zari borders & matching dupatta.",
+    link: "/collections/festive-partywear",
+    overline: "✦ 100% Authentic Lawn & Partywear ✦",
   },
   {
-    image: ASSETS.sareeKatanMaroon,
-    title: "HERITAGE ROYAL ZARI KATAN",
-    subtitle: "Opulent antique gold stripes, polka-dot borders, and regal bridal heritage.",
-    link: "/collections/royal-katan-heritage",
-    overline: "✦ 50K+ Facebook Community Trust ✦",
+    image: "/shoppingqueen-assets/sq-product-12-kim-whitening-cream.avif",
+    title: "KIM WHITENING PEARL & SNOWLOTUS",
+    subtitle: "100% genuine Thai whitening cream 20g — chemical-free natural glow.",
+    link: "/collections/kim-whitening-cream",
+    overline: "✦ Open Parcel Guarantee Nationwide ✦",
   },
 ];
 
@@ -56,95 +56,76 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-[#50001B] group">
+    <section className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-[#6B1D2F] group">
       {/* Active and Inactive Slides Container */}
-      {slides.map((slide, index) => {
-        const isActive = index === current;
-        return (
-          <div
-            key={slide.title}
-            className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-              isActive ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
-            }`}
-          >
-            <div
-              className={`absolute inset-0 transition-transform duration-[6500ms] ease-out ${
-                isActive ? "scale-105" : "scale-100"
-              }`}
-            >
-              <Image
-                src={slide.image}
-                alt={slide.title}
-                fill
-                unoptimized
-                priority={index === 0}
-                className="object-cover"
-                sizes="100vw"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/40 to-transparent md:from-black/75" />
-              <div className="absolute inset-0 bg-[radial-gradient(circle_at_left_center,rgba(0,0,0,0.6),transparent_60%)]" />
-            </div>
+      {slides.map((slide, index) => (
+        <div
+          key={slide.title}
+          className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+            index === current ? "opacity-100 z-10" : "opacity-0 z-0 pointer-events-none"
+          }`}
+        >
+          <Image
+            src={slide.image}
+            alt={slide.title}
+            fill
+            priority={index === 0}
+            className="object-cover object-center scale-100 transition-transform duration-[7000ms] ease-out motion-safe:scale-105"
+          />
+          {/* Subtle gradient overlay */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
 
-            {/* Overlaid Editorial Content */}
-            <div className="relative z-20 h-full flex items-center">
-              <div className="container mx-auto px-6 md:px-8">
-                <div
-                  className={`max-w-lg transition-all duration-700 delay-300 transform ${
-                    isActive ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
-                  }`}
+          {/* Text Content */}
+          <div className="absolute inset-0 flex items-center justify-center text-center p-6 md:p-12 z-20">
+            <div className="max-w-2xl space-y-4">
+              <span className="inline-block text-[#D4AF37] text-[10px] md:text-xs font-bold tracking-[0.25em] uppercase bg-black/40 px-3.5 py-1 rounded-full border border-[#D4AF37]/40 backdrop-blur-xs">
+                {slide.overline}
+              </span>
+              <h1 className="text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-white font-serif leading-tight">
+                {slide.title}
+              </h1>
+              <p className="text-xs sm:text-sm md:text-base text-neutral-200 max-w-lg mx-auto leading-relaxed">
+                {slide.subtitle}
+              </p>
+              <div className="pt-2">
+                <Link
+                  href={slide.link}
+                  className="inline-flex items-center justify-center px-8 py-3.5 bg-[#6B1D2F] hover:bg-[#521322] text-white text-xs font-bold tracking-[0.2em] uppercase rounded-full shadow-lg border border-[#D4AF37]/50 transition-all duration-300 hover:scale-105 active:scale-95"
                 >
-                  <p className="text-[10px] md:text-xs uppercase tracking-[0.25em] text-[#D4AF37] font-bold mb-3">
-                    {slide.overline}
-                  </p>
-
-                  <h1 className="text-[34px] sm:text-[44px] md:text-[52px] lg:text-[60px] font-bold text-white leading-[1.1] tracking-tight mb-4 font-heading">
-                    {slide.title}
-                  </h1>
-
-                  <p className="text-xs sm:text-sm md:text-base text-neutral-200 max-w-sm leading-relaxed mb-6 md:mb-8 font-medium">
-                    {slide.subtitle}
-                  </p>
-
-                  <Link
-                    href={slide.link}
-                    className="inline-flex items-center justify-center h-11 md:h-12 px-6 md:px-8 bg-[#720026] hover:bg-[#50001B] text-[#D4AF37] hover:text-white border border-[#D4AF37]/50 text-xs font-bold uppercase tracking-[0.1em] transition-all rounded-full shadow-lg active:scale-[0.98]"
-                  >
-                    Shop Collection
-                  </Link>
-                </div>
+                  Shop Collection
+                </Link>
               </div>
             </div>
           </div>
-        );
-      })}
+        </div>
+      ))}
 
-      {/* Manual Sliding Controls */}
+      {/* Navigation Arrows */}
       <button
         onClick={handlePrev}
-        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 flex items-center justify-center size-10 md:size-12 rounded-full border border-white/10 bg-black/30 text-white hover:bg-[#720026] hover:text-white transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100 cursor-pointer"
         aria-label="Previous slide"
+        className="absolute left-4 top-1/2 -translate-y-1/2 z-30 size-10 rounded-full bg-black/40 text-white border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/60 cursor-pointer"
       >
-        <ChevronLeft className="h-5 w-5" strokeWidth={1.5} />
+        <ChevronLeft className="size-5" />
       </button>
       <button
         onClick={handleNext}
-        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 flex items-center justify-center size-10 md:size-12 rounded-full border border-white/10 bg-black/30 text-white hover:bg-[#720026] hover:text-white transition-all duration-300 opacity-0 group-hover:opacity-100 focus:opacity-100 cursor-pointer"
         aria-label="Next slide"
+        className="absolute right-4 top-1/2 -translate-y-1/2 z-30 size-10 rounded-full bg-black/40 text-white border border-white/20 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity hover:bg-black/60 cursor-pointer"
       >
-        <ChevronRight className="h-5 w-5" strokeWidth={1.5} />
+        <ChevronRight className="size-5" />
       </button>
 
-      {/* Bottom Progress/Dot indicators */}
-      <div className="absolute bottom-6 left-0 right-0 z-30 flex justify-center gap-2">
-        {slides.map((_, index) => (
+      {/* Dots Indicator */}
+      <div className="absolute bottom-6 left-1/2 -translate-x-1/2 z-30 flex items-center gap-2">
+        {slides.map((_, idx) => (
           <button
-            key={index}
-            onClick={() => setCurrent(index)}
-            className={`h-1.5 rounded-full transition-all duration-300 ${
-              index === current ? "w-6 bg-[#D4AF37]" : "w-1.5 bg-white/40 hover:bg-white/70"
+            key={idx}
+            onClick={() => setCurrent(idx)}
+            aria-label={`Go to slide ${idx + 1}`}
+            className={`h-2 rounded-full transition-all cursor-pointer ${
+              idx === current ? "w-8 bg-[#D4AF37]" : "w-2 bg-white/40 hover:bg-white/60"
             }`}
-            aria-label={`Go to slide ${index + 1}`}
-            aria-current={index === current ? "true" : "false"}
           />
         ))}
       </div>

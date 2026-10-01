@@ -1,7 +1,6 @@
 /**
- * Blossom — Size Guide Modal
- * Shows size chart for products
- * SOP §২ — Frontend Plan: "Size Guide: Modal/drawer with size chart"
+ * Shopping Queen by Orni — Size & Measurement Guide Modal
+ * Standard Ready-to-Wear Chart + Unstitched 3-Piece Fabric Specs
  */
 
 "use client";

@@ -27,39 +27,39 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-// Global metadata — Tazeen's
+// Global metadata — Shopping Queen by Orni
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS.WEBSITE),
   title: {
-    default: "Tazeen's — Smart & Elegant Heritage Sarees & Boutique Pret",
-    template: "%s — Tazeen's",
+    default: "Shopping Queen by Orni — পাকিস্তানি লন, পার্টিওয়্যার ও স্কিনকেয়ার",
+    template: "%s — Shopping Queen by Orni",
   },
   description:
-    "Tazeen's is a premier fashion boutique in Bangladesh specializing in exclusive sequin border sarees, royal katan & banarasi silk, designer three-piece salwar kameez, and artisan cotton collections. Showrooms at Pink City (Gulshan-2) & Sector 11 (Uttara), Dhaka.",
+    "Shopping Queen by Orni (শপিং কুইন বাই অর্নি) — দেশী-বিদেশী বিভিন্ন ব্র্যান্ডের মেয়েদের সালোয়ার কামিজ, এক্সক্লুসিভ পাকিস্তানি লন, পার্টিওয়্যার এবং Kim Whitening Pearl Cream। ১৯০,০০০+ আপুদের ভরসা। সারাদেশে ক্যাশ অন হোম ডেলিভারি ও পার্সেল খুলে চেক করে পেমেন্ট করার নিশ্চিন্ত সুবিধা।",
   keywords: [
-    "Tazeen's",
-    "Tazeen's Saree",
-    "tazeensbd",
-    "Tazeen's Bangladesh",
-    "Pink City Gulshan Saree",
-    "Uttara Boutique Dhaka",
-    "Sequin Border Saree BD",
-    "Bridal Katan Saree BD",
-    "Boutique Three Piece BD",
-    "Ajrakh Block Print 3-Piece",
-    "Smart Elegant Saree Dhaka",
-    "Linen Jamdani Saree",
+    "Shopping Queen by Orni",
+    "শপিং কুইন বাই অর্নি",
+    "Orni Islam",
+    "অর্ণি ইসলাম",
+    "Pakistani Lawn Dhaka",
+    "পাকিস্তানি লন বাংলাদেশ",
+    "Partywear Salwar Kameez BD",
+    "Kim Whitening Pearl Cream",
+    "Snowlotus Cream Orni",
+    "Chunri Three Piece BD",
+    "Cotton Three Piece Online Dhaka",
+    "Shopping Queen Facebook Page",
   ],
-  authors: [{ name: "Tazeen's" }],
-  creator: "Tazeen's",
+  authors: [{ name: "Shopping Queen by Orni" }],
+  creator: "Shopping Queen by Orni",
   openGraph: {
     type: "website",
-    locale: "en_BD",
-    siteName: "Tazeen's",
-    title: "Tazeen's — Smart & Elegant Heritage Sarees & Boutique Pret",
+    locale: "bn_BD",
+    siteName: "Shopping Queen by Orni",
+    title: "Shopping Queen by Orni — পাকিস্তানি লন, পার্টিওয়্যার ও স্কিনকেয়ার",
     description:
-      "Shop exclusive sequin border sarees, bridal katan, and boutique three-piece sets. Nationwide Cash on Delivery (৳80 Inside Dhaka) with open parcel inspection.",
-    images: ["/tazeens-assets/hero-banner.jpg"],
+      "দেশী-বিদেশী বিভিন্ন ব্র্যান্ডের মেয়েদের সালোয়ার কামিজ সুলভ মূল্যে। সারাদেশে ক্যাশ অন হোম ডেলিভারি ও পার্সেল চেক করে পেমেন্ট।",
+    images: ["/shoppingqueen-assets/banner.avif"],
   },
   robots: {
     index: true,
@@ -70,12 +70,12 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Tazeen's",
+    title: "Shopping Queen",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#720026",
+  themeColor: "#6B1D2F",
 };
 
 export default async function RootLayout({

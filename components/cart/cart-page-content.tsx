@@ -229,7 +229,7 @@ export function CartPageContent({ settings = {} }: { settings?: Record<string, a
             {/* Proceed Checkout Link */}
             <Link
               href="/checkout"
-              className="flex items-center justify-center w-full h-12 bg-[#7a1b38] text-[#d4af37] font-bold text-xs uppercase tracking-[0.2em] hover:bg-[#4a0516] shadow-sm hover:shadow-md transition-all duration-300 rounded-sm"
+              className="flex items-center justify-center w-full h-12 bg-[#6B1D2F] text-[#D4AF37] font-bold text-xs uppercase tracking-[0.2em] hover:bg-[#521322] shadow-sm hover:shadow-md transition-all duration-300 rounded-sm"
             >
               Proceed to Checkout
             </Link>
@@ -237,7 +237,7 @@ export function CartPageContent({ settings = {} }: { settings?: Record<string, a
             {/* Back shopping */}
             <Link
               href="/collections/new-arrivals"
-              className="flex items-center justify-center w-full h-11 border border-[#7a1b38]/30 bg-transparent text-[#7a1b38] hover:bg-[#7a1b38]/5 text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 rounded-sm"
+              className="flex items-center justify-center w-full h-11 border border-[#6B1D2F]/30 bg-transparent text-[#6B1D2F] hover:bg-[#6B1D2F]/5 text-xs font-bold uppercase tracking-[0.15em] transition-all duration-300 rounded-sm"
             >
               Continue Shopping
             </Link>

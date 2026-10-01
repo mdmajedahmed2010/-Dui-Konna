@@ -47,7 +47,7 @@ export function NewsletterSection() {
           Stay Updated
         </p>
         <h2 className="text-2xl md:text-3xl font-bold text-white tracking-[-0.02em] mb-3">
-          Join the Blossom Family
+          Join the Shopping Queen Family
         </h2>
         <p className="text-sm text-white/50 max-w-sm mx-auto mb-8">
           Subscribe for exclusive offers, new arrivals, and style inspiration.

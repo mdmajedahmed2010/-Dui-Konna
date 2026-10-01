@@ -1,34 +1,34 @@
 import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
-import { Sparkles, MapPin, Phone, ShieldCheck, Heart, Award, CheckCircle2, Truck, Mail } from "lucide-react";
+import { Sparkles, MapPin, Phone, ShieldCheck, Heart, Award, CheckCircle2, Truck, MessageCircle } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 import { ASSETS } from "@/lib/demo-data";
 
 export const metadata: Metadata = {
-  title: `About Us | ${BUSINESS.NAME} — Smart & Elegant Heritage Sarees & Boutique Couture`,
+  title: `About Us | ${BUSINESS.NAME} — Exclusive Pakistani Lawn, Festive Couture & Kim Pearl Skincare`,
   description:
-    "Discover Tazeen's (তাজিন'স) — Bangladesh's prestigious fashion destination for exclusive sequin border sarees, heritage katan & silk, and bespoke boutique 3-piece sets. Showrooms at Pink City Shopping Complex, Gulshan-2 and Sector 11, Uttara, Dhaka with transparent Open Parcel delivery nationwide.",
+    "Discover Shopping Queen by Orni (শপিং কুইন বাই অর্ণি) — Bangladesh's trusted fashion & skincare house founded by Orni Islam. 190,000+ Facebook community, nationwide Open Parcel Cash on Delivery, Pakistani Lawn, festive partywear, and authentic Kim Whitening Pearl & Snowlotus Cream.",
 };
 
 export default function AboutPage() {
   return (
-    <main className="min-h-screen bg-[#FAF7F2]">
+    <main className="min-h-screen bg-[#FAF6F0]">
       {/* Hero Banner */}
-      <section className="relative py-20 md:py-28 bg-[#50001B] text-white overflow-hidden">
+      <section className="relative py-20 md:py-28 bg-[#6B1D2F] text-white overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.25),transparent_70%)] pointer-events-none" />
         <div className="container mx-auto px-6 md:px-12 text-center relative z-10 max-w-3xl">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 mb-4">
             <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
             <span className="text-[10.5px] uppercase tracking-[0.25em] text-[#D4AF37] font-bold">
-              আমাদের পরিচিতি • ABOUT US
+              আমাদের পরিচিতি • ABOUT SHOPPING QUEEN BY ORNI
             </span>
           </div>
-          <h1 className="text-3xl md:text-5xl font-bold tracking-tight font-heading mb-4 text-white">
+          <h1 className="text-3xl md:text-5xl font-bold tracking-tight font-serif mb-4 text-white">
             {BUSINESS.NAME}
           </h1>
           <p className="text-sm md:text-base text-neutral-200 leading-relaxed font-sans max-w-2xl mx-auto">
-            {BUSINESS.TAGLINE} — Renowned for timeless South Asian heritage sarees, exclusive metallic sequin borders, and artisanal boutique wear. Experience our signature Open Parcel inspection policy nationwide.
+            {BUSINESS.TAGLINE} — বাংলাদেশের ১৯০,০০০+ মার্জিত রুচিশীল নারীদের আস্থার প্রতীক। অরিজিনাল পাকিস্তানি লন, এক্সক্লুসিভ পার্টিওয়্যার এবং বিশ্বস্ত থাই কিম পার্ল হোয়াইটেনিং স্কিনকেয়ার।
           </p>
         </div>
       </section>
@@ -37,10 +37,10 @@ export default function AboutPage() {
       <section className="py-16 md:py-24 px-6">
         <div className="max-w-5xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Brand Photo */}
-          <div className="lg:col-span-6 relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-[#E8DFD5] bg-[#50001B]">
+          <div className="lg:col-span-6 relative aspect-[4/5] rounded-2xl overflow-hidden shadow-2xl border border-[#E8DFD5] bg-[#6B1D2F]">
             <Image
-              src={ASSETS.heroImage}
-              alt="Tazeen's Flagship Saree & Boutique Couture"
+              src="/shoppingqueen-assets/sq-product-03-rose-pink.jpg"
+              alt="Shopping Queen by Orni - Founder Collection"
               fill
               unoptimized
               className="object-cover"
@@ -48,54 +48,58 @@ export default function AboutPage() {
             />
             <div className="absolute bottom-4 left-4 right-4 bg-[#1A1A1A]/95 backdrop-blur-md border border-[#D4AF37]/40 px-5 py-3 rounded-xl text-white shadow-lg">
               <p className="text-[9px] uppercase tracking-[0.22em] font-bold text-[#D4AF37] flex items-center gap-1.5">
-                <MapPin className="h-3.5 w-3.5 text-[#D4AF37]" />
-                FLAGSHIP SHOWROOMS IN GULSHAN & UTTARA
+                <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
+                FOUNDER & BRAND AMBASSADOR: ORNI ISLAM
               </p>
-              <p className="text-xs font-semibold mt-0.5">Pink City (Gulshan-2) & Sector 11 (Uttara), Dhaka</p>
+              <p className="text-xs font-semibold mt-0.5">190,000+ Facebook Community & Nationwide Delivery</p>
             </div>
           </div>
 
           {/* Narrative */}
           <div className="lg:col-span-6 space-y-6">
             <div className="space-y-2">
-              <span className="text-[10px] uppercase tracking-[0.25em] text-[#720026] font-bold">
-                আমাদের দর্শন • OUR HERITAGE & MISSION
+              <span className="text-[10px] uppercase tracking-[0.25em] text-[#6B1D2F] font-bold">
+                আমাদের গল্প ও দর্শন • OUR STORY & HERITAGE
               </span>
-              <h2 className="text-2xl md:text-4xl font-bold text-[#1A1A1A] font-heading leading-tight">
-                Smart & Elegant Sarees, Curated with Regality & Passion
+              <h2 className="text-2xl md:text-4xl font-bold text-[#1A1A1A] font-serif leading-tight">
+                Authentic Elegance Crafted for Every Queen
               </h2>
             </div>
 
-            <div className="border-l-3 border-[#720026] pl-4 py-2 text-[#720026] italic text-sm font-serif bg-rose-50/60 rounded-r-lg">
-              &ldquo;Tazeen&apos;s is dedicated to enriching every woman&apos;s wardrobe with genuine handcrafted sarees and boutique elegance that speak of class, individuality, and timeless beauty.&rdquo;
+            <div className="border-l-4 border-[#6B1D2F] pl-4 py-2 text-[#6B1D2F] italic text-sm font-serif bg-rose-50/70 rounded-r-lg">
+              &ldquo;Shopping Queen by Orni-এর মূল লক্ষ্য হলো প্রতিটি নারীকে তার আত্মবিশ্বাস ও সৌন্দর্য উদযাপনে খাঁটি ও প্রিমিয়াম পোশাক এবং শতভাগ অর্গানিক স্কিনকেয়ার সরবরাহ করা।&rdquo; — অর্ণি ইসলাম
             </div>
 
             <p className="text-sm text-neutral-600 leading-relaxed">
-              <strong>{BUSINESS.NAME}</strong> ({BUSINESS.NAME_BN}) দীর্ঘদিন ধরে বাংলাদেশের মার্জিত রুচিশীল নারীদের কাছে প্রিমিয়াম শাড়ি ও এক্সক্লুসিভ বুটিক পোশাক পৌঁছে দিচ্ছে। গুলশান-২ এর পিংক সিটি শপিং কমপ্লেক্স (দোকান #৫৫) এবং উত্তরা সেক্টর ১১ এর মীনা বাজার ভবনে আমাদের দুইটি সুবিশাল শোরুমে সরাসরি এসে পছন্দের শাড়ি ও পোশাক দেখে নেওয়ার পাশাপাশি সারা বাংলাদেশে রয়েছে আমাদের দ্রুততম হোম ডেলিভারি সুবিধা।
+              <strong>{BUSINESS.NAME}</strong> ({BUSINESS.NAME_BN}) অর্ণি ইসলামের হাত ধরে প্রতিষ্ঠিত বাংলাদেশের অন্যতম জনপ্রিয় অনলাইন ফ্যাশন ও লাইফস্টাইল ব্র্যান্ড। আমাদের ১৯০,০০০+ এরও বেশি সক্রিয় ফেসবুক ফলোয়ার এবং নিয়মিত লাইভ সেশনের মাধ্যমে সম্মানিত কাস্টমারদের সঙ্গে সরাসরি সংযোগ স্থাপন করি।
             </p>
 
             <p className="text-sm text-neutral-600 leading-relaxed">
-              আমাদের সিগনেচার সিকুইন পাড় শাড়ি, ঐতিহ্যবাহী গোল্ড জরি কাতান এবং হ্যান্ডলুম থ্রি-পিস কালেকশন প্রতিটি উৎসব ও পারিবারিক আয়োজনে যোগ করে আভিজাত্য। সম্মানিত গ্রাহকদের শতভাগ নিশ্চিন্ত রাখতে আমরা বজায় রাখি কঠোর <strong className="text-[#720026]">Open Parcel Policy</strong> — পার্সেল হাতে পেয়ে ডেলিভারিম্যানের সামনে শাড়ির কাপড়, কাজ ও রঙ দেখে নিশ্চিত হয়ে মূল্য পরিশোধ করুন।
+              আমরা বিশেষভাবে বাছাইকৃত ১০০% পিওর সুতি পাকিস্তানি লন ৩-পিস, গর্জিয়াস এমব্রয়ডারি পার্টিওয়্যার, হ্যান্ডলুম সুতি, ঐতিহ্যবাহী চুনরি এবং শতভাগ অরিজিনাল থাইল্যান্ড ফর্মুলেশনের <strong className="text-[#6B1D2F]">Kim Whitening Pearl and Snowlotus Cream (20g)</strong> সরবরাহ করি। প্রতিটি প্রোডাক্টের কোয়ালিটি অর্ণি ইসলাম নিজে যাচাই-বাছাই করেন।
+            </p>
+
+            <p className="text-sm text-neutral-600 leading-relaxed">
+              অনলাইনে কেনাকাটায় আপনাদের শতভাগ নিশ্চিন্ত রাখতে আমরা চালু রেখেছি আমাদের সিগনেচার <strong className="text-[#6B1D2F]">ওপেন পার্সেল গ্যারান্টি (Open Parcel Policy)</strong>। পার্সেল হাতে পেয়ে ডেলিভারিম্যানের সামনে কাপড়, রঙ ও কাজ ভালোভাবে চেক করে নিশ্চিত হয়ে মূল্য পরিশোধ করার পূর্ণ স্বাধীনতা পাবেন।
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4 py-4 border-t border-b border-[#E8DFD5]">
               <div className="text-center">
-                <p className="text-2xl font-bold text-[#720026]">50K+</p>
+                <p className="text-2xl font-bold text-[#6B1D2F]">190K+</p>
                 <p className="text-[10px] uppercase tracking-wide text-neutral-500 font-bold mt-1">
-                  FB Community
+                  FB Followers
                 </p>
               </div>
               <div className="text-center border-x border-[#E8DFD5]">
-                <p className="text-2xl font-bold text-[#D4AF37]">2 Showrooms</p>
+                <p className="text-2xl font-bold text-[#D4AF37]">Open Parcel</p>
                 <p className="text-[10px] uppercase tracking-wide text-neutral-500 font-bold mt-1">
-                  Gulshan & Uttara
+                  হাতে পেয়ে চেক
                 </p>
               </div>
               <div className="text-center">
-                <p className="text-2xl font-bold text-[#720026]">Open Parcel</p>
+                <p className="text-2xl font-bold text-[#6B1D2F]">24-48 hrs</p>
                 <p className="text-[10px] uppercase tracking-wide text-neutral-500 font-bold mt-1">
-                  COD Inspection
+                  দ্রুততম ডেলিভারি
                 </p>
               </div>
             </div>
@@ -103,123 +107,128 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Signature Collections */}
+      {/* Brand Pillars */}
       <section className="py-16 bg-[#F4EFEA] px-6 border-t border-[#E8DFD5]">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-12">
-            <p className="text-[10px] uppercase tracking-[0.25em] text-[#720026] font-bold mb-2">
-              আমাদের সিগনেচার শাড়ি ও বুটিক কালেকশন
+            <p className="text-[10px] uppercase tracking-[0.25em] text-[#6B1D2F] font-bold mb-2">
+              আমাদের মূল স্তম্ভসমূহ
             </p>
-            <h2 className="text-3xl font-bold text-[#1A1A1A] font-heading">Curated Attires</h2>
+            <h2 className="text-3xl font-bold text-[#1A1A1A] font-serif">Why Shopping Queen by Orni?</h2>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[
-              {
-                name: "Metallic Sequin Border Sarees",
-                desc: "Shimmering party sarees with lustrous metallic border trims, contrast pallus, and fringed tassels.",
-                img: ASSETS.sareeChampagne,
-                href: "/collections/sequin-border-sarees",
-              },
-              {
-                name: "Heritage Zari Katan & Silk",
-                desc: "Regal bridal katan sarees with opulent antique gold zari stripes and handcrafted polka-dot borders.",
-                img: ASSETS.sareeKatanMaroon,
-                href: "/collections/royal-katan-heritage",
-              },
-              {
-                name: "Ajrakh & Ethnic Boutique 3-Piece",
-                desc: "Authentic modal cotton block print and mirror-work unstitched designer boutique ensembles.",
-                img: ASSETS.threePieceAjrakh,
-                href: "/collections/boutique-three-piece",
-              },
-              {
-                name: "Royal Purple Party Couture",
-                desc: "Dramatic deep amethyst and aubergine draped silhouettes designed for grand evening soirees.",
-                img: ASSETS.sareePurple,
-                href: "/collections/sequin-border-sarees",
-              },
-              {
-                name: "Haldi & Festive Sun Yellow",
-                desc: "Vibrant yellow sarees with sparkling borders crafted specifically for haldi and daytime festivities.",
-                img: ASSETS.sareeYellow,
-                href: "/collections/haldi-festive-yellow",
-              },
-              {
-                name: "Botanical Floral Lawn & Chiffon",
-                desc: "Breathable pastels and delicate floral prints offering supreme comfort for all-day celebrations.",
-                img: ASSETS.threePieceLavender,
-                href: "/collections/boutique-three-piece",
-              },
-            ].map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className="group relative rounded-2xl overflow-hidden bg-white shadow-xs hover:shadow-lg transition-all duration-300 border border-[#E8DFD5] hover:border-[#D4AF37]"
-              >
-                <div className="relative aspect-[4/3] overflow-hidden bg-neutral-100">
-                  <Image
-                    src={item.img}
-                    alt={item.name}
-                    fill
-                    unoptimized
-                    className="object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1A1A1A]/75 via-transparent to-transparent" />
-                </div>
-                <div className="p-4">
-                  <h3 className="font-bold text-[#1A1A1A] text-sm mb-1 group-hover:text-[#720026] transition-colors">{item.name}</h3>
-                  <p className="text-xs text-neutral-500 leading-relaxed">{item.desc}</p>
-                </div>
-              </Link>
-            ))}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div className="bg-white p-6 rounded-2xl border border-[#E8DFD5] shadow-xs hover:border-[#D4AF37] transition-all">
+              <div className="w-12 h-12 rounded-xl bg-[#6B1D2F]/10 text-[#6B1D2F] flex items-center justify-center mb-4">
+                <ShieldCheck className="h-6 w-6" />
+              </div>
+              <h3 className="font-bold text-base text-[#1A1A1A] mb-2 font-serif">১০০% ওপেন পার্সেল গ্যারান্টি</h3>
+              <p className="text-xs text-neutral-600 leading-relaxed">
+                ডেলিভারি ম্যানের সামনে প্যাকেট খুলে কাপড় ও রঙ চেক করে পেমেন্ট করার নিশ্চিন্ত সুযোগ। কোনো অগ্রিম চার্জ ছাড়াই নিশ্চিন্তে অর্ডার করুন।
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-[#E8DFD5] shadow-xs hover:border-[#D4AF37] transition-all">
+              <div className="w-12 h-12 rounded-xl bg-amber-50 text-[#D4AF37] flex items-center justify-center mb-4">
+                <Sparkles className="h-6 w-6" />
+              </div>
+              <h3 className="font-bold text-base text-[#1A1A1A] mb-2 font-serif">অথেনটিক প্রিমিয়াম কালেকশন</h3>
+              <p className="text-xs text-neutral-600 leading-relaxed">
+                ১০০% প্রিমিয়াম সুতি লন, গর্জিয়াস শিফন দোপাট্টা এবং আসল থাই কিম স্নোলোটাস ও পার্ল ক্রিম — কোনো রকম কপি বা রেপ্লিকা নেই।
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-[#E8DFD5] shadow-xs hover:border-[#D4AF37] transition-all">
+              <div className="w-12 h-12 rounded-xl bg-emerald-50 text-emerald-700 flex items-center justify-center mb-4">
+                <Truck className="h-6 w-6" />
+              </div>
+              <h3 className="font-bold text-base text-[#1A1A1A] mb-2 font-serif">সারা দেশে দ্রুত ডেলিভারি</h3>
+              <p className="text-xs text-neutral-600 leading-relaxed">
+                ঢাকার ভেতর মাত্র ৳৮০ এবং ঢাকার বাইরে ৳১৫০। ২ বা ততোধিক ড্রেস অর্ডারে সম্পূর্ণ ফ্রি ডেলিভারি সুবিধা উপভোগ করুন।
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-[#E8DFD5] shadow-xs hover:border-[#D4AF37] transition-all">
+              <div className="w-12 h-12 rounded-xl bg-purple-50 text-purple-700 flex items-center justify-center mb-4">
+                <Heart className="h-6 w-6" />
+              </div>
+              <h3 className="font-bold text-base text-[#1A1A1A] mb-2 font-serif">অর্ণি ইসলামের সরাসরি লাইভ</h3>
+              <p className="text-xs text-neutral-600 leading-relaxed">
+                ফেসবুকে নিয়মিত লাইভ সেশনে প্রতিটি পোশাকের বাস্তব রঙ, কাপড়ের মান এবং ডিজাইন পুঙ্খানুপুঙ্খভাবে দেখানো হয়।
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-[#E8DFD5] shadow-xs hover:border-[#D4AF37] transition-all">
+              <div className="w-12 h-12 rounded-xl bg-rose-50 text-[#6B1D2F] flex items-center justify-center mb-4">
+                <Award className="h-6 w-6" />
+              </div>
+              <h3 className="font-bold text-base text-[#1A1A1A] mb-2 font-serif">সুলভ ও ন্যায্য মূল্য</h3>
+              <p className="text-xs text-neutral-600 leading-relaxed">
+                মার্কেটের সবচেয়ে প্রিমিয়াম কোয়ালিটির ড্রেস এবং ক্রিম আমরা সরাসরি ইমপোর্ট ও সোর্স করে কাস্টমারদের জন্য ন্যায্য মূল্যে অফার করি।
+              </p>
+            </div>
+
+            <div className="bg-white p-6 rounded-2xl border border-[#E8DFD5] shadow-xs hover:border-[#D4AF37] transition-all">
+              <div className="w-12 h-12 rounded-xl bg-blue-50 text-blue-700 flex items-center justify-center mb-4">
+                <MessageCircle className="h-6 w-6" />
+              </div>
+              <h3 className="font-bold text-base text-[#1A1A1A] mb-2 font-serif">২৪/৭ কাস্টমার সাপোর্ট</h3>
+              <p className="text-xs text-neutral-600 leading-relaxed">
+                ফেসবুক ইনবক্স, হোয়াটসঅ্যাপ এবং হটলাইন নাম্বারে যে কোনো অর্ডার, ডেলিভারি বা প্রোডাক্ট সহায়তায় আমাদের ডেডিকেটেড টিম সদাপ্রস্তুত।
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Showroom & Contact Information */}
+      {/* Contact & Support Section */}
       <section className="py-16 px-6">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl font-bold text-[#1A1A1A] mb-4 font-heading">আমাদের শোরুম ও যোগাযোগের ঠিকানা</h2>
+          <h2 className="text-3xl font-bold text-[#1A1A1A] mb-4 font-serif">যোগাযোগ ও অফিসিয়াল ঠিকানা</h2>
           <p className="text-neutral-600 mb-10 max-w-xl mx-auto text-sm">
-            ওয়েবসাইট থেকে সরাসরি কার্টে যুক্ত করে চেকআউট করুন, অথবা সরাসরি আমাদের গুলশান ও উত্তরা শোরুমে এসে ঘুরে যান। যেকোনো তথ্য বা শাড়ির ভিডিও দেখতে আমাদের WhatsApp বা Facebook পেজে যোগাযোগ করুন।
+            ওয়েবসাইটে সরাসরি অর্ডার করতে পারেন অথবা ফেসবুক পেজ ও হোয়াটসঅ্যাপে ইনবক্স করুন।
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="bg-white rounded-2xl p-6 border border-[#E8DFD5] shadow-xs text-left">
-              <div className="w-10 h-10 rounded-full bg-rose-50 text-[#720026] border border-[#720026]/20 flex items-center justify-center mb-3">
-                <MapPin className="h-5 w-5 text-[#720026]" />
+              <div className="w-10 h-10 rounded-full bg-rose-50 text-[#6B1D2F] border border-[#6B1D2F]/20 flex items-center justify-center mb-3">
+                <MapPin className="h-5 w-5 text-[#6B1D2F]" />
               </div>
-              <h3 className="font-bold text-[#1A1A1A] text-sm mb-1">গুলশান শোরুম</h3>
-              <p className="text-xs text-[#720026] font-semibold mb-2">Shop #55 (1st Floor), Pink City</p>
+              <h3 className="font-bold text-[#1A1A1A] text-sm mb-1">অফিস ও হাব</h3>
+              <p className="text-xs text-[#6B1D2F] font-semibold mb-2">অনলাইন হেডকোয়ার্টার্স</p>
               <p className="text-xs text-neutral-600 leading-relaxed">
-                Pink City Shopping Complex, Plot 15, Road 103, Gulshan-2, Dhaka-1212
+                {BUSINESS.ADDRESS}
               </p>
               <p className="text-[11px] text-neutral-500 font-medium mt-2">
-                প্রতিদিন সকাল ১০:৩০টা — রাত ৮:৩০টা
+                প্রতিদিন সকাল ১০:০০টা — রাত ১০:০০টা
               </p>
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-[#E8DFD5] shadow-xs text-left">
               <div className="w-10 h-10 rounded-full bg-amber-50 text-[#D4AF37] border border-[#D4AF37]/30 flex items-center justify-center mb-3">
-                <MapPin className="h-5 w-5 text-[#D4AF37]" />
+                <MessageCircle className="h-5 w-5 text-[#D4AF37]" />
               </div>
-              <h3 className="font-bold text-[#1A1A1A] text-sm mb-1">উত্তরা শোরুম</h3>
-              <p className="text-xs text-[#D4AF37] font-bold mb-2">Fairytale (Tahfeem Fashion)</p>
+              <h3 className="font-bold text-[#1A1A1A] text-sm mb-1">ফেসবুক কমিউনিটি</h3>
+              <p className="text-xs text-[#D4AF37] font-bold mb-2">১৯০,০০০+ ফ্যান পেজ</p>
               <p className="text-xs text-neutral-600 leading-relaxed">
-                Meena Bazar Building (3rd Floor), Sector 11, Uttara, Dhaka-1230
+                অর্ণি ইসলামের ফেসবুক লাইভ ও কালেকশন দেখতে যুক্ত থাকুন:
               </p>
-              <p className="text-[11px] text-neutral-500 font-medium mt-2">
-                প্রতিদিন সকাল ১০:৩০টা — রাত ৯:০০টা
-              </p>
+              <a
+                href={BUSINESS.FACEBOOK}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-[#6B1D2F] font-bold hover:underline block mt-2"
+              >
+                fb.com/Shoppingqueenbyorni
+              </a>
             </div>
 
             <div className="bg-white rounded-2xl p-6 border border-[#E8DFD5] shadow-xs text-left">
-              <div className="w-10 h-10 rounded-full bg-rose-50 text-[#720026] border border-[#720026]/20 flex items-center justify-center mb-3">
-                <Phone className="h-5 w-5 text-[#720026]" />
+              <div className="w-10 h-10 rounded-full bg-rose-50 text-[#6B1D2F] border border-[#6B1D2F]/20 flex items-center justify-center mb-3">
+                <Phone className="h-5 w-5 text-[#6B1D2F]" />
               </div>
-              <h3 className="font-bold text-[#1A1A1A] text-sm mb-1">হটলাইন ও অনলাইন হেল্প</h3>
-              <p className="text-xs text-neutral-600 mb-2">যেকোনো প্রশ্ন বা অর্ডারের জন্য:</p>
+              <h3 className="font-bold text-[#1A1A1A] text-sm mb-1">অর্ডার হটলাইন ও হোয়াটসঅ্যাপ</h3>
+              <p className="text-xs text-neutral-600 mb-2">যেকোনো প্রশ্ন বা দ্রুত অর্ডারের জন্য:</p>
               <a
                 href={`tel:${BUSINESS.PHONE}`}
                 className="text-xs text-[#1A1A1A] font-bold hover:underline block"
@@ -238,15 +247,7 @@ export default function AboutPage() {
                 rel="noopener noreferrer"
                 className="text-xs text-emerald-600 font-bold hover:underline block mt-1.5"
               >
-                Direct WhatsApp Chat
-              </a>
-              <a
-                href={BUSINESS.FACEBOOK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-[#720026] font-semibold hover:underline block mt-1"
-              >
-                facebook.com/tazeensbd
+                হোয়াটসঅ্যাপে সরাসরি চ্যাট করুন
               </a>
             </div>
           </div>
@@ -254,15 +255,15 @@ export default function AboutPage() {
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
               href="/contact"
-              className="inline-flex items-center justify-center h-12 px-8 bg-[#720026] text-white text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#50001B] transition-all duration-300 rounded-full shadow-md active:scale-[0.98]"
+              className="inline-flex items-center justify-center h-12 px-8 bg-[#6B1D2F] text-white text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#521322] transition-all duration-300 rounded-full shadow-md active:scale-[0.98]"
             >
               Contact Us Page →
             </Link>
             <Link
               href="/delivery-info"
-              className="inline-flex items-center justify-center h-12 px-8 bg-white text-[#1A1A1A] border border-[#E8DFD5] text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#FAF7F2] hover:border-[#D4AF37] transition-all duration-300 rounded-full shadow-xs active:scale-[0.98]"
+              className="inline-flex items-center justify-center h-12 px-8 bg-white text-[#1A1A1A] border border-[#E8DFD5] text-xs font-bold uppercase tracking-[0.2em] hover:bg-[#FAF6F0] hover:border-[#D4AF37] transition-all duration-300 rounded-full shadow-xs active:scale-[0.98]"
             >
-              Delivery & Open Parcel Info
+              ডেলিভারি ও ওপেন পার্সেল পলিসি
             </Link>
           </div>
         </div>

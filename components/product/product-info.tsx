@@ -478,10 +478,10 @@ export function ProductInfo({
             className={`flex-1 flex items-center justify-center gap-2 md:gap-2.5 min-h-[50px] md:min-h-[54px] px-3 md:px-4 text-[11px] md:text-xs font-extrabold uppercase tracking-[0.16em] md:tracking-[0.2em] transition-all duration-300 rounded-md cursor-pointer active:scale-[0.98] ${
               !isInStock
                 ? "bg-neutral-200 border border-neutral-300 text-neutral-500 font-bold opacity-100 cursor-not-allowed"
-                : "bg-[#1A1A1A] hover:bg-[#484860] text-[#E29578] border border-[#E29578]/50 shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                : "bg-[#6B1D2F] hover:bg-[#521322] text-[#D4AF37] border border-[#D4AF37]/50 shadow-md hover:shadow-lg hover:-translate-y-0.5"
             }`}
           >
-            <ShoppingBag className="h-4 w-4 text-[#E29578] shrink-0" />
+            <ShoppingBag className="h-4 w-4 text-[#D4AF37] shrink-0" />
             <span>{!isInStock ? "OUT OF STOCK" : "ADD TO BAG"}</span>
           </button>
 
@@ -491,7 +491,7 @@ export function ProductInfo({
             className={`flex-1 flex items-center justify-center gap-2 md:gap-2.5 min-h-[50px] md:min-h-[54px] px-3 md:px-4 text-[11px] md:text-xs font-extrabold uppercase tracking-[0.16em] md:tracking-[0.2em] transition-all duration-300 rounded-md cursor-pointer active:scale-[0.98] ${
               !isInStock
                 ? "bg-neutral-200 border border-neutral-300 text-neutral-500 font-bold opacity-100 cursor-not-allowed"
-                : "bg-[#1A1A1A] hover:bg-[#484860] text-white shadow-md hover:shadow-lg hover:-translate-y-0.5"
+                : "bg-[#1A1A1A] hover:bg-[#6B1D2F] text-white shadow-md hover:shadow-lg hover:-translate-y-0.5"
             }`}
           >
             <span>{!isInStock ? "OUT OF STOCK" : "✦ BUY NOW"}</span>

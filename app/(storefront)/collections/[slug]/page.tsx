@@ -1,5 +1,5 @@
 /**
- * Tazeen's — Collection/Category Page
+ * Shopping Queen by Orni — Collection/Category Page
  * Route: /collections/[slug]
  */
 
@@ -26,15 +26,15 @@ interface CollectionPageProps {
 const specialCategories: Record<string, { name: string; description: string }> = {
   "new-arrivals": {
     name: "New Arrivals",
-    description: "Discover our latest metallic sequin border sarees, heritage royal katan, and designer boutique drops.",
+    description: "Discover our latest Pakistani lawn 3-piece drops, festive partywear, and authentic Thai Kim pearl skincare.",
   },
   featured: {
-    name: "Featured Sarees",
-    description: `Handpicked signature heritage sarees and boutique couture curated by ${BUSINESS.NAME}.`,
+    name: "Featured Collections",
+    description: `Handpicked signature Pakistani suites, lawn sets & natural beauty essentials curated by ${BUSINESS.NAME}.`,
   },
   sale: {
     name: "Special Offers",
-    description: "Exclusive festive saree collections and boutique curations with Open Parcel inspection.",
+    description: "Exclusive festive salwar kameez and skincare combo offers with nationwide Open Parcel inspection.",
   },
 };
 
@@ -200,15 +200,15 @@ export default async function CollectionPage({ params, searchParams }: Collectio
         items={[{ label: "Collections", href: "/collections" }, { label: categoryName }]}
       />
 
-      <div className="mt-6 mb-10 bg-gradient-to-r from-[#50001B] via-[#720026] to-[#50001B] text-[#FAF7F2] p-8 md:p-14 rounded-3xl border border-[#D4AF37]/30 shadow-xl text-center relative overflow-hidden">
+      <div className="mt-6 mb-10 bg-gradient-to-r from-[#6B1D2F] via-[#521322] to-[#6B1D2F] text-[#FAF6F0] p-8 md:p-14 rounded-3xl border border-[#D4AF37]/30 shadow-xl text-center relative overflow-hidden">
         {/* Subtle background glow */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(212,175,55,0.2),transparent_70%)] pointer-events-none" />
         
         <div className="relative z-10 max-w-2xl mx-auto">
           <span className="inline-block px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 text-[10px] font-extrabold uppercase tracking-[0.24em] mb-3 text-[#D4AF37]">
-            ✦ TAZEEN&apos;S EXCLUSIVE ✦
+            ✦ SHOPPING QUEEN BY ORNI ✦
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight font-heading mb-3 text-white">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold tracking-tight font-serif mb-3 text-white">
             {categoryName}
           </h1>
           <p className="text-xs sm:text-sm md:text-base text-neutral-200 leading-relaxed font-sans font-medium max-w-lg mx-auto">

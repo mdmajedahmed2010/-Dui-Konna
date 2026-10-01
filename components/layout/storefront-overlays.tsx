@@ -1,7 +1,7 @@
 "use client";
 
 /**
- * Tazeen's — Storefront Client Overlays
+ * Shopping Queen by Orni — Storefront Client Overlays
  * Wraps dynamic overlays in a Client Component boundary for Next.js App Router
  */
 
@@ -43,7 +43,7 @@ export function StorefrontOverlays() {
       <ScrollReveal />
       <ScrollProgress />
       <BackToTop />
-      <FloatingChat phoneNumber="8801790030434" messengerUrl="https://m.me/tazeensbd" />
+      <FloatingChat phoneNumber="8801611467735" messengerUrl="https://m.me/Shoppingqueenbyorni" />
       <PageTracker />
     </>
   );

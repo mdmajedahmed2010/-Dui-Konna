@@ -1,99 +1,98 @@
 "use client";
 
 /**
- * Tazeen's — Contact & Customer Care
- * Showroom 1: Shop #55 (1st Floor), Pink City Shopping Complex, Plot 15, Road 103, Gulshan-2, Dhaka
- * Showroom 2: Fairytale (Tahfeem Fashion), Meena Bazar Building (3rd Floor), Sector 11, Uttara, Dhaka
- * Hotlines: 01790-030434 / 01773-770042
- * Email: tazeens2001@gmail.com
- * Official Facebook: https://www.facebook.com/tazeensbd/
+ * Shopping Queen by Orni — Contact & Customer Care
+ * Hotlines: 01611-467735 / 01935-711304
+ * Official Facebook: https://www.facebook.com/Shoppingqueenbyorni (190,000+ Community)
+ * WhatsApp: +880 1611-467735
+ * Central Distribution Hub: Dhaka, Bangladesh
  */
 
 import Image from "next/image";
-import { Phone, Mail, MapPin, Clock, MessageCircle, Sparkles, Navigation, Send } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle, Sparkles, Navigation, Send, ShieldCheck, Truck } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 import { ASSETS } from "@/lib/demo-data";
 
 const contactDetails = [
   {
     icon: Phone,
-    label: "হটলাইন ও WhatsApp",
+    label: "অফিসিয়াল হটলাইন ও কল",
     value: `${BUSINESS.PHONE} / ${BUSINESS.PHONE_ALT}`,
     href: `tel:${BUSINESS.PHONE.replace(/[^0-9+]/g, "")}`,
-    note: BUSINESS.STORE_HOURS,
+    note: "সকাল ১০:০০টা থেকে রাত ১০:০০টা (প্রতিদিন খোলা)",
   },
   {
     icon: MessageCircle,
-    label: "Facebook Messenger",
-    value: "Tazeen's (50K+ Community)",
+    label: "WhatsApp চ্যাট ও সাপোর্ট",
+    value: "+880 1611-467735",
+    href: BUSINESS.WHATSAPP_LINK,
+    note: "ড্রেসের ভিডিও, স্কিনকেয়ার তথ্য বা দ্রুত অর্ডারে নক করুন",
+  },
+  {
+    icon: MessageCircle,
+    label: "Facebook Page (190K+ Community)",
+    value: "Shopping Queen by Orni",
     href: BUSINESS.FACEBOOK,
-    note: "শাড়ির লাইভ ভিডিও, ফ্যাব্রিক ডিটেইলস বা অর্ডারের জন্য সরাসরি ইনবক্স করুন",
+    note: "লাইভ আপডেট, নতুন কালেকশন ও ইনবক্স মেসেজিং",
   },
   {
     icon: Mail,
     label: "অফিসিয়াল ইমেইল",
     value: BUSINESS.EMAIL,
     href: `mailto:${BUSINESS.EMAIL}`,
-    note: "কাস্টমার সাপোর্ট ও তথ্যের জন্য সরাসরি মেইল করতে পারেন",
+    note: "কাস্টমার সাপোর্ট ও যেকোনো প্রাতিষ্ঠানিক যোগাযোগ",
   },
   {
     icon: MapPin,
-    label: "শোরুম ১ (গুলশান)",
-    value: BUSINESS.SHOWROOM_GULSHAN,
-    href: "https://maps.google.com/?q=Pink+City+Shopping+Complex+Gulshan+Dhaka",
-    note: "প্রতিদিন সকাল ১০:৩০টা থেকে রাত ৮:৩০টা পর্যন্ত খোলা",
-  },
-  {
-    icon: MapPin,
-    label: "শোরুম ২ (উত্তরা)",
-    value: BUSINESS.SHOWROOM_UTTARA,
-    href: "https://maps.google.com/?q=Sector+11+Uttara+Dhaka",
-    note: "প্রতিদিন সকাল ১০:৩০টা থেকে রাত ৯:০০টা পর্যন্ত খোলা",
+    label: "সেন্ট্রাল হেডকোয়ার্টার্স ও ওয়্যারহাউস",
+    value: BUSINESS.ADDRESS,
+    href: null,
+    note: "অনলাইন ফুলফিলমেন্ট হাব — সারা বাংলাদেশে ওপেন পার্সেল ডেলিভারি",
   },
   {
     icon: Clock,
-    label: "অনলাইন অর্ডার ও সাপোর্ট",
+    label: "অনলাইন কাস্টমার সার্ভিস",
     value: BUSINESS.STORE_HOURS_BN,
     href: null,
-    note: "অনলাইন মেসেঞ্জার ও WhatsApp সাপোর্ট প্রতিদিন গভীর রাত পর্যন্ত সক্রিয়",
+    note: "মেসেঞ্জার ও হোয়াটসঅ্যাপে সার্বক্ষণিক সেবা",
   },
 ];
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-[#FAF7F2]">
+    <main className="min-h-screen bg-[#FAF6F0]">
       {/* Hero Section */}
-      <section className="relative h-[45vh] md:h-[50vh] overflow-hidden bg-[#50001B]">
+      <section className="relative h-[45vh] md:h-[50vh] overflow-hidden bg-[#6B1D2F]">
         <Image
-          src={ASSETS.heroImage}
-          alt="Tazeen's — আমাদের সাথে যোগাযোগ করুন"
+          src="/shoppingqueen-assets/sq-product-03-rose-pink.jpg"
+          alt="Shopping Queen by Orni — আমাদের সাথে যোগাযোগ করুন"
           fill
           unoptimized
           className="object-cover opacity-35"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#50001B]/85 via-[#720026]/70 to-[#50001B]/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#6B1D2F]/85 via-[#6B1D2F]/70 to-[#521322]/95" />
         <div className="absolute inset-0 flex items-center justify-center flex-col text-center px-6">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 mb-4">
             <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
             <span className="text-[10px] uppercase tracking-[0.28em] font-bold text-[#D4AF37]">
-              যোগাযোগ ও সহায়তা • CONNECT WITH TAZEEN&apos;S
+              যোগাযোগ ও সহায়তা • CONNECT WITH SHOPPING QUEEN BY ORNI
             </span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight leading-tight mb-3 font-heading">
-            Contact & Showrooms
+          <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight leading-tight mb-3 font-serif">
+            Contact & Support
           </h1>
-          <p className="text-[#E8DFD5] text-base md:text-lg font-medium tracking-wide max-w-xl">
+          <p className="text-[#FAF6F0] text-base md:text-lg font-medium tracking-wide max-w-xl">
             {BUSINESS.NAME} — {BUSINESS.TAGLINE}
           </p>
         </div>
       </section>
 
       {/* Tagline Strip */}
-      <section className="bg-[#720026] py-3.5 px-6 text-center border-t border-[#D4AF37]/30">
-        <p className="text-[#FAF7F2] text-sm font-semibold tracking-wide flex items-center justify-center gap-2">
+      <section className="bg-[#6B1D2F] py-3.5 px-6 text-center border-t border-[#D4AF37]/30">
+        <p className="text-[#FAF6F0] text-sm font-semibold tracking-wide flex items-center justify-center gap-2 flex-wrap">
           <span className="text-[#D4AF37]">✦</span>
-          <span>দ্রুততম অর্ডার ও কালেকশন বুকিংয়ের জন্য আমাদের WhatsApp ({BUSINESS.PHONE}) অথবা Facebook Inbox-এ যোগাযোগ করুন</span>
+          <span>দ্রুততম অর্ডার ও তথ্যের জন্য সরাসরি কল করুন: {BUSINESS.PHONE} অথবা WhatsApp ও Facebook Messenger-এ নক দিন</span>
           <span className="text-[#D4AF37]">✦</span>
         </p>
       </section>
@@ -105,16 +104,16 @@ export default function ContactPage() {
             {/* Left: Contact Details */}
             <div className="space-y-8">
               <div>
-                <p className="text-[10px] uppercase tracking-[0.25em] text-[#720026] font-bold mb-3">
-                  আমাদের শোরুম ও যোগাযোগের ঠিকানা
+                <p className="text-[10px] uppercase tracking-[0.25em] text-[#6B1D2F] font-bold mb-3">
+                  অফিসিয়াল যোগাযোগ ও তথ্য
                 </p>
-                <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight mb-4 font-heading">
-                  আপনার যেকোনো প্রশ্নে
+                <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight mb-4 font-serif">
+                  আপনার যেকোনো প্রয়োজনে
                   <br />
-                  <span className="italic font-normal text-[#720026]">আমরা সর্বদা আনন্দিত</span>
+                  <span className="italic font-normal text-[#6B1D2F]">আমরা আছি আপনার পাশে</span>
                 </h2>
                 <p className="text-sm text-neutral-600 leading-relaxed">
-                  {BUSINESS.NAME} — প্রিমিয়াম সিকুইন পাড় শাড়ি, ঐতিহ্যবাহী গোল্ড জরি কাতান এবং এক্সক্লুসিভ বুটিক থ্রি-পিসের জন্য দেশের শীর্ষস্থানীয় ব্র্যান্ড। সরাসরি আমাদের শোরুমে এসে দেখে নিন অথবা ঘরে বসেই অর্ডার করুন।
+                  {BUSINESS.NAME} — প্রিমিয়াম পাকিস্তানি লন ৩-পিস, গর্জিয়াস পার্টিওয়্যার, হ্যান্ডলুম সুতি এবং আসল থাই কিম পার্ল হোয়াইটেনিং ক্রিমের জন্য দেশের ১৯০,০০০+ পরিবারের বিশ্বস্ত নাম। যেকোনো প্রয়োজনে আমাদের সাথে সরাসরি যুক্ত হোন।
                 </p>
               </div>
 
@@ -125,11 +124,11 @@ export default function ContactPage() {
                     key={detail.label}
                     className="flex items-start gap-4 p-5 rounded-2xl bg-white border border-[#E8DFD5] hover:border-[#D4AF37] hover:shadow-md transition-all group"
                   >
-                    <div className="flex-shrink-0 w-11 h-11 rounded-full bg-rose-50 text-[#720026] border border-[#720026]/20 flex items-center justify-center group-hover:bg-[#720026] group-hover:text-white transition-colors">
+                    <div className="flex-shrink-0 w-11 h-11 rounded-full bg-rose-50 text-[#6B1D2F] border border-[#6B1D2F]/20 flex items-center justify-center group-hover:bg-[#6B1D2F] group-hover:text-white transition-colors">
                       <detail.icon className="h-5 w-5" />
                     </div>
                     <div className="space-y-0.5">
-                      <p className="text-[10px] uppercase tracking-[0.18em] text-[#720026] font-bold">
+                      <p className="text-[10px] uppercase tracking-[0.18em] text-[#6B1D2F] font-bold">
                         {detail.label}
                       </p>
                       {detail.href ? (
@@ -137,7 +136,7 @@ export default function ContactPage() {
                           href={detail.href}
                           target={detail.href.startsWith("http") ? "_blank" : undefined}
                           rel={detail.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                          className="text-sm font-bold text-[#1A1A1A] hover:text-[#720026] transition-colors block"
+                          className="text-sm font-bold text-[#1A1A1A] hover:text-[#6B1D2F] transition-colors block"
                         >
                           {detail.value}
                         </a>
@@ -171,7 +170,7 @@ export default function ContactPage() {
                   <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                   </svg>
-                  <span>Facebook Page (50K+)</span>
+                  <span>Facebook (190K+)</span>
                 </a>
               </div>
             </div>
@@ -179,16 +178,16 @@ export default function ContactPage() {
             {/* Right: Message Form */}
             <div className="bg-white border border-[#E8DFD5] rounded-3xl p-8 md:p-10 shadow-sm">
               <div className="mb-8">
-                <h3 className="text-xl font-bold text-[#1A1A1A] mb-1 font-heading">সরাসরি বার্তা পাঠান</h3>
+                <h3 className="text-xl font-bold text-[#1A1A1A] mb-1 font-serif">সরাসরি বার্তা পাঠান</h3>
                 <p className="text-xs text-neutral-500">
-                  আপনার বার্তা পাওয়ার পর আমাদের প্রতিনিধি অতি দ্রুত আপনার সাথে যোগাযোগ করবেন।
+                  আপনার নাম ও মোবাইল নম্বর সহ বার্তা দিন। আমাদের প্রতিনিধি দ্রুত যোগাযোগ করবেন।
                 </p>
               </div>
 
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
-                  alert(`ধন্যবাদ! আপনার বার্তা গৃহীত হয়েছে।\nদ্রুততম রেসপন্সের জন্য অনুগ্রহ করে আমাদের অফিসিয়াল WhatsApp (${BUSINESS.PHONE})-এ নক করুন!`);
+                  alert(`ধন্যবাদ! আপনার বার্তা সফলভাবে জমা হয়েছে।\nদ্রুততম রেসপন্সের জন্য আমাদের অফিসিয়াল WhatsApp (${BUSINESS.PHONE}) বা Facebook পেজে যোগাযোগ করুন!`);
                 }}
                 className="space-y-5"
               >
@@ -200,8 +199,8 @@ export default function ContactPage() {
                     <input
                       type="text"
                       required
-                      placeholder="Your Name"
-                      className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#720026] focus:ring-1 focus:ring-[#720026]/20 transition-colors bg-[#FAF7F2]"
+                      placeholder="আপনার নাম"
+                      className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#6B1D2F] focus:ring-1 focus:ring-[#6B1D2F]/20 transition-colors bg-[#FAF6F0]"
                     />
                   </div>
                   <div>
@@ -211,8 +210,8 @@ export default function ContactPage() {
                     <input
                       type="tel"
                       required
-                      placeholder="01790-030434"
-                      className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#720026] focus:ring-1 focus:ring-[#720026]/20 transition-colors bg-[#FAF7F2]"
+                      placeholder="01611-467735"
+                      className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#6B1D2F] focus:ring-1 focus:ring-[#6B1D2F]/20 transition-colors bg-[#FAF6F0]"
                     />
                   </div>
                 </div>
@@ -224,7 +223,7 @@ export default function ContactPage() {
                   <input
                     type="email"
                     placeholder="your@email.com"
-                    className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#720026] focus:ring-1 focus:ring-[#720026]/20 transition-colors bg-[#FAF7F2]"
+                    className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#6B1D2F] focus:ring-1 focus:ring-[#6B1D2F]/20 transition-colors bg-[#FAF6F0]"
                   />
                 </div>
 
@@ -234,50 +233,53 @@ export default function ContactPage() {
                   </label>
                   <select
                     required
-                    className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] focus:outline-none focus:border-[#720026] focus:ring-1 focus:ring-[#720026]/20 transition-colors bg-[#FAF7F2]"
+                    className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] focus:outline-none focus:border-[#6B1D2F] focus:ring-1 focus:ring-[#6B1D2F]/20 transition-colors bg-[#FAF6F0]"
                   >
                     <option value="">বিষয় নির্বাচন করুন</option>
-                    <option value="sequin-saree">Metallic Sequin Border Sarees</option>
-                    <option value="royal-katan">Heritage Royal Zari Katan</option>
-                    <option value="three-piece">Designer Boutique 3-Piece Sets</option>
-                    <option value="haldi-yellow">Haldi & Festive Collections</option>
-                    <option value="open-parcel">Open Parcel & ডেলিভারি পলিসি তথ্য</option>
-                    <option value="showroom">শোরুম ভিজিট সংক্রান্ত তথ্য</option>
+                    <option value="pakistani-lawn">Pakistani Lawn 3-Piece Collection</option>
+                    <option value="party-wear">Festive Partywear & Georgette</option>
+                    <option value="kim-cream">Kim Whitening Pearl & Snowlotus Cream</option>
+                    <option value="cotton-chunri">Handloom Cotton & Traditional Chunri</option>
+                    <option value="delivery-open-parcel">Open Parcel ও ডেলিভারি তথ্য</option>
+                    <option value="order-status">অর্ডার স্ট্যাটাস ও ট্র্যাকিং</option>
                     <option value="other">অন্যান্য জিজ্ঞাসা</option>
                   </select>
                 </div>
 
                 <div>
                   <label className="block text-[11px] font-bold uppercase tracking-[0.15em] text-[#1A1A1A] mb-2">
-                    আপনার বার্তা বা শাড়ির বিবরণ *
+                    আপনার বার্তা বা বিস্তারিত তথ্য *
                   </label>
                   <textarea
                     required
                     rows={4}
-                    placeholder="পছন্দের শাড়ির রঙ, মডেল বা কোনো প্রশ্ন লিখুন..."
-                    className="w-full px-4 py-3 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#720026] focus:ring-1 focus:ring-[#720026]/20 transition-colors resize-none bg-[#FAF7F2]"
+                    placeholder="পছন্দের ড্রেসের কোড, রঙ, সাইজ বা কোনো জিজ্ঞাসা লিখুন..."
+                    className="w-full px-4 py-3 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#6B1D2F] focus:ring-1 focus:ring-[#6B1D2F]/20 transition-colors resize-none bg-[#FAF6F0]"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full h-13 bg-[#720026] hover:bg-[#50001B] text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full transition-all duration-300 shadow-md active:scale-[0.99] py-4 cursor-pointer flex items-center justify-center gap-2"
+                  className="w-full h-13 bg-[#6B1D2F] hover:bg-[#521322] text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full transition-all duration-300 shadow-md active:scale-[0.99] py-4 cursor-pointer flex items-center justify-center gap-2"
                 >
                   <Send className="h-4 w-4" />
                   <span>মেসেজ পাঠান</span>
                 </button>
 
                 <p className="text-[11px] text-center text-neutral-500">
-                  জরুরি প্রয়োজনে সরাসরি কল বা{" "}
+                  তাৎক্ষণিক সহায়তায় কল করুন{" "}
+                  <a href={`tel:${BUSINESS.PHONE}`} className="text-[#6B1D2F] font-bold hover:underline">
+                    {BUSINESS.PHONE}
+                  </a>{" "}
+                  অথবা{" "}
                   <a
                     href={BUSINESS.WHATSAPP_LINK}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-[#720026] font-bold hover:underline"
+                    className="text-emerald-600 font-bold hover:underline"
                   >
-                    WhatsApp ({BUSINESS.PHONE})
-                  </a>{" "}
-                  করুন।
+                    WhatsApp
+                  </a>
                 </p>
               </form>
             </div>
@@ -285,23 +287,23 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Operations & Nationwide Logistics Hub */}
+      {/* Nationwide Logistics Hub */}
       <section className="bg-white py-14 px-6 border-t border-[#E8DFD5]">
         <div className="max-w-4xl mx-auto text-center space-y-4">
-          <div className="inline-flex items-center justify-center size-12 rounded-full bg-rose-50 text-[#720026] border border-[#720026]/20 mx-auto mb-2">
-            <Navigation className="h-6 w-6 text-[#720026]" />
+          <div className="inline-flex items-center justify-center size-12 rounded-full bg-rose-50 text-[#6B1D2F] border border-[#6B1D2F]/20 mx-auto mb-2">
+            <Truck className="h-6 w-6 text-[#6B1D2F]" />
           </div>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-[#720026] font-bold">
-            সারাদেশে দ্রুততম হোম ডেলিভারি হাব
+          <p className="text-[10px] uppercase tracking-[0.25em] text-[#6B1D2F] font-bold">
+            সারাদেশে শতভাগ নির্ভরযোগ্য হোম ডেলিভারি
           </p>
-          <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] font-heading">
+          <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] font-serif">
             {BUSINESS.NAME} — {BUSINESS.TAGLINE}
           </h2>
           <p className="text-sm text-neutral-600 max-w-2xl mx-auto leading-relaxed">
-            গুলশান ও উত্তরা শোরুম থেকে পরিচালিত সেন্ট্রাল কোয়ালিটি চেকিং ও প্যাকেজিং হাবের মাধ্যমে সমগ্র বাংলাদেশে Steadfast / Pathao / Paperfly কুরিয়ারের মাধ্যমে ২ থেকে ৪ কার্যদিবসের মধ্যে ওপেন পার্সেল সহ পার্সেল পৌঁছে দেওয়া হয়।
+            আমাদের সেন্ট্রাল ঢাকা ডিস্ট্রিবিউশন হাব থেকে Steadfast, Pathao ও Paperfly কুরিয়ারের মাধ্যমে সারা দেশে ২ থেকে ৩ কার্যদিবসের মধ্যে ওপেন পার্সেল চেকিং সুবিধাসহ পার্সেল পৌঁছে দেওয়া হয়।
           </p>
-          <p className="text-xs text-neutral-500 font-semibold">
-            ঢাকা সিটির ভিতরে ডেলিভারি চার্জ মাত্র ৳৮০ | ঢাকা সিটির বাইরে ৳১৫০ (ক্যাশ অন ডেলিভারি প্রযোজ্য)
+          <p className="text-xs text-neutral-700 font-semibold">
+            ঢাকা সিটির ভেতরে ডেলিভারি চার্জ মাত্র ৳৮০ | ঢাকা সিটির বাইরে ৳১৫০ | ২ বা ততোধিক ড্রেসে ফ্রি ডেলিভারি
           </p>
         </div>
       </section>
