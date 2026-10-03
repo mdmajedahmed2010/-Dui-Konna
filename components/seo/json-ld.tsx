@@ -1,5 +1,5 @@
 /**
- * Shopping Queen by Orni — JSON-LD Structured Data Components
+ * Dui Konna (দুই কন্যা) — JSON-LD Structured Data Components
  * SEO (Organization, BreadcrumbList, Product schemas)
  */
 
@@ -10,8 +10,9 @@ export function OrganizationJsonLd() {
     "@context": "https://schema.org",
     "@type": "Organization",
     name: BUSINESS.NAME,
+    alternateName: "দুই কন্যা",
     url: BUSINESS.WEBSITE,
-    logo: `${BUSINESS.WEBSITE}/shoppingqueen-assets/logo.avif`,
+    logo: `${BUSINESS.WEBSITE}/duikonna-assets/logo.png`,
     contactPoint: {
       "@type": "ContactPoint",
       telephone: BUSINESS.PHONE,
@@ -23,8 +24,8 @@ export function OrganizationJsonLd() {
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.ADDRESS,
-      addressLocality: "Dhaka",
-      postalCode: "1200",
+      addressLocality: "Nikunja-2, Khilkhet, Dhaka",
+      postalCode: "1229",
       addressCountry: "BD",
     },
   };
@@ -33,15 +34,16 @@ export function OrganizationJsonLd() {
     "@context": "https://schema.org",
     "@type": "ClothingStore",
     name: BUSINESS.NAME,
-    image: `${BUSINESS.WEBSITE}/shoppingqueen-assets/logo.avif`,
+    alternateName: "দুই কন্যা",
+    image: `${BUSINESS.WEBSITE}/duikonna-assets/logo.png`,
     url: BUSINESS.WEBSITE,
     telephone: BUSINESS.PHONE,
-    priceRange: "৳৳",
+    priceRange: "৳৳৳",
     address: {
       "@type": "PostalAddress",
       streetAddress: BUSINESS.ADDRESS,
-      addressLocality: "Dhaka",
-      postalCode: "1200",
+      addressLocality: "Nikunja-2, Khilkhet, Dhaka",
+      postalCode: "1229",
       addressCountry: "BD",
     },
     openingHoursSpecification: [
@@ -56,8 +58,8 @@ export function OrganizationJsonLd() {
           "Thursday",
           "Friday"
         ],
-        opens: "10:00",
-        closes: "22:00"
+        opens: "11:00",
+        closes: "21:00"
       }
     ]
   };

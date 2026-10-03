@@ -1,5 +1,5 @@
 /**
- * Shopping Queen by Orni — All Collections Page
+ * Dui Konna (দুই কন্যা) — All Collections Page
  * Route: /collections
  */
 
@@ -16,52 +16,52 @@ export const revalidate = 60;
 export const metadata: Metadata = {
   title: `All Collections — ${BUSINESS.NAME}`,
   description:
-    `Explore exclusive ${BUSINESS.NAME} collections — Pakistani Lawn 3-Piece, Festive Partywear, Kim Whitening Cream, and Handloom Cotton.`,
+    `Explore exclusive ${BUSINESS.NAME} collections — Authentic Dhakai Muslin Sarees, Dhakai Jamdani, Bridal Crimson Muslin, Luxury Karchupi & Pastel Heritage.`,
 };
 
 export default async function CollectionsPage() {
   const curatedCollections = [
     {
-      title: "Pakistani Lawn 3-Piece",
-      image: "/shoppingqueen-assets/sq-product-01-royal-blue.jpg",
-      href: "/collections/pakistani-lawn-three-piece",
-      tag: "ORIGINAL LAWN",
-      desc: "১০০% পিওর লাক্সারি কটন পাকিস্তানি লন থ্রি-পিস, আরামদায়ক শিফন বা কটন ওড়না সহ।",
+      title: "Authentic Dhakai Muslin",
+      image: "/duikonna-assets/fb_cover_landscape.jpg",
+      href: "/collections/dhakai-muslin-saree",
+      tag: "100% PURE MUSLIN",
+      desc: "প্রাচীন ঐতিহ্যবাহী খাঁটি ঢাকাই মসলিন শাড়ি — অসাধারণ কোমলতা, আভিজাত্য ও ১২ হাত স্ট্যান্ডার্ড ড্র্যাপ।",
     },
     {
-      title: "Festive & Partywear Couture",
-      image: "/shoppingqueen-assets/sq-product-03-rose-pink.jpg",
-      href: "/collections/festive-partywear",
-      tag: "ORNI SIGNATURE",
-      desc: "বিয়ে, পার্টি ও উৎসবের জন্য গর্জিয়াস জারদৌসি ও সিকুইন কাজ করা এক্সক্লুসিভ কালেকশন।",
+      title: "Dhakai Jamdani Heritage",
+      image: "/duikonna-assets/fb_photo_2.jpg",
+      href: "/collections/dhakai-jamdani",
+      tag: "HANDWOVEN CRAFT",
+      desc: "নিখুঁত সুতোয় হাতে বোনা ঢাকাই জামদানি — উৎসব ও ঐতিহ্যের অপরূপ মিলন।",
     },
     {
-      title: "Kim Whitening Pearl Skincare",
-      image: "/shoppingqueen-assets/sq-product-12-kim-whitening-cream.avif",
-      href: "/collections/kim-whitening-cream",
-      tag: "100% THAI GENUINE",
-      desc: "আসল থাই কিম স্নোলোটাস ও মুক্তা ভস্ম সমৃদ্ধ নাইট ক্রিম (20g) — দাগহীন প্রাকৃতিক উজ্জ্বলতা।",
+      title: "Bridal Crimson Muslin",
+      image: "/duikonna-assets/fb_photo_4.jpg",
+      href: "/collections/bridal-red-muslin",
+      tag: "ROYAL BRIDAL",
+      desc: "বিয়ে, বউভাত ও রাজকীয় সন্ধ্যার জন্য খাঁটি লাল মসলিন শাড়ি স্বর্ণালি জরির কারুকাজে।",
     },
     {
-      title: "Handloom Cotton & Chunri",
-      image: "/shoppingqueen-assets/sq-product-04-emerald-green.jpg",
-      href: "/collections/handloom-cotton-chunri",
-      tag: "HERITAGE WEAVES",
-      desc: "দেশীয় ঐতিহ্যবাহী খাঁটি সুতি ও চুনরি প্রিন্টের মার্জিত ৩-পিস পোশাক।",
+      title: "Luxury Karchupi & Organza",
+      image: "/duikonna-assets/product-03-royal-yellow.jpg",
+      href: "/collections/luxury-karchupi-saree",
+      tag: "COUTURE EMBROIDERY",
+      desc: "নিপুণ হাতের কারচুপি, কাটদানা ও জারদৌসি কারুকাজ সংবলিত রাজকীয় ডিজাইনার শাড়ি।",
     },
     {
-      title: "Black & Gold Festive Edit",
-      image: "/shoppingqueen-assets/sq-product-11-black-gold-festive.jpg",
-      href: "/collections/festive-partywear",
-      tag: "ROYAL NOIR",
-      desc: "গভীর কালো ও অ্যান্টিক গোল্ড জরির রাজকীয় সংমিশ্রণে প্রস্তুত পার্টি পোশাক।",
+      title: "Pastel Heritage Muslin",
+      image: "/duikonna-assets/fb_photo_3.jpg",
+      href: "/collections/pastel-heritage-muslin",
+      tag: "ELEGANT PASTELS",
+      desc: "হালকা পিচ, ল্যাভেন্ডার ও মিন্ট শেডের আধুনিক মার্জিত ঐতিহ্যের মেলবন্ধন।",
     },
     {
-      title: "Orni Signature Luxury Suite",
-      image: "/shoppingqueen-assets/banner.avif",
-      href: "/collections/pakistani-lawn-three-piece",
+      title: "Shamima Nasrin Curated Masterpieces",
+      image: "/duikonna-assets/fb_photo_6.jpg",
+      href: "/collections/dhakai-muslin-saree",
       tag: "FOUNDER'S CHOICE",
-      desc: "অর্ণি ইসলামের ফেসবুক লাইভে প্রদর্শিত বেস্টসেলার ড্রেস ও বিশেষ কম্বো প্যাক।",
+      desc: "স্বত্বাধিকারী শামীমা নাসরিনের বিশেষ পছন্দের মাস্টারপিস শাড়ি ও নিকুঞ্জ-২ শোরুম স্পেশাল।",
     },
   ];
 
@@ -88,21 +88,21 @@ export default async function CollectionsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#FAF6F0]">
+    <div className="min-h-screen bg-[#FAF7F2]">
       <div className="container mx-auto px-4 py-8 md:py-12 max-w-7xl">
         <Breadcrumb items={[{ label: "All Collections" }]} />
 
         {/* Luxury Header */}
         <div className="mt-10 mb-14 text-center">
-          <span className="inline-block px-3.5 py-1 rounded-full border border-[#6B1D2F]/40 bg-[#6B1D2F]/5 text-[#6B1D2F] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
-            ✦ SHOPPING QUEEN BY ORNI CURATIONS ✦
+          <span className="inline-block px-3.5 py-1 rounded-full border border-[#8B0000]/30 bg-[#8B0000]/5 text-[#8B0000] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
+            ✦ DUI KONNA (দুই কন্যা) CURATIONS ✦
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#6B1D2F] font-serif">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#8B0000] font-serif">
             All Collections
           </h1>
           <div className="w-20 h-[2px] bg-[#D4AF37] mx-auto mt-5" />
-          <p className="text-neutral-600 mt-4 text-sm md:text-base max-w-xl mx-auto font-sans">
-            অরিজিনাল পাকিস্তানি লন, গর্জিয়াস পার্টিওয়্যার এবং খাঁটি থাই কিম পার্ল ও স্নোলোটাস স্কিনকেয়ারের পূর্ণাঙ্গ কালেকশন।
+          <p className="text-neutral-700 mt-4 text-sm md:text-base max-w-xl mx-auto font-sans">
+            ১০০% খাঁটি ঐতিহ্যবাহী ঢাকai মসলিন, রাজকীয় ব্রাইডাল রেড, হাতে বোনা জামদানি এবং এক্সক্লুসিভ কারচুপি কাজের শাড়ির পূর্ণাঙ্গ সম্ভার।
           </p>
         </div>
 
@@ -145,10 +145,10 @@ export default async function CollectionsPage() {
         {/* Quick Category Switcher */}
         <div className="border-t border-[#E8DFD5] pt-12 pb-8">
           <div className="flex items-center justify-between mb-6">
-            <h3 className="text-xl font-serif text-[#1A1A1A]">Shop by Category</h3>
+            <h3 className="text-xl font-serif text-[#181513]">Shop by Category</h3>
             <Link
               href="/categories"
-              className="text-xs uppercase tracking-widest font-bold text-[#6B1D2F] hover:underline"
+              className="text-xs uppercase tracking-widest font-bold text-[#8B0000] hover:underline"
             >
               View All Categories →
             </Link>
@@ -158,7 +158,7 @@ export default async function CollectionsPage() {
               <Link
                 key={cat.id}
                 href={`/collections/${cat.slug}`}
-                className="px-4 py-2 rounded-xl border border-[#E8DFD5] bg-white hover:bg-[#6B1D2F] hover:text-white transition-colors text-xs font-semibold uppercase tracking-wider"
+                className="px-4 py-2 rounded-xl border border-[#E8DFD5] bg-white hover:bg-[#8B0000] hover:text-white transition-colors text-xs font-semibold uppercase tracking-wider"
               >
                 {cat.name}
               </Link>

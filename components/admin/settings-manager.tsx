@@ -61,7 +61,7 @@ const DEFAULTS: Record<string, { value: unknown; group: string; label: string; t
     type: "textarea",
   },
   store_tagline: {
-    value: "Premium Women's Fashion",
+    value: "Authentic Dhakai Muslin & Luxury Sarees",
     group: "general",
     label: "Tagline",
     type: "text",
@@ -78,7 +78,7 @@ const DEFAULTS: Record<string, { value: unknown; group: string; label: string; t
   store_logo: { value: "", group: "branding", label: "Store Logo", type: "image" },
   store_favicon: { value: "", group: "branding", label: "Favicon", type: "image" },
   primary_color: {
-    value: "#000000",
+    value: "#8B0000",
     group: "branding",
     label: "Primary Brand Color (Hex)",
     type: "text",
@@ -145,19 +145,19 @@ const DEFAULTS: Record<string, { value: unknown; group: string; label: string; t
 
   // SEO
   seo_title: {
-    value: "Shopping Queen by Orni — Pakistani Lawn, Festive Couture & Kim Pearl Skincare",
+    value: "Dui Konna (দুই কন্যা) — Authentic Dhakai Muslin, Jamdani & Luxury Sarees",
     group: "seo",
     label: "Default SEO Title",
     type: "text",
   },
   seo_description: {
-    value: "Discover authentic Pakistani lawn suits, festive partywear, handloom cotton, and Kim Whitening Pearl & Snowlotus Cream at Shopping Queen by Orni (শপিং কুইন বাই অর্ণি). Open Parcel delivery nationwide.",
+    value: "Discover 100% authentic Dhakai Muslin, Jamdani, Bridal Crimson Muslin & Karchupi Sarees at Dui Konna (দুই কন্যা), Nikunja-2, Khilkhet, Dhaka. Nationwide Open Parcel delivery & showroom trial.",
     group: "seo",
     label: "SEO Description",
     type: "textarea",
   },
   seo_keywords: {
-    value: "pakistani lawn, shopping queen by orni, orni islam, salwar kameez, kim whitening cream, snowlotus, 3 piece, open parcel, dhaka",
+    value: "dui konna, দুই কন্যা, shamima nasrin, dhakai muslin, muslin saree, dhakai jamdani, bridal red saree, karchupi saree, nikunja 2, dhaka luxury saree",
     group: "seo",
     label: "SEO Keywords (comma separated)",
     type: "text",

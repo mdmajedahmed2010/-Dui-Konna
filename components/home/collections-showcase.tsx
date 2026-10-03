@@ -1,8 +1,8 @@
 "use client";
 
 /**
- * Shopping Queen by Orni — Collections Showcase
- * Authentic Pakistani Lawn, Festive Couture & Kim Pearl Skincare
+ * Dui Konna (দুই কন্যা) — Collections Showcase
+ * Authentic Dhakai Muslin, Jamdani & Luxury Karchupi Sarees
  */
 
 import Link from "next/link";
@@ -70,7 +70,7 @@ export function CollectionsShowcase({ collections }: CollectionsShowcaseProps) {
           variants={headingVariants}
           className="text-center max-w-lg mx-auto mb-10 md:mb-16"
         >
-          <p className="text-[10px] uppercase tracking-[0.25em] text-[#6B1D2F] font-bold mb-3">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-[#8B0000] font-bold mb-3">
             EXPLORE EVERYTHING
           </p>
           <h2 className="text-2xl md:text-[36px] font-bold tracking-tight text-[#1A1A1A] font-serif">
@@ -127,7 +127,7 @@ export function CollectionsShowcase({ collections }: CollectionsShowcaseProps) {
         <div className="mt-12 md:mt-16 text-center">
           <Link
             href="/collections"
-            className="inline-flex items-center justify-center gap-3 px-10 py-4.5 bg-[#6B1D2F] text-white text-xs uppercase tracking-[0.24em] font-bold rounded-full hover:bg-[#521322] transition-all duration-300 shadow-md border border-[#D4AF37]/40 active:scale-[0.98]"
+            className="inline-flex items-center justify-center gap-3 px-10 py-4.5 bg-[#8B0000] text-white text-xs uppercase tracking-[0.24em] font-bold rounded-full hover:bg-[#6B0000] transition-all duration-300 shadow-md border border-[#D4AF37]/40 active:scale-[0.98]"
           >
             Explore All Collections →
           </Link>

@@ -1,15 +1,15 @@
 "use client";
 
 /**
- * Shopping Queen by Orni — Contact & Customer Care
- * Hotlines: 01611-467735 / 01935-711304
- * Official Facebook: https://www.facebook.com/Shoppingqueenbyorni (190,000+ Community)
- * WhatsApp: +880 1611-467735
- * Central Distribution Hub: Dhaka, Bangladesh
+ * Dui Konna (দুই কন্যা) — Contact & Customer Care
+ * Hotlines: 01339-364462 / +880 1741-954490 (WhatsApp)
+ * Official Facebook: https://www.facebook.com/duikonna01 (484,000+ Community)
+ * Email: shamimanasrin1239@gmail.com
+ * Flagship Showroom: House #21/B, Road #01, Nikunja-2, Khilkhet, Dhaka-1229
  */
 
 import Image from "next/image";
-import { Phone, Mail, MapPin, Clock, MessageCircle, Sparkles, Navigation, Send, ShieldCheck, Truck } from "lucide-react";
+import { Phone, Mail, MapPin, Clock, MessageCircle, Sparkles, Send, Store, Truck } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 import { ASSETS } from "@/lib/demo-data";
 
@@ -19,80 +19,80 @@ const contactDetails = [
     label: "অফিসিয়াল হটলাইন ও কল",
     value: `${BUSINESS.PHONE} / ${BUSINESS.PHONE_ALT}`,
     href: `tel:${BUSINESS.PHONE.replace(/[^0-9+]/g, "")}`,
-    note: "সকাল ১০:০০টা থেকে রাত ১০:০০টা (প্রতিদিন খোলা)",
+    note: "সকাল ১১:০০টা থেকে রাত ৯:০০টা (প্রতিদিন খোলা)",
   },
   {
     icon: MessageCircle,
     label: "WhatsApp চ্যাট ও সাপোর্ট",
-    value: "+880 1611-467735",
+    value: "+880 1741-954490",
     href: BUSINESS.WHATSAPP_LINK,
-    note: "ড্রেসের ভিডিও, স্কিনকেয়ার তথ্য বা দ্রুত অর্ডারে নক করুন",
+    note: "শাড়ির ক্লোজআপ ভিডিও, স্পেসিফিকেশন বা দ্রুত বুকিংয়ে নক করুন",
   },
   {
     icon: MessageCircle,
-    label: "Facebook Page (190K+ Community)",
-    value: "Shopping Queen by Orni",
+    label: "Facebook Page (484K+ Community)",
+    value: "Dui Konna (দুই কন্যা)",
     href: BUSINESS.FACEBOOK,
-    note: "লাইভ আপডেট, নতুন কালেকশন ও ইনবক্স মেসেজিং",
+    note: "নতুন মসলিন ড্রপ, ফটোশুট ও ইনবক্স মেসেজিং",
   },
   {
     icon: Mail,
     label: "অফিসিয়াল ইমেইল",
     value: BUSINESS.EMAIL,
     href: `mailto:${BUSINESS.EMAIL}`,
-    note: "কাস্টমার সাপোর্ট ও যেকোনো প্রাতিষ্ঠানিক যোগাযোগ",
+    note: "কাস্টমার সাপোর্ট ও প্রাতিষ্ঠানিক যোগাযোগ",
   },
   {
-    icon: MapPin,
-    label: "সেন্ট্রাল হেডকোয়ার্টার্স ও ওয়্যারহাউস",
+    icon: Store,
+    label: "ফ্ল্যাগশিপ শোরুমের ঠিকানা",
     value: BUSINESS.ADDRESS,
     href: null,
-    note: "অনলাইন ফুলফিলমেন্ট হাব — সারা বাংলাদেশে ওপেন পার্সেল ডেলিভারি",
+    note: "নিকুঞ্জ-২, খিলক্ষেত, ঢাকা — সরাসরি এসে ট্রায়াল দিয়ে কেনার সুবিধা",
   },
   {
     icon: Clock,
-    label: "অনলাইন কাস্টমার সার্ভিস",
+    label: "শোরুম ও অনলাইন সেবার সময়",
     value: BUSINESS.STORE_HOURS_BN,
     href: null,
-    note: "মেসেঞ্জার ও হোয়াটসঅ্যাপে সার্বক্ষণিক সেবা",
+    note: "সপ্তাহের ৭ দিনই শোরুম খোলা থাকে (১১:০০ AM – ৯:০০ PM)",
   },
 ];
 
 export default function ContactPage() {
   return (
-    <main className="min-h-screen bg-[#FAF6F0]">
+    <main className="min-h-screen bg-[#FAF7F2]">
       {/* Hero Section */}
-      <section className="relative h-[45vh] md:h-[50vh] overflow-hidden bg-[#6B1D2F]">
+      <section className="relative h-[45vh] md:h-[50vh] overflow-hidden bg-[#8B0000]">
         <Image
-          src="/shoppingqueen-assets/sq-product-03-rose-pink.jpg"
-          alt="Shopping Queen by Orni — আমাদের সাথে যোগাযোগ করুন"
+          src={ASSETS.heroBanner}
+          alt="Dui Konna — আমাদের সাথে যোগাযোগ করুন"
           fill
           unoptimized
           className="object-cover opacity-35"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-[#6B1D2F]/85 via-[#6B1D2F]/70 to-[#521322]/95" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#8B0000]/85 via-[#8B0000]/70 to-[#5A0000]/95" />
         <div className="absolute inset-0 flex items-center justify-center flex-col text-center px-6">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 mb-4">
             <Sparkles className="h-3.5 w-3.5 text-[#D4AF37]" />
             <span className="text-[10px] uppercase tracking-[0.28em] font-bold text-[#D4AF37]">
-              যোগাযোগ ও সহায়তা • CONNECT WITH SHOPPING QUEEN BY ORNI
+              যোগাযোগ ও শোরুম সহায়তা • CONNECT WITH DUI KONNA
             </span>
           </div>
           <h1 className="text-4xl md:text-6xl font-bold text-white tracking-tight leading-tight mb-3 font-serif">
-            Contact & Support
+            Contact &amp; Showroom
           </h1>
-          <p className="text-[#FAF6F0] text-base md:text-lg font-medium tracking-wide max-w-xl">
-            {BUSINESS.NAME} — {BUSINESS.TAGLINE}
+          <p className="text-[#FAF7F2] text-base md:text-lg font-medium tracking-wide max-w-xl">
+            {BUSINESS.NAME} ({BUSINESS.NAME_BN}) — {BUSINESS.TAGLINE}
           </p>
         </div>
       </section>
 
       {/* Tagline Strip */}
-      <section className="bg-[#6B1D2F] py-3.5 px-6 text-center border-t border-[#D4AF37]/30">
-        <p className="text-[#FAF6F0] text-sm font-semibold tracking-wide flex items-center justify-center gap-2 flex-wrap">
+      <section className="bg-[#8B0000] py-3.5 px-6 text-center border-t border-[#D4AF37]/30">
+        <p className="text-[#FAF7F2] text-sm font-semibold tracking-wide flex items-center justify-center gap-2 flex-wrap">
           <span className="text-[#D4AF37]">✦</span>
-          <span>দ্রুততম অর্ডার ও তথ্যের জন্য সরাসরি কল করুন: {BUSINESS.PHONE} অথবা WhatsApp ও Facebook Messenger-এ নক দিন</span>
+          <span>দ্রুততম শাড়ি বুকিং ও তথ্যের জন্য কল করুন: {BUSINESS.PHONE} অথবা WhatsApp-এ নক দিন: {BUSINESS.PHONE_ALT}</span>
           <span className="text-[#D4AF37]">✦</span>
         </p>
       </section>
@@ -104,16 +104,16 @@ export default function ContactPage() {
             {/* Left: Contact Details */}
             <div className="space-y-8">
               <div>
-                <p className="text-[10px] uppercase tracking-[0.25em] text-[#6B1D2F] font-bold mb-3">
-                  অফিসিয়াল যোগাযোগ ও তথ্য
+                <p className="text-[10px] uppercase tracking-[0.25em] text-[#8B0000] font-bold mb-3">
+                  অফিসিয়াল যোগাযোগ ও শোরুম
                 </p>
                 <h2 className="text-3xl md:text-4xl font-bold text-[#1A1A1A] leading-tight mb-4 font-serif">
-                  আপনার যেকোনো প্রয়োজনে
+                  আপনার যেকোনো শাড়ির প্রয়োজনে
                   <br />
-                  <span className="italic font-normal text-[#6B1D2F]">আমরা আছি আপনার পাশে</span>
+                  <span className="italic font-normal text-[#8B0000]">আমরা আছি আপনার পাশে</span>
                 </h2>
                 <p className="text-sm text-neutral-600 leading-relaxed">
-                  {BUSINESS.NAME} — প্রিমিয়াম পাকিস্তানি লন ৩-পিস, গর্জিয়াস পার্টিওয়্যার, হ্যান্ডলুম সুতি এবং আসল থাই কিম পার্ল হোয়াইটেনিং ক্রিমের জন্য দেশের ১৯০,০০০+ পরিবারের বিশ্বস্ত নাম। যেকোনো প্রয়োজনে আমাদের সাথে সরাসরি যুক্ত হোন।
+                  {BUSINESS.NAME} — খাঁটি ঢাকai মসলিন শাড়ি, ঐতিহ্যবাহী জামদানি, ব্রাইডাল রেড মসলিন ও লাক্সারি কারচুপি শাড়ির জন্য দেশের ৪৮৪,০০০+ নারীর বিশ্বস্ত ঠিকানা। শোরুমে এসে সরাসরি দেখা বা অনলাইনে ডেলিভারি সংক্রান্ত যেকোনো তথ্যে যোগাযোগ করুন।
                 </p>
               </div>
 
@@ -124,11 +124,11 @@ export default function ContactPage() {
                     key={detail.label}
                     className="flex items-start gap-4 p-5 rounded-2xl bg-white border border-[#E8DFD5] hover:border-[#D4AF37] hover:shadow-md transition-all group"
                   >
-                    <div className="flex-shrink-0 w-11 h-11 rounded-full bg-rose-50 text-[#6B1D2F] border border-[#6B1D2F]/20 flex items-center justify-center group-hover:bg-[#6B1D2F] group-hover:text-white transition-colors">
+                    <div className="flex-shrink-0 w-11 h-11 rounded-full bg-rose-50 text-[#8B0000] border border-[#8B0000]/20 flex items-center justify-center group-hover:bg-[#8B0000] group-hover:text-white transition-colors">
                       <detail.icon className="h-5 w-5" />
                     </div>
                     <div className="space-y-0.5">
-                      <p className="text-[10px] uppercase tracking-[0.18em] text-[#6B1D2F] font-bold">
+                      <p className="text-[10px] uppercase tracking-[0.18em] text-[#8B0000] font-bold">
                         {detail.label}
                       </p>
                       {detail.href ? (
@@ -136,7 +136,7 @@ export default function ContactPage() {
                           href={detail.href}
                           target={detail.href.startsWith("http") ? "_blank" : undefined}
                           rel={detail.href.startsWith("http") ? "noopener noreferrer" : undefined}
-                          className="text-sm font-bold text-[#1A1A1A] hover:text-[#6B1D2F] transition-colors block"
+                          className="text-sm font-bold text-[#1A1A1A] hover:text-[#8B0000] transition-colors block"
                         >
                           {detail.value}
                         </a>
@@ -170,7 +170,7 @@ export default function ContactPage() {
                   <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
                     <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                   </svg>
-                  <span>Facebook (190K+)</span>
+                  <span>Facebook (484K+)</span>
                 </a>
               </div>
             </div>
@@ -180,14 +180,14 @@ export default function ContactPage() {
               <div className="mb-8">
                 <h3 className="text-xl font-bold text-[#1A1A1A] mb-1 font-serif">সরাসরি বার্তা পাঠান</h3>
                 <p className="text-xs text-neutral-500">
-                  আপনার নাম ও মোবাইল নম্বর সহ বার্তা দিন। আমাদের প্রতিনিধি দ্রুত যোগাযোগ করবেন।
+                  আপনার নাম ও মোবাইল নম্বর সহ বার্তা দিন। শোরুমের প্রতিনিধি দ্রুত যোগাযোগ করবেন।
                 </p>
               </div>
 
               <form
                 onSubmit={(e) => {
                   e.preventDefault();
-                  alert(`ধন্যবাদ! আপনার বার্তা সফলভাবে জমা হয়েছে।\nদ্রুততম রেসপন্সের জন্য আমাদের অফিসিয়াল WhatsApp (${BUSINESS.PHONE}) বা Facebook পেজে যোগাযোগ করুন!`);
+                  alert(`ধন্যবাদ! আপনার বার্তা সফলভাবে জমা হয়েছে।\nদ্রুততম রেসপন্সের জন্য আমাদের অফিসিয়াল WhatsApp (${BUSINESS.PHONE_ALT}) বা Facebook পেজে যোগাযোগ করুন!`);
                 }}
                 className="space-y-5"
               >
@@ -200,7 +200,7 @@ export default function ContactPage() {
                       type="text"
                       required
                       placeholder="আপনার নাম"
-                      className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#6B1D2F] focus:ring-1 focus:ring-[#6B1D2F]/20 transition-colors bg-[#FAF6F0]"
+                      className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#8B0000] focus:ring-1 focus:ring-[#8B0000]/20 transition-colors bg-[#FAF7F2]"
                     />
                   </div>
                   <div>
@@ -210,8 +210,8 @@ export default function ContactPage() {
                     <input
                       type="tel"
                       required
-                      placeholder="01611-467735"
-                      className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#6B1D2F] focus:ring-1 focus:ring-[#6B1D2F]/20 transition-colors bg-[#FAF6F0]"
+                      placeholder="01339-364462"
+                      className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#8B0000] focus:ring-1 focus:ring-[#8B0000]/20 transition-colors bg-[#FAF7F2]"
                     />
                   </div>
                 </div>
@@ -223,7 +223,7 @@ export default function ContactPage() {
                   <input
                     type="email"
                     placeholder="your@email.com"
-                    className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#6B1D2F] focus:ring-1 focus:ring-[#6B1D2F]/20 transition-colors bg-[#FAF6F0]"
+                    className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#8B0000] focus:ring-1 focus:ring-[#8B0000]/20 transition-colors bg-[#FAF7F2]"
                   />
                 </div>
 
@@ -233,15 +233,17 @@ export default function ContactPage() {
                   </label>
                   <select
                     required
-                    className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] focus:outline-none focus:border-[#6B1D2F] focus:ring-1 focus:ring-[#6B1D2F]/20 transition-colors bg-[#FAF6F0]"
+                    className="w-full h-11 px-4 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] focus:outline-none focus:border-[#8B0000] focus:ring-1 focus:ring-[#8B0000]/20 transition-colors bg-[#FAF7F2]"
                   >
                     <option value="">বিষয় নির্বাচন করুন</option>
-                    <option value="pakistani-lawn">Pakistani Lawn 3-Piece Collection</option>
-                    <option value="party-wear">Festive Partywear & Georgette</option>
-                    <option value="kim-cream">Kim Whitening Pearl & Snowlotus Cream</option>
-                    <option value="cotton-chunri">Handloom Cotton & Traditional Chunri</option>
-                    <option value="delivery-open-parcel">Open Parcel ও ডেলিভারি তথ্য</option>
-                    <option value="order-status">অর্ডার স্ট্যাটাস ও ট্র্যাকিং</option>
+                    <option value="exclusive-muslin">খাঁটি ঢাকাই মসলিন শাড়ি (Exclusive Muslin)</option>
+                    <option value="bridal-red">ব্রাইডাল ও ফেস্টিভ রেড মসলিন</option>
+                    <option value="karchupi">লাক্সারি কারচুপি ও অরগাঞ্জা শাড়ি</option>
+                    <option value="jamdani">ঐতিহ্যবাহী ঢাকাই জামদানি</option>
+                    <option value="pastel-muslin">প্যাস্টেল হেরিটেজ হ্যান্ডলুম মসলিন</option>
+                    <option value="muslin-4piece">মসলিন ৪-পিস ড্রেস সেট</option>
+                    <option value="showroom-visit">নিকুঞ্জ-২ শোরুম ভিজিট ও অ্যাপয়েন্টমেন্ট</option>
+                    <option value="delivery-open-parcel">Open Parcel ও কুরিয়ার ডেলিভারি তথ্য</option>
                     <option value="other">অন্যান্য জিজ্ঞাসা</option>
                   </select>
                 </div>
@@ -253,14 +255,14 @@ export default function ContactPage() {
                   <textarea
                     required
                     rows={4}
-                    placeholder="পছন্দের ড্রেসের কোড, রঙ, সাইজ বা কোনো জিজ্ঞাসা লিখুন..."
-                    className="w-full px-4 py-3 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#6B1D2F] focus:ring-1 focus:ring-[#6B1D2F]/20 transition-colors resize-none bg-[#FAF6F0]"
+                    placeholder="পছন্দের শাড়ির নাম, রঙ, আঁচলের কাজ বা কোনো জিজ্ঞাসা লিখুন..."
+                    className="w-full px-4 py-3 border border-[#E8DFD5] rounded-xl text-sm text-[#1A1A1A] placeholder:text-neutral-400 focus:outline-none focus:border-[#8B0000] focus:ring-1 focus:ring-[#8B0000]/20 transition-colors resize-none bg-[#FAF7F2]"
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full h-13 bg-[#6B1D2F] hover:bg-[#521322] text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full transition-all duration-300 shadow-md active:scale-[0.99] py-4 cursor-pointer flex items-center justify-center gap-2"
+                  className="w-full h-13 bg-[#8B0000] hover:bg-[#6B0000] text-[#D4AF37] hover:text-white text-xs font-bold uppercase tracking-[0.2em] rounded-full transition-all duration-300 shadow-md active:scale-[0.99] py-4 cursor-pointer flex items-center justify-center gap-2"
                 >
                   <Send className="h-4 w-4" />
                   <span>মেসেজ পাঠান</span>
@@ -268,7 +270,7 @@ export default function ContactPage() {
 
                 <p className="text-[11px] text-center text-neutral-500">
                   তাৎক্ষণিক সহায়তায় কল করুন{" "}
-                  <a href={`tel:${BUSINESS.PHONE}`} className="text-[#6B1D2F] font-bold hover:underline">
+                  <a href={`tel:${BUSINESS.PHONE}`} className="text-[#8B0000] font-bold hover:underline">
                     {BUSINESS.PHONE}
                   </a>{" "}
                   অথবা{" "}
@@ -278,7 +280,7 @@ export default function ContactPage() {
                     rel="noopener noreferrer"
                     className="text-emerald-600 font-bold hover:underline"
                   >
-                    WhatsApp
+                    WhatsApp ({BUSINESS.PHONE_ALT})
                   </a>
                 </p>
               </form>
@@ -290,20 +292,20 @@ export default function ContactPage() {
       {/* Nationwide Logistics Hub */}
       <section className="bg-white py-14 px-6 border-t border-[#E8DFD5]">
         <div className="max-w-4xl mx-auto text-center space-y-4">
-          <div className="inline-flex items-center justify-center size-12 rounded-full bg-rose-50 text-[#6B1D2F] border border-[#6B1D2F]/20 mx-auto mb-2">
-            <Truck className="h-6 w-6 text-[#6B1D2F]" />
+          <div className="inline-flex items-center justify-center size-12 rounded-full bg-rose-50 text-[#8B0000] border border-[#8B0000]/20 mx-auto mb-2">
+            <Truck className="h-6 w-6 text-[#8B0000]" />
           </div>
-          <p className="text-[10px] uppercase tracking-[0.25em] text-[#6B1D2F] font-bold">
+          <p className="text-[10px] uppercase tracking-[0.25em] text-[#8B0000] font-bold">
             সারাদেশে শতভাগ নির্ভরযোগ্য হোম ডেলিভারি
           </p>
           <h2 className="text-2xl md:text-3xl font-bold text-[#1A1A1A] font-serif">
             {BUSINESS.NAME} — {BUSINESS.TAGLINE}
           </h2>
           <p className="text-sm text-neutral-600 max-w-2xl mx-auto leading-relaxed">
-            আমাদের সেন্ট্রাল ঢাকা ডিস্ট্রিবিউশন হাব থেকে Steadfast, Pathao ও Paperfly কুরিয়ারের মাধ্যমে সারা দেশে ২ থেকে ৩ কার্যদিবসের মধ্যে ওপেন পার্সেল চেকিং সুবিধাসহ পার্সেল পৌঁছে দেওয়া হয়।
+            নিকুঞ্জ-২ ফ্ল্যাগশিপ হাব থেকে Steadfast, Pathao ও নির্ভরযোগ্য কুরিয়ারের মাধ্যমে সারা বাংলাদেশে ২ থেকে ৩ কার্যদিবসের মধ্যে ওপেন পার্সেল চেকিং সুবিধাসহ শাড়ি পৌঁছে দেওয়া হয়।
           </p>
           <p className="text-xs text-neutral-700 font-semibold">
-            ঢাকা সিটির ভেতরে ডেলিভারি চার্জ মাত্র ৳৮০ | ঢাকা সিটির বাইরে ৳১৫০ | ২ বা ততোধিক ড্রেসে ফ্রি ডেলিভারি
+            ঢাকা সিটির ভেতরে ডেলিভারি চার্জ মাত্র ৳৮০ | ঢাকা সিটির বাইরে ৳১৫০ | ২ বা ততোধিক শাড়িতে ফ্রি ডেলিভারি
           </p>
         </div>
       </section>

@@ -44,13 +44,13 @@ export function NewsletterSection() {
     <section className="bg-[#1a1a1a] py-16 md:py-20">
       <div className="container mx-auto px-6 md:px-8 text-center">
         <p className="text-[11px] uppercase tracking-[0.3em] text-[#d4af37] font-medium mb-3">
-          Stay Updated
+          Stay Connected • ৪৮৪K+ Community
         </p>
         <h2 className="text-2xl md:text-3xl font-bold text-white tracking-[-0.02em] mb-3">
-          Join the Shopping Queen Family
+          Join the Dui Konna Family
         </h2>
         <p className="text-sm text-white/50 max-w-sm mx-auto mb-8">
-          Subscribe for exclusive offers, new arrivals, and style inspiration.
+          Subscribe for exclusive Dhakai Muslin launches, festive saree previews, and VIP showroom events.
         </p>
 
         <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">

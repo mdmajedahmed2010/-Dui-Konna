@@ -1,8 +1,9 @@
 /**
- * Shopping Queen by Orni (Shoppingqueenbyorni) — Application Constants
- * Authentic Pakistani Lawn, Festive Couture & Kim Pearl Skincare
- * Official Facebook: https://www.facebook.com/Shoppingqueenbyorni
- * Hotlines: 01611-467735 / 01935-711304
+ * Dui Konna (দুই কন্যা) — Application Constants
+ * Exclusive Muslin Sarees, Authentic Dhakai Jamdani & Luxury Ethnic Couture
+ * Official Facebook: https://www.facebook.com/duikonna01
+ * Showroom: House #21/B, Road #01, Nikunja-2, Khilkhet, Dhaka-1229
+ * Hotlines: 01339-364462 / +880 1741-954490
  */
 
 // Delivery Charges (BDT)
@@ -15,7 +16,7 @@ export const DELIVERY_CHARGE = {
 } as const;
 
 // Order Number Prefix
-export const ORDER_PREFIX = "SQO";
+export const ORDER_PREFIX = "DK";
 
 // Product Status
 export const PRODUCT_STATUS = {
@@ -79,42 +80,44 @@ export const AUTH = {
   PASSWORD_RESET_EXPIRY: 60 * 60,
 } as const;
 
-// Business Info — Shopping Queen by Orni
+// Business Info — Dui Konna (দুই কন্যা)
 export const BUSINESS = {
-  NAME: "Shopping Queen by Orni",
-  NAME_SHORT: "Shopping Queen",
-  NAME_BN: "শপিং কুইন বাই অর্নি",
-  FOUNDER: "Orni Islam",
-  FOUNDER_BN: "অর্ণি ইসলাম",
-  TAGLINE: "Exclusive Pakistani Suits, Designer Attires & Natural Glow Essentials",
-  TAGLINE_SUB: "দেশী-বিদেশী বিভিন্ন ব্র্যান্ডের মেয়েদের সালোয়ার কামিজ ও রূপচর্চা • ১৯০,০০০+ আপুদের ভরসা",
-  TAGLINE_BN: "দেশী-বিদেশী বিভিন্ন ব্র্যান্ডের মেয়েদের সালোয়ার কামিজ সুলভ মূল্যে খুচরা ও পাইকারি বিক্রয় করা হয়।",
-  MOTTO_BN: "কিছু আত্মবিশ্বাসী প্রতিদিন, রাতের যত্নে প্রাকৃতিক উজ্জ্বলতা ✨",
-  PHONE: "01611-467735",
-  PHONE_INTL: "+880 1611-467735",
-  PHONE_ALT: "01935-711304",
-  PHONE_ALT_INTL: "+880 1935-711304",
-  WHATSAPP: "+8801611467735",
-  WHATSAPP_LINK: "https://wa.me/8801611467735",
-  EMAIL: "shoppingqueenbyorni@gmail.com",
-  ADDRESS: "House #14, Road #07, Sector #03, Uttara, Dhaka, Bangladesh",
-  ADDRESS_BN: "হাউস #১৪, রোড #০৭, সেক্টর #০৩, উত্তরা, ঢাকা, বাংলাদেশ",
+  NAME: "Dui Konna",
+  NAME_SHORT: "Dui Konna",
+  NAME_BN: "দুই কন্যা",
+  PROPRIETOR: "Shamima Nasrin",
+  PROPRIETOR_BN: "শামীমা নাসরিন",
+  FOUNDER: "Shamima Nasrin",
+  FOUNDER_BN: "শামীমা নাসরিন",
+  TAGLINE: "The Most Unique Collection of Muslin Sarees & Ethnic Luxury Couture",
+  TAGLINE_SUB: "বাংলার ঐতিহ্যবাহী ঢাকai মসলিন ও এক্সক্লুসিভ শাড়ি • ৪৮৪,০০০+ আপুদের ভরসা",
+  TAGLINE_BN: "আমাদের রয়েছে মসলিন শাড়ির সবচেয়ে অনন্য কালেকশন এবং সেরা মান প্রদানের নিশ্চয়তা।",
+  MOTTO_BN: "শতবর্ষের ঐতিহ্য ও রাজকীয় আভিজাত্যে বোনা খাঁটি মসলিন ✨",
+  PHONE: "01339-364462",
+  PHONE_INTL: "+880 1339-364462",
+  PHONE_ALT: "01741-954490",
+  PHONE_ALT_INTL: "+880 1741-954490",
+  WHATSAPP: "+8801741954490",
+  WHATSAPP_LINK: "https://wa.me/8801741954490",
+  EMAIL: "shamimanasrin1239@gmail.com",
+  ADDRESS: "House #21/B, Road #01, Nikunja-2, Khilkhet, Dhaka-1229, Bangladesh",
+  ADDRESS_BN: "হাউস #২১/বি, রোড #০১, নিকুঞ্জ-২, খিলক্ষেত, ঢাকা-১২২৯, বাংলাদেশ",
   CITY: "Dhaka",
   COUNTRY: "Bangladesh",
-  LOCATION_LANDMARK: "Uttara, Dhaka (Nationwide Fast Delivery)",
-  FACEBOOK: "https://www.facebook.com/Shoppingqueenbyorni",
-  INSTAGRAM: "https://www.instagram.com/Shoppingqueenbyorni",
-  TIKTOK: "https://www.tiktok.com/@Shoppingqueenbyorni",
-  YOUTUBE: "https://www.youtube.com/@Shoppingqueenbyorni",
-  WEBSITE: "https://shoppingqueenbyorni.com",
-  ESTABLISHED: "Trusted Women's Fashion & Skincare Brand in Bangladesh",
-  FOLLOWERS: "190K+",
-  FOLLOWERS_EXACT: "190,561+ Followers",
+  LOCATION_LANDMARK: "Nikunja-2, Khilkhet, Dhaka (Near Airport Road)",
+  FACEBOOK: "https://www.facebook.com/duikonna01",
+  INSTAGRAM: "https://www.instagram.com/duikonna01",
+  TIKTOK: "https://www.tiktok.com/@duikonna01",
+  YOUTUBE: "https://www.youtube.com/@duikonna01",
+  WEBSITE: "https://duikonna.com",
+  ESTABLISHED: "Exclusive Muslin Saree & Luxury Ethnic Fashion House in Dhaka",
+  FOLLOWERS: "484K+",
+  FOLLOWERS_EXACT: "484,200+ Followers",
   RATING: "4.9 ★",
   RECOMMEND_RATE: "99%",
   OPEN_PARCEL_POLICY: true,
-  STORE_HOURS: "Saturday – Thursday: 10:00 AM – 11:00 PM | Online 24/7 Hotline",
-  STORE_HOURS_BN: "শনি – বৃহস্পতিবার: সকাল ১০:০০ – রাত ১১:০০ | অনলাইন ২৪/৭ হটলাইন ও ইনবক্স সেবা সক্রিয়",
+  STORE_HOURS: "Everyday: 11:00 AM – 9:00 PM | Online 24/7 Hotline",
+  STORE_HOURS_BN: "প্রতিদিন: সকাল ১১:০০ – রাত ৯:০০ | অনলাইন ২৪/৭ হটলাইন ও ইনবক্স সেবা সক্রিয়",
   DELIVERY_CHARGE_INSIDE: 80,
   DELIVERY_CHARGE_OUTSIDE: 150,
   FREE_DELIVERY_MIN_ITEMS: 2,
@@ -132,14 +135,15 @@ export const COUPON_CODES: Record<
   string,
   { type: "percent" | "flat"; value: number; label: string }
 > = {
-  ORNI10: { type: "percent", value: 10, label: "10% off with Orni Special Promo" },
-  QUEENVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
-  EIDQUEEN: { type: "percent", value: 15, label: "15% Festive Luxury Special" },
-  LAWNLOVE: { type: "percent", value: 10, label: "10% Pakistani Lawn Special" },
-  GLOW10: { type: "percent", value: 10, label: "10% off Skincare Glow Routine" },
+  DUIKONNA10: { type: "percent", value: 10, label: "10% off with Dui Konna Special Promo" },
+  MUSLINVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount on Muslin Sarees" },
+  EIDKONNA: { type: "percent", value: 15, label: "15% Festive Muslin Special" },
+  JAMDANI10: { type: "percent", value: 10, label: "10% Dhakai Jamdani Heritage Special" },
   WELCOME5: { type: "percent", value: 5, label: "5% Welcome Discount" },
-  FLAT300: { type: "flat", value: 300, label: "৳300 flat discount on 2+ dresses" },
+  FLAT500: { type: "flat", value: 500, label: "৳500 flat discount on 2+ Muslin Sarees" },
   // Backward compatibility aliases
+  ORNI10: { type: "percent", value: 10, label: "10% promotional discount" },
+  QUEENVIP: { type: "percent", value: 15, label: "15% VIP discount" },
   TAZEEN10: { type: "percent", value: 10, label: "10% off your order" },
   TAZEENVIP: { type: "percent", value: 15, label: "15% VIP exclusive discount" },
   ASH10: { type: "percent", value: 10, label: "10% off your order" },

@@ -1,10 +1,10 @@
 "use client";
 
 /**
- * Shopping Queen by Orni — Curated Haute Arrivals Showcase
+ * Dui Konna (দুই কন্যা) — Curated Haute Arrivals Showcase
  * Features double-bezel cards, interactive category filtering, and 1-tap quick-add
- * Dhaka, Bangladesh • Facebook: https://www.facebook.com/Shoppingqueenbyorni
- * 190,500+ Followers • Open Parcel Inspection Nationwide
+ * Nikunja-2, Khilkhet, Dhaka-1229 • Facebook: https://www.facebook.com/duikonna01
+ * 484,000+ Followers • Open Parcel Inspection Nationwide
  */
 
 import { useState } from "react";
@@ -32,12 +32,12 @@ export interface CuratedProduct {
 
 const CATEGORY_TABS = [
   "All Collections",
-  "Pakistani Lawn",
-  "Festive Partywear",
-  "Pure Cotton",
-  "Chunri & Traditional",
-  "Orni Signature",
-  "Skincare Glow",
+  "Exclusive Muslin",
+  "Bridal Red Muslin",
+  "Dhakai Jamdani",
+  "Luxury Karchupi",
+  "Pastel Heritage",
+  "Muslin 4-Piece Sets",
 ];
 
 export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
@@ -56,12 +56,12 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
       : products.filter((p) => {
           const cat = p.category.toLowerCase();
           const name = p.name.toLowerCase();
-          if (activeTab === "Pakistani Lawn") return cat.includes("lawn") || name.includes("lawn");
-          if (activeTab === "Festive Partywear") return cat.includes("party") || cat.includes("festive") || name.includes("festive") || name.includes("embroidered");
-          if (activeTab === "Pure Cotton") return cat.includes("cotton") || cat.includes("handloom") || name.includes("cotton");
-          if (activeTab === "Chunri & Traditional") return cat.includes("chunri") || cat.includes("bandhani") || name.includes("chunri");
-          if (activeTab === "Orni Signature") return cat.includes("signature") || name.includes("orni");
-          if (activeTab === "Skincare Glow") return cat.includes("skin") || cat.includes("glow") || name.includes("cream") || name.includes("kim");
+          if (activeTab === "Exclusive Muslin") return cat.includes("muslin") || name.includes("muslin");
+          if (activeTab === "Bridal Red Muslin") return cat.includes("bridal") || cat.includes("red") || name.includes("bridal") || name.includes("crimson") || name.includes("red");
+          if (activeTab === "Dhakai Jamdani") return cat.includes("jamdani") || name.includes("jamdani");
+          if (activeTab === "Luxury Karchupi") return cat.includes("karchupi") || cat.includes("organza") || name.includes("karchupi") || name.includes("lilac") || name.includes("lavender");
+          if (activeTab === "Pastel Heritage") return cat.includes("pastel") || name.includes("mint") || name.includes("pistachio") || name.includes("slate") || name.includes("grey");
+          if (activeTab === "Muslin 4-Piece Sets") return cat.includes("4-piece") || cat.includes("four-piece") || name.includes("4-piece") || name.includes("suit");
           return true;
         });
 
@@ -82,7 +82,7 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
 
     setAddedProductId(`${product.id}-${size}`);
     toast.success(`Added ${product.name} to bag!`, {
-      description: "✓ Open Parcel Policy • ক্যাশ অন ডেলিভারি এবং পার্সেল খুলে চেক করার সুবিধা।",
+      description: "✓ Open Parcel Policy • ক্যাশ অন ডেলিভারি এবং পার্সেল খুলে দেখে চেক করার সুবিধা।",
     });
 
     setTimeout(() => {
@@ -91,21 +91,21 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
   };
 
   return (
-    <section className="py-16 md:py-28 bg-[#FAF8F5] border-b border-[#E8DFD5] relative">
+    <section className="py-16 md:py-28 bg-[#FAF7F2] border-b border-[#E8DFD5] relative">
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-7xl">
         {/* Section Heading & Category Tabs */}
         <div className="flex flex-col items-center text-center max-w-2xl mx-auto mb-12">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#D4AF37]/50 mb-3 shadow-xs">
             <Crown className="h-3.5 w-3.5 text-[#D4AF37]" />
-            <span className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-[#6B1D2F]">
-              SHOPPING QUEEN ARRIVALS
+            <span className="text-[10px] font-extrabold uppercase tracking-[0.22em] text-[#8B0000]">
+              DUI KONNA ARRIVALS
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] font-heading tracking-tight">
-            Curated Pakistani Lawn &amp; Partywear
+            Curated Dhakai Muslin &amp; Luxury Sarees
           </h2>
           <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
-            ১৯০,০০০+ আপুদের নির্ভরযোগ্য পছন্দ — ১০০% অরিজিনাল কোয়ালিটি, সুলভ মূল্য এবং পার্সেল খুলে চেক করে পেমেন্ট করার নিশ্চিন্ত সুবিধা।
+            ৪৮৪,০০০+ আপুদের নির্ভরযোগ্য পছন্দ — ১০০% খাঁটি ঢাকাই তাঁতের মসলিন, রয়্যাল জরি ও পার্সেল খুলে দেখে চেক করে পেমেন্ট করার শতভাগ নিশ্চয়তা।
           </p>
 
           {/* Filter Pills */}
@@ -116,8 +116,8 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                 onClick={() => setActiveTab(tab)}
                 className={`px-4 py-2 rounded-full text-xs font-bold tracking-wider uppercase transition-all duration-300 cursor-pointer ${
                   activeTab === tab
-                    ? "bg-[#6B1D2F] text-[#D4AF37] shadow-md border border-[#D4AF37] scale-105"
-                    : "bg-white text-neutral-700 hover:bg-[#FAF6F0] border border-[#E8DFD5]"
+                    ? "bg-[#8B0000] text-[#D4AF37] shadow-md border border-[#D4AF37] scale-105"
+                    : "bg-white text-neutral-700 hover:bg-[#FAF7F2] border border-[#E8DFD5]"
                 }`}
               >
                 {tab}
@@ -131,7 +131,7 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
           <AnimatePresence>
             {filteredProducts.slice(0, 8).map((product) => {
               const isWishlisted = wishlistItems.some((i) => i.id === product.id);
-              const sizes = product.sizes || ["Unstitched 3-Piece", "Semi-Stitched"];
+              const sizes = product.sizes || ["Standard Saree (12 Haat)", "With Blouse Piece"];
               const isHovered = hoveredCard === product.id;
 
               return (
@@ -177,7 +177,7 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
 
                     {/* Badge Pill */}
                     {product.tag && (
-                      <span className="absolute top-3.5 left-3.5 z-10 px-2.5 py-1 rounded-full bg-[#6B1D2F] text-[#D4AF37] text-[9.5px] font-extrabold uppercase tracking-widest shadow-sm border border-[#D4AF37]/40">
+                      <span className="absolute top-3.5 left-3.5 z-10 px-2.5 py-1 rounded-full bg-[#8B0000] text-[#D4AF37] text-[9.5px] font-extrabold uppercase tracking-widest shadow-sm border border-[#D4AF37]/40">
                         {product.tag}
                       </span>
                     )}
@@ -197,8 +197,8 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                         }
                         className={`size-9 rounded-full flex items-center justify-center transition-all shadow-md backdrop-blur-md cursor-pointer ${
                           isWishlisted
-                            ? "bg-[#6B1D2F] text-[#D4AF37]"
-                            : "bg-white/90 text-neutral-700 hover:bg-[#6B1D2F] hover:text-[#D4AF37]"
+                            ? "bg-[#8B0000] text-[#D4AF37]"
+                            : "bg-white/90 text-neutral-700 hover:bg-[#8B0000] hover:text-[#D4AF37]"
                         }`}
                         aria-label="Save to Wishlist"
                       >
@@ -222,14 +222,14 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                             isNew: true,
                           })
                         }
-                        className="size-9 rounded-full bg-white/90 text-neutral-700 hover:bg-[#6B1D2F] hover:text-[#D4AF37] flex items-center justify-center transition-all shadow-md backdrop-blur-md cursor-pointer opacity-0 group-hover:opacity-100"
+                        className="size-9 rounded-full bg-white/90 text-neutral-700 hover:bg-[#8B0000] hover:text-[#D4AF37] flex items-center justify-center transition-all shadow-md backdrop-blur-md cursor-pointer opacity-0 group-hover:opacity-100"
                         aria-label="Quick View"
                       >
                         <Eye className="h-4 w-4" />
                       </button>
                     </div>
 
-                    {/* 1-Tap Quick Size Selector Overlay on Hover */}
+                    {/* 1-Tap Quick Saree Spec Selector Overlay on Hover */}
                     <div
                       className={`absolute inset-x-2 bottom-2 z-10 p-2 rounded-2xl bg-white/95 backdrop-blur-md border border-[#D4AF37]/40 shadow-xl transition-all duration-300 ${
                         isHovered
@@ -238,14 +238,14 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                       }`}
                     >
                       <p className="text-[10px] font-bold text-neutral-600 text-center uppercase tracking-wider mb-1.5">
-                        Quick Add to Bag
+                        Quick Add Saree to Bag
                       </p>
                       <div className="flex gap-1.5 justify-center">
                         {sizes.slice(0, 2).map((size) => (
                           <button
                             key={size}
                             onClick={(e) => handleQuickAdd(product, size, e)}
-                            className="flex-1 py-1.5 px-2 rounded-xl bg-[#FAF6F0] hover:bg-[#6B1D2F] text-[#6B1D2F] hover:text-[#D4AF37] border border-[#E8DFD5] hover:border-[#D4AF37] text-[10px] font-bold tracking-tight transition-colors flex items-center justify-center gap-1 cursor-pointer truncate"
+                            className="flex-1 py-1.5 px-2 rounded-xl bg-[#FAF7F2] hover:bg-[#8B0000] text-[#8B0000] hover:text-[#D4AF37] border border-[#E8DFD5] hover:border-[#D4AF37] text-[10px] font-bold tracking-tight transition-colors flex items-center justify-center gap-1 cursor-pointer truncate"
                           >
                             {addedProductId === `${product.id}-${size}` ? (
                               <>
@@ -253,7 +253,7 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                                 <span>Added</span>
                               </>
                             ) : (
-                              <span>{size.length > 15 ? size.slice(0, 14) + "..." : size}</span>
+                              <span>{size.length > 18 ? size.slice(0, 17) + "..." : size}</span>
                             )}
                           </button>
                         ))}
@@ -268,7 +268,7 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
                         {product.category}
                       </p>
                       <Link href={`/products/${product.slug}`} className="block mt-1">
-                        <h3 className="text-sm font-bold text-[#1A1A1A] line-clamp-2 leading-snug group-hover:text-[#6B1D2F] transition-colors font-heading">
+                        <h3 className="text-sm font-bold text-[#1A1A1A] line-clamp-2 leading-snug group-hover:text-[#8B0000] transition-colors font-heading">
                           {product.name}
                         </h3>
                       </Link>
@@ -276,7 +276,7 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
 
                     <div className="flex items-center justify-between pt-3 mt-3 border-t border-[#E8DFD5]">
                       <div className="flex items-baseline gap-2">
-                        <span className="text-base font-bold text-[#6B1D2F] font-heading">
+                        <span className="text-base font-bold text-[#8B0000] font-heading">
                           ৳{product.price.toLocaleString()}
                         </span>
                         {product.compareAtPrice > product.price && (
@@ -288,7 +288,7 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
 
                       <Link
                         href={`/products/${product.slug}`}
-                        className="size-8 rounded-full bg-[#FAF6F0] text-[#6B1D2F] group-hover:bg-[#6B1D2F] group-hover:text-[#D4AF37] flex items-center justify-center transition-colors"
+                        className="size-8 rounded-full bg-[#FAF7F2] text-[#8B0000] group-hover:bg-[#8B0000] group-hover:text-[#D4AF37] flex items-center justify-center transition-colors"
                         aria-label={`View ${product.name}`}
                       >
                         <ArrowUpRight className="h-4 w-4" />
@@ -305,9 +305,9 @@ export function CuratedArrivals({ products }: { products: CuratedProduct[] }) {
         <div className="text-center mt-12 md:mt-16">
           <Link
             href="/products"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#6B1D2F] hover:bg-[#4A101D] text-[#D4AF37] hover:text-white text-xs font-bold uppercase tracking-[0.18em] transition-all duration-300 shadow-md group active:scale-98"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-[#8B0000] hover:bg-[#6B0000] text-[#D4AF37] hover:text-white text-xs font-bold uppercase tracking-[0.18em] transition-all duration-300 shadow-md group active:scale-98"
           >
-            <span>Explore Complete Catalog</span>
+            <span>Explore Complete Saree Catalog</span>
             <ArrowUpRight className="h-4 w-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
           </Link>
         </div>

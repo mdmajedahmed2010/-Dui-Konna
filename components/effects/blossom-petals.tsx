@@ -40,12 +40,12 @@ export function BlossomPetalsOverlay() {
 
     window.addEventListener("resize", handleResize);
 
-    // Shopping Queen by Orni royal maroon, warm gold & pearl shimmer palette
+    // Dui Konna (দুই কন্যা) royal crimson, warm gold & pearl shimmer palette
     const petalColors = [
-      "rgba(107, 29, 47, 0.35)",  // Royal Maroon silk shimmer
-      "rgba(212, 175, 55, 0.40)",  // Imperial Gold luster
-      "rgba(250, 246, 240, 0.50)", // Warm Cream pearl mist
-      "rgba(184, 51, 80, 0.30)",   // Rose glow
+      "rgba(139, 0, 0, 0.35)",   // Royal Crimson silk shimmer
+      "rgba(212, 175, 55, 0.40)", // Imperial Gold luster
+      "rgba(250, 246, 240, 0.50)",// Warm Cream pearl mist
+      "rgba(180, 20, 40, 0.30)",  // Velvet red glow
     ];
 
     const PETAL_COUNT = Math.min(22, Math.floor(width / 60));

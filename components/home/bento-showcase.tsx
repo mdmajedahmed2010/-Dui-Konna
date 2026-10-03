@@ -1,10 +1,10 @@
 "use client";
 
 /**
- * Shopping Queen by Orni — Asymmetric Haute Bento Showcase
- * Magazine-style bento card architecture showcasing Pakistani lawn, partywear & skincare
- * Dhaka, Bangladesh • Facebook: https://www.facebook.com/Shoppingqueenbyorni
- * 190,500+ Followers • Open Parcel Inspection Nationwide
+ * Dui Konna (দুই কন্যা) — Asymmetric Haute Bento Showcase
+ * Showcasing Authentic Dhakai Muslin, Dhakai Jamdani & Luxury Karchupi Sarees
+ * Nikunja-2, Khilkhet, Dhaka-1229 • Facebook: https://www.facebook.com/duikonna01
+ * 484,000+ Followers • Open Parcel Inspection Nationwide
  */
 
 import Link from "next/link";
@@ -26,82 +26,82 @@ interface BentoItem {
 
 const BENTO_ITEMS: BentoItem[] = [
   {
-    title: "Royal Pakistani Lawn Collection",
+    title: "Exclusive Dhakai Muslin Saree",
     subtitle:
-      "প্রিমিয়াম সুইস কটন লন, ডিজিটাল ফ্লোরাল প্রিন্ট, সূক্ষ্ম নেকলাইন সুতার কাজ ও শিফন দোপাট্টা সমৃদ্ধ খাঁটি পাকিস্তানি ড্রেস সিরিজ।",
-    tag: "PAKISTANI LAWN",
-    priceNote: "From ৳1,550",
-    image: ASSETS.product1,
-    href: "/collections/pakistani-lawn",
+      "খাঁটি ঢাকাই মসলিনের রেশমি জমিন, মাস্টার উইভারদের নিখুঁত তাঁত বুনন ও রয়্যাল জরির অনবদ্য মোটিফ। বাংলার ঐতিহ্যবাহী আভিজাত্যের শিখর।",
+    tag: "EXCLUSIVE MUSLIN",
+    priceNote: "From ৳21,500",
+    image: ASSETS.product3,
+    href: "/categories/exclusive-muslin-saree",
     gridClass: "lg:col-span-7 lg:row-span-2 min-h-[380px] lg:min-h-[520px]",
-    accentColor: "#6B1D2F",
+    accentColor: "#8B0000",
   },
   {
-    title: "Exclusive Festive Partywear",
+    title: "Bridal & Festive Red Muslin",
     subtitle:
-      "বিয়ে ও দাওয়াতের জন্য ভারী জারি, সিকোয়েন্স ও কাটওয়ার্ক এমব্রয়ডারি অর্গাঞ্জা ও জর্জেট গাউন।",
-    tag: "ROYAL PARTYWEAR",
-    priceNote: "From ৳2,450",
+      "বিয়ে, পানচিনি ও মহোৎসবের জন্য গাঢ় লাল ও রয়্যাল গোল্ডেন জরির খাঁটি ঢাকাই মসলিন শাড়ি।",
+    tag: "BRIDAL RED",
+    priceNote: "From ৳25,500",
+    image: ASSETS.heroBanner,
+    href: "/categories/bridal-festive-red-muslin",
+    gridClass: "lg:col-span-5 min-h-[250px] lg:min-h-[245px]",
+  },
+  {
+    title: "Luxury Karchupi & Organza",
+    subtitle:
+      "ডাস্টি লিলাক ও ল্যাভেন্ডার প্যাস্টেল শেডে সূক্ষ্ম কারচুপি কাজ, পার্ল ও স্টোনের চোখজুড়ানো কারুকাজ।",
+    tag: "KARCHUPI COUTURE",
+    priceNote: "From ৳28,000",
+    image: ASSETS.product8,
+    href: "/categories/luxury-karchupi-organza",
+    gridClass: "lg:col-span-5 min-h-[250px] lg:min-h-[245px]",
+  },
+  {
+    title: "Authentic Dhakai Jamdani",
+    subtitle:
+      "পার্ল হোয়াইট ও মাল্টিকালার জ্যামিতিক নকশার ঐতিহ্যবাহী জামদানি শাড়ি—বাংলার শতবর্ষী গৌরব।",
+    tag: "DHAKAI JAMDANI",
+    priceNote: "From ৳27,500",
     image: ASSETS.product5,
-    href: "/collections/festive-party",
-    gridClass: "lg:col-span-5 min-h-[250px] lg:min-h-[245px]",
-  },
-  {
-    title: "Orni Signature Edit",
-    subtitle:
-      "অর্ণি ইসলাম কর্তৃক নিজে স্টাইলকৃত ও উপস্থাপিত এক্সক্লুসিভ ডিজাইনার পোশাক।",
-    tag: "ORNI SIGNATURE",
-    priceNote: "From ৳1,850",
-    image: ASSETS.product6,
-    href: "/collections/orni-signature",
-    gridClass: "lg:col-span-5 min-h-[250px] lg:min-h-[245px]",
-  },
-  {
-    title: "Kim Whitening Pearl & Snowlotus Cream",
-    subtitle:
-      "কিছু আত্মবিশ্বাসী প্রতিদিন, রাতের যত্নে প্রাকৃতিক উজ্জ্বলতা ✨ প্রাকৃতিক উপাদান ও কেমিক্যালমুক্ত রূপচর্চা।",
-    tag: "GLOW ESSENTIAL",
-    priceNote: "Only ৳850",
-    image: ASSETS.product12,
-    href: "/collections/skincare-glow",
+    href: "/categories/dhakai-jamdani-saree",
     gridClass: "lg:col-span-6 min-h-[260px] lg:min-h-[300px]",
   },
   {
-    title: "Traditional Chunri & Handloom Cotton",
+    title: "Pastel Heritage Handloom Muslin",
     subtitle:
-      "ঐতিহ্যবাহী বান্ধনি ও পিওর কটন হ্যান্ডলুম থ্রি-পিস সেট — আরামদায়ক ও উৎসবমুখর।",
-    tag: "CHUNRI & COTTON",
-    priceNote: "From ৳1,450",
-    image: ASSETS.product9,
-    href: "/collections/chunri-traditional",
+      "মিন্ট গ্রিন, পেস্তা ও স্লেট অ্যাশ শেডের স্নিগ্ধ ও আরামদায়ক তাঁত বোনা শাড়ি কালেকশন।",
+    tag: "PASTEL HERITAGE",
+    priceNote: "From ৳21,500",
+    image: ASSETS.product2,
+    href: "/categories/pastel-heritage-muslin",
     gridClass: "lg:col-span-6 min-h-[260px] lg:min-h-[300px]",
   },
 ];
 
 export function BentoShowcase() {
   return (
-    <section className="py-16 md:py-28 bg-[#FAF6F0] border-b border-[#E8DFD3] relative overflow-hidden">
+    <section className="py-16 md:py-28 bg-[#FAF7F2] border-b border-[#E8DFD3] relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-7xl">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-16 gap-6">
           <div className="max-w-xl">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white border border-[#D4AF37]/50 mb-3 shadow-xs">
               <Crown className="h-3 w-3 text-[#D4AF37]" />
-              <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#6B1D2F]">
-                ORNI&apos;S CURATED PICKS
+              <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#8B0000]">
+                SHAMIMA NASRIN&apos;S CURATED PICKS
               </span>
             </div>
             <h2 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] font-heading tracking-tight">
-              Shopping Queen Wardrobe
+              Dui Konna Couture Wardrobe
             </h2>
             <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
-              দেশী-বিদেশী বিভিন্ন ব্র্যান্ডের মেয়েদের সালোয়ার কামিজ সুলভ মূল্যে। ডেলিভারিম্যানের সামনে পার্সেল খুলে চেক করে পেমেন্ট করার নিশ্চিন্ত সুবিধাসহ বাংলাদেশের সর্বত্র ক্যাশ অন হোম ডেলিভারি।
+              দুই কন্যার নিজস্ব ডিজাইনে প্রস্তুতকৃত খাঁটি ঢাকাই মসলিন, জামদানি ও লাক্সারি কারচুপি শাড়ির এক্সক্লুসিভ সম্ভার। ডেলিভারিম্যানের সামনে পার্সেল খুলে দেখে পেমেন্ট করার নিশ্চিন্ত সুবিধাসহ বাংলাদেশের সর্বত্র ক্যাশ অন হোম ডেলিভারি।
             </p>
           </div>
 
           <Link
             href="/categories"
-            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#6B1D2F] hover:text-[#D4AF37] transition-colors group/link self-start md:self-end"
+            className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-[0.18em] text-[#8B0000] hover:text-[#D4AF37] transition-colors group/link self-start md:self-end"
           >
             <span>View All Categories</span>
             <ArrowUpRight className="h-4 w-4 text-[#D4AF37] group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5 transition-transform" />

@@ -1,14 +1,14 @@
 "use client";
 
 /**
- * Shopping Queen by Orni — Community Stories & Verified Customer Love
- * Genuine reviews and Open Parcel satisfaction from 190,000+ sisters across Bangladesh.
- * Official Facebook: https://www.facebook.com/Shoppingqueenbyorni
+ * Dui Konna (দুই কন্যা) — Community Stories & Verified Customer Love
+ * Genuine reviews and Open Parcel satisfaction from 484,000+ sisters across Bangladesh.
+ * Official Facebook: https://www.facebook.com/duikonna01
  */
 
 import { useState } from "react";
 import Image from "next/image";
-import { Star, CheckCircle2, Heart, Crown } from "lucide-react";
+import { Star, CheckCircle2, Heart } from "lucide-react";
 import { ASSETS } from "@/lib/demo-data";
 
 interface StoryHighlight {
@@ -24,42 +24,42 @@ interface StoryHighlight {
 const STORIES: StoryHighlight[] = [
   {
     id: "story-1",
-    name: "Ayesha Siddiqua",
-    location: "Dhanmondi, Dhaka",
-    image: ASSETS.product1,
+    name: "Farzana Rahman",
+    location: "Gulshan-2, Dhaka",
+    image: ASSETS.product3,
     quote:
-      "Shopping Queen by Orni থেকে রয়েল ব্লু পাকিস্তানি লন থ্রি-পিসটি নিয়েছিলাম। অর্ণি আপুর ভিডিও ও লাইভে যেমন দেখেছি, বাস্তবে হাতে পেয়ে ঠিক তেমনই পেয়েছি। সবচেয়ে ভালো লেগেছে ডেলিভারিম্যানের সামনে পার্সেল খুলে চেক করে পেমেন্ট করার সুবিধা। কাপড়ের কোয়ালিটি ১০০% প্রিমিয়াম!",
-    product: "Royal Blue Embroidered Pakistani Lawn 3-Piece",
+      "দুই কন্যা (Dui Konna) থেকে হলুদ ঢাকাই মসলিন শাড়িটি নিয়েছিলাম। পেজের ভিডিওতে যেমন নিখুঁত জরি ও বুনন দেখেছি, বাস্তবে হাতে পেয়ে তার চেয়েও বেশি অভিজাত লেগেছে। শাড়ির গায়ে স্পষ্ট দাম মুদ্রিত থাকায় কোনো লুকোচুরি নেই। ডেলিভারিম্যানের সামনে ওপেন পার্সেল চেক করে নেওয়ার সুবিধায় আমি ১০০% সন্তুষ্ট!",
+    product: "Royal Yellow Dhakai Muslin Saree (৳29,000)",
     rating: 5,
   },
   {
     id: "story-2",
-    name: "Sharmin Akter",
-    location: "Uttara, Dhaka",
-    image: ASSETS.product12,
+    name: "Tanzila Haque",
+    location: "Dhanmondi, Dhaka",
+    image: ASSETS.product8,
     quote:
-      "কিম হোয়াইটেনিং পার্ল অ্যান্ড স্নোলোটাস ক্রিমটি ব্যবহার করে মাত্র দুই সপ্তাহের মধ্যে মুখের কালচে দাগ হালকা হয়েছে এবং ত্বকে ন্যাচারাল গ্লো এসেছে। ক্ষতিকারক কেমিক্যাল ছাড়া এমন প্রাকৃতিক স্কিনকেয়ার সত্যি চমৎকার!",
-    product: "Kim Whitening Pearl & Snowlotus Night Cream",
+      "ডাস্টি লিলাক লাক্সারি কারচুপি শাড়িটি পরে পারিবারিক রিসেপশন পার্টিতে গিয়েছিলাম। সবাই জানতে চেয়েছে কোথা থেকে নিয়েছি। হাতে বোনা নিখুঁত কারচুপি কাজ ও প্রিমিয়াম কাপড়ের ফল ও ড্র্যাপিং অসাধারণ!",
+    product: "Dusty Lilac Luxury Karchupi Saree",
     rating: 5,
   },
   {
     id: "story-3",
-    name: "Nusrat Parveen",
-    location: "Nasirabad, Chattogram",
-    image: ASSETS.product5,
+    name: "Sadia Mehzabin",
+    location: "Panchlaish, Chattogram",
+    image: ASSETS.heroBanner,
     quote:
-      "মেরুন ফেস্টিভ পার্টিওয়্যার ড্রেসটি পরিবারের বিয়ের অনুষ্ঠানের জন্য নিয়েছিলাম। ভারী জরি ও সিকোয়েন্স কারুকাজ এত নজরকাড়া যে সবাই প্রশংসা করেছে। অর্ণি আপুর পেজের ফাস্ট রেসপন্স ও দ্রুত ডেলিভারির জন্য ধন্যবাদ।",
-    product: "Royal Maroon Heavily Embroidered Festive Suit",
+      "গাঢ় লাল ব্রাইডাল মসলিন শাড়িটি আমার পানচিনির অনুষ্ঠানের জন্য কিনেছিলাম। শামীমা নাসরিন আপুর পেজে কথা বলার পর খুব দ্রুত সাপোর্ট পেয়েছি। ঢাকার বাইরেও ২ দিনের মধ্যে নিখুঁতভাবে ডেলিভারি পেয়েছি।",
+    product: "Royal Crimson Bridal Muslin Saree",
     rating: 5,
   },
   {
     id: "story-4",
-    name: "Mahbuba Khatun",
-    location: "Zindabazar, Sylhet",
-    image: ASSETS.product9,
+    name: "Rubina Yasmin",
+    location: "Uttara, Dhaka",
+    image: ASSETS.product2,
     quote:
-      "ট্র্যাডিশনাল চুনরি ও কটন থ্রি-পিস দুটো একসাথে অর্ডার করেছিলাম, তাই সারা বাংলাদেশে ফ্রি ডেলিভারি পেয়েছি। ঢাকার বাইরেও এত দ্রুত ক্যাশ অন ডেলিভারি এবং প্যাকেট দেখে নেওয়ার সুবিধা সত্যিই ভরসা জাগায়।",
-    product: "Traditional Chunri Bandhani Orange-Red 3-Piece",
+      "আমি নিজে নিকুঞ্জ-২ শোরুমে (House #21/B, Road #01) গিয়ে মিন্ট গ্রিন শাড়িটি দেখে ট্রায়াল দিয়ে কিনেছি। শোরুমের পরিবেশ অত্যন্ত মার্জিত। খাঁটি ঢাকাই মসলিনপ্রেমীদের জন্য দুই কন্যা সেরা নির্ভরযোগ্য প্রতিষ্ঠান।",
+    product: "Mint Green Butterfly Handloom Muslin Saree",
     rating: 5,
   },
 ];
@@ -69,22 +69,22 @@ export function CommunityStories() {
   const activeStory = STORIES[activeIdx] ?? STORIES[0]!;
 
   return (
-    <section className="py-16 md:py-24 bg-[#FAF6F0] border-b border-[#E8DFD5] relative overflow-hidden">
+    <section className="py-16 md:py-24 bg-[#FAF7F2] border-b border-[#E8DFD5] relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-7xl">
         
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#D4AF37]/50 mb-3 shadow-xs">
-            <Heart className="h-3 w-3 text-[#6B1D2F] fill-[#6B1D2F]" />
-            <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#6B1D2F]">
-              ১৯০,০০০+ আপুদের ভালোবাসা ও রিভিউ
+            <Heart className="h-3 w-3 text-[#8B0000] fill-[#8B0000]" />
+            <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#8B0000]">
+              ৪৮৪,০০০+ আপুদের ভালোবাসা ও রিভিউ
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] font-heading tracking-tight">
-            Loved By 190,000+ Fashion &amp; Glow Lovers
+            Loved By 484,000+ Saree &amp; Heritage Lovers
           </h2>
           <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
-            সারাদেশের আপুদের বাস্তব অভিজ্ঞতা, আনবক্সিং সন্তুষ্টি এবং খাঁটি কোয়ালিটির নির্ভরতায় শপিং কুইন বাই অর্নি।
+            সারাদেশের আপুদের বাস্তব অভিজ্ঞতা, ওপেন পার্সেল আনবক্সিং সন্তুষ্টি এবং খাঁটি ঢাকাই মসলিনের নির্ভরতায় দুই কন্যা (Dui Konna)।
           </p>
 
           {/* Interactive Story Circles */}
@@ -98,7 +98,7 @@ export function CommunityStories() {
                 <div
                   className={`size-16 sm:size-20 rounded-full p-1 transition-all duration-300 ${
                     idx === activeIdx
-                      ? "ring-4 ring-[#D4AF37] scale-110 shadow-lg bg-[#6B1D2F]"
+                      ? "ring-4 ring-[#D4AF37] scale-110 shadow-lg bg-[#8B0000]"
                       : "ring-2 ring-[#E8DFD5] opacity-70 group-hover/avatar:opacity-100 group-hover/avatar:scale-105"
                   }`}
                 >
@@ -112,7 +112,7 @@ export function CommunityStories() {
                     />
                   </div>
                 </div>
-                <span className={`text-xs font-bold transition-colors ${idx === activeIdx ? "text-[#6B1D2F]" : "text-neutral-500"}`}>
+                <span className={`text-xs font-bold transition-colors ${idx === activeIdx ? "text-[#8B0000]" : "text-neutral-500"}`}>
                   {s.name.split(" ")[0]}
                 </span>
               </button>
@@ -155,7 +155,7 @@ export function CommunityStories() {
                   </p>
                 </div>
 
-                <span className="text-[11px] font-bold text-[#6B1D2F] bg-[#FAF6F0] px-3 py-1 rounded-full border border-[#D4AF37]/40">
+                <span className="text-[11px] font-bold text-[#8B0000] bg-[#FAF7F2] px-3 py-1 rounded-full border border-[#D4AF37]/40">
                   {activeStory.product}
                 </span>
               </div>

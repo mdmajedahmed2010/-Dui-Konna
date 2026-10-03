@@ -1,8 +1,9 @@
 "use client";
 
 /**
- * Shopping Queen by Orni — Hero Section
- * Authentic Pakistani Lawn, Festive Couture & Kim Pearl Skincare
+ * Dui Konna (দুই কন্যা) — Hero Section
+ * Authentic Dhakai Muslin Sarees, Dhakai Jamdani & Luxury Karchupi
+ * Founder: Shamima Nasrin • Nikunja-2, Khilkhet, Dhaka-1229
  */
 
 import { useState, useEffect } from "react";
@@ -14,25 +15,25 @@ import { BUSINESS } from "@/lib/constants";
 
 const slides = [
   {
-    image: "/shoppingqueen-assets/banner.avif",
-    title: "SHOPPING QUEEN BY ORNI",
-    subtitle: "Exclusive Pakistani suits, designer partywear & authentic Kim pearl whitening skincare.",
-    link: "/collections/pakistani-lawn-three-piece",
-    overline: "✦ 190,000+ Facebook Community • Orni Islam ✦",
+    image: ASSETS.heroBanner,
+    title: "DUI KONNA (দুই কন্যা)",
+    subtitle: "ঐতিহ্যবাহী খাঁটি ঢাকাই মসলিন শাড়ি, জামদানি ও লাক্সারি কারচুপি কালেকশন।",
+    link: "/categories/exclusive-muslin-saree",
+    overline: "✦ ৪৮৪,০০০+ Facebook Community • Shamima Nasrin ✦",
   },
   {
-    image: "/shoppingqueen-assets/sq-product-03-rose-pink.jpg",
-    title: "ORNI SIGNATURE ROSE PINK SUIT",
-    subtitle: "Exquisite embroidered organza, heavy zari borders & matching dupatta.",
-    link: "/collections/festive-partywear",
-    overline: "✦ 100% Authentic Lawn & Partywear ✦",
+    image: ASSETS.product3,
+    title: "ROYAL YELLOW DHAKAI MUSLIN (৳২৯,০০০)",
+    subtitle: "নিখুঁত সোনালী জরির ঐতিহ্যবাহী নকশা ও খাঁটি তাঁত বুনন।",
+    link: "/products/royal-yellow-mustard-gold-dhakai-muslin-saree-29000",
+    overline: "✦ ১০০% খাঁটি ঢাকাই মসলিন গ্যারান্টি ✦",
   },
   {
-    image: "/shoppingqueen-assets/sq-product-12-kim-whitening-cream.avif",
-    title: "KIM WHITENING PEARL & SNOWLOTUS",
-    subtitle: "100% genuine Thai whitening cream 20g — chemical-free natural glow.",
-    link: "/collections/kim-whitening-cream",
-    overline: "✦ Open Parcel Guarantee Nationwide ✦",
+    image: ASSETS.product8,
+    title: "DUSTY LILAC LUXURY KARCHUPI",
+    subtitle: "হাতে বোনা সূক্ষ্ম কারচুপি কাজ, পার্ল ও স্টোনের চোখজুড়ানো কারুকাজ।",
+    link: "/products/dusty-lilac-lavender-luxury-karchupi-designer-saree",
+    overline: "✦ ওপেন পার্সেল গ্যারান্টি ও নিকুঞ্জ-২ শোরুম ✦",
   },
 ];
 
@@ -56,7 +57,7 @@ export function HeroSection() {
   };
 
   return (
-    <section className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-[#6B1D2F] group">
+    <section className="relative w-full h-[60vh] md:h-[80vh] overflow-hidden bg-[#8B0000] group">
       {/* Active and Inactive Slides Container */}
       {slides.map((slide, index) => (
         <div
@@ -69,6 +70,7 @@ export function HeroSection() {
             src={slide.image}
             alt={slide.title}
             fill
+            unoptimized
             priority={index === 0}
             className="object-cover object-center scale-100 transition-transform duration-[7000ms] ease-out motion-safe:scale-105"
           />
@@ -90,7 +92,7 @@ export function HeroSection() {
               <div className="pt-2">
                 <Link
                   href={slide.link}
-                  className="inline-flex items-center justify-center px-8 py-3.5 bg-[#6B1D2F] hover:bg-[#521322] text-white text-xs font-bold tracking-[0.2em] uppercase rounded-full shadow-lg border border-[#D4AF37]/50 transition-all duration-300 hover:scale-105 active:scale-95"
+                  className="inline-flex items-center justify-center px-8 py-3.5 bg-[#8B0000] hover:bg-[#6B0000] text-[#D4AF37] hover:text-white text-xs font-bold tracking-[0.2em] uppercase rounded-full shadow-lg border border-[#D4AF37]/50 transition-all duration-300 hover:scale-105 active:scale-95"
                 >
                   Shop Collection
                 </Link>

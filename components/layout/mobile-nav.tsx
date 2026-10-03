@@ -1,15 +1,16 @@
 "use client";
 
 /**
- * Shopping Queen by Orni — Mobile Navigation Overlay
- * Authentic Pakistani Suits, Exclusive Festive Partywear & Natural Glow Skincare
- * Dhaka, Bangladesh • Facebook: https://www.facebook.com/Shoppingqueenbyorni
- * 190,500+ Followers • Open Parcel Inspection Nationwide
+ * Dui Konna (দুই কন্যা) — Mobile Navigation Overlay
+ * Exclusive Muslin Sarees, Authentic Dhakai Jamdani & Luxury Ethnic Couture
+ * Showroom: House #21/B, Road #01, Nikunja-2, Khilkhet, Dhaka-1229
+ * Facebook: https://www.facebook.com/duikonna01 • 484,000+ Followers
+ * Open Parcel Inspection Nationwide
  */
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ShoppingBag, User, ChevronDown, ChevronUp, Crown } from "lucide-react";
+import { Menu, X, ShoppingBag, User, ChevronDown, ChevronUp } from "lucide-react";
 import Image from "next/image";
 import { createPortal } from "react-dom";
 import { useCartStore } from "@/store/cart-store";
@@ -44,41 +45,39 @@ export function MobileNav({ links }: MobileNavProps) {
     setActiveAccordion(activeAccordion === label ? null : label);
   };
 
-  // Subcategories matching Shopping Queen by Orni collections
+  // Subcategories matching Dui Konna collections
   const categoriesWithSubs: Record<string, string[]> = {
-    "Pakistani Lawn": [
-      "Shop All Pakistani Lawn",
-      "Royal Blue Embroidered Lawn",
-      "Turquoise Aqua Floral Digital Lawn",
-      "Lime Green & Cyan Ombre Lawn",
-      "Traditional Bandhani Chunri 3-Piece",
+    "Exclusive Muslin": [
+      "Shop All Exclusive Muslin",
+      "Royal Mustard Gold Dhakai Muslin",
+      "Terracotta Rust Orange Butterfly Muslin",
+      "Mauve Plum Chevron Zigzag Muslin",
+      "Dual-Tone Sage Green & Magenta Muslin",
     ],
-    "Festive Partywear": [
-      "Shop All Festive Partywear",
-      "Royal Maroon & Zari Heavy Suit",
-      "Luxury Blush Pink Festive Suit",
-      "Regal Black & Antique Zari Gown",
+    "Dhakai Jamdani": [
+      "Shop All Dhakai Jamdani",
+      "Pearl White Multicolor Geometric Jamdani",
+      "Traditional Handloom Heritage Weaves",
     ],
-    "Pure Cotton": [
-      "Shop All Pure Cotton",
-      "Cornflower Blue Handloom Cotton",
-      "Cream Beige Embroidered Cotton",
-      "Mint Sea Green Handloom Cotton",
+    "Bridal Red Muslin": [
+      "Shop All Bridal & Festive Red Muslin",
+      "Royal Red Bridal Muslin Saree Trio",
+      "Heavy Zari & Karchupi Bridal Masterpieces",
     ],
-    "Chunri Edit": [
-      "Shop All Chunri & Bandhani",
-      "Orange-Red Vibrant Chunri",
-      "Traditional Ethnic Prints",
+    "Luxury Karchupi": [
+      "Shop All Luxury Karchupi",
+      "Dusty Lilac Lavender Karchupi",
+      "Dusty Mauve Full Drape Floral Karchupi",
     ],
-    "Orni Signature": [
-      "Shop All Orni Signature",
-      "Rose Pink & Tangerine Designer Suit",
-      "Orni's Personal Style Edit",
+    "Pastel Heritage": [
+      "Shop All Pastel Heritage Muslin",
+      "Seafoam Mint Green Butterfly Muslin",
+      "Light Pistachio Lime Zari Muslin",
+      "Slate Silver Ash Pastel Geometric Muslin",
     ],
-    "Skincare Glow": [
-      "Kim Whitening Pearl & Snowlotus Cream",
-      "Single Pack 20g Jar",
-      "Duo Pack Combo (Free Delivery)",
+    "4-Piece Sets": [
+      "Shop All 4-Piece Sets",
+      "Exclusive Muslin Hand-Embroidered Dress Set",
     ],
   };
 
@@ -90,31 +89,31 @@ export function MobileNav({ links }: MobileNavProps) {
         className="lg:hidden flex items-center justify-center size-10 text-foreground/80 hover:bg-neutral-100 rounded-full transition-all duration-200"
         aria-label="Open navigation menu"
       >
-        <Menu className="h-6 w-6 text-[#6B1D2F]" strokeWidth={1.75} />
+        <Menu className="h-6 w-6 text-[#8B0000]" strokeWidth={1.75} />
       </button>
 
       {/* Premium Full-Screen Navigation Panel Overlay */}
       {open &&
         typeof document !== "undefined" &&
         createPortal(
-          <div className="fixed top-0 left-0 w-screen h-[100dvh] bg-[#FAF6F0] z-[9999] flex flex-col overflow-y-auto animate-slide-up">
+          <div className="fixed top-0 left-0 w-screen h-[100dvh] bg-[#FAF7F2] z-[9999] flex flex-col overflow-y-auto animate-slide-up">
             {/* Header bar within overlay */}
             <div className="flex h-16 items-center justify-between px-6 border-b border-[#E8DFD3] bg-white">
               <Link href="/" onClick={() => setOpen(false)} className="flex items-center gap-2.5">
                 <Image
-                  src="/shoppingqueen-assets/logo.avif"
-                  alt="Shopping Queen by Orni"
+                  src="/duikonna-assets/logo.png"
+                  alt="Dui Konna (দুই কন্যা)"
                   width={40}
                   height={40}
-                  className="h-10 w-10 object-cover rounded-full ring-2 ring-[#D4AF37]"
+                  className="h-10 w-10 object-cover rounded-full ring-2 ring-[#D4AF37] bg-black"
                 />
                 <div className="flex flex-col">
-                  <span className="font-heading text-base font-extrabold tracking-tight text-[#6B1D2F] leading-none flex items-center gap-1">
-                    <Crown className="h-3.5 w-3.5 text-[#D4AF37]" />
-                    Shopping Queen
+                  <span className="font-heading text-base font-extrabold tracking-tight text-[#8B0000] leading-none flex items-center gap-1">
+                    <span>🦋</span>
+                    Dui Konna
                   </span>
                   <span className="text-[8.5px] font-semibold tracking-widest text-[#D4AF37] uppercase mt-0.5">
-                    BY ORNI • 190K+ SISTERS
+                    দুই কন্যা • 484K+ FAMILY
                   </span>
                 </div>
               </Link>
@@ -124,7 +123,7 @@ export function MobileNav({ links }: MobileNavProps) {
                 className="flex items-center justify-center size-10 text-foreground hover:bg-neutral-100 rounded-full transition-all duration-200"
                 aria-label="Close navigation menu"
               >
-                <X className="h-6 w-6 text-[#1A1A1A]" strokeWidth={1.5} />
+                <X className="h-6 w-6 text-[#181513]" strokeWidth={1.5} />
               </button>
             </div>
 
@@ -141,12 +140,12 @@ export function MobileNav({ links }: MobileNavProps) {
                         <div>
                           <button
                             onClick={() => toggleAccordion(link.label)}
-                            className="w-full min-h-[56px] py-4 flex justify-between items-center text-[15px] font-semibold tracking-wide text-[#1A1A1A] hover:text-[#6B1D2F] transition-colors"
+                            className="w-full min-h-[56px] py-4 flex justify-between items-center text-[15px] font-semibold tracking-wide text-[#181513] hover:text-[#8B0000] transition-colors"
                             aria-expanded={isAccordionActive}
                           >
                             {link.label}
                             {isAccordionActive ? (
-                              <ChevronUp className="h-4 w-4 text-[#6B1D2F]" strokeWidth={2} />
+                              <ChevronUp className="h-4 w-4 text-[#8B0000]" strokeWidth={2} />
                             ) : (
                               <ChevronDown className="h-4 w-4 text-muted-foreground" strokeWidth={1.5} />
                             )}
@@ -165,7 +164,7 @@ export function MobileNav({ links }: MobileNavProps) {
                                     key={subLabel}
                                     href={`${link.href}${urlParam}`}
                                     onClick={() => setOpen(false)}
-                                    className="text-[13.5px] text-neutral-600 hover:text-[#6B1D2F] transition-colors py-1 flex items-center justify-between"
+                                    className="text-[13.5px] text-neutral-600 hover:text-[#8B0000] transition-colors py-1 flex items-center justify-between"
                                   >
                                     <span>{subLabel}</span>
                                   </Link>
@@ -178,7 +177,7 @@ export function MobileNav({ links }: MobileNavProps) {
                         <Link
                           href={link.href}
                           onClick={() => setOpen(false)}
-                          className="block min-h-[56px] py-4 text-[15px] font-semibold tracking-wide text-[#1A1A1A] hover:text-[#6B1D2F] transition-colors"
+                          className="block min-h-[56px] py-4 text-[15px] font-semibold tracking-wide text-[#181513] hover:text-[#8B0000] transition-colors"
                         >
                           {link.label}
                         </Link>
@@ -193,37 +192,37 @@ export function MobileNav({ links }: MobileNavProps) {
                 <Link
                   href="/track-order"
                   onClick={() => setOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-[#6B1D2F] transition-colors"
+                  className="text-sm font-medium text-muted-foreground hover:text-[#8B0000] transition-colors"
                 >
                   Track My Order (অর্ডার ট্র্যাক করুন)
                 </Link>
                 <Link
                   href="/delivery-info"
                   onClick={() => setOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-[#6B1D2F] transition-colors"
+                  className="text-sm font-medium text-muted-foreground hover:text-[#8B0000] transition-colors"
                 >
                   Delivery Info (ঢাকা ৮০৳ • বাইরে ১৫০৳ • ক্যাশ অন ডেলিভারি)
                 </Link>
                 <Link
                   href="/faq"
                   onClick={() => setOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-[#6B1D2F] transition-colors"
+                  className="text-sm font-medium text-muted-foreground hover:text-[#8B0000] transition-colors"
                 >
                   Frequently Asked Questions (FAQ)
                 </Link>
                 <Link
                   href="/refund-policy"
                   onClick={() => setOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-[#6B1D2F] transition-colors"
+                  className="text-sm font-medium text-muted-foreground hover:text-[#8B0000] transition-colors"
                 >
                   Open Parcel &amp; Return Policy (পার্সেল চেকিং সুবিধা)
                 </Link>
                 <Link
                   href="/contact"
                   onClick={() => setOpen(false)}
-                  className="text-sm font-medium text-muted-foreground hover:text-[#6B1D2F] transition-colors"
+                  className="text-sm font-medium text-muted-foreground hover:text-[#8B0000] transition-colors"
                 >
-                  Contact Us &amp; Hotline ({BUSINESS.PHONE})
+                  Showroom Location &amp; Hotlines ({BUSINESS.PHONE})
                 </Link>
               </div>
             </nav>
@@ -243,15 +242,15 @@ export function MobileNav({ links }: MobileNavProps) {
                 <Link
                   href="/account"
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-center gap-2 h-12 bg-[#FAF6F0] border border-[#E8DFD3] text-xs font-bold text-[#1A1A1A] hover:bg-neutral-100 rounded-xl transition-colors shadow-xs"
+                  className="flex items-center justify-center gap-2 h-12 bg-[#FAF7F2] border border-[#E8DFD3] text-xs font-bold text-[#181513] hover:bg-neutral-100 rounded-xl transition-colors shadow-xs"
                 >
-                  <User className="h-4 w-4 text-[#6B1D2F]" strokeWidth={1.5} />
+                  <User className="h-4 w-4 text-[#8B0000]" strokeWidth={1.5} />
                   My Account
                 </Link>
                 <Link
                   href="/cart"
                   onClick={() => setOpen(false)}
-                  className="flex items-center justify-center gap-2 h-12 bg-[#6B1D2F] text-[#D4AF37] text-xs font-bold hover:bg-[#4A101D] rounded-xl transition-colors shadow-xs"
+                  className="flex items-center justify-center gap-2 h-12 bg-[#8B0000] text-[#D4AF37] text-xs font-bold hover:bg-[#660000] rounded-xl transition-colors shadow-xs"
                 >
                   <ShoppingBag className="h-4 w-4" strokeWidth={1.5} />
                   Bag ({cartCount})

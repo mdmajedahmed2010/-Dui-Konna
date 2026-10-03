@@ -5,74 +5,82 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * Shopping Queen by Orni — Brand Color System & Styles
- * Dhaka, Bangladesh • Facebook: https://www.facebook.com/Shoppingqueenbyorni
- * 190,500+ Followers • Open Parcel Inspection Nationwide
+ * Dui Konna (দুই কন্যা) — Brand Color System & Styles
+ * Showroom: House #21/B, Road #01, Nikunja-2, Khilkhet, Dhaka-1229
+ * Facebook: https://www.facebook.com/duikonna01 • 484,000+ Followers
+ * Open Parcel Inspection Nationwide • Luxury Muslin & Jamdani
  */
 
 /* ═══════════════════════════════════════════
-   THEME — Shopping Queen by Orni Color System
+   THEME — Dui Konna (দুই কন্যা) Color System
    ═══════════════════════════════════════════ */
 @theme inline {
-  --color-primary: #6B1D2F;
+  --color-primary: #8B0000;
   --color-primary-foreground: #ffffff;
-  --color-secondary: #FAF6F0;
-  --color-secondary-foreground: #1A1A1A;
+  --color-secondary: #FAF7F2;
+  --color-secondary-foreground: #181513;
   --color-accent: #D4AF37;
   --color-accent-foreground: #121214;
-  --color-accent-hover: #B89327;
+  --color-accent-hover: #C5A059;
   --color-accent-slate: #3B3C4A;
   --color-accent-navy: #1A365D;
   --color-accent-gold: #D4AF37;
   --color-accent-amber: #C59B27;
   --color-accent-light: #FDF9F0;
-  --color-shoppingqueen-maroon: #6B1D2F;
-  --color-shoppingqueen-maroon-dark: #4A101D;
+  --color-duikonna-crimson: #8B0000;
+  --color-duikonna-crimson-dark: #660000;
+  --color-duikonna-gold: #D4AF37;
+  --color-duikonna-gold-light: #F3E5AB;
+  --color-duikonna-cream: #FAF7F2;
+  --color-duikonna-dark: #181513;
+  --color-duikonna-rose: #C8A2C8;
+  --color-shoppingqueen-maroon: #8B0000;
+  --color-shoppingqueen-maroon-dark: #660000;
   --color-shoppingqueen-gold: #D4AF37;
   --color-shoppingqueen-gold-light: #F3E5AB;
-  --color-shoppingqueen-rose: #E85D75;
-  --color-shoppingqueen-cream: #FAF6F0;
-  --color-shoppingqueen-dark: #1A1A1A;
-  --color-orni-maroon: #6B1D2F;
+  --color-shoppingqueen-rose: #C8A2C8;
+  --color-shoppingqueen-cream: #FAF7F2;
+  --color-shoppingqueen-dark: #181513;
+  --color-orni-maroon: #8B0000;
   --color-orni-gold: #D4AF37;
-  --color-orni-rose: #E85D75;
-  --color-orni-cream: #FAF6F0;
-  --color-tazeen-crimson: #6B1D2F;
-  --color-tazeen-crimson-dark: #4A101D;
+  --color-orni-rose: #C8A2C8;
+  --color-orni-cream: #FAF7F2;
+  --color-tazeen-crimson: #8B0000;
+  --color-tazeen-crimson-dark: #660000;
   --color-tazeen-gold: #D4AF37;
   --color-tazeen-gold-light: #F3E5AB;
-  --color-tazeen-purple: #6B1D2F;
-  --color-tazeen-fuchsia: #E85D75;
-  --color-tazeen-lavender: #FAF6F0;
+  --color-tazeen-purple: #8B0000;
+  --color-tazeen-fuchsia: #C8A2C8;
+  --color-tazeen-lavender: #FAF7F2;
   --color-tazeen-emerald: #1B4D3E;
-  --color-tazeen-cream: #FAF6F0;
-  --color-fashion-terracotta: #6B1D2F;
+  --color-tazeen-cream: #FAF7F2;
+  --color-fashion-terracotta: #8B0000;
   --color-fashion-slate: #3B3C4A;
   --color-fashion-navy: #1A365D;
   --color-fashion-gold: #D4AF37;
   --color-fashion-amber: #C59B27;
-  --color-fashion-cream: #FAF6F0;
-  --color-fashion-dark: #1A1A1A;
-  --color-fashion-purple: #6B1D2F;
-  --color-fashion-violet: #E85D75;
-  --color-tanzz-onyx: #1A1A1A;
+  --color-fashion-cream: #FAF7F2;
+  --color-fashion-dark: #181513;
+  --color-fashion-purple: #8B0000;
+  --color-fashion-violet: #C8A2C8;
+  --color-tanzz-onyx: #181513;
   --color-tanzz-gold: #D4AF37;
   --color-tanzz-gold-bright: #E5A84B;
-  --color-tanzz-cream: #FAF6F0;
-  --color-tanzz-dark: #1A1A1A;
-  --color-threesis-plum: #4A101D;
-  --color-threesis-rose: #E85D75;
-  --color-threesis-dark: #1A1A1A;
+  --color-tanzz-cream: #FAF7F2;
+  --color-tanzz-dark: #181513;
+  --color-threesis-plum: #660000;
+  --color-threesis-rose: #C8A2C8;
+  --color-threesis-dark: #181513;
   --color-threesis-gold: #D4AF37;
-  --color-threesis-cream: #FAF6F0;
-  --color-enayas-purple: #6B1D2F;
-  --color-enayas-dark: #1A1A1A;
+  --color-threesis-cream: #FAF7F2;
+  --color-enayas-purple: #8B0000;
+  --color-enayas-dark: #181513;
   --color-enayas-gold: #D4AF37;
-  --color-enayas-rose: #E85D75;
-  --color-enayas-wine: #6B1D2F;
-  --color-blossom-pink: #E85D75;
+  --color-enayas-rose: #C8A2C8;
+  --color-enayas-wine: #8B0000;
+  --color-blossom-pink: #C8A2C8;
   --color-blossom-rose: #FDF9F0;
-  --color-blossom-wine: #6B1D2F;
+  --color-blossom-wine: #8B0000;
   --color-background: #FAF7F2;
   --color-foreground: #1A1A1A;
   --color-surface: #ffffff;

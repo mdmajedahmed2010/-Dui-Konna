@@ -13,13 +13,13 @@ export async function GET(request: Request) {
 
     const userRole = (session?.user as { role?: string })?.role;
     const isAdmin = userRole === "ADMIN" || userRole === "SUPER_ADMIN";
-    const expectedSecret = process.env.SEED_SECRET || "365fashion2026";
+    const expectedSecret = process.env.SEED_SECRET || "duikonna2026";
 
-    if (!isAdmin && secret !== expectedSecret && secret !== "365fashion2026" && secret !== "tanzz2026" && secret !== "3sis2026" && secret !== "blossom2026") {
+    if (!isAdmin && secret !== expectedSecret && secret !== "duikonna2026" && secret !== "365fashion2026" && secret !== "tanzz2026") {
       return NextResponse.json({ error: "Unauthorized seed request" }, { status: 401 });
     }
 
-    console.log("🌱 Starting 365 Fashion House Production Seed via API...");
+    console.log("🌱 Starting Dui Konna (দুই কন্যা) Production Seed via API...");
 
     // 1. Delete old demo data (all categories, products, variants)
     await prisma.productVariant.deleteMany();
@@ -51,7 +51,7 @@ export async function GET(request: Request) {
       const categoryId = categoryMap[p.category.slug] || categoryMap[p.category.name] || Object.values(categoryMap)[0];
       if (!categoryId) continue;
 
-      const mainImage = p.variants[0]?.images[0] || p.images[0] || "/logo.jpg";
+      const mainImage = p.variants[0]?.images[0] || p.images[0] || "/duikonna-assets/fb_cover_landscape.jpg";
 
       await prisma.product.create({
         data: {
@@ -63,11 +63,11 @@ export async function GET(request: Request) {
           status: ProductStatus.ACTIVE,
           isFeatured: p.isFeatured ?? true,
           seoTitle: `${p.name} | ${BUSINESS.NAME}`,
-          seoDesc: `Buy ${p.name} from ${BUSINESS.NAME} — Pioneer in Authentic Pakistani Attires in Bangladesh. Open Parcel delivery across Bangladesh.`,
+          seoDesc: `Buy authentic ${p.name} from ${BUSINESS.NAME} — Authentic Dhakai Muslin & Luxury Sarees. Open Parcel delivery & showroom trial at Nikunja-2, Dhaka.`,
           ogImage: mainImage,
           variants: {
             create: p.variants.map((v, idx) => ({
-              sku: `365F-2026-${String(i + 1).padStart(3, "0")}${idx > 0 ? `-${idx + 1}` : ""}`,
+              sku: `DK-2026-${String(i + 1).padStart(3, "0")}${idx > 0 ? `-${idx + 1}` : ""}`,
               size: v.size,
               color: v.color,
               price: v.price,
@@ -80,7 +80,7 @@ export async function GET(request: Request) {
       createdProductsCount++;
     }
 
-    console.log(`✅ Seeded ${DEMO_CATEGORIES.length} Categories and ${createdProductsCount} Products for 365 Fashion House.`);
+    console.log(`✅ Seeded ${DEMO_CATEGORIES.length} Categories and ${createdProductsCount} Products for Dui Konna (দুই কন্যা).`);
 
     return NextResponse.json({
       success: true,

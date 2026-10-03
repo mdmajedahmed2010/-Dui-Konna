@@ -7,7 +7,7 @@ import { BUSINESS } from "@/lib/constants";
 
 export const metadata: Metadata = {
   title: `Search Products — ${BUSINESS.NAME}`,
-  description: `Search exclusive ${BUSINESS.NAME} collections, Pakistani Lawn 3-Piece, Festive Partywear, and Kim Pearl Whitening Cream.`,
+  description: `Search exclusive ${BUSINESS.NAME} collections, Authentic Dhakai Muslin Sarees, Dhakai Jamdani, Bridal Red Muslin, and Luxury Karchupi Sarees.`,
 };
 
 interface SearchPageProps {
@@ -52,7 +52,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
     const image =
       Array.isArray(variantImages) && variantImages.length > 0
         ? variantImages[0]
-        : "/shoppingqueen-assets/sq-product-01-royal-blue.jpg";
+        : "/duikonna-assets/product-03-royal-yellow.jpg";
 
     const variantPrice = p.variants?.[0]?.price ? Number(p.variants[0].price) : Number(p.basePrice);
 
@@ -63,7 +63,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
       price: variantPrice,
       compareAtPrice: Math.round(variantPrice * 1.2),
       image,
-      category: p.category?.name || "Orni Collection",
+      category: p.category?.name || "Dui Konna Saree Collection",
       isNew: p.isFeatured,
     };
   });
@@ -79,7 +79,7 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
         <p className="text-xs md:text-sm text-neutral-500 mt-2">
           {query
             ? `Found ${mappedProducts.length} ${mappedProducts.length === 1 ? "item" : "items"} matching your query.`
-            : "Use the search bar above to discover Pakistani Lawn, Festive Partywear, and Kim Whitening Cream."}
+            : "Use the search bar above to discover Dhakai Muslin, Dhakai Jamdani, Bridal Sarees, and Luxury Karchupi."}
         </p>
       </div>
 
@@ -91,9 +91,9 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
         </div>
       ) : (
         <div className="text-center py-24 border border-dashed border-[#E8DFD5] rounded-2xl max-w-md mx-auto space-y-3 mt-12 bg-white">
-          <p className="text-sm font-semibold text-[#1A1A1A] font-serif">No matching products found</p>
+          <p className="text-sm font-semibold text-[#181513] font-serif">No matching products found</p>
           <p className="text-xs text-neutral-500 max-w-xs mx-auto">
-            Try searching for another keyword or browse our curated Pakistani Lawn & Skincare collections.
+            Try searching for another keyword or browse our curated Dhakai Muslin & Luxury Saree collections.
           </p>
         </div>
       )}

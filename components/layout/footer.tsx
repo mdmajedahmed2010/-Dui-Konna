@@ -1,26 +1,27 @@
 "use client";
 
 /**
- * Shopping Queen by Orni — Luxury Haute Couture Footer
- * Authentic Pakistani Suits, Exclusive Festive Partywear & Natural Glow Skincare
- * Dhaka, Bangladesh • Facebook: https://www.facebook.com/Shoppingqueenbyorni
- * 190,500+ Followers • Open Parcel Inspection Nationwide
+ * Dui Konna (দুই কন্যা) — Luxury Haute Couture Footer
+ * Exclusive Muslin Sarees, Authentic Dhakai Jamdani & Luxury Ethnic Couture
+ * Showroom: House #21/B, Road #01, Nikunja-2, Khilkhet, Dhaka-1229
+ * Facebook: https://www.facebook.com/duikonna01 • 484,000+ Followers
+ * Open Parcel Inspection Nationwide
  */
 
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { MessageCircle, ArrowUpRight, Sparkles, Check, Phone, Mail, MapPin, Crown } from "lucide-react";
+import { MessageCircle, ArrowUpRight, Sparkles, Check, Phone, Mail, MapPin, Clock } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 import { toast } from "sonner";
 
 const shopLinks = [
-  { href: "/collections/pakistani-lawn", label: "Pakistani Lawn Collection" },
-  { href: "/collections/festive-party", label: "Exclusive Festive Partywear" },
-  { href: "/collections/premium-cotton", label: "Premium Handloom & Pure Cotton" },
-  { href: "/collections/chunri-traditional", label: "Traditional Chunri & Bandhani" },
-  { href: "/collections/orni-signature", label: "Orni Signature Edit" },
-  { href: "/collections/skincare-glow", label: "Kim Whitening & Glow Care" },
+  { href: "/collections/exclusive-muslin", label: "Exclusive Muslin Sarees" },
+  { href: "/collections/dhakai-jamdani", label: "Authentic Dhakai Jamdani" },
+  { href: "/collections/bridal-festive", label: "Bridal & Festive Red Muslin" },
+  { href: "/collections/luxury-karchupi", label: "Luxury Karchupi & Organza" },
+  { href: "/collections/pastel-heritage", label: "Pastel Heritage Muslin" },
+  { href: "/collections/muslin-four-piece", label: "Exclusive Muslin 4-Piece Sets" },
 ];
 
 const helpLinks = [
@@ -28,10 +29,10 @@ const helpLinks = [
   { href: "/delivery-info", label: "Delivery & Shipping Info (৳80/৳150)" },
   { href: "/refund-policy", label: "Open Parcel & Return Policy" },
   { href: "/faq", label: "Frequently Asked Questions (FAQ)" },
-  { href: "/contact", label: "Contact Us & Hotline" },
+  { href: "/contact", label: "Showroom Location & Hotlines" },
   { href: "/terms", label: "Terms & Conditions" },
   { href: "/privacy-policy", label: "Privacy Policy" },
-  { href: "/about", label: "About Orni Islam & Brand Story" },
+  { href: "/about", label: "About Dui Konna & Shamima Nasrin" },
 ];
 
 export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
@@ -42,38 +43,38 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
     e.preventDefault();
     if (!email) return;
     setSubscribed(true);
-    toast.success("Welcome to Shopping Queen VIP Club! Use promo code QUEENVIP for 15% off your order.");
+    toast.success("Welcome to Dui Konna VIP Heritage Club! Use promo code DUIKONNA10 for 10% off your order.");
   };
 
   return (
     <>
-      <footer className="bg-[#121214] text-[#FAF6F0] relative overflow-hidden border-t border-[#D4AF37]/30">
+      <footer className="bg-[#121214] text-[#FAF7F2] relative overflow-hidden border-t border-[#D4AF37]/30">
         {/* Giant Watermark Typography */}
-        <div className="absolute -bottom-10 right-0 pointer-events-none select-none text-[80px] md:text-[160px] font-bold text-white/[0.02] font-heading leading-none">
-          SHOPPING QUEEN
+        <div className="absolute -bottom-10 right-0 pointer-events-none select-none text-[80px] md:text-[160px] font-bold text-white/[0.03] font-heading leading-none">
+          DUI KONNA
         </div>
 
         {/* 1. VIP Club Newsletter Banner */}
-        <div className="border-b border-white/10 py-16 md:py-20 relative bg-gradient-to-b from-transparent to-[#1A1A1A]/70">
+        <div className="border-b border-white/10 py-16 md:py-20 relative bg-gradient-to-b from-transparent to-[#181513]/70">
           <div className="container mx-auto px-6 md:px-12">
             <div className="max-w-4xl mx-auto text-center space-y-4">
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40">
-                <Crown className="h-3.5 w-3.5 text-[#D4AF37]" />
+                <span className="text-[#D4AF37] text-xs">🦋</span>
                 <span className="text-[10px] font-extrabold uppercase tracking-[0.24em] text-[#D4AF37]">
-                  SHOPPING QUEEN VIP CLUB
+                  DUI KONNA VIP HERITAGE CLUB
                 </span>
               </div>
               <h3 className="text-3xl md:text-5xl font-bold tracking-tight text-white font-heading">
-                সবার আগে পান নতুন ড্রেস ও অফারের আপডেট
+                মসলিন ও জামদানির এক্সক্লুসিভ কালেকশন সবার আগে
               </h3>
               <p className="text-xs md:text-sm text-neutral-300 max-w-lg mx-auto leading-relaxed">
-                ১৯০,০০০+ আপুদের নির্ভরযোগ্য পরিবারে যুক্ত হোন। নতুন পাকিস্তানি লন, পার্টিওয়্যার কালেকশন এবং স্পেশাল অফারের তাৎক্ষণিক নোটিফিকেশন পেতে সাবস্ক্রাইব করুন।
+                ৪৮৪,০০০+ আপুদের বিশ্বস্ত পরিবারে যুক্ত থাকুন। নতুন ঢাকাই মসলিন শাড়ি, ব্রাইডাল কালেকশন ও স্পেশাল শোরুম অফারের তাৎক্ষণিক আপডেট পেতে সাবস্ক্রাইব করুন।
               </p>
 
               {subscribed ? (
                 <div className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-emerald-950/80 border border-emerald-500/50 text-emerald-300 text-xs font-bold tracking-wider">
                   <Check className="h-4 w-4" />
-                  <span>Welcome! Use Promo Code: QUEENVIP (15% OFF)</span>
+                  <span>Welcome! Use Promo Code: DUIKONNA10 (10% OFF)</span>
                 </div>
               ) : (
                 <form
@@ -90,7 +91,7 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                   />
                   <button
                     type="submit"
-                    className="h-13 px-8 rounded-full bg-[#6B1D2F] hover:bg-[#8D1D38] text-[#D4AF37] hover:text-white border border-[#D4AF37]/60 text-xs font-bold uppercase tracking-[0.16em] transition-all shadow-lg active:scale-98 cursor-pointer"
+                    className="h-13 px-8 rounded-full bg-[#8B0000] hover:bg-[#A0121A] text-[#D4AF37] hover:text-white border border-[#D4AF37]/60 text-xs font-bold uppercase tracking-[0.16em] transition-all shadow-lg active:scale-98 cursor-pointer"
                   >
                     Subscribe
                   </button>
@@ -108,27 +109,27 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
               <Link href="/" className="inline-flex items-center gap-3 group">
                 <Image
                   src={
-                    typeof settings.store_logo === "string" && settings.store_logo
+                    typeof settings?.store_logo === "string" && settings.store_logo
                       ? settings.store_logo
-                      : "/shoppingqueen-assets/logo.avif"
+                      : "/duikonna-assets/logo.png"
                   }
-                  alt="Shopping Queen by Orni"
+                  alt="Dui Konna (দুই কন্যা)"
                   width={54}
                   height={54}
-                  className="h-13 w-13 object-cover rounded-full ring-2 ring-[#D4AF37] group-hover:scale-105 transition-transform"
+                  className="h-13 w-13 object-cover rounded-full ring-2 ring-[#D4AF37] group-hover:scale-105 transition-transform bg-black"
                 />
                 <div>
                   <p className="text-xl font-bold text-white tracking-wider font-heading leading-tight flex items-center gap-1.5">
-                    <Crown className="h-4 w-4 text-[#D4AF37]" />
-                    Shopping Queen
+                    <span className="text-[#D4AF37] text-base">🦋</span>
+                    Dui Konna
                   </p>
-                  <p className="text-[10px] text-[#D4AF37] font-semibold tracking-[0.18em] uppercase">
-                    BY ORNI • DHAKA, BANGLADESH
+                  <p className="text-[10px] text-[#D4AF37] font-semibold tracking-[0.2em] uppercase">
+                    দুই কন্যা • NIKUNJA-2, DHAKA
                   </p>
                 </div>
               </Link>
               <p className="text-xs md:text-sm text-neutral-300 leading-relaxed max-w-sm">
-                দেশী-বিদেশী বিভিন্ন ব্র্যান্ডের মেয়েদের সালোয়ার কামিজ, এক্সক্লুসিভ পাকিস্তানি লন, গর্জিয়াস পার্টিওয়্যার এবং খাঁটি ন্যাচারাল স্কিনকেয়ার পণ্যের শীর্ষস্থানীয় প্রতিষ্ঠান। অর্ণি ইসলামের ব্যক্তিগত তত্ত্বাবধানে সেরা মান ও উন্মুক্ত পার্সেল চেক করার নিশ্চয়তা।
+                &ldquo;আমাদের পেজে রয়েছে ঢাকাই মসলিন শাড়ির সবচেয়ে অনন্য কালেকশন এবং আমরা সবসময় সেরা পণ্য পরিবেশনে অঙ্গীকারবদ্ধ।&rdquo; শামীমা নাসরিনের পরিচালনায় খাঁটি হ্যান্ডক্রাফটেড ঐতিহ্য ও উন্মুক্ত পার্সেল চেক করার ১০০% নিরাপত্তা।
               </p>
 
               {/* Direct Contact Info */}
@@ -136,7 +137,13 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
                 <p className="flex items-start gap-2.5">
                   <MapPin className="h-4 w-4 text-[#D4AF37] shrink-0 mt-0.5" />
                   <span>
-                    <strong>প্রধান কার্যালয়:</strong> {BUSINESS.ADDRESS}
+                    <strong>শোরুম:</strong> {BUSINESS.ADDRESS}
+                  </span>
+                </p>
+                <p className="flex items-center gap-2.5">
+                  <Clock className="h-4 w-4 text-[#D4AF37] shrink-0" />
+                  <span>
+                    <strong>শোরুম সময়সূচি:</strong> প্রতিদিন সকাল ১১:০০ – রাত ৯:০০
                   </span>
                 </p>
                 <p className="flex items-center gap-2.5">
@@ -154,108 +161,91 @@ export function Footer({ settings = {} }: { settings?: Record<string, any> }) {
               </div>
             </div>
 
-            {/* Collections Links (Col 2) */}
-            <div className="lg:col-span-2 space-y-4">
-              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#D4AF37]">
-                Collections
-              </h4>
-              <ul className="space-y-2.5 text-xs text-neutral-300 font-medium">
+            {/* Quick Links Column (Col 3) */}
+            <div className="lg:col-span-3 space-y-4">
+              <p className="text-xs font-extrabold uppercase tracking-[0.22em] text-[#D4AF37]">
+                Collections &amp; Sarees
+              </p>
+              <ul className="space-y-2.5 text-xs text-neutral-400">
                 {shopLinks.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="hover:text-[#D4AF37] transition-colors">
-                      {link.label}
+                    <Link
+                      href={link.href}
+                      className="hover:text-white transition-colors flex items-center justify-between group"
+                    >
+                      <span>{link.label}</span>
+                      <ArrowUpRight className="h-3 w-3 text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity" />
                     </Link>
                   </li>
                 ))}
               </ul>
             </div>
 
-            {/* Client Concierge (Col 2) */}
-            <div className="lg:col-span-2 space-y-4">
-              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#D4AF37]">
-                Customer Care
-              </h4>
-              <ul className="space-y-2.5 text-xs text-neutral-300 font-medium">
+            {/* Help & Policies Column (Col 4) */}
+            <div className="lg:col-span-4 space-y-4">
+              <p className="text-xs font-extrabold uppercase tracking-[0.22em] text-[#D4AF37]">
+                Customer Support &amp; Policies
+              </p>
+              <ul className="space-y-2.5 text-xs text-neutral-400">
                 {helpLinks.map((link) => (
                   <li key={link.href}>
-                    <Link href={link.href} className="hover:text-[#D4AF37] transition-colors">
-                      {link.label}
+                    <Link
+                      href={link.href}
+                      className="hover:text-white transition-colors flex items-center justify-between group"
+                    >
+                      <span>{link.label}</span>
+                      <ArrowUpRight className="h-3 w-3 text-[#D4AF37] opacity-0 group-hover:opacity-100 transition-opacity" />
                     </Link>
                   </li>
                 ))}
               </ul>
-            </div>
 
-            {/* Social Proof & Official Community (Col 3) */}
-            <div className="lg:col-span-3 space-y-4">
-              <h4 className="text-xs font-bold uppercase tracking-[0.18em] text-[#D4AF37]">
-                Official Facebook Page
-              </h4>
-              <p className="text-xs text-neutral-300 leading-relaxed">
-                আমাদের সক্রিয় ১৯০,৫০০+ আপুদের ফেসবুক পরিবারে যোগ দিন নিয়মিত লাইভ শো, নতুন ভিডিও ক্যাটালগ এবং সরাসরি মেসেঞ্জার অর্ডারের জন্য।
-              </p>
-
-              <div className="space-y-2 pt-1">
-                <a
-                  href={BUSINESS.FACEBOOK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-between w-full p-3 rounded-xl bg-white/10 hover:bg-[#1A1A1A] text-white text-xs font-bold transition-all border border-white/15 hover:border-[#D4AF37]/60"
-                >
-                  <span className="flex items-center gap-2">
-                    <span className="size-2 rounded-full bg-[#1877F2] animate-pulse" />
-                    Shopping Queen by Orni (190K+)
-                  </span>
-                  <ArrowUpRight className="h-3.5 w-3.5 text-[#D4AF37]" />
-                </a>
-
-                <a
-                  href={BUSINESS.WHATSAPP_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center justify-between w-full p-3 rounded-xl bg-[#25D366]/20 hover:bg-[#25D366] text-white text-xs font-bold transition-all border border-[#25D366]/40"
-                >
-                  <span className="flex items-center gap-2">
-                    <MessageCircle className="h-4 w-4 text-[#25D366]" />
-                    WhatsApp Hotline: {BUSINESS.PHONE}
-                  </span>
-                  <ArrowUpRight className="h-3.5 w-3.5" />
-                </a>
+              {/* Social Channels */}
+              <div className="pt-3">
+                <p className="text-[11px] font-bold text-neutral-400 uppercase tracking-wider mb-2">
+                  Official Channels:
+                </p>
+                <div className="flex items-center gap-3">
+                  <a
+                    href={BUSINESS.FACEBOOK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3.5 py-1.5 rounded-full bg-white/10 hover:bg-[#8B0000] text-xs font-medium text-white transition-colors border border-white/20 flex items-center gap-1.5"
+                  >
+                    <span>Facebook (484K+)</span>
+                    <ArrowUpRight className="h-3 w-3 text-[#D4AF37]" />
+                  </a>
+                  <a
+                    href={BUSINESS.WHATSAPP_LINK}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="px-3.5 py-1.5 rounded-full bg-emerald-950/80 hover:bg-emerald-900 text-xs font-medium text-emerald-300 transition-colors border border-emerald-500/40 flex items-center gap-1.5"
+                  >
+                    <span>WhatsApp</span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* 3. Bottom Copyright & Trust Bar */}
-        <div className="border-t border-white/10 py-6 text-xs text-neutral-400">
-          <div className="container mx-auto px-6 md:px-12 flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-center md:text-left">
-              &copy; {new Date().getFullYear()} Shopping Queen by Orni (শপিং কুইন বাই অর্নি). All Rights Reserved.
-            </p>
-            <div className="flex items-center gap-4 text-[11px] text-[#D4AF37] flex-wrap justify-center">
-              <span>✓ ১০০% অরিজিনাল কোয়ালিটি</span>
+          {/* Bottom Bar: Copyright & Payment Icons */}
+          <div className="mt-14 pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-neutral-400">
+            <div className="flex items-center gap-2">
+              <span className="text-[#D4AF37]">🦋</span>
+              <p>
+                &copy; {new Date().getFullYear()} Dui Konna (দুই কন্যা). Owner Shamima Nasrin. All Rights Reserved.
+              </p>
+            </div>
+            <div className="flex items-center gap-4 text-[11px] text-neutral-400">
+              <span>✓ Open Parcel Inspection</span>
               <span>•</span>
-              <span>ওপেন পার্সেল চেকিং</span>
+              <span>✓ Cash on Delivery</span>
               <span>•</span>
-              <span>সারাদেশে ক্যাশ অন ডেলিভারি</span>
-              <span>•</span>
-              <span>বিকাশ / নগদ পেমেন্ট</span>
+              <span>✓ 100% Authentic Handloom Muslin</span>
             </div>
           </div>
         </div>
       </footer>
-
-      {/* Floating WhatsApp Concierge Button (Bottom Right) */}
-      <a
-        href={BUSINESS.WHATSAPP_LINK}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-40 flex items-center gap-2 px-4 py-3 rounded-full bg-[#25D366] text-white font-bold text-xs shadow-2xl hover:scale-105 active:scale-95 transition-all duration-300 cursor-pointer group/flwa"
-        aria-label="Chat on WhatsApp"
-      >
-        <MessageCircle className="h-5 w-5 fill-white text-[#25D366]" />
-        <span className="hidden sm:inline font-sans tracking-wide">WhatsApp Hotline</span>
-      </a>
     </>
   );
 }

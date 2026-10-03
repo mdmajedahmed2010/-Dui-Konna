@@ -1,5 +1,5 @@
 /**
- * Shopping Queen by Orni — Account Layout
+ * Dui Konna (দুই কন্যা) — Account Layout
  * Sidebar navigation (desktop) + tabs (mobile)
  */
 

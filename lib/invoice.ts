@@ -1,6 +1,6 @@
 /**
- * Shopping Queen by Orni — PDF Invoice Generator
- * Generates a branded PDF invoice for orders
+ * Dui Konna (দুই কন্যা) — PDF Invoice Generator
+ * Generates a branded luxury PDF invoice for orders
  */
 
 import { jsPDF } from "jspdf";

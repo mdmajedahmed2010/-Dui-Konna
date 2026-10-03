@@ -1,5 +1,5 @@
 /**
- * Shopping Queen by Orni — All Categories Page
+ * Dui Konna (দুই কন্যা) — All Categories Page
  * Route: /categories
  */
 
@@ -16,7 +16,7 @@ export const revalidate = 60;
 export const metadata: Metadata = {
   title: `All Collections & Categories — ${BUSINESS.NAME}`,
   description:
-    `Browse all ${BUSINESS.NAME} authentic fashion & skincare categories — Pakistani Lawn 3-Piece, Festive Partywear, Kim Whitening Cream, Handloom Cotton & Chunri.`,
+    `Browse all ${BUSINESS.NAME} authentic Dhakai Muslin & luxury saree categories — Pure Handwoven Muslin, Dhakai Jamdani, Bridal Red Muslin, Luxury Karchupi & Pastel Heritage.`,
 };
 
 type CategoryItem = {
@@ -55,21 +55,21 @@ export default async function CategoriesPage() {
   }
 
   return (
-    <div className="min-h-screen bg-[#FAF6F0]">
+    <div className="min-h-screen bg-[#FAF7F2]">
       <div className="container mx-auto px-4 py-8 md:py-12 max-w-7xl">
         <Breadcrumb items={[{ label: "All Categories" }]} />
 
         {/* Luxury Header */}
         <div className="mt-10 mb-14 text-center">
-          <span className="inline-block px-3.5 py-1 rounded-full border border-[#6B1D2F]/40 bg-[#6B1D2F]/5 text-[#6B1D2F] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
-            ✦ SHOPPING QUEEN BY ORNI ✦
+          <span className="inline-block px-3.5 py-1 rounded-full border border-[#8B0000]/30 bg-[#8B0000]/5 text-[#8B0000] text-[10px] uppercase tracking-[0.28em] font-bold mb-4">
+            ✦ DUI KONNA (দুই কন্যা) ✦
           </span>
-          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#6B1D2F] font-serif">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-[#8B0000] font-serif">
             All Categories
           </h1>
           <div className="w-20 h-[2px] bg-[#D4AF37] mx-auto mt-5" />
-          <p className="text-neutral-600 mt-4 text-sm md:text-base max-w-xl mx-auto font-sans">
-            অরিজিনাল পাকিস্তানি লন, গর্জিয়াস পার্টিওয়্যার এবং খাঁটি থাই কিম পার্ল ও স্নোলোটাস স্কিনকেয়ারের পূর্ণাঙ্গ কালেকশন।
+          <p className="text-neutral-700 mt-4 text-sm md:text-base max-w-xl mx-auto font-sans">
+            ১০০% খাঁটি ঐতিহ্যবাহী ঢাকাই মসলিন, রাজকীয় ব্রাইডাল রেড, হাতে বোনা জামদানি এবং এক্সক্লুসিভ কারচুপি কাজের শাড়ির পূর্ণাঙ্গ কালেকশন।
           </p>
         </div>
 

@@ -1,21 +1,21 @@
 "use client";
 
 /**
- * Shopping Queen by Orni — Trust Badges & Open Parcel Assurance
- * Authentic Pakistani Suits, Exclusive Festive Partywear & Natural Glow Skincare
- * Dhaka, Bangladesh • Facebook: https://www.facebook.com/Shoppingqueenbyorni
- * 190,500+ Followers • Open Parcel Inspection Nationwide
+ * Dui Konna (দুই কন্যা) — Trust Badges & Open Parcel Assurance
+ * Authentic Dhakai Muslin, Dhakai Jamdani & Luxury Sarees
+ * Nikunja-2, Khilkhet, Dhaka-1229 • Facebook: https://www.facebook.com/duikonna01
+ * 484,000+ Followers • Open Parcel Inspection Nationwide
  */
 
 import { useEffect, useRef, useState } from "react";
-import { CreditCard, Award, Users, Sparkles, Eye, PhoneCall } from "lucide-react";
+import { CreditCard, Award, Users, Sparkles, Eye, PhoneCall, Store } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 
 const badges = [
   {
     icon: Award,
-    title: "১০০% অরিজিনাল কোয়ালিটি",
-    description: "Authentic Pakistani Lawn & Suits",
+    title: "১০০% খাঁটি ঢাকাই মসলিন",
+    description: "Authentic Handloom Heritage",
   },
   {
     icon: Eye,
@@ -25,22 +25,22 @@ const badges = [
   {
     icon: CreditCard,
     title: "Cash on Delivery",
-    description: "ঢাকা ৳৮০ | বাইরে ৳১৫০ | ২+ ড্রেসে ফ্রি",
+    description: "ঢাকা ৳৮০ | বাইরে ৳১৫০ | ২+ শাড়িতে ফ্রি",
   },
   {
-    icon: Sparkles,
-    title: "প্রাকৃতিক স্কিনকেয়ার",
-    description: "Kim Pearl & Snowlotus Cream",
+    icon: Store,
+    title: "নিকুঞ্জ-২ ফ্ল্যাগশিপ শোরুম",
+    description: "হাউজ ২১/বি, রোড ০১, খিলক্ষেত (১১টা-৯টা)",
   },
   {
     icon: Users,
-    title: "১৯০,০০০+ আপুদের পরিবার",
+    title: "৪৮৪,০০০+ আপুদের পরিবার",
     description: "Official Facebook Community",
   },
   {
     icon: PhoneCall,
-    title: "সরাসরি হটলাইন",
-    description: `${BUSINESS.PHONE} (WhatsApp / Call)`,
+    title: "সরাসরি হটলাইন / WhatsApp",
+    description: `${BUSINESS.PHONE} / ${BUSINESS.WHATSAPP}`,
   },
 ];
 
@@ -66,7 +66,7 @@ export function TrustBadges() {
   return (
     <section
       ref={sectionRef}
-      className="py-12 md:py-16 bg-[#FAF6F0] border-y border-[#E8DFD3]"
+      className="py-12 md:py-16 bg-[#FAF7F2] border-y border-[#E8DFD3]"
       aria-label="Trust Badges"
     >
       <div className="container mx-auto px-4 md:px-8 max-w-7xl">
@@ -82,8 +82,8 @@ export function TrustBadges() {
                 transitionDuration: "500ms",
               }}
             >
-              <div className="size-11 rounded-full bg-[#FAF6F0] text-[#6B1D2F] flex items-center justify-center mb-3 border border-[#D4AF37]/40">
-                <badge.icon className="h-5 w-5 text-[#6B1D2F]" />
+              <div className="size-11 rounded-full bg-[#FAF7F2] text-[#8B0000] flex items-center justify-center mb-3 border border-[#D4AF37]/40">
+                <badge.icon className="h-5 w-5 text-[#8B0000]" />
               </div>
               <h3 className="text-xs md:text-sm font-bold text-[#1A1A1A] leading-tight">
                 {badge.title}

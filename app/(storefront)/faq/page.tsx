@@ -13,36 +13,41 @@ import {
   MessageCircle, 
   CreditCard, 
   RefreshCcw,
-  Sparkle
+  Store
 } from "lucide-react";
 import { BUSINESS } from "@/lib/constants";
 
 interface FAQItem {
   question: string;
   answer: string;
-  category: "lawn" | "skincare" | "delivery" | "payment" | "return";
+  category: "muslin" | "saree-care" | "delivery" | "payment" | "showroom";
 }
 
 const FAQS: FAQItem[] = [
   {
-    category: "lawn",
-    question: "Shopping Queen by Orni-এর পাকিস্তানি লন ও থ্রি-পিসের কাপড় ও সাইজ কেমন?",
-    answer: "আমাদের প্রতিটি পাকিস্তানি লন থ্রি-পিস ১০০% পিওর লাক্সারি কটন ফ্যাব্রিকে তৈরি। কামিজের জন্য পর্যাপ্ত ৩ মিটার কাপড়, সফট ম্যাচিং সুতি বা সেমি-পিওর শিফন ওড়না (দোপাট্টা) এবং আরামদায়ক সুতি সালোয়ারের কাপড় দেওয়া থাকে। এটি আনস্টিচড (Unstitched) হওয়ায় যেকোনো বডি সাইজে আরামদায়কভাবে সেলাই করে পরা যায়।",
+    category: "muslin",
+    question: "দুই কন্যা (Dui Konna)-র ঢাকাই মসলিন শাড়ি কি শতভাগ খাঁটি ও তাঁতে বোনা?",
+    answer: "হ্যাঁ, সম্পূর্ণ নিশ্চিত থাকুন। দুই কন্যার প্রতিটি ঢাকাই মসলিন শাড়ি বাংলার সুপ্রাচীন ঐতিহ্যবাহী তাঁতিদের নিপুণ হাতে বোনা। এতে ব্যবহৃত হয় সূক্ষ্ম রেশমি সুতা ও খাঁটি স্বর্ণালী জরির কারুকাজ। প্রতিটি শাড়ির বুনন, জমিন ও আঁচল স্বত্বাধিকারী শামীমা নাসরিন নিজে পুঙ্খানুপুঙ্খভাবে পরীক্ষা করেন।",
   },
   {
-    category: "skincare",
-    question: "Kim Whitening Pearl and Snowlotus Cream কি শতভাগ আসল এবং এটি কীভাবে ব্যবহার করতে হয়?",
-    answer: "হ্যাঁ, আমাদের Kim Whitening Pearl and Snowlotus Cream (20g) শতভাগ আসল ও অথেনটিক থাইল্যান্ড ফর্মুলেশনে তৈরি। এতে রয়েছে প্রাকৃতিক স্নোলোটাস নির্যাস ও মুক্তা ভস্ম। এটি সম্পূর্ণ ক্ষতিকর কেমিক্যাল ও পারদ মুক্ত। রাতে মুখ ভালো ফেসওয়াশ দিয়ে ধুয়ে শুকানোর পর আঙুলে অল্প ক্রিম নিয়ে আলতো ম্যাসাজ করে লাগাতে হয়। কয়েক সপ্তাহ নিয়মিত ব্যবহারে ত্বক মসৃণ, দাগহীন ও প্রাকৃতিকভাবে উজ্জ্বল হয়।",
+    category: "muslin",
+    question: "শাড়ির দৈর্ঘ্য ও সাথে ব্লাউজ পিস আছে কি?",
+    answer: "আমাদের প্রতিটি প্রিমিয়াম ঢাকাই মসলিন ও জামদানি শাড়ির মাপ স্ট্যান্ডার্ড ১২ হাত (প্রায় ৫.৫ মিটার) এবং সাথে পর্যাপ্ত ব্লাউজ পিস অন্তর্ভুক্ত থাকে। শাড়িগুলো অত্যন্ত হালকা, নরম ও আরামদায়ক ড্র্যাপিং প্রদান করে।",
+  },
+  {
+    category: "muslin",
+    question: "শাড়ির দাম কি ফিক্সড নাকি আলোচনা সাপেক্ষ?",
+    answer: "দুই কন্যা সবসময় স্বচ্ছতায় বিশ্বাসী। আমাদের প্রোডাক্টের দাম ফিক্সড এবং সরাসরি ট্যাগে মুদ্রিত থাকে (যেমন হলুদ মসলিন শাড়ির গায়ে স্পষ্ট ৳২৯,০০০ মুদ্রিত)। অনলাইনে মেসেজে দাম লুকিয়ে রাখা বা কাস্টমারভেদে ভিন্ন দাম নেওয়ার কোনো সুযোগ নেই।",
   },
   {
     category: "delivery",
-    question: "ওপেন পার্সেল (Open Parcel Policy) কী এবং ডেলিভারিতে আমি কি প্যাকেট খুলে দেখতে পারব?",
-    answer: "অবশ্যই! আমাদের মূল আকর্ষণ হলো শতভাগ ওপেন পার্সেল সুবিধা। ডেলিভারি ম্যান যখন আপনার ঠিকানায় পার্সেল নিয়ে আসবেন, আপনি তার সামনেই প্যাকেট খুলে কাপড়ের মান, রঙ, এমব্রয়ডারি বা কিম ক্রিমের ইনট্যাক্ট সিল চেক করে দেখে নিতে পারবেন। সন্তুষ্ট হওয়ার পর ক্যাশ পেমেন্ট করে পার্সেল গ্রহণ করবেন।",
+    question: "ওপেন পার্সেল (Open Parcel Policy) কী এবং ডেলিভারিতে আমি কি শাড়ি খুলে দেখতে পারব?",
+    answer: "অবশ্যই! আমাদের মূল গ্যারান্টি হলো শতভাগ ওপেন পার্সেল সুবিধা। ডেলিভারি ম্যান যখন আপনার ঠিকানায় পার্সেল নিয়ে আসবেন, আপনি তার সামনেই প্যাকেট খুলে শাড়ির কাপড়, রঙ, আঁচলের জরির কাজ ও ব্লাউজ পিস ভালো করে চেক করে দেখে নিতে পারবেন। সন্তুষ্ট হওয়ার পর ক্যাশ পেমেন্ট করে পার্সেল গ্রহণ করবেন।",
   },
   {
     category: "delivery",
     question: "ডেলিভারি চার্জ কত এবং ফ্রি ডেলিভারি পাওয়ার উপায় কী?",
-    answer: `ঢাকা সিটির ভেতরে ডেলিভারি চার্জ মাত্র ৳${BUSINESS.DELIVERY_CHARGE_INSIDE} এবং সময় লাগে ২৪–৪৮ ঘণ্টা। ঢাকা সিটির বাইরে বাংলাদেশের যেকোনো জেলা বা উপজেলায় ডেলিভারি চার্জ ৳${BUSINESS.DELIVERY_CHARGE_OUTSIDE} এবং সময় লাগে ২–৩ দিন। স্পেশাল অফার: যেকোনো ২ বা ততোধিক ড্রেস একসাথে অর্ডার করলে সারা বাংলাদেশে ডেলিভারি সম্পূর্ণ ফ্রি!`,
+    answer: `ঢাকা সিটির ভেতরে ডেলিভারি চার্জ মাত্র ৳${BUSINESS.DELIVERY_CHARGE_INSIDE} (২৪–৪৮ ঘণ্টা) এবং ঢাকার বাইরে বাংলাদেশের যেকোনো জেলা বা উপজেলায় ডেলিভারি চার্জ ৳${BUSINESS.DELIVERY_CHARGE_OUTSIDE} (২–৩ দিন)। স্পেশাল অফার: যেকোনো ২ বা ততোধিক শাড়ি একসাথে অর্ডার করলে সারা বাংলাদেশে ডেলিভারি সম্পূর্ণ ফ্রি!`,
   },
   {
     category: "payment",
@@ -50,19 +55,14 @@ const FAQS: FAQItem[] = [
     answer: "সারা বাংলাদেশে আমাদের ১০০% ক্যাশ অন ডেলিভারি (Cash on Delivery) সুবিধা রয়েছে। পার্সেল হাতে পেয়ে ডেলিভারিম্যানের সামনে চেক করে নগদ টাকা পরিশোধ করবেন। এছাড়াও আপনি চাইলে bKash বা Nagad-এর মাধ্যমে পেমেন্ট করতে পারেন। কোনো আগাম পেমেন্ট ছাড়াই অর্ডার করা যায়।",
   },
   {
-    category: "return",
-    question: "পণ্য পছন্দ না হলে বা কোনো ডিফেক্ট থাকলে রিটার্ন করার নিয়ম কী?",
-    answer: "ডেলিভারিম্যানের সামনে চেক করার সময় যদি পণ্যে কোনো রঙ বা ফেব্রিকের অমিল কিংবা সমস্যা দেখা যায়, আপনি কোনো দ্বিধা ছাড়াই সাথে সাথে পার্সেলটি রিটার্ন করতে পারেন (প্রযোজ্য ক্ষেত্রে শুধুমাত্র কুরিয়ার চার্জ দিয়ে)। কোনো সমস্যা হলে সাথে সাথে আমাদের হটলাইনে কল দিয়ে জানান।",
+    category: "showroom",
+    question: "আপনাদের কি ফিজিক্যাল শোরুম আছে? সরাসরি গিয়ে দেখে কেনা যাবে কি?",
+    answer: `হ্যাঁ! আমাদের ফ্ল্যাগশিপ শোরুম ঢাকার নিকুঞ্জ-২ এ অবস্থিত: ${BUSINESS.ADDRESS} (House #21/B, Road #01, Nikunja-2, Khilkhet, Dhaka-1229)। সপ্তাহের ৭ দিনই সকাল ১১:০০টা থেকে রাত ৯:০০টা পর্যন্ত শোরুম খোলা থাকে। আপনি সরাসরি এসে নিজের চোখে শাড়ির আভিজাত্য দেখে ট্রায়াল দিয়ে কিনতে পারবেন।`,
   },
   {
-    category: "lawn",
-    question: "পোশাকের রঙ পাকা থাকবে তো এবং ওয়াশ কেয়ার কীভাবে করতে হবে?",
-    answer: "আমাদের পাকিস্তানি লন ও হ্যান্ডলুম কটন ড্রেসগুলো প্রিমিয়াম কোয়ালিটি নিশ্চিত করে আমদানি ও প্রস্তুত করা হয়। প্রথম ওয়াশে হালকা ঠাণ্ডা পানিতে শ্যাম্পু দিয়ে ধোয়া ভালো। ব্লিচ বা কড়া ডিটারজেন্ট পরিহার করুন এবং ছায়ায় শুকান। জরির অংশে সবসময় উল্টো পাশ থেকে মাঝারি তাপে ইস্ত্রি করুন।",
-  },
-  {
-    category: "payment",
-    question: "ফেসবুক লাইভ বা হোয়াটসঅ্যাপে কীভাবে দ্রুত অর্ডার করব?",
-    answer: `অর্ণি ইসলামের ফেসবুক লাইভ সেশন চলাকালীন বা পেজের যেকোনো পোস্টের স্ক্রিনশট নিয়ে আমাদের WhatsApp (${BUSINESS.PHONE}) বা Facebook পেজের (Shopping Queen by Orni) ইনবক্সে মেসেজ পাঠালে আমাদের প্রতিনিধি স্টক নিশ্চিত করে আপনার নাম, মোবাইল ও ঠিকানা নিয়ে দ্রুত বুকিং সম্পন্ন করে দেবেন।`,
+    category: "saree-care",
+    question: "ঢাকাই মসলিন ও জামদানি শাড়ির যত্ন ও ধোয়ার নিয়ম কী?",
+    answer: "খাঁটি ঢাকাই মসলিন ও জরি বোনা শাড়ি ঘরে সাধারণ ডিটারজেন্টে ধোয়া যাবে না। এগুলো সবসময় প্রফেশনাল ড্রাই ক্লিন (Dry Clean Only) করাতে হবে। শাড়ি সংরক্ষণের সময় প্লাস্টিক প্যাকেটে না রেখে সুতি বা মসলিন কাপড়ের কভারে মুড়িয়ে ছায়াযুক্ত ও শুষ্ক স্থানে রাখতে হবে। মাঝে মাঝে ভাঁজ বদলে দিতে হবে।",
   },
 ];
 
@@ -75,9 +75,9 @@ export default function FAQPage() {
     : FAQS.filter(f => f.category === activeCategory);
 
   return (
-    <main className="min-h-screen bg-[#FAF6F0]">
+    <main className="min-h-screen bg-[#FAF7F2]">
       {/* Hero Section */}
-      <section className="relative py-16 md:py-24 bg-[#6B1D2F] text-white text-center px-6 overflow-hidden">
+      <section className="relative py-16 md:py-24 bg-[#8B0000] text-white text-center px-6 overflow-hidden">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(212,175,55,0.25),transparent_70%)] pointer-events-none" />
         <div className="relative z-10 max-w-3xl mx-auto space-y-4">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-[#D4AF37]/40 text-[#D4AF37] text-[10px] uppercase tracking-[0.28em] font-bold">
@@ -87,8 +87,8 @@ export default function FAQPage() {
           <h1 className="text-3xl md:text-5xl font-bold tracking-tight font-serif">
             সাধারণ জিজ্ঞাসা ও উত্তর (FAQ)
           </h1>
-          <p className="text-[#FAF6F0] text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
-            {BUSINESS.NAME}-এ ড্রেস ও স্কিনকেয়ার নির্বাচন, ওপেন পার্সেল পলিসি, ফ্রি ডেলিভারি অফার ও অর্ডার সম্পর্কিত আপনার সব প্রশ্নের সমাধান।
+          <p className="text-[#FAF7F2] text-sm md:text-base leading-relaxed max-w-2xl mx-auto">
+            {BUSINESS.NAME} ({BUSINESS.NAME_BN})-এ ঢাকাই মসলিন শাড়ি নির্বাচন, ওপেন পার্সেল পলিসি, নিকুঞ্জ-২ শোরুম ভিজিট ও কেয়ার সম্পর্কিত সব প্রশ্নের উত্তর।
           </p>
         </div>
       </section>
@@ -98,11 +98,11 @@ export default function FAQPage() {
         <div className="bg-white rounded-2xl p-2 shadow-md border border-[#E8DFD5] flex items-center justify-center gap-2 flex-wrap">
           {[
             { id: "all", label: "সব প্রশ্ন (All)" },
-            { id: "lawn", label: "পাকিস্তানি লন ও পার্টিওয়্যার" },
-            { id: "skincare", label: "কিম পার্ল ক্রিম (স্কিনকেয়ার)" },
+            { id: "muslin", label: "খাঁটি ঢাকাই মসলিন শাড়ি" },
             { id: "delivery", label: "ডেলিভারি ও ওপেন পার্সেল" },
+            { id: "showroom", label: "নিকুঞ্জ-২ শোরুম তথ্য" },
+            { id: "saree-care", label: "শাড়ির যত্ন ও ড্রাই ক্লিন" },
             { id: "payment", label: "পেমেন্ট ও অর্ডার পদ্ধতি" },
-            { id: "return", label: "রিটার্ন ও এক্সচেঞ্জ" },
           ].map((tab) => (
             <button
               key={tab.id}
@@ -112,8 +112,8 @@ export default function FAQPage() {
               }}
               className={`px-4 py-2 text-xs font-bold rounded-xl transition-all cursor-pointer ${
                 activeCategory === tab.id
-                  ? "bg-[#6B1D2F] text-white shadow-xs"
-                  : "text-[#1A1A1A] hover:bg-rose-50 hover:text-[#6B1D2F]"
+                  ? "bg-[#8B0000] text-[#D4AF37] shadow-xs"
+                  : "text-[#1A1A1A] hover:bg-rose-50 hover:text-[#8B0000]"
               }`}
             >
               {tab.label}
@@ -142,7 +142,7 @@ export default function FAQPage() {
                 >
                   <div className="flex items-center gap-3">
                     <div className={`size-8 rounded-full flex items-center justify-center shrink-0 ${
-                      isOpen ? "bg-[#6B1D2F] text-white" : "bg-rose-50 text-[#6B1D2F]"
+                      isOpen ? "bg-[#8B0000] text-[#D4AF37]" : "bg-rose-50 text-[#8B0000]"
                     }`}>
                       <HelpCircle className="h-4 w-4" />
                     </div>
@@ -152,14 +152,14 @@ export default function FAQPage() {
                   </div>
                   <ChevronDown
                     className={`h-5 w-5 text-neutral-500 shrink-0 transition-transform duration-300 ${
-                      isOpen ? "rotate-180 text-[#6B1D2F]" : ""
+                      isOpen ? "rotate-180 text-[#8B0000]" : ""
                     }`}
                   />
                 </button>
 
                 {isOpen && (
                   <div className="px-6 pb-6 pt-1 text-sm text-neutral-600 leading-relaxed border-t border-neutral-100">
-                    <p className="bg-[#FAF6F0] p-4 rounded-xl border border-[#E8DFD5] font-medium">
+                    <p className="bg-[#FAF7F2] p-4 rounded-xl border border-[#E8DFD5] font-medium">
                       {faq.answer}
                     </p>
                   </div>
@@ -170,13 +170,13 @@ export default function FAQPage() {
         </div>
 
         {/* Still Have Questions CTA */}
-        <div className="max-w-3xl mx-auto mt-14 bg-gradient-to-r from-[#6B1D2F] to-[#521322] text-white rounded-3xl p-8 md:p-10 text-center relative overflow-hidden shadow-xl border border-[#D4AF37]/30">
+        <div className="max-w-3xl mx-auto mt-14 bg-gradient-to-r from-[#8B0000] to-[#5A0000] text-white rounded-3xl p-8 md:p-10 text-center relative overflow-hidden shadow-xl border border-[#D4AF37]/30">
           <div className="relative z-10 space-y-4">
             <h3 className="text-xl md:text-2xl font-bold font-serif">
-              আরও কিছু জানতে চান?
+              আরও কোনো শাড়ি সম্পর্কে জানতে চান?
             </h3>
             <p className="text-neutral-200 text-sm max-w-lg mx-auto leading-relaxed">
-              অর্ণি ইসলাম ও কাস্টমার কেয়ার টিম আপনাকে সহায়তা করতে প্রস্তুত। সরাসরি ফোন, হোয়াটসঅ্যাপ বা ফেসবুক মেসেঞ্জারে যোগাযোগ করুন।
+              দুই কন্যার কাস্টমার কেয়ার টিম ও শোরুম প্রতিনিধি আপনাকে সহায়তা করতে প্রস্তুত। সরাসরি ফোন, হোয়াটসঅ্যাপ বা ফেসবুক মেসেঞ্জারে যোগাযোগ করুন।
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4 pt-3">
               <a
@@ -186,7 +186,7 @@ export default function FAQPage() {
                 className="inline-flex items-center gap-2 h-12 px-7 bg-[#25D366] hover:bg-[#20bd5a] text-white text-xs font-bold uppercase tracking-[0.14em] rounded-full transition-all shadow-md"
               >
                 <MessageCircle className="h-4 w-4" />
-                <span>WhatsApp ({BUSINESS.PHONE})</span>
+                <span>WhatsApp ({BUSINESS.PHONE_ALT})</span>
               </a>
               <a
                 href={BUSINESS.FACEBOOK}
@@ -197,7 +197,7 @@ export default function FAQPage() {
                 <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                 </svg>
-                <span>Facebook (190K+)</span>
+                <span>Facebook (484K+)</span>
               </a>
             </div>
           </div>

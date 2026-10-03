@@ -1,5 +1,5 @@
 /**
- * Shopping Queen by Orni — Forgot Password Page
+ * Dui Konna (দুই কন্যা) — Forgot Password Page
  * Route: /forgot-password
  */
 
@@ -16,24 +16,24 @@ export const metadata: Metadata = {
 
 export default function ForgotPasswordPage() {
   return (
-    <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-[#FAF6F0]">
+    <div className="min-h-screen flex items-center justify-center px-4 py-12 bg-[#FAF7F2]">
       <div className="w-full max-w-md space-y-8 bg-white p-8 md:p-10 rounded-2xl border border-[#E8DFD5] shadow-sm">
         {/* Header */}
         <div className="text-center space-y-3">
           <Link href="/" className="inline-flex flex-col items-center gap-2 group">
-            <div className="relative size-12 rounded-full overflow-hidden border border-[#D4AF37]/50 shadow-xs">
+            <div className="relative size-14 rounded-full overflow-hidden border border-[#D4AF37]/50 shadow-xs">
               <Image
-                src="/shoppingqueen-assets/logo.avif"
+                src="/duikonna-assets/fb_logo_square.jpg"
                 alt={BUSINESS.NAME}
                 fill
                 className="object-cover"
               />
             </div>
-            <span className="text-xl font-bold tracking-tight text-[#6B1D2F] font-serif group-hover:text-[#521322] transition-colors">
+            <span className="text-xl font-bold tracking-tight text-[#8B0000] font-serif group-hover:text-[#5A0000] transition-colors">
               {BUSINESS.NAME}
             </span>
           </Link>
-          <h1 className="text-xl font-bold text-[#1A1A1A] font-serif">Reset Your Password</h1>
+          <h1 className="text-xl font-bold text-[#181513] font-serif">Reset Your Password</h1>
           <p className="text-xs text-neutral-500">
             Enter your email and we&apos;ll send you a password reset link
           </p>
@@ -47,7 +47,7 @@ export default function ForgotPasswordPage() {
           Remember your password?{" "}
           <Link
             href="/login"
-            className="font-bold text-[#6B1D2F] hover:underline underline-offset-4"
+            className="font-bold text-[#8B0000] hover:underline underline-offset-4"
           >
             Sign in
           </Link>

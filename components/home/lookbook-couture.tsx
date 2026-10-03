@@ -1,16 +1,16 @@
 "use client";
 
 /**
- * Shopping Queen by Orni — Interactive "Shop The Look" Lookbook
- * Direct editorial garment hotspot interaction and instant order
- * Dhaka, Bangladesh • Facebook: https://www.facebook.com/Shoppingqueenbyorni
- * 190,500+ Followers • Open Parcel Inspection Nationwide
+ * Dui Konna (দুই কন্যা) — Interactive "Shop The Look" Lookbook
+ * Direct editorial saree hotspot interaction and instant order
+ * Nikunja-2, Khilkhet, Dhaka-1229 • Facebook: https://www.facebook.com/duikonna01
+ * 484,000+ Followers • Open Parcel Inspection Nationwide
  */
 
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { Crown, ShoppingBag, ArrowUpRight, Check, Sparkles } from "lucide-react";
+import { Crown, ShoppingBag, ArrowUpRight, Check } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ASSETS } from "@/lib/demo-data";
 import { useCartStore } from "@/store/cart-store";
@@ -41,85 +41,85 @@ interface CoutureLook {
 const COUTURE_LOOKS: CoutureLook[] = [
   {
     id: "look-1",
-    tabLabel: "Pakistani Lawn",
-    title: "Royal Blue Embroidered Lawn 3-Piece",
-    subtitle: "সুইস কটন লন ফেব্রিক, নিখুঁত সুতার কাজ এবং সফট শিফন ওড়না সমৃদ্ধ প্রিমিয়াম ড্রেস।",
-    heroImage: ASSETS.product1,
+    tabLabel: "Royal Muslin (৳29,000)",
+    title: "Mustard Gold Dhakai Muslin Saree",
+    subtitle: "খাঁটি ঢাকাই মসলিনের জমিনে সূক্ষ্ম জরির কাজ ও ঐতিহ্যবাহী সুবাস। দাম মুদ্রিত: ৳২৯,০০০।",
+    heroImage: ASSETS.product3,
     spots: [
       {
         id: "spot-1",
-        name: "Shopping Queen Royal Blue Embroidered Pakistani Lawn 3-Piece",
-        category: "Pakistani Lawn Collection",
-        price: 1650,
-        comparePrice: 2200,
-        slug: "shopping-queen-royal-blue-embroidered-pakistani-lawn-3-piece",
-        image: ASSETS.product1,
+        name: "Royal Yellow & Mustard Gold Dhakai Muslin Saree (৳29,000 Verified)",
+        category: "Exclusive Muslin Saree",
+        price: 29000,
+        comparePrice: 32000,
+        slug: "royal-yellow-mustard-gold-dhakai-muslin-saree-29000",
+        image: ASSETS.product3,
         x: 50,
-        y: 45,
-        sizes: ["Unstitched 3-Piece", "Semi-Stitched"],
+        y: 48,
+        sizes: ["Full Saree (12 Haat)", "With Blouse Piece"],
       },
     ],
   },
   {
     id: "look-2",
-    tabLabel: "Festive Partywear",
-    title: "Royal Maroon & Zari Heavy Embroidered Suit",
-    subtitle: "বিয়ে ও দাওয়াতের জন্য ভারী জারি ও সিকোয়েন্স কারুকাজ খচিত রয়্যাল মেরুন থ্রি-পিস সেট।",
-    heroImage: ASSETS.product5,
+    tabLabel: "Bridal Red Muslin",
+    title: "Royal Crimson Bridal Muslin Saree",
+    subtitle: "বিয়ের কনে ও বিশেষ উৎসবের জন্য খাঁটি লাল ঢাকাই মসলিন ও চোখজুড়ানো স্বর্ণালী আঁচল।",
+    heroImage: ASSETS.heroBanner,
     spots: [
       {
         id: "spot-2",
-        name: "Shopping Queen Royal Maroon & Zari Heavily Embroidered Partywear Suit",
-        category: "Exclusive Festive Partywear",
-        price: 2650,
-        comparePrice: 3500,
-        slug: "shopping-queen-royal-maroon-zari-heavily-embroidered-partywear-suit",
-        image: ASSETS.product5,
+        name: "Royal Crimson Bridal Heritage Dhakai Muslin Saree",
+        category: "Bridal & Festive Red Muslin",
+        price: 26500,
+        comparePrice: 30000,
+        slug: "royal-crimson-bridal-heritage-muslin-saree",
+        image: ASSETS.heroBanner,
         x: 50,
-        y: 40,
-        sizes: ["Unstitched 3-Piece", "Semi-Stitched"],
+        y: 42,
+        sizes: ["Full Saree (12 Haat)", "With Blouse Piece"],
       },
     ],
   },
   {
     id: "look-3",
-    tabLabel: "Orni Signature",
-    title: "Rose Pink & Tangerine Designer Lawn Suit",
-    subtitle: "অর্ণি ইসলামের সিগনেচার ডিজাইনার লন কালেকশন। আরামদায়ক পিওর কটন ফেব্রিক ও ক্ল্যাসিক ডিজাইন।",
-    heroImage: ASSETS.product6,
+    tabLabel: "Luxury Karchupi",
+    title: "Dusty Lilac Luxury Karchupi Handcrafted Saree",
+    subtitle: "ডাস্টি লিলাক প্যাস্টেল শেডে ভারী কারচুপি, পার্ল ও স্টোনের চোখজুড়ানো কারুকাজ।",
+    heroImage: ASSETS.product8,
     spots: [
       {
         id: "spot-3",
-        name: "Orni Signature Edit — Rose Pink & Tangerine Designer Lawn Suit",
-        category: "Orni Signature Edit",
-        price: 1850,
-        comparePrice: 2400,
-        slug: "orni-signature-edit-rose-pink-tangerine-designer-lawn-suit",
-        image: ASSETS.product6,
+        name: "Dusty Lilac Lavender Luxury Karchupi Handcrafted Saree",
+        category: "Luxury Karchupi & Organza",
+        price: 28000,
+        comparePrice: 31500,
+        slug: "dusty-lilac-lavender-luxury-karchupi-designer-saree",
+        image: ASSETS.product8,
         x: 50,
-        y: 42,
-        sizes: ["Unstitched 3-Piece", "Semi-Stitched"],
+        y: 45,
+        sizes: ["Full Saree (12 Haat)", "Designer Blouse Piece"],
       },
     ],
   },
   {
     id: "look-4",
-    tabLabel: "Kim Pearl Skincare",
-    title: "Kim Whitening Pearl & Snowlotus Cream",
-    subtitle: "কিছু আত্মবিশ্বাসী প্রতিদিন, রাতের যত্নে প্রাকৃতিক উজ্জ্বলতা ✨ ত্বককে দাগমুক্ত ও কোমল করে।",
-    heroImage: ASSETS.product12,
+    tabLabel: "Mint Green Muslin",
+    title: "Mint Green Butterfly Handloom Muslin Saree",
+    subtitle: "স্নিগ্ধ মিন্ট গ্রিন শেডে সোনালী বাটারফ্লাই জরি কাজ। হালকা ও আরামদায়ক রাজকীয় অনুভূতি।",
+    heroImage: ASSETS.product2,
     spots: [
       {
         id: "spot-4",
-        name: "Kim Whitening Pearl & Snowlotus Night Cream (Net Wt 20g) — Natural Glow",
-        category: "Skincare & Natural Glow Care",
-        price: 850,
-        comparePrice: 1200,
-        slug: "kim-whitening-pearl-and-snowlotus-night-cream-20g-natural-glow",
-        image: ASSETS.product12,
+        name: "Mint Green Butterfly Handloom Dhakai Muslin Saree",
+        category: "Pastel Heritage Muslin",
+        price: 22500,
+        comparePrice: 25000,
+        slug: "mint-green-butterfly-handloom-dhakai-muslin-saree",
+        image: ASSETS.product2,
         x: 50,
-        y: 50,
-        sizes: ["Single Pack 20g Jar", "Combo Pack (2 x 20g)"],
+        y: 46,
+        sizes: ["Full Saree (12 Haat)", "With Blouse Piece"],
       },
     ],
   },
@@ -128,7 +128,7 @@ const COUTURE_LOOKS: CoutureLook[] = [
 export function LookbookCouture() {
   const [activeTab, setActiveTab] = useState(0);
   const [activeSpotId, setActiveSpotId] = useState<string>("spot-1");
-  const [selectedSize, setSelectedSize] = useState<string>("Unstitched 3-Piece");
+  const [selectedSize, setSelectedSize] = useState<string>("Full Saree (12 Haat)");
   const [isAdding, setIsAdding] = useState(false);
 
   const addItem = useCartStore((state) => state.addItem);
@@ -143,7 +143,7 @@ export function LookbookCouture() {
     if (newLook && newLook.spots.length > 0) {
       const firstSpot = newLook.spots[0]!;
       setActiveSpotId(firstSpot.id);
-      setSelectedSize(firstSpot.sizes[0] ?? "Standard Size");
+      setSelectedSize(firstSpot.sizes[0] ?? "Full Saree (12 Haat)");
     }
   };
 
@@ -158,7 +158,7 @@ export function LookbookCouture() {
       size: selectedSize,
       color: "As Pictured",
       image: activeSpot.image,
-      stock: 25,
+      stock: 15,
     });
 
     toast.success(`Added ${activeSpot.name} to your bag!`, {
@@ -171,21 +171,21 @@ export function LookbookCouture() {
   };
 
   return (
-    <section className="py-16 md:py-28 bg-[#FAF6F0] border-b border-[#E8DFD3] relative overflow-hidden">
+    <section className="py-16 md:py-28 bg-[#FAF7F2] border-b border-[#E8DFD3] relative overflow-hidden">
       <div className="container mx-auto px-4 md:px-8 lg:px-12 max-w-7xl">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-10 md:mb-14">
           <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-white border border-[#D4AF37]/50 mb-3 shadow-xs">
             <Crown className="h-3 w-3 text-[#D4AF37]" />
-            <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#6B1D2F]">
-              SHOP THE LOOKBOOK
+            <span className="text-[10px] font-extrabold uppercase tracking-[0.2em] text-[#8B0000]">
+              DUI KONNA LOOKBOOK
             </span>
           </div>
           <h2 className="text-3xl md:text-5xl font-bold text-[#1A1A1A] font-heading tracking-tight">
-            Orni&apos;s Signature Stylebook
+            Shamima Nasrin&apos;s Saree Stylebook
           </h2>
           <p className="mt-3 text-sm md:text-base text-neutral-600 font-medium">
-            অর্ণি ইসলাম কর্তৃক নির্বাচিত সেরা পাকিস্তানি লন, গর্জিয়াস পার্টিওয়্যার ও স্কিনকেয়ার সামগ্রী সরাসরি অর্ডার করুন।
+            দুই কন্যার এক্সক্লুসিভ ঢাকাই মসলিন, জামদানি ও লাক্সারি কারচুপি শাড়ি সরাসরি অর্ডার করুন।
           </p>
 
           {/* Tab Navigation */}
@@ -196,8 +196,8 @@ export function LookbookCouture() {
                 onClick={() => handleTabChange(idx)}
                 className={`px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider transition-all duration-300 cursor-pointer ${
                   activeTab === idx
-                    ? "bg-[#6B1D2F] text-[#D4AF37] shadow-lg border border-[#D4AF37] scale-105"
-                    : "bg-white text-neutral-700 hover:bg-[#FAF6F0] border border-[#E8DFD3]"
+                    ? "bg-[#8B0000] text-[#D4AF37] shadow-lg border border-[#D4AF37] scale-105"
+                    : "bg-white text-neutral-700 hover:bg-[#FAF7F2] border border-[#E8DFD3]"
                 }`}
               >
                 {look.tabLabel}
@@ -237,14 +237,14 @@ export function LookbookCouture() {
                 key={spot.id}
                 onClick={() => {
                   setActiveSpotId(spot.id);
-                  setSelectedSize(spot.sizes[0] ?? "Standard Size");
+                  setSelectedSize(spot.sizes[0] ?? "Full Saree (12 Haat)");
                 }}
                 style={{ left: `${spot.x}%`, top: `${spot.y}%` }}
-                className="absolute z-10 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center size-9 rounded-full bg-white text-[#6B1D2F] shadow-2xl hover:scale-115 transition-transform duration-300 ring-4 ring-[#D4AF37] cursor-pointer"
+                className="absolute z-10 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center size-9 rounded-full bg-white text-[#8B0000] shadow-2xl hover:scale-115 transition-transform duration-300 ring-4 ring-[#D4AF37] cursor-pointer"
                 aria-label={`View ${spot.name}`}
               >
-                <span className="size-3 rounded-full bg-[#6B1D2F] animate-ping absolute" />
-                <span className="size-3 rounded-full bg-[#6B1D2F] relative z-10" />
+                <span className="size-3 rounded-full bg-[#8B0000] animate-ping absolute" />
+                <span className="size-3 rounded-full bg-[#8B0000] relative z-10" />
               </button>
             ))}
           </div>
@@ -264,8 +264,8 @@ export function LookbookCouture() {
             </div>
 
             {/* Price Box */}
-            <div className="flex items-baseline gap-3 p-4 rounded-2xl bg-[#FAF6F0] border border-[#E8DFD3]">
-              <span className="text-2xl md:text-3xl font-bold text-[#6B1D2F] font-heading">
+            <div className="flex items-baseline gap-3 p-4 rounded-2xl bg-[#FAF7F2] border border-[#E8DFD3]">
+              <span className="text-2xl md:text-3xl font-bold text-[#8B0000] font-heading">
                 ৳{activeSpot.price.toLocaleString()}
               </span>
               {activeSpot.comparePrice > activeSpot.price && (
@@ -278,10 +278,10 @@ export function LookbookCouture() {
               </span>
             </div>
 
-            {/* Size Selector */}
+            {/* Size / Saree Drape Selector */}
             <div className="space-y-2">
               <label className="text-xs font-bold text-[#1A1A1A] uppercase tracking-wider">
-                Select Option / সাইজ নির্বাচন:
+                Select Option / শাড়ির ধরন:
               </label>
               <div className="grid grid-cols-2 gap-2">
                 {activeSpot.sizes.map((sz) => (
@@ -290,8 +290,8 @@ export function LookbookCouture() {
                     onClick={() => setSelectedSize(sz)}
                     className={`py-2.5 px-3 rounded-xl text-xs font-bold transition-all border cursor-pointer ${
                       selectedSize === sz
-                        ? "bg-[#6B1D2F] text-[#D4AF37] border-[#D4AF37] shadow-sm"
-                        : "bg-white text-neutral-700 hover:bg-[#FAF6F0] border-[#E8DFD3]"
+                        ? "bg-[#8B0000] text-[#D4AF37] border-[#D4AF37] shadow-sm"
+                        : "bg-white text-neutral-700 hover:bg-[#FAF7F2] border-[#E8DFD3]"
                     }`}
                   >
                     {sz}
@@ -305,7 +305,7 @@ export function LookbookCouture() {
               <button
                 onClick={handleAddToCart}
                 disabled={isAdding}
-                className="w-full h-13 rounded-full bg-[#6B1D2F] hover:bg-[#4A101D] text-[#D4AF37] hover:text-white font-bold text-xs uppercase tracking-[0.16em] transition-all duration-300 shadow-md flex items-center justify-center gap-2 active:scale-98 cursor-pointer"
+                className="w-full h-13 rounded-full bg-[#8B0000] hover:bg-[#6B0000] text-[#D4AF37] hover:text-white font-bold text-xs uppercase tracking-[0.16em] transition-all duration-300 shadow-md flex items-center justify-center gap-2 active:scale-98 cursor-pointer"
               >
                 {isAdding ? (
                   <>
@@ -315,16 +315,16 @@ export function LookbookCouture() {
                 ) : (
                   <>
                     <ShoppingBag className="h-4 w-4" />
-                    <span>Add To Bag — ৳{activeSpot.price.toLocaleString()}</span>
+                    <span>Add Saree To Bag — ৳{activeSpot.price.toLocaleString()}</span>
                   </>
                 )}
               </button>
 
               <Link
                 href={`/products/${activeSpot.slug}`}
-                className="w-full h-11 rounded-full bg-white hover:bg-[#FAF6F0] text-[#6B1D2F] border border-[#D4AF37]/50 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5"
+                className="w-full h-11 rounded-full bg-white hover:bg-[#FAF7F2] text-[#8B0000] border border-[#D4AF37]/50 font-bold text-xs uppercase tracking-wider transition-colors flex items-center justify-center gap-1.5"
               >
-                <span>View Full Product Details</span>
+                <span>View Full Saree Details</span>
                 <ArrowUpRight className="h-3.5 w-3.5" />
               </Link>
             </div>

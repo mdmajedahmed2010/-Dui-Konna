@@ -27,39 +27,40 @@ const playfair = Playfair_Display({
   display: "swap",
 });
 
-// Global metadata — Shopping Queen by Orni
+// Global metadata — Dui Konna (দুই কন্যা)
 export const metadata: Metadata = {
   metadataBase: new URL(BUSINESS.WEBSITE),
   title: {
-    default: "Shopping Queen by Orni — পাকিস্তানি লন, পার্টিওয়্যার ও স্কিনকেয়ার",
-    template: "%s — Shopping Queen by Orni",
+    default: "Dui Konna (দুই কন্যা) — এক্সক্লুসিভ ঢাকাই মসলিন ও জামদানি শাড়ি",
+    template: "%s — Dui Konna (দুই কন্যা)",
   },
   description:
-    "Shopping Queen by Orni (শপিং কুইন বাই অর্নি) — দেশী-বিদেশী বিভিন্ন ব্র্যান্ডের মেয়েদের সালোয়ার কামিজ, এক্সক্লুসিভ পাকিস্তানি লন, পার্টিওয়্যার এবং Kim Whitening Pearl Cream। ১৯০,০০০+ আপুদের ভরসা। সারাদেশে ক্যাশ অন হোম ডেলিভারি ও পার্সেল খুলে চেক করে পেমেন্ট করার নিশ্চিন্ত সুবিধা।",
+    "দুই কন্যা (Dui Konna) — আমাদের রয়েছে ঢাকাই মসলিন শাড়ির সবচেয়ে অনন্য কালেকশন। খাঁটি ঢাকাই মসলিন, ঐতিহ্যবাহী জামদানি, ব্রাইডাল রেড মসলিন ও এক্সক্লুসিভ কারচুপি পোশাক। ৪৮৪,০০০+ আপুদের ভরসা। শোরুম: নিকুঞ্জ-২, খিলক্ষেত, ঢাকা। সারাদেশে ক্যাশ অন হোম ডেলিভারি ও পার্সেল খুলে চেক করে পেমেন্ট করার নিশ্চিন্ত সুবিধা।",
   keywords: [
-    "Shopping Queen by Orni",
-    "শপিং কুইন বাই অর্নি",
-    "Orni Islam",
-    "অর্ণি ইসলাম",
-    "Pakistani Lawn Dhaka",
-    "পাকিস্তানি লন বাংলাদেশ",
-    "Partywear Salwar Kameez BD",
-    "Kim Whitening Pearl Cream",
-    "Snowlotus Cream Orni",
-    "Chunri Three Piece BD",
-    "Cotton Three Piece Online Dhaka",
-    "Shopping Queen Facebook Page",
+    "Dui Konna",
+    "দুই কন্যা",
+    "duikonna01",
+    "Shamima Nasrin",
+    "শামীমা নাসরিন",
+    "Muslin Saree Dhaka",
+    "ঢাকাই মসলিন শাড়ি",
+    "Dhakai Jamdani Saree",
+    "ঢাকাই জামদানি শাড়ি",
+    "Bridal Red Muslin Saree",
+    "Karchupi Saree BD",
+    "Nikunja 2 Dui Konna Showroom",
+    "Dui Konna Facebook Page",
   ],
-  authors: [{ name: "Shopping Queen by Orni" }],
-  creator: "Shopping Queen by Orni",
+  authors: [{ name: "Dui Konna" }],
+  creator: "Dui Konna",
   openGraph: {
     type: "website",
     locale: "bn_BD",
-    siteName: "Shopping Queen by Orni",
-    title: "Shopping Queen by Orni — পাকিস্তানি লন, পার্টিওয়্যার ও স্কিনকেয়ার",
+    siteName: "Dui Konna",
+    title: "Dui Konna (দুই কন্যা) — এক্সক্লুসিভ ঢাকাই মসলিন ও জামদানি শাড়ি",
     description:
-      "দেশী-বিদেশী বিভিন্ন ব্র্যান্ডের মেয়েদের সালোয়ার কামিজ সুলভ মূল্যে। সারাদেশে ক্যাশ অন হোম ডেলিভারি ও পার্সেল চেক করে পেমেন্ট।",
-    images: ["/shoppingqueen-assets/banner.avif"],
+      "আমাদের রয়েছে মসলিন শাড়ির সবচেয়ে অনন্য কালেকশন। নিকুঞ্জ-২ শোরুম ও অনলাইন হোম ডেলিভারি। পার্সেল খুলে চেক করে পেমেন্ট করার ১০০% নিশ্চিন্ত সুবিধা।",
+    images: ["/duikonna-assets/banner.jpg"],
   },
   robots: {
     index: true,
@@ -70,12 +71,12 @@ export const metadata: Metadata = {
   appleWebApp: {
     capable: true,
     statusBarStyle: "default",
-    title: "Shopping Queen",
+    title: "Dui Konna",
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#6B1D2F",
+  themeColor: "#8B0000",
 };
 
 export default async function RootLayout({

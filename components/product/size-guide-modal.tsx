@@ -1,12 +1,12 @@
 /**
- * Shopping Queen by Orni — Size & Measurement Guide Modal
- * Standard Ready-to-Wear Chart + Unstitched 3-Piece Fabric Specs
+ * Dui Konna (দুই কন্যা) — Saree & Couture Measurement Guide Modal
+ * Traditional 12-Haat Dhakai Muslin drape specs + Unstitched Blouse piece & Pret sizing
  */
 
 "use client";
 
 import { useState } from "react";
-import { Ruler, X } from "lucide-react";
+import { Ruler, X, Sparkles } from "lucide-react";
 
 const sizeChart = [
   { size: "XS", bust: "32", waist: "26", hip: "34", length: "38" },

@@ -1,5 +1,5 @@
 /**
- * Shopping Queen by Orni — Product Detail Page
+ * Dui Konna (দুই কন্যা) — Product Detail Page
  * Route: /products/[slug]
  */
 
@@ -33,8 +33,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
         product: {
           name: demoProduct.name,
           seoTitle: `${demoProduct.name} — ${BUSINESS.NAME}`,
-          seoDesc: `${demoProduct.name} — Exclusive heritage collection by ${BUSINESS.NAME}.`,
-          description: `${demoProduct.name} — Smart & elegant saree and boutique collection by ${BUSINESS.NAME}.`,
+          seoDesc: `${demoProduct.name} — Authentic handwoven Dhakai Muslin & luxury saree by ${BUSINESS.NAME}.`,
+          description: `${demoProduct.name} — Handcrafted Dhakai Muslin & luxury saree collection by ${BUSINESS.NAME}.`,
         } as any,
       };
     }
@@ -72,11 +72,11 @@ export default async function ProductPage({ params }: ProductPageProps) {
           id: demoProduct.id,
           name: demoProduct.name,
           slug: demoProduct.slug,
-          description: `${demoProduct.name} — ${(demoProduct as any).description || `Exclusive authentic fashion and skincare by ${BUSINESS.NAME}. Handpicked quality, intricate details, and open parcel inspection nationwide.`}`,
+          description: `${demoProduct.name} — ${(demoProduct as any).description || `খাঁটি ঢাকাই মসলিন ও ঐতিহ্যবাহী শাড়ি কালেকশন — ${BUSINESS.NAME}। স্বত্বাধিকারী শামীমা নাসরিনের কিউরেটেড কালেকশন, নিকুঞ্জ-২ শোরুমের নির্ভরযোগ্যতা এবং সারা দেশে ক্যাশ অন হোম ডেলিভারিতে ওপেন পার্সেল সুবিধা।`}`,
           basePrice: demoProduct.price,
           category: {
-            name: demoProduct.category || "Pakistani Lawn 3-Piece",
-            slug: (demoProduct.category || "Pakistani Lawn 3-Piece").toLowerCase().replace(/[^a-z0-9]+/g, "-"),
+            name: demoProduct.category || "Dhakai Muslin Saree",
+            slug: (demoProduct.category || "Dhakai Muslin Saree").toLowerCase().replace(/[^a-z0-9]+/g, "-"),
           },
           variants: [
             {
@@ -120,7 +120,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   // Map DB variants to ProductInfo expected format
   const mappedVariants = product.variants.map((v) => ({
     id: v.id,
-    size: v.size || "Free Size Saree (6.5 Yards)",
+    size: v.size || "12-Haat Handwoven Muslin Saree with Unstitched Blouse Piece",
     color: v.color || "As Pictured",
     price: Number(v.price),
     stock: v.stock,
@@ -135,8 +135,8 @@ export default async function ProductPage({ params }: ProductPageProps) {
     basePrice: minPrice,
     compareAtPrice,
     category: {
-      name: product.category?.name || "Sequin & Tissue Sarees",
-      slug: product.category?.slug || "sequin-tissue-sarees",
+      name: product.category?.name || "Dhakai Muslin Saree",
+      slug: product.category?.slug || "dhakai-muslin-saree",
     },
     images,
     ogImage: product.ogImage,
